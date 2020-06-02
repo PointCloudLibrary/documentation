@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$structtraits_1_1has__all__fields.html" title="traits::has_all_fields\l\&lt; PointT, boost::mpl::\lvector\&lt; pcl::fields::normal\l_x, pcl::fields::normal_y,\l pcl::fields::normal_z \&gt; \&gt;" alt="" coords="115,5,288,104"/>
+<area shape="rect" id="node7" href="$structtraits_1_1has__all__fields.html" title="traits::has_all_fields\l\&lt; PointT, boost::mpl::\lvector\&lt; pcl::fields::x,\l pcl::fields::y, pcl::fields::z \&gt; \&gt;" alt="" coords="101,127,301,209"/>
+<area shape="rect" id="node11" href="$structtraits_1_1has__any__field.html" title="traits::has_any_field\l\&lt; PointT, boost::mpl\l::vector\&lt; pcl::fields\l::rgb, pcl::fields::rgba \&gt; \&gt;" alt="" coords="117,231,285,313"/>
+<area shape="rect" id="node15" href="$structtraits_1_1has__all__fields.html" title="Metafunction to check if a given point type has all given fields. " alt="" coords="132,335,271,382"/>
+<area shape="rect" id="node17" href="$structtraits_1_1has__any__field.html" title="Metafunction to check if a given point type has any of the given fields. " alt="" coords="132,405,271,451"/>
+<area shape="rect" id="node5" href="$structtraits_1_1has__normal.html" title="Metafunction to check if a given point type has normal_x, normal_y, and normal_z fields. " alt="" coords="372,31,497,78"/>
+<area shape="rect" id="node9" href="$structtraits_1_1has__xyz.html" title="Metafunction to check if a given point type has x, y, and z fields. " alt="" coords="349,153,520,183"/>
+<area shape="rect" id="node13" href="$structtraits_1_1has__color.html" title="Metafunction to check if a given point type has either rgb or rgba field. " alt="" coords="373,249,496,295"/>
+</map>

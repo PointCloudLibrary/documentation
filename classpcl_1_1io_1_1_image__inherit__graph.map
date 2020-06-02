@@ -1,0 +1,4 @@
+<map id="pcl::io::Image" name="pcl::io::Image">
+<area shape="rect" id="node3" href="$classpcl_1_1io_1_1_image_r_g_b24.html" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying RGB24 image..." alt="" coords="5,83,149,112"/>
+<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_image_y_u_v422.html" title="Concrete implementation of the interface Image for a YUV 422 image used by Primesense devices..." alt="" coords="173,83,323,112"/>
+</map>

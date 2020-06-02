@@ -1,0 +1,8 @@
+<map id="pcl::NormalSpaceSampling&lt; PointT, NormalT &gt;" name="pcl::NormalSpaceSampling&lt; PointT, NormalT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="45,315,163,362"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,219,157,248"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,104,171,133"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; NormalT \&gt;" alt="" coords="192,324,376,353"/>
+<area shape="rect" id="node10" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="201,104,316,133"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="273,219,415,248"/>
+</map>

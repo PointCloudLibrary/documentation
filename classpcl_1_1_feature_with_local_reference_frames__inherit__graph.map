@@ -1,0 +1,8 @@
+<map id="pcl::FeatureWithLocalReferenceFrames&lt; PointInT, PointRFT &gt;" name="pcl::FeatureWithLocalReferenceFrames&lt; PointInT, PointRFT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="264,58,440,105"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_unique_shape_context.html" title="UniqueShapeContext implements the Unique Shape Context Descriptor described here: ..." alt="" coords="267,127,437,174"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title="SHOTColorEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a giv..." alt="" coords="488,5,699,69"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_s_h_o_t_estimation.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="513,93,673,157"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html" title="SHOTColorEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a ..." alt="" coords="759,5,935,69"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_s_h_o_t_estimation_o_m_p.html" title="SHOTEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given..." alt="" coords="748,93,945,157"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="pcl::MeshProcessing" name="pcl::MeshProcessing">
+<area shape="rect" id="node3" href="$classpcl_1_1_ear_clipping.html" title="The ear clipping triangulation algorithm. " alt="" coords="252,5,367,35"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_mesh_quadric_decimation_v_t_k.html" title="PCL mesh decimation based on vtkQuadricDecimation from the VTK library. " alt="" coords="201,59,417,88"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_mesh_smoothing_laplacian_v_t_k.html" title="PCL mesh smoothing based on the vtkSmoothPolyDataFilter algorithm from the VTK library. " alt="" coords="199,112,420,141"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_mesh_smoothing_windowed_sinc_v_t_k.html" title="PCL mesh smoothing based on the vtkWindowedSincPolyDataFilter algorithm from the VTK library..." alt="" coords="208,165,411,211"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_mesh_subdivision_v_t_k.html" title="PCL mesh smoothing based on the vtkLinearSubdivisionFilter, vtkLoopSubdivisionFilter, vtkButterflySubdivisionFilter depending on the selected MeshSubdivisionVTKFilterType algorithm from the VTK library. " alt="" coords="224,235,395,264"/>
+</map>

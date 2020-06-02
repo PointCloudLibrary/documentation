@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1registration_1_1_data_container_interface.html" title="DataContainerInterface provides a generic interface for computing correspondence scores between corre..." alt="" coords="5,14,163,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_data_container.html" title="DataContainer is a container for the input and target point clouds and implements the interface to co..." alt="" coords="211,5,371,69"/>
+</map>

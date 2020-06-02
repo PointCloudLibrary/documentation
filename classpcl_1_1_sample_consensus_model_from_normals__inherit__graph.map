@@ -1,0 +1,10 @@
+<map id="pcl::SampleConsensusModelFromNormals&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelFromNormals&lt; PointT, PointNT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_model_cone.html" title="SampleConsensusModelCone defines a model for 3D cone segmentation. " alt="" coords="420,9,612,55"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_sample_consensus_model_cylinder.html" title="SampleConsensusModelCylinder defines a model for 3D cylinder segmentation. " alt="" coords="420,166,612,213"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_sample_consensus_model_normal_plane.html" title="SampleConsensusModelNormalPlane defines a model for 3D plane segmentation using additional surface no..." alt="" coords="409,305,623,351"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_sample_consensus_model_normal_sphere.html" title="SampleConsensusModelNormalSphere defines a model for 3D sphere segmentation using additional surface ..." alt="" coords="405,235,627,282"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="pcl::SampleConsensusModel\lFromNormals\&lt; pcl::PointXYZRGB,\l PointNT \&gt;" alt="" coords="403,79,629,143"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_sample_consensus_model_cone.html" title="pcl::SampleConsensusModel\lCone\&lt; pcl::PointXYZRGB,\l PointNT \&gt;" alt="" coords="811,21,1003,85"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_sample_consensus_model_cylinder.html" title="pcl::SampleConsensusModel\lCylinder\&lt; pcl::PointXYZRGB,\l PointNT \&gt;" alt="" coords="809,124,1004,188"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_sample_consensus_model_normal_parallel_plane.html" title="SampleConsensusModelNormalParallelPlane defines a model for 3D plane segmentation using additional su..." alt="" coords="809,296,1004,360"/>
+</map>

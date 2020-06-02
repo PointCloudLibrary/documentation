@@ -1,0 +1,8 @@
+<map id="pcl::VoxelGridCovariance&lt; PointT &gt;" name="pcl::VoxelGridCovariance&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="5,200,171,229"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,95,157,124"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; PointT \&gt;" alt="" coords="195,200,389,229"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="216,5,365,35"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures. " alt="" coords="301,86,488,133"/>
+</map>

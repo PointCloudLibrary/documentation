@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Benchmarking 3D &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.11.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Benchmarking 3D</a></li>
+<li><a class="reference internal" href="#benchmarking-object-recognition">Benchmarking Object Recognition</a><ul>
+<li><a class="reference internal" href="#training">1. Training</a></li>
+<li><a class="reference internal" href="#keypoints">2. Keypoints</a></li>
+<li><a class="reference internal" href="#descriptors">3. Descriptors</a></li>
+<li><a class="reference internal" href="#classification">4. Classification</a></li>
+<li><a class="reference internal" href="#evaluation">5. Evaluation</a><ul>
+<li><a class="reference internal" href="#metrics">5.1 Metrics</a><ul>
+<li><a class="reference internal" href="#object-recognition-api">Object Recognition API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id1">1. Training</a></li>
+<li><a class="reference internal" href="#id2">2. Keypoints</a></li>
+<li><a class="reference internal" href="#id3">3. Descriptors</a></li>
+<li><a class="reference internal" href="#id4">4. Classification</a></li>
+<li><a class="reference internal" href="#id5">5. Evaluation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Benchmarking 3D</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="benchmarking-3d">
+<span id="benchmarking"></span><h1>Benchmarking 3D</h1>
+<p>This document introduces benchmarking concepts for 3D algorithms. By
+<em>benchmarking</em> here we refer to the possibility of testing different
+computational pipelines in an <strong>easy manner</strong>. The goal is to test their
+reproductibility with respect to a particular problem of general interest.</p>
+</div>
+<div class="section" id="benchmarking-object-recognition">
+<h1>Benchmarking Object Recognition</h1>
+<p>For the general problem of Object Recognition (identification, categorization,
+detection, etc – all fall in the same category here), we identify the
+following steps:</p>
+<div class="section" id="training">
+<h2>1. Training</h2>
+<p>Users should be able to acquire training data from different inputs, including
+but not limited to:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>full triangle meshes (CAD models);</p></li>
+<li><p>360-degree full point cloud models;</p></li>
+<li><p>partial point cloud views:</p>
+<ul>
+<li><p>in clutter;</p></li>
+<li><p>cleanly segmented.</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="keypoints">
+<h2>2. Keypoints</h2>
+<p>Computing higher level representation from the object’s appearance (texture + depth) should be done:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>densely</strong> - at every point/vertex in the input data;</p></li>
+<li><p>at certain <strong>interest points</strong> (i.e., keypoints).</p></li>
+</ul>
+</div></blockquote>
+<p>The detected keypoint might also contain some meta-information required by some descriptors, like scale or orientation.</p>
+</div>
+<div class="section" id="descriptors">
+<h2>3. Descriptors</h2>
+<p>A higher level representation as mentioned before will be herein represented by a <strong>feature descriptor</strong>. Feature descriptors can be:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>2D (two-dimensional) – here we refer to those descriptors estimated solely from RGB texture data;</p></li>
+<li><p>3D (three-dimensional) – here we refer to those descriptors estimated solely from XYZ/depth data;</p></li>
+<li><p>a combination of the above.</p></li>
+</ul>
+</div></blockquote>
+<p>In addition, feature descriptors can be:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>local</strong> - estimated only at a set of discrete keypoints, using the information from neighboring pixels/points;</p></li>
+<li><p><strong>global</strong>, or meta-local - estimated on entire objects or the entire input dataset.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="classification">
+<h2>4. Classification</h2>
+<p>The distribution of features should be classifiable into distinct, separable
+classes. For local features, we identify two sets of techniques:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>bag of words</strong>;</p></li>
+<li><p><strong>voting</strong>;</p></li>
+<li><p><strong>supervised voting</strong> (regression from the description to the relative 3D location, e.g. Hough forest).</p></li>
+</ul>
+</div></blockquote>
+<p>For global features, any general purpose classification technique should work (e.g., SVMs, nearest neighbors, etc).</p>
+<p>In addition to classification, a substep of it could be considered
+<strong>Registration</strong>. Here we refine the classification results using iterative
+closest point techniques for example.</p>
+</div>
+<div class="section" id="evaluation">
+<h2>5. Evaluation</h2>
+<p>This pipeline should be able to evaluate the algorithm’s performance at
+different tasks. Here are some requested tasks to support:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>object id and pose</p></li>
+<li><p>object id and segmentation</p></li>
+<li><p>object id and bounding box</p></li>
+<li><p>category and segmentation</p></li>
+<li><p>category and bounding box</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="metrics">
+<h3>5.1 Metrics</h3>
+<p>This pipeline should provide different metrics, since algorithms excel in
+different areas. Here are some requested metrics:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>precision-recall</p></li>
+<li><p>time</p></li>
+<li><p>average rank of correct id</p></li>
+<li><p>area under curve of cumulative histogram of rank of correct id</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="object-recognition-api">
+<h4>Object Recognition API</h4>
+<p>Here we describe a proposed set of classes that could be easily extended and
+used for the purpose of benchmarking object recognition tasks.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>1. Training</h2>
+</div>
+<div class="section" id="id2">
+<h2>2. Keypoints</h2>
+</div>
+<div class="section" id="id3">
+<h2>3. Descriptors</h2>
+</div>
+<div class="section" id="id4">
+<h2>4. Classification</h2>
+</div>
+<div class="section" id="id5">
+<h2>5. Evaluation</h2>
+<p>The evaluation output needs to be one of the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>object id</p></li>
+<li><p>object pose</p></li>
+<li><p>object category</p></li>
+<li><p>object bounding box</p></li>
+<li><p>object mask</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<map id="ON_3dmObjectAttributes" name="ON_3dmObjectAttributes">
+<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="1757,5,1843,35"/>
+<area shape="rect" id="node4" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="1753,59,1847,88"/>
+<area shape="rect" id="node6" href="$class_o_n___object_rendering_attributes.html" title="ON_ObjectRenderingAttributes" alt="" coords="1699,169,1901,199"/>
+<area shape="rect" id="node8" href="$class_o_n___rendering_attributes.html" title="ON_RenderingAttributes" alt="" coords="1180,296,1343,325"/>
+<area shape="rect" id="node10" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Material\lRef \&gt;" alt="" coords="657,343,855,390"/>
+<area shape="rect" id="node12" href="$class_o_n___material_ref.html" title="ON_MaterialRef" alt="" coords="303,357,417,387"/>
+<area shape="rect" id="node14" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="7,295,89,324"/>
+<area shape="rect" id="node22" href="$class_o_n___mapping_ref.html" title="ON_MappingRef" alt="" coords="1036,221,1153,251"/>
+<area shape="rect" id="node26" href="$class_o_n___mapping_channel.html" title="ON_MappingChannel" alt="" coords="287,209,433,239"/>
+<area shape="rect" id="node41" href="$class_o_n___display_material_ref.html" title="ON_DisplayMaterialRef" alt="" coords="280,91,440,120"/>
+<area shape="rect" id="node16" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="287,156,433,185"/>
+<area shape="rect" id="node20" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Mapping\lRef \&gt;" alt="" coords="1368,173,1571,219"/>
+<area shape="rect" id="node31" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="284,21,436,51"/>
+<area shape="rect" id="node24" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MappingChannel \&gt;" alt="" coords="680,213,832,259"/>
+<area shape="rect" id="node28" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="7,203,89,232"/>
+<area shape="rect" id="node39" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_DisplayMaterialRef \&gt;" alt="" coords="680,61,832,107"/>
+<area shape="rect" id="node36" href="$class_o_n___color.html" title="ON_Color" alt="" coords="1760,264,1840,293"/>
+</map>

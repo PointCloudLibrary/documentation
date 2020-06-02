@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; NormalT \&gt;" alt="" coords="7,13,183,43"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; NormalT \&gt;" alt="" coords="233,13,383,43"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_normal_refinement.html" title="Normal vector refinement class " alt="" coords="433,5,588,51"/>
+</map>

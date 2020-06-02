@@ -1,0 +1,9 @@
+<map id="pcl::SVM" name="pcl::SVM">
+<area shape="rect" id="node2" href="$structpcl_1_1_s_v_m_param.html" title="The structure stores the parameters for the classificationa nd must be initialized and passed to the ..." alt="" coords="5,171,120,200"/>
+<area shape="rect" id="node4" href="$structsvm__parameter.html" title="svm_parameter" alt="" coords="55,5,167,35"/>
+<area shape="rect" id="node12" href="$structsvm__model.html" title="svm_model" alt="" coords="143,117,231,147"/>
+<area shape="rect" id="node6" href="$structsvm__problem.html" title="svm_problem" alt="" coords="240,171,339,200"/>
+<area shape="rect" id="node8" href="$structsvm__node.html" title="svm_node" alt="" coords="248,5,331,35"/>
+<area shape="rect" id="node16" href="$structsvm__scaling.html" title="svm_scaling" alt="" coords="351,224,444,253"/>
+<area shape="rect" id="node10" href="$structpcl_1_1_s_v_m_model.html" title="The structure initialize a model crated by the SVM (Support Vector Machines) classifier (pcl::SVMTrai..." alt="" coords="132,224,241,253"/>
+</map>

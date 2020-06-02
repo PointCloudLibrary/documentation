@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointModelT \&gt;" alt="" coords="5,67,205,96"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_correspondence_grouping.html" title="Abstract base class for Correspondence Grouping algorithms. " alt="" coords="253,58,456,105"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_geometric_consistency_grouping.html" title="Class implementing a 3D correspondence grouping enforcing geometric consistency among feature corresp..." alt="" coords="527,5,705,69"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_hough3_d_grouping.html" title="Class implementing a 3D correspondence grouping algorithm that can deal with multiple instances of a ..." alt="" coords="505,93,727,157"/>
+</map>

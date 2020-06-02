@@ -1,0 +1,6 @@
+<map id="pcl::EarClipping" name="pcl::EarClipping">
+<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="5,324,149,353"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZ \&gt;" alt="" coords="173,315,312,362"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="137,104,252,133"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="219,219,360,248"/>
+</map>

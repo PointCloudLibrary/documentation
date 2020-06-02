@@ -1,0 +1,6 @@
+<map id="ON_EarthAnchorPoint" name="ON_EarthAnchorPoint">
+<area shape="rect" id="node2" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="5,34,99,63"/>
+<area shape="rect" id="node4" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="123,34,216,63"/>
+<area shape="rect" id="node7" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="333,34,435,63"/>
+<area shape="rect" id="node10" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="556,34,639,63"/>
+</map>

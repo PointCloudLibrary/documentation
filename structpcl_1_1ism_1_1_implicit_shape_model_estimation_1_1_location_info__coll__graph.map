@@ -1,0 +1,6 @@
+<map id="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::LocationInfo" name="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::LocationInfo">
+<area shape="rect" id="node2" href="$structpcl_1_1_point_x_y_z_r_g_b.html" title="A point structure representing Euclidean xyz coordinates, and the RGB color. " alt="" coords="12,85,143,115"/>
+<area shape="rect" id="node4" href="$structpcl_1_1___point_x_y_z_r_g_b.html" title="pcl::_PointXYZRGB" alt="" coords="5,5,144,35"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_normal.html" title="A point structure representing normal coordinates and the surface curvature estimate. " alt="" coords="171,85,259,115"/>
+<area shape="rect" id="node8" href="$structpcl_1_1___normal.html" title="pcl::_Normal" alt="" coords="168,5,264,35"/>
+</map>

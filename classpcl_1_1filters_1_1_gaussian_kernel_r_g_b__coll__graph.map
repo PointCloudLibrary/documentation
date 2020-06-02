@@ -1,0 +1,7 @@
+<map id="pcl::filters::GaussianKernelRGB&lt; PointInT, PointOutT &gt;" name="pcl::filters::GaussianKernelRGB&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1filters_1_1_gaussian_kernel.html" title="Gaussian kernel implementation interface Use this as implementation reference. " alt="" coords="68,510,247,557"/>
+<area shape="rect" id="node4" href="$classpcl_1_1filters_1_1_convolving_kernel.html" title="Class ConvolvingKernel base class for all convolving kernels. " alt="" coords="59,411,256,458"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointInT \&gt;" alt="" coords="65,315,249,344"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+</map>

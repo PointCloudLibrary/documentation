@@ -1,0 +1,8 @@
+<map id="pcl::geometry::MeshBase&lt; DerivedT, MeshTraitsT, MeshTagT &gt;" name="pcl::geometry::MeshBase&lt; DerivedT, MeshTraitsT, MeshTagT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="pcl::geometry::MeshBase\l\&lt; TriangleMesh\&lt; MeshTraitsT\l \&gt;, MeshTraitsT, TriangleMeshTag \&gt;" alt="" coords="452,5,687,69"/>
+<area shape="rect" id="node7" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="pcl::geometry::MeshBase\l\&lt; PolygonMesh\&lt; MeshTraitsT\l \&gt;, MeshTraitsT, PolygonMeshTag \&gt;" alt="" coords="452,93,687,157"/>
+<area shape="rect" id="node11" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="pcl::geometry::MeshBase\l\&lt; QuadMesh\&lt; MeshTraitsT\l \&gt;, MeshTraitsT, QuadMeshTag \&gt;" alt="" coords="460,181,679,245"/>
+<area shape="rect" id="node5" href="$classpcl_1_1geometry_1_1_triangle_mesh.html" title="Half&#45;edge mesh that can only store triangles. " alt="" coords="740,14,927,61"/>
+<area shape="rect" id="node9" href="$classpcl_1_1geometry_1_1_polygon_mesh.html" title="General half&#45;edge mesh that can store any polygon with a minimum number of vertices of 3..." alt="" coords="740,102,927,149"/>
+<area shape="rect" id="node13" href="$classpcl_1_1geometry_1_1_quad_mesh.html" title="Half&#45;edge mesh that can only store quads. " alt="" coords="748,190,919,237"/>
+</map>

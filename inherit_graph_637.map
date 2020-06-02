@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structpcl_1_1gpu_1_1_dev_ptr.html" title="pcl::gpu::DevPtr\&lt; T \&gt;" alt="" coords="5,32,155,61"/>
+<area shape="rect" id="node3" href="$structpcl_1_1gpu_1_1_ptr_step.html" title="pcl::gpu::PtrStep\&lt; T \&gt;" alt="" coords="203,5,355,35"/>
+<area shape="rect" id="node7" href="$structpcl_1_1gpu_1_1_ptr_sz.html" title="pcl::gpu::PtrSz\&lt; T \&gt;" alt="" coords="208,59,349,88"/>
+<area shape="rect" id="node5" href="$structpcl_1_1gpu_1_1_ptr_step_sz.html" title="pcl::gpu::PtrStepSz\&lt; T \&gt;" alt="" coords="403,5,571,35"/>
+</map>

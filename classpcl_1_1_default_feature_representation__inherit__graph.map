@@ -1,0 +1,16 @@
+<map id="pcl::DefaultFeatureRepresentation&lt; PointDefault &gt;" name="pcl::DefaultFeatureRepresentation&lt; PointDefault &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="984,5,1205,51"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="984,74,1205,121"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="984,143,1205,190"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="984,213,1205,259"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="984,282,1205,329"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="984,351,1205,398"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointDefault \&gt;" alt="" coords="320,183,485,230"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="5,183,171,230"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_default_point_representation_3_01_p_p_f_signature_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="1257,5,1463,51"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_default_point_representation_3_01_v_f_h_signature308_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="1257,74,1463,121"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_r_g_b_signature250_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="1257,143,1463,190"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_default_point_representation_3_01_normal_based_signature12_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="1257,213,1463,259"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_default_point_representation_3_01_f_p_f_h_signature33_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="1257,282,1463,329"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_signature125_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="1257,351,1463,398"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="pcl::BilateralUpsampling&lt; PointInT, PointOutT &gt;" name="pcl::BilateralUpsampling&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_cloud_surface_processing.html" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="5,182,195,229"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="12,101,188,131"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="17,5,183,35"/>
+</map>

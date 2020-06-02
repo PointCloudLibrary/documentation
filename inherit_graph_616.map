@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$classpcl_1_1geometry_1_1_face_around_face_circulator.html" title="Circulates clockwise around a face and returns an index to the face of the outer half&#45;edge (the targe..." alt="" coords="200,5,379,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1geometry_1_1_face_around_vertex_circulator.html" title="Circulates counter&#45;clockwise around a vertex and returns an index to the face of the outgoing half&#45;ed..." alt="" coords="200,74,379,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1geometry_1_1_incoming_half_edge_around_vertex_circulator.html" title="Circulates counter&#45;clockwise around a vertex and returns an index to the incoming half&#45;edge (the targ..." alt="" coords="196,144,383,208"/>
+<area shape="rect" id="node9" href="$classpcl_1_1geometry_1_1_inner_half_edge_around_face_circulator.html" title="Circulates clockwise around a face and returns an index to the inner half&#45;edge (the target)..." alt="" coords="200,232,379,296"/>
+<area shape="rect" id="node11" href="$classpcl_1_1geometry_1_1_outer_half_edge_around_face_circulator.html" title="Circulates clockwise around a face and returns an index to the outer half&#45;edge (the target)..." alt="" coords="200,320,379,384"/>
+<area shape="rect" id="node13" href="$classpcl_1_1geometry_1_1_outgoing_half_edge_around_vertex_circulator.html" title="Circulates counter&#45;clockwise around a vertex and returns an index to the outgoing half&#45;edge (the targ..." alt="" coords="196,408,383,472"/>
+<area shape="rect" id="node15" href="$classpcl_1_1geometry_1_1_vertex_around_face_circulator.html" title="Circulates clockwise around a face and returns an index to the terminating vertex of the inner half&#45;e..." alt="" coords="196,495,383,542"/>
+<area shape="rect" id="node17" href="$classpcl_1_1geometry_1_1_vertex_around_vertex_circulator.html" title="Circulates counter&#45;clockwise around a vertex and returns an index to the terminating vertex of the ou..." alt="" coords="196,565,383,611"/>
+</map>

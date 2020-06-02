@@ -1,0 +1,10 @@
+<map id="pcl::NormalDistributionsTransform2D&lt; PointSource, PointTarget &gt;" name="pcl::NormalDistributionsTransform2D&lt; PointSource, PointTarget &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointSource, PointTarget \&gt;" alt="" coords="1283,87,1467,134"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="601,152,799,181"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="883,79,1059,143"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="285,152,451,181"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="632,30,768,77"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="301,5,435,51"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,37,140,83"/>
+<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="300,74,436,121"/>
+</map>

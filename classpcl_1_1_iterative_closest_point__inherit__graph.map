@@ -1,0 +1,10 @@
+<map id="pcl::IterativeClosestPoint&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::IterativeClosestPoint&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_iterative_closest_point_non_linear.html" title="IterativeClosestPointNonLinear is an ICP variant that uses Levenberg&#45;Marquardt optimization backend..." alt="" coords="1229,5,1397,69"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_iterative_closest_point_with_normals.html" title="IterativeClosestPointWithNormals is a special case of IterativeClosestPoint, that uses a transformati..." alt="" coords="1221,93,1405,157"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_joint_iterative_closest_point.html" title="JointIterativeClosestPoint extends ICP to multiple frames which share the same transform. " alt="" coords="1207,181,1420,245"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_iterative_closest_point.html" title="pcl::IterativeClosestPoint\l\&lt; PointSource, PointTarget \&gt;" alt="" coords="1217,269,1409,315"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="571,137,747,201"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,155,519,184"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,155,171,184"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_generalized_iterative_closest_point.html" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="1472,260,1656,324"/>
+</map>

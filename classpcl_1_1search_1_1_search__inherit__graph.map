@@ -1,0 +1,24 @@
+<map id="pcl::search::Search&lt; PointT &gt;" name="pcl::search::Search&lt; PointT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_kd_tree.html" title="KdTree\&lt; PointT \&gt;" alt="" coords="379,5,504,35"/>
+<area shape="rect" id="node5" href="$classpcl_1_1search_1_1_brute_force.html" title="Implementation of a simple brute force search algorithm. " alt="" coords="363,58,520,105"/>
+<area shape="rect" id="node7" href="$classpcl_1_1search_1_1_flann_search.html" title="search::FlannSearch is a generic FLANN wrapper class for the new search interface. " alt="" coords="359,127,524,174"/>
+<area shape="rect" id="node9" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="373,307,509,354"/>
+<area shape="rect" id="node18" href="$classpcl_1_1search_1_1_octree.html" title="search::Octree is a wrapper class which implements nearest neighbor search operations based on the pc..." alt="" coords="375,515,508,562"/>
+<area shape="rect" id="node20" href="$classpcl_1_1search_1_1_organized_neighbor.html" title="OrganizedNeighbor is a class for optimized nearest neigbhor search in organized point clouds..." alt="" coords="339,585,544,631"/>
+<area shape="rect" id="node22" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointSource \&gt;" alt="" coords="375,654,508,701"/>
+<area shape="rect" id="node24" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="375,723,508,770"/>
+<area shape="rect" id="node26" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointXYZ \&gt;" alt="" coords="375,793,508,839"/>
+<area shape="rect" id="node28" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="364,197,519,243"/>
+<area shape="rect" id="node31" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointIn \&gt;" alt="" coords="375,862,508,909"/>
+<area shape="rect" id="node33" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointNT \&gt;" alt="" coords="375,931,508,978"/>
+<area shape="rect" id="node35" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\&lt; T \&gt;" alt="" coords="359,1001,524,1031"/>
+<area shape="rect" id="node37" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; SceneT \&gt;" alt="" coords="375,377,508,423"/>
+<area shape="rect" id="node40" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="375,446,508,493"/>
+<area shape="rect" id="node43" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; pcl::PointXYZRGBA \&gt;" alt="" coords="359,1054,524,1101"/>
+<area shape="rect" id="node45" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointWithRange \&gt;" alt="" coords="371,1123,512,1170"/>
+<area shape="rect" id="node47" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="375,1193,508,1239"/>
+<area shape="rect" id="node49" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointXYZRGB \&gt;" alt="" coords="375,1262,508,1309"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="732,237,887,283"/>
+<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; SceneT \&gt;" alt="" coords="741,319,877,366"/>
+<area shape="rect" id="node16" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="741,415,877,462"/>
+</map>

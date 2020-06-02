@@ -1,0 +1,8 @@
+<map id="pcl::registration::CorrespondenceEstimationBase&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::CorrespondenceEstimationBase&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1registration_1_1_correspondence_estimation.html" title="CorrespondenceEstimation represents the base class for determining correspondences between target and..." alt="" coords="861,5,1045,86"/>
+<area shape="rect" id="node9" href="$classpcl_1_1registration_1_1_correspondence_estimation_back_projection.html" title="CorrespondenceEstimationBackprojection computes correspondences as points in the target cloud which h..." alt="" coords="849,109,1057,190"/>
+<area shape="rect" id="node11" href="$classpcl_1_1registration_1_1_correspondence_estimation_normal_shooting.html" title="CorrespondenceEstimationNormalShooting computes correspondences as points in the target cloud which h..." alt="" coords="836,213,1071,294"/>
+<area shape="rect" id="node13" href="$classpcl_1_1registration_1_1_correspondence_estimation_organized_projection.html" title="CorrespondenceEstimationOrganizedProjection computes correspondences by projecting the source point c..." alt="" coords="832,317,1075,398"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,187,519,216"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,187,171,216"/>
+</map>

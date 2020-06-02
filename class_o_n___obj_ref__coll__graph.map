@@ -1,0 +1,12 @@
+<map id="ON_ObjRef" name="ON_ObjRef">
+<area shape="rect" id="node2" href="$class_o_n___obj_ref_evaluation_parameter.html" title="ON_ObjRefEvaluationParameter" alt="" coords="176,220,387,249"/>
+<area shape="rect" id="node9" href="$class_o_n___obj_ref___i_ref_i_d.html" title="ON_ObjRef_IRefID" alt="" coords="560,97,696,127"/>
+<area shape="rect" id="node4" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="7,220,97,249"/>
+<area shape="rect" id="node7" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_ObjRef_IRefID \&gt;" alt="" coords="896,142,1048,189"/>
+<area shape="rect" id="node12" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="240,96,323,125"/>
+<area shape="rect" id="node14" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="240,5,323,35"/>
+<area shape="rect" id="node16" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="552,151,704,180"/>
+<area shape="rect" id="node20" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="919,293,1025,323"/>
+<area shape="rect" id="node22" href="$class_o_n___object.html" title="ON_Object" alt="" coords="585,293,671,323"/>
+<area shape="rect" id="node24" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="925,405,1019,435"/>
+</map>

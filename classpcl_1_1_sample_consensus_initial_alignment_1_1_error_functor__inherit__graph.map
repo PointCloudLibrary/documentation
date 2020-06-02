@@ -1,0 +1,4 @@
+<map id="pcl::SampleConsensusInitialAlignment&lt; PointSource, PointTarget, FeatureT &gt;::ErrorFunctor" name="pcl::SampleConsensusInitialAlignment&lt; PointSource, PointTarget, FeatureT &gt;::ErrorFunctor">
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_initial_alignment_1_1_huber_penalty.html" title="pcl::SampleConsensusInitial\lAlignment\&lt; PointSource,\l PointTarget, FeatureT \&gt;\l::HuberPenalty" alt="" coords="244,5,431,86"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_sample_consensus_initial_alignment_1_1_truncated_error.html" title="pcl::SampleConsensusInitial\lAlignment\&lt; PointSource,\l PointTarget, FeatureT \&gt;\l::TruncatedError" alt="" coords="244,109,431,190"/>
+</map>

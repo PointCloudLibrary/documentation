@@ -1,0 +1,6 @@
+<map id="pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;" name="pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="pcl::tracking::Tracker\l\&lt; PointInT, Eigen::Affine3f \&gt;" alt="" coords="20,313,209,359"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
+<area shape="rect" id="node8" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="115,182,259,229"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+</map>

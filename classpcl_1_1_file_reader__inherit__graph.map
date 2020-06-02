@@ -1,0 +1,6 @@
+<map id="pcl::FileReader" name="pcl::FileReader">
+<area shape="rect" id="node3" href="$classpcl_1_1_a_s_c_i_i_reader.html" title="Ascii Point Cloud Reader. " alt="" coords="5,83,131,112"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_o_b_j_reader.html" title="pcl::OBJReader" alt="" coords="155,83,269,112"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_p_c_d_reader.html" title="Point Cloud Data (PCD) file format reader. " alt="" coords="293,83,411,112"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_p_l_y_reader.html" title="Point Cloud Data (PLY) file format reader. " alt="" coords="435,83,549,112"/>
+</map>

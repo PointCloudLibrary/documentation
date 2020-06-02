@@ -1,0 +1,11 @@
+<map id="pcl::AgastKeypoint2D&lt; PointInT, PointOutT &gt;" name="pcl::AgastKeypoint2D&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="pcl::AgastKeypoint2DBase\l\&lt; PointInT, PointOutT,\l pcl::common::IntensityFieldAccessor\l\&lt; PointInT \&gt; \&gt;" alt="" coords="1261,66,1504,147"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="565,70,728,117"/>
+<area shape="rect" id="node18" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="Detects 2D AGAST corner points. " alt="" coords="867,5,1045,69"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,53,472,83"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,53,171,83"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="317,106,451,153"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="21,106,155,153"/>
+<area shape="rect" id="node14" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title="pcl::common::IntensityField\lAccessor\&lt; PointInT \&gt;" alt="" coords="865,143,1047,190"/>
+<area shape="rect" id="node16" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title="pcl::common::IntensityField\lAccessor\&lt; PointT \&gt;" alt="" coords="556,143,737,190"/>
+</map>

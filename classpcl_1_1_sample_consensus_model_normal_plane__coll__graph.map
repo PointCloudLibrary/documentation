@@ -1,0 +1,9 @@
+<map id="pcl::SampleConsensusModelNormalPlane&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelNormalPlane&lt; PointT, PointNT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation. " alt="" coords="1392,202,1584,249"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="933,210,1125,257"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="648,232,821,261"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="165,164,280,193"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="375,169,516,199"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointNT \&gt;" alt="" coords="644,121,825,151"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="1149,141,1368,187"/>
+</map>

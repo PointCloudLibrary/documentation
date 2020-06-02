@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_branch_estimator.html" title="Interface for branch estimators. " alt="" coords="5,48,149,77"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_binary_tree_threshold_based_branch_estimator.html" title="Branch estimator for binary trees where the branch is computed only from the threshold. " alt="" coords="211,5,376,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_ternary_tree_missing_data_branch_estimator.html" title="Branch estimator for ternary trees where one branch is used for missing data (indicated by flag != 0)..." alt="" coords="199,74,388,121"/>
+</map>

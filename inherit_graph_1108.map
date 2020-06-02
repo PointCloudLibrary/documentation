@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,178,140,225"/>
+<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointT \&gt;" alt="" coords="224,5,360,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1search_1_1_brute_force.html" title="Implementation of a simple brute force search algorithm. " alt="" coords="213,74,371,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1search_1_1_flann_search.html" title="search::FlannSearch is a generic FLANN wrapper class for the new search interface. " alt="" coords="204,143,380,190"/>
+<area shape="rect" id="node9" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="224,213,360,259"/>
+<area shape="rect" id="node11" href="$classpcl_1_1search_1_1_octree.html" title="search::Octree is a wrapper class which implements nearest neighbor search operations based on the pc..." alt="" coords="205,283,379,347"/>
+<area shape="rect" id="node13" href="$classpcl_1_1search_1_1_organized_neighbor.html" title="OrganizedNeighbor is a class for optimized nearest neigbhor search in organized point clouds..." alt="" coords="189,370,395,417"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$structpcl_1_1visualization_1_1_p_c_l_context_image_item.html" title="Struct PCLContextImageItem a specification of vtkContextItem, used to add an image to the scene in th..." alt="" coords="167,109,329,155"/>
+<area shape="rect" id="node5" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="184,178,312,225"/>
+<area shape="rect" id="node27" href="$classpcl_1_1visualization_1_1_p_c_l_painter2_d.html" title="PCL Painter2D main class. " alt="" coords="189,247,307,294"/>
+<area shape="rect" id="node7" href="$structpcl_1_1visualization_1_1context__items_1_1_circle.html" title="pcl::visualization\l::context_items::Circle" alt="" coords="391,5,545,51"/>
+<area shape="rect" id="node11" href="$structpcl_1_1visualization_1_1context__items_1_1_line.html" title="pcl::visualization\l::context_items::Line" alt="" coords="396,74,540,121"/>
+<area shape="rect" id="node13" href="$structpcl_1_1visualization_1_1context__items_1_1_point.html" title="pcl::visualization\l::context_items::Point" alt="" coords="393,143,543,190"/>
+<area shape="rect" id="node15" href="$structpcl_1_1visualization_1_1context__items_1_1_points.html" title="pcl::visualization\l::context_items::Points" alt="" coords="389,213,547,259"/>
+<area shape="rect" id="node21" href="$structpcl_1_1visualization_1_1context__items_1_1_rectangle.html" title="pcl::visualization\l::context_items::Rectangle" alt="" coords="379,282,557,329"/>
+<area shape="rect" id="node25" href="$structpcl_1_1visualization_1_1context__items_1_1_text.html" title="pcl::visualization\l::context_items::Text" alt="" coords="395,351,541,398"/>
+<area shape="rect" id="node9" href="$structpcl_1_1visualization_1_1context__items_1_1_disk.html" title="pcl::visualization\l::context_items::Disk" alt="" coords="637,5,784,51"/>
+<area shape="rect" id="node17" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title="pcl::visualization\l::context_items::Markers" alt="" coords="628,143,793,190"/>
+<area shape="rect" id="node19" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title="pcl::visualization\l::context_items::Polygon" alt="" coords="628,213,793,259"/>
+<area shape="rect" id="node23" href="$structpcl_1_1visualization_1_1context__items_1_1_filled_rectangle.html" title="pcl::visualization\l::context_items::FilledRectangle" alt="" coords="605,282,816,329"/>
+</map>

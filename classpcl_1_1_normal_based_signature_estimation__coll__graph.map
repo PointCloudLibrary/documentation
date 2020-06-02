@@ -1,0 +1,10 @@
+<map id="pcl::NormalBasedSignatureEstimation&lt; PointT, PointNT, PointFeature &gt;" name="pcl::NormalBasedSignatureEstimation&lt; PointT, PointNT, PointFeature &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointT, PointNT, PointFeature \&gt;" alt="" coords="1292,38,1513,85"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointT,\l PointFeature \&gt;" alt="" coords="947,5,1091,51"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,21,171,51"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,53,472,83"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="556,66,711,113"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="909,74,1128,121"/>
+<area shape="rect" id="node13" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="317,106,451,153"/>
+<area shape="rect" id="node15" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="21,106,155,153"/>
+</map>

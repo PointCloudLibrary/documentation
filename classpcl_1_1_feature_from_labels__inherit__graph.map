@@ -1,0 +1,6 @@
+<map id="pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;" name="pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_g_f_p_f_h_estimation.html" title="GFPFHEstimation estimates the Global Fast Point Feature Histogram (GFPFH) descriptor for a given poin..." alt="" coords="35,379,189,443"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="35,182,189,229"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="24,101,200,131"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="29,5,195,35"/>
+</map>

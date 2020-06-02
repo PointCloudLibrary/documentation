@@ -1,0 +1,5 @@
+<map id="pcl::HypothesisVerification&lt; ModelT, SceneT &gt;" name="pcl::HypothesisVerification&lt; ModelT, SceneT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_global_hypotheses_verification.html" title="A hypothesis verification method proposed in &quot;A Global Hypotheses Verification Method for 3D Object R..." alt="" coords="232,5,451,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_greedy_verification.html" title="A greedy hypothesis verification method. " alt="" coords="264,74,419,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_papazov_h_v.html" title="A hypothesis verification method proposed in &quot;An Efficient RANSAC for 3D Object Recognition in Noisy ..." alt="" coords="253,143,429,190"/>
+</map>

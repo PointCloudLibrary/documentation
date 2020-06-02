@@ -1,0 +1,8 @@
+<map id="pcl::NormalBasedSignatureEstimation&lt; PointT, PointNT, PointFeature &gt;" name="pcl::NormalBasedSignatureEstimation&lt; PointT, PointNT, PointFeature &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointT, PointNT, PointFeature \&gt;" alt="" coords="1260,39,1481,86"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointT,\l PointFeature \&gt;" alt="" coords="915,5,1059,51"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,24,171,53"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,55,472,84"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="524,53,679,99"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="877,74,1096,121"/>
+</map>

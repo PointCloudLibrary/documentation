@@ -1,0 +1,6 @@
+<map id="pcl::IterativeClosestPointWithNormals&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::IterativeClosestPointWithNormals&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm..." alt="" coords="12,296,196,360"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="16,181,192,245"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="5,101,203,131"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="21,5,187,35"/>
+</map>

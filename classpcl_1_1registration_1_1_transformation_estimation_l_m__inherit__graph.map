@@ -1,0 +1,9 @@
+<map id="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;" name="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="TransformationEstimation\lPointToPlane\&lt; PointSource,\l PointTarget, MatScalar \&gt;" alt="" coords="1259,5,1445,69"/>
+<area shape="rect" id="node11" href="$classpcl_1_1registration_1_1_transformation_estimation_l_m.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l Scalar \&gt;" alt="" coords="1045,74,1235,155"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="405,25,589,106"/>
+<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="5,25,189,106"/>
+<area shape="rect" id="node9" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted.html" title="TransformationEstimationPointToPlaneWeighted uses Levenberg Marquardt optimization to find the transf..." alt="" coords="2201,25,2412,106"/>
+<area shape="rect" id="node13" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="TransformationEstimationPointToPlane uses Levenberg Marquardt optimization to find the transformation..." alt="" coords="1469,74,1701,155"/>
+<area shape="rect" id="node15" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlane\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="1917,74,2149,155"/>
+</map>

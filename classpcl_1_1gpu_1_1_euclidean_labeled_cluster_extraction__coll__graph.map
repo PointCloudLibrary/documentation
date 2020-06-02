@@ -1,0 +1,5 @@
+<map id="pcl::gpu::EuclideanLabeledClusterExtraction&lt; PointT &gt;" name="pcl::gpu::EuclideanLabeledClusterExtraction&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="24,182,171,229"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="35,5,197,35"/>
+<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="113,85,292,115"/>
+</map>

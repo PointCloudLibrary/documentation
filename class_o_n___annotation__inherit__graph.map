@@ -1,0 +1,9 @@
+<map id="ON_Annotation" name="ON_Annotation">
+<area shape="rect" id="node7" href="$class_o_n___angular_dimension.html" title="ON_AngularDimension" alt="" coords="5,237,160,267"/>
+<area shape="rect" id="node9" href="$class_o_n___leader.html" title="ON_Leader" alt="" coords="184,237,272,267"/>
+<area shape="rect" id="node11" href="$class_o_n___linear_dimension.html" title="ON_LinearDimension" alt="" coords="296,237,443,267"/>
+<area shape="rect" id="node13" href="$class_o_n___radial_dimension.html" title="ON_RadialDimension" alt="" coords="467,237,613,267"/>
+<area shape="rect" id="node15" href="$class_o_n___text_entity.html" title="ON_TextEntity" alt="" coords="637,237,747,267"/>
+<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="316,83,423,112"/>
+<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="327,5,412,35"/>
+</map>

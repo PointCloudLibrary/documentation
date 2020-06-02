@@ -1,0 +1,4 @@
+<map id="pcl::io::PointCloudImageExtractorFromCurvatureField&lt; PointT &gt;" name="pcl::io::PointCloudImageExtractorFromCurvatureField&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_with_scaling.html" title="Image Extractor extension which provides functionality to apply scaling to the values extracted from ..." alt="" coords="17,101,183,165"/>
+<area shape="rect" id="node4" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds. " alt="" coords="17,6,183,53"/>
+</map>

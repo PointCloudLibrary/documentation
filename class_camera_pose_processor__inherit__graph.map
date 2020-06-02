@@ -1,0 +1,3 @@
+<map id="CameraPoseProcessor" name="CameraPoseProcessor">
+<area shape="rect" id="node3" href="$class_camera_pose_writer.html" title="CameraPoseWriter writes all camera poses computed by the KinfuTracker to a file on disk..." alt="" coords="17,83,151,112"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="pcl::Filter&lt; pcl::PCLPointCloud2 &gt;" name="pcl::Filter&lt; pcl::PCLPointCloud2 &gt;">
+<area shape="rect" id="node5" href="$classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="427,74,595,121"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_pass_through_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="PassThrough uses the base Filter class methods to pass through all data that satisfies the user given..." alt="" coords="435,143,587,190"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_project_inliers_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="ProjectInliers uses a model and a set of inlier indices from a PointCloud to project them into a sepa..." alt="" coords="427,213,595,259"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_radius_outlier_removal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RadiusOutlierRemoval is a simple filter that removes outliers if the number of neighbors in a certain..." alt="" coords="421,282,600,329"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_statistical_outlier_removal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="StatisticalOutlierRemoval uses point neighborhood statistics to filter outlier data. " alt="" coords="413,351,608,398"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_voxel_grid_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="441,421,580,467"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="7,247,145,294"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_crop_box_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="CropBox is a filter that allows the user to filter all the data inside of a given box..." alt="" coords="673,5,807,51"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_extract_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="ExtractIndices extracts a set of indices from a point cloud. " alt="" coords="656,74,824,121"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_random_sample_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RandomSample applies a random sampling with uniform probability. " alt="" coords="660,143,820,190"/>
+</map>

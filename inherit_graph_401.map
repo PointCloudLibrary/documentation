@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_comparison_base.html" title="The (abstract) base class for the comparison object. " alt="" coords="5,109,152,155"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_field_comparison.html" title="The field&#45;based specialization of the comparison object. " alt="" coords="233,5,377,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_packed_h_s_i_comparison.html" title="A packed HSI specialization of the comparison object. " alt="" coords="213,74,397,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_packed_r_g_b_comparison.html" title="A packed rgb specialization of the comparison object. " alt="" coords="211,143,400,190"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_tf_quadratic_x_y_z_comparison.html" title="A comparison whether the (x,y,z) components of a given point satisfy (p&#39;Ap + 2v&#39;p + c [OP] 0)..." alt="" coords="200,213,411,259"/>
+</map>

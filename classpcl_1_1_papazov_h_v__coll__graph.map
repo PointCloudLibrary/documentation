@@ -1,0 +1,10 @@
+<map id="pcl::PapazovHV&lt; ModelT, SceneT &gt;" name="pcl::PapazovHV&lt; ModelT, SceneT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_hypothesis_verification.html" title="Abstract class for hypotheses verification methods. " alt="" coords="1083,163,1261,210"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; SceneT \&gt;" alt="" coords="692,132,871,161"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="176,20,291,49"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="425,97,567,127"/>
+<area shape="rect" id="node17" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; SceneT \&gt;" alt="" coords="713,210,849,257"/>
+<area shape="rect" id="node19" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; SceneT \&gt;" alt="" coords="429,210,563,257"/>
+<area shape="rect" id="node21" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="167,247,300,294"/>
+<area shape="rect" id="node23" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="428,279,564,326"/>
+</map>

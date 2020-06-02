@@ -1,0 +1,12 @@
+<map id="pcl::gpu::FeatureFromNormals" name="pcl::gpu::FeatureFromNormals">
+<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_f_p_f_h_estimation.html" title="Class for FPFH estimation. " alt="" coords="452,5,625,35"/>
+<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_p_f_h_estimation.html" title="Class for PFH estimation. " alt="" coords="456,59,621,88"/>
+<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_p_f_h_r_g_b_estimation.html" title="Class for PFHRGB estimation. " alt="" coords="441,112,636,141"/>
+<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_p_p_f_estimation.html" title="** " alt="" coords="457,165,620,195"/>
+<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_p_p_f_r_g_b_estimation.html" title="** " alt="" coords="443,219,635,248"/>
+<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_p_p_f_r_g_b_region_estimation.html" title="** " alt="" coords="421,272,656,301"/>
+<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_principal_curvatures_estimation.html" title="Class for PPFRGBRegion estimation. " alt="" coords="444,325,633,371"/>
+<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_spin_image_estimation.html" title="Class for SpinImages estimation. " alt="" coords="439,395,639,424"/>
+<area shape="rect" id="node21" href="$classpcl_1_1gpu_1_1_v_f_h_estimation.html" title="** " alt="" coords="456,448,621,477"/>
+<area shape="rect" id="node2" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="5,219,125,248"/>
+</map>

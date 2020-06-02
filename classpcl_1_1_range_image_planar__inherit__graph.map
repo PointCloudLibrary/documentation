@@ -1,0 +1,5 @@
+<map id="pcl::RangeImagePlanar" name="pcl::RangeImagePlanar">
+<area shape="rect" id="node2" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="35,200,155,229"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="5,102,184,149"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="24,5,165,35"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="pcl::PlanarRegion&lt; PointT &gt;" name="pcl::PlanarRegion&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_region3_d.html" title="Region3D represents summary statistics of a 3D collection of points. " alt="" coords="5,439,171,468"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_planar_polygon.html" title="PlanarPolygon represents a planar (2D) polygon, potentially in a 3D space. " alt="" coords="195,430,325,477"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="191,315,329,362"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="159,104,273,133"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="240,219,381,248"/>
+</map>

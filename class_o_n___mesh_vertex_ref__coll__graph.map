@@ -1,0 +1,45 @@
+<map id="ON_MeshVertexRef" name="ON_MeshVertexRef">
+<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="1293,45,1400,75"/>
+<area shape="rect" id="node6" href="$class_o_n___mesh.html" title="ON_Mesh" alt="" coords="1655,520,1735,549"/>
+<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="945,69,1031,99"/>
+<area shape="rect" id="node62" href="$class_o_n___mesh_topology.html" title="ON_MeshTopology" alt="" coords="1844,1115,1977,1144"/>
+<area shape="rect" id="node9" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Texture\lCoordinates \&gt;" alt="" coords="1248,163,1445,210"/>
+<area shape="rect" id="node11" href="$class_o_n___texture_coordinates.html" title="ON_TextureCoordinates" alt="" coords="907,135,1069,164"/>
+<area shape="rect" id="node13" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_3fPoint \&gt;" alt="" coords="529,73,681,119"/>
+<area shape="rect" id="node59" href="$class_o_n__3f_point_array.html" title="ON_3fPointArray" alt="" coords="1099,639,1219,668"/>
+<area shape="rect" id="node15" href="$class_o_n__3f_point.html" title="ON_3fPoint" alt="" coords="164,47,255,76"/>
+<area shape="rect" id="node18" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="133,725,285,755"/>
+<area shape="rect" id="node36" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; bool \&gt;" alt="" coords="713,377,881,407"/>
+<area shape="rect" id="node39" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MeshFace \&gt;" alt="" coords="529,423,681,470"/>
+<area shape="rect" id="node45" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_Color \&gt;" alt="" coords="529,506,681,553"/>
+<area shape="rect" id="node53" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_2dPoint \&gt;" alt="" coords="529,575,681,622"/>
+<area shape="rect" id="node64" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MeshTopologyEdge \&gt;" alt="" coords="528,1078,683,1125"/>
+<area shape="rect" id="node70" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="1471,1145,1628,1175"/>
+<area shape="rect" id="node73" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MeshTopologyFace \&gt;" alt="" coords="528,1199,683,1246"/>
+<area shape="rect" id="node78" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MeshTopologyVertex \&gt;" alt="" coords="524,1273,687,1319"/>
+<area shape="rect" id="node85" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_2fPoint \&gt;" alt="" coords="529,697,681,743"/>
+<area shape="rect" id="node93" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_3fVector \&gt;" alt="" coords="529,779,681,826"/>
+<area shape="rect" id="node102" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_SurfaceCurvature \&gt;" alt="" coords="529,903,681,950"/>
+<area shape="rect" id="node110" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; struct\l ON_MeshPart \&gt;" alt="" coords="523,999,688,1046"/>
+<area shape="rect" id="node28" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="336,268,483,297"/>
+<area shape="rect" id="node22" href="$class_o_n___mapping_tag.html" title="ON_MappingTag" alt="" coords="545,143,665,172"/>
+<area shape="rect" id="node24" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="168,143,251,172"/>
+<area shape="rect" id="node26" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="168,196,251,225"/>
+<area shape="rect" id="node31" href="$class_o_n___mesh_curvature_stats.html" title="ON_MeshCurvatureStats" alt="" coords="1263,284,1431,313"/>
+<area shape="rect" id="node33" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="943,344,1033,373"/>
+<area shape="rect" id="node41" href="$class_o_n___mesh_face.html" title="ON_MeshFace" alt="" coords="155,371,264,400"/>
+<area shape="rect" id="node47" href="$class_o_n___color.html" title="ON_Color" alt="" coords="169,465,249,495"/>
+<area shape="rect" id="node51" href="$class_o_n__2d_point_array.html" title="ON_2dPointArray" alt="" coords="1097,576,1220,605"/>
+<area shape="rect" id="node55" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="163,577,256,607"/>
+<area shape="rect" id="node66" href="$struct_o_n___mesh_topology_edge.html" title="ON_MeshTopologyEdge" alt="" coords="128,1104,291,1133"/>
+<area shape="rect" id="node75" href="$struct_o_n___mesh_topology_face.html" title="ON_MeshTopologyFace" alt="" coords="128,1233,291,1263"/>
+<area shape="rect" id="node80" href="$struct_o_n___mesh_topology_vertex.html" title="ON_MeshTopologyVertex" alt="" coords="124,1329,295,1359"/>
+<area shape="rect" id="node83" href="$class_o_n__2f_point_array.html" title="ON_2fPointArray" alt="" coords="1099,705,1219,735"/>
+<area shape="rect" id="node87" href="$class_o_n__2f_point.html" title="ON_2fPoint" alt="" coords="164,672,255,701"/>
+<area shape="rect" id="node91" href="$class_o_n__3f_vector_array.html" title="ON_3fVectorArray" alt="" coords="1095,788,1223,817"/>
+<area shape="rect" id="node95" href="$class_o_n__3f_vector.html" title="ON_3fVector" alt="" coords="160,872,259,901"/>
+<area shape="rect" id="node99" href="$class_o_n___mesh_parameters.html" title="ON_MeshParameters" alt="" coords="1273,909,1420,939"/>
+<area shape="rect" id="node104" href="$class_o_n___surface_curvature.html" title="ON_SurfaceCurvature" alt="" coords="135,925,284,955"/>
+<area shape="rect" id="node108" href="$class_o_n___mesh_partition.html" title="ON_MeshPartition" alt="" coords="924,1015,1052,1044"/>
+<area shape="rect" id="node112" href="$struct_o_n___mesh_part.html" title="ON_MeshPart" alt="" coords="157,1008,261,1037"/>
+</map>

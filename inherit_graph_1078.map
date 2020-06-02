@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="5,5,189,86"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation_l_m.html" title="TransformationEstimationLM implements Levenberg Marquardt&#45;based estimation of the transformation alig..." alt="" coords="237,5,427,86"/>
+<area shape="rect" id="node5" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlane\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="475,5,707,86"/>
+<area shape="rect" id="node7" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted.html" title="TransformationEstimationPointToPlaneWeighted uses Levenberg Marquardt optimization to find the transf..." alt="" coords="756,5,967,86"/>
+</map>

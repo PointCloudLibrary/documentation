@@ -1,0 +1,7 @@
+<map id="pcl::PlaneCoefficientComparator&lt; PointT, PointNT &gt;" name="pcl::PlaneCoefficientComparator&lt; PointT, PointNT &gt;">
+<area shape="rect" id="node5" href="$classpcl_1_1_edge_aware_plane_comparator.html" title="EdgeAwarePlaneComparator is a Comparator that operates on plane coefficients, for use in planar segme..." alt="" coords="492,5,705,51"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_euclidean_plane_coefficient_comparator.html" title="EuclideanPlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar segmentation. " alt="" coords="495,74,703,121"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_plane_refinement_comparator.html" title="PlaneRefinementComparator is a Comparator that operates on plane coefficients, for use in planar segm..." alt="" coords="492,143,705,190"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_r_g_b_plane_coefficient_comparator.html" title="RGBPlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar segmentation. " alt="" coords="495,213,703,259"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function. " alt="" coords="7,117,183,147"/>
+</map>

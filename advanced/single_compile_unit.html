@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Single compilation units</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.11.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Single compilation units</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Single compilation units</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="single-compilation-units">
+<span id="single-compile-unit"></span><h1>Single compilation units</h1>
+<p>Even before reading <a class="footnote-reference brackets" href="#id3" id="id1">1</a>, we noticed a great speed up in compile time for all
+PCL libraries if instead of compiling N object files and linking them together,
+we compile only one, and include all the sources of the N files in this main
+source. If you peek at an older version of PCL, you might notice things along
+the lines of:</p>
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="c1">// Include the implementations instead of compiling them separately to speed up compile time</span>
+ <span class="cp">#include</span> <span class="cpf">&quot;extract_indices.cpp&quot;</span><span class="cp"></span>
+ <span class="cp">#include</span> <span class="cpf">&quot;passthrough.cpp&quot;</span><span class="cp"></span>
+ <span class="cp">#include</span> <span class="cpf">&quot;project_inliers.cpp&quot;</span><span class="cp"></span>
+ <span class="cp">#include</span> <span class="cpf">&quot;statistical_outlier_removal.cpp&quot;</span><span class="cp"></span>
+ <span class="cp">#include</span> <span class="cpf">&quot;voxel_grid.cpp&quot;</span><span class="cp"></span>
+</pre></div>
+</td></tr></table></div>
+<p>and in CMakeLists.txt:</p>
+<div class="highlight-cmake notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="nb">rosbuild_add_library</span> <span class="p">(</span><span class="s">pcl_ros_filters</span>
+                       <span class="s">src/pcl_ros/filters/filter.cpp</span>
+                       <span class="c"># Compilation is much faster if we include all the following CPP files in filters.cpp</span>
+                       <span class="c">#src/pcl_ros/filters/passthrough.cpp</span>
+                       <span class="c">#src/pcl_ros/filters/project_inliers.cpp</span>
+                       <span class="c">#src/pcl_ros/filters/extract_indices.cpp</span>
+                       <span class="c">#src/pcl_ros/filters/statistical_outlier_removal.cpp</span>
+                       <span class="c">#src/pcl_ros/filters/voxel_grid.cpp</span>
+                      <span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>For more information on how/why this works, see <a class="footnote-reference brackets" href="#id3" id="id2">1</a>.</p>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="http://gamesfromwithin.com/physical-structure-and-c-part-2-build-times">http://gamesfromwithin.com/physical-structure-and-c-part-2-build-times</a></p>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

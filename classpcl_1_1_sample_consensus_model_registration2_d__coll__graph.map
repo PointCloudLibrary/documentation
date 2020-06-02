@@ -1,0 +1,7 @@
+<map id="pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;" name="pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_registration.html" title="SampleConsensusModelRegistration defines a model for Point&#45;To&#45;Point registration outlier rejection..." alt="" coords="61,510,253,557"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="61,411,253,458"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="71,315,244,344"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+</map>

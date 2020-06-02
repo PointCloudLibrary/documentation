@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Evaluating pcl/registration</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.11.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Evaluating pcl/registration</a><ul>
+<li><a class="reference internal" href="#data-generation">Data generation</a></li>
+<li><a class="reference internal" href="#architecture">Architecture</a></li>
+<li><a class="reference internal" href="#evaluating-different-algorithms">Evaluating different algorithms</a><ul>
+<li><a class="reference internal" href="#icp">ICP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#similar-projects">Similar Projects</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Evaluating pcl/registration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="evaluating-pcl-registration">
+<h1>Evaluating pcl/registration</h1>
+<p>This is a collection of ideas on how to build an evaluation framework of pcl/registration.</p>
+<div class="section" id="data-generation">
+<h2>Data generation</h2>
+<ul class="simple">
+<li><p>synthetic data</p></li>
+<li><p>real word data (how to get ground truth?)
+- Kinect
+- PR2 laser scanner
+- SICK laser data
+- small range 3D scanner
+- mid range 3D scanner (Faro)
+- high end 3D scanner (Riegl, Velodyne)</p></li>
+<li><p>Point Types
+- 2D(?)
+- 3D
+- RGB</p></li>
+<li><p>dynamics
+- static scans
+- scanning while driving (e.g. robots)</p></li>
+<li><p>size
+- room
+- building
+- outdoor (street)</p></li>
+</ul>
+</div>
+<div class="section" id="architecture">
+<h2>Architecture</h2>
+<ul class="simple">
+<li><p>some lib for polygonal data</p></li>
+<li><p>modeling different sensors</p></li>
+<li><p>modeling noise</p></li>
+<li><p>add a trajectory file</p></li>
+<li><p>output a pile of .pcd files</p></li>
+<li><p>integrate command line tools from PCL grandfather</p></li>
+</ul>
+</div>
+<div class="section" id="evaluating-different-algorithms">
+<h2>Evaluating different algorithms</h2>
+<div class="section" id="icp">
+<h3>ICP</h3>
+<ul class="simple">
+<li><p>how does the algorithm cope with outliers</p></li>
+<li><p>how are the point pairs evaluated:</p>
+<ul>
+<li><p>does it use normal or RGB information</p></li>
+<li><p>does it weight the pairs differently</p></li>
+<li><p>which kind of point pairs are used:</p>
+<ul>
+<li><p>one-to-one</p></li>
+<li><p>one-to-many</p></li>
+<li><p>many-to-many</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="similar-projects">
+<h2>Similar Projects</h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://stanford.edu/~avsegal/resources/papers/Generalized_ICP.pdf">GICP</a></p></li>
+<li><p>Gazebo</p></li>
+<li><p><a class="reference external" href="http://kaspar.informatik.uni-freiburg.de/~slamEvaluation/index.php">slam benchmarking</a></p></li>
+<li><p><a class="reference external" href="http://slameval.willowgarage.com/workshop/">Automated SLAM Evaluation</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

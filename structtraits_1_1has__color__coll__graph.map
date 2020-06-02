@@ -1,0 +1,4 @@
+<map id="traits::has_color&lt; PointT &gt;" name="traits::has_color&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$structtraits_1_1has__any__field.html" title="traits::has_any_field\l\&lt; PointT, boost::mpl\l::vector\&lt; pcl::fields\l::rgb, pcl::fields::rgba \&gt; \&gt;" alt="" coords="657,78,825,159"/>
+<area shape="rect" id="node6" href="$structtraits_1_1has__any__field.html" title="Metafunction to check if a given point type has any of the given fields. " alt="" coords="288,162,427,209"/>
+</map>

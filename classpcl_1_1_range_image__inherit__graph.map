@@ -1,0 +1,6 @@
+<map id="pcl::RangeImage" name="pcl::RangeImage">
+<area shape="rect" id="node7" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="5,280,163,309"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="187,280,360,309"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="89,102,268,149"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="108,5,249,35"/>
+</map>

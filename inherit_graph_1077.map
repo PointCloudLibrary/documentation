@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; pcl::pcl::PointXYZ, pcl\l::pcl::PointXYZ, float \&gt;" alt="" coords="5,5,176,86"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title="pcl::registration::\lTransformationEstimationSVD\l\&lt; pcl::pcl::PointXYZ, pcl\l::pcl::PointXYZ, float \&gt;" alt="" coords="225,5,423,86"/>
+<area shape="rect" id="node5" href="$classpcl_1_1recognition_1_1_trimmed_i_c_p.html" title="pcl::recognition::Trimmed\lICP\&lt; pcl::pcl::PointXYZ,\l float \&gt;" alt="" coords="473,13,641,77"/>
+</map>

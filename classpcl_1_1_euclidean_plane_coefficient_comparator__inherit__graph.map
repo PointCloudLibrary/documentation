@@ -1,0 +1,4 @@
+<map id="pcl::EuclideanPlaneCoefficientComparator&lt; PointT, PointNT &gt;" name="pcl::EuclideanPlaneCoefficientComparator&lt; PointT, PointNT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="5,83,216,130"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function. " alt="" coords="23,5,199,35"/>
+</map>

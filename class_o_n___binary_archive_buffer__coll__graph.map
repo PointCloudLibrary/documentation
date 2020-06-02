@@ -1,0 +1,8 @@
+<map id="ON_BinaryArchiveBuffer" name="ON_BinaryArchiveBuffer">
+<area shape="rect" id="node2" href="$class_o_n___binary_archive.html" title="ON_BinaryArchive" alt="" coords="23,256,153,285"/>
+<area shape="rect" id="node4" href="$structz__stream__s.html" title="z_stream_s" alt="" coords="104,113,195,143"/>
+<area shape="rect" id="node6" href="$structinternal__state.html" title="internal_state" alt="" coords="225,256,324,285"/>
+<area shape="rect" id="node8" href="$structgz__header__s.html" title="gz_header_s" alt="" coords="223,113,319,143"/>
+<area shape="rect" id="node10" href="$structtree__desc__s.html" title="tree_desc_s" alt="" coords="448,113,541,143"/>
+<area shape="rect" id="node12" href="$structct__data__s.html" title="ct_data_s" alt="" coords="371,5,448,35"/>
+</map>

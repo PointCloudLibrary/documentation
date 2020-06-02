@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1tracking_1_1_point_coherence.html" title="PointCoherence is a base class to compute coherence between the two points. " alt="" coords="5,74,200,121"/>
+<area shape="rect" id="node3" href="$classpcl_1_1tracking_1_1_distance_coherence.html" title="DistanceCoherence computes coherence between two points from the distance between them..." alt="" coords="252,5,468,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1tracking_1_1_h_s_v_color_coherence.html" title="HSVColorCoherence computes coherence between the two points from the color difference between them..." alt="" coords="249,74,471,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1tracking_1_1_normal_coherence.html" title="NormalCoherence computes coherence between two points from the angle between their normals..." alt="" coords="257,143,463,190"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="pcl::io::LZFYUV422ImageReader" name="pcl::io::LZFYUV422ImageReader">
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_l_z_f_r_g_b24_image_reader.html" title="PCL&#45;LZF 24&#45;bit RGB image format reader. " alt="" coords="64,197,272,227"/>
+<area shape="rect" id="node4" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader. " alt="" coords="85,117,251,147"/>
+<area shape="rect" id="node6" href="$structpcl_1_1io_1_1_camera_parameters.html" title="Basic camera parameters placeholder. " alt="" coords="5,5,184,35"/>
+</map>

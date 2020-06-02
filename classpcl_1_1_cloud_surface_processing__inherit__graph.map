@@ -1,0 +1,6 @@
+<map id="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;" name="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_bilateral_upsampling.html" title="Bilateral filtering implementation, based on the following paper: " alt="" coords="769,5,932,51"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_moving_least_squares.html" title="MovingLeastSquares represent an implementation of the MLS (Moving Least Squares) algorithm for data s..." alt="" coords="767,74,935,121"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,48,472,77"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,48,171,77"/>
+</map>

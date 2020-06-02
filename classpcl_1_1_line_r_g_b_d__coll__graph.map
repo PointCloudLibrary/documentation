@@ -1,0 +1,17 @@
+<map id="pcl::LineRGBD&lt; PointXYZT, PointRGBT &gt;" name="pcl::LineRGBD&lt; PointXYZT, PointRGBT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_l_i_n_e_m_o_d.html" title="Template matching using the LINEMOD approach. " alt="" coords="1187,153,1293,183"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointRGBT \&gt;" alt="" coords="1139,207,1341,236"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="345,188,460,217"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="755,232,896,261"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZRGBA \&gt;" alt="" coords="1160,271,1320,318"/>
+<area shape="rect" id="node46" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZT \&gt;" alt="" coords="1141,367,1339,396"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_surface_normal_modality.html" title="pcl::SurfaceNormalModality\l\&lt; PointXYZT \&gt;" alt="" coords="1149,482,1331,529"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_quantizable_modality.html" title="Interface for a quantizable modality. " alt="" coords="320,600,485,629"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_surface_normal_modality.html" title="Modality based on surface normals. " alt="" coords="735,567,916,614"/>
+<area shape="rect" id="node36" href="$classpcl_1_1_color_gradient_modality.html" title="pcl::ColorGradientModality\l\&lt; PointRGBT \&gt;" alt="" coords="1152,657,1328,703"/>
+<area shape="rect" id="node42" href="$classpcl_1_1_color_gradient_modality.html" title="Modality based on max&#45;RGB gradients. " alt="" coords="737,687,913,734"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointXYZT \&gt;" alt="" coords="517,473,707,503"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,664,171,693"/>
+<area shape="rect" id="node28" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="315,664,491,693"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointRGBT \&gt;" alt="" coords="515,756,709,785"/>
+</map>

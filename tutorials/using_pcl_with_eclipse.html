@@ -1,0 +1,442 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using PCL with Eclipse &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.11.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Using PCL with Eclipse</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#creating-the-eclipse-project-files">Creating the eclipse project files</a></li>
+<li><a class="reference internal" href="#importing-into-eclipse">Importing into Eclipse</a><ul>
+<li><a class="reference internal" href="#configuring-eclipse">Configuring Eclipse</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#setting-the-pcl-code-style-in-eclipse">Setting the PCL code style in Eclipse</a><ul>
+<li><a class="reference internal" href="#global">Global</a></li>
+<li><a class="reference internal" href="#project-specific">Project specific</a></li>
+<li><a class="reference internal" href="#how-to-format-the-code">How to format the code</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#launching-the-program">Launching the program</a></li>
+<li><a class="reference internal" href="#where-to-get-more-information">Where to get more information</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Using PCL with Eclipse</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-pcl-with-eclipse">
+<span id="id1"></span><h1><a class="toc-backref" href="#id2">Using PCL with Eclipse</a></h1>
+<p>This tutorial explains how to use Eclipse as an IDE to manage your PCL projects. It was tested under Ubuntu 14.04 with Eclipse Luna;
+do not hesitate to modify this tutorial by submitting a pull request on GitHub to add other configurations etc.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#using-pcl-with-eclipse" id="id2">Using PCL with Eclipse</a></p>
+<ul>
+<li><p><a class="reference internal" href="#prerequisites" id="id3">Prerequisites</a></p></li>
+<li><p><a class="reference internal" href="#creating-the-eclipse-project-files" id="id4">Creating the eclipse project files</a></p></li>
+<li><p><a class="reference internal" href="#importing-into-eclipse" id="id5">Importing into Eclipse</a></p>
+<ul>
+<li><p><a class="reference internal" href="#configuring-eclipse" id="id6">Configuring Eclipse</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#setting-the-pcl-code-style-in-eclipse" id="id7">Setting the PCL code style in Eclipse</a></p>
+<ul>
+<li><p><a class="reference internal" href="#global" id="id8">Global</a></p></li>
+<li><p><a class="reference internal" href="#project-specific" id="id9">Project specific</a></p></li>
+<li><p><a class="reference internal" href="#how-to-format-the-code" id="id10">How to format the code</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#launching-the-program" id="id11">Launching the program</a></p></li>
+<li><p><a class="reference internal" href="#where-to-get-more-information" id="id12">Where to get more information</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="prerequisites">
+<h2><a class="toc-backref" href="#id3">Prerequisites</a></h2>
+<p>We assume you have downloaded and extracted a PCL version (either PCL trunk or a stable version) on your machine.
+For the example, we will use the <a class="reference external" href="http://www.pointclouds.org/documentation/tutorials/pcl_visualizer.php">pcl visualizer</a> code.</p>
+</div>
+<div class="section" id="creating-the-eclipse-project-files">
+<h2><a class="toc-backref" href="#id4">Creating the eclipse project files</a></h2>
+<p>The files are organized like the following tree:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
+├── build
+└── src
+    ├── CMakeLists.txt
+    └── pcl_visualizer_demo.cpp
+</pre></div>
+</div>
+<p>Open a terminal, navigate to your project root folder and configure the project:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd /path_to_my_project/build
+$ cmake -G &quot;Eclipse CDT4 - Unix Makefiles&quot; ../src
+</pre></div>
+</div>
+<p>You will see something that should look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span> <span class="n">The</span> <span class="n">C</span> <span class="n">compiler</span> <span class="n">identification</span> <span class="ow">is</span> <span class="n">GNU</span> <span class="mf">4.8</span><span class="o">.</span><span class="mi">2</span>
+<span class="o">--</span> <span class="n">The</span> <span class="n">CXX</span> <span class="n">compiler</span> <span class="n">identification</span> <span class="ow">is</span> <span class="n">GNU</span> <span class="mf">4.8</span><span class="o">.</span><span class="mi">2</span>
+<span class="o">--</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">determine</span> <span class="n">Eclipse</span> <span class="n">version</span><span class="p">,</span> <span class="n">assuming</span> <span class="n">at</span> <span class="n">least</span> <span class="mf">3.6</span> <span class="p">(</span><span class="n">Helios</span><span class="p">)</span><span class="o">.</span> <span class="n">Adjust</span> <span class="n">CMAKE_ECLIPSE_VERSION</span> <span class="k">if</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">wrong</span><span class="o">.</span>
+<span class="o">--</span> <span class="n">Check</span> <span class="k">for</span> <span class="n">working</span> <span class="n">C</span> <span class="n">compiler</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">ccache</span><span class="o">/</span><span class="n">cc</span>
+<span class="o">--</span> <span class="n">Check</span> <span class="k">for</span> <span class="n">working</span> <span class="n">C</span> <span class="n">compiler</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">ccache</span><span class="o">/</span><span class="n">cc</span>   <span class="o">--</span> <span class="n">works</span>
+<span class="o">--</span> <span class="n">Detecting</span> <span class="n">C</span> <span class="n">compiler</span> <span class="n">ABI</span> <span class="n">info</span>
+<span class="o">--</span> <span class="n">Detecting</span> <span class="n">C</span> <span class="n">compiler</span> <span class="n">ABI</span> <span class="n">info</span> <span class="o">-</span> <span class="n">done</span>
+<span class="o">--</span> <span class="n">Check</span> <span class="k">for</span> <span class="n">working</span> <span class="n">CXX</span> <span class="n">compiler</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">ccache</span><span class="o">/</span><span class="n">c</span><span class="o">++</span>
+<span class="o">--</span> <span class="n">Check</span> <span class="k">for</span> <span class="n">working</span> <span class="n">CXX</span> <span class="n">compiler</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">ccache</span><span class="o">/</span><span class="n">c</span><span class="o">++</span>   <span class="o">--</span> <span class="n">works</span>
+<span class="o">--</span> <span class="n">Detecting</span> <span class="n">CXX</span> <span class="n">compiler</span> <span class="n">ABI</span> <span class="n">info</span>
+<span class="o">--</span> <span class="n">Detecting</span> <span class="n">CXX</span> <span class="n">compiler</span> <span class="n">ABI</span> <span class="n">info</span> <span class="o">-</span> <span class="n">done</span>
+<span class="o">--</span> <span class="n">checking</span> <span class="k">for</span> <span class="n">module</span> <span class="s1">&#39;eigen3&#39;</span>
+<span class="o">--</span>   <span class="n">found</span> <span class="n">eigen3</span><span class="p">,</span> <span class="n">version</span> <span class="mf">3.2</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">eigen</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">eigen3</span>
+<span class="o">--</span> <span class="n">Boost</span> <span class="n">version</span><span class="p">:</span> <span class="mf">1.54</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">the</span> <span class="n">following</span> <span class="n">Boost</span> <span class="n">libraries</span><span class="p">:</span>
+<span class="o">--</span>   <span class="n">system</span>
+<span class="o">--</span>   <span class="n">filesystem</span>
+<span class="o">--</span>   <span class="n">thread</span>
+<span class="o">--</span>   <span class="n">date_time</span>
+<span class="o">--</span>   <span class="n">iostreams</span>
+<span class="o">--</span>   <span class="n">mpi</span>
+<span class="o">--</span>   <span class="n">serialization</span>
+<span class="o">--</span>   <span class="n">chrono</span>
+<span class="o">--</span> <span class="n">checking</span> <span class="k">for</span> <span class="n">module</span> <span class="s1">&#39;openni-dev&#39;</span>
+<span class="o">--</span>   <span class="n">package</span> <span class="s1">&#39;openni-dev&#39;</span> <span class="ow">not</span> <span class="n">found</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">openni</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libOpenNI</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">checking</span> <span class="k">for</span> <span class="n">module</span> <span class="s1">&#39;openni2-dev&#39;</span>
+<span class="o">--</span>   <span class="n">package</span> <span class="s1">&#39;openni2-dev&#39;</span> <span class="ow">not</span> <span class="n">found</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">OpenNI2</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libOpenNI2</span><span class="o">.</span><span class="n">so</span>
+<span class="o">**</span> <span class="n">WARNING</span> <span class="o">**</span> <span class="n">io</span> <span class="n">features</span> <span class="n">related</span> <span class="n">to</span> <span class="n">pcap</span> <span class="n">will</span> <span class="n">be</span> <span class="n">disabled</span>
+<span class="o">**</span> <span class="n">WARNING</span> <span class="o">**</span> <span class="n">io</span> <span class="n">features</span> <span class="n">related</span> <span class="n">to</span> <span class="n">png</span> <span class="n">will</span> <span class="n">be</span> <span class="n">disabled</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">libusb</span><span class="o">-</span><span class="mf">1.0</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span>
+<span class="o">--</span> <span class="n">checking</span> <span class="k">for</span> <span class="n">module</span> <span class="s1">&#39;flann&#39;</span>
+<span class="o">--</span>   <span class="n">found</span> <span class="n">flann</span><span class="p">,</span> <span class="n">version</span> <span class="mf">1.8</span><span class="o">.</span><span class="mi">4</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">Flann</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libflann_cpp_s</span><span class="o">.</span><span class="n">a</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">qhull</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libqhull</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">checking</span> <span class="k">for</span> <span class="n">module</span> <span class="s1">&#39;openni-dev&#39;</span>
+<span class="o">--</span>   <span class="n">package</span> <span class="s1">&#39;openni-dev&#39;</span> <span class="ow">not</span> <span class="n">found</span>
+<span class="o">--</span> <span class="n">checking</span> <span class="k">for</span> <span class="n">module</span> <span class="s1">&#39;openni2-dev&#39;</span>
+<span class="o">--</span>   <span class="n">package</span> <span class="s1">&#39;openni2-dev&#39;</span> <span class="ow">not</span> <span class="n">found</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_COMMON</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_COMMON</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_common</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_OCTREE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_OCTREE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_octree</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_IO</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_IO</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_io</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_KDTREE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_KDTREE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_kdtree</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_SEARCH</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_SEARCH</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_search</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_SAMPLE_CONSENSUS</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_SAMPLE_CONSENSUS</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_sample_consensus</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_FILTERS</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_FILTERS</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_filters</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_2D</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_2D</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_FEATURES</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_FEATURES</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_features</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GEOMETRY</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GEOMETRY</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_KEYPOINTS</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_KEYPOINTS</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_keypoints</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_SURFACE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_SURFACE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_surface</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_REGISTRATION</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_REGISTRATION</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_registration</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_ML</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_ML</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_ml</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_SEGMENTATION</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_SEGMENTATION</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_segmentation</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_RECOGNITION</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_RECOGNITION</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_recognition</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_VISUALIZATION</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_VISUALIZATION</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_visualization</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_PEOPLE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_PEOPLE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_people</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_OUTOFCORE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_OUTOFCORE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_outofcore</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_TRACKING</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_TRACKING</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_tracking</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_STEREO</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_STEREO</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_stereo</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_CONTAINERS</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_CONTAINERS</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_containers</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_UTILS</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_UTILS</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_utils</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_OCTREE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_OCTREE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_octree</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_FEATURES</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_FEATURES</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_features</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_KINFU</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_KINFU</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_kinfu</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_KINFU_LARGE_SCALE</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_KINFU_LARGE_SCALE</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_kinfu_large_scale</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_GPU_SEGMENTATION</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_GPU_SEGMENTATION</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_segmentation</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_CUDA_COMMON</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_CUDA_COMMON</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_CUDA_FEATURES</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_CUDA_FEATURES</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_features</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_CUDA_SEGMENTATION</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_CUDA_SEGMENTATION</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_segmentation</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">looking</span> <span class="k">for</span> <span class="n">PCL_CUDA_SAMPLE_CONSENSUS</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL_CUDA_SAMPLE_CONSENSUS</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_sample_consensus</span><span class="o">.</span><span class="n">so</span>
+<span class="o">--</span> <span class="n">Found</span> <span class="n">PCL</span><span class="p">:</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_system</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_filesystem</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_thread</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_date_time</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_iostreams</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_mpi</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_serialization</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_chrono</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libpthread</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_common</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_common</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_octree</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_octree</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libOpenNI</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libOpenNI2</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">vtkCommon</span><span class="p">;</span><span class="n">vtkFiltering</span><span class="p">;</span><span class="n">vtkImaging</span><span class="p">;</span><span class="n">vtkGraphics</span><span class="p">;</span><span class="n">vtkGenericFiltering</span><span class="p">;</span><span class="n">vtkIO</span><span class="p">;</span><span class="n">vtkRendering</span><span class="p">;</span><span class="n">vtkVolumeRendering</span><span class="p">;</span><span class="n">vtkHybrid</span><span class="p">;</span><span class="n">vtkWidgets</span><span class="p">;</span><span class="n">vtkParallel</span><span class="p">;</span><span class="n">vtkInfovis</span><span class="p">;</span><span class="n">vtkGeovis</span><span class="p">;</span><span class="n">vtkViews</span><span class="p">;</span><span class="n">vtkCharts</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_io</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_io</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libflann_cpp_s</span><span class="o">.</span><span class="n">a</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libflann_cpp_s</span><span class="o">.</span><span class="n">a</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_kdtree</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_kdtree</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_search</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_search</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_sample_consensus</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_sample_consensus</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_filters</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_filters</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_features</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_features</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_keypoints</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_keypoints</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libqhull</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libqhull</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_surface</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_surface</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_registration</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_registration</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_ml</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_ml</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_segmentation</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_segmentation</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_recognition</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_recognition</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_visualization</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_visualization</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_people</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_people</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_outofcore</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_outofcore</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_tracking</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_tracking</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_stereo</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_stereo</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_containers</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_containers</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_utils</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_utils</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_octree</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_octree</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_features</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_features</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_kinfu</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_kinfu</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_kinfu_large_scale</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_kinfu_large_scale</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_segmentation</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_gpu_segmentation</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_features</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_features</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_segmentation</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_segmentation</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_sample_consensus</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libpcl_cuda_sample_consensus</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_system</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_filesystem</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_thread</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_date_time</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_iostreams</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_mpi</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_serialization</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libboost_chrono</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libpthread</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libqhull</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libqhull</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libOpenNI</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libOpenNI2</span><span class="o">.</span><span class="n">so</span><span class="p">;</span><span class="n">optimized</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libflann_cpp_s</span><span class="o">.</span><span class="n">a</span><span class="p">;</span><span class="n">debug</span><span class="p">;</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">/</span><span class="n">libflann_cpp_s</span><span class="o">.</span><span class="n">a</span><span class="p">;</span><span class="n">vtkCommon</span><span class="p">;</span><span class="n">vtkFiltering</span><span class="p">;</span><span class="n">vtkImaging</span><span class="p">;</span><span class="n">vtkGraphics</span><span class="p">;</span><span class="n">vtkGenericFiltering</span><span class="p">;</span><span class="n">vtkIO</span><span class="p">;</span><span class="n">vtkRendering</span><span class="p">;</span><span class="n">vtkVolumeRendering</span><span class="p">;</span><span class="n">vtkHybrid</span><span class="p">;</span><span class="n">vtkWidgets</span><span class="p">;</span><span class="n">vtkParallel</span><span class="p">;</span><span class="n">vtkInfovis</span><span class="p">;</span><span class="n">vtkGeovis</span><span class="p">;</span><span class="n">vtkViews</span><span class="p">;</span><span class="n">vtkCharts</span> <span class="p">(</span><span class="n">Required</span> <span class="ow">is</span> <span class="n">at</span> <span class="n">least</span> <span class="n">version</span> <span class="s2">&quot;1.7&quot;</span><span class="p">)</span>
+<span class="o">--</span> <span class="n">Configuring</span> <span class="n">done</span>
+<span class="o">--</span> <span class="n">Generating</span> <span class="n">done</span>
+<span class="o">--</span> <span class="n">Build</span> <span class="n">files</span> <span class="n">have</span> <span class="n">been</span> <span class="n">written</span> <span class="n">to</span><span class="p">:</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">dell</span><span class="o">/</span><span class="n">visualizer</span><span class="o">/</span><span class="n">build</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="importing-into-eclipse">
+<h2><a class="toc-backref" href="#id5">Importing into Eclipse</a></h2>
+<ul class="simple">
+<li><p>Launch <a class="reference external" href="http://eclipse.org/cdt/">Eclipse CDT</a> and select <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Import</span></code>.</p></li>
+<li><p>In the list select  <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">&gt;</span> <span class="pre">Existing</span> <span class="pre">Projects</span> <span class="pre">into</span> <span class="pre">Workspace</span></code> and then next.</p></li>
+<li><p>Browse (<code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">root</span> <span class="pre">directory</span></code>) to the root folder of the project and select the <code class="docutils literal notranslate"><span class="pre">build</span></code> folder (in the example case, <code class="docutils literal notranslate"><span class="pre">/home/dell/visualizer/build</span></code>).</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Finish</span></code>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Eclipse indexer is going to parse the files in the project (and all the includes), this can take a lot of time and might crash Eclipse if it’s not configured for big projects.
+Take a look at the bottom right of Eclipse’s window to see the indexer status; it is advised not to do anything until the indexer has finished it’s job.</p>
+</div>
+<div class="section" id="configuring-eclipse">
+<h3><a class="toc-backref" href="#id6">Configuring Eclipse</a></h3>
+<p>If Eclipse fails to open your PCL project you might need to change Eclipse configuration; here are some values that should solve all problems
+(but might not work on light hardware configurations):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo gedit /usr/lib/eclipse/eclipse.ini
+</pre></div>
+</div>
+<p>Change the values in the last lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">org</span><span class="o">.</span><span class="n">eclipse</span><span class="o">.</span><span class="n">platform</span>
+<span class="o">--</span><span class="n">launcher</span><span class="o">.</span><span class="n">XXMaxPermSize</span>
+<span class="mi">1024</span><span class="n">m</span>
+<span class="o">--</span><span class="n">launcher</span><span class="o">.</span><span class="n">defaultAction</span>
+<span class="n">openFile</span>
+<span class="o">--</span><span class="n">launcher</span><span class="o">.</span><span class="n">appendVmargs</span>
+<span class="o">-</span><span class="n">vmargs</span>
+<span class="o">-</span><span class="n">Dosgi</span><span class="o">.</span><span class="n">requiredJavaVersion</span><span class="o">=</span><span class="mf">1.7</span>
+<span class="o">-</span><span class="n">XX</span><span class="p">:</span><span class="n">MaxPermSize</span><span class="o">=</span><span class="mi">512</span><span class="n">m</span>
+<span class="o">-</span><span class="n">Xms1024m</span>
+<span class="o">-</span><span class="n">Xmx1024m</span>
+</pre></div>
+</div>
+<p>Restart Eclipse and go to <code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span></code>, then <code class="docutils literal notranslate"><span class="pre">C/C++</span> <span class="pre">&gt;</span> <span class="pre">Indexer</span> <span class="pre">&gt;</span> <span class="pre">Cache</span> <span class="pre">Limits</span></code>. Set the limits to [50% | 512 | 512].</p>
+</div>
+</div>
+<div class="section" id="setting-the-pcl-code-style-in-eclipse">
+<h2><a class="toc-backref" href="#id7">Setting the PCL code style in Eclipse</a></h2>
+<p>You can find a PCL code style file for Eclipse in <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/blob/master/doc/advanced/content/files/PCL_eclipse_profile.xml">PCL GitHub trunk</a></p>
+<div class="section" id="global">
+<h3><a class="toc-backref" href="#id8">Global</a></h3>
+<p>If you want to apply the PCL style guide to all projects:
+<code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">C/C++</span> <span class="pre">&gt;</span> <span class="pre">Code</span> <span class="pre">Style</span> <span class="pre">&gt;</span> <span class="pre">Formatter</span></code></p>
+</div>
+<div class="section" id="project-specific">
+<h3><a class="toc-backref" href="#id9">Project specific</a></h3>
+<p>If you want to apply the style guide only to one project:
+Go to <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">&gt;</span> <span class="pre">Properties</span></code>, then select <code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">Style</span></code> in the left field and Enable <code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">specific</span> <span class="pre">settings</span></code>, then <code class="docutils literal notranslate"><span class="pre">Import</span></code> and select where you profile file (.xml) is.</p>
+</div>
+<div class="section" id="how-to-format-the-code">
+<h3><a class="toc-backref" href="#id10">How to format the code</a></h3>
+<p>If you want to format the whole project use <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">&gt;</span> <span class="pre">Format</span></code>. If you want to format only your selection use the shortcut <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">F</span></code></p>
+</div>
+</div>
+<div class="section" id="launching-the-program">
+<h2><a class="toc-backref" href="#id11">Launching the program</a></h2>
+<p>To build the project, click on the build icon</p>
+<a class="reference internal image-reference" href="_images/build_tab.gif"><img alt="_images/build_tab.gif" src="_images/build_tab.gif" style="height: 16px;" /></a>
+<ul class="simple">
+<li><p>Create a launch configuration, select the project on the left panel (left click on the project name); <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">&gt;</span> <span class="pre">Run</span> <span class="pre">Configurations..</span></code>.</p></li>
+<li><p>Create a new <code class="docutils literal notranslate"><span class="pre">C/C++</span> <span class="pre">Application</span></code> click on <code class="docutils literal notranslate"><span class="pre">Search</span> <span class="pre">Project</span></code> and choose the executable to be launched.</p></li>
+<li><p>Go the second tab (<code class="docutils literal notranslate"><span class="pre">Arguments</span></code>) and enter your arguments; remember this is not a terminal and <code class="docutils literal notranslate"><span class="pre">~</span></code> won’t work to get to your home folder for example !</p></li>
+</ul>
+<p>Run the program by clicking on the run icon</p>
+<a class="reference internal image-reference" href="_images/lrun_obj.gif"><img alt="_images/lrun_obj.gif" src="_images/lrun_obj.gif" style="height: 16px;" /></a>
+<p>The Eclipse console doesn’t manage ANSI colours, you could use <a class="reference external" href="http://www.mihai-nita.net/eclipse/">an ANSI console plugin</a> to get rid of the “[0m” characters in the output.</p>
+</div>
+<div class="section" id="where-to-get-more-information">
+<h2><a class="toc-backref" href="#id12">Where to get more information</a></h2>
+<p>You can get more information about the Eclipse CDT4 Generator <a class="reference external" href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator">here</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="pcl::PCDGrabber&lt; PointT &gt;" name="pcl::PCDGrabber&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_d_grabber_base.html" title="Base class for PCD file grabber. " alt="" coords="5,83,157,112"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="35,5,128,35"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_file_grabber.html" title="FileGrabber provides a container&#45;style interface for grabbers which operate on fixed&#45;size input..." alt="" coords="181,83,357,112"/>
+</map>

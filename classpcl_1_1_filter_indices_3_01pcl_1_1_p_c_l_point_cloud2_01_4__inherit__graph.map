@@ -1,0 +1,7 @@
+<map id="pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;" name="pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_crop_box_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="CropBox is a filter that allows the user to filter all the data inside of a given box..." alt="" coords="647,5,780,51"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_extract_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="ExtractIndices extracts a set of indices from a point cloud. " alt="" coords="629,74,797,121"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_random_sample_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RandomSample applies a random sampling with uniform probability. " alt="" coords="633,143,793,190"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class. " alt="" coords="196,74,364,121"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="7,74,145,121"/>
+</map>

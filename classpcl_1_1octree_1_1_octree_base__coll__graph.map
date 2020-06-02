@@ -1,0 +1,5 @@
+<map id="pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;" name="pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class " alt="" coords="5,161,157,191"/>
+<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_branch_node.html" title="Abstract octree branch class " alt="" coords="181,153,352,199"/>
+<area shape="rect" id="node8" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="187,5,347,35"/>
+</map>

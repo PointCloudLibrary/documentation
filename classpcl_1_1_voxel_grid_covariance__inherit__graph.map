@@ -1,0 +1,6 @@
+<map id="pcl::VoxelGridCovariance&lt; PointT &gt;" name="pcl::VoxelGridCovariance&lt; PointT &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_voxel_grid_covariance.html" title="pcl::VoxelGridCovariance\l\&lt; PointTarget \&gt;" alt="" coords="5,361,176,407"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="8,165,173,195"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="21,85,160,115"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="8,5,173,35"/>
+</map>

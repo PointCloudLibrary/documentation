@@ -1,0 +1,7 @@
+<map id="pcl::SampleConsensusModelPlane&lt; PointT &gt;" name="pcl::SampleConsensusModelPlane&lt; PointT &gt;">
+<area shape="rect" id="node5" href="$classpcl_1_1_sample_consensus_model_normal_plane.html" title="SampleConsensusModelNormalPlane defines a model for 3D plane segmentation using additional surface no..." alt="" coords="488,14,680,61"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_sample_consensus_model_parallel_plane.html" title="SampleConsensusModelParallelPlane defines a model for 3D plane segmentation using additional angular ..." alt="" coords="488,83,680,130"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_sample_consensus_model_perpendicular_plane.html" title="SampleConsensusModelPerpendicularPlane defines a model for 3D plane segmentation using additional ang..." alt="" coords="487,153,681,199"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="5,83,197,130"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_sample_consensus_model_normal_parallel_plane.html" title="SampleConsensusModelNormalParallelPlane defines a model for 3D plane segmentation using additional su..." alt="" coords="731,5,925,69"/>
+</map>

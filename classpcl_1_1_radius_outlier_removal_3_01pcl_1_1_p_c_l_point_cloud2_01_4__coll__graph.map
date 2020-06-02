@@ -1,0 +1,6 @@
+<map id="pcl::RadiusOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;" name="pcl::RadiusOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class. " alt="" coords="5,121,173,167"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="20,6,159,53"/>
+<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="197,121,331,167"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="197,6,331,53"/>
+</map>

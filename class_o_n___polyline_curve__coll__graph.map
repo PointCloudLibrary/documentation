@@ -1,0 +1,11 @@
+<map id="ON_PolylineCurve" name="ON_PolylineCurve">
+<area shape="rect" id="node2" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="39,424,121,453"/>
+<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,328,112,357"/>
+<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="13,212,99,241"/>
+<area shape="rect" id="node8" href="$class_o_n___polyline.html" title="ON_Polyline" alt="" coords="152,424,245,453"/>
+<area shape="rect" id="node10" href="$class_o_n__3d_point_array.html" title="ON_3dPointArray" alt="" coords="137,328,260,357"/>
+<area shape="rect" id="node12" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_3dPoint \&gt;" alt="" coords="123,203,275,250"/>
+<area shape="rect" id="node14" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="43,104,136,133"/>
+<area shape="rect" id="node17" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="253,104,405,133"/>
+<area shape="rect" id="node21" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; double \&gt;" alt="" coords="228,275,409,304"/>
+</map>

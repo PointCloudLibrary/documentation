@@ -1,0 +1,5 @@
+<map id="pcl::StereoMatching" name="pcl::StereoMatching">
+<area shape="rect" id="node3" href="$classpcl_1_1_gray_stereo_matching.html" title="Stereo Matching abstract class for Grayscale images. " alt="" coords="123,83,288,112"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_adaptive_cost_s_o_stereo_matching.html" title="Adaptive Cost 2&#45;pass Scanline Optimization Stereo Matching class. " alt="" coords="5,161,187,207"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_block_based_stereo_matching.html" title="Block based (or fixed window) Stereo Matching class. " alt="" coords="211,169,419,199"/>
+</map>

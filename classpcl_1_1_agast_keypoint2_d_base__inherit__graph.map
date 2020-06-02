@@ -1,0 +1,9 @@
+<map id="pcl::AgastKeypoint2DBase&lt; PointInT, PointOutT, IntensityT &gt;" name="pcl::AgastKeypoint2DBase&lt; PointInT, PointOutT, IntensityT &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="pcl::AgastKeypoint2DBase\l\&lt; PointInT, PointOutT,\l pcl::common::IntensityFieldAccessor\l\&lt; PointInT \&gt; \&gt;" alt="" coords="1128,5,1371,86"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="pcl::AgastKeypoint2DBase\l\&lt; pcl::PointXYZ, pcl::PointUV,\l pcl::common::IntensityFieldAccessor\l\&lt; pcl::PointXYZ \&gt; \&gt;" alt="" coords="1128,109,1371,190"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="523,75,685,122"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,84,472,113"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,84,171,113"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_agast_keypoint2_d.html" title="Detects 2D AGAST corner points. " alt="" coords="1421,22,1584,69"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_agast_keypoint2_d_3_01pcl_1_1_point_x_y_z_00_01pcl_1_1_point_u_v_01_4.html" title="Detects 2D AGAST corner points. " alt="" coords="1428,117,1577,181"/>
+</map>

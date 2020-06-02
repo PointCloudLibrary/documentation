@@ -1,0 +1,14 @@
+<map id="ON_BrepEdgeArray" name="ON_BrepEdgeArray">
+<area shape="rect" id="node2" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepEdge \&gt;" alt="" coords="197,566,347,613"/>
+<area shape="rect" id="node4" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepEdge \&gt;" alt="" coords="99,469,320,499"/>
+<area shape="rect" id="node6" href="$class_o_n___brep_edge.html" title="ON_BrepEdge" alt="" coords="128,373,235,403"/>
+<area shape="rect" id="node8" href="$class_o_n___curve_proxy.html" title="ON_CurveProxy" alt="" coords="5,277,123,307"/>
+<area shape="rect" id="node10" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="23,181,105,211"/>
+<area shape="rect" id="node12" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="11,85,117,115"/>
+<area shape="rect" id="node14" href="$class_o_n___object.html" title="ON_Object" alt="" coords="21,5,107,35"/>
+<area shape="rect" id="node16" href="$union_o_n___u.html" title="ON_U" alt="" coords="147,277,205,307"/>
+<area shape="rect" id="node18" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="229,277,387,307"/>
+<area shape="rect" id="node20" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="235,181,387,211"/>
+<area shape="rect" id="node24" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="345,373,492,403"/>
+<area shape="rect" id="node27" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="344,469,493,499"/>
+</map>

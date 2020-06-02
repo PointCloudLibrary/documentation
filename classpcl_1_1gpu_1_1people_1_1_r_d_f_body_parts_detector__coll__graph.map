@@ -1,0 +1,6 @@
+<map id="pcl::gpu::people::RDFBodyPartsDetector" name="pcl::gpu::people::RDFBodyPartsDetector">
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned char \&gt;" alt="" coords="600,14,765,61"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="5,88,187,117"/>
+<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="237,88,435,117"/>
+<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; prob_histogram \&gt;" alt="" coords="600,143,765,190"/>
+</map>

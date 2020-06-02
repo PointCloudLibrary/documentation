@@ -1,0 +1,7 @@
+<map id="pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;" name="pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1people_1_1_person_classifier.html" title="pcl::people::PersonClassifier\l\&lt; pcl::pcl::RGB \&gt;" alt="" coords="720,17,909,63"/>
+<area shape="rect" id="node4" href="$classpcl_1_1people_1_1_person_classifier.html" title="pcl::people::PersonClassifier\l\&lt; PointT \&gt;" alt="" coords="373,5,563,51"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::RGB \&gt;" alt="" coords="745,109,884,155"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="165,217,280,247"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="397,145,539,175"/>
+</map>

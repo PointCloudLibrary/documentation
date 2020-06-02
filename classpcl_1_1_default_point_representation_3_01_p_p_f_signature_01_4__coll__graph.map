@@ -1,0 +1,7 @@
+<map id="pcl::DefaultPointRepresentation&lt; PPFSignature &gt;" name="pcl::DefaultPointRepresentation&lt; PPFSignature &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="1085,30,1307,77"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="517,5,683,51"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="5,31,171,78"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointDefault \&gt;" alt="" coords="328,65,493,111"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_default_feature_representation.html" title="DefaulFeatureRepresentation extends PointRepresentation and is intended to be used when defining the ..." alt="" coords="707,65,928,111"/>
+</map>

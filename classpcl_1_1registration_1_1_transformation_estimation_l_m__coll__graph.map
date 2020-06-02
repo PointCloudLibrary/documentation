@@ -1,0 +1,6 @@
+<map id="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;" name="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="565,5,749,86"/>
+<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="165,5,349,86"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="587,109,728,139"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="200,109,315,139"/>
+</map>

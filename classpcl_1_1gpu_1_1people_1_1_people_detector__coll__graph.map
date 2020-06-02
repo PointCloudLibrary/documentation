@@ -1,0 +1,18 @@
+<map id="pcl::gpu::people::PeopleDetector" name="pcl::gpu::people::PeopleDetector">
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; float \&gt;" alt="" coords="843,287,1003,316"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="199,292,313,321"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="468,363,609,392"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGBA \&gt;" alt="" coords="853,181,992,227"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; unsigned\l short \&gt;" alt="" coords="836,602,1009,649"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; unsigned\l char \&gt;" alt="" coords="836,505,1009,551"/>
+<area shape="rect" id="node52" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="853,385,992,431"/>
+<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned short \&gt;" alt="" coords="840,671,1005,718"/>
+<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="165,825,347,855"/>
+<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="440,825,637,855"/>
+<area shape="rect" id="node22" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned char \&gt;" alt="" coords="840,919,1005,966"/>
+<area shape="rect" id="node48" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; float \&gt;" alt="" coords="840,753,1005,799"/>
+<area shape="rect" id="node57" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="840,838,1005,885"/>
+<area shape="rect" id="node31" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; unsigned char \&gt;" alt="" coords="849,1015,996,1062"/>
+<area shape="rect" id="node33" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="175,1055,337,1084"/>
+<area shape="rect" id="node35" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="449,1024,628,1053"/>
+</map>

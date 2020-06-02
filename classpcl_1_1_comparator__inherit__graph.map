@@ -1,0 +1,9 @@
+<map id="pcl::Comparator&lt; PointT &gt;" name="pcl::Comparator&lt; PointT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_euclidean_cluster_comparator.html" title="EuclideanClusterComparator is a comparator used for finding clusters supported by planar surfaces..." alt="" coords="233,5,447,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_ground_plane_comparator.html" title="GroundPlaneComparator is a Comparator for detecting smooth surfaces suitable for driving. " alt="" coords="245,74,435,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="235,143,445,190"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_edge_aware_plane_comparator.html" title="EdgeAwarePlaneComparator is a Comparator that operates on plane coefficients, for use in planar segme..." alt="" coords="497,39,711,86"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_euclidean_plane_coefficient_comparator.html" title="EuclideanPlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar segmentation. " alt="" coords="500,109,708,155"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_plane_refinement_comparator.html" title="PlaneRefinementComparator is a Comparator that operates on plane coefficients, for use in planar segm..." alt="" coords="497,178,711,225"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_r_g_b_plane_coefficient_comparator.html" title="RGBPlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar segmentation. " alt="" coords="500,247,708,294"/>
+</map>

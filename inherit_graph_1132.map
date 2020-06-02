@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_stats_estimator.html" title="Class interface for gathering statistics for decision tree learning. " alt="" coords="5,61,200,125"/>
+<area shape="rect" id="node3" href="$classpcl_1_1face__detection_1_1_pose_class_regression_variance_stats_estimator.html" title="Statistics estimator for regression trees which optimizes information gain and pose parameters error..." alt="" coords="248,5,493,86"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_regression_variance_stats_estimator.html" title="Statistics estimator for regression trees which optimizes variance. " alt="" coords="248,109,493,173"/>
+</map>

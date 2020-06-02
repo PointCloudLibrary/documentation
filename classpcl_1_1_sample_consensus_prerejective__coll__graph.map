@@ -1,0 +1,14 @@
+<map id="pcl::SampleConsensusPrerejective&lt; PointSource, PointTarget, FeatureT &gt;" name="pcl::SampleConsensusPrerejective&lt; PointSource, PointTarget, FeatureT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointSource, PointTarget \&gt;" alt="" coords="1355,109,1539,155"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="601,149,799,179"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="936,64,1112,128"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="285,149,451,179"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="632,26,768,73"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="301,5,435,51"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,37,140,83"/>
+<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="300,74,436,121"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; FeatureT \&gt;" alt="" coords="1343,203,1551,232"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_kd_tree.html" title="pcl::KdTree\&lt; FeatureT \&gt;" alt="" coords="941,203,1107,232"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="625,228,775,257"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures. " alt="" coords="931,255,1117,302"/>
+</map>

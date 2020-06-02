@@ -1,0 +1,24 @@
+<map id="pcl::NarfKeypoint" name="pcl::NarfKeypoint">
+<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointWith\lRange, int \&gt;" alt="" coords="1261,21,1427,67"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="809,5,1031,35"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l BorderDescription \&gt;" alt="" coords="1243,229,1445,275"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="165,31,331,60"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="456,68,632,97"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointWithRange \&gt;" alt="" coords="849,214,991,261"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="181,179,315,226"/>
+<area shape="rect" id="node17" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="477,142,611,189"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="839,58,1001,105"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="843,145,997,191"/>
+<area shape="rect" id="node20" href="$structpcl_1_1_narf_keypoint_1_1_parameters.html" title="Parameters used in this class. " alt="" coords="1719,163,1849,210"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::InterestPoint \&gt;" alt="" coords="851,475,989,522"/>
+<area shape="rect" id="node24" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="191,464,305,493"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="473,448,615,477"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="831,363,1009,410"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_range_image_border_extractor.html" title="Extract obstacle borders from range images, meaning positions where there is a transition from foregr..." alt="" coords="1679,237,1889,267"/>
+<area shape="rect" id="node45" href="$structpcl_1_1_range_image_border_extractor_1_1_local_surface.html" title="Stores some information extracted from the neighborhood of a point. " alt="" coords="1239,351,1449,398"/>
+<area shape="rect" id="node47" href="$structpcl_1_1_range_image_border_extractor_1_1_shadow_border_indices.html" title="Stores the indices of the shadow border corresponding to obstacle borders. " alt="" coords="1239,90,1449,137"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="1284,299,1404,328"/>
+<area shape="rect" id="node56" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float..." alt="" coords="849,287,991,316"/>
+<area shape="rect" id="node58" href="$structpcl_1_1___point_with_range.html" title="pcl::_PointWithRange" alt="" coords="469,277,619,307"/>
+<area shape="rect" id="node60" href="$structpcl_1_1_range_image_border_extractor_1_1_parameters.html" title="Parameters used in this class. " alt="" coords="1239,159,1449,206"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="pcl::gpu::DeviceMemory2D" name="pcl::gpu::DeviceMemory2D">
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; char4 \&gt;" alt="" coords="645,242,811,289"/>
+<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; double \&gt;" alt="" coords="645,5,811,51"/>
+<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; float \&gt;" alt="" coords="645,102,811,149"/>
+<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; int \&gt;" alt="" coords="645,326,811,373"/>
+<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::FPFHSignature33 \&gt;" alt="" coords="641,171,815,218"/>
+<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="645,771,811,818"/>
+<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::RGB \&gt;" alt="" coords="645,446,811,493"/>
+<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; prob_histogram \&gt;" alt="" coords="645,695,811,742"/>
+<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned char \&gt;" alt="" coords="645,613,811,659"/>
+<area shape="rect" id="node21" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned short \&gt;" alt="" coords="645,539,811,586"/>
+<area shape="rect" id="node23" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="237,373,435,403"/>
+</map>

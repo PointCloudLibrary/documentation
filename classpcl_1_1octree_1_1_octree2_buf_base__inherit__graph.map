@@ -1,0 +1,4 @@
+<map id="pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;" name="pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="OctreePointCloud\&lt; PointT,\l LeafContainerT, BranchContainer\lT, Octree2BufBase\&lt; LeafContainerT,\l BranchContainerT \&gt; \&gt;" alt="" coords="303,5,540,86"/>
+<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title="Octree pointcloud change detector class " alt="" coords="589,13,829,77"/>
+</map>

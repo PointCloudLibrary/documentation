@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Documentation - Point Cloud Library (PCL)</title>
+</head>
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Globally Aligned Spatial Distribution (GASD) descriptors &#8212; PCL 0.0 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="search" title="Search" href="search.php" />
+<?php
+define('MODX_CORE_PATH', '/var/www/pointclouds.org/core/');
+define('MODX_CONFIG_KEY', 'config');
+
+require_once MODX_CORE_PATH.'config/'.MODX_CONFIG_KEY.'.inc.php';
+require_once MODX_CORE_PATH.'model/modx/modx.class.php';
+$modx = new modX();
+$modx->initialize('web');
+
+$snip = $modx->runSnippet("getSiteNavigation", array('id'=>5, 'phLevels'=>'sitenav.level0,sitenav.level1', 'showPageNav'=>'n'));
+$chunkOutput = $modx->getChunk("site-header", array('sitenav'=>$snip));
+$bodytag = str_replace("[[+showSubmenus:notempty=`", "", $chunkOutput);
+$bodytag = str_replace("`]]", "", $bodytag);
+echo $bodytag;
+echo "\n";
+?>
+<div id="pagetitle">
+<h1>Documentation</h1>
+<a id="donate" href="http://www.openperception.org/support/"><img src="/assets/images/donate-button.png" alt="Donate to the Open Perception foundation"/></a>
+</div>
+<div id="page-content">
+
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="globally-aligned-spatial-distribution-gasd-descriptors">
+<span id="gasd-estimation"></span><h1>Globally Aligned Spatial Distribution (GASD) descriptors</h1>
+<p>This document describes the Globally Aligned Spatial Distribution (<a class="reference internal" href="#gasd" id="id1"><span>[GASD]</span></a>) global descriptor to be used for efficient object recognition and pose estimation.</p>
+<p>GASD is based on the estimation of a reference frame for the whole point cloud that represents an object instance, which is used for aligning it with the canonical coordinate system. After that, a descriptor is computed for the aligned point cloud based on how its 3D points are spatially distributed. Such descriptor may also be extended with color distribution throughout the aligned point cloud. The global alignment transforms of matched point clouds are used for computing object pose. For more information please see <a class="reference internal" href="#gasd" id="id2"><span>[GASD]</span></a>.</p>
+</div>
+<div class="section" id="theoretical-primer">
+<h1>Theoretical primer</h1>
+<p>The Globally Aligned Spatial Distribution (or GASD) global description method takes as input a 3D point cloud that represents a partial view of a given object. The first step consists in estimating a reference frame for the point cloud, which allows the computation of a transform that aligns it to the canonical coordinate system, making the descriptor pose invariant. After alignment, a shape descriptor is computed for the point cloud based on the spatial distribution of the 3D points. Color distribution along the point cloud can also be taken into account for obtaining a shape and color descriptor with a higher discriminative power. Object recognition is then performed by matching query and train descriptors of partial views. The pose of each recognized object is also computed from the alignment transforms of matched query and train partial views.</p>
+<p>The reference frame is estimated using a Principal Component Analysis (PCA) approach. Given a set of 3D points <img class="math" src="_images/math/428bd13a378ee8c0766fd621511e07662c129227.png" alt="\boldsymbol{P_i}"/> that represents a partial view of an object, with <img class="math" src="_images/math/22834efb284a7a57d68885ae7bb36a9388575ea6.png" alt="i\in\{1, ..., n\}"/>, the first step consists in computing their centroid <img class="math" src="_images/math/87fc3a4b37eea036fe85f82f40a31c6465368903.png" alt="\boldsymbol{\overline{P}}"/>, which is the origin of the reference frame. Then a covariance matrix <img class="math" src="_images/math/b58fe1b48e0cf7e5258a9c9372fca7c8b2a4831d.png" alt="\boldsymbol{C}"/> is computed from <img class="math" src="_images/math/428bd13a378ee8c0766fd621511e07662c129227.png" alt="\boldsymbol{P_i}"/> and <img class="math" src="_images/math/87fc3a4b37eea036fe85f82f40a31c6465368903.png" alt="\boldsymbol{\overline{P}}"/> as follows:</p>
+<div class="math">
+<p><img src="_images/math/742095b3733473898dd516ddf2797f71a348be9f.png" alt="\boldsymbol{C}=\frac{1}{n}\sum_{i=1}^{n}(\boldsymbol{P_i}-\boldsymbol{\overline{P}})(\boldsymbol{P_i}-\boldsymbol{\overline{P}})^T."/></p>
+</div><p>After that, the eigenvalues <img class="math" src="_images/math/7cc88b50dc92b72d943394a616d32be50659dc51.png" alt="\lambda_j"/> and corresponding eigenvectors <img class="math" src="_images/math/40a4c913100fc74548b1f0faf7ccad6c921b8c3c.png" alt="\boldsymbol{v_j}"/> of <img class="math" src="_images/math/b58fe1b48e0cf7e5258a9c9372fca7c8b2a4831d.png" alt="\boldsymbol{C}"/> are obtained, with <img class="math" src="_images/math/ca5e8db4953ee89745160fde196054eba989beff.png" alt="j\in\{1, 2, 3\}"/>, such that <img class="math" src="_images/math/6d91b92f8b564e037cf5ac0f16681ed05f2e59fb.png" alt="\boldsymbol{C}\boldsymbol{v_j}=\lambda_j\boldsymbol{v_j}"/>. Considering that the eigenvalues are arranged in ascending order, the eigenvector <img class="math" src="_images/math/776abde05128f40a3641bd974a750a05f11ebb74.png" alt="\boldsymbol{v_1}"/> associated with the minimal eigenvalue is used as the <img class="math" src="_images/math/8d051150f8669295ecdbe92367941012175a824d.png" alt="z"/> axis of the reference frame. If the angle between <img class="math" src="_images/math/776abde05128f40a3641bd974a750a05f11ebb74.png" alt="\boldsymbol{v_1}"/> and the viewing direction is in the <img class="math" src="_images/math/23804580f4c5dddff893a3565211175aa4376e13.png" alt="[-90^{\circ}, 90^{\circ}]"/> range, then <img class="math" src="_images/math/776abde05128f40a3641bd974a750a05f11ebb74.png" alt="\boldsymbol{v_1}"/> is negated. This ensures that the <img class="math" src="_images/math/8d051150f8669295ecdbe92367941012175a824d.png" alt="z"/> axis always points towards the viewer. The <img class="math" src="_images/math/888f7c323ac0341871e867220ae2d76467d74d6e.png" alt="x"/> axis of the reference frame is the eigenvector <img class="math" src="_images/math/5b4f3994fd45cbf45be7b9eb3cce113cc2107c35.png" alt="\boldsymbol{v_3}"/> associated with the maximal eigenvalue. The <img class="math" src="_images/math/1b5e577d6216dca3af7d87aa122a0b9b360d6cb3.png" alt="y"/> axis is given by <img class="math" src="_images/math/c50d0cb5bf768e5801a13d22f8ab33a4a77e3384.png" alt="\boldsymbol{v_2}=\boldsymbol{v_1}\times\boldsymbol{v_3}"/>.</p>
+<p>From the reference frame, it is possible to compute a transform <img class="math" src="_images/math/b20f608f30df465a3e8d82b9dcb46d442ff1c4d5.png" alt="[\boldsymbol{R} | \boldsymbol{t}]"/> that aligns it with the canonical coordinate system. All the points <img class="math" src="_images/math/428bd13a378ee8c0766fd621511e07662c129227.png" alt="\boldsymbol{P_i}"/> of the partial view are then transformed with <img class="math" src="_images/math/b20f608f30df465a3e8d82b9dcb46d442ff1c4d5.png" alt="[\boldsymbol{R} | \boldsymbol{t}]"/>, which is defined as follows:</p>
+<div class="math">
+<p><img src="_images/math/597d8dde0b9dec398936c12d5327c1cba42d2dde.png" alt="\begin{bmatrix}
+\boldsymbol{R} &amp; \boldsymbol{t} \\
+\boldsymbol{0} &amp; 1
+\end{bmatrix}=
+\begin{bmatrix}
+\boldsymbol{v_3}^T &amp; -\boldsymbol{v_3}^T\boldsymbol{\overline{P}} \\
+\boldsymbol{v_2}^T &amp; -\boldsymbol{v_2}^T\boldsymbol{\overline{P}} \\
+\boldsymbol{v_1}^T &amp; -\boldsymbol{v_1}^T\boldsymbol{\overline{P}} \\
+\boldsymbol{0} &amp; 1
+\end{bmatrix}."/></p>
+</div><p>Once the point cloud is aligned using the reference frame, a pose invariant global shape descriptor can be computed from it. The point cloud axis-aligned bounding cube centered on the origin is divided into an <img class="math" src="_images/math/48b291b96873230198c3a97f0c435e78ac3c3c80.png" alt="m_s \times m_s \times m_s"/> regular grid. For each grid cell, a histogram with <img class="math" src="_images/math/831953e5fceab7db4293e7425420219b04990ff7.png" alt="l_s"/> bins is computed. If <img class="math" src="_images/math/1d05c69a173ce9a488df4eb1311a36da9457d7f7.png" alt="l_s=1"/>, then each histogram bin will store the number of points that belong to its correspondent cell in the 3D regular grid. If <img class="math" src="_images/math/6ed031f2f76c3306792b3d76a41a4a22f356a57b.png" alt="l_s&gt;1"/>, then for each cell it will be computed a histogram of normalized distances between each sample and the cloud centroid.</p>
+<p>The contribution of each sample to the histogram is normalized with respect to the total number of points in the cloud. Optionally, interpolation may be used to distribute the value of each sample into adjacent cells, in an attempt to avoid boundary effects that may cause abrupt changes to the histogram when a sample shifts from being within one cell to another. The descriptor is then obtained by concatenating the computed histograms.</p>
+<a class="reference internal image-reference" href="_images/grid.png"><img alt="_images/grid.png" src="_images/grid.png" style="width: 24%;" /></a>
+<a class="reference internal image-reference" href="_images/grid_top_side_bottom_view.png"><img alt="_images/grid_top_side_bottom_view.png" src="_images/grid_top_side_bottom_view.png" style="width: 72%;" /></a>
+<p>Color information can also be incorporated to the descriptor in order to increase its discriminative power. The color component of the descriptor is computed with an <img class="math" src="_images/math/1b8616cbaba4c1124b29fdee6450b28c2cf332a1.png" alt="m_c \times m_c \times m_c"/> grid similar to the one used for the shape component, but a color histogram is generated for each cell based on the colors of the points that belong to it. Point cloud color is represented in the HSV space and the hue values are accumulated in histograms with <img class="math" src="_images/math/c727ca45f861da16bca4015f8e3319bd41d89b14.png" alt="l_c"/> bins. Similarly to shape component computation, normalization with respect to number of points is performed. Additionally, interpolation of histograms samples may also be performed. The shape and color components are concatenated, resulting in the final descriptor.</p>
+<p>Query and train descriptors are matched using a nearest neighbor search approach. After that, for each matched object instance, a coarse pose is computed using the alignment transforms obtained from the reference frames of the respective query and train partial views. Given the transforms <img class="math" src="_images/math/4fa7bffeaf6ab646d697f941c6ea19455e13f73d.png" alt="[\mathbf{R_{q}} | \mathbf{t_{q}}]"/> and <img class="math" src="_images/math/48eb833da2f2db0a14a6eb05a1f463a5a584e15a.png" alt="[\mathbf{R_{t}} | \mathbf{t_{t}}]"/> that align the query and train partial views, respectively, the object coarse pose <img class="math" src="_images/math/d66b1fe5355dc1c87078925faddc64f1c10c4faf.png" alt="[\mathbf{R_{c}} | \mathbf{t_{c}}]"/> is obtained by</p>
+<div class="math">
+<p><img src="_images/math/026abe60230c33a9b883e4401a810b079a5a89df.png" alt="\begin{bmatrix}
+\mathbf{R_{c}} &amp; \mathbf{t_{c}} \\
+\mathbf{0} &amp; 1
+\end{bmatrix}=
+{\begin{bmatrix}
+\mathbf{R_{q}} &amp; \mathbf{t_{q}} \\
+\mathbf{0} &amp; 1
+\end{bmatrix}}^{-1}
+\begin{bmatrix}
+\mathbf{R_{t}} &amp; \mathbf{t_{t}} \\
+\mathbf{0} &amp; 1
+\end{bmatrix}."/></p>
+</div><p>The coarse pose <img class="math" src="_images/math/d66b1fe5355dc1c87078925faddc64f1c10c4faf.png" alt="[\mathbf{R_{c}} | \mathbf{t_{c}}]"/> can then be refined using the Iterative Closest Point (ICP) algorithm.</p>
+</div>
+<div class="section" id="estimating-gasd-features">
+<h1>Estimating GASD features</h1>
+<p>The Globally Aligned Spatial Distribution is implemented in PCL as part of the
+<a class="reference external" href="http://docs.pointclouds.org/trunk/group__features.html">pcl_features</a>
+library.</p>
+<p>The default values for color GASD parameters are: <img class="math" src="_images/math/dbde9b8b0b30f68db0c66a59597fe25fa4502d29.png" alt="m_s=6"/> (half size of 3), <img class="math" src="_images/math/1d05c69a173ce9a488df4eb1311a36da9457d7f7.png" alt="l_s=1"/>, <img class="math" src="_images/math/54fa6858136daa53a3d1a350a7f01709176d05c6.png" alt="m_c=4"/> (half size of 2) and <img class="math" src="_images/math/3bec4d54d55571c8a9d39968ecce62b8b982b979.png" alt="l_c=12"/> and no histogram interpolation (INTERP_NONE). This results in an array of 984 float values. These are stored in a <strong>pcl::GASDSignature984</strong> point type. The default values for shape only GASD parameters are: <img class="math" src="_images/math/d89d9b7a6c3e39477ac108e2b5b3d39af3d8fc41.png" alt="m_s=8"/> (half size of 4), <img class="math" src="_images/math/1d05c69a173ce9a488df4eb1311a36da9457d7f7.png" alt="l_s=1"/> and trilinear histogram interpolation (INTERP_TRILINEAR). This results in an array of 512 float values, which may be stored in a <strong>pcl::GASDSignature512</strong> point type. It is also possible to use quadrilinear histogram interpolation (INTERP_QUADRILINEAR).</p>
+<p>The following code snippet will estimate a GASD shape + color descriptor for an input colored point cloud.</p>
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/features/gasd.h&gt;</span><span class="cp"></span>
+
+<span class="p">{</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="o">&gt;</span><span class="p">);</span>
+
+  <span class="p">...</span> <span class="n">read</span><span class="p">,</span> <span class="n">pass</span> <span class="n">in</span> <span class="n">or</span> <span class="n">create</span> <span class="n">a</span> <span class="n">point</span> <span class="n">cloud</span> <span class="p">...</span>
+
+  <span class="c1">// Create the GASD estimation class, and pass the input dataset to it</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">GASDColorEstimation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">GASDSignature984</span><span class="o">&gt;</span> <span class="n">gasd</span><span class="p">;</span>
+  <span class="n">gasd</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
+
+  <span class="c1">// Output datasets</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">GASDSignature984</span><span class="o">&gt;</span> <span class="n">descriptor</span><span class="p">;</span>
+
+  <span class="c1">// Compute the descriptor</span>
+  <span class="n">gasd</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="n">descriptor</span><span class="p">);</span>
+
+  <span class="c1">// Get the alignment transform</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Matrix4f</span> <span class="n">trans</span> <span class="o">=</span> <span class="n">gasd</span><span class="p">.</span><span class="n">getTransform</span> <span class="p">(</span><span class="n">trans</span><span class="p">);</span>
+
+  <span class="c1">// Unpack histogram bins</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="p">(</span> <span class="n">descriptor</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">descriptorSize</span> <span class="p">());</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">descriptor</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">histogram</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>The following code snippet will estimate a GASD shape only descriptor for an input point cloud.</p>
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/features/gasd.h&gt;</span><span class="cp"></span>
+
+<span class="p">{</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+
+  <span class="p">...</span> <span class="n">read</span><span class="p">,</span> <span class="n">pass</span> <span class="n">in</span> <span class="n">or</span> <span class="n">create</span> <span class="n">a</span> <span class="n">point</span> <span class="n">cloud</span> <span class="p">...</span>
+
+  <span class="c1">// Create the GASD estimation class, and pass the input dataset to it</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">GASDEstimation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">GASDSignature512</span><span class="o">&gt;</span> <span class="n">gasd</span><span class="p">;</span>
+  <span class="n">gasd</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
+
+  <span class="c1">// Output datasets</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">GASDSignature512</span><span class="o">&gt;</span> <span class="n">descriptor</span><span class="p">;</span>
+
+  <span class="c1">// Compute the descriptor</span>
+  <span class="n">gasd</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="n">descriptor</span><span class="p">);</span>
+
+  <span class="c1">// Get the alignment transform</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Matrix4f</span> <span class="n">trans</span> <span class="o">=</span> <span class="n">gasd</span><span class="p">.</span><span class="n">getTransform</span> <span class="p">(</span><span class="n">trans</span><span class="p">);</span>
+
+  <span class="c1">// Unpack histogram bins</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="p">(</span> <span class="n">descriptor</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">descriptorSize</span> <span class="p">());</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">descriptor</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">histogram</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<dl class="citation">
+<dt class="label" id="gasd"><span class="brackets">GASD</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p><a class="reference external" href="http://www.cin.ufpe.br/~jpsml/uploads/8/2/6/7/82675770/pid4349755.pdf">http://www.cin.ufpe.br/~jpsml/uploads/8/2/6/7/82675770/pid4349755.pdf</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>&#64;InProceedings{Lima16SIBGRAPI,
+author = {Joao Paulo Lima and Veronica Teichrieb},
+title = {An Efficient Global Point Cloud Descriptor for Object Recognition and Pose Estimation},
+booktitle = {Proceedings of the 29th SIBGRAPI - Conference on Graphics, Patterns and Images},
+year = {2016},
+address = {Sao Jose dos Campos, Brazil},
+month = {October}
+}</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+</div> <!-- #page-content -->
+
+<?php
+$chunkOutput = $modx->getChunk("site-footer");
+echo $chunkOutput;
+?>
+
+  </body>
+</html>

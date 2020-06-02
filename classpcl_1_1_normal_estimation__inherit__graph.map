@@ -1,0 +1,6 @@
+<map id="pcl::NormalEstimation&lt; PointInT, PointOutT &gt;" name="pcl::NormalEstimation&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_normal_estimation_o_m_p.html" title="NormalEstimationOMP estimates local surface properties at each 3D point, such as surface normals and ..." alt="" coords="5,379,187,426"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="19,182,173,229"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="8,101,184,131"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="13,5,179,35"/>
+</map>

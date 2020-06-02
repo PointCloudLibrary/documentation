@@ -1,0 +1,10 @@
+<map id="pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;" name="pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="pcl::tracking::Tracker\l\&lt; PointInT, Eigen::Affine3f \&gt;" alt="" coords="927,31,1116,78"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,68,472,97"/>
+<area shape="rect" id="node8" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="567,10,711,57"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,68,171,97"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_transformation_from_correspondences.html" title="Calculates a transformation based on corresponding 3D points. " alt="" coords="888,155,1155,184"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointUV \&gt;" alt="" coords="952,207,1091,254"/>
+<area shape="rect" id="node17" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="327,148,441,177"/>
+<area shape="rect" id="node24" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="568,216,709,245"/>
+</map>

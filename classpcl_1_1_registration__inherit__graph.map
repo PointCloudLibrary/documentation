@@ -1,0 +1,21 @@
+<map id="pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint\l\&lt; PointSource, PointTarget \&gt;" alt="" coords="1179,5,1371,51"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm..." alt="" coords="971,228,1155,292"/>
+<area shape="rect" id="node22" href="$classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html" title="FPCSInitialAlignment computes corresponding four point congruent sets as described in: &quot;4&#45;points cong..." alt="" coords="971,347,1155,429"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointT, PointT, Scalar \&gt;" alt="" coords="980,451,1145,498"/>
+<area shape="rect" id="node28" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointT, PointT \&gt;" alt="" coords="1000,521,1125,567"/>
+<area shape="rect" id="node30" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointSource, PointTarget \&gt;" alt="" coords="971,649,1155,695"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,417,519,447"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,417,171,447"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_generalized_iterative_closest_point.html" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="1672,72,1856,136"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_iterative_closest_point_non_linear.html" title="IterativeClosestPointNonLinear is an ICP variant that uses Levenberg&#45;Marquardt optimization backend..." alt="" coords="1424,52,1592,116"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_iterative_closest_point_with_normals.html" title="IterativeClosestPointWithNormals is a special case of IterativeClosestPoint, that uses a transformati..." alt="" coords="1416,140,1600,204"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_joint_iterative_closest_point.html" title="JointIterativeClosestPoint extends ICP to multiple frames which share the same transform. " alt="" coords="1401,228,1615,292"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_iterative_closest_point.html" title="pcl::IterativeClosestPoint\l\&lt; PointSource, PointTarget \&gt;" alt="" coords="1412,315,1604,362"/>
+<area shape="rect" id="node24" href="$classpcl_1_1registration_1_1_k_f_p_c_s_initial_alignment.html" title="KFPCSInitialAlignment computes corresponding four point congruent sets based on keypoints as describe..." alt="" coords="1416,385,1600,466"/>
+<area shape="rect" id="node32" href="$classpcl_1_1_normal_distributions_transform.html" title="A 3D Normal Distribution Transform registration implementation for point cloud data. " alt="" coords="1424,489,1592,553"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_normal_distributions_transform2_d.html" title="NormalDistributionsTransform2D provides an implementation of the Normal Distributions Transform algor..." alt="" coords="1416,577,1600,641"/>
+<area shape="rect" id="node36" href="$classpcl_1_1_p_p_f_registration.html" title="Class that registers two point clouds based on their sets of PPFSignatures. " alt="" coords="1412,665,1604,711"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_sample_consensus_initial_alignment.html" title="SampleConsensusInitialAlignment is an implementation of the initial alignment algorithm described in ..." alt="" coords="1415,735,1601,799"/>
+<area shape="rect" id="node40" href="$classpcl_1_1_sample_consensus_prerejective.html" title="Pose estimation and alignment class using a prerejective RANSAC routine. " alt="" coords="1395,823,1621,887"/>
+</map>

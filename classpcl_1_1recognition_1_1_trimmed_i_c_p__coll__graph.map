@@ -1,0 +1,10 @@
+<map id="pcl::recognition::TrimmedICP&lt; PointT, Scalar &gt;" name="pcl::recognition::TrimmedICP&lt; PointT, Scalar &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title="pcl::registration::\lTransformationEstimationSVD\l\&lt; PointT, PointT, Scalar \&gt;" alt="" coords="825,101,1023,165"/>
+<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointT, PointT, Scalar \&gt;" alt="" coords="420,5,593,69"/>
+<area shape="rect" id="node6" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="5,81,189,162"/>
+<area shape="rect" id="node8" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title="TransformationEstimationSVD implements SVD&#45;based estimation of the transformation aligning the given ..." alt="" coords="408,93,605,174"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="843,189,1005,235"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_kd_tree.html" title="pcl::KdTree\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="396,197,617,227"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="23,211,172,240"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures. " alt="" coords="413,250,600,297"/>
+</map>

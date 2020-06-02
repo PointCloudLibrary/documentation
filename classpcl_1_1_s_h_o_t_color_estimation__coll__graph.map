@@ -1,0 +1,10 @@
+<map id="pcl::SHOTColorEstimation&lt; PointInT, PointNT, PointOutT, PointRFT &gt;" name="pcl::SHOTColorEstimation&lt; PointInT, PointNT, PointOutT, PointRFT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="1033,72,1231,136"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="763,37,981,83"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="556,37,711,83"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,8,472,37"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,8,171,37"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="317,61,451,107"/>
+<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="21,61,155,107"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_feature_with_local_reference_frames.html" title="FeatureWithLocalReferenceFrames provides a public interface for descriptor extractor classes which ne..." alt="" coords="768,106,976,153"/>
+</map>

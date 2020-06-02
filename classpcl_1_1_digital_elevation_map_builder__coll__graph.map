@@ -1,0 +1,7 @@
+<map id="pcl::DigitalElevationMapBuilder" name="pcl::DigitalElevationMapBuilder">
+<area shape="rect" id="node2" href="$classpcl_1_1_disparity_map_converter.html" title="pcl::DisparityMapConverter\l\&lt; PointDEM \&gt;" alt="" coords="76,545,257,591"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::RGB \&gt;" alt="" coords="68,315,207,362"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_disparity_map_converter.html" title="Compute point cloud from the disparity map. " alt="" coords="187,430,368,477"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+</map>

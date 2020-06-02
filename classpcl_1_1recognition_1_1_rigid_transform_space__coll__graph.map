@@ -1,0 +1,6 @@
+<map id="pcl::recognition::RigidTransformSpace" name="pcl::recognition::RigidTransformSpace">
+<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_rotation_space_creator.html" title="pcl::recognition::Rotation\lSpaceCreator" alt="" coords="463,5,628,51"/>
+<area shape="rect" id="node4" href="$classpcl_1_1recognition_1_1_simple_octree.html" title="pcl::recognition::Simple\lOctree\&lt; RotationSpace,\l RotationSpaceCreator,\l float \&gt;" alt="" coords="877,65,1040,146"/>
+<area shape="rect" id="node7" href="$classpcl_1_1recognition_1_1_simple_octree_1_1_node.html" title="pcl::recognition::Simple\lOctree\&lt; NodeData, NodeDataCreator,\l Scalar \&gt;::Node" alt="" coords="7,87,252,151"/>
+<area shape="rect" id="node10" href="$classpcl_1_1recognition_1_1_simple_octree.html" title="pcl::recognition::Simple\lOctree\&lt; NodeData, NodeDataCreator,\l Scalar \&gt;" alt="" coords="423,163,668,227"/>
+</map>

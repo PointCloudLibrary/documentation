@@ -1,0 +1,10 @@
+<map id="pcl::IterativeClosestPointNonLinear&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::IterativeClosestPointNonLinear&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm..." alt="" coords="1109,19,1293,83"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="883,19,1059,83"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="601,8,799,37"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="285,8,451,37"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="632,61,768,107"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="301,61,435,107"/>
+<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,93,140,139"/>
+<area shape="rect" id="node16" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="300,130,436,177"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="pcl::LineRGBD&lt; PointXYZT, PointRGBT &gt;::Detection" name="pcl::LineRGBD&lt; PointXYZT, PointRGBT &gt;::Detection">
+<area shape="rect" id="node2" href="$structpcl_1_1_region_x_y.html" title="Defines a region in XY&#45;space. " alt="" coords="5,5,112,35"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_bounding_box_x_y_z.html" title="pcl::BoundingBoxXYZ" alt="" coords="136,5,285,35"/>
+</map>

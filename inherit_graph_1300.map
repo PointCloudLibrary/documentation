@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$structtraits_1_1has__field.html" title="traits::has_field\&lt;\l PointT, pcl::fields\l::curvature \&gt;" alt="" coords="101,5,229,69"/>
+<area shape="rect" id="node7" href="$structtraits_1_1has__field.html" title="traits::has_field\&lt;\l PointT, pcl::fields\l::intensity \&gt;" alt="" coords="101,93,229,157"/>
+<area shape="rect" id="node11" href="$structtraits_1_1has__field.html" title="traits::has_field\&lt;\l PointT, pcl::fields\l::label \&gt;" alt="" coords="101,181,229,245"/>
+<area shape="rect" id="node15" href="$structtraits_1_1has__field.html" title="Metafunction to check if a given point type has a given field. " alt="" coords="107,269,224,315"/>
+<area shape="rect" id="node5" href="$structtraits_1_1has__curvature.html" title="Metafunction to check if a given point type has curvature field. " alt="" coords="277,14,419,61"/>
+<area shape="rect" id="node9" href="$structtraits_1_1has__intensity.html" title="Metafunction to check if a given point type has intensity field. " alt="" coords="280,102,416,149"/>
+<area shape="rect" id="node13" href="$structtraits_1_1has__label.html" title="Metafunction to check if a given point type has label field. " alt="" coords="287,190,409,237"/>
+</map>

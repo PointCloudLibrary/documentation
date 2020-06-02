@@ -1,0 +1,5 @@
+<map id="pcl::FastBilateralFilter&lt; PointT &gt;" name="pcl::FastBilateralFilter&lt; PointT &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_fast_bilateral_filter_o_m_p.html" title="Implementation of a fast bilateral filter for smoothing depth information in organized point clouds B..." alt="" coords="13,257,163,303"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,83,157,112"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="pcl::gpu::DataSource" name="pcl::gpu::DataSource">
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::Normal \&gt;" alt="" coords="225,315,364,362"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="145,104,260,133"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="132,219,273,248"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="5,315,144,362"/>
+</map>

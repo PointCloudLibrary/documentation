@@ -1,0 +1,9 @@
+<map id="ON_BrepFaceSideArray" name="ON_BrepFaceSideArray">
+<area shape="rect" id="node2" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepFaceSide \&gt;" alt="" coords="163,313,312,359"/>
+<area shape="rect" id="node4" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepFace\lSide \&gt;" alt="" coords="13,198,221,245"/>
+<area shape="rect" id="node6" href="$class_o_n___brep_face_side.html" title="ON_BrepFaceSide" alt="" coords="37,101,168,131"/>
+<area shape="rect" id="node8" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,5,91,35"/>
+<area shape="rect" id="node10" href="$union_o_n___u.html" title="ON_U" alt="" coords="115,5,173,35"/>
+<area shape="rect" id="node12" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="219,101,365,131"/>
+<area shape="rect" id="node16" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="245,207,395,236"/>
+</map>

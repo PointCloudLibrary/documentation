@@ -1,0 +1,26 @@
+<map id="pcl::Keypoint&lt; PointInT, PointOutT &gt;" name="pcl::Keypoint&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="AgastKeypoint2DBase\l\&lt; PointInT, PointOutT,\l pcl::common::IntensityField\lAccessor\&lt; PointInT \&gt; \&gt;" alt="" coords="1085,5,1272,86"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="Detects 2D AGAST corner points. " alt="" coords="881,110,1060,157"/>
+<area shape="rect" id="node20" href="$classpcl_1_1_brisk_keypoint2_d.html" title="Detects BRISK interest points based on the original code and paper reference by. " alt="" coords="889,179,1052,226"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_harris_keypoint2_d.html" title="HarrisKeypoint2D detects Harris corners family points. " alt="" coords="889,249,1052,295"/>
+<area shape="rect" id="node24" href="$classpcl_1_1_harris_keypoint3_d.html" title="HarrisKeypoint3D uses the idea of 2D Harris keypoints, but instead of using image gradients..." alt="" coords="889,318,1052,365"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_harris_keypoint6_d.html" title="Keypoint detector for detecting corners in 3D (XYZ), 2D (intensity) AND mixed versions of these..." alt="" coords="889,387,1052,434"/>
+<area shape="rect" id="node28" href="$classpcl_1_1_i_s_s_keypoint3_d.html" title="ISSKeypoint3D detects the Intrinsic Shape Signatures keypoints for a given point cloud. " alt="" coords="889,457,1052,503"/>
+<area shape="rect" id="node30" href="$classpcl_1_1_s_i_f_t_keypoint.html" title="SIFTKeypoint detects the Scale Invariant Feature Transform keypoints for a given point cloud dataset ..." alt="" coords="893,526,1048,573"/>
+<area shape="rect" id="node32" href="$classpcl_1_1_s_u_s_a_n_keypoint.html" title="SUSANKeypoint implements a RGB&#45;D extension of the SUSAN detector inluding normal directions variation..." alt="" coords="889,595,1052,642"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_trajkovic_keypoint2_d.html" title="TrajkovicKeypoint2D implements Trajkovic and Hedley corner detector on organized pooint cloud using i..." alt="" coords="887,665,1055,711"/>
+<area shape="rect" id="node36" href="$classpcl_1_1_trajkovic_keypoint3_d.html" title="TrajkovicKeypoint3D implements Trajkovic and Hedley corner detector on point cloud using geometric in..." alt="" coords="887,734,1055,781"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointWith\lRange, int \&gt;" alt="" coords="888,873,1053,919"/>
+<area shape="rect" id="node42" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointInT,\l int \&gt;" alt="" coords="889,942,1052,989"/>
+<area shape="rect" id="node46" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; pcl\l::PointXYZ, pcl::PointUV \&gt;" alt="" coords="881,803,1060,850"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointT,\l PointT \&gt;" alt="" coords="895,1011,1047,1058"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,535,472,564"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,535,171,564"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_agast_keypoint2_d.html" title="Detects 2D AGAST corner points. " alt="" coords="1589,55,1752,102"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="pcl::AgastKeypoint2DBase\l\&lt; PointInT, PointOutT,\l pcl::common::IntensityFieldAccessor\l\&lt; PointInT \&gt; \&gt;" alt="" coords="1296,102,1539,183"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="pcl::AgastKeypoint2DBase\l\&lt; pcl::PointXYZ, pcl::PointUV,\l pcl::common::IntensityFieldAccessor\l\&lt; pcl::PointXYZ \&gt; \&gt;" alt="" coords="1296,362,1539,443"/>
+<area shape="rect" id="node18" href="$classpcl_1_1_agast_keypoint2_d_3_01pcl_1_1_point_x_y_z_00_01pcl_1_1_point_u_v_01_4.html" title="Detects 2D AGAST corner points. " alt="" coords="1596,371,1745,435"/>
+<area shape="rect" id="node40" href="$classpcl_1_1_narf_keypoint.html" title="NARF (Normal Aligned Radial Feature) keypoints. " alt="" coords="1356,881,1479,911"/>
+<area shape="rect" id="node44" href="$classpcl_1_1_uniform_sampling.html" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="1344,942,1491,989"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_smoothed_surfaces_keypoint.html" title="Based on the paper: Xinju Li and Igor Guskov Multi&#45;scale features for approximate alignment of point&#45;..." alt="" coords="1313,1011,1521,1058"/>
+</map>

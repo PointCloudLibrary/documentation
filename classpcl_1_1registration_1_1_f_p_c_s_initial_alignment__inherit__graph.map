@@ -1,0 +1,6 @@
+<map id="pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;" name="pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1registration_1_1_k_f_p_c_s_initial_alignment.html" title="KFPCSInitialAlignment computes corresponding four point congruent sets based on keypoints as describe..." alt="" coords="1032,5,1216,86"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="571,13,747,77"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,31,519,60"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,31,171,60"/>
+</map>

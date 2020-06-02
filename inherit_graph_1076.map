@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$structpcl_1_1registration_1_1sort_correspondences_by_distance.html" title="sortCorrespondencesByDistance : a functor for sorting correspondences by distance ..." alt="" coords="167,5,380,51"/>
+<area shape="rect" id="node5" href="$structpcl_1_1registration_1_1sort_correspondences_by_match_index.html" title="sortCorrespondencesByMatchIndex : a functor for sorting correspondences by match index ..." alt="" coords="175,75,372,139"/>
+<area shape="rect" id="node7" href="$structpcl_1_1registration_1_1sort_correspondences_by_match_index_and_distance.html" title="sortCorrespondencesByMatchIndexAndDistance : a functor for sorting correspondences by match index and..." alt="" coords="175,163,372,227"/>
+<area shape="rect" id="node9" href="$structpcl_1_1registration_1_1sort_correspondences_by_query_index.html" title="sortCorrespondencesByQueryIndex : a functor for sorting correspondences by query index ..." alt="" coords="175,251,372,315"/>
+<area shape="rect" id="node11" href="$structpcl_1_1registration_1_1sort_correspondences_by_query_index_and_distance.html" title="sortCorrespondencesByQueryIndexAndDistance : a functor for sorting correspondences by query index and..." alt="" coords="175,339,372,403"/>
+</map>

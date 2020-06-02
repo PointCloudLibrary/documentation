@@ -1,0 +1,8 @@
+<map id="pcl::gpu::FeatureFromNormals" name="pcl::gpu::FeatureFromNormals">
+<area shape="rect" id="node2" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="120,397,240,427"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; int \&gt;" alt="" coords="5,182,152,229"/>
+<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="95,5,257,35"/>
+<area shape="rect" id="node8" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="87,85,265,115"/>
+<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="203,182,349,229"/>
+<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_octree.html" title="Octree implementation on GPU. " alt="" coords="259,299,373,328"/>
+</map>

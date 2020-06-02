@@ -1,0 +1,4 @@
+<map id="pcl::MultiChannel2DComparisonFeatureHandler&lt; DATA_TYPE, NUM_OF_CHANNELS &gt;" name="pcl::MultiChannel2DComparisonFeatureHandler&lt; DATA_TYPE, NUM_OF_CHANNELS &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_handler.html" title="pcl::FeatureHandler\l\&lt; pcl::MultiChannel2DComparison\lFeature\&lt; pcl::PointXY32i \&gt;\l, pcl::MultiChannel2DDataSet\l\&lt; DATA_TYPE, NUM_OF_CHANNELS\l \&gt;, pcl::MultipleData2DExampleIndex \&gt;" alt="" coords="460,34,716,150"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature_handler.html" title="Utility class interface which is used for creating and evaluating features. " alt="" coords="7,60,172,124"/>
+</map>

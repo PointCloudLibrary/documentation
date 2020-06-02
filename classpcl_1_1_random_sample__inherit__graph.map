@@ -1,0 +1,6 @@
+<map id="pcl::RandomSample&lt; PointT &gt;" name="pcl::RandomSample&lt; PointT &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_random_sample.html" title="pcl::RandomSample\&lt;\l pcl::pcl::PCLPointCloud2 \&gt;" alt="" coords="5,379,189,426"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="39,166,156,213"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="28,85,167,115"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="15,5,180,35"/>
+</map>

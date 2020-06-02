@@ -1,0 +1,12 @@
+<map id="pcl::SACSegmentation&lt; PointT &gt;" name="pcl::SACSegmentation&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,745,171,775"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="195,737,352,783"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="179,640,368,669"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_sample_consensus_model.html" title="pcl::SampleConsensusModel\&lt; T \&gt;" alt="" coords="161,544,385,573"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\&lt; T \&gt;" alt="" coords="88,439,253,468"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="104,315,237,362"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="277,430,469,477"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="287,324,460,353"/>
+<area shape="rect" id="node18" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="221,104,336,133"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="303,219,444,248"/>
+</map>

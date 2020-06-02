@@ -1,0 +1,6 @@
+<map id="pcl::io::LZFImageReader" name="pcl::io::LZFImageReader">
+<area shape="rect" id="node3" href="$classpcl_1_1io_1_1_l_z_f_depth16_image_reader.html" title="PCL&#45;LZF 16&#45;bit depth image format reader. " alt="" coords="5,83,179,130"/>
+<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_l_z_f_r_g_b24_image_reader.html" title="PCL&#45;LZF 24&#45;bit RGB image format reader. " alt="" coords="203,92,411,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_l_z_f_bayer8_image_reader.html" title="PCL&#45;LZF 8&#45;bit Bayer image format reader. " alt="" coords="87,179,292,208"/>
+<area shape="rect" id="node9" href="$classpcl_1_1io_1_1_l_z_f_y_u_v422_image_reader.html" title="PCL&#45;LZF 8&#45;bit Bayer image format reader. " alt="" coords="316,179,529,208"/>
+</map>

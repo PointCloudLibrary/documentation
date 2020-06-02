@@ -1,0 +1,7 @@
+<map id="pcl::RangeImageBorderExtractor" name="pcl::RangeImageBorderExtractor">
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l BorderDescription \&gt;" alt="" coords="40,339,243,386"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="5,155,227,184"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="105,5,271,35"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="173,101,349,131"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="165,209,320,255"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="pcl::UniqueShapeContext&lt; PointInT, PointOutT, PointRFT &gt;" name="pcl::UniqueShapeContext&lt; PointInT, PointOutT, PointRFT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="551,5,705,51"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,13,472,43"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,13,171,43"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_feature_with_local_reference_frames.html" title="FeatureWithLocalReferenceFrames provides a public interface for descriptor extractor classes which ne..." alt="" coords="524,74,732,121"/>
+</map>

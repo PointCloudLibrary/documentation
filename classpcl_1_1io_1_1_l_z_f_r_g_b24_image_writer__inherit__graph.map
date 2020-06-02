@@ -1,0 +1,5 @@
+<map id="pcl::io::LZFRGB24ImageWriter" name="pcl::io::LZFRGB24ImageWriter">
+<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_l_z_f_bayer8_image_writer.html" title="PCL&#45;LZF 8&#45;bit Bayer image format writer. " alt="" coords="5,160,205,189"/>
+<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_l_z_f_y_u_v422_image_writer.html" title="PCL&#45;LZF 16&#45;bit YUV422 image format writer. " alt="" coords="229,160,437,189"/>
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_l_z_f_image_writer.html" title="PCL&#45;LZF image format writer. " alt="" coords="140,5,297,35"/>
+</map>

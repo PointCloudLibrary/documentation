@@ -1,0 +1,4 @@
+<map id="pcl::PointCorrespondence6D" name="pcl::PointCorrespondence6D">
+<area shape="rect" id="node2" href="$structpcl_1_1_point_correspondence3_d.html" title="Representation of a (possible) correspondence between two 3D points in two different coordinate frame..." alt="" coords="5,83,195,112"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_correspondence.html" title="Correspondence represents a match between two entities (e.g., points, descriptors, etc). " alt="" coords="29,5,171,35"/>
+</map>

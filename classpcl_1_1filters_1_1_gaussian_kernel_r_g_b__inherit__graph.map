@@ -1,0 +1,4 @@
+<map id="pcl::filters::GaussianKernelRGB&lt; PointInT, PointOutT &gt;" name="pcl::filters::GaussianKernelRGB&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1filters_1_1_gaussian_kernel.html" title="Gaussian kernel implementation interface Use this as implementation reference. " alt="" coords="15,102,193,149"/>
+<area shape="rect" id="node4" href="$classpcl_1_1filters_1_1_convolving_kernel.html" title="Class ConvolvingKernel base class for all convolving kernels. " alt="" coords="5,6,203,53"/>
+</map>

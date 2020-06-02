@@ -1,0 +1,5 @@
+<map id="pcl::visualization::PointCloudGeometryHandler&lt; pcl::PCLPointCloud2 &gt;" name="pcl::visualization::PointCloudGeometryHandler&lt; pcl::PCLPointCloud2 &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_custom_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Custom handler class for PointCloud geometry. " alt="" coords="272,5,485,69"/>
+<area shape="rect" id="node5" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_surface_normal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Surface normal handler class for PointCloud geometry. " alt="" coords="252,93,505,157"/>
+<area shape="rect" id="node7" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_x_y_z_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="XYZ handler class for PointCloud geometry. " alt="" coords="281,181,476,245"/>
+</map>

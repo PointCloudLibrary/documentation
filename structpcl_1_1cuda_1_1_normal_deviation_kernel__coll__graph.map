@@ -1,0 +1,6 @@
+<map id="pcl::cuda::NormalDeviationKernel&lt; Storage &gt;" name="pcl::cuda::NormalDeviationKernel&lt; Storage &gt;">
+<area shape="rect" id="node2" href="$structpcl_1_1cuda_1_1_point_x_y_z_r_g_b.html" title="Default point xyz&#45;rgb structure. " alt="" coords="35,101,203,131"/>
+<area shape="rect" id="node6" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title="pcl::cuda::OrganizedRadius\lSearch\&lt; CloudConstPtr \&gt;" alt="" coords="89,313,271,359"/>
+<area shape="rect" id="node9" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title="Kernel to compute a radius neighborhood given a organized point cloud (aka range image cloud) ..." alt="" coords="189,198,371,245"/>
+<area shape="rect" id="node4" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars. " alt="" coords="63,5,175,35"/>
+</map>

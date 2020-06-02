@@ -1,0 +1,12 @@
+<map id="pcl::registration::TransformationEstimationPointToPlaneWeighted&lt; PointSource, PointTarget, MatScalar &gt;" name="pcl::registration::TransformationEstimationPointToPlaneWeighted&lt; PointSource, PointTarget, MatScalar &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlane\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="2011,137,2243,218"/>
+<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_transformation_estimation_l_m.html" title="TransformationEstimationLM implements Levenberg Marquardt&#45;based estimation of the transformation alig..." alt="" coords="908,126,1097,207"/>
+<area shape="rect" id="node21" href="$classpcl_1_1registration_1_1_transformation_estimation_l_m.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l Scalar \&gt;" alt="" coords="1323,41,1512,122"/>
+<area shape="rect" id="node6" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="565,50,749,131"/>
+<area shape="rect" id="node8" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="165,5,349,86"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="587,175,728,204"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointSource \&gt;" alt="" coords="900,244,1105,273"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointTarget \&gt;" alt="" coords="901,361,1104,391"/>
+<area shape="rect" id="node12" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="200,244,315,273"/>
+<area shape="rect" id="node19" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="TransformationEstimationPointToPlane uses Levenberg Marquardt optimization to find the transformation..." alt="" coords="1563,57,1795,138"/>
+</map>

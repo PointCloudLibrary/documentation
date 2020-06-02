@@ -1,0 +1,6 @@
+<map id="pcl::io::PointCloudImageExtractorWithScaling&lt; PointT &gt;" name="pcl::io::PointCloudImageExtractorWithScaling&lt; PointT &gt;">
+<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_curvature_field.html" title="Image Extractor which uses the data present in the &quot;curvature&quot; field to produce a curvature map (as a..." alt="" coords="439,5,628,69"/>
+<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_intensity_field.html" title="Image Extractor which uses the data present in the &quot;intensity&quot; field to produce a monochrome intensit..." alt="" coords="443,93,624,157"/>
+<area shape="rect" id="node9" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_z_field.html" title="Image Extractor which uses the data present in the &quot;z&quot; field to produce a depth map (as a monochrome ..." alt="" coords="432,181,635,227"/>
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds. " alt="" coords="5,102,171,149"/>
+</map>

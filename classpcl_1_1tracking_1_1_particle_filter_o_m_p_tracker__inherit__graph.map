@@ -1,0 +1,6 @@
+<map id="pcl::tracking::ParticleFilterOMPTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::ParticleFilterOMPTracker&lt; PointInT, StateT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="20,281,207,327"/>
+<area shape="rect" id="node4" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="41,182,185,229"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="25,101,201,131"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="31,5,196,35"/>
+</map>

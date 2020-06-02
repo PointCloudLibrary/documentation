@@ -1,0 +1,6 @@
+<map id="pcl::CorrespondenceGrouping&lt; PointModelT, PointSceneT &gt;" name="pcl::CorrespondenceGrouping&lt; PointModelT, PointSceneT &gt;">
+<area shape="rect" id="node7" href="$classpcl_1_1_geometric_consistency_grouping.html" title="Class implementing a 3D correspondence grouping enforcing geometric consistency among feature corresp..." alt="" coords="836,5,1015,69"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_hough3_d_grouping.html" title="Class implementing a 3D correspondence grouping algorithm that can deal with multiple instances of a ..." alt="" coords="824,93,1027,139"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointModelT \&gt;" alt="" coords="320,63,520,92"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,63,171,92"/>
+</map>

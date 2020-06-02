@@ -1,0 +1,8 @@
+<map id="pcl::VoxelGridLabel" name="pcl::VoxelGridLabel">
+<area shape="rect" id="node2" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; pcl\l::PointXYZRGBL \&gt;" alt="" coords="111,313,244,359"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; pcl::PointXYZRGBL \&gt;" alt="" coords="5,216,221,245"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGBL \&gt;" alt="" coords="44,102,183,149"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="113,5,279,35"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="209,111,348,140"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="245,216,411,245"/>
+</map>

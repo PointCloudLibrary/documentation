@@ -1,0 +1,13 @@
+<map id="pcl::CrfSegmentation&lt; PointT &gt;" name="pcl::CrfSegmentation&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZRGBL \&gt;" alt="" coords="1116,261,1273,307"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="371,188,485,217"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="720,232,861,261"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="1125,183,1264,230"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointNormal \&gt;" alt="" coords="1125,347,1264,394"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="1128,467,1261,514"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="685,476,896,505"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGB \&gt;" alt="" coords="359,466,497,513"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,507,171,536"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="359,536,497,565"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="708,544,873,573"/>
+</map>

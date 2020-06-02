@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to build a minimal example</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.11.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">How to build a minimal example</a><ul>
+<li><a class="reference internal" href="#method-1-strip-down-your-program">Method 1: Strip down your program</a></li>
+<li><a class="reference internal" href="#method-2-start-from-scratch">Method 2: Start from scratch</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-deal-with-input-data-e-g-point-clouds">How to deal with input data (e.g. point clouds)</a></li>
+<li><a class="reference internal" href="#i-m-linking-against-other-libraries-what-to-do">I’m linking against other libraries, what to do?</a></li>
+<li><a class="reference internal" href="#final-make">Final Make</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>How to build a minimal example</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-build-a-minimal-example">
+<span id="minimal-example"></span><h1>How to build a minimal example</h1>
+<p>First of all make a backup of your current state or start a new project for the
+minimal example. Than there are basically two ways: strip down your program or
+start from scratch.</p>
+<div class="section" id="method-1-strip-down-your-program">
+<h2>Method 1: Strip down your program</h2>
+<p>This method has the advantage that you start with your actual problem and you
+can test all the time if you are on the right track. First make sure that the
+program actually compiles without the problematic code by commenting it. Then
+start removing unneeded code until the bare minimum and make sure that it’s
+still showing the error by compiling it with and without the problematic line
+(make sure it still emits the same error message).</p>
+</div>
+<div class="section" id="method-2-start-from-scratch">
+<h2>Method 2: Start from scratch</h2>
+<p>If your program is to big to strip it down, it’s maybe easier to start from
+scratch by building a small project that only includes the problematic code.
+Again make sure that it actually compiles without the erroneous code and emits
+the same error with it.</p>
+</div>
+</div>
+<div class="section" id="how-to-deal-with-input-data-e-g-point-clouds">
+<h1>How to deal with input data (e.g. point clouds)</h1>
+<p>If you fear that your problem is connected to the input data (either if you
+have a problem with pcl/io or the error depends on the input data) you should
+include the input with your minimal example. If the file is to big and a
+stripped down version doesn’t work, you should upload it somewhere and only
+provide a link to the data. If you can’t include the data or don’t know a way
+to provide it, add a remark to your mail and we will contact you to find a
+solution.</p>
+<p>If the input data is not so important it is best to generate fake data:</p>
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloudXYZ</span><span class="o">&gt;</span> <span class="n">cloud</span><span class="p">;</span>
+<span class="n">cloud</span><span class="p">.</span><span class="n">insert</span> <span class="p">(</span><span class="n">cloud</span><span class="p">.</span><span class="n">end</span> <span class="p">(),</span> <span class="n">PointXYZ</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="i-m-linking-against-other-libraries-what-to-do">
+<h1>I’m linking against other libraries, what to do?</h1>
+<p>Normally other libraries should not interfere, so try to build a minimal
+example using PCL (and it’s dependencies) first. If your problems is gone
+without the other library please make sure that it’s not actually a problem
+with one of the other libraries and add a comment in your minimal example.</p>
+</div>
+<div class="section" id="final-make">
+<h1>Final Make</h1>
+<p>Please put only one error into the minimal example as well as include all
+necessary files to build it.</p>
+</div>
+<div class="section" id="references">
+<h1>References</h1>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.minimalbeispiel.de/mini-en.html">Latex minimal example</a></p></li>
+<li><p><a class="reference external" href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">How to Report Bugs Effectively</a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="pcl::registration::WarpPointRigid&lt; PointSourceT, PointTargetT, Scalar &gt;" name="pcl::registration::WarpPointRigid&lt; PointSourceT, PointTargetT, Scalar &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_warp_point_rigid3_d.html" title="WarpPointRigid3D enables 3D (1D rotation + 2D translation) transformations for points. " alt="" coords="251,5,464,69"/>
+<area shape="rect" id="node5" href="$classpcl_1_1registration_1_1_warp_point_rigid6_d.html" title="WarpPointRigid3D enables 6D (3D rotation + 3D translation) transformations for points. " alt="" coords="251,93,464,157"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="OpenNICapture" name="OpenNICapture">
+<area shape="rect" id="node2" href="$classpcl_1_1_open_n_i_grabber.html" title="Grabber for OpenNI devices (i.e., Primesense PSDK, Microsoft Kinect, Asus XTion Pro/Live) ..." alt="" coords="916,171,1055,200"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="627,139,720,168"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_synchronizer.html" title="pcl::Synchronizer\&lt;\l boost::shared_ptr\&lt;\l openni_wrapper::IRImage\l \&gt;, boost::shared_ptr\&lt; openni\l_wrapper::DepthImage \&gt; \&gt;" alt="" coords="577,16,769,115"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_synchronizer.html" title="/brief This template class synchronizes two data streams of different types. " alt="" coords="175,150,305,197"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_synchronizer.html" title="pcl::Synchronizer\&lt;\l boost::shared_ptr\&lt;\l openni_wrapper::Image\l \&gt;, boost::shared_ptr\&lt;\l openni_wrapper::DepthImage \&gt; \&gt;" alt="" coords="564,192,783,291"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="899,397,1072,427"/>
+<area shape="rect" id="node15" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="183,457,297,487"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="603,397,744,427"/>
+<area shape="rect" id="node26" href="$classpcl_1_1visualization_1_1_p_c_l_visualizer.html" title="PCL Visualizer main class. " alt="" coords="927,481,1044,527"/>
+<area shape="rect" id="node28" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkRender\lWindowInteractor \&gt;" alt="" coords="580,529,767,575"/>
+<area shape="rect" id="node30" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; T \&gt;" alt="" coords="167,537,313,567"/>
+</map>

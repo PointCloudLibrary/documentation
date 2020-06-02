@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_functor.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;::Functor\&lt; MatScalar \&gt;" alt="" coords="5,62,237,143"/>
+<area shape="rect" id="node3" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_optimization_functor.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;::OptimizationFunctor" alt="" coords="300,5,521,86"/>
+<area shape="rect" id="node5" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_optimization_functor_with_indices.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;::OptimizationFunctorWith\lIndices" alt="" coords="287,109,535,208"/>
+</map>

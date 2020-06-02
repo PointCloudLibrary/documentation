@@ -1,0 +1,5 @@
+<map id="pcl::visualization::context_items::Points" name="pcl::visualization::context_items::Points">
+<area shape="rect" id="node7" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title="pcl::visualization\l::context_items::Markers" alt="" coords="548,5,713,51"/>
+<area shape="rect" id="node9" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title="pcl::visualization\l::context_items::Polygon" alt="" coords="548,74,713,121"/>
+<area shape="rect" id="node2" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="165,39,293,86"/>
+</map>

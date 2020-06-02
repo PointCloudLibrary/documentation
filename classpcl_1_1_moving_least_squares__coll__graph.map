@@ -1,0 +1,10 @@
+<map id="pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;" name="pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_cloud_surface_processing.html" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="777,5,967,51"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="456,13,632,43"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="165,13,331,43"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="805,74,939,121"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="477,70,611,117"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::Normal \&gt;" alt="" coords="803,169,941,215"/>
+<area shape="rect" id="node14" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="191,283,305,312"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="473,211,615,240"/>
+</map>

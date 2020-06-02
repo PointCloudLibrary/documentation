@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1tracking_1_1_point_cloud_coherence.html" title="PointCloudCoherence is a base class to compute coherence between the two PointClouds. " alt="" coords="5,14,171,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1tracking_1_1_nearest_pair_point_cloud_coherence.html" title="NearestPairPointCloudCoherence computes coherence between two pointclouds using the nearest point pai..." alt="" coords="220,14,441,61"/>
+<area shape="rect" id="node5" href="$classpcl_1_1tracking_1_1_approx_nearest_pair_point_cloud_coherence.html" title="ApproxNearestPairPointCloudCoherence computes coherence between two pointclouds using the approximate..." alt="" coords="492,5,679,69"/>
+</map>

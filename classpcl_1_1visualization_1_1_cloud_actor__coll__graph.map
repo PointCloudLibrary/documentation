@@ -1,0 +1,6 @@
+<map id="pcl::visualization::CloudActor" name="pcl::visualization::CloudActor">
+<area shape="rect" id="node2" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkMatrix4x4 \&gt;" alt="" coords="321,5,535,35"/>
+<area shape="rect" id="node4" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; T \&gt;" alt="" coords="7,59,153,88"/>
+<area shape="rect" id="node6" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkLODActor \&gt;" alt="" coords="320,59,536,88"/>
+<area shape="rect" id="node9" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkIdType\lArray \&gt;" alt="" coords="335,111,521,158"/>
+</map>

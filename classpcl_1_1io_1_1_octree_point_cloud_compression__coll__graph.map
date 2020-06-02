@@ -1,0 +1,9 @@
+<map id="pcl::io::OctreePointCloudCompression&lt; PointT, LeafT, BranchT, OctreeT &gt;" name="pcl::io::OctreePointCloudCompression&lt; PointT, LeafT, BranchT, OctreeT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="pcl::octree::OctreePoint\lCloud\&lt; PointT, LeafT,\l BranchT, OctreeT \&gt;" alt="" coords="543,5,703,69"/>
+<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class " alt="" coords="125,40,336,104"/>
+<area shape="rect" id="node11" href="$classpcl_1_1octree_1_1_point_coding.html" title="pcl::octree::PointCoding\l\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="541,211,704,258"/>
+<area shape="rect" id="node13" href="$classpcl_1_1octree_1_1_point_coding.html" title="PointCoding class " alt="" coords="149,211,312,258"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_static_range_coder.html" title="StaticRangeCoder compression class " alt="" coords="545,340,700,369"/>
+<area shape="rect" id="node20" href="$classpcl_1_1octree_1_1_color_coding.html" title="pcl::octree::ColorCoding\l\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="541,393,704,439"/>
+<area shape="rect" id="node22" href="$classpcl_1_1octree_1_1_color_coding.html" title="ColorCoding class " alt="" coords="149,393,312,439"/>
+</map>

@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to use Normal Distributions Transform &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.11.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">How to use Normal Distributions Transform</a></li>
+<li><a class="reference internal" href="#the-code">The code</a></li>
+<li><a class="reference internal" href="#the-explanation">The explanation</a></li>
+<li><a class="reference internal" href="#compiling-and-running-the-program">Compiling and running the program</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>How to use Normal Distributions Transform</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-use-normal-distributions-transform">
+<span id="normal-distributions-transform"></span><h1>How to use Normal Distributions Transform</h1>
+<p>In this tutorial we will describe how to use the Normal Distributions Transform (NDT) algorithm to determine a rigid transformation between two large point clouds, both over 100,000 points.  The NDT algorithm is a registration algorithm that uses standard optimization techniques applied to statistical models of 3D points to determine the most probable registration between two point clouds.  For more information on the inner workings of the NDT algorithm, see Dr. Martin Magnusson’s doctoral thesis, “The Three-Dimensional Normal Distributions Transform – an Efficient Representation for Registration, Surface Analysis, and Loop Detection.”</p>
+</div>
+<div class="section" id="the-code">
+<h1>The code</h1>
+<p>First, download the datasets <a class="reference external" href="https://raw.github.com/PointCloudLibrary/data/master/tutorials/room_scan1.pcd">room_scan1.pcd</a> and <a class="reference external" href="https://raw.github.com/PointCloudLibrary/data/master/tutorials/room_scan2.pcd">room_scan2.pcd</a> and save them to your disk.  These point clouds contain 360 degree scans of the same room from different perspectives.</p>
+<p>Then, create a file in your favorite editor and place the following inside.  I used <code class="docutils literal notranslate"><span class="pre">normal_distributions_transform.cpp</span></code> for this tutorial.</p>
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/registration/ndt.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/approximate_voxel_grid.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
+
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono_literals</span><span class="p">;</span>
+
+<span class="kt">int</span>
+<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// Loading first scan of room.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">target_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="s">&quot;room_scan1.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">target_cloud</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Couldn&#39;t read file room_scan1.pcd </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Loaded &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">target_cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points from room_scan1.pcd&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+  <span class="c1">// Loading second scan of room from new perspective.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">input_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="s">&quot;room_scan2.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">input_cloud</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Couldn&#39;t read file room_scan2.pcd </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Loaded &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">input_cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points from room_scan2.pcd&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+  <span class="c1">// Filtering input scan to roughly 10% of original size to increase speed of registration.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">filtered_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">ApproximateVoxelGrid</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">approximate_voxel_filter</span><span class="p">;</span>
+  <span class="n">approximate_voxel_filter</span><span class="p">.</span><span class="n">setLeafSize</span> <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span>
+  <span class="n">approximate_voxel_filter</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">input_cloud</span><span class="p">);</span>
+  <span class="n">approximate_voxel_filter</span><span class="p">.</span><span class="n">filter</span> <span class="p">(</span><span class="o">*</span><span class="n">filtered_cloud</span><span class="p">);</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Filtered cloud contains &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">filtered_cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span>
+            <span class="o">&lt;&lt;</span> <span class="s">&quot; data points from room_scan2.pcd&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+  <span class="c1">// Initializing Normal Distributions Transform (NDT).</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">NormalDistributionsTransform</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">ndt</span><span class="p">;</span>
+
+  <span class="c1">// Setting scale dependent NDT parameters</span>
+  <span class="c1">// Setting minimum transformation difference for termination condition.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setTransformationEpsilon</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">);</span>
+  <span class="c1">// Setting maximum step size for More-Thuente line search.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setStepSize</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
+  <span class="c1">//Setting Resolution of NDT grid structure (VoxelGridCovariance).</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setResolution</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+
+  <span class="c1">// Setting max number of registration iterations.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setMaximumIterations</span> <span class="p">(</span><span class="mi">35</span><span class="p">);</span>
+
+  <span class="c1">// Setting point cloud to be aligned.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setInputSource</span> <span class="p">(</span><span class="n">filtered_cloud</span><span class="p">);</span>
+  <span class="c1">// Setting point cloud to be aligned to.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setInputTarget</span> <span class="p">(</span><span class="n">target_cloud</span><span class="p">);</span>
+
+  <span class="c1">// Set initial alignment estimate found using robot odometry.</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">AngleAxisf</span> <span class="n">init_rotation</span> <span class="p">(</span><span class="mf">0.6931</span><span class="p">,</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span><span class="o">::</span><span class="n">UnitZ</span> <span class="p">());</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Translation3f</span> <span class="n">init_translation</span> <span class="p">(</span><span class="mf">1.79387</span><span class="p">,</span> <span class="mf">0.720047</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Matrix4f</span> <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">init_translation</span> <span class="o">*</span> <span class="n">init_rotation</span><span class="p">).</span><span class="n">matrix</span> <span class="p">();</span>
+
+  <span class="c1">// Calculating required rigid transform to align the input cloud to the target cloud.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">output_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">align</span> <span class="p">(</span><span class="o">*</span><span class="n">output_cloud</span><span class="p">,</span> <span class="n">init_guess</span><span class="p">);</span>
+
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Normal Distributions Transform has converged:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">ndt</span><span class="p">.</span><span class="n">hasConverged</span> <span class="p">()</span>
+            <span class="o">&lt;&lt;</span> <span class="s">&quot; score: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">ndt</span><span class="p">.</span><span class="n">getFitnessScore</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+  <span class="c1">// Transforming unfiltered, input cloud using found transform.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">transformPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">input_cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">output_cloud</span><span class="p">,</span> <span class="n">ndt</span><span class="p">.</span><span class="n">getFinalTransformation</span> <span class="p">());</span>
+
+  <span class="c1">// Saving transformed input cloud.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">savePCDFileASCII</span> <span class="p">(</span><span class="s">&quot;room_scan2_transformed.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">output_cloud</span><span class="p">);</span>
+
+  <span class="c1">// Initializing point cloud visualizer</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span>
+  <span class="n">viewer_final</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="s">&quot;3D Viewer&quot;</span><span class="p">));</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">setBackgroundColor</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+  <span class="c1">// Coloring and visualizing target cloud (red).</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span>
+  <span class="n">target_color</span> <span class="p">(</span><span class="n">target_cloud</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">target_cloud</span><span class="p">,</span> <span class="n">target_color</span><span class="p">,</span> <span class="s">&quot;target cloud&quot;</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span>
+                                                  <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;target cloud&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Coloring and visualizing transformed input cloud (green).</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span>
+  <span class="n">output_color</span> <span class="p">(</span><span class="n">output_cloud</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">output_cloud</span><span class="p">,</span> <span class="n">output_color</span><span class="p">,</span> <span class="s">&quot;output cloud&quot;</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span>
+                                                  <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;output cloud&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Starting visualizer</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">addCoordinateSystem</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="s">&quot;global&quot;</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">initCameraParameters</span> <span class="p">();</span>
+
+  <span class="c1">// Wait until visualizer window is closed.</span>
+  <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">wasStopped</span> <span class="p">())</span>
+  <span class="p">{</span>
+    <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">spinOnce</span> <span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="mi">100</span><span class="n">ms</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="the-explanation">
+<h1>The explanation</h1>
+<p>Now, let’s breakdown this code piece by piece.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/registration/ndt.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/approximate_voxel_grid.h&gt;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p>These are the required header files to use Normal Distributions Transform algorithm and a filter used to down sample the data.  The filter can be exchanged for other filters but I have found the approximate voxel filter to produce the best results.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Loading first scan of room.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">target_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="s">&quot;room_scan1.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">target_cloud</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Couldn&#39;t read file room_scan1.pcd </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Loaded &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">target_cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points from room_scan1.pcd&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+  <span class="c1">// Loading second scan of room from new perspective.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">input_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="s">&quot;room_scan2.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">input_cloud</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Couldn&#39;t read file room_scan2.pcd </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Loaded &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">input_cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points from room_scan2.pcd&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The above code loads the two pcd file into pcl::PointCloud&lt;pcl::PointXYZ&gt; boost shared pointers.  The input cloud will be transformed into the reference frame of the target cloud.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Filtering input scan to roughly 10% of original size to increase speed of registration.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">filtered_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">ApproximateVoxelGrid</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">approximate_voxel_filter</span><span class="p">;</span>
+  <span class="n">approximate_voxel_filter</span><span class="p">.</span><span class="n">setLeafSize</span> <span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">);</span>
+  <span class="n">approximate_voxel_filter</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">input_cloud</span><span class="p">);</span>
+  <span class="n">approximate_voxel_filter</span><span class="p">.</span><span class="n">filter</span> <span class="p">(</span><span class="o">*</span><span class="n">filtered_cloud</span><span class="p">);</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Filtered cloud contains &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">filtered_cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span>
+            <span class="o">&lt;&lt;</span> <span class="s">&quot; data points from room_scan2.pcd&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>This section filters the input cloud to improve registration time.  Any filter that downsamples the data uniformly can work for this section.  The target cloud does not need be filtered because voxel grid data structure used by the NDT algorithm does not use individual points, but instead uses the statistical data of the points contained in each of its data structures voxel cells.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Initializing Normal Distributions Transform (NDT).</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">NormalDistributionsTransform</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">ndt</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Here we create the NDT algorithm with the default values.  The internal data structures are not initialized until later.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Setting scale dependent NDT parameters</span>
+  <span class="c1">// Setting minimum transformation difference for termination condition.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setTransformationEpsilon</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">);</span>
+  <span class="c1">// Setting maximum step size for More-Thuente line search.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setStepSize</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
+  <span class="c1">//Setting Resolution of NDT grid structure (VoxelGridCovariance).</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setResolution</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Next we need to modify some of the scale dependent parameters.  Because the NDT algorithm uses a voxelized data structure and More-Thuente line search, some parameters need to be scaled to fit the data set.  The above parameters seem to work well on the scale we are working with, size of a room, but they would need to be significantly decreased to handle smaller objects, such as scans of a coffee mug.</p>
+<p>The Transformation Epsilon parameter defines minimum, allowable,  incremental change of the transformation vector, [x, y, z, roll, pitch, yaw] in meters and radians respectively.  Once the incremental change dips below this threshold, the alignment terminates.  The Step Size parameter defines the maximum step length allowed by the More-Thuente line search.  This line search algorithm determines the best step length below this maximum value, shrinking the step length as you near the optimal solution.  Larger maximum step lengths will be able to clear greater distances in fewer iterations but run the risk of overshooting and ending up in an undesirable local minimum.  Finally, the Resolution parameter defines the voxel resolution of the internal NDT grid structure.  This structure is easily searchable and each voxel contain the statistical data, mean, covariance, etc., associated with the points it contains.  The statistical data is used to model the cloud as a set of multivariate Gaussian distributions and allows us to calculate and optimize the probability of the existence of points at any position within the voxel.  This parameter is the most scale dependent.  It needs to be large enough for each voxel to contain at least  6 points but small enough to uniquely describe the environment.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Setting max number of registration iterations.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setMaximumIterations</span> <span class="p">(</span><span class="mi">35</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This parameter controls the maximum number of iterations the optimizer can run.  For the most part, the optimizer will terminate on the Transformation Epsilon before hitting this limit but this helps prevent it from running for too long in the wrong direction.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Setting point cloud to be aligned.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setInputSource</span> <span class="p">(</span><span class="n">filtered_cloud</span><span class="p">);</span>
+  <span class="c1">// Setting point cloud to be aligned to.</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">setInputTarget</span> <span class="p">(</span><span class="n">target_cloud</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Here, we pass the point clouds to the NDT registration program.  The input cloud is the cloud that will be transformed and the target cloud is the reference frame to which the input cloud will be aligned.  When the target cloud is added, the NDT algorithm’s internal data structure is initialized using the target cloud data.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Set initial alignment estimate found using robot odometry.</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">AngleAxisf</span> <span class="n">init_rotation</span> <span class="p">(</span><span class="mf">0.6931</span><span class="p">,</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span><span class="o">::</span><span class="n">UnitZ</span> <span class="p">());</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Translation3f</span> <span class="n">init_translation</span> <span class="p">(</span><span class="mf">1.79387</span><span class="p">,</span> <span class="mf">0.720047</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Matrix4f</span> <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">init_translation</span> <span class="o">*</span> <span class="n">init_rotation</span><span class="p">).</span><span class="n">matrix</span> <span class="p">();</span>
+</pre></div>
+</div>
+<p>In this section of code, we create an initial guess about the transformation needed to align the point clouds.  Though the algorithm can be run without such an initial transformation, you tend to get better results with one, particularly if there is a large discrepancy between reference frames.  In robotic applications, such as the ones used to generate this data set, the initial transformation is usually generated using odometry data.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Calculating required rigid transform to align the input cloud to the target cloud.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">output_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
+  <span class="n">ndt</span><span class="p">.</span><span class="n">align</span> <span class="p">(</span><span class="o">*</span><span class="n">output_cloud</span><span class="p">,</span> <span class="n">init_guess</span><span class="p">);</span>
+
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Normal Distributions Transform has converged:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">ndt</span><span class="p">.</span><span class="n">hasConverged</span> <span class="p">()</span>
+            <span class="o">&lt;&lt;</span> <span class="s">&quot; score: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">ndt</span><span class="p">.</span><span class="n">getFitnessScore</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Finally, we are ready to align the point clouds.  The resulting transformed input cloud is stored in the output cloud.  We then display the results of the alignment as well as the Euclidean fitness score, calculated as the sum of squared distances from the output cloud to the closest point in the target cloud.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Transforming unfiltered, input cloud using found transform.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">transformPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">input_cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">output_cloud</span><span class="p">,</span> <span class="n">ndt</span><span class="p">.</span><span class="n">getFinalTransformation</span> <span class="p">());</span>
+
+  <span class="c1">// Saving transformed input cloud.</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">savePCDFileASCII</span> <span class="p">(</span><span class="s">&quot;room_scan2_transformed.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">output_cloud</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Immediately after the alignment process, the output cloud will contain a transformed version of the filtered input cloud because we passed the algorithm a filtered point cloud, as opposed to the original input cloud.  To obtain the aligned version of the original cloud, we extract the final transformation from the NDT algorithm and transform our original input cloud.  We can now save this cloud to file <code class="docutils literal notranslate"><span class="pre">room_scan2_transformed.pcd</span></code> for future use.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Initializing point cloud visualizer</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span>
+  <span class="n">viewer_final</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="s">&quot;3D Viewer&quot;</span><span class="p">));</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">setBackgroundColor</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+  <span class="c1">// Coloring and visualizing target cloud (red).</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span>
+  <span class="n">target_color</span> <span class="p">(</span><span class="n">target_cloud</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">target_cloud</span><span class="p">,</span> <span class="n">target_color</span><span class="p">,</span> <span class="s">&quot;target cloud&quot;</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span>
+                                                  <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;target cloud&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Coloring and visualizing transformed input cloud (green).</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span>
+  <span class="n">output_color</span> <span class="p">(</span><span class="n">output_cloud</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">output_cloud</span><span class="p">,</span> <span class="n">output_color</span><span class="p">,</span> <span class="s">&quot;output cloud&quot;</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span>
+                                                  <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;output cloud&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Starting visualizer</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">addCoordinateSystem</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="s">&quot;global&quot;</span><span class="p">);</span>
+  <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">initCameraParameters</span> <span class="p">();</span>
+
+  <span class="c1">// Wait until visualizer window is closed.</span>
+  <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">wasStopped</span> <span class="p">())</span>
+  <span class="p">{</span>
+    <span class="n">viewer_final</span><span class="o">-&gt;</span><span class="n">spinOnce</span> <span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="mi">100</span><span class="n">ms</span><span class="p">);</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<p>This next part is unnecessary but I like to visually see the results of my labors.  With PCL’s  visualizer classes, this can be easily accomplished.  We first generate a visualizer with a black background.  Then we colorize our target and output cloud, red and green respectively, and load them into the visualizer.  Finally we start the visualizer and wait for the window to be closed.</p>
+</div>
+<div class="section" id="compiling-and-running-the-program">
+<h1>Compiling and running the program</h1>
+<p>Add the following lines to your CMakeLists.txt file:</p>
+<div class="highlight-cmake notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+
+<span class="nb">project</span><span class="p">(</span><span class="s">normal_distributions_transform</span><span class="p">)</span>
+
+<span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span> <span class="s">1.5</span> <span class="s">REQUIRED</span><span class="p">)</span>
+
+<span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
+
+
+<span class="nb">add_executable</span><span class="p">(</span><span class="s">normal_distributions_transform</span> <span class="s">normal_distributions_transform.cpp</span><span class="p">)</span>
+<span class="nb">target_link_libraries</span> <span class="p">(</span><span class="s">normal_distributions_transform</span> <span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>After you have made the executable, you can run it. Simply do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./normal_distributions_transform
+</pre></div>
+</div>
+<p>You should see results similar those below as well as a visualization of the aligned point clouds.  Happy Coding:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Loaded</span> <span class="mi">112586</span> <span class="n">data</span> <span class="n">points</span> <span class="kn">from</span> <span class="nn">room_scan1.pcd</span>
+<span class="n">Loaded</span> <span class="mi">112624</span> <span class="n">data</span> <span class="n">points</span> <span class="kn">from</span> <span class="nn">room_scan2.pcd</span>
+<span class="n">Filtered</span> <span class="n">cloud</span> <span class="n">contains</span> <span class="mi">12433</span> <span class="n">data</span> <span class="n">points</span> <span class="kn">from</span> <span class="nn">room_scan2.pcd</span>
+<span class="n">Normal</span> <span class="n">Distributions</span> <span class="n">Transform</span> <span class="n">has</span> <span class="n">converged</span><span class="p">:</span><span class="mi">1</span> <span class="n">score</span><span class="p">:</span> <span class="mf">0.638694</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

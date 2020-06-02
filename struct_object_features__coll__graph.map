@@ -1,0 +1,8 @@
+<map id="ObjectFeatures" name="ObjectFeatures">
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="732,359,905,388"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="165,197,280,227"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="375,131,516,160"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; GlobalDescriptorT \&gt;" alt="" coords="699,5,939,35"/>
+<area shape="rect" id="node20" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; NormalT \&gt;" alt="" coords="727,152,911,181"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; LocalDescriptorT \&gt;" alt="" coords="701,248,936,277"/>
+</map>

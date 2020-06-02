@@ -1,0 +1,6 @@
+<map id="traits::has_all_fields&lt; PointT, Field &gt;" name="traits::has_all_fields&lt; PointT, Field &gt;">
+<area shape="rect" id="node5" href="$structtraits_1_1has__all__fields.html" title="traits::has_all_fields\l\&lt; PointT, boost::mpl::\lvector\&lt; pcl::fields::x,\l pcl::fields::y, pcl::fields::z \&gt; \&gt;" alt="" coords="568,23,768,105"/>
+<area shape="rect" id="node9" href="$structtraits_1_1has__all__fields.html" title="traits::has_all_fields\l\&lt; PointT, boost::mpl::\lvector\&lt; pcl::fields::normal\l_x, pcl::fields::normal_y,\l pcl::fields::normal_z \&gt; \&gt;" alt="" coords="581,132,755,231"/>
+<area shape="rect" id="node7" href="$structtraits_1_1has__xyz.html" title="Metafunction to check if a given point type has x, y, and z fields. " alt="" coords="819,49,989,79"/>
+<area shape="rect" id="node11" href="$structtraits_1_1has__normal.html" title="Metafunction to check if a given point type has normal_x, normal_y, and normal_z fields. " alt="" coords="841,158,967,205"/>
+</map>

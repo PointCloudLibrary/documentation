@@ -1,0 +1,20 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="19,282,211,329"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_model_circle2_d.html" title="SampleConsensusModelCircle2D defines a model for 2D circle segmentation on the X&#45;Y plane..." alt="" coords="272,351,464,398"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_sample_consensus_model_circle3_d.html" title="SampleConsensusModelCircle3D defines a model for 3D circle segmentation. " alt="" coords="272,5,464,51"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_sample_consensus_model_cone.html" title="SampleConsensusModelCone defines a model for 3D cone segmentation. " alt="" coords="272,559,464,606"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_sample_consensus_model_cylinder.html" title="SampleConsensusModelCylinder defines a model for 3D cylinder segmentation. " alt="" coords="272,490,464,537"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_sample_consensus_model_line.html" title="SampleConsensusModelLine defines a model for 3D line segmentation. " alt="" coords="272,143,464,190"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation. " alt="" coords="272,213,464,259"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_sample_consensus_model_registration.html" title="SampleConsensusModelRegistration defines a model for Point&#45;To&#45;Point registration outlier rejection..." alt="" coords="272,74,464,121"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_sample_consensus_model_sphere.html" title="SampleConsensusModelSphere defines a model for 3D sphere segmentation. " alt="" coords="272,421,464,467"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_sample_consensus_model_stick.html" title="SampleConsensusModelStick defines a model for 3D stick segmentation. " alt="" coords="272,282,464,329"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_sample_consensus_model_parallel_line.html" title="SampleConsensusModelParallelLine defines a model for 3D line segmentation using additional angular co..." alt="" coords="528,143,720,190"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_sample_consensus_model_normal_plane.html" title="SampleConsensusModelNormalPlane defines a model for 3D plane segmentation using additional surface no..." alt="" coords="517,414,731,461"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_sample_consensus_model_parallel_plane.html" title="SampleConsensusModelParallelPlane defines a model for 3D plane segmentation using additional angular ..." alt="" coords="528,213,720,259"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_sample_consensus_model_perpendicular_plane.html" title="SampleConsensusModelPerpendicularPlane defines a model for 3D plane segmentation using additional ang..." alt="" coords="527,282,721,329"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_sample_consensus_model_normal_parallel_plane.html" title="SampleConsensusModelNormalParallelPlane defines a model for 3D plane segmentation using additional su..." alt="" coords="784,405,979,469"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_sample_consensus_model_registration2_d.html" title="SampleConsensusModelRegistration2D defines a model for Point&#45;To&#45;Point registration outlier rejection ..." alt="" coords="528,74,720,121"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_sample_consensus_model_normal_sphere.html" title="SampleConsensusModelNormalSphere defines a model for 3D sphere segmentation using additional surface ..." alt="" coords="513,607,735,654"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="5,590,224,637"/>
+</map>

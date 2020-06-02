@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointTarget \&gt;" alt="" coords="5,13,200,43"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; PointTarget \&gt;" alt="" coords="249,13,415,43"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; PointTarget \&gt;" alt="" coords="464,13,659,43"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_voxel_grid_covariance.html" title="pcl::VoxelGridCovariance\l\&lt; PointTarget \&gt;" alt="" coords="707,5,877,51"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class. " alt="" coords="5,44,144,73"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_gray_stereo_matching.html" title="Stereo Matching abstract class for Grayscale images. " alt="" coords="193,44,359,73"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_adaptive_cost_s_o_stereo_matching.html" title="Adaptive Cost 2&#45;pass Scanline Optimization Stereo Matching class. " alt="" coords="421,5,603,51"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_block_based_stereo_matching.html" title="Block based (or fixed window) Stereo Matching class. " alt="" coords="408,75,616,104"/>
+</map>

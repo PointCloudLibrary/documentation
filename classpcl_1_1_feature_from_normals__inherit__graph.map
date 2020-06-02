@@ -1,0 +1,31 @@
+<map id="pcl::FeatureFromNormals&lt; PointInT, PointNT, PointOutT &gt;" name="pcl::FeatureFromNormals&lt; PointInT, PointNT, PointOutT &gt;">
+<area shape="rect" id="node9" href="$classpcl_1_1_b_o_a_r_d_local_reference_frame_estimation.html" title="BOARDLocalReferenceFrameEstimation implements the BOrder Aware Repeatable Directions algorithm for lo..." alt="" coords="1131,5,1317,69"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_boundary_estimation.html" title="BoundaryEstimation estimates whether a set of points is lying on surface boundaries using an angle cr..." alt="" coords="1115,93,1333,139"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_c_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud. " alt="" coords="1152,163,1296,227"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_c_r_h_estimation.html" title="CRHEstimation estimates the Camera Roll Histogram (CRH) descriptor for a given point cloud dataset co..." alt="" coords="1153,251,1295,315"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_c_v_f_h_estimation.html" title="CVFHEstimation estimates the Clustered Viewpoint Feature Histogram (CVFH) descriptor for a given poin..." alt="" coords="1151,339,1297,403"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_f_p_f_h_estimation.html" title="FPFHEstimation estimates the Fast Point Feature Histogram (FPFH) descriptor for a given point cloud d..." alt="" coords="1152,427,1296,491"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_g_r_s_d_estimation.html" title="GRSDEstimation estimates the Global Radius&#45;based Surface Descriptor (GRSD) for a given point cloud da..." alt="" coords="1151,515,1297,579"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_intensity_gradient_estimation.html" title="IntensityGradientEstimation estimates the intensity gradient for a point cloud that contains position..." alt="" coords="1115,602,1333,649"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_o_u_r_c_v_f_h_estimation.html" title="OURCVFHEstimation estimates the Oriented, Unique and Repetable Clustered Viewpoint Feature Histogram ..." alt="" coords="1115,671,1333,718"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_p_f_h_estimation.html" title="PFHEstimation estimates the Point Feature Histogram (PFH) descriptor for a given point cloud dataset ..." alt="" coords="1153,741,1295,805"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_p_f_h_r_g_b_estimation.html" title="pcl::PFHRGBEstimation\l\&lt; PointInT, PointNT,\l PointOutT \&gt;" alt="" coords="1141,829,1307,893"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud. " alt="" coords="1153,917,1295,981"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_p_p_f_r_g_b_estimation.html" title="pcl::PPFRGBEstimation\l\&lt; PointInT, PointNT,\l PointOutT \&gt;" alt="" coords="1143,1005,1305,1069"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_p_p_f_r_g_b_region_estimation.html" title="pcl::PPFRGBRegionEstimation\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="1115,1093,1333,1139"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_principal_curvatures_estimation.html" title="PrincipalCurvaturesEstimation estimates the directions (eigenvectors) and magnitudes (eigenvalues) of..." alt="" coords="1144,1163,1304,1227"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_r_s_d_estimation.html" title="RSDEstimation estimates the Radius&#45;based Surface Descriptor (minimal and maximal radius of the local ..." alt="" coords="1153,1251,1295,1315"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_shape_context3_d_estimation.html" title="ShapeContext3DEstimation implements the 3D shape context descriptor as described in: ..." alt="" coords="1115,1338,1333,1385"/>
+<area shape="rect" id="node45" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="1115,1407,1333,1454"/>
+<area shape="rect" id="node55" href="$classpcl_1_1_v_f_h_estimation.html" title="VFHEstimation estimates the Viewpoint Feature Histogram (VFH) descriptor for a given point cloud data..." alt="" coords="1153,1477,1295,1541"/>
+<area shape="rect" id="node57" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointT, PointNT, PointFeature \&gt;" alt="" coords="1113,1565,1335,1611"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="524,794,679,841"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,803,472,832"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,803,171,832"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_f_p_f_h_estimation_o_m_p.html" title="FPFHEstimationOMP estimates the Fast Point Feature Histogram (FPFH) descriptor for a given point clou..." alt="" coords="1387,435,1605,482"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title="SHOTColorEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a giv..." alt="" coords="1391,1353,1601,1417"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_s_h_o_t_estimation.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="1416,1441,1576,1505"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html" title="SHOTColorEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a ..." alt="" coords="1668,1353,1844,1417"/>
+<area shape="rect" id="node53" href="$classpcl_1_1_s_h_o_t_estimation_o_m_p.html" title="SHOTEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given..." alt="" coords="1657,1441,1855,1505"/>
+<area shape="rect" id="node59" href="$classpcl_1_1_normal_based_signature_estimation.html" title="Normal&#45;based feature signature estimation class. " alt="" coords="1399,1556,1593,1620"/>
+</map>

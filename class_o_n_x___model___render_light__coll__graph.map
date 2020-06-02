@@ -1,0 +1,24 @@
+<map id="ONX_Model_RenderLight" name="ONX_Model_RenderLight">
+<area shape="rect" id="node2" href="$class_o_n__3dm_object_attributes.html" title="ON_3dmObjectAttributes" alt="" coords="2088,464,2256,493"/>
+<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="1427,528,1512,557"/>
+<area shape="rect" id="node50" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="1747,676,1853,705"/>
+<area shape="rect" id="node6" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="1753,528,1847,557"/>
+<area shape="rect" id="node48" href="$class_o_n___light.html" title="ON_Light" alt="" coords="2133,759,2211,788"/>
+<area shape="rect" id="node8" href="$class_o_n___object_rendering_attributes.html" title="ON_ObjectRenderingAttributes" alt="" coords="1699,255,1901,284"/>
+<area shape="rect" id="node10" href="$class_o_n___rendering_attributes.html" title="ON_RenderingAttributes" alt="" coords="1180,255,1343,284"/>
+<area shape="rect" id="node12" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Material\lRef \&gt;" alt="" coords="657,246,855,293"/>
+<area shape="rect" id="node14" href="$class_o_n___material_ref.html" title="ON_MaterialRef" alt="" coords="303,263,417,292"/>
+<area shape="rect" id="node16" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="7,323,89,352"/>
+<area shape="rect" id="node24" href="$class_o_n___mapping_ref.html" title="ON_MappingRef" alt="" coords="1036,157,1153,187"/>
+<area shape="rect" id="node28" href="$class_o_n___mapping_channel.html" title="ON_MappingChannel" alt="" coords="287,140,433,169"/>
+<area shape="rect" id="node43" href="$class_o_n___display_material_ref.html" title="ON_DisplayMaterialRef" alt="" coords="280,371,440,400"/>
+<area shape="rect" id="node18" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="287,5,433,35"/>
+<area shape="rect" id="node22" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Mapping\lRef \&gt;" alt="" coords="1368,149,1571,195"/>
+<area shape="rect" id="node33" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="284,59,436,88"/>
+<area shape="rect" id="node26" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MappingChannel \&gt;" alt="" coords="680,123,832,170"/>
+<area shape="rect" id="node30" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="7,100,89,129"/>
+<area shape="rect" id="node41" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_DisplayMaterialRef \&gt;" alt="" coords="680,345,832,391"/>
+<area shape="rect" id="node38" href="$class_o_n___color.html" title="ON_Color" alt="" coords="1760,623,1840,652"/>
+<area shape="rect" id="node54" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="1753,1003,1847,1032"/>
+<area shape="rect" id="node58" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="1749,840,1851,869"/>
+</map>

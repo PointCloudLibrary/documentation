@@ -1,0 +1,18 @@
+<map id="ON_BrepTrimArray" name="ON_BrepTrimArray">
+<area shape="rect" id="node2" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepTrim \&gt;" alt="" coords="480,611,629,658"/>
+<area shape="rect" id="node4" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepTrim \&gt;" alt="" coords="383,515,601,544"/>
+<area shape="rect" id="node6" href="$class_o_n___brep_trim.html" title="ON_BrepTrim" alt="" coords="241,419,343,448"/>
+<area shape="rect" id="node8" href="$class_o_n___curve_proxy.html" title="ON_CurveProxy" alt="" coords="5,313,123,343"/>
+<area shape="rect" id="node10" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="23,189,105,219"/>
+<area shape="rect" id="node12" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="11,88,117,117"/>
+<area shape="rect" id="node14" href="$class_o_n___object.html" title="ON_Object" alt="" coords="21,5,107,35"/>
+<area shape="rect" id="node16" href="$union_o_n___u.html" title="ON_U" alt="" coords="147,313,205,343"/>
+<area shape="rect" id="node18" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="229,313,355,343"/>
+<area shape="rect" id="node21" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="237,189,331,219"/>
+<area shape="rect" id="node24" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_BrepTrimPoint \&gt;" alt="" coords="523,305,675,351"/>
+<area shape="rect" id="node26" href="$struct_o_n___brep_trim_point.html" title="ON_BrepTrimPoint" alt="" coords="448,189,579,219"/>
+<area shape="rect" id="node28" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="467,88,560,117"/>
+<area shape="rect" id="node31" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="603,189,755,219"/>
+<area shape="rect" id="node35" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="627,419,773,448"/>
+<area shape="rect" id="node38" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="625,515,775,544"/>
+</map>

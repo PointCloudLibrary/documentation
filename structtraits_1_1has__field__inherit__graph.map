@@ -1,0 +1,8 @@
+<map id="traits::has_field&lt; PointT, Field &gt;" name="traits::has_field&lt; PointT, Field &gt;">
+<area shape="rect" id="node5" href="$structtraits_1_1has__field.html" title="traits::has_field\&lt;\l PointT, pcl::fields\l::curvature \&gt;" alt="" coords="512,5,640,69"/>
+<area shape="rect" id="node9" href="$structtraits_1_1has__field.html" title="traits::has_field\&lt;\l PointT, pcl::fields\l::label \&gt;" alt="" coords="512,93,640,157"/>
+<area shape="rect" id="node13" href="$structtraits_1_1has__field.html" title="traits::has_field\&lt;\l PointT, pcl::fields\l::intensity \&gt;" alt="" coords="512,181,640,245"/>
+<area shape="rect" id="node7" href="$structtraits_1_1has__curvature.html" title="Metafunction to check if a given point type has curvature field. " alt="" coords="691,14,832,61"/>
+<area shape="rect" id="node11" href="$structtraits_1_1has__label.html" title="Metafunction to check if a given point type has label field. " alt="" coords="700,102,823,149"/>
+<area shape="rect" id="node15" href="$structtraits_1_1has__intensity.html" title="Metafunction to check if a given point type has intensity field. " alt="" coords="693,190,829,237"/>
+</map>

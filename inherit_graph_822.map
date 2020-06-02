@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="pcl::octree::OctreePoint\lCloud\&lt; PointT, LeafContainer\lT, BranchContainerT \&gt;" alt="" coords="131,181,325,245"/>
+<area shape="rect" id="node13" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="pcl::octree::OctreePoint\lCloud\&lt; PointT, LeafT,\l BranchT, OctreeT \&gt;" alt="" coords="148,357,308,421"/>
+<area shape="rect" id="node17" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class " alt="" coords="123,453,333,517"/>
+<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html" title="Octree pointcloud voxel class which maintains adjacency information for its voxels. " alt="" coords="381,5,621,69"/>
+<area shape="rect" id="node7" href="$classpcl_1_1octree_1_1_octree_point_cloud_density.html" title="Octree pointcloud density class " alt="" coords="381,93,621,157"/>
+<area shape="rect" id="node9" href="$classpcl_1_1octree_1_1_octree_point_cloud_search.html" title="Octree pointcloud search class " alt="" coords="384,181,619,245"/>
+<area shape="rect" id="node11" href="$classpcl_1_1octree_1_1_octree_point_cloud_voxel_centroid.html" title="Octree pointcloud voxel centroid class " alt="" coords="381,269,621,333"/>
+<area shape="rect" id="node15" href="$classpcl_1_1io_1_1_octree_point_cloud_compression.html" title="Octree pointcloud compression class " alt="" coords="404,357,599,421"/>
+<area shape="rect" id="node19" href="$classpcl_1_1octree_1_1_octree_point_cloud_point_vector.html" title="Octree pointcloud point vector class " alt="" coords="392,445,611,526"/>
+<area shape="rect" id="node21" href="$classpcl_1_1octree_1_1_octree_point_cloud_single_point.html" title="Octree pointcloud single point class " alt="" coords="392,549,611,630"/>
+</map>

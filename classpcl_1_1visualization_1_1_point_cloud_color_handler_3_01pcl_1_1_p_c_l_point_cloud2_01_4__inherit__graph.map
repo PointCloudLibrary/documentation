@@ -1,0 +1,9 @@
+<map id="pcl::visualization::PointCloudColorHandler&lt; pcl::PCLPointCloud2 &gt;" name="pcl::visualization::PointCloudColorHandler&lt; pcl::PCLPointCloud2 &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_custom_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Handler for predefined user colors. " alt="" coords="235,5,451,69"/>
+<area shape="rect" id="node5" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_generic_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Generic field handler class for colors. " alt="" coords="236,93,449,157"/>
+<area shape="rect" id="node7" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_h_s_v_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="HSV handler class for colors. " alt="" coords="229,181,456,245"/>
+<area shape="rect" id="node9" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_label_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Label field handler class for colors. " alt="" coords="243,269,443,333"/>
+<area shape="rect" id="node11" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_random_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Handler for random PointCloud colors (i.e., R, G, B will be randomly chosen) " alt="" coords="233,357,452,421"/>
+<area shape="rect" id="node13" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_r_g_b_a_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RGBA handler class for colors. " alt="" coords="225,445,460,509"/>
+<area shape="rect" id="node15" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_r_g_b_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RGB handler class for colors. " alt="" coords="229,533,456,597"/>
+</map>

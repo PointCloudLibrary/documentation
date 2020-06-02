@@ -1,0 +1,5 @@
+<map id="pcl::SampleConsensusModelNormalSphere&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelNormalSphere&lt; PointT, PointNT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_sphere.html" title="SampleConsensusModelSphere defines a model for 3D sphere segmentation. " alt="" coords="259,5,451,51"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="5,5,197,51"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="245,74,464,121"/>
+</map>

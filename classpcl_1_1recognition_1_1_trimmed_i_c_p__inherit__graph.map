@@ -1,0 +1,7 @@
+<map id="pcl::recognition::TrimmedICP&lt; PointT, Scalar &gt;" name="pcl::recognition::TrimmedICP&lt; PointT, Scalar &gt;">
+<area shape="rect" id="node12" href="$classpcl_1_1recognition_1_1_trimmed_i_c_p.html" title="pcl::recognition::Trimmed\lICP\&lt; pcl::pcl::PointXYZ,\l float \&gt;" alt="" coords="1399,53,1567,117"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title="pcl::registration::\lTransformationEstimationSVD\l\&lt; PointT, PointT, Scalar \&gt;" alt="" coords="801,53,999,117"/>
+<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointT, PointT, Scalar \&gt;" alt="" coords="408,5,581,69"/>
+<area shape="rect" id="node6" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="5,39,189,121"/>
+<area shape="rect" id="node8" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title="TransformationEstimationSVD implements SVD&#45;based estimation of the transformation aligning the given ..." alt="" coords="396,93,593,174"/>
+</map>

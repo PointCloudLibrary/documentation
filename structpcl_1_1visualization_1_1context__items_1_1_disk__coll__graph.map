@@ -1,0 +1,4 @@
+<map id="pcl::visualization::context_items::Disk" name="pcl::visualization::context_items::Disk">
+<area shape="rect" id="node2" href="$structpcl_1_1visualization_1_1context__items_1_1_circle.html" title="pcl::visualization\l::context_items::Circle" alt="" coords="5,179,160,226"/>
+<area shape="rect" id="node4" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="19,83,147,130"/>
+</map>

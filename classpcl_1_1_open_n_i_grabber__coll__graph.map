@@ -1,0 +1,6 @@
+<map id="pcl::OpenNIGrabber" name="pcl::OpenNIGrabber">
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="448,5,541,35"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_synchronizer.html" title="pcl::Synchronizer\&lt;\l boost::shared_ptr\&lt;\l openni_wrapper::IRImage\l \&gt;, boost::shared_ptr\&lt; openni\l_wrapper::DepthImage \&gt; \&gt;" alt="" coords="399,59,591,157"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_synchronizer.html" title="/brief This template class synchronizes two data streams of different types. " alt="" coords="5,145,136,191"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_synchronizer.html" title="pcl::Synchronizer\&lt;\l boost::shared_ptr\&lt;\l openni_wrapper::Image\l \&gt;, boost::shared_ptr\&lt;\l openni_wrapper::DepthImage \&gt; \&gt;" alt="" coords="385,181,604,280"/>
+</map>

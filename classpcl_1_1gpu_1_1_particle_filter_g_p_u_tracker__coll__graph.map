@@ -1,0 +1,12 @@
+<map id="pcl::gpu::ParticleFilterGPUTracker" name="pcl::gpu::ParticleFilterGPUTracker">
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; curandState \&gt;" alt="" coords="663,5,809,51"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="15,49,177,79"/>
+<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="247,49,425,79"/>
+<area shape="rect" id="node20" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::tracking::ParticleXYZRPY \&gt;" alt="" coords="625,113,847,159"/>
+<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::RGB \&gt;" alt="" coords="653,182,819,229"/>
+<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="5,237,187,267"/>
+<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="237,237,435,267"/>
+<area shape="rect" id="node24" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="653,251,819,298"/>
+<area shape="rect" id="node16" href="$structpcl_1_1tracking_1_1_particle_x_y_z_r_p_y.html" title="pcl::tracking::ParticleXYZRPY" alt="" coords="637,352,835,381"/>
+<area shape="rect" id="node18" href="$structpcl_1_1tracking_1_1___particle_x_y_z_r_p_y.html" title="pcl::tracking::_Particle\lXYZRPY" alt="" coords="260,354,412,401"/>
+</map>

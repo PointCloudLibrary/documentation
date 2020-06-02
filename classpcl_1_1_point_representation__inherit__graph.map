@@ -1,0 +1,45 @@
+<map id="pcl::PointRepresentation&lt; PointT &gt;" name="pcl::PointRepresentation&lt; PointT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="639,86,804,133"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="639,142,804,189"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointDefault \&gt;" alt="" coords="417,305,583,351"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointXYZ \&gt;" alt="" coords="417,555,583,602"/>
+<area shape="rect" id="node45" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; UniqueShapeContext1960 \&gt;" alt="" coords="401,625,599,671"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointXYZI \&gt;" alt="" coords="417,694,583,741"/>
+<area shape="rect" id="node53" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; Narf36 \&gt;" alt="" coords="417,763,583,810"/>
+<area shape="rect" id="node57" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointTarget \&gt;" alt="" coords="417,833,583,879"/>
+<area shape="rect" id="node61" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="632,18,811,65"/>
+<area shape="rect" id="node64" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointNormal \&gt;" alt="" coords="417,902,583,949"/>
+<area shape="rect" id="node68" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; FeatureT \&gt;" alt="" coords="417,971,583,1018"/>
+<area shape="rect" id="node70" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="624,495,819,542"/>
+<area shape="rect" id="node73" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; ShapeContext1980 \&gt;" alt="" coords="417,1041,583,1087"/>
+<area shape="rect" id="node77" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="639,391,804,438"/>
+<area shape="rect" id="node80" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; SHOT1344 \&gt;" alt="" coords="417,1110,583,1157"/>
+<area shape="rect" id="node84" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="639,443,804,490"/>
+<area shape="rect" id="node87" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; SHOT352 \&gt;" alt="" coords="417,1179,583,1226"/>
+<area shape="rect" id="node91" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; Narf * \&gt;" alt="" coords="417,1249,583,1295"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="1312,105,1533,151"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_default_point_representation_3_01_p_p_f_signature_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="1585,105,1791,151"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="1312,258,1533,305"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_default_point_representation_3_01_v_f_h_signature308_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="1585,258,1791,305"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_custom_point_representation.html" title="CustomPointRepresentation extends PointRepresentation to allow for sub&#45;part selection on the point..." alt="" coords="859,193,1069,239"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_default_feature_representation.html" title="DefaulFeatureRepresentation extends PointRepresentation and is intended to be used when defining the ..." alt="" coords="853,262,1075,309"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_default_point_representation.html" title="DefaultPointRepresentation extends PointRepresentation to define default behavior for common point ty..." alt="" coords="861,331,1067,378"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="1312,19,1533,66"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="1312,501,1533,547"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="1312,342,1533,389"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="1312,415,1533,462"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_r_g_b_signature250_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="1585,19,1791,66"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_default_point_representation_3_01_normal_based_signature12_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="1585,501,1791,547"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_default_point_representation_3_01_f_p_f_h_signature33_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="1585,342,1791,389"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_signature125_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="1585,415,1791,462"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_default_point_representation_3_01_point_x_y_z_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PointXYZ \&gt;" alt="" coords="861,555,1067,602"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_default_point_representation_3_01_unique_shape_context1960_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; UniqueShapeContext1960 \&gt;" alt="" coords="861,625,1067,671"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_default_point_representation_3_01_point_x_y_z_i_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PointXYZI \&gt;" alt="" coords="861,694,1067,741"/>
+<area shape="rect" id="node55" href="$classpcl_1_1_default_point_representation_3_01_narf36_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; Narf36 \&gt;" alt="" coords="861,763,1067,810"/>
+<area shape="rect" id="node59" href="$classpcl_1_1registration_1_1_transformation_validation_euclidean_1_1_my_point_representation.html" title="Internal point representation uses only 3D coordinates for L2. " alt="" coords="853,833,1075,914"/>
+<area shape="rect" id="node66" href="$classpcl_1_1_default_point_representation_3_01_point_normal_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PointNormal \&gt;" alt="" coords="861,937,1067,983"/>
+<area shape="rect" id="node75" href="$classpcl_1_1_default_point_representation_3_01_shape_context1980_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; ShapeContext1980 \&gt;" alt="" coords="861,1041,1067,1087"/>
+<area shape="rect" id="node82" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t1344_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; SHOT1344 \&gt;" alt="" coords="861,1110,1067,1157"/>
+<area shape="rect" id="node89" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t352_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; SHOT352 \&gt;" alt="" coords="861,1179,1067,1226"/>
+<area shape="rect" id="node93" href="$structpcl_1_1_narf_1_1_feature_point_representation.html" title="pcl::Narf::FeaturePointRepresentation" alt="" coords="843,1257,1085,1287"/>
+</map>

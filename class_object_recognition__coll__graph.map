@@ -1,0 +1,10 @@
+<map id="ObjectRecognition" name="ObjectRecognition">
+<area shape="rect" id="node2" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; pcl\l::VFHSignature308 \&gt;" alt="" coords="1009,58,1172,105"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_kd_tree.html" title="pcl::KdTree\&lt; pcl::VFHSignature308 \&gt;" alt="" coords="524,5,764,35"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="167,41,316,71"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures. " alt="" coords="551,58,737,105"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; GlobalDescriptorT \&gt;" alt="" coords="971,161,1211,191"/>
+<area shape="rect" id="node13" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="184,135,299,164"/>
+<area shape="rect" id="node20" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="573,193,715,223"/>
+<area shape="rect" id="node24" href="$struct_object_recognition_parameters.html" title="ObjectRecognitionParameters" alt="" coords="993,215,1188,244"/>
+</map>

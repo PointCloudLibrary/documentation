@@ -1,0 +1,5 @@
+<map id="pcl::FieldComparison&lt; PointT &gt;" name="pcl::FieldComparison&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_comparison_base.html" title="The (abstract) base class for the comparison object. " alt="" coords="5,174,152,221"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_data_at_offset.html" title="pcl::PointDataAtOffset\l\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="159,246,313,293"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_data_at_offset.html" title="A datatype that enables type&#45;correct comparisons. " alt="" coords="241,102,396,149"/>
+</map>

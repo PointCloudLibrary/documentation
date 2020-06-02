@@ -1,0 +1,9 @@
+<map id="pcl::io::PointCloudImageExtractor&lt; PointT &gt;" name="pcl::io::PointCloudImageExtractor&lt; PointT &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_label_field.html" title="Image Extractor which uses the data present in the &quot;label&quot; field to produce either monochrome or RGB ..." alt="" coords="224,5,389,69"/>
+<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_normal_field.html" title="Image Extractor which uses the data present in the &quot;normal&quot; field. " alt="" coords="220,93,393,157"/>
+<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_r_g_b_field.html" title="Image Extractor which uses the data present in the &quot;rgb&quot; or &quot;rgba&quot; fields to produce a color image wi..." alt="" coords="224,181,389,245"/>
+<area shape="rect" id="node9" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_with_scaling.html" title="Image Extractor extension which provides functionality to apply scaling to the values extracted from ..." alt="" coords="224,269,389,333"/>
+<area shape="rect" id="node11" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_curvature_field.html" title="Image Extractor which uses the data present in the &quot;curvature&quot; field to produce a curvature map (as a..." alt="" coords="449,181,639,245"/>
+<area shape="rect" id="node13" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_intensity_field.html" title="Image Extractor which uses the data present in the &quot;intensity&quot; field to produce a monochrome intensit..." alt="" coords="453,269,635,333"/>
+<area shape="rect" id="node15" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_z_field.html" title="Image Extractor which uses the data present in the &quot;z&quot; field to produce a depth map (as a monochrome ..." alt="" coords="443,357,645,403"/>
+</map>

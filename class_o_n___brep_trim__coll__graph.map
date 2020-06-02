@@ -1,0 +1,13 @@
+<map id="ON_BrepTrim" name="ON_BrepTrim">
+<area shape="rect" id="node2" href="$class_o_n___curve_proxy.html" title="ON_CurveProxy" alt="" coords="5,313,123,343"/>
+<area shape="rect" id="node4" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="23,189,105,219"/>
+<area shape="rect" id="node6" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="11,88,117,117"/>
+<area shape="rect" id="node8" href="$class_o_n___object.html" title="ON_Object" alt="" coords="21,5,107,35"/>
+<area shape="rect" id="node10" href="$union_o_n___u.html" title="ON_U" alt="" coords="147,313,205,343"/>
+<area shape="rect" id="node12" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="229,313,355,343"/>
+<area shape="rect" id="node15" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="245,189,339,219"/>
+<area shape="rect" id="node18" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_BrepTrimPoint \&gt;" alt="" coords="523,305,675,351"/>
+<area shape="rect" id="node20" href="$struct_o_n___brep_trim_point.html" title="ON_BrepTrimPoint" alt="" coords="464,189,595,219"/>
+<area shape="rect" id="node22" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="476,88,569,117"/>
+<area shape="rect" id="node25" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="627,189,779,219"/>
+</map>

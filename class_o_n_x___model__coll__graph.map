@@ -1,0 +1,51 @@
+<map id="ONX_Model" name="ONX_Model">
+<area shape="rect" id="node2" href="$class_o_n__3dm_settings.html" title="ON_3dmSettings" alt="" coords="1169,797,1292,827"/>
+<area shape="rect" id="node4" href="$class_o_n___earth_anchor_point.html" title="ON_EarthAnchorPoint" alt="" coords="273,679,423,708"/>
+<area shape="rect" id="node6" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="5,267,99,296"/>
+<area shape="rect" id="node23" href="$class_o_n__3dm_annotation_settings.html" title="ON_3dmAnnotationSettings" alt="" coords="451,337,635,367"/>
+<area shape="rect" id="node35" href="$class_o_n__3dm_render_settings.html" title="ON_3dmRenderSettings" alt="" coords="707,545,869,575"/>
+<area shape="rect" id="node98" href="$class_o_n___bitmap.html" title="ON_Bitmap" alt="" coords="303,239,393,268"/>
+<area shape="rect" id="node102" href="$class_o_n__3dm_notes.html" title="ON_3dmNotes" alt="" coords="488,31,597,60"/>
+<area shape="rect" id="node105" href="$class_o_n__3dm_application.html" title="ON_3dmApplication" alt="" coords="473,108,612,137"/>
+<area shape="rect" id="node108" href="$class_o_n__3dm_revision_history.html" title="ON_3dmRevisionHistory" alt="" coords="460,175,625,204"/>
+<area shape="rect" id="node8" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="5,723,99,752"/>
+<area shape="rect" id="node11" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="11,516,93,545"/>
+<area shape="rect" id="node13" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_PlugIn\lRef \&gt;" alt="" coords="693,973,883,1019"/>
+<area shape="rect" id="node15" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="275,1517,421,1547"/>
+<area shape="rect" id="node20" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_3dmConstruction\lPlane \&gt;" alt="" coords="663,1154,913,1201"/>
+<area shape="rect" id="node28" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_3dmView \&gt;" alt="" coords="679,797,897,827"/>
+<area shape="rect" id="node45" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ONX\l_Model_Object \&gt;" alt="" coords="711,1941,865,1987"/>
+<area shape="rect" id="node52" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Font \&gt;" alt="" coords="693,1277,883,1307"/>
+<area shape="rect" id="node55" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="713,1544,863,1573"/>
+<area shape="rect" id="node60" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Material \&gt;" alt="" coords="683,1384,893,1413"/>
+<area shape="rect" id="node66" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Layer \&gt;" alt="" coords="689,1491,887,1520"/>
+<area shape="rect" id="node72" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Texture\lMapping \&gt;" alt="" coords="689,1598,887,1645"/>
+<area shape="rect" id="node78" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_HatchPattern \&gt;" alt="" coords="667,1801,909,1831"/>
+<area shape="rect" id="node84" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_DimStyle \&gt;" alt="" coords="679,1331,897,1360"/>
+<area shape="rect" id="node90" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Group \&gt;" alt="" coords="688,1437,888,1467"/>
+<area shape="rect" id="node113" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Instance\lDefinition \&gt;" alt="" coords="687,1669,889,1715"/>
+<area shape="rect" id="node121" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Linetype \&gt;" alt="" coords="681,1741,895,1771"/>
+<area shape="rect" id="node132" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ONX\l_Model_RenderLight \&gt;" alt="" coords="957,1914,1112,1961"/>
+<area shape="rect" id="node135" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ONX\l_Model_UserData \&gt;" alt="" coords="957,2002,1112,2049"/>
+<area shape="rect" id="node17" href="$class_o_n__3dm_units_and_tolerances.html" title="ON_3dmUnitsAndTolerances" alt="" coords="692,851,884,880"/>
+<area shape="rect" id="node26" href="$class_o_n__3dm_construction_plane_grid_defaults.html" title="ON_3dmConstructionPlaneGrid\lDefaults" alt="" coords="685,903,891,950"/>
+<area shape="rect" id="node31" href="$class_o_n___mesh_parameters.html" title="ON_MeshParameters" alt="" coords="715,1101,861,1131"/>
+<area shape="rect" id="node38" href="$class_o_n___color.html" title="ON_Color" alt="" coords="308,620,388,649"/>
+<area shape="rect" id="node42" href="$class_o_n__3dm_i_o_settings.html" title="ON_3dmIOSettings" alt="" coords="720,1224,856,1253"/>
+<area shape="rect" id="node47" href="$class_o_n_x___model___object.html" title="ONX_Model_Object" alt="" coords="279,2057,417,2087"/>
+<area shape="rect" id="node50" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_Font \&gt;" alt="" coords="1156,1243,1305,1290"/>
+<area shape="rect" id="node58" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_Material \&gt;" alt="" coords="1156,1393,1305,1439"/>
+<area shape="rect" id="node64" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_Layer \&gt;" alt="" coords="1156,1531,1305,1578"/>
+<area shape="rect" id="node70" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_TextureMapping \&gt;" alt="" coords="1156,1601,1305,1647"/>
+<area shape="rect" id="node76" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_HatchPattern \&gt;" alt="" coords="1156,1809,1305,1855"/>
+<area shape="rect" id="node82" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_DimStyle \&gt;" alt="" coords="1156,1323,1305,1370"/>
+<area shape="rect" id="node88" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_Group \&gt;" alt="" coords="1156,1462,1305,1509"/>
+<area shape="rect" id="node111" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_InstanceDefinition \&gt;" alt="" coords="1156,1670,1305,1717"/>
+<area shape="rect" id="node119" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_Linetype \&gt;" alt="" coords="1156,1739,1305,1786"/>
+<area shape="rect" id="node94" href="$class_o_n__3dm_properties.html" title="ON_3dmProperties" alt="" coords="1164,173,1297,203"/>
+<area shape="rect" id="node96" href="$class_o_n___windows_bitmap.html" title="ON_WindowsBitmap" alt="" coords="716,236,860,265"/>
+<area shape="rect" id="node125" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_Bitmap * \&gt;" alt="" coords="959,283,1111,330"/>
+<area shape="rect" id="node117" href="$class_o_n___string.html" title="ON_String" alt="" coords="1189,2075,1272,2104"/>
+<area shape="rect" id="node128" href="$class_o_n___uuid_index_list.html" title="ON_UuidIndexList" alt="" coords="1167,2149,1295,2179"/>
+<area shape="rect" id="node130" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_HistoryRecord * \&gt;" alt="" coords="1155,2202,1307,2249"/>
+</map>

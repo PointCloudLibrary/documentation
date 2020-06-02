@@ -1,0 +1,16 @@
+<map id="pcl::Grabber" name="pcl::Grabber">
+<area shape="rect" id="node3" href="$classpcl_1_1_david_s_d_k_grabber.html" title="Grabber for davidSDK structured light compliant devices. " alt="" coords="151,5,305,35"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_dinast_grabber.html" title="Grabber for DINAST devices (i.e., IPA&#45;1002, IPA&#45;1110, IPA&#45;2001) " alt="" coords="163,59,293,88"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_ensenso_grabber.html" title="Grabber for IDS&#45;Imaging Ensenso&#39;s devices. " alt="" coords="156,112,300,141"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_h_d_l_grabber.html" title="Grabber for the Velodyne High&#45;Definition&#45;Laser (HDL) " alt="" coords="168,165,288,195"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_image_grabber_base.html" title="Base class for Image file grabber. " alt="" coords="149,219,307,248"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_o_n_i_grabber.html" title="A simple ONI grabber. " alt="" coords="169,272,287,301"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_open_n_i_grabber.html" title="Grabber for OpenNI devices (i.e., Primesense PSDK, Microsoft Kinect, Asus XTion Pro/Live) ..." alt="" coords="159,325,297,355"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_p_c_d_grabber_base.html" title="Base class for PCD file grabber. " alt="" coords="152,379,304,408"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_p_x_c_grabber.html" title="Grabber for PXC devices. " alt="" coords="168,432,288,461"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_robot_eye_grabber.html" title="Grabber for the Ocular Robotics RobotEye sensor. " alt="" coords="153,485,303,515"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_stereo_grabber_base.html" title="Base class for Stereo file grabber. " alt="" coords="148,539,308,568"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_image_grabber.html" title="pcl::ImageGrabber\&lt;\l PointT \&gt;" alt="" coords="381,210,517,257"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_p_c_d_grabber.html" title="pcl::PCDGrabber\&lt; PointT \&gt;" alt="" coords="357,379,541,408"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_stereo_grabber.html" title="pcl::StereoGrabber\l\&lt; PointT \&gt;" alt="" coords="384,530,515,577"/>
+</map>

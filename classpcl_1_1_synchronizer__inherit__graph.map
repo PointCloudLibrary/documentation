@@ -1,0 +1,4 @@
+<map id="pcl::Synchronizer&lt; T1, T2 &gt;" name="pcl::Synchronizer&lt; T1, T2 &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_synchronizer.html" title="pcl::Synchronizer\&lt;\l boost::shared_ptr\&lt;\l openni_wrapper::Image\l \&gt;, boost::shared_ptr\&lt;\l openni_wrapper::DepthImage \&gt; \&gt;" alt="" coords="385,5,604,104"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_synchronizer.html" title="pcl::Synchronizer\&lt;\l boost::shared_ptr\&lt;\l openni_wrapper::IRImage\l \&gt;, boost::shared_ptr\&lt; openni\l_wrapper::DepthImage \&gt; \&gt;" alt="" coords="399,128,591,227"/>
+</map>

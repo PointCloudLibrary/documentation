@@ -1,0 +1,48 @@
+<map id="pcl::PointCloud&lt; T &gt;" name="pcl::PointCloud&lt; T &gt;">
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::InterestPoint \&gt;" alt="" coords="420,21,561,67"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; LocalDescriptorT \&gt;" alt="" coords="373,91,608,120"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointSource \&gt;" alt="" coords="388,144,593,173"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="404,197,577,227"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointInT \&gt;" alt="" coords="399,251,583,280"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZ \&gt;" alt="" coords="396,304,585,333"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="421,357,560,403"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZRGBA \&gt;" alt="" coords="411,426,571,473"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; FaceData \&gt;" alt="" coords="395,496,587,525"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZ \&gt;" alt="" coords="421,549,560,595"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; float \&gt;" alt="" coords="411,619,571,648"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::RGB \&gt;" alt="" coords="421,671,560,718"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; RGB \&gt;" alt="" coords="409,741,572,771"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::VFHSignature308 \&gt;" alt="" coords="419,794,563,841"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointNT \&gt;" alt="" coords="400,864,581,893"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::device::prob_histogram \&gt;" alt="" coords="403,917,579,963"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::Normal \&gt;" alt="" coords="421,986,560,1033"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; HalfEdge\lData \&gt;" alt="" coords="403,1055,579,1102"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; SceneT \&gt;" alt="" coords="401,1125,580,1155"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointTarget \&gt;" alt="" coords="389,1179,592,1208"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointUV \&gt;" alt="" coords="421,1231,560,1278"/>
+<area shape="rect" id="node45" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; unsigned\l short \&gt;" alt="" coords="404,1301,577,1347"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGBA \&gt;" alt="" coords="421,1370,560,1417"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; unsigned\l char \&gt;" alt="" coords="404,1439,577,1486"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZRGBL \&gt;" alt="" coords="412,1509,569,1555"/>
+<area shape="rect" id="node53" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::GradientXY \&gt;" alt="" coords="421,1578,560,1625"/>
+<area shape="rect" id="node55" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; EdgeData \&gt;" alt="" coords="395,1648,587,1677"/>
+<area shape="rect" id="node57" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointNormal \&gt;" alt="" coords="421,1701,560,1747"/>
+<area shape="rect" id="node59" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; NormalT \&gt;" alt="" coords="399,1771,583,1800"/>
+<area shape="rect" id="node61" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::Normal \&gt;" alt="" coords="421,1823,560,1870"/>
+<area shape="rect" id="node63" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="401,1893,580,1939"/>
+<area shape="rect" id="node71" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; VertexData \&gt;" alt="" coords="391,1963,591,1992"/>
+<area shape="rect" id="node73" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; FeatureT \&gt;" alt="" coords="397,2016,584,2045"/>
+<area shape="rect" id="node75" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::InterestPoint \&gt;" alt="" coords="421,2069,560,2115"/>
+<area shape="rect" id="node77" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="421,2138,560,2185"/>
+<area shape="rect" id="node79" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; GlobalDescriptorT \&gt;" alt="" coords="371,2208,611,2237"/>
+<area shape="rect" id="node81" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointRGBT \&gt;" alt="" coords="389,2261,592,2291"/>
+<area shape="rect" id="node83" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZRGBA \&gt;" alt="" coords="376,2315,605,2344"/>
+<area shape="rect" id="node87" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZT \&gt;" alt="" coords="392,2368,589,2397"/>
+<area shape="rect" id="node89" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; KeypointT \&gt;" alt="" coords="393,2421,588,2451"/>
+<area shape="rect" id="node91" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZI \&gt;" alt="" coords="421,2474,560,2521"/>
+<area shape="rect" id="node93" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; ModelT \&gt;" alt="" coords="401,2544,580,2573"/>
+<area shape="rect" id="node65" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="681,1901,801,1931"/>
+<area shape="rect" id="node67" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="881,1875,1039,1904"/>
+<area shape="rect" id="node69" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="873,1928,1047,1957"/>
+<area shape="rect" id="node85" href="$classpcl_1_1_bearing_angle_image.html" title="class BearingAngleImage is used as an interface to generate Bearing Angle(BA) image. " alt="" coords="661,2315,821,2344"/>
+</map>

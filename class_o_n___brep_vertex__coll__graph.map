@@ -1,0 +1,9 @@
+<map id="ON_BrepVertex" name="ON_BrepVertex">
+<area shape="rect" id="node2" href="$class_o_n___point.html" title="ON_Point" alt="" coords="144,203,221,232"/>
+<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,104,112,133"/>
+<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
+<area shape="rect" id="node8" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="136,104,229,133"/>
+<area shape="rect" id="node11" href="$union_o_n___u.html" title="ON_U" alt="" coords="249,203,308,232"/>
+<area shape="rect" id="node13" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="333,203,491,232"/>
+<area shape="rect" id="node15" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="347,104,499,133"/>
+</map>

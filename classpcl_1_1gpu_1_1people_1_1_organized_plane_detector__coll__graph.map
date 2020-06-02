@@ -1,0 +1,20 @@
+<map id="pcl::gpu::people::OrganizedPlaneDetector" name="pcl::gpu::people::OrganizedPlaneDetector">
+<area shape="rect" id="node2" href="$classpcl_1_1_integral_image_normal_estimation.html" title="pcl::IntegralImageNormal\lEstimation\&lt; pcl::PointXYZRGBA,\l pcl::pcl::Normal \&gt;" alt="" coords="1571,99,1789,163"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; pcl::\lPointXYZRGBA, pcl::pcl\l::Normal \&gt;" alt="" coords="1200,99,1365,163"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGBA \&gt;" alt="" coords="387,201,525,247"/>
+<area shape="rect" id="node32" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title="pcl::OrganizedMultiPlane\lSegmentation\&lt; pcl::PointXYZRGBA,\l pcl::pcl::Normal, pcl::pcl\l::Label \&gt;" alt="" coords="757,229,995,310"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,209,171,239"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="368,148,544,177"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title="OrganizedMultiPlaneSegmentation finds all planes present in the input cloud, and outputs a vector of ..." alt="" coords="373,271,539,335"/>
+<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; pcl::PointXYZRGBA \&gt;" alt="" coords="568,89,733,135"/>
+<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="21,61,155,107"/>
+<area shape="rect" id="node19" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="389,27,523,74"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="799,37,953,83"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_integral_image_normal_estimation.html" title="Surface normal estimation on organized data using integral images. " alt="" coords="1199,5,1367,69"/>
+<area shape="rect" id="node25" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; prob_histogram \&gt;" alt="" coords="1597,306,1763,353"/>
+<area shape="rect" id="node27" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="785,333,967,363"/>
+<area shape="rect" id="node29" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="1184,360,1381,389"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::device::prob_histogram \&gt;" alt="" coords="1592,435,1768,482"/>
+<area shape="rect" id="node40" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="819,536,933,565"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="1212,416,1353,445"/>
+</map>

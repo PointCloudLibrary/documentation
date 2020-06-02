@@ -1,0 +1,16 @@
+<map id="pcl::gpu::DeviceMemory" name="pcl::gpu::DeviceMemory">
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; curandState \&gt;" alt="" coords="631,191,777,238"/>
+<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; double \&gt;" alt="" coords="631,346,777,393"/>
+<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; float \&gt;" alt="" coords="631,495,777,542"/>
+<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; float4 \&gt;" alt="" coords="631,102,777,149"/>
+<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; int \&gt;" alt="" coords="631,417,777,463"/>
+<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; Label \&gt;" alt="" coords="631,5,777,51"/>
+<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; NormalType \&gt;" alt="" coords="631,1037,777,1083"/>
+<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::gpu::people::trees\l::Node \&gt;" alt="" coords="623,708,785,772"/>
+<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="631,810,777,857"/>
+<area shape="rect" id="node21" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::tracking::ParticleXYZRPY \&gt;" alt="" coords="593,957,815,1003"/>
+<area shape="rect" id="node23" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="631,613,777,659"/>
+<area shape="rect" id="node25" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; uint64_type \&gt;" alt="" coords="631,277,777,323"/>
+<area shape="rect" id="node27" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; unsigned char \&gt;" alt="" coords="631,882,777,929"/>
+<area shape="rect" id="node29" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="223,499,401,528"/>
+</map>

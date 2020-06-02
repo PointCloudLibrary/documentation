@@ -1,0 +1,46 @@
+<map id="ON_PolyEdgeSegment" name="ON_PolyEdgeSegment">
+<area shape="rect" id="node2" href="$class_o_n___curve_proxy.html" title="ON_CurveProxy" alt="" coords="688,936,805,965"/>
+<area shape="rect" id="node27" href="$class_o_n___brep_trim.html" title="ON_BrepTrim" alt="" coords="988,776,1089,805"/>
+<area shape="rect" id="node97" href="$class_o_n___brep_edge.html" title="ON_BrepEdge" alt="" coords="985,483,1092,512"/>
+<area shape="rect" id="node4" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="363,1037,445,1067"/>
+<area shape="rect" id="node123" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_Curve * \&gt;" alt="" coords="671,993,823,1039"/>
+<area shape="rect" id="node6" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="144,813,251,843"/>
+<area shape="rect" id="node14" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="357,813,451,843"/>
+<area shape="rect" id="node45" href="$class_o_n___brep.html" title="ON_Brep" alt="" coords="2175,657,2249,687"/>
+<area shape="rect" id="node76" href="$class_o_n___brep_loop.html" title="ON_BrepLoop" alt="" coords="987,579,1091,608"/>
+<area shape="rect" id="node112" href="$class_o_n___point.html" title="ON_Point" alt="" coords="708,255,785,284"/>
+<area shape="rect" id="node8" href="$class_o_n___object.html" title="ON_Object" alt="" coords="7,813,92,843"/>
+<area shape="rect" id="node10" href="$class_o_n___brep_face.html" title="ON_BrepFace" alt="" coords="987,160,1091,189"/>
+<area shape="rect" id="node65" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepFace \&gt;" alt="" coords="1288,209,1509,239"/>
+<area shape="rect" id="node12" href="$class_o_n___surface_proxy.html" title="ON_SurfaceProxy" alt="" coords="683,308,811,337"/>
+<area shape="rect" id="node87" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_Surface * \&gt;" alt="" coords="671,787,823,834"/>
+<area shape="rect" id="node17" href="$union_o_n___u.html" title="ON_U" alt="" coords="717,504,776,533"/>
+<area shape="rect" id="node110" href="$class_o_n___brep_vertex.html" title="ON_BrepVertex" alt="" coords="981,392,1096,421"/>
+<area shape="rect" id="node19" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="668,361,825,391"/>
+<area shape="rect" id="node21" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="328,760,480,789"/>
+<area shape="rect" id="node37" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_BrepTrimPoint \&gt;" alt="" coords="671,857,823,903"/>
+<area shape="rect" id="node55" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="965,301,1112,331"/>
+<area shape="rect" id="node25" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="705,23,788,52"/>
+<area shape="rect" id="node52" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepTrim \&gt;" alt="" coords="1289,429,1508,459"/>
+<area shape="rect" id="node31" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="684,713,809,743"/>
+<area shape="rect" id="node34" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="357,485,451,515"/>
+<area shape="rect" id="node39" href="$struct_o_n___brep_trim_point.html" title="ON_BrepTrimPoint" alt="" coords="339,984,469,1013"/>
+<area shape="rect" id="node41" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="151,984,244,1013"/>
+<area shape="rect" id="node48" href="$class_o_n___brep_trim_array.html" title="ON_BrepTrimArray" alt="" coords="1945,468,2079,497"/>
+<area shape="rect" id="node50" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepTrim \&gt;" alt="" coords="1689,431,1839,478"/>
+<area shape="rect" id="node58" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="1324,367,1473,396"/>
+<area shape="rect" id="node74" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepLoop \&gt;" alt="" coords="1289,571,1508,600"/>
+<area shape="rect" id="node95" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepEdge \&gt;" alt="" coords="1288,263,1509,292"/>
+<area shape="rect" id="node108" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepVertex \&gt;" alt="" coords="1284,483,1513,512"/>
+<area shape="rect" id="node63" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepFace \&gt;" alt="" coords="1689,350,1839,397"/>
+<area shape="rect" id="node72" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepLoop \&gt;" alt="" coords="1689,594,1839,641"/>
+<area shape="rect" id="node93" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepEdge \&gt;" alt="" coords="1689,281,1839,327"/>
+<area shape="rect" id="node106" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepVertex \&gt;" alt="" coords="1689,513,1839,559"/>
+<area shape="rect" id="node61" href="$class_o_n___brep_face_array.html" title="ON_BrepFaceArray" alt="" coords="1944,399,2080,428"/>
+<area shape="rect" id="node70" href="$class_o_n___brep_loop_array.html" title="ON_BrepLoopArray" alt="" coords="1945,604,2079,633"/>
+<area shape="rect" id="node85" href="$class_o_n___surface_array.html" title="ON_SurfaceArray" alt="" coords="1539,888,1664,917"/>
+<area shape="rect" id="node91" href="$class_o_n___brep_edge_array.html" title="ON_BrepEdgeArray" alt="" coords="1944,321,2080,351"/>
+<area shape="rect" id="node104" href="$class_o_n___brep_vertex_array.html" title="ON_BrepVertexArray" alt="" coords="1940,535,2084,564"/>
+<area shape="rect" id="node121" href="$class_o_n___curve_array.html" title="ON_CurveArray" alt="" coords="1140,1001,1255,1031"/>
+<area shape="rect" id="node129" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="2167,1156,2257,1185"/>
+</map>

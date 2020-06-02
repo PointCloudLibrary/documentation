@@ -1,0 +1,4 @@
+<map id="pcl::registration::TransformationEstimationPointToPlaneWeighted&lt; PointSource, PointTarget, MatScalar &gt;::OptimizationFunctor" name="pcl::registration::TransformationEstimationPointToPlaneWeighted&lt; PointSource, PointTarget, MatScalar &gt;::OptimizationFunctor">
+<area shape="rect" id="node2" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_functor.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlaneWeighted\&lt; PointSource,\l PointTarget, MatScalar \&gt;::Functor\l\&lt; MatScalar \&gt;" alt="" coords="365,5,589,104"/>
+<area shape="rect" id="node4" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_functor.html" title="Base functor all the models that need non linear optimization must define their own one and implement..." alt="" coords="5,5,229,104"/>
+</map>

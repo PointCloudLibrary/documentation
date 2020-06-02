@@ -1,0 +1,8 @@
+<map id="ON_CurveProxy" name="ON_CurveProxy">
+<area shape="rect" id="node9" href="$class_o_n___brep_edge.html" title="ON_BrepEdge" alt="" coords="5,315,112,344"/>
+<area shape="rect" id="node11" href="$class_o_n___brep_trim.html" title="ON_BrepTrim" alt="" coords="136,315,237,344"/>
+<area shape="rect" id="node13" href="$class_o_n___poly_edge_segment.html" title="ON_PolyEdgeSegment" alt="" coords="261,315,419,344"/>
+<area shape="rect" id="node2" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="145,160,228,189"/>
+<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="133,83,240,112"/>
+<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="144,5,229,35"/>
+</map>

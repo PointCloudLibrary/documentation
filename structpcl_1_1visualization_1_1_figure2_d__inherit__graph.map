@@ -1,0 +1,7 @@
+<map id="pcl::visualization::Figure2D" name="pcl::visualization::Figure2D">
+<area shape="rect" id="node3" href="$structpcl_1_1visualization_1_1_f_elliptic_arc2_d.html" title="Class for storing EllipticArc; every ellipse , circle are covered by this. " alt="" coords="175,5,292,51"/>
+<area shape="rect" id="node5" href="$structpcl_1_1visualization_1_1_f_points2_d.html" title="Class for storing Points. " alt="" coords="175,74,292,121"/>
+<area shape="rect" id="node7" href="$structpcl_1_1visualization_1_1_f_polygon2_d.html" title="Class for Polygon. " alt="" coords="175,143,292,190"/>
+<area shape="rect" id="node9" href="$structpcl_1_1visualization_1_1_f_poly_line2_d.html" title="Class for PolyLine. " alt="" coords="175,213,292,259"/>
+<area shape="rect" id="node11" href="$structpcl_1_1visualization_1_1_f_quad2_d.html" title="Class for storing Quads. " alt="" coords="175,282,292,329"/>
+</map>

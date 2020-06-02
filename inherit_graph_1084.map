@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_functor.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlaneWeighted\&lt; PointSource,\l PointTarget, MatScalar \&gt;::Functor\l\&lt; MatScalar \&gt;" alt="" coords="5,67,229,165"/>
+<area shape="rect" id="node3" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_optimization_functor.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlaneWeighted\&lt; PointSource,\l PointTarget, MatScalar \&gt;::Optimization\lFunctor" alt="" coords="277,5,531,104"/>
+<area shape="rect" id="node5" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_optimization_functor_with_indices.html" title="pcl::registration::\lTransformationEstimationPoint\lToPlaneWeighted\&lt; PointSource,\l PointTarget, MatScalar \&gt;::Optimization\lFunctorWithIndices" alt="" coords="277,128,531,227"/>
+</map>

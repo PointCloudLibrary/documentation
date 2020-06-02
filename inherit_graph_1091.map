@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="5,213,163,259"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_least_median_squares.html" title="LeastMedianSquares represents an implementation of the LMedS (Least Median of Squares) algorithm..." alt="" coords="240,5,408,51"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_maximum_likelihood_sample_consensus.html" title="MaximumLikelihoodSampleConsensus represents an implementation of the MLESAC (Maximum Likelihood Estim..." alt="" coords="221,74,427,121"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_m_estimator_sample_consensus.html" title="MEstimatorSampleConsensus represents an implementation of the MSAC (M&#45;estimator SAmple Consensus) alg..." alt="" coords="212,143,436,190"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_progressive_sample_consensus.html" title="RandomSampleConsensus represents an implementation of the RANSAC (RAndom SAmple Consensus) algorithm..." alt="" coords="211,213,437,259"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_randomized_m_estimator_sample_consensus.html" title="RandomizedMEstimatorSampleConsensus represents an implementation of the RMSAC (Randomized M&#45;estimator..." alt="" coords="227,282,421,329"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_randomized_random_sample_consensus.html" title="RandomizedRandomSampleConsensus represents an implementation of the RRANSAC (Randomized RAndom SAmple..." alt="" coords="217,351,431,398"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_random_sample_consensus.html" title="RandomSampleConsensus represents an implementation of the RANSAC (RAndom SAmple Consensus) algorithm..." alt="" coords="221,421,427,467"/>
+</map>

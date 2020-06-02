@@ -1,0 +1,5 @@
+<map id="pcl::GrabCut&lt; PointT &gt;" name="pcl::GrabCut&lt; PointT &gt;">
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
+<area shape="rect" id="node4" href="$classpcl_1_1segmentation_1_1grabcut_1_1_boykov_kolmogorov.html" title="boost implementation of Boykov and Kolmogorov&#39;s maxflow algorithm doesn&#39;t support negative flows whic..." alt="" coords="5,58,192,105"/>
+<area shape="rect" id="node6" href="$classpcl_1_1segmentation_1_1grabcut_1_1_g_m_m.html" title="pcl::segmentation::\lgrabcut::GMM" alt="" coords="32,127,165,174"/>
+</map>
