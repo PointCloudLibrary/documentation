@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -111,11 +111,11 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;pcl/common/eigen.h&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;pcl/point_cloud.h&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;pcl/point_cloud.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;Eigen/Core&gt;</span> <span class="comment">// for VectorXf</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{<span class="comment"></span></div>
@@ -334,11 +334,11 @@ $(function() {
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#include &lt;pcl/common/impl/gaussian.hpp&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a917b6eb0ef204836c56a2334ddd703fe"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">pcl::PointCloud::height</a></div><div class="ttdeci">std::uint32_t height</div><div class="ttdoc">The point cloud height (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">point_cloud.h:416</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a917b6eb0ef204836c56a2334ddd703fe"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">pcl::PointCloud::height</a></div><div class="ttdeci">std::uint32_t height</div><div class="ttdoc">The point cloud height (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">point_cloud.h:400</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_gaussian_kernel_html_a110325fede3346aa6cdbddc98c4a9a64"><div class="ttname"><a href="classpcl_1_1_gaussian_kernel.html#a110325fede3346aa6cdbddc98c4a9a64">pcl::GaussianKernel::computeGradients</a></div><div class="ttdeci">void computeGradients(const pcl::PointCloud&lt; PointT &gt; &amp;input, std::function&lt; float(const PointT &amp;p)&gt; field_accessor, const Eigen::VectorXf &amp;gaussian_kernel, const Eigen::VectorXf &amp;gaussian_kernel_derivative, pcl::PointCloud&lt; float &gt; &amp;grad_x, pcl::PointCloud&lt; float &gt; &amp;grad_y) const</div><div class="ttdoc">Computes float image gradients using a gaussian kernel and gaussian kernel derivative.</div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8h_source.html#l00217">gaussian.h:217</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt; float &gt;</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00628">point_types.hpp:628</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a644dc7161c2e3f23bc4d36d36c58e7b4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">pcl::PointCloud::width</a></div><div class="ttdeci">std::uint32_t width</div><div class="ttdoc">The point cloud width (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00674">point_types.hpp:674</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a644dc7161c2e3f23bc4d36d36c58e7b4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">pcl::PointCloud::width</a></div><div class="ttdeci">std::uint32_t width</div><div class="ttdoc">The point cloud width (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">point_cloud.h:398</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_gaussian_kernel_html_ae9d18071f99654164697503aa823d081"><div class="ttname"><a href="classpcl_1_1_gaussian_kernel.html#ae9d18071f99654164697503aa823d081">pcl::GaussianKernel::computeGradients</a></div><div class="ttdeci">void computeGradients(const pcl::PointCloud&lt; float &gt; &amp;input, const Eigen::VectorXf &amp;gaussian_kernel, const Eigen::VectorXf &amp;gaussian_kernel_derivative, pcl::PointCloud&lt; float &gt; &amp;grad_x, pcl::PointCloud&lt; float &gt; &amp;grad_y) const</div><div class="ttdoc">Computes float image gradients using a gaussian kernel and gaussian kernel derivative.</div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8h_source.html#l00195">gaussian.h:195</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_gaussian_kernel_html"><div class="ttname"><a href="classpcl_1_1_gaussian_kernel.html">pcl::GaussianKernel</a></div><div class="ttdoc">Class GaussianKernel assembles all the method for computing, convolving, smoothing,...</div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8h_source.html#l00057">gaussian.h:57</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_gaussian_kernel_html_a969fb903ac4abd105fead44ed59cfb49"><div class="ttname"><a href="classpcl_1_1_gaussian_kernel.html#a969fb903ac4abd105fead44ed59cfb49">pcl::GaussianKernel::smooth</a></div><div class="ttdeci">void smooth(const pcl::PointCloud&lt; float &gt; &amp;input, const Eigen::VectorXf &amp;gaussian_kernel, pcl::PointCloud&lt; float &gt; &amp;output) const</div><div class="ttdoc">Smooth image using a gaussian kernel.</div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8h_source.html#l00236">gaussian.h:236</a></div></div>
@@ -346,13 +346,13 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1kernel_html"><div class="ttname"><a href="classpcl_1_1kernel.html">pcl::kernel</a></div><div class="ttdef"><b>Definition:</b> <a href="kernel_8h_source.html#l00046">kernel.h:46</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_gaussian_kernel_html_a7cfd1c84b100c5b109b17ac7ddb9942f"><div class="ttname"><a href="classpcl_1_1_gaussian_kernel.html#a7cfd1c84b100c5b109b17ac7ddb9942f">pcl::GaussianKernel::convolve</a></div><div class="ttdeci">void convolve(const pcl::PointCloud&lt; PointT &gt; &amp;input, std::function&lt; float(const PointT &amp;p)&gt; field_accessor, const Eigen::VectorXf &amp;horiz_kernel, const Eigen::VectorXf &amp;vert_kernel, pcl::PointCloud&lt; float &gt; &amp;output) const</div><div class="ttdoc">Convolve a float image in the 2 directions.</div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8h_source.html#l00171">gaussian.h:171</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_gaussian_kernel_html_a261c06225be93e1209b7e144b0a83f15"><div class="ttname"><a href="classpcl_1_1_gaussian_kernel.html#a261c06225be93e1209b7e144b0a83f15">pcl::GaussianKernel::smooth</a></div><div class="ttdeci">void smooth(const pcl::PointCloud&lt; PointT &gt; &amp;input, std::function&lt; float(const PointT &amp;p)&gt; field_accessor, const Eigen::VectorXf &amp;gaussian_kernel, pcl::PointCloud&lt; float &gt; &amp;output) const</div><div class="ttdoc">Smooth image using a gaussian kernel.</div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8h_source.html#l00252">gaussian.h:252</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:25</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:21</p>
 </div> <!-- #footer -->
 </body>
 </html>

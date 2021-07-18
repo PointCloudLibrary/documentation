@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PCL Walkthrough &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>PCL Walkthrough &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -621,7 +621,7 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 <span id="id8"></span><h1>Sample Consensus</h1>
 <p><strong>Background</strong></p>
 <blockquote>
-<div><p>The <em>sample_consensus</em> library holds SAmple Consensus (SAC) methods like RANSAC and models like planes and cylinders. These can combined freely in order to detect specific models and their parameters in point clouds.</p>
+<div><p>The <em>sample_consensus</em> library holds SAmple Consensus (SAC) methods like RANSAC and models like planes and cylinders. These can be combined freely in order to detect specific models and their parameters in point clouds.</p>
 <p>A theoretical primer explaining how sample consensus algorithms work can be found in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/random_sample_consensus.php#random-sample-consensus">Random Sample Consensus tutorial</a></p>
 <p>Some of the models implemented in this library include: lines, planes, cylinders, and spheres. Plane fitting is often applied to the task of detecting common indoor surfaces, such as walls, floors, and table tops. Other models can be used to detect and segment objects with common geometric structures (e.g., fitting a cylinder model to a mug).</p>
 <img alt="_images/sample_consensus_planes_cylinders.jpg" src="_images/sample_consensus_planes_cylinders.jpg" />
@@ -1043,40 +1043,40 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </div>
 <blockquote>
 <div><ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcd_convert_NaN_nan</span></code>: converts “NaN” values to “nan” values. <em>(Note: Starting with PCL version 1.0.1 the string representation for NaN is “nan”.)</em></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_pcd_convert_NaN_nan</span></code>: converts “NaN” values to “nan” values. <em>(Note: Starting with PCL version 1.0.1 the string representation for NaN is “nan”.)</em></p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">pcd_convert_NaN_nan</span> <span class="pre">input.pcd</span> <span class="pre">output.pcd</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_pcd_convert_NaN_nan</span> <span class="pre">input.pcd</span> <span class="pre">output.pcd</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">convert_pcd_ascii_binary</span></code>: converts PCD (Point Cloud Data) files from ASCII to binary and viceversa.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_convert_pcd_ascii_binary</span></code>: converts PCD (Point Cloud Data) files from ASCII to binary and viceversa.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">convert_pcd_ascii_binary</span> <span class="pre">&lt;file_in.pcd&gt;</span> <span class="pre">&lt;file_out.pcd&gt;</span> <span class="pre">0/1/2</span> <span class="pre">(ascii/binary/binary_compressed)</span> <span class="pre">[precision</span> <span class="pre">(ASCII)]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_convert_pcd_ascii_binary</span> <span class="pre">&lt;file_in.pcd&gt;</span> <span class="pre">&lt;file_out.pcd&gt;</span> <span class="pre">0/1/2</span> <span class="pre">(ascii/binary/binary_compressed)</span> <span class="pre">[precision</span> <span class="pre">(ASCII)]</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">concatenate_points_pcd</span></code>: concatenates the points of two or more PCD (Point Cloud Data) files into a single PCD file.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_concatenate_points_pcd</span></code>: concatenates the points of two or more PCD (Point Cloud Data) files into a single PCD file.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">concatenate_points_pcd</span> <span class="pre">&lt;filename</span> <span class="pre">1..N.pcd&gt;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_concatenate_points_pcd</span> <span class="pre">&lt;filename</span> <span class="pre">1..N.pcd&gt;</span></code></p>
 <p><em>(Note: the resulting PCD file will be ``output.pcd``)</em></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcd2vtk</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://www.vtk.org/VTK/img/file-formats.pdf">VTK format</a>.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2vtk</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://www.vtk.org/VTK/img/file-formats.pdf">VTK format</a>.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">pcd2vtk</span> <span class="pre">input.pcd</span> <span class="pre">output.vtk</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2vtk</span> <span class="pre">input.pcd</span> <span class="pre">output.vtk</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcd2ply</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://en.wikipedia.org/wiki/PLY_%28file_format%29">PLY format</a>.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2ply</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://en.wikipedia.org/wiki/PLY_%28file_format%29">PLY format</a>.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">pcd2ply</span> <span class="pre">input.pcd</span> <span class="pre">output.ply</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2ply</span> <span class="pre">input.pcd</span> <span class="pre">output.ply</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mesh2pcd</span></code>: convert a CAD model to a PCD (Point Cloud Data) file, using ray tracing operations.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_mesh2pcd</span></code>: convert a CAD model to a PCD (Point Cloud Data) file, using ray tracing operations.</p>
 <blockquote>
-<div><p><strong>Syntax is: mesh2pcd input.{ply,obj} output.pcd &lt;options&gt;</strong>, where options are:</p>
+<div><p><strong>Syntax is: pcl_mesh2pcd input.{ply,obj} output.pcd &lt;options&gt;</strong>, where options are:</p>
 <blockquote>
 <div><p>-level X      = tessellated sphere level (default: 2)</p>
 <p>-resolution X = the sphere resolution in angle increments (default: 100 deg)</p>
@@ -1086,11 +1086,11 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </li>
 </ul>
 <ul id="octree-viewer">
-<li><p><code class="docutils literal notranslate"><span class="pre">octree_viewer</span></code>: allows the visualization of <a class="reference internal" href="#octree">octrees</a></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_octree_viewer</span></code>: allows the visualization of <a class="reference internal" href="#octree">octrees</a></p>
 <blockquote>
 <div><p><strong>Syntax is: octree_viewer &lt;file_name.pcd&gt; &lt;octree resolution&gt;</strong></p>
 <p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">Example:</span> <span class="pre">./octree_viewer</span> <span class="pre">../../test/bunny.pcd</span> <span class="pre">0.02</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Example:</span> <span class="pre">./pcl_octree_viewer</span> <span class="pre">../../test/bunny.pcd</span> <span class="pre">0.02</span></code></p>
 <img alt="_images/octree_bunny2.png" src="_images/octree_bunny2.png" />
 </div></blockquote>
 </li>

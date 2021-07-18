@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -283,7 +283,7 @@
 <span class="cm">      */</span>
     <span class="kt">void</span> <span class="n">addPointCloud</span> <span class="p">(</span><span class="n">PointCloud</span> <span class="o">&amp;</span><span class="n">pc</span><span class="p">,</span> <span class="n">Pose</span> <span class="o">&amp;</span><span class="n">pose</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
     <span class="p">{</span>
-      <span class="n">new_clouds_</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">make_pair</span> <span class="p">(</span><span class="n">pc</span><span class="p">,</span> <span class="n">pose</span><span class="p">));</span>
+      <span class="n">new_clouds_</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_pair</span> <span class="p">(</span><span class="n">pc</span><span class="p">,</span> <span class="n">pose</span><span class="p">));</span>
     <span class="p">}</span>
 
     <span class="cm">/**</span>
@@ -325,7 +325,7 @@ Idea: Do we need the compute? Could it be included into the addPointCloud or get
 <span class="p">{</span>
   <span class="k">public</span><span class="o">:</span>
     <span class="k">virtual</span> <span class="o">~</span><span class="n">LoopDetection</span> <span class="p">()</span> <span class="p">{}</span>
-    <span class="k">virtual</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">PointCloud</span><span class="o">*</span><span class="p">,</span> <span class="n">PointCloud</span><span class="o">*&gt;</span> <span class="o">&gt;</span> <span class="n">detectLoop</span><span class="p">(</span><span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">poses</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">query</span><span class="p">)</span> <span class="p">{}</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">PointCloud</span><span class="o">*</span><span class="p">,</span> <span class="n">PointCloud</span><span class="o">*&gt;</span> <span class="o">&gt;</span> <span class="n">detectLoop</span><span class="p">(</span><span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">poses</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">query</span><span class="p">)</span> <span class="p">{}</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -381,7 +381,7 @@ Idea: Do we need the compute? Could it be included into the addPointCloud or get
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DistanceLoopDetection</span> <span class="o">:</span> <span class="n">LoopDetection</span>
 <span class="p">{</span>
   <span class="k">public</span><span class="o">:</span>
-    <span class="k">virtual</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">PointCloud</span><span class="o">*</span><span class="p">,</span> <span class="n">PointCloud</span><span class="o">*&gt;</span> <span class="o">&gt;</span> <span class="n">detectLoop</span><span class="p">(</span><span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">poses</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">query</span><span class="p">)</span>
+    <span class="k">virtual</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">PointCloud</span><span class="o">*</span><span class="p">,</span> <span class="n">PointCloud</span><span class="o">*&gt;</span> <span class="o">&gt;</span> <span class="n">detectLoop</span><span class="p">(</span><span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">poses</span><span class="p">,</span> <span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span><span class="o">*&gt;</span> <span class="n">query</span><span class="p">)</span>
     <span class="p">{</span>
       <span class="c1">//I want a map reduce here ;)</span>
       <span class="n">list</span><span class="o">&lt;</span><span class="n">PosedPointCloud</span> <span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">poses_it</span><span class="p">;</span>

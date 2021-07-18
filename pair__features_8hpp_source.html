@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -263,15 +263,15 @@ $(function() {
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            float3 row1, row2, row3; <span class="comment">// == rotation_mg</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="namespacepcl_1_1device.html#aff6a9afdd73b127d34245bc2f1423d64">AngleAxisf</a>(acos_value, cross_vector_norm, row1, row2, row3);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            float3 traslation;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="comment">//traslation.x = row1.x * -model_reference_point.x + row1.y * -model_reference_point.y + row1.z * -model_reference_point.z;</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            traslation.y = row2.x * -model_reference_point.x + row2.y * -model_reference_point.y + row2.z * -model_reference_point.z;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            traslation.z = row3.x * -model_reference_point.x + row3.y * -model_reference_point.y + row3.z * -model_reference_point.z;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            float3 translation;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="comment">//translation.x = row1.x * -model_reference_point.x + row1.y * -model_reference_point.y + row1.z * -model_reference_point.z;</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            translation.y = row2.x * -model_reference_point.x + row2.y * -model_reference_point.y + row2.z * -model_reference_point.z;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            translation.z = row3.x * -model_reference_point.x + row3.y * -model_reference_point.y + row3.z * -model_reference_point.z;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            float3 model_point_transformed;<span class="comment">// = transform_mg * model_point;</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="comment">//model_point_transformed.x = traslation.x + row1.x * model_point.x + row1.y * model_point.y + row1.z * model_point.z;</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            model_point_transformed.y = traslation.y + row2.x * model_point.x + row2.y * model_point.y + row2.z * model_point.z;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            model_point_transformed.z = traslation.z + row3.x * model_point.x + row3.y * model_point.y + row3.z * model_point.z;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="comment">//model_point_transformed.x = translation.x + row1.x * model_point.x + row1.y * model_point.y + row1.z * model_point.z;</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            model_point_transformed.y = translation.y + row2.x * model_point.x + row2.y * model_point.y + row2.z * model_point.z;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            model_point_transformed.z = translation.z + row3.x * model_point.x + row3.y * model_point.y + row3.z * model_point.z;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordtype">float</span> angle = std::atan2 ( -model_point_transformed.z, model_point_transformed.y);</div>
@@ -302,7 +302,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:32</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:28</p>
 </div> <!-- #footer -->
 </body>
 </html>

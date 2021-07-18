@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tracking object in real time &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Tracking object in real time &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -155,7 +155,7 @@
   <div class="section" id="tracking-object-in-real-time">
 <span id="tracking"></span><h1>Tracking object in real time</h1>
 <p>This tutorial explains 6D object tracking and show example code(tracking_sample.cpp) using pcl::tracking libraries. Implementing this example code, you can see the segment track the target object even if you move tracked object or your sensor device. In example, first, you should initialize tracker and you have to pass target object’s point cloud to tracker so that tracker should know what to track. So, before this tutorial, you need to make segmented model with PCD file beforehand. Setting the model to tracker, it starts tracking the object.</p>
-<p>Following figure shows how  looks like when trakcing works successfully.</p>
+<p>Following figure shows how  looks like when tracking works successfully.</p>
 <div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/mergePicture.png"><img alt="_images/mergePicture.png" src="_images/mergePicture.png" style="height: 600px;" /></a>
 <p class="caption"><span class="caption-text">fig1: The blue model tracks the cup successfully with red particles.</span></p>
@@ -463,35 +463,18 @@ w = \sum{}^{} L_j"/></p>
 276
 277
 278
-279
-280
-281
-282
-283
-284
-285
-286
-287
-288</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/point_cloud.h&gt;</span><span class="cp"></span>
+279</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/point_cloud.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/io/openni_grabber.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/console/parse.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/time.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/common/centroid.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/transforms.h&gt; // for transformPointCloud</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/cloud_viewer.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/passthrough.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/voxel_grid.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/approximate_voxel_grid.h&gt;</span><span class="cp"></span>
-
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/sample_consensus/method_types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/sample_consensus/model_types.h&gt;</span><span class="cp"></span>
-
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/search/pcl_search.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/transforms.h&gt;</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/tracking.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/particle_filter.h&gt;</span><span class="cp"></span>
@@ -499,7 +482,6 @@ w = \sum{}^{} L_j"/></p>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/particle_filter_omp.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/coherence.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/distance_coherence.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/hsv_color_coherence.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/approx_nearest_pair_point_cloud_coherence.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/tracking/nearest_pair_point_cloud_coherence.h&gt;</span><span class="cp"></span>
 
@@ -556,17 +538,17 @@ w = \sum{}^{} L_j"/></p>
 <span class="p">{</span>
   <span class="n">ParticleFilter</span><span class="o">::</span><span class="n">PointCloudStatePtr</span> <span class="n">particles</span> <span class="o">=</span> <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">getParticles</span> <span class="p">();</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">particles</span> <span class="o">&amp;&amp;</span> <span class="n">new_cloud_</span><span class="p">)</span>
-    <span class="p">{</span>
+  <span class="p">{</span>
       <span class="c1">//Set pointCloud with particle&#39;s points</span>
       <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">particle_cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">());</span>
-      <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">particles</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="k">auto</span><span class="o">&amp;</span> <span class="nl">particle</span><span class="p">:</span> <span class="o">*</span><span class="n">particles</span><span class="p">)</span>
 	<span class="p">{</span>
 	  <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span> <span class="n">point</span><span class="p">;</span>
           
-	  <span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">particles</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span><span class="p">;</span>
-	  <span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">particles</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span><span class="p">;</span>
-	  <span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">particles</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">z</span><span class="p">;</span>
-	  <span class="n">particle_cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">point</span><span class="p">);</span>
+	  <span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">particle</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+	  <span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">particle</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+	  <span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">particle</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+	  <span class="n">particle_cloud</span><span class="o">-&gt;</span><span class="n">push_back</span> <span class="p">(</span><span class="n">point</span><span class="p">);</span>
 	<span class="p">}</span>
 
       <span class="c1">//Draw red particles </span>
@@ -781,6 +763,7 @@ w = \sum{}^{} L_j"/></p>
   <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setIterationNum</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
   <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setParticleNum</span> <span class="p">(</span><span class="mi">600</span><span class="p">);</span>
   <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setResampleLikelihoodThr</span><span class="p">(</span><span class="mf">0.00</span><span class="p">);</span>
+  <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setUseNormal</span> <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>First, in main function, these lines set the parameters for tracking.</p>
@@ -795,6 +778,8 @@ w = \sum{}^{} L_j"/></p>
   <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">Octree</span><span class="o">&lt;</span><span class="n">RefPointType</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">search</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">Octree</span><span class="o">&lt;</span><span class="n">RefPointType</span><span class="o">&gt;</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">));</span>
   <span class="n">coherence</span><span class="o">-&gt;</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">search</span><span class="p">);</span>
   <span class="n">coherence</span><span class="o">-&gt;</span><span class="n">setMaximumDistance</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">);</span>
+
+  <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setCloudCoherence</span> <span class="p">(</span><span class="n">coherence</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Here, we set likelihood function which tracker use when calculate weights.  You can add more likelihood function as you like. By default, there are normals likelihood and color likelihood functions. When you want to add other likelihood function, all you have to do is  initialize new Coherence Class and add the Coherence instance to coherence variable with addPointCoherence function.</p>
@@ -811,6 +796,7 @@ w = \sum{}^{} L_j"/></p>
 
   <span class="c1">//set reference model and trans</span>
   <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setReferenceCloud</span> <span class="p">(</span><span class="n">transed_ref_downsampled</span><span class="p">);</span>
+  <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setTrans</span> <span class="p">(</span><span class="n">trans</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>In this part, we set the point cloud loaded from pcd file as reference model to tracker and also set model’s transform values.</p>
@@ -821,15 +807,16 @@ w = \sum{}^{} L_j"/></p>
 	<span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud_pass_downsampled_</span><span class="p">);</span>
 	<span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">compute</span> <span class="p">();</span>
 	<span class="n">new_cloud_</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
 </pre></div>
 </div>
 <p>Until the counter variable become equal to 10, we ignore the input point cloud, because the point cloud at first few frames often have noise. After counter variable reach to 10 frame, at each loop, we set downsampled input point cloud to tracker and the tracker will compute particles movement.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">ParticleFilter</span><span class="o">::</span><span class="n">PointCloudStatePtr</span> <span class="n">particles</span> <span class="o">=</span> <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">getParticles</span> <span class="p">();</span>
 </pre></div>
 </div>
 <p>In drawParticles function, you can get particles’s positions by calling getParticles().</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="n">ParticleXYZRPY</span> <span class="n">result</span> <span class="o">=</span> <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">getResult</span> <span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">ParticleXYZRPY</span> <span class="n">result</span> <span class="o">=</span> <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">getResult</span> <span class="p">();</span>
+  <span class="n">Eigen</span><span class="o">::</span><span class="n">Affine3f</span> <span class="n">transformation</span> <span class="o">=</span> <span class="n">tracker_</span><span class="o">-&gt;</span><span class="n">toEigenMatrix</span> <span class="p">(</span><span class="n">result</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>In drawResult function, you can get model information about position and rotation.</p>
@@ -848,7 +835,7 @@ w = \sum{}^{} L_j"/></p>
  9
 10
 11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">openni_tracking</span><span class="p">)</span>
 

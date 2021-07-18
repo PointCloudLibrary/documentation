@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -185,14 +185,14 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">        /** \brief Get the image width as read from disk. */</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">inline</span> <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">inline</span> std::uint32_t</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a09155adc372d5e53cde994a75890ab15">  117</a></span>&#160;        <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a09155adc372d5e53cde994a75890ab15">getWidth</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          <span class="keywordflow">return</span> (width_);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">        /** \brief Get the image height as read from disk. */</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">inline</span> <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">inline</span> std::uint32_t</div>
 <div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#abfc037679fb2500b308b23b92b82598f">  124</a></span>&#160;        <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#abfc037679fb2500b308b23b92b82598f">getHeight</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;          <span class="keywordflow">return</span> (height_);</div>
@@ -221,7 +221,7 @@ $(function() {
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        loadImageBlob (<span class="keyword">const</span> std::string &amp;filename,</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                       std::vector&lt;char&gt; &amp;data,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                       <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> &amp;uncompressed_size);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                       std::uint32_t &amp;uncompressed_size);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">        /** \brief Realtime LZF decompression.</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">          * \param[in] input the array to decompress</span></div>
@@ -233,10 +233,10 @@ $(function() {
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    std::vector&lt;char&gt; &amp;output); </div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">        /** \brief The image width, as read from the file. */</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#ad0eb0fc2769e4566c7867d88f34a8d5b">  164</a></span>&#160;        <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#ad0eb0fc2769e4566c7867d88f34a8d5b">width_</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#ad0eb0fc2769e4566c7867d88f34a8d5b">  164</a></span>&#160;        std::uint32_t <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#ad0eb0fc2769e4566c7867d88f34a8d5b">width_</a>;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">        /** \brief The image height, as read from the file. */</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#af7d91bf816c70b3bcf6ec3c5814af009">  167</a></span>&#160;        <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#af7d91bf816c70b3bcf6ec3c5814af009">height_</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#af7d91bf816c70b3bcf6ec3c5814af009">  167</a></span>&#160;        std::uint32_t <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#af7d91bf816c70b3bcf6ec3c5814af009">height_</a>;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">        /** \brief The image type string, as read from the file. */</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a28bc8e341b09cbf4ef39b89521900f0c">  170</a></span>&#160;        std::string <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a28bc8e341b09cbf4ef39b89521900f0c">image_type_identifier_</a>;</div>
@@ -462,7 +462,7 @@ $(function() {
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <a class="code" href="namespacepcl.html#abc72ecd1c10de3620edb3e5a419d77d5">write</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* data,</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;               <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;               std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;               <span class="keyword">const</span> std::string &amp;filename) = 0;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">        /** \brief Write camera parameters to disk. Virtual.</span></div>
@@ -485,7 +485,7 @@ $(function() {
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="classpcl_1_1io_1_1_l_z_f_image_writer.html#a39bc7abd81863406a3d969b1861b0ab1">  415</a></span>&#160;        <a class="code" href="classpcl_1_1io_1_1_l_z_f_image_writer.html#a39bc7abd81863406a3d969b1861b0ab1">write</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* data,</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;               <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;               std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;               <span class="keyword">const</span> <a class="code" href="structpcl_1_1io_1_1_camera_parameters.html">CameraParameters</a> &amp;parameters,</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;               <span class="keyword">const</span> std::string &amp;filename_data,</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;               <span class="keyword">const</span> std::string &amp;filename_xml)</div>
@@ -531,9 +531,9 @@ $(function() {
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">          * \param[out] output the compressed output array (must be pre-allocated!)</span></div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">          * \return the number of bytes in the output array</span></div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">          */</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        compress (<span class="keyword">const</span> <span class="keywordtype">char</span>* input, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> input_size, </div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                  <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        std::uint32_t</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        compress (<span class="keyword">const</span> <span class="keywordtype">char</span>* input, std::uint32_t input_size, </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                  std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                  <span class="keyword">const</span> std::string &amp;image_type,</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                  <span class="keywordtype">char</span> *output);</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    };</div>
@@ -568,7 +568,7 @@ $(function() {
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <a class="code" href="namespacepcl.html#abc72ecd1c10de3620edb3e5a419d77d5">write</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* data,</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;               <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;               std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;               <span class="keyword">const</span> std::string &amp;filename) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="comment">        /** \brief Write camera parameters to disk.</span></div>
@@ -621,7 +621,7 @@ $(function() {
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <a class="code" href="namespacepcl.html#abc72ecd1c10de3620edb3e5a419d77d5">write</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *data, </div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;               <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;               std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;               <span class="keyword">const</span> std::string &amp;filename) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">        /** \brief Write camera parameters to disk.</span></div>
@@ -663,7 +663,7 @@ $(function() {
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <a class="code" href="namespacepcl.html#abc72ecd1c10de3620edb3e5a419d77d5">write</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *data, </div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;               <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;               std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;               <span class="keyword">const</span> std::string &amp;filename) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    };</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="comment"></span> </div>
@@ -694,7 +694,7 @@ $(function() {
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <a class="code" href="namespacepcl.html#abc72ecd1c10de3620edb3e5a419d77d5">write</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *data, </div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;               <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> width, <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> height,</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;               std::uint32_t width, std::uint32_t height,</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;               <span class="keyword">const</span> std::string &amp;filename) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    };</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  }</div>
@@ -707,13 +707,12 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_depth16_image_reader_html_a557af15f9e99d254145b43a0da611db1"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_depth16_image_reader.html#a557af15f9e99d254145b43a0da611db1">pcl::io::LZFDepth16ImageReader::LZFDepth16ImageReader</a></div><div class="ttdeci">LZFDepth16ImageReader()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00192">lzf_image_io.h:192</a></div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_image_reader_html_a3227ab82a63e2d7ccb404fa3aeda9f3c"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a3227ab82a63e2d7ccb404fa3aeda9f3c">pcl::io::LZFImageReader::setParameters</a></div><div class="ttdeci">void setParameters(const CameraParameters &amp;parameters)</div><div class="ttdoc">Read the parameters from a struct instead.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00102">lzf_image_io.h:102</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a7c55bf09e463d214a43d2bd7ceab7753"><div class="ttname"><a href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">pcl::uint32_t</a></div><div class="ttdeci">std::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00058">types.h:58</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_image_reader_html_a4f0ab102d0eafdab81f2029e207c8980"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a4f0ab102d0eafdab81f2029e207c8980">pcl::io::LZFImageReader::readParameters</a></div><div class="ttdeci">virtual bool readParameters(std::istream &amp;)</div><div class="ttdoc">Read camera parameters from a given stream and store them internally.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00141">lzf_image_io.h:141</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_image_reader_html_aaf32c3a1e11ac9829990d0374c437948"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_image_reader.html#aaf32c3a1e11ac9829990d0374c437948">pcl::io::LZFImageReader::~LZFImageReader</a></div><div class="ttdeci">virtual ~LZFImageReader()</div><div class="ttdoc">Empty destructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00091">lzf_image_io.h:91</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_r_g_b24_image_reader_html_a159e42b3b81f859b0b2450f99b45d0fa"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_r_g_b24_image_reader.html#a159e42b3b81f859b0b2450f99b45d0fa">pcl::io::LZFRGB24ImageReader::~LZFRGB24ImageReader</a></div><div class="ttdeci">~LZFRGB24ImageReader()</div><div class="ttdoc">Empty destructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00247">lzf_image_io.h:247</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_r_g_b24_image_reader_html"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_r_g_b24_image_reader.html">pcl::io::LZFRGB24ImageReader</a></div><div class="ttdoc">PCL-LZF 24-bit RGB image format reader.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00239">lzf_image_io.h:239</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_r_g_b24_image_writer_html_aa69d7ad63fb81eb9cddaf1514bc0848c"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_r_g_b24_image_writer.html#aa69d7ad63fb81eb9cddaf1514bc0848c">pcl::io::LZFRGB24ImageWriter::~LZFRGB24ImageWriter</a></div><div class="ttdeci">~LZFRGB24ImageWriter()</div><div class="ttdoc">Empty destructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00541">lzf_image_io.h:541</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_depth16_image_writer_html_af04c43690053fbc7d19f6653dc0b1d2b"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_depth16_image_writer.html#af04c43690053fbc7d19f6653dc0b1d2b">pcl::io::LZFDepth16ImageWriter::~LZFDepth16ImageWriter</a></div><div class="ttdeci">~LZFDepth16ImageWriter()</div><div class="ttdoc">Empty destructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00488">lzf_image_io.h:488</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_depth16_image_reader_html_ac12f2cd2ef7935da94532ff5e4666c98"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_depth16_image_reader.html#ac12f2cd2ef7935da94532ff5e4666c98">pcl::io::LZFDepth16ImageReader::z_multiplication_factor_</a></div><div class="ttdeci">double z_multiplication_factor_</div><div class="ttdoc">Z-value depth multiplication factor (i.e., if raw data is in [mm] and we want [m],...</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00226">lzf_image_io.h:226</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_image_writer_html_ae9075336c39a30cd0c18221e1a131d8e"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_image_writer.html#ae9075336c39a30cd0c18221e1a131d8e">pcl::io::LZFImageWriter::LZFImageWriter</a></div><div class="ttdeci">LZFImageWriter()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00380">lzf_image_io.h:380</a></div></div>
@@ -753,7 +752,7 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_image_reader_html_aeaccfe5ec36e1a136234fa07bfc23d0d"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_image_reader.html#aeaccfe5ec36e1a136234fa07bfc23d0d">pcl::io::LZFImageReader::parameters_</a></div><div class="ttdeci">CameraParameters parameters_</div><div class="ttdoc">Internal set of camera parameters.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00173">lzf_image_io.h:173</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_bayer8_image_reader_html_a1c6fd16f016974b34fd375b7e9ea1bd7"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_bayer8_image_reader.html#a1c6fd16f016974b34fd375b7e9ea1bd7">pcl::io::LZFBayer8ImageReader::~LZFBayer8ImageReader</a></div><div class="ttdeci">~LZFBayer8ImageReader()</div><div class="ttdoc">Empty destructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00332">lzf_image_io.h:332</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_y_u_v422_image_reader_html"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_y_u_v422_image_reader.html">pcl::io::LZFYUV422ImageReader</a></div><div class="ttdoc">PCL-LZF 8-bit Bayer image format reader.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00286">lzf_image_io.h:286</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <div class="ttc" id="astructpcl_1_1io_1_1_camera_parameters_html_a224e78d6978373075f9b527aedfe429b"><div class="ttname"><a href="structpcl_1_1io_1_1_camera_parameters.html#a224e78d6978373075f9b527aedfe429b">pcl::io::CameraParameters::focal_length_x</a></div><div class="ttdeci">double focal_length_x</div><div class="ttdoc">fx</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00052">lzf_image_io.h:52</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_y_u_v422_image_reader_html_a0258257bad53c35e833e9f8a36ea7c70"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_y_u_v422_image_reader.html#a0258257bad53c35e833e9f8a36ea7c70">pcl::io::LZFYUV422ImageReader::LZFYUV422ImageReader</a></div><div class="ttdeci">LZFYUV422ImageReader()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00292">lzf_image_io.h:292</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_l_z_f_image_reader_html_a28bc8e341b09cbf4ef39b89521900f0c"><div class="ttname"><a href="classpcl_1_1io_1_1_l_z_f_image_reader.html#a28bc8e341b09cbf4ef39b89521900f0c">pcl::io::LZFImageReader::image_type_identifier_</a></div><div class="ttdeci">std::string image_type_identifier_</div><div class="ttdoc">The image type string, as read from the file.</div><div class="ttdef"><b>Definition:</b> <a href="lzf__image__io_8h_source.html#l00170">lzf_image_io.h:170</a></div></div>
@@ -763,7 +762,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:36</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:33</p>
 </div> <!-- #footer -->
 </body>
 </html>

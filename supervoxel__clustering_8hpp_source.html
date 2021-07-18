@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -113,375 +113,375 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define PCL_SEGMENTATION_SUPERVOXEL_CLUSTERING_HPP_</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;pcl/segmentation/supervoxel_clustering.h&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">   47</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">pcl::SupervoxelClustering&lt;PointT&gt;::SupervoxelClustering</a> (<span class="keywordtype">float</span> voxel_resolution, <span class="keywordtype">float</span> seed_resolution) :</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  resolution_ (voxel_resolution),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  seed_resolution_ (seed_resolution),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  adjacency_octree_ (),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  voxel_centroid_cloud_ (),</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  color_importance_ (0.1f),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  spatial_importance_ (0.4f),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  normal_importance_ (1.0f),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  use_default_transform_behaviour_ (true)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  adjacency_octree_.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html">OctreeAdjacencyT</a> (resolution_));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">   62</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">pcl::SupervoxelClustering&lt;PointT&gt;::~SupervoxelClustering</a> ()</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a59559f091ea8a7c1aa639ec14840a5f7">   69</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a59559f091ea8a7c1aa639ec14840a5f7">pcl::SupervoxelClustering&lt;PointT&gt;::setInputCloud</a> (<span class="keyword">const</span> <span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud&lt;PointT&gt;::ConstPtr</a>&amp; cloud)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span> ( cloud-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a1626420d44e28b5ab22bdc2f1fc6c7ff">empty</a> () )</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::SupervoxelClustering::setInputCloud] Empty cloud set, doing nothing \n&quot;</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  input_ = cloud;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  adjacency_octree_-&gt;setInputCloud (cloud);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a2b87562ad91fe6c0132340b53b04ea97">   83</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a2b87562ad91fe6c0132340b53b04ea97">pcl::SupervoxelClustering&lt;PointT&gt;::setNormalCloud</a> (<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">NormalCloudT::ConstPtr</a> normal_cloud)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> ( normal_cloud-&gt;empty () )</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::SupervoxelClustering::setNormalCloud] Empty cloud set, doing nothing \n&quot;</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  input_normals_ = normal_cloud;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a596335ad01c705d692462e1109363466">   96</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a596335ad01c705d692462e1109363466">pcl::SupervoxelClustering&lt;PointT&gt;::extract</a> (std::map&lt;<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">//timer_.reset ();</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">//double t_start = timer_.getTime ();</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Init compute  \n&quot;;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">bool</span> segmentation_is_possible = initCompute ();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span> ( !segmentation_is_possible )</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    deinitCompute ();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Preparing for segmentation \n&quot;;</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  segmentation_is_possible = prepareForSegmentation ();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">if</span> ( !segmentation_is_possible )</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    deinitCompute ();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">//double t_prep = timer_.getTime ();</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Placing Seeds&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  std::vector&lt;int&gt; seed_indices;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  selectInitialSupervoxelSeeds (seed_indices);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Creating helpers &quot;&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  createSupervoxelHelpers (seed_indices);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">//double t_seeds = timer_.getTime ();</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;pcl/common/io.h&gt;</span> <span class="comment">// for copyPointCloud</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">   48</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">pcl::SupervoxelClustering&lt;PointT&gt;::SupervoxelClustering</a> (<span class="keywordtype">float</span> voxel_resolution, <span class="keywordtype">float</span> seed_resolution) :</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  resolution_ (voxel_resolution),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  seed_resolution_ (seed_resolution),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  adjacency_octree_ (),</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  voxel_centroid_cloud_ (),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  color_importance_ (0.1f),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  spatial_importance_ (0.4f),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  normal_importance_ (1.0f),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  use_default_transform_behaviour_ (true)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  adjacency_octree_.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html">OctreeAdjacencyT</a> (resolution_));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">   63</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">pcl::SupervoxelClustering&lt;PointT&gt;::~SupervoxelClustering</a> ()</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a59559f091ea8a7c1aa639ec14840a5f7">   70</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a59559f091ea8a7c1aa639ec14840a5f7">pcl::SupervoxelClustering&lt;PointT&gt;::setInputCloud</a> (<span class="keyword">const</span> <span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud&lt;PointT&gt;::ConstPtr</a>&amp; cloud)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> ( cloud-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a1626420d44e28b5ab22bdc2f1fc6c7ff">empty</a> () )</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::SupervoxelClustering::setInputCloud] Empty cloud set, doing nothing \n&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  input_ = cloud;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  adjacency_octree_-&gt;setInputCloud (cloud);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a2b87562ad91fe6c0132340b53b04ea97">   84</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a2b87562ad91fe6c0132340b53b04ea97">pcl::SupervoxelClustering&lt;PointT&gt;::setNormalCloud</a> (<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">NormalCloudT::ConstPtr</a> normal_cloud)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span> ( normal_cloud-&gt;empty () )</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::SupervoxelClustering::setNormalCloud] Empty cloud set, doing nothing \n&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  input_normals_ = normal_cloud;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a596335ad01c705d692462e1109363466">   97</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a596335ad01c705d692462e1109363466">pcl::SupervoxelClustering&lt;PointT&gt;::extract</a> (std::map&lt;std::uint32_t,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">//timer_.reset ();</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">//double t_start = timer_.getTime ();</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Init compute  \n&quot;;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">bool</span> segmentation_is_possible = initCompute ();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> ( !segmentation_is_possible )</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    deinitCompute ();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Preparing for segmentation \n&quot;;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  segmentation_is_possible = prepareForSegmentation ();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> ( !segmentation_is_possible )</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    deinitCompute ();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">//double t_prep = timer_.getTime ();</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Placing Seeds&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> seed_indices;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  selectInitialSupervoxelSeeds (seed_indices);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Creating helpers &quot;&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  createSupervoxelHelpers (seed_indices);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">//double t_seeds = timer_.getTime ();</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Expanding the supervoxels&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">int</span> max_depth = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (1.8f*seed_resolution_/resolution_);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  expandSupervoxels (max_depth);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">//double t_iterate = timer_.getTime ();</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Making Supervoxel structures&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  makeSupervoxels (supervoxel_clusters);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="comment">//double t_supervoxels = timer_.getTime ();</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;--------------------------------- Timing Report --------------------------------- \n&quot;;</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to prep (normals, neighbors, voxelization)=&quot;&lt;&lt;t_prep-t_start&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to seed clusters                          =&quot;&lt;&lt;t_seeds-t_prep&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to expand clusters                        =&quot;&lt;&lt;t_iterate-t_seeds&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to create supervoxel structures           =&quot;&lt;&lt;t_supervoxels-t_iterate&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Total run time                                 =&quot;&lt;&lt;t_supervoxels-t_start&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;--------------------------------------------------------------------------------- \n&quot;;</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  deinitCompute ();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">  148</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">pcl::SupervoxelClustering&lt;PointT&gt;::refineSupervoxels</a> (<span class="keywordtype">int</span> num_itr, std::map&lt;<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordflow">if</span> (supervoxel_helpers_.empty ())</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::SupervoxelClustering::refineVoxelNormals] Supervoxels not extracted, doing nothing - (Call extract first!) \n&quot;</span>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">int</span> max_depth = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (1.8f*seed_resolution_/resolution_);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_itr; ++i)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      sv_itr-&gt;refineNormals ();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    reseedSupervoxels ();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    expandSupervoxels (max_depth);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  }</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  makeSupervoxels (supervoxel_clusters);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}<span class="comment"></span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Expanding the supervoxels&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">int</span> max_depth = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (1.8f*seed_resolution_/resolution_);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  expandSupervoxels (max_depth);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">//double t_iterate = timer_.getTime ();</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Making Supervoxel structures&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  makeSupervoxels (supervoxel_clusters);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">//double t_supervoxels = timer_.getTime ();</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;--------------------------------- Timing Report --------------------------------- \n&quot;;</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to prep (normals, neighbors, voxelization)=&quot;&lt;&lt;t_prep-t_start&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to seed clusters                          =&quot;&lt;&lt;t_seeds-t_prep&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to expand clusters                        =&quot;&lt;&lt;t_iterate-t_seeds&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Time to create supervoxel structures           =&quot;&lt;&lt;t_supervoxels-t_iterate&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Total run time                                 =&quot;&lt;&lt;t_supervoxels-t_start&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;--------------------------------------------------------------------------------- \n&quot;;</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  deinitCompute ();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">  149</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">pcl::SupervoxelClustering&lt;PointT&gt;::refineSupervoxels</a> (<span class="keywordtype">int</span> num_itr, std::map&lt;std::uint32_t,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordflow">if</span> (supervoxel_helpers_.empty ())</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::SupervoxelClustering::refineVoxelNormals] Supervoxels not extracted, doing nothing - (Call extract first!) \n&quot;</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">int</span> max_depth = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (1.8f*seed_resolution_/resolution_);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_itr; ++i)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      sv_itr-&gt;refineNormals ();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    reseedSupervoxels ();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    expandSupervoxels (max_depth);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  makeSupervoxels (supervoxel_clusters);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}<span class="comment"></span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::prepareForSegmentation</a> ()</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// if user forgot to pass point cloud or if it is empty</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">if</span> ( input_-&gt;points.empty () )</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="comment">//Add the new cloud of data to the octree</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Populating adjacency octree with new cloud \n&quot;;</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="comment">//double prep_start = timer_.getTime ();</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">if</span> ( (use_default_transform_behaviour_ &amp;&amp; input_-&gt;isOrganized ())</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;       || (!use_default_transform_behaviour_ &amp;&amp; use_single_camera_transform_))</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      adjacency_octree_-&gt;setTransformFunction ([<span class="keyword">this</span>] (<a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;p) { transformFunction (p); });</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  adjacency_octree_-&gt;addPointsFromInputCloud ();</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="comment">//double prep_end = timer_.getTime ();</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="comment">//std::cout&lt;&lt;&quot;Time elapsed populating octree with next frame =&quot;&lt;&lt;prep_end-prep_start&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">//Compute normals and insert data for centroids into data field of octree</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">//double normals_start = timer_.getTime ();</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  computeVoxelData ();</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">//double normals_end = timer_.getTime ();</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Time elapsed finding normals and pushing into octree =&quot;&lt;&lt;normals_end-normals_start&lt;&lt;&quot; ms\n&quot;;</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::computeVoxelData</a> ()</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  voxel_centroid_cloud_.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">PointCloudT</a>);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  voxel_centroid_cloud_-&gt;resize (adjacency_octree_-&gt;getLeafCount ());</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">typename</span> LeafVectorT::iterator leaf_itr = adjacency_octree_-&gt;begin ();</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">PointCloudT::iterator</a> cent_cloud_itr = voxel_centroid_cloud_-&gt;begin ();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idx = 0 ; leaf_itr != adjacency_octree_-&gt;end (); ++leaf_itr, ++cent_cloud_itr, ++idx)</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    VoxelData&amp; new_voxel_data = (*leaf_itr)-&gt;getData ();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">//Add the point to the centroid cloud</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    new_voxel_data.getPoint (*cent_cloud_itr);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">//voxel_centroid_cloud_-&gt;push_back(new_voxel_data.getPoint ());</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    new_voxel_data.idx_ = idx;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="comment">//If normals were provided</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">if</span> (input_normals_)</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">//Verify that input normal cloud size is same as input cloud size</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    assert (input_normals_-&gt;size () == input_-&gt;size ());</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">//For every point in the input cloud, find its corresponding leaf</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">typename</span> NormalCloudT::const_iterator normal_itr = input_normals_-&gt;begin ();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#a8f665129bf87d862bcfbd61e3fe91ecf">PointCloudT::const_iterator</a> input_itr = input_-&gt;begin (); input_itr != input_-&gt;end (); ++input_itr, ++normal_itr)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="comment">//If the point is not finite we ignore it</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keywordflow">if</span> ( !pcl::isFinite&lt;PointT&gt; (*input_itr))</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="comment">//Otherwise look up its leaf container</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      LeafContainerT* leaf = adjacency_octree_-&gt;getLeafContainerAtPoint (*input_itr);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="comment">//Get the voxel data object</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      VoxelData&amp; voxel_data = leaf-&gt;getData ();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="comment">//Add this normal in (we will normalize at the end)</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      voxel_data.normal_ += normal_itr-&gt;getNormalVector4fMap ();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      voxel_data.curvature_ += normal_itr-&gt;curvature;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">//Now iterate through the leaves and normalize </span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">for</span> (leaf_itr = adjacency_octree_-&gt;begin (); leaf_itr != adjacency_octree_-&gt;end (); ++leaf_itr)</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      VoxelData&amp; voxel_data = (*leaf_itr)-&gt;getData ();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      voxel_data.normal_.normalize ();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      voxel_data.owner_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      voxel_data.distance_ = std::numeric_limits&lt;float&gt;::max ();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="comment">//Get the number of points in this leaf</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="keywordtype">int</span> num_points = (*leaf_itr)-&gt;getPointCounter ();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      voxel_data.curvature_ /= num_points;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">else</span> <span class="comment">//Otherwise just compute the normals</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">for</span> (leaf_itr = adjacency_octree_-&gt;begin (); leaf_itr != adjacency_octree_-&gt;end (); ++leaf_itr)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      VoxelData&amp; new_voxel_data = (*leaf_itr)-&gt;getData ();</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <span class="comment">//For every point, get its neighbors, build an index vector, compute normal</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      std::vector&lt;int&gt; indices;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      indices.reserve (81); </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <span class="comment">//Push this point</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      indices.push_back (new_voxel_data.idx_);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">typename</span> LeafContainerT::const_iterator neighb_itr=(*leaf_itr)-&gt;cbegin (); neighb_itr!=(*leaf_itr)-&gt;cend (); ++neighb_itr)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        VoxelData&amp; neighb_voxel_data = (*neighb_itr)-&gt;getData ();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="comment">//Push neighbor index</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        indices.push_back (neighb_voxel_data.idx_);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="comment">//Get neighbors neighbors, push onto cloud</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> LeafContainerT::const_iterator neighb_neighb_itr=(*neighb_itr)-&gt;cbegin (); neighb_neighb_itr!=(*neighb_itr)-&gt;cend (); ++neighb_neighb_itr)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;          VoxelData&amp; neighb2_voxel_data = (*neighb_neighb_itr)-&gt;getData ();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          indices.push_back (neighb2_voxel_data.idx_);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="comment">//Compute normal</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <a class="code" href="group__features.html#gacd392447cd77d22a66f1f7b885f923e1">pcl::computePointNormal</a> (*voxel_centroid_cloud_, indices, new_voxel_data.normal_, new_voxel_data.curvature_);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <a class="code" href="group__features.html#ga53df49d690e1cb76cd1f53495508bff1">pcl::flipNormalTowardsViewpoint</a> (voxel_centroid_cloud_-&gt;points[new_voxel_data.idx_], 0.0f,0.0f,0.0f, new_voxel_data.normal_);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      new_voxel_data.normal_[3] = 0.0f;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      new_voxel_data.normal_.normalize ();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      new_voxel_data.owner_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      new_voxel_data.distance_ = std::numeric_limits&lt;float&gt;::max ();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::prepareForSegmentation</a> ()</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="comment">// if user forgot to pass point cloud or if it is empty</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">if</span> ( input_-&gt;points.empty () )</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="comment">//Add the new cloud of data to the octree</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Populating adjacency octree with new cloud \n&quot;;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="comment">//double prep_start = timer_.getTime ();</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">if</span> ( (use_default_transform_behaviour_ &amp;&amp; input_-&gt;isOrganized ())</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;       || (!use_default_transform_behaviour_ &amp;&amp; use_single_camera_transform_))</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      adjacency_octree_-&gt;setTransformFunction ([<span class="keyword">this</span>] (<a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;p) { transformFunction (p); });</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  adjacency_octree_-&gt;addPointsFromInputCloud ();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="comment">//double prep_end = timer_.getTime ();</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">//std::cout&lt;&lt;&quot;Time elapsed populating octree with next frame =&quot;&lt;&lt;prep_end-prep_start&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">//Compute normals and insert data for centroids into data field of octree</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">//double normals_start = timer_.getTime ();</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  computeVoxelData ();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">//double normals_end = timer_.getTime ();</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Time elapsed finding normals and pushing into octree =&quot;&lt;&lt;normals_end-normals_start&lt;&lt;&quot; ms\n&quot;;</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::computeVoxelData</a> ()</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  voxel_centroid_cloud_.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">PointCloudT</a>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  voxel_centroid_cloud_-&gt;resize (adjacency_octree_-&gt;getLeafCount ());</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">typename</span> LeafVectorT::iterator leaf_itr = adjacency_octree_-&gt;begin ();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">PointCloudT::iterator</a> cent_cloud_itr = voxel_centroid_cloud_-&gt;begin ();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idx = 0 ; leaf_itr != adjacency_octree_-&gt;end (); ++leaf_itr, ++cent_cloud_itr, ++idx)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    VoxelData&amp; new_voxel_data = (*leaf_itr)-&gt;getData ();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">//Add the point to the centroid cloud</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    new_voxel_data.getPoint (*cent_cloud_itr);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">//voxel_centroid_cloud_-&gt;push_back(new_voxel_data.getPoint ());</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    new_voxel_data.idx_ = idx;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="comment">//If normals were provided</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">if</span> (input_normals_)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">//Verify that input normal cloud size is same as input cloud size</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    assert (input_normals_-&gt;size () == input_-&gt;size ());</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="comment">//For every point in the input cloud, find its corresponding leaf</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">typename</span> NormalCloudT::const_iterator normal_itr = input_normals_-&gt;begin ();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#a8f665129bf87d862bcfbd61e3fe91ecf">PointCloudT::const_iterator</a> input_itr = input_-&gt;begin (); input_itr != input_-&gt;end (); ++input_itr, ++normal_itr)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="comment">//If the point is not finite we ignore it</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keywordflow">if</span> ( !pcl::isFinite&lt;PointT&gt; (*input_itr))</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="comment">//Otherwise look up its leaf container</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      LeafContainerT* leaf = adjacency_octree_-&gt;getLeafContainerAtPoint (*input_itr);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="comment">//Get the voxel data object</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      VoxelData&amp; voxel_data = leaf-&gt;getData ();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="comment">//Add this normal in (we will normalize at the end)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      voxel_data.normal_ += normal_itr-&gt;getNormalVector4fMap ();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      voxel_data.curvature_ += normal_itr-&gt;curvature;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="comment">//Now iterate through the leaves and normalize </span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">for</span> (leaf_itr = adjacency_octree_-&gt;begin (); leaf_itr != adjacency_octree_-&gt;end (); ++leaf_itr)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      VoxelData&amp; voxel_data = (*leaf_itr)-&gt;getData ();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      voxel_data.normal_.normalize ();</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      voxel_data.owner_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      voxel_data.distance_ = std::numeric_limits&lt;float&gt;::max ();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="comment">//Get the number of points in this leaf</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordtype">int</span> num_points = (*leaf_itr)-&gt;getPointCounter ();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      voxel_data.curvature_ /= num_points;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordflow">else</span> <span class="comment">//Otherwise just compute the normals</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">for</span> (leaf_itr = adjacency_octree_-&gt;begin (); leaf_itr != adjacency_octree_-&gt;end (); ++leaf_itr)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      VoxelData&amp; new_voxel_data = (*leaf_itr)-&gt;getData ();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <span class="comment">//For every point, get its neighbors, build an index vector, compute normal</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> indices;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      indices.reserve (81); </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="comment">//Push this point</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      indices.push_back (new_voxel_data.idx_);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">typename</span> LeafContainerT::const_iterator neighb_itr=(*leaf_itr)-&gt;cbegin (); neighb_itr!=(*leaf_itr)-&gt;cend (); ++neighb_itr)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        VoxelData&amp; neighb_voxel_data = (*neighb_itr)-&gt;getData ();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="comment">//Push neighbor index</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        indices.push_back (neighb_voxel_data.idx_);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">//Get neighbors neighbors, push onto cloud</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> LeafContainerT::const_iterator neighb_neighb_itr=(*neighb_itr)-&gt;cbegin (); neighb_neighb_itr!=(*neighb_itr)-&gt;cend (); ++neighb_neighb_itr)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          VoxelData&amp; neighb2_voxel_data = (*neighb_neighb_itr)-&gt;getData ();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          indices.push_back (neighb2_voxel_data.idx_);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="comment">//Compute normal</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <a class="code" href="group__features.html#gacd392447cd77d22a66f1f7b885f923e1">pcl::computePointNormal</a> (*voxel_centroid_cloud_, indices, new_voxel_data.normal_, new_voxel_data.curvature_);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <a class="code" href="group__features.html#ga53df49d690e1cb76cd1f53495508bff1">pcl::flipNormalTowardsViewpoint</a> ((*voxel_centroid_cloud_)[new_voxel_data.idx_], 0.0f,0.0f,0.0f, new_voxel_data.normal_);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      new_voxel_data.normal_[3] = 0.0f;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      new_voxel_data.normal_.normalize ();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      new_voxel_data.owner_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      new_voxel_data.distance_ = std::numeric_limits&lt;float&gt;::max ();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::expandSupervoxels</a> ( <span class="keywordtype">int</span> depth )</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::expandSupervoxels</a> ( <span class="keywordtype">int</span> depth )</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; depth; ++i)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="comment">//Expand the the supervoxels by one iteration</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        sv_itr-&gt;expand ();</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      }</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="comment">//Update the centers to reflect new centers</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); )</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">if</span> (sv_itr-&gt;size () == 0)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          sv_itr = supervoxel_helpers_.erase (sv_itr);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;          sv_itr-&gt;updateCentroid ();</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          ++sv_itr;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        } </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  }</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::makeSupervoxels</a> (std::map&lt;<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  supervoxel_clusters.clear ();</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> label = sv_itr-&gt;getLabel ();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    supervoxel_clusters[label].reset (<span class="keyword">new</span> Supervoxel&lt;PointT&gt;);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    sv_itr-&gt;getXYZ (supervoxel_clusters[label]-&gt;centroid_.x,supervoxel_clusters[label]-&gt;centroid_.y,supervoxel_clusters[label]-&gt;centroid_.z);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    sv_itr-&gt;getRGB (supervoxel_clusters[label]-&gt;centroid_.rgba);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    sv_itr-&gt;getNormal (supervoxel_clusters[label]-&gt;normal_);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    sv_itr-&gt;getVoxels (supervoxel_clusters[label]-&gt;voxels_);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    sv_itr-&gt;getNormals (supervoxel_clusters[label]-&gt;normals_);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::createSupervoxelHelpers</a> (std::vector&lt;int&gt; &amp;seed_indices)</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  supervoxel_helpers_.clear ();</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; seed_indices.size (); ++i)</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    supervoxel_helpers_.push_back (<span class="keyword">new</span> SupervoxelHelper(i+1,<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">//Find which leaf corresponds to this seed index</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    LeafContainerT* seed_leaf = adjacency_octree_-&gt;at(seed_indices[i]);<span class="comment">//adjacency_octree_-&gt;getLeafContainerAtPoint (seed_points[i]);</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">if</span> (seed_leaf)</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      supervoxel_helpers_.back ().addLeaf (seed_leaf);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      PCL_WARN (<span class="stringliteral">&quot;Could not find leaf in pcl::SupervoxelClustering&lt;PointT&gt;::createSupervoxelHelpers - supervoxel will be deleted \n&quot;</span>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  }</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}<span class="comment"></span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::selectInitialSupervoxelSeeds</a> (std::vector&lt;int&gt; &amp;seed_indices)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="comment">//TODO THIS IS BAD - SEEDING SHOULD BE BETTER</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="comment">//TODO Switch to assigning leaves! Don&#39;t use Octree!</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Size of centroid cloud=&quot;&lt;&lt;voxel_centroid_cloud_-&gt;size ()&lt;&lt;&quot;, seeding resolution=&quot;&lt;&lt;seed_resolution_&lt;&lt;&quot;\n&quot;;</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="comment">//Initialize octree with voxel centroids</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <a class="code" href="classpcl_1_1octree_1_1_octree_point_cloud_search.html">pcl::octree::OctreePointCloudSearch &lt;PointT&gt;</a> seed_octree (seed_resolution_);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  seed_octree.setInputCloud (voxel_centroid_cloud_);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  seed_octree.addPointsFromInputCloud ();</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Size of octree =&quot;&lt;&lt;seed_octree.getLeafCount ()&lt;&lt;&quot;\n&quot;;</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  std::vector&lt;PointT, Eigen::aligned_allocator&lt;PointT&gt; &gt; voxel_centers; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">int</span> num_seeds = seed_octree.getOccupiedVoxelCenters(voxel_centers); </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Number of seed points before filtering=&quot;&lt;&lt;voxel_centers.size ()&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  std::vector&lt;int&gt; seed_indices_orig;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  seed_indices_orig.resize (num_seeds, 0);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  seed_indices.clear ();</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  std::vector&lt;int&gt; closest_index;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  std::vector&lt;float&gt; <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  closest_index.resize(1,0);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>.resize(1,0);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keywordflow">if</span> (!voxel_kdtree_)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    voxel_kdtree_.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1search_1_1_kd_tree.html">pcl::search::KdTree&lt;PointT&gt;</a>);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    voxel_kdtree_ -&gt;setInputCloud (voxel_centroid_cloud_);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_seeds; ++i)  </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    voxel_kdtree_-&gt;nearestKSearch (voxel_centers[i], 1, closest_index, <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    seed_indices_orig[i] = closest_index[0];</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  }</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  std::vector&lt;int&gt; neighbors;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  std::vector&lt;float&gt; sqr_distances;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  seed_indices.reserve (seed_indices_orig.size ());</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="keywordtype">float</span> search_radius = 0.5f*seed_resolution_;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="comment">// This is 1/20th of the number of voxels which fit in a planar slice through search volume</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="comment">// Area of planar slice / area of voxel side. (Note: This is smaller than the value mentioned in the original paper)</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keywordtype">float</span> min_points = 0.05f * (search_radius)*(search_radius) * 3.1415926536f  / (resolution_*resolution_);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;index_orig : seed_indices_orig)</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordtype">int</span> num = voxel_kdtree_-&gt;radiusSearch (index_orig, search_radius , neighbors, sqr_distances);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">int</span> min_index = index_orig;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; depth; ++i)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      <span class="comment">//Expand the the supervoxels by one iteration</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        sv_itr-&gt;expand ();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="comment">//Update the centers to reflect new centers</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); )</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">if</span> (sv_itr-&gt;size () == 0)</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          sv_itr = supervoxel_helpers_.erase (sv_itr);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          sv_itr-&gt;updateCentroid ();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          ++sv_itr;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        } </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::makeSupervoxels</a> (std::map&lt;std::uint32_t,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  supervoxel_clusters.clear ();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    std::uint32_t label = sv_itr-&gt;getLabel ();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    supervoxel_clusters[label].reset (<span class="keyword">new</span> Supervoxel&lt;PointT&gt;);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    sv_itr-&gt;getXYZ (supervoxel_clusters[label]-&gt;centroid_.x,supervoxel_clusters[label]-&gt;centroid_.y,supervoxel_clusters[label]-&gt;centroid_.z);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    sv_itr-&gt;getRGB (supervoxel_clusters[label]-&gt;centroid_.rgba);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    sv_itr-&gt;getNormal (supervoxel_clusters[label]-&gt;normal_);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    sv_itr-&gt;getVoxels (supervoxel_clusters[label]-&gt;voxels_);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    sv_itr-&gt;getNormals (supervoxel_clusters[label]-&gt;normals_);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::createSupervoxelHelpers</a> (<a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;seed_indices)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  supervoxel_helpers_.clear ();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; seed_indices.size (); ++i)</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    supervoxel_helpers_.push_back (<span class="keyword">new</span> SupervoxelHelper(i+1,<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">//Find which leaf corresponds to this seed index</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    LeafContainerT* seed_leaf = adjacency_octree_-&gt;at(seed_indices[i]);<span class="comment">//adjacency_octree_-&gt;getLeafContainerAtPoint (seed_points[i]);</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span> (seed_leaf)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      supervoxel_helpers_.back ().addLeaf (seed_leaf);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      PCL_WARN (<span class="stringliteral">&quot;Could not find leaf in pcl::SupervoxelClustering&lt;PointT&gt;::createSupervoxelHelpers - supervoxel will be deleted \n&quot;</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}<span class="comment"></span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering&lt;PointT&gt;::selectInitialSupervoxelSeeds</a> (<a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;seed_indices)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="comment">//TODO THIS IS BAD - SEEDING SHOULD BE BETTER</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="comment">//TODO Switch to assigning leaves! Don&#39;t use Octree!</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Size of centroid cloud=&quot;&lt;&lt;voxel_centroid_cloud_-&gt;size ()&lt;&lt;&quot;, seeding resolution=&quot;&lt;&lt;seed_resolution_&lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="comment">//Initialize octree with voxel centroids</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <a class="code" href="classpcl_1_1octree_1_1_octree_point_cloud_search.html">pcl::octree::OctreePointCloudSearch &lt;PointT&gt;</a> seed_octree (seed_resolution_);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  seed_octree.setInputCloud (voxel_centroid_cloud_);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  seed_octree.addPointsFromInputCloud ();</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; <span class="comment">// std::cout &lt;&lt; &quot;Size of octree =&quot;&lt;&lt;seed_octree.getLeafCount ()&lt;&lt;&quot;\n&quot;;</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  std::vector&lt;PointT, Eigen::aligned_allocator&lt;PointT&gt; &gt; voxel_centers; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordtype">int</span> num_seeds = seed_octree.getOccupiedVoxelCenters(voxel_centers); </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="comment">//std::cout &lt;&lt; &quot;Number of seed points before filtering=&quot;&lt;&lt;voxel_centers.size ()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  std::vector&lt;int&gt; seed_indices_orig;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  seed_indices_orig.resize (num_seeds, 0);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  seed_indices.clear ();</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> closest_index;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  std::vector&lt;float&gt; <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  closest_index.resize(1,0);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>.resize(1,0);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordflow">if</span> (!voxel_kdtree_)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    voxel_kdtree_.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1search_1_1_kd_tree.html">pcl::search::KdTree&lt;PointT&gt;</a>);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    voxel_kdtree_ -&gt;setInputCloud (voxel_centroid_cloud_);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_seeds; ++i)  </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    voxel_kdtree_-&gt;nearestKSearch (voxel_centers[i], 1, closest_index, <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    seed_indices_orig[i] = closest_index[0];</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> neighbors;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  std::vector&lt;float&gt; sqr_distances;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  seed_indices.reserve (seed_indices_orig.size ());</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keywordtype">float</span> search_radius = 0.5f*seed_resolution_;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="comment">// This is 1/20th of the number of voxels which fit in a planar slice through search volume</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="comment">// Area of planar slice / area of voxel side. (Note: This is smaller than the value mentioned in the original paper)</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="keywordtype">float</span> min_points = 0.05f * (search_radius)*(search_radius) * 3.1415926536f  / (resolution_*resolution_);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;index_orig : seed_indices_orig)</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">int</span> num = voxel_kdtree_-&gt;radiusSearch (index_orig, search_radius , neighbors, sqr_distances);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">if</span> ( num &gt; min_points)</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      seed_indices.push_back (min_index);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      seed_indices.push_back (index_orig);</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  }</div>
@@ -500,7 +500,7 @@ $(function() {
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    sv_itr-&gt;removeAllLeaves ();</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  }</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  std::vector&lt;int&gt; closest_index;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> closest_index;</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  std::vector&lt;float&gt; <a class="code" href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">distance</a>;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <span class="comment">//Now go through each supervoxel, find voxel closest to its center, add it in</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::iterator sv_itr = supervoxel_helpers_.begin (); sv_itr != supervoxel_helpers_.end (); ++sv_itr)</div>
@@ -566,7 +566,7 @@ $(function() {
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  </div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::const_iterator sv_itr = supervoxel_helpers_.cbegin (); sv_itr != supervoxel_helpers_.cend (); ++sv_itr)</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  {</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> label = sv_itr-&gt;getLabel ();</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    std::uint32_t label = sv_itr-&gt;getLabel ();</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    std::set&lt;std::uint32_t&gt; neighbor_labels;</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    sv_itr-&gt;getNeighborLabels (neighbor_labels);</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;neighbor_label : neighbor_labels)</div>
@@ -608,7 +608,7 @@ $(function() {
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  label_adjacency.clear ();</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">typename</span> HelperListT::const_iterator sv_itr = supervoxel_helpers_.cbegin (); sv_itr != supervoxel_helpers_.cend (); ++sv_itr)</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  {</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> label = sv_itr-&gt;getLabel ();</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    std::uint32_t label = sv_itr-&gt;getLabel ();</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    std::set&lt;std::uint32_t&gt; neighbor_labels;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    sv_itr-&gt;getNeighborLabels (neighbor_labels);</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;neighbor_label : neighbor_labels)</div>
@@ -678,10 +678,10 @@ $(function() {
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointNormal&gt;::Ptr</a></div>
-<div class="line"><a name="l00609"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a00534f47dd3f4c4d2f967f17c9eb945f">  609</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a00534f47dd3f4c4d2f967f17c9eb945f">pcl::SupervoxelClustering&lt;PointT&gt;::makeSupervoxelNormalCloud</a> (std::map&lt;<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
+<div class="line"><a name="l00609"></a><span class="lineno"><a class="line" href="classpcl_1_1_supervoxel_clustering.html#a00534f47dd3f4c4d2f967f17c9eb945f">  609</a></span>&#160;<a class="code" href="classpcl_1_1_supervoxel_clustering.html#a00534f47dd3f4c4d2f967f17c9eb945f">pcl::SupervoxelClustering&lt;PointT&gt;::makeSupervoxelNormalCloud</a> (std::map&lt;std::uint32_t,<span class="keyword">typename</span> <a class="code" href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">Supervoxel&lt;PointT&gt;::Ptr</a> &gt; &amp;supervoxel_clusters)</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointNormal&gt;::Ptr</a> normal_cloud (<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;pcl::PointNormal&gt;</a>);</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  normal_cloud-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a> (supervoxel_clusters.size ());</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  normal_cloud-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a> (supervoxel_clusters.size ());</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <a class="code" href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">pcl::PointCloud&lt;pcl::PointNormal&gt;::iterator</a> normal_cloud_itr = normal_cloud-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#ad03bb625caff9989dda162c1a4200baf">begin</a> ();</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> sv_itr = supervoxel_clusters.cbegin (), sv_itr_end = supervoxel_clusters.cend ();</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;       sv_itr != sv_itr_end; ++sv_itr, ++normal_cloud_itr)</div>
@@ -908,7 +908,7 @@ $(function() {
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> leaf_itr = leaves_.cbegin (); leaf_itr != leaves_.cend (); ++leaf_itr)</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  {</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    VoxelData&amp; voxel_data = (*leaf_itr)-&gt;getData ();</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    std::vector&lt;int&gt; indices;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> indices;</div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    indices.reserve (81); </div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="comment">//Push this point</span></div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    indices.push_back (voxel_data.idx_);</div>
@@ -933,7 +933,7 @@ $(function() {
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    }</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="comment">//Compute normal</span></div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    <a class="code" href="group__features.html#gacd392447cd77d22a66f1f7b885f923e1">pcl::computePointNormal</a> (*parent_-&gt;voxel_centroid_cloud_, indices, voxel_data.normal_, voxel_data.curvature_);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <a class="code" href="group__features.html#ga53df49d690e1cb76cd1f53495508bff1">pcl::flipNormalTowardsViewpoint</a> (parent_-&gt;voxel_centroid_cloud_-&gt;points[voxel_data.idx_], 0.0f,0.0f,0.0f, voxel_data.normal_);</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <a class="code" href="group__features.html#ga53df49d690e1cb76cd1f53495508bff1">pcl::flipNormalTowardsViewpoint</a> ((*parent_-&gt;voxel_centroid_cloud_)[voxel_data.idx_], 0.0f,0.0f,0.0f, voxel_data.normal_);</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    voxel_data.normal_[3] = 0.0f;</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    voxel_data.normal_.normalize ();</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  }</div>
@@ -964,7 +964,7 @@ $(function() {
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;  voxels.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointT&gt;</a>);</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  voxels-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a963c0da7320055c79e5af0df4f6ad224">clear</a> ();</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  voxels-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a> (leaves_.size ());</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  voxels-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a> (leaves_.size ());</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  <span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">pcl::PointCloud&lt;PointT&gt;::iterator</a> voxel_itr = voxels-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#ad03bb625caff9989dda162c1a4200baf">begin</a> ();</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> leaf_itr = leaves_.cbegin (); leaf_itr != leaves_.cend (); ++leaf_itr, ++voxel_itr)</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  {</div>
@@ -979,7 +979,7 @@ $(function() {
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  normals.reset (<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;Normal&gt;</a>);</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  normals-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a963c0da7320055c79e5af0df4f6ad224">clear</a> ();</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  normals-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a> (leaves_.size ());</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  normals-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a> (leaves_.size ());</div>
 <div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <span class="keyword">typename</span> <a class="code" href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">pcl::PointCloud&lt;Normal&gt;::iterator</a> normal_itr = normals-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#ad03bb625caff9989dda162c1a4200baf">begin</a> ();</div>
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> leaf_itr = leaves_.cbegin (); leaf_itr != leaves_.cend (); ++leaf_itr, ++normal_itr)</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  {</div>
@@ -1013,60 +1013,60 @@ $(function() {
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160; </div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;<span class="preprocessor">#endif    // PCL_SUPERVOXEL_CLUSTERING_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructpcl_1_1___normal_html_af1ab83269c0bccd2d8e46a0cad08ce12"><div class="ttname"><a href="structpcl_1_1___normal.html#af1ab83269c0bccd2d8e46a0cad08ce12">pcl::_Normal::curvature</a></div><div class="ttdeci">float curvature</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00801">point_types.hpp:801</a></div></div>
+<div class="ttc" id="astructpcl_1_1___normal_html_af1ab83269c0bccd2d8e46a0cad08ce12"><div class="ttname"><a href="structpcl_1_1___normal.html#af1ab83269c0bccd2d8e46a0cad08ce12">pcl::_Normal::curvature</a></div><div class="ttdeci">float curvature</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00888">point_types.hpp:888</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a2b6f7118c8c4ba33d474fda9e53c0aee"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a2b6f7118c8c4ba33d474fda9e53c0aee">pcl::SupervoxelClustering::getVoxelResolution</a></div><div class="ttdeci">float getVoxelResolution() const</div><div class="ttdoc">Get the resolution of the octree voxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00624">supervoxel_clustering.hpp:624</a></div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="astructpcl_1_1_normal_html"><div class="ttname"><a href="structpcl_1_1_normal.html">pcl::Normal</a></div><div class="ttdoc">A point structure representing normal coordinates and the surface curvature estimate.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00812">point_types.hpp:812</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a7c55bf09e463d214a43d2bd7ceab7753"><div class="ttname"><a href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">pcl::uint32_t</a></div><div class="ttdeci">std::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00058">types.h:58</a></div></div>
+<div class="ttc" id="astructpcl_1_1_normal_html"><div class="ttname"><a href="structpcl_1_1_normal.html">pcl::Normal</a></div><div class="ttdoc">A point structure representing normal coordinates and the surface curvature estimate.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00899">point_types.hpp:899</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a8357cf80b7a32e7315e01ed3ce265b1f"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a8357cf80b7a32e7315e01ed3ce265b1f">pcl::SupervoxelClustering::setSeedResolution</a></div><div class="ttdeci">void setSeedResolution(float seed_resolution)</div><div class="ttdoc">Set the resolution of the octree seed voxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00646">supervoxel_clustering.hpp:646</a></div></div>
 <div class="ttc" id="anamespacepcl_1_1geometry_html_a2fc89f0c26b7c7377fcd2851fa933b87"><div class="ttname"><a href="namespacepcl_1_1geometry.html#a2fc89f0c26b7c7377fcd2851fa933b87">pcl::geometry::distance</a></div><div class="ttdeci">float distance(const PointT &amp;p1, const PointT &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2geometry_8h_source.html#l00060">geometry.h:60</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ad03bb625caff9989dda162c1a4200baf"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ad03bb625caff9989dda162c1a4200baf">pcl::PointCloud::begin</a></div><div class="ttdeci">iterator begin() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">point_cloud.h:445</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a1626420d44e28b5ab22bdc2f1fc6c7ff"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a1626420d44e28b5ab22bdc2f1fc6c7ff">pcl::PointCloud::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00461">point_cloud.h:461</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af1d1f92898f0bda85d8bb18bd64dbcb1"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">pcl::PointCloud::resize</a></div><div class="ttdeci">void resize(std::size_t n)</div><div class="ttdoc">Resize the cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">point_cloud.h:466</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ad03bb625caff9989dda162c1a4200baf"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ad03bb625caff9989dda162c1a4200baf">pcl::PointCloud::begin</a></div><div class="ttdeci">iterator begin() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a1626420d44e28b5ab22bdc2f1fc6c7ff"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a1626420d44e28b5ab22bdc2f1fc6c7ff">pcl::PointCloud::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00446">point_cloud.h:446</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_aca27c3b5cf12f88efc43ed8dd3dd61a7"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#aca27c3b5cf12f88efc43ed8dd3dd61a7">pcl::SupervoxelClustering::VoxelID</a></div><div class="ttdeci">VoxelAdjacencyList::vertex_descriptor VoxelID</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00187">supervoxel_clustering.h:187</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a3acef1d574a49a782557a2925a6d7af0"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a3acef1d574a49a782557a2925a6d7af0">pcl::SupervoxelClustering::setColorImportance</a></div><div class="ttdeci">void setColorImportance(float val)</div><div class="ttdoc">Set the importance of color for supervoxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00654">supervoxel_clustering.hpp:654</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_ae4ea0842b3d4205104c23b63294a8ed8"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#ae4ea0842b3d4205104c23b63294a8ed8">pcl::SupervoxelClustering::setNormalImportance</a></div><div class="ttdeci">void setNormalImportance(float val)</div><div class="ttdoc">Set the importance of scalar normal product for supervoxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00668">supervoxel_clustering.hpp:668</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a4c6cdbb8117d4c80506a427c5fd1c221"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a4c6cdbb8117d4c80506a427c5fd1c221">pcl::SupervoxelClustering::setVoxelResolution</a></div><div class="ttdeci">void setVoxelResolution(float resolution)</div><div class="ttdoc">Set the resolution of the octree voxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00631">supervoxel_clustering.hpp:631</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a596335ad01c705d692462e1109363466"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a596335ad01c705d692462e1109363466">pcl::SupervoxelClustering::extract</a></div><div class="ttdeci">virtual void extract(std::map&lt; std::uint32_t, typename Supervoxel&lt; PointT &gt;::Ptr &gt; &amp;supervoxel_clusters)</div><div class="ttdoc">This method launches the segmentation algorithm and returns the supervoxels that were obtained during...</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00096">supervoxel_clustering.hpp:96</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a22530dcbbf39536ba7220e0d058bb42b"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">pcl::SupervoxelClustering::refineSupervoxels</a></div><div class="ttdeci">virtual void refineSupervoxels(int num_itr, std::map&lt; std::uint32_t, typename Supervoxel&lt; PointT &gt;::Ptr &gt; &amp;supervoxel_clusters)</div><div class="ttdoc">This method refines the calculated supervoxels - may only be called after extract.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00148">supervoxel_clustering.hpp:148</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a596335ad01c705d692462e1109363466"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a596335ad01c705d692462e1109363466">pcl::SupervoxelClustering::extract</a></div><div class="ttdeci">virtual void extract(std::map&lt; std::uint32_t, typename Supervoxel&lt; PointT &gt;::Ptr &gt; &amp;supervoxel_clusters)</div><div class="ttdoc">This method launches the segmentation algorithm and returns the supervoxels that were obtained during...</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00097">supervoxel_clustering.hpp:97</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a22530dcbbf39536ba7220e0d058bb42b"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">pcl::SupervoxelClustering::refineSupervoxels</a></div><div class="ttdeci">virtual void refineSupervoxels(int num_itr, std::map&lt; std::uint32_t, typename Supervoxel&lt; PointT &gt;::Ptr &gt; &amp;supervoxel_clusters)</div><div class="ttdoc">This method refines the calculated supervoxels - may only be called after extract.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00149">supervoxel_clustering.hpp:149</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_1_1_voxel_data_html"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering_1_1_voxel_data.html">pcl::SupervoxelClustering::VoxelData</a></div><div class="ttdoc">VoxelData is a structure used for storing data within a pcl::octree::OctreePointCloudAdjacencyContain...</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00135">supervoxel_clustering.h:135</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00628">point_types.hpp:628</a></div></div>
-<div class="ttc" id="agroup__common_html_gaff182bca8d0295d727baaa1fd368c6ad"><div class="ttname"><a href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a></div><div class="ttdeci">void copyPointCloud(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud_in, pcl::PointCloud&lt; PointOutT &gt; &amp;cloud_out)</div><div class="ttdoc">Copy all the fields from a given point cloud into a new point cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">io.hpp:121</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00674">point_types.hpp:674</a></div></div>
+<div class="ttc" id="agroup__common_html_gaff182bca8d0295d727baaa1fd368c6ad"><div class="ttname"><a href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a></div><div class="ttdeci">void copyPointCloud(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud_in, pcl::PointCloud&lt; PointOutT &gt; &amp;cloud_out)</div><div class="ttdoc">Copy all the fields from a given point cloud into a new point cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">io.hpp:144</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a180e6e54a1b1320266ec41c2879923cd"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a180e6e54a1b1320266ec41c2879923cd">pcl::SupervoxelClustering::getMaxLabel</a></div><div class="ttdeci">int getMaxLabel() const</div><div class="ttdoc">Returns the current maximum (highest) label.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00683">supervoxel_clustering.hpp:683</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_aa91db439be84dadc9143483aa2240835"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">pcl::SupervoxelClustering::SupervoxelClustering</a></div><div class="ttdeci">SupervoxelClustering(float voxel_resolution, float seed_resolution)</div><div class="ttdoc">Constructor that sets default values for member variables.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00047">supervoxel_clustering.hpp:47</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_aa91db439be84dadc9143483aa2240835"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">pcl::SupervoxelClustering::SupervoxelClustering</a></div><div class="ttdeci">SupervoxelClustering(float voxel_resolution, float seed_resolution)</div><div class="ttdoc">Constructor that sets default values for member variables.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00048">supervoxel_clustering.hpp:48</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a48b32cea7002e291ddc3bb1398f52656"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a48b32cea7002e291ddc3bb1398f52656">pcl::SupervoxelClustering::getLabeledVoxelCloud</a></div><div class="ttdeci">pcl::PointCloud&lt; pcl::PointXYZL &gt;::Ptr getLabeledVoxelCloud() const</div><div class="ttdoc">Returns labeled voxelized cloud Points that belong to the same supervoxel have the same label.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00560">supervoxel_clustering.hpp:560</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering</a></div><div class="ttdoc">Implements a supervoxel algorithm based on voxel structure, normals, and rgb values.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00126">supervoxel_clustering.h:126</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a59559f091ea8a7c1aa639ec14840a5f7"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a59559f091ea8a7c1aa639ec14840a5f7">pcl::SupervoxelClustering::setInputCloud</a></div><div class="ttdeci">void setInputCloud(const typename pcl::PointCloud&lt; PointT &gt;::ConstPtr &amp;cloud) override</div><div class="ttdoc">This method sets the cloud to be supervoxelized.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00069">supervoxel_clustering.hpp:69</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a59559f091ea8a7c1aa639ec14840a5f7"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a59559f091ea8a7c1aa639ec14840a5f7">pcl::SupervoxelClustering::setInputCloud</a></div><div class="ttdeci">void setInputCloud(const typename pcl::PointCloud&lt; PointT &gt;::ConstPtr &amp;cloud) override</div><div class="ttdoc">This method sets the cloud to be supervoxelized.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00070">supervoxel_clustering.hpp:70</a></div></div>
 <div class="ttc" id="agroup__features_html_gacd392447cd77d22a66f1f7b885f923e1"><div class="ttname"><a href="group__features.html#gacd392447cd77d22a66f1f7b885f923e1">pcl::computePointNormal</a></div><div class="ttdeci">bool computePointNormal(const pcl::PointCloud&lt; PointT &gt; &amp;cloud, Eigen::Vector4f &amp;plane_parameters, float &amp;curvature)</div><div class="ttdoc">Compute the Least-Squares plane fit for a given set of points, and return the estimated plane paramet...</div><div class="ttdef"><b>Definition:</b> <a href="features_2include_2pcl_2features_2normal__3d_8h_source.html#l00061">normal_3d.h:61</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a2b87562ad91fe6c0132340b53b04ea97"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a2b87562ad91fe6c0132340b53b04ea97">pcl::SupervoxelClustering::setNormalCloud</a></div><div class="ttdeci">virtual void setNormalCloud(typename NormalCloudT::ConstPtr normal_cloud)</div><div class="ttdoc">This method sets the normals to be used for supervoxels (should be same size as input cloud)</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00083">supervoxel_clustering.hpp:83</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_a_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b_a.html">pcl::PointXYZRGBA</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGBA color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00553">point_types.hpp:553</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a2b87562ad91fe6c0132340b53b04ea97"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a2b87562ad91fe6c0132340b53b04ea97">pcl::SupervoxelClustering::setNormalCloud</a></div><div class="ttdeci">virtual void setNormalCloud(typename NormalCloudT::ConstPtr normal_cloud)</div><div class="ttdoc">This method sets the normals to be used for supervoxels (should be same size as input cloud)</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00084">supervoxel_clustering.hpp:84</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_a_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b_a.html">pcl::PointXYZRGBA</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGBA color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00599">point_types.hpp:599</a></div></div>
 <div class="ttc" id="agroup__features_html_ga53df49d690e1cb76cd1f53495508bff1"><div class="ttname"><a href="group__features.html#ga53df49d690e1cb76cd1f53495508bff1">pcl::flipNormalTowardsViewpoint</a></div><div class="ttdeci">void flipNormalTowardsViewpoint(const PointT &amp;point, float vp_x, float vp_y, float vp_z, Eigen::Matrix&lt; Scalar, 4, 1 &gt; &amp;normal)</div><div class="ttdoc">Flip (in place) the estimated normal of a point towards a given viewpoint.</div><div class="ttdef"><b>Definition:</b> <a href="features_2include_2pcl_2features_2normal__3d_8h_source.html#l00122">normal_3d.h:122</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a768a1fad8f67a7ea5e18a36cd4cf4af5"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a768a1fad8f67a7ea5e18a36cd4cf4af5">pcl::SupervoxelClustering::getVoxelCentroidCloud</a></div><div class="ttdeci">pcl::PointCloud&lt; PointT &gt;::Ptr getVoxelCentroidCloud() const</div><div class="ttdoc">Returns a deep copy of the voxel centroid cloud.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00551">supervoxel_clustering.hpp:551</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00300">point_types.hpp:300</a></div></div>
-<div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_adjacency_container_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency_container.html">pcl::octree::OctreePointCloudAdjacencyContainer</a></div><div class="ttdoc">Octree adjacency leaf container class- stores a list of pointers to neighbors, number of points added...</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__adjacency__container_8h_source.html#l00054">octree_pointcloud_adjacency_container.h:54</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00346">point_types.hpp:346</a></div></div>
+<div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_adjacency_container_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency_container.html">pcl::octree::OctreePointCloudAdjacencyContainer</a></div><div class="ttdoc">Octree adjacency leaf container class- stores a list of pointers to neighbors, number of points added...</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__adjacency__container_8h_source.html#l00056">octree_pointcloud_adjacency_container.h:56</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_aec41648bf8e12ee2b9621e7ec08fd887"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#aec41648bf8e12ee2b9621e7ec08fd887">pcl::SupervoxelClustering::getLabeledCloud</a></div><div class="ttdeci">pcl::PointCloud&lt; PointXYZL &gt;::Ptr getLabeledCloud() const</div><div class="ttdoc">Returns labeled cloud Points that belong to the same supervoxel have the same label.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00582">supervoxel_clustering.hpp:582</a></div></div>
 <div class="ttc" id="aclasspcl_1_1search_1_1_kd_tree_html"><div class="ttname"><a href="classpcl_1_1search_1_1_kd_tree.html">pcl::search::KdTree&lt; PointT &gt;</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a907a15bd2319bec9c1c93a7009c8cfd1"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a907a15bd2319bec9c1c93a7009c8cfd1">pcl::PointCloud::end</a></div><div class="ttdeci">iterator end() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00446">point_cloud.h:446</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a907a15bd2319bec9c1c93a7009c8cfd1"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a907a15bd2319bec9c1c93a7009c8cfd1">pcl::PointCloud::end</a></div><div class="ttdeci">iterator end() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">point_cloud.h:430</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_aa8888922b5dfae82f61ddb15f8074bd7"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#aa8888922b5dfae82f61ddb15f8074bd7">pcl::SupervoxelClustering::setUseSingleCameraTransform</a></div><div class="ttdeci">void setUseSingleCameraTransform(bool val)</div><div class="ttdoc">Set whether or not to use the single camera transform.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00675">supervoxel_clustering.hpp:675</a></div></div>
-<div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_adjacency_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html">pcl::octree::OctreePointCloudAdjacency</a></div><div class="ttdoc">Octree pointcloud voxel class which maintains adjacency information for its voxels.</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__adjacency_8h_source.html#l00080">octree_pointcloud_adjacency.h:80</a></div></div>
+<div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_adjacency_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html">pcl::octree::OctreePointCloudAdjacency</a></div><div class="ttdoc">Octree pointcloud voxel class which maintains adjacency information for its voxels.</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__adjacency_8h_source.html#l00078">octree_pointcloud_adjacency.h:78</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a552575b03243c7f5d95bb03c59842238"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">pcl::PointCloud::resize</a></div><div class="ttdeci">void resize(std::size_t count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">point_cloud.h:462</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_1_1_voxel_data_html_a6a43e5d0cf77ec2fb51787af00afbf0f"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering_1_1_voxel_data.html#a6a43e5d0cf77ec2fb51787af00afbf0f">pcl::SupervoxelClustering::VoxelData::getPoint</a></div><div class="ttdeci">void getPoint(PointT &amp;point_arg) const</div><div class="ttdoc">Gets the data of in the form of a point.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00738">supervoxel_clustering.hpp:738</a></div></div>
-<div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_adjacency_container_html_a0a7dc3ff4dab95c9aa899696c961c934"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency_container.html#a0a7dc3ff4dab95c9aa899696c961c934">pcl::octree::OctreePointCloudAdjacencyContainer::getData</a></div><div class="ttdeci">DataT &amp; getData()</div><div class="ttdoc">Returns a reference to the data member to access it without copying.</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__adjacency__container_8h_source.html#l00103">octree_pointcloud_adjacency_container.h:103</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a8bfe09b8680e7129dd0fd6177c1a2ce6"><div class="ttname"><a href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a></div><div class="ttdeci">IndicesAllocator&lt;&gt; Indices</div><div class="ttdoc">Type used for indices in PCL.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00133">types.h:133</a></div></div>
+<div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_adjacency_container_html_a0a7dc3ff4dab95c9aa899696c961c934"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency_container.html#a0a7dc3ff4dab95c9aa899696c961c934">pcl::octree::OctreePointCloudAdjacencyContainer::getData</a></div><div class="ttdeci">DataT &amp; getData()</div><div class="ttdoc">Returns a reference to the data member to access it without copying.</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__adjacency__container_8h_source.html#l00105">octree_pointcloud_adjacency_container.h:105</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_html_a47183e1bf16da4c9c6173ded72ca264e"><div class="ttname"><a href="classpcl_1_1_supervoxel.html#a47183e1bf16da4c9c6173ded72ca264e">pcl::Supervoxel::Ptr</a></div><div class="ttdeci">shared_ptr&lt; Supervoxel&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00075">supervoxel_clustering.h:75</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a0ed41454788fb8bf964886d541c1988e"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a0ed41454788fb8bf964886d541c1988e">pcl::SupervoxelClustering::EdgeID</a></div><div class="ttdeci">VoxelAdjacencyList::edge_descriptor EdgeID</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00188">supervoxel_clustering.h:188</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a8f665129bf87d862bcfbd61e3fe91ecf"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a8f665129bf87d862bcfbd61e3fe91ecf">pcl::PointCloud::const_iterator</a></div><div class="ttdeci">typename VectorType::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00442">point_cloud.h:442</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a963c0da7320055c79e5af0df4f6ad224"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a963c0da7320055c79e5af0df4f6ad224">pcl::PointCloud::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Removes all points in a cloud and sets the width and height to 0.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00616">point_cloud.h:616</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a8f665129bf87d862bcfbd61e3fe91ecf"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a8f665129bf87d862bcfbd61e3fe91ecf">pcl::PointCloud::const_iterator</a></div><div class="ttdeci">typename VectorType::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00426">point_cloud.h:426</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a963c0da7320055c79e5af0df4f6ad224"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a963c0da7320055c79e5af0df4f6ad224">pcl::PointCloud::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Removes all points in a cloud and sets the width and height to 0.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00874">point_cloud.h:874</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_ad6ecaedc1bd918a372a2305e0e7dbfef"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#ad6ecaedc1bd918a372a2305e0e7dbfef">pcl::SupervoxelClustering::getSeedResolution</a></div><div class="ttdeci">float getSeedResolution() const</div><div class="ttdoc">Get the resolution of the octree seed voxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00639">supervoxel_clustering.hpp:639</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_1_1_voxel_data_html_ad51a32b2a4d8e5dc62e337261b89c88f"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering_1_1_voxel_data.html#ad51a32b2a4d8e5dc62e337261b89c88f">pcl::SupervoxelClustering::VoxelData::getNormal</a></div><div class="ttdeci">void getNormal(Normal &amp;normal_arg) const</div><div class="ttdoc">Gets the data of in the form of a normal.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00748">supervoxel_clustering.hpp:748</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_abc98c38e820acde1fb8dc87c66ddc5c3"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#abc98c38e820acde1fb8dc87c66ddc5c3">pcl::SupervoxelClustering::getSupervoxelAdjacencyList</a></div><div class="ttdeci">void getSupervoxelAdjacencyList(VoxelAdjacencyList &amp;adjacency_list_arg) const</div><div class="ttdoc">Gets the adjacency list (Boost Graph library) which gives connections between supervoxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00483">supervoxel_clustering.hpp:483</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_ac09241a0bd7d0799f97a688d89dcd6e3"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">pcl::SupervoxelClustering::~SupervoxelClustering</a></div><div class="ttdeci">~SupervoxelClustering()</div><div class="ttdoc">This destructor destroys the cloud, normals and search method used for finding neighbors.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00062">supervoxel_clustering.hpp:62</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">point_cloud.h:430</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_ac09241a0bd7d0799f97a688d89dcd6e3"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">pcl::SupervoxelClustering::~SupervoxelClustering</a></div><div class="ttdeci">~SupervoxelClustering()</div><div class="ttdoc">This destructor destroys the cloud, normals and search method used for finding neighbors.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00063">supervoxel_clustering.hpp:63</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a93ef187773ae738de894a50c80844123"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a93ef187773ae738de894a50c80844123">pcl::SupervoxelClustering::getSupervoxelAdjacency</a></div><div class="ttdeci">void getSupervoxelAdjacency(std::multimap&lt; std::uint32_t, std::uint32_t &gt; &amp;label_adjacency) const</div><div class="ttdoc">Get a multimap which gives supervoxel adjacency.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00534">supervoxel_clustering.hpp:534</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_1_1_voxel_data_html_a881a826716e1142e278e0ccc6dba6af2"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering_1_1_voxel_data.html#a881a826716e1142e278e0ccc6dba6af2">pcl::SupervoxelClustering::VoxelData::owner_</a></div><div class="ttdeci">SupervoxelHelper * owner_</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00166">supervoxel_clustering.h:166</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a00534f47dd3f4c4d2f967f17c9eb945f"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a00534f47dd3f4c4d2f967f17c9eb945f">pcl::SupervoxelClustering::makeSupervoxelNormalCloud</a></div><div class="ttdeci">static pcl::PointCloud&lt; pcl::PointNormal &gt;::Ptr makeSupervoxelNormalCloud(std::map&lt; std::uint32_t, typename Supervoxel&lt; PointT &gt;::Ptr &gt; &amp;supervoxel_clusters)</div><div class="ttdoc">Static helper function which returns a pointcloud of normals for the input supervoxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00609">supervoxel_clustering.hpp:609</a></div></div>
 <div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_search_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_search.html">pcl::octree::OctreePointCloudSearch</a></div><div class="ttdoc">Octree pointcloud search class</div><div class="ttdef"><b>Definition:</b> <a href="octree__search_8h_source.html#l00057">octree_search.h:57</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a5a263d415a6c9cecd3339a747784859b"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">pcl::PointCloud::iterator</a></div><div class="ttdeci">typename VectorType::iterator iterator</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00441">point_cloud.h:441</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a5a263d415a6c9cecd3339a747784859b"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a5a263d415a6c9cecd3339a747784859b">pcl::PointCloud::iterator</a></div><div class="ttdeci">typename VectorType::iterator iterator</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00425">point_cloud.h:425</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a29cf64b3f1ae3345dd3d2462a10f677c"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a29cf64b3f1ae3345dd3d2462a10f677c">pcl::SupervoxelClustering::setSpatialImportance</a></div><div class="ttdeci">void setSpatialImportance(float val)</div><div class="ttdoc">Set the importance of spatial distance for supervoxels.</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8hpp_source.html#l00661">supervoxel_clustering.hpp:661</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_supervoxel_clustering_html_a6a3aaa429261588a156d9376cae62eb4"><div class="ttname"><a href="classpcl_1_1_supervoxel_clustering.html#a6a3aaa429261588a156d9376cae62eb4">pcl::SupervoxelClustering::VoxelAdjacencyList</a></div><div class="ttdeci">boost::adjacency_list&lt; boost::setS, boost::setS, boost::undirectedS, std::uint32_t, float &gt; VoxelAdjacencyList</div><div class="ttdef"><b>Definition:</b> <a href="supervoxel__clustering_8h_source.html#l00186">supervoxel_clustering.h:186</a></div></div>
 <hr>
@@ -1074,7 +1074,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:53</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:51</p>
 </div> <!-- #footer -->
 </body>
 </html>

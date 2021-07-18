@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Downsampling a PointCloud using a VoxelGrid filter &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Downsampling a PointCloud using a VoxelGrid filter &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -160,7 +160,7 @@ point cloud data. Then, in each <em>voxel</em> (i.e., 3D box), all the points pr
 will be approximated (i.e., <em>downsampled</em>) with their centroid. This approach
 is a bit slower than approximating them with the center of the voxel, but it
 represents the underlying surface more accurately.</p>
-<iframe title="Downsampling a PointCloud using a VoxelGrid filter" width="480" height="390" src="http://www.youtube.com/embed/YHR6_OIxtFI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe title="Downsampling a PointCloud using a VoxelGrid filter" width="480" height="390" src="https://www.youtube.com/embed/YHR6_OIxtFI?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <div class="section" id="the-code">
 <h1>The code</h1>
 <p>First, download the dataset <a class="reference external" href="https://raw.github.com/PointCloudLibrary/data/master/tutorials/table_scene_lms400.pcd">table_scene_lms400.pcd</a>
@@ -206,7 +206,7 @@ editor, and place the following inside it:</p>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/voxel_grid.h&gt;</span><span class="cp"></span>
 
 <span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span> <span class="p">());</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">cloud_filtered</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span> <span class="p">());</span>
@@ -276,7 +276,7 @@ data is passed, and the output is computed and stored in <em>cloud_filtered</em>
  9
 10
 11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">voxel_grid</span><span class="p">)</span>
 

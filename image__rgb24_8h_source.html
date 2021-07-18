@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -149,9 +149,9 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// Struct used for type conversion</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">struct </span>RGB888Pixel</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          <a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> r;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          <a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> g;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          <a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> b;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          std::uint8_t r;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          std::uint8_t g;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          std::uint8_t b;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        };</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
@@ -161,20 +161,19 @@ $(function() {
 <div class="ttc" id="apcl__macros_8h_html"><div class="ttname"><a href="pcl__macros_8h.html">pcl_macros.h</a></div><div class="ttdoc">Defines all the PCL and non-PCL macros used.</div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_frame_wrapper_html_acea625d76c37153e11da1b3a3fdde0bb"><div class="ttname"><a href="classpcl_1_1io_1_1_frame_wrapper.html#acea625d76c37153e11da1b3a3fdde0bb">pcl::io::FrameWrapper::Ptr</a></div><div class="ttdeci">shared_ptr&lt; FrameWrapper &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="image__metadata__wrapper_8h_source.html#l00056">image_metadata_wrapper.h:56</a></div></div>
-<div class="ttc" id="aclasspcl_1_1io_1_1_image_html_aaaf710d6abd598237eacc842f7bd5dde"><div class="ttname"><a href="classpcl_1_1io_1_1_image.html#aaaf710d6abd598237eacc842f7bd5dde">pcl::io::Image::Timestamp</a></div><div class="ttdeci">std::chrono::high_resolution_clock::time_point Timestamp</div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00064">image.h:64</a></div></div>
+<div class="ttc" id="aclasspcl_1_1io_1_1_image_html_aaaf710d6abd598237eacc842f7bd5dde"><div class="ttname"><a href="classpcl_1_1io_1_1_image.html#aaaf710d6abd598237eacc842f7bd5dde">pcl::io::Image::Timestamp</a></div><div class="ttdeci">std::chrono::high_resolution_clock::time_point Timestamp</div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00063">image.h:63</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_image_r_g_b24_html_af99dd4a1ddb438f02b3d04cb86ce4fdc"><div class="ttname"><a href="classpcl_1_1io_1_1_image_r_g_b24.html#af99dd4a1ddb438f02b3d04cb86ce4fdc">pcl::io::ImageRGB24::getEncoding</a></div><div class="ttdeci">Encoding getEncoding() const override</div><div class="ttdoc">returns the encoding of the native data.</div><div class="ttdef"><b>Definition:</b> <a href="image__rgb24_8h_source.html#l00061">image_rgb24.h:61</a></div></div>
 <div class="ttc" id="aclasspcl_1_1io_1_1_image_r_g_b24_html"><div class="ttname"><a href="classpcl_1_1io_1_1_image_r_g_b24.html">pcl::io::ImageRGB24</a></div><div class="ttdoc">This class provides methods to fill a RGB or Grayscale image buffer from underlying RGB24 image.</div><div class="ttdef"><b>Definition:</b> <a href="image__rgb24_8h_source.html#l00052">image_rgb24.h:52</a></div></div>
-<div class="ttc" id="astructpcl_1_1_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_r_g_b.html">pcl::RGB</a></div><div class="ttdoc">A structure representing RGB color information.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00345">point_types.hpp:345</a></div></div>
-<div class="ttc" id="aclasspcl_1_1io_1_1_image_html"><div class="ttname"><a href="classpcl_1_1io_1_1_image.html">pcl::io::Image</a></div><div class="ttdoc">Image interface class providing an interface to fill a RGB or Grayscale image buffer.</div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00057">image.h:57</a></div></div>
-<div class="ttc" id="anamespacepcl_html_aea8ace9e1a2351f301fd4b89b2940811"><div class="ttname"><a href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">pcl::uint8_t</a></div><div class="ttdeci">std::uint8_t uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
-<div class="ttc" id="aclasspcl_1_1io_1_1_image_html_a1dd5fa0656e9c645815e810777cbb0fb"><div class="ttname"><a href="classpcl_1_1io_1_1_image.html#a1dd5fa0656e9c645815e810777cbb0fb">pcl::io::Image::Encoding</a></div><div class="ttdeci">Encoding</div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00066">image.h:66</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="astructpcl_1_1_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_r_g_b.html">pcl::RGB</a></div><div class="ttdoc">A structure representing RGB color information.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00391">point_types.hpp:391</a></div></div>
+<div class="ttc" id="aclasspcl_1_1io_1_1_image_html"><div class="ttname"><a href="classpcl_1_1io_1_1_image.html">pcl::io::Image</a></div><div class="ttdoc">Image interface class providing an interface to fill a RGB or Grayscale image buffer.</div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00056">image.h:56</a></div></div>
+<div class="ttc" id="aclasspcl_1_1io_1_1_image_html_a1dd5fa0656e9c645815e810777cbb0fb"><div class="ttname"><a href="classpcl_1_1io_1_1_image.html#a1dd5fa0656e9c645815e810777cbb0fb">pcl::io::Image::Encoding</a></div><div class="ttdeci">Encoding</div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00065">image.h:65</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:36</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:32</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -93,9 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abed5c1b7abac1c036b6058d0138ccaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_registration_visualizer.html#abed5c1b7abac1c036b6058d0138ccaa5">stopDisplay</a> ()</td></tr>
 <tr class="memdesc:abed5c1b7abac1c036b6058d0138ccaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the viewer thread.  <a href="classpcl_1_1_registration_visualizer.html#abed5c1b7abac1c036b6058d0138ccaa5">More...</a><br /></td></tr>
 <tr class="separator:abed5c1b7abac1c036b6058d0138ccaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486ef1ce9bd49da0224140b8b2f191eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_registration_visualizer.html#a486ef1ce9bd49da0224140b8b2f191eb">updateIntermediateCloud</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointSource &gt; &amp;cloud_src, const std::vector&lt; int &gt; &amp;indices_src, const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointTarget &gt; &amp;cloud_tgt, const std::vector&lt; int &gt; &amp;indices_tgt)</td></tr>
-<tr class="memdesc:a486ef1ce9bd49da0224140b8b2f191eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates visualizer local buffers cloud_intermediate, cloud_intermediate_indices, cloud_target_indices with the newest registration intermediate results.  <a href="classpcl_1_1_registration_visualizer.html#a486ef1ce9bd49da0224140b8b2f191eb">More...</a><br /></td></tr>
-<tr class="separator:a486ef1ce9bd49da0224140b8b2f191eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1842769fedfbde10202cd11c9516824d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_registration_visualizer.html#a1842769fedfbde10202cd11c9516824d">updateIntermediateCloud</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointSource &gt; &amp;cloud_src, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices_src, const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointTarget &gt; &amp;cloud_tgt, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices_tgt)</td></tr>
+<tr class="memdesc:a1842769fedfbde10202cd11c9516824d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates visualizer local buffers cloud_intermediate, cloud_intermediate_indices, cloud_target_indices with the newest registration intermediate results.  <a href="classpcl_1_1_registration_visualizer.html#a1842769fedfbde10202cd11c9516824d">More...</a><br /></td></tr>
+<tr class="separator:a1842769fedfbde10202cd11c9516824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a897f50b0c290445cdb8847bb2e4c38a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_registration_visualizer.html#a897f50b0c290445cdb8847bb2e4c38a4">setMaximumDisplayedCorrespondences</a> (const int maximum_displayed_correspondences)</td></tr>
 <tr class="memdesc:a897f50b0c290445cdb8847bb2e4c38a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum number of correspondence lines which will be rendered.  <a href="classpcl_1_1_registration_visualizer.html#a897f50b0c290445cdb8847bb2e4c38a4">More...</a><br /></td></tr>
 <tr class="separator:a897f50b0c290445cdb8847bb2e4c38a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,7 +234,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
 </div><div class="memdoc">
 
 <p>Set the registration algorithm whose intermediate steps will be rendered. </p>
-<p>The method creates the local callback function pcl::RegistrationVisualizer::update_visualizer_ and binds it to the local buffers update function <a class="el" href="classpcl_1_1_registration_visualizer.html#a486ef1ce9bd49da0224140b8b2f191eb" title="Updates visualizer local buffers cloud_intermediate, cloud_intermediate_indices, cloud_target_indices...">pcl::RegistrationVisualizer::updateIntermediateCloud()</a>. The local callback function pcl::RegistrationVisualizer::update_visualizer_ is then linked to the <a class="el" href="classpcl_1_1_registration.html#a12331085b51ec5c3e05448b701bf0f8b" title="Callback function to update intermediate source point cloud position during it&#39;s registration to the ...">pcl::Registration::update_visualizer_</a> callback function. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The method creates the local callback function pcl::RegistrationVisualizer::update_visualizer_ and binds it to the local buffers update function <a class="el" href="classpcl_1_1_registration_visualizer.html#a1842769fedfbde10202cd11c9516824d" title="Updates visualizer local buffers cloud_intermediate, cloud_intermediate_indices, cloud_target_indices...">pcl::RegistrationVisualizer::updateIntermediateCloud()</a>. The local callback function pcl::RegistrationVisualizer::update_visualizer_ is then linked to the <a class="el" href="classpcl_1_1_registration.html#a12331085b51ec5c3e05448b701bf0f8b" title="Callback function to update intermediate source point cloud position during it&#39;s registration to the ...">pcl::Registration::update_visualizer_</a> callback function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">registration</td><td>represents the registration method whose intermediate steps will be rendered. </td></tr>
   </table>
@@ -243,7 +243,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="registration__visualizer_8h_source.html#l00079">79</a> of file <a class="el" href="registration__visualizer_8h_source.html">registration_visualizer.h</a>.</p>
 
-<p class="reference">References <a class="el" href="registration_2include_2pcl_2registration_2registration_8h_source.html#l00430">pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;::getClassName()</a>, <a class="el" href="registration_2include_2pcl_2registration_2registration_8h_source.html#l00384">pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;::registerVisualizationCallback()</a>, and <a class="el" href="registration__visualizer_8hpp_source.html#l00189">pcl::RegistrationVisualizer&lt; PointSource, PointTarget &gt;::updateIntermediateCloud()</a>.</p>
+<p class="reference">References <a class="el" href="registration_2include_2pcl_2registration_2registration_8h_source.html#l00495">pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;::getClassName()</a>, <a class="el" href="registration_2include_2pcl_2registration_2registration_8h_source.html#l00444">pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;::registerVisualizationCallback()</a>, and <a class="el" href="registration__visualizer_8hpp_source.html#l00188">pcl::RegistrationVisualizer&lt; PointSource, PointTarget &gt;::updateIntermediateCloud()</a>.</p>
 
 </div>
 </div>
@@ -287,8 +287,8 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
 
 </div>
 </div>
-<a id="a486ef1ce9bd49da0224140b8b2f191eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a486ef1ce9bd49da0224140b8b2f191eb">&#9670;&nbsp;</a></span>updateIntermediateCloud()</h2>
+<a id="a1842769fedfbde10202cd11c9516824d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1842769fedfbde10202cd11c9516824d">&#9670;&nbsp;</a></span>updateIntermediateCloud()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +304,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices_src</em>, </td>
         </tr>
         <tr>
@@ -316,7 +316,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices_tgt</em>&#160;</td>
         </tr>
         <tr>
@@ -338,7 +338,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="registration__visualizer_8hpp_source.html#l00189">189</a> of file <a class="el" href="registration__visualizer_8hpp_source.html">registration_visualizer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="registration__visualizer_8hpp_source.html#l00188">188</a> of file <a class="el" href="registration__visualizer_8hpp_source.html">registration_visualizer.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="registration__visualizer_8h_source.html#l00079">pcl::RegistrationVisualizer&lt; PointSource, PointTarget &gt;::setRegistration()</a>.</p>
 
@@ -354,7 +354,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:46</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:58</p>
 </div> <!-- #footer -->
 </body>
 </html>

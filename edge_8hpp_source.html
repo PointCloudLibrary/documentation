@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;pcl/2d/convolution.h&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;pcl/2d/edge.h&gt;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;pcl/common/common_headers.h&gt;</span> <span class="comment">// rad2deg()</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="angles_8h.html">pcl/common/angles.h</a>&gt;</span> <span class="comment">// for rad2deg</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a> {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -137,7 +137,7 @@ $(function() {
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = input_-&gt;height;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = input_-&gt;width;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
@@ -178,7 +178,7 @@ $(function() {
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = input_x.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = input_x.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
@@ -216,7 +216,7 @@ $(function() {
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = input_-&gt;height;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = input_-&gt;width;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
@@ -254,7 +254,7 @@ $(function() {
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = input_-&gt;height;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = input_-&gt;width;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
@@ -333,7 +333,7 @@ $(function() {
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  maxima.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  maxima.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  maxima.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  maxima.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; point : maxima)</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    point.intensity = 0.0f;</div>
@@ -388,7 +388,7 @@ $(function() {
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = input_-&gt;height;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = input_-&gt;width;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
@@ -454,7 +454,7 @@ $(function() {
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = input_x.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = input_x.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a>;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(height * width);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(height * width);</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a> = height;</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  output.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> = width;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
@@ -538,18 +538,19 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_edge_html_a5d4992dd5bf3458ad013c55885a9a175"><div class="ttname"><a href="classpcl_1_1_edge.html#a5d4992dd5bf3458ad013c55885a9a175">pcl::Edge::sobelMagnitudeDirection</a></div><div class="ttdeci">void sobelMagnitudeDirection(const pcl::PointCloud&lt; PointInT &gt; &amp;input_x, const pcl::PointCloud&lt; PointInT &gt; &amp;input_y, pcl::PointCloud&lt; PointOutT &gt; &amp;output)</div><div class="ttdef"><b>Definition:</b> <a href="edge_8hpp_source.html#l00085">edge.hpp:85</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_afebbbb9c522a94cf245dd3968b50ed5e"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#afebbbb9c522a94cf245dd3968b50ed5e">pcl::PointCloud::makeShared</a></div><div class="ttdeci">Ptr makeShared() const</div><div class="ttdoc">Copy the cloud to the heap and return a smart pointer Note that deep copy is performed,...</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00629">point_cloud.h:629</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a917b6eb0ef204836c56a2334ddd703fe"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">pcl::PointCloud::height</a></div><div class="ttdeci">std::uint32_t height</div><div class="ttdoc">The point cloud height (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">point_cloud.h:416</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af1d1f92898f0bda85d8bb18bd64dbcb1"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">pcl::PointCloud::resize</a></div><div class="ttdeci">void resize(std::size_t n)</div><div class="ttdoc">Resize the cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">point_cloud.h:466</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_i_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_i.html">pcl::PointXYZI</a></div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00464">point_types.hpp:464</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_afebbbb9c522a94cf245dd3968b50ed5e"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#afebbbb9c522a94cf245dd3968b50ed5e">pcl::PointCloud::makeShared</a></div><div class="ttdeci">Ptr makeShared() const</div><div class="ttdoc">Copy the cloud to the heap and return a smart pointer Note that deep copy is performed,...</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00887">point_cloud.h:887</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a917b6eb0ef204836c56a2334ddd703fe"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">pcl::PointCloud::height</a></div><div class="ttdeci">std::uint32_t height</div><div class="ttdoc">The point cloud height (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">point_cloud.h:400</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_i_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_i.html">pcl::PointXYZI</a></div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00510">point_types.hpp:510</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_edge_html_a7abd51b78b9049d54385478b03533150"><div class="ttname"><a href="classpcl_1_1_edge.html#a7abd51b78b9049d54385478b03533150">pcl::Edge::detectEdgeRoberts</a></div><div class="ttdeci">void detectEdgeRoberts(pcl::PointCloud&lt; PointOutT &gt; &amp;output)</div><div class="ttdoc">Uses the Roberts kernel for edge detection.</div><div class="ttdef"><b>Definition:</b> <a href="edge_8hpp_source.html#l00164">edge.hpp:164</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt; PointOutT &gt;</a></div></div>
-<div class="ttc" id="astructpcl_1_1___point_x_y_z_i_html_a26704c71a97deb8bb945cabc4f3e3ce1"><div class="ttname"><a href="structpcl_1_1___point_x_y_z_i.html#a26704c71a97deb8bb945cabc4f3e3ce1">pcl::_PointXYZI::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00456">point_types.hpp:456</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a644dc7161c2e3f23bc4d36d36c58e7b4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">pcl::PointCloud::width</a></div><div class="ttdeci">std::uint32_t width</div><div class="ttdoc">The point cloud width (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
+<div class="ttc" id="astructpcl_1_1___point_x_y_z_i_html_a26704c71a97deb8bb945cabc4f3e3ce1"><div class="ttname"><a href="structpcl_1_1___point_x_y_z_i.html#a26704c71a97deb8bb945cabc4f3e3ce1">pcl::_PointXYZI::intensity</a></div><div class="ttdeci">float intensity</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00502">point_types.hpp:502</a></div></div>
+<div class="ttc" id="aangles_8h_html"><div class="ttname"><a href="angles_8h.html">angles.h</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a644dc7161c2e3f23bc4d36d36c58e7b4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">pcl::PointCloud::width</a></div><div class="ttdeci">std::uint32_t width</div><div class="ttdoc">The point cloud width (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">point_cloud.h:398</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_edge_html_a489705e4da536a97081c1fbf7ac2ea79"><div class="ttname"><a href="classpcl_1_1_edge.html#a489705e4da536a97081c1fbf7ac2ea79">pcl::Edge::canny</a></div><div class="ttdeci">void canny(const pcl::PointCloud&lt; PointInT &gt; &amp;input_x, const pcl::PointCloud&lt; PointInT &gt; &amp;input_y, pcl::PointCloud&lt; PointOutT &gt; &amp;output)</div><div class="ttdoc">Perform Canny edge detection with two separated input images for horizontal and vertical derivatives.</div><div class="ttdef"><b>Definition:</b> <a href="edge_8hpp_source.html#l00376">edge.hpp:376</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_edge_html_a2fde1fd46a127c891ff8ade9e1c2c1e2"><div class="ttname"><a href="classpcl_1_1_edge.html#a2fde1fd46a127c891ff8ade9e1c2c1e2">pcl::Edge::detectEdgePrewitt</a></div><div class="ttdeci">void detectEdgePrewitt(pcl::PointCloud&lt; PointOutT &gt; &amp;output)</div><div class="ttdoc">Uses the Prewitt kernel for edge detection.</div><div class="ttdef"><b>Definition:</b> <a href="edge_8hpp_source.html#l00126">edge.hpp:126</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_aa3fc6f30bae069ca325b80f60757276e"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">pcl::PointCloud::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">point_cloud.h:459</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a552575b03243c7f5d95bb03c59842238"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">pcl::PointCloud::resize</a></div><div class="ttdeci">void resize(std::size_t count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">point_cloud.h:462</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_aa3fc6f30bae069ca325b80f60757276e"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">pcl::PointCloud::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">point_cloud.h:443</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_edge_html_a3ffab54efcbfd029b6d758770e7e5da1"><div class="ttname"><a href="classpcl_1_1_edge.html#a3ffab54efcbfd029b6d758770e7e5da1">pcl::Edge::detectEdgeSobel</a></div><div class="ttdeci">void detectEdgeSobel(pcl::PointCloud&lt; PointOutT &gt; &amp;output)</div><div class="ttdoc">Uses the Sobel kernel for edge detection.</div><div class="ttdef"><b>Definition:</b> <a href="edge_8hpp_source.html#l00048">edge.hpp:48</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_edge_html_aad4e235b723af6970e5337d53004116d"><div class="ttname"><a href="classpcl_1_1_edge.html#aad4e235b723af6970e5337d53004116d">pcl::Edge::detectEdgeCanny</a></div><div class="ttdeci">void detectEdgeCanny(pcl::PointCloud&lt; PointOutT &gt; &amp;output)</div><div class="ttdoc">All edges of magnitude above t_high are always classified as edges.</div><div class="ttdef"><b>Definition:</b> <a href="edge_8hpp_source.html#l00312">edge.hpp:312</a></div></div>
 <div class="ttc" id="aclasspcl_1_1kernel_html"><div class="ttname"><a href="classpcl_1_1kernel.html">pcl::kernel</a></div><div class="ttdef"><b>Definition:</b> <a href="kernel_8h_source.html#l00046">kernel.h:46</a></div></div>
@@ -561,7 +562,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:25</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:21</p>
 </div> <!-- #footer -->
 </body>
 </html>

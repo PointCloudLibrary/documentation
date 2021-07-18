@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -261,10 +261,10 @@ Protected Attributes</h2></td></tr>
 class pcl::UniformSampling&lt; PointT &gt;</h3>
 
 <p><b><a class="el" href="classpcl_1_1_uniform_sampling.html" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data...">UniformSampling</a></b> assembles a local 3D grid over a given <a class="el" href="classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points.">PointCloud</a>, and downsamples + filters the data. </p>
-<p>The <b><a class="el" href="classpcl_1_1_uniform_sampling.html" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data...">UniformSampling</a></b> class creates a <em>3D voxel grid</em> (think about a voxel grid as a set of tiny 3D boxes in space) over the input point cloud data. Then, in each <em>voxel</em> (i.e., 3D box), all the points present will be approximated (i.e., <em>downsampled</em>) with their centroid. This approach is a bit slower than approximating them with the center of the voxel, but it represents the underlying surface more accurately.</p>
+<p>The <b><a class="el" href="classpcl_1_1_uniform_sampling.html" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data...">UniformSampling</a></b> class creates a <em>3D voxel grid</em> (think about a voxel grid as a set of tiny 3D boxes in space) over the input point cloud data. Then, in each <em>voxel</em> (i.e., 3D box), all the points present will be approximated (i.e., <em>downsampled</em>) with the closest point to the center of the voxel.</p>
 <dl class="section author"><dt>Author</dt><dd>Radu Bogdan Rusu </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00061">61</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00059">59</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0fb0d221b1148f1917a6ea9fb3f1540f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fb0d221b1148f1917a6ea9fb3f1540f">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -280,7 +280,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00074">74</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00072">72</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +298,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00073">73</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00071">71</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
 </div>
 </div>
@@ -331,9 +331,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Empty constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00077">77</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00075">75</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00161">pcl::Filter&lt; PointT &gt;::filter_name_</a>.</p>
+<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00158">pcl::Filter&lt; PointT &gt;::filter_name_</a>.</p>
 
 </div>
 </div>
@@ -364,9 +364,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00092">92</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00090">90</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00121">pcl::UniformSampling&lt; PointT &gt;::leaves_</a>.</p>
+<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00119">pcl::UniformSampling&lt; PointT &gt;::leaves_</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="uniform__sampling_8hpp_source.html#l00046">46</a> of file <a class="el" href="uniform__sampling_8hpp_source.html">uniform_sampling.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00117">pcl::UniformSampling&lt; PointT &gt;::Leaf::idx</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00419">pcl::PointCloud&lt; PointT &gt;::is_dense</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00874">pcl::PointCloud&lt; PointT &gt;::clear()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00115">pcl::UniformSampling&lt; PointT &gt;::Leaf::idx</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00403">pcl::PointCloud&lt; PointT &gt;::is_dense</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -447,9 +447,9 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00101">101</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00099">99</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00127">pcl::UniformSampling&lt; PointT &gt;::inverse_leaf_size_</a>, <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00124">pcl::UniformSampling&lt; PointT &gt;::leaf_size_</a>, and <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00133">pcl::UniformSampling&lt; PointT &gt;::search_radius_</a>.</p>
+<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00125">pcl::UniformSampling&lt; PointT &gt;::inverse_leaf_size_</a>, <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00122">pcl::UniformSampling&lt; PointT &gt;::leaf_size_</a>, and <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00131">pcl::UniformSampling&lt; PointT &gt;::search_radius_</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00130">130</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00128">128</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +502,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00130">130</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00128">128</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
 </div>
 </div>
@@ -530,9 +530,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Internal leaf sizes stored as 1/leaf_size_ for efficiency reasons. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00127">127</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00125">125</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00101">pcl::UniformSampling&lt; PointT &gt;::setRadiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00099">pcl::UniformSampling&lt; PointT &gt;::setRadiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -560,9 +560,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>The size of a leaf. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00124">124</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00122">122</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00101">pcl::UniformSampling&lt; PointT &gt;::setRadiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00099">pcl::UniformSampling&lt; PointT &gt;::setRadiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -590,9 +590,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>The 3D grid leaves. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00121">121</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00119">119</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00092">pcl::UniformSampling&lt; PointT &gt;::~UniformSampling()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00090">pcl::UniformSampling&lt; PointT &gt;::~UniformSampling()</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00130">130</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00128">128</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>The minimum and maximum bin coordinates, the number of divisions, and the division multiplier. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00130">130</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00128">128</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
 </div>
 </div>
@@ -674,9 +674,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>The nearest neighbors search radius for each point. </p>
 
-<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00133">133</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00131">131</a> of file <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html">uniform_sampling.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00101">pcl::UniformSampling&lt; PointT &gt;::setRadiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2uniform__sampling_8h_source.html#l00099">pcl::UniformSampling&lt; PointT &gt;::setRadiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -690,7 +690,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:07</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:21</p>
 </div> <!-- #footer -->
 </body>
 </html>

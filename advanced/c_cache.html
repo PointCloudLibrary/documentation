@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -177,13 +177,13 @@ of GCC, and allows you to better interpret the compiler warnings/errors.</p>
 </pre></div>
 </div>
 <p>To enable colorgcc, perform the following steps:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>cp /etc/colorgcc/colorgccrc $HOME/.colorgccrc
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cp /etc/colorgcc/colorgccrc <span class="nv">$HOME</span>/.colorgccrc
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>edit the $HOME/.colorgccrc file, search for the following lines:</p></li>
 </ul>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>g++: /usr/bin/g++
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>g++: /usr/bin/g++
 gcc: /usr/bin/gcc
 c++: /usr/bin/g++
 cc:  /usr/bin/gcc
@@ -193,7 +193,7 @@ gcj: /usr/bin/gcj
 </pre></div>
 </div>
 <p>and replace them with:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>g++: ccache /usr/bin/g++
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>g++: ccache /usr/bin/g++
 gcc: ccache /usr/bin/gcc
 c++: ccache /usr/bin/g++
 cc:  ccache /usr/bin/gcc
@@ -205,7 +205,7 @@ gcj: ccache /usr/bin/gcj
 <ul class="simple">
 <li><p>create a $HOME/bin or $HOME/sbin directory, and create the following softlinks in it</p></li>
 </ul>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>ln -s /usr/bin/colorgcc c++
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln -s /usr/bin/colorgcc c++
 ln -s /usr/bin/colorgcc cc
 ln -s /usr/bin/colorgcc g++
 ln -s /usr/bin/colorgcc gcc

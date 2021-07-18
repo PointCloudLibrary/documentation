@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -67,6 +67,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -74,12 +75,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;cstdarg&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;pcl/pcl_config.h&gt;</code><br />
+<code>#include &lt;boost/preprocessor/arithmetic/add.hpp&gt;</code><br />
 <code>#include &lt;boost/preprocessor/comparison/equal.hpp&gt;</code><br />
 <code>#include &lt;boost/preprocessor/comparison/less.hpp&gt;</code><br />
 <code>#include &lt;boost/preprocessor/control/if.hpp&gt;</code><br />
@@ -91,6 +90,11 @@ $(function() {
 
 <p class="definition">Definition in file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacepcl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl.html">pcl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a525335710b53cb064ca56b936120431e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a525335710b53cb064ca56b936120431e">_USE_MATH_DEFINES</a></td></tr>
@@ -106,10 +110,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a02178296cc05b81651be019241c5116d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a02178296cc05b81651be019241c5116d">_PCL_PREPARE_REMOVAL_MESSAGE</a>(Major,  Minor,  Msg)&#160;&#160;&#160;Msg &quot; (It will be removed in PCL &quot; BOOST_PP_STRINGIZE(Major.Minor) &quot;)&quot;</td></tr>
 <tr class="memdesc:a02178296cc05b81651be019241c5116d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handy way to inform the user of the removal deadline.  <a href="pcl__macros_8h.html#a02178296cc05b81651be019241c5116d">More...</a><br /></td></tr>
 <tr class="separator:a02178296cc05b81651be019241c5116d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ce99b3c9dca9b0742439cf93ce1908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a73ce99b3c9dca9b0742439cf93ce1908">_PCL_COMPAT_MINOR_VERSION</a>(Minor,  IfPass,  IfFail)&#160;&#160;&#160;BOOST_PP_IF(BOOST_PP_LESS(PCL_MINOR_VERSION, Minor), IfPass, IfFail)</td></tr>
+<tr class="memitem:a73ce99b3c9dca9b0742439cf93ce1908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a73ce99b3c9dca9b0742439cf93ce1908">_PCL_COMPAT_MINOR_VERSION</a>(Minor,  IfPass,  IfFail)</td></tr>
 <tr class="memdesc:a73ce99b3c9dca9b0742439cf93ce1908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests for Minor &lt; PCL_MINOR_VERSION.  <a href="pcl__macros_8h.html#a73ce99b3c9dca9b0742439cf93ce1908">More...</a><br /></td></tr>
 <tr class="separator:a73ce99b3c9dca9b0742439cf93ce1908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04c63808c6e6aa617363ac0e2d19ae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#ab04c63808c6e6aa617363ac0e2d19ae6">_PCL_COMPAT_MAJOR_VERSION</a>(Major,  IfPass,  IfFail)&#160;&#160;&#160;BOOST_PP_IF(BOOST_PP_EQUAL(PCL_MAJOR_VERSION, Major), IfPass, IfFail)</td></tr>
+<tr class="memitem:ab04c63808c6e6aa617363ac0e2d19ae6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#ab04c63808c6e6aa617363ac0e2d19ae6">_PCL_COMPAT_MAJOR_VERSION</a>(Major,  IfPass,  IfFail)</td></tr>
 <tr class="memdesc:ab04c63808c6e6aa617363ac0e2d19ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests for Major == PCL_MAJOR_VERSION.  <a href="pcl__macros_8h.html#ab04c63808c6e6aa617363ac0e2d19ae6">More...</a><br /></td></tr>
 <tr class="separator:ab04c63808c6e6aa617363ac0e2d19ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8c1cf238590cc2faee3a8d1b523975"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a4a8c1cf238590cc2faee3a8d1b523975">PCL_DEPRECATED</a>(Major,  Minor,  Message)</td></tr>
@@ -204,27 +208,20 @@ Macros</h2></td></tr>
 <tr class="separator:gafd6ef917f66c9c9b3cb888aea5013b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0652ae289fd8803a7047b0b364e4ca59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a0652ae289fd8803a7047b0b364e4ca59">PCL_NODISCARD</a></td></tr>
 <tr class="separator:a0652ae289fd8803a7047b0b364e4ca59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab25e5c84757b717822822c279c88562"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#aab25e5c84757b717822822c279c88562">PCL_IF_CONSTEXPR</a>(x)&#160;&#160;&#160;if (x)</td></tr>
+<tr class="separator:aab25e5c84757b717822822c279c88562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8775cadd41b7560c40a57005b9abccc9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8775cadd41b7560c40a57005b9abccc9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a8775cadd41b7560c40a57005b9abccc9">pcl_isnan</a> (T &amp;&amp;x)</td></tr>
-<tr class="separator:a8775cadd41b7560c40a57005b9abccc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ca7fb42fa4f199a4417ab65ac05d13"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a11ca7fb42fa4f199a4417ab65ac05d13"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a11ca7fb42fa4f199a4417ab65ac05d13">pcl_isfinite</a> (T &amp;&amp;x)</td></tr>
-<tr class="separator:a11ca7fb42fa4f199a4417ab65ac05d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8028afc4f107ef863ca586509e188a9b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8028afc4f107ef863ca586509e188a9b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a8028afc4f107ef863ca586509e188a9b">pcl_isinf</a> (T &amp;&amp;x)</td></tr>
-<tr class="separator:a8028afc4f107ef863ca586509e188a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7575718567d2f6e8665de8e6ef0b63b"><td class="memItemLeft" align="right" valign="top">__inline double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#ad7575718567d2f6e8665de8e6ef0b63b">pcl_round</a> (double number)</td></tr>
 <tr class="memdesc:ad7575718567d2f6e8665de8e6ef0b63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Win32 doesn't seem to have rounding functions.  <a href="pcl__macros_8h.html#ad7575718567d2f6e8665de8e6ef0b63b">More...</a><br /></td></tr>
 <tr class="separator:ad7575718567d2f6e8665de8e6ef0b63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7e87498004390c871f1796e4425470"><td class="memItemLeft" align="right" valign="top">__inline float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a2e7e87498004390c871f1796e4425470">pcl_round</a> (float number)</td></tr>
 <tr class="separator:a2e7e87498004390c871f1796e4425470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ab808c89b93ae98198fcf7bbe6066c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a35ab808c89b93ae98198fcf7bbe6066c">aligned_malloc</a> (std::size_t size)</td></tr>
-<tr class="separator:a35ab808c89b93ae98198fcf7bbe6066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274dd8714485eed9c9328973d44ec5dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pcl__macros_8h.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free</a> (void *ptr)</td></tr>
-<tr class="separator:a274dd8714485eed9c9328973d44ec5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42ad839ccc8245d25b1d2e36699e2d5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl.html#aa42ad839ccc8245d25b1d2e36699e2d5">pcl::aligned_malloc</a> (std::size_t size)</td></tr>
+<tr class="separator:aa42ad839ccc8245d25b1d2e36699e2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396b870ea10246b9b7761358b68c4310"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl.html#a396b870ea10246b9b7761358b68c4310">pcl::aligned_free</a> (void *ptr)</td></tr>
+<tr class="separator:a396b870ea10246b9b7761358b68c4310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ae1ce1a4353334dd8968a94a98b4bf1dd"></a>
@@ -243,7 +240,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00351">351</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00343">343</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +256,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00188">188</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00194">194</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -290,14 +287,18 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;BOOST_PP_IF(BOOST_PP_EQUAL(PCL_MAJOR_VERSION, Major), IfPass, IfFail)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  BOOST_PP_IF(BOOST_PP_EQUAL(PCL_MINOR_VERSION, 99),                                    \</div>
+<div class="line">    BOOST_PP_IF(BOOST_PP_EQUAL(BOOST_PP_ADD(PCL_MAJOR_VERSION, 1), Major), IfPass, IfFail),          \</div>
+<div class="line">    BOOST_PP_IF(BOOST_PP_EQUAL(PCL_MAJOR_VERSION, Major), IfPass, IfFail))</div>
+</div><!-- fragment -->
 <p>Tests for Major == PCL_MAJOR_VERSION. </p>
+<p>When PCL VERSION is of format <code>34.99.12</code>, this macro behaves as if it is already <code>35.0.0</code>, and allows for smoother transition for maintainers </p>
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00136">136</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00140">140</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -328,12 +329,16 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;BOOST_PP_IF(BOOST_PP_LESS(PCL_MINOR_VERSION, Minor), IfPass, IfFail)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  BOOST_PP_IF(BOOST_PP_EQUAL(PCL_REVISION_VERSION, 99),                                 \</div>
+<div class="line">    BOOST_PP_IF(BOOST_PP_LESS(BOOST_PP_ADD(PCL_MINOR_VERSION, 1), Minor), IfPass, IfFail),           \</div>
+<div class="line">    BOOST_PP_IF(BOOST_PP_LESS(PCL_MINOR_VERSION, Minor), IfPass, IfFail))</div>
+</div><!-- fragment -->
 <p>Tests for Minor &lt; PCL_MINOR_VERSION. </p>
+<p>When PCL VERSION is of format <code>34.12.99</code>, this macro behaves as if it is already <code>34.13.0</code>, and allows for smoother transition for maintainers </p>
 
 <p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00130">130</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
@@ -355,7 +360,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00118">118</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00116">116</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +380,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00099">99</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00097">97</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +418,7 @@ Functions</h2></td></tr>
 
 <p>A handy way to inform the user of the removal deadline. </p>
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00124">124</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00122">122</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +454,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00231">231</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00223">223</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +484,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00312">312</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00304">304</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +504,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00308">308</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00300">300</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +524,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00304">304</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00296">296</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +540,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00371">371</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00363">363</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +556,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00365">365</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00357">357</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +572,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00198">198</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00204">204</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +588,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00199">199</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00205">205</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -599,7 +604,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00200">200</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00206">206</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -615,7 +620,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00190">190</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00196">196</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -631,7 +636,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00194">194</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00200">200</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +652,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00193">193</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00199">199</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +668,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00192">192</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00198">198</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +684,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00191">191</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00197">197</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -695,7 +700,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00195">195</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00201">201</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +716,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00196">196</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00202">202</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +732,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00197">197</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00203">203</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -743,7 +748,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00202">202</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00208">208</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +764,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00201">201</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00207">207</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +780,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00074">74</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00071">71</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +796,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00338">338</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00330">330</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +846,7 @@ Functions</h2></td></tr>
 <li>PCL 2.0 onwards: compiler error with "major_version_mismatch" </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00150">150</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00156">156</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -894,7 +899,7 @@ Functions</h2></td></tr>
 <li>PCL 2.0 onwards: compiler error with "major_version_mismatch" </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00170">170</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00176">176</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -910,7 +915,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00331">331</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00323">323</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -926,7 +931,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00323">323</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00315">315</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+
+</div>
+</div>
+<a id="aab25e5c84757b717822822c279c88562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab25e5c84757b717822822c279c88562">&#9670;&nbsp;</a></span>PCL_IF_CONSTEXPR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCL_IF_CONSTEXPR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;if (x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00449">449</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -964,7 +989,7 @@ Functions</h2></td></tr>
 
 <p>Macro that maps version information given by major.minor.patch to a linear integer value to enable easy comparison. </p>
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00240">240</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00232">232</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1009,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00261">261</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00253">253</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1029,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00262">262</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00254">254</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1045,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00447">447</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00443">443</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1061,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00108">108</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00106">106</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1081,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00268">268</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00260">260</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1097,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00339">339</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00331">331</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1117,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00346">346</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00338">338</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1137,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00272">272</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00264">264</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1157,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00288">288</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00280">280</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1177,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00296">296</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00288">288</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1197,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00292">292</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00284">284</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1217,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00300">300</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00292">292</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1212,7 +1237,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00280">280</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00272">272</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1257,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00276">276</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00268">268</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1252,7 +1277,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00284">284</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00276">276</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1297,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00235">235</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00227">227</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
@@ -1308,143 +1333,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00316">316</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00308">308</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a274dd8714485eed9c9328973d44ec5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a274dd8714485eed9c9328973d44ec5dc">&#9670;&nbsp;</a></span>aligned_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void aligned_free </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00410">410</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="linemod_8h_source.html#l00113">pcl::EnergyMaps::releaseAll()</a>, and <a class="el" href="linemod_8h_source.html#l00255">pcl::LinearizedMaps::releaseAll()</a>.</p>
-
-</div>
-</div>
-<a id="a35ab808c89b93ae98198fcf7bbe6066c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ab808c89b93ae98198fcf7bbe6066c">&#9670;&nbsp;</a></span>aligned_malloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* aligned_malloc </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00388">388</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="linemod_8h_source.html#l00094">pcl::EnergyMaps::initialize()</a>, and <a class="el" href="linemod_8h_source.html#l00234">pcl::LinearizedMaps::initialize()</a>.</p>
-
-</div>
-</div>
-<a id="a11ca7fb42fa4f199a4417ab65ac05d13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11ca7fb42fa4f199a4417ab65ac05d13">&#9670;&nbsp;</a></span>pcl_isfinite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcl_isfinite </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "use std::isfinite instead of pcl_isfinite" <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00223">223</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
-
-</div>
-</div>
-<a id="a8028afc4f107ef863ca586509e188a9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8028afc4f107ef863ca586509e188a9b">&#9670;&nbsp;</a></span>pcl_isinf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcl_isinf </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "use std::isinf instead of pcl_isinf" <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00227">227</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
-
-</div>
-</div>
-<a id="a8775cadd41b7560c40a57005b9abccc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8775cadd41b7560c40a57005b9abccc9">&#9670;&nbsp;</a></span>pcl_isnan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcl_isnan </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "use std::isnan instead of pcl_isnan" <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00219">219</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
-
-</div>
-</div>
 <a id="ad7575718567d2f6e8665de8e6ef0b63b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7575718567d2f6e8665de8e6ef0b63b">&#9670;&nbsp;</a></span>pcl_round() <span class="overload">[1/2]</span></h2>
 
@@ -1464,7 +1357,7 @@ template&lt;typename T &gt; </div>
 <p>Win32 doesn't seem to have rounding functions. </p>
 <p>Therefore implement our own versions of these functions here. </p>
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00247">247</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00239">239</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="esf_8hpp_source.html#l00052">pcl::ESFEstimation&lt; PointInT, PointOutT &gt;::computeESF()</a>, <a class="el" href="vfh_8hpp_source.html#l00092">pcl::VFHEstimation&lt; PointInT, PointNT, PointOutT &gt;::computePointSPFHSignature()</a>, <a class="el" href="rf__face__utils_8h_source.html#l00159">pcl::face_detection::FeatureHandlerDepthAverage&lt; FT, DataSet, ExampleIndex &gt;::evaluateFeature()</a>, and <a class="el" href="organized__neighbor__search_8h_source.html#l00295">pcl::OrganizedNeighborSearch&lt; PointT &gt;::pointPlaneProjection()</a>.</p>
 
@@ -1486,22 +1379,22 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00252">252</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__macros_8h_source.html#l00244">244</a> of file <a class="el" href="pcl__macros_8h_source.html">pcl_macros.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="apcl__macros_8h_html_af6df62a67b27fb265ddf4612fd22d899"><div class="ttname"><a href="pcl__macros_8h.html#af6df62a67b27fb265ddf4612fd22d899">_PCL_DEPRECATED_HEADER_IMPL</a></div><div class="ttdeci">#define _PCL_DEPRECATED_HEADER_IMPL(Message)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00118">pcl_macros.h:118</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a96ef0dc863516f9bc0a0b212ab778952"><div class="ttname"><a href="pcl__macros_8h.html#a96ef0dc863516f9bc0a0b212ab778952">_PCL_DEPRECATED_IMPL</a></div><div class="ttdeci">#define _PCL_DEPRECATED_IMPL(Message)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00099">pcl_macros.h:99</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a02178296cc05b81651be019241c5116d"><div class="ttname"><a href="pcl__macros_8h.html#a02178296cc05b81651be019241c5116d">_PCL_PREPARE_REMOVAL_MESSAGE</a></div><div class="ttdeci">#define _PCL_PREPARE_REMOVAL_MESSAGE(Major, Minor, Msg)</div><div class="ttdoc">A handy way to inform the user of the removal deadline.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00124">pcl_macros.h:124</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_ab04c63808c6e6aa617363ac0e2d19ae6"><div class="ttname"><a href="pcl__macros_8h.html#ab04c63808c6e6aa617363ac0e2d19ae6">_PCL_COMPAT_MAJOR_VERSION</a></div><div class="ttdeci">#define _PCL_COMPAT_MAJOR_VERSION(Major, IfPass, IfFail)</div><div class="ttdoc">Tests for Major == PCL_MAJOR_VERSION.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00136">pcl_macros.h:136</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_af6df62a67b27fb265ddf4612fd22d899"><div class="ttname"><a href="pcl__macros_8h.html#af6df62a67b27fb265ddf4612fd22d899">_PCL_DEPRECATED_HEADER_IMPL</a></div><div class="ttdeci">#define _PCL_DEPRECATED_HEADER_IMPL(Message)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00116">pcl_macros.h:116</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a96ef0dc863516f9bc0a0b212ab778952"><div class="ttname"><a href="pcl__macros_8h.html#a96ef0dc863516f9bc0a0b212ab778952">_PCL_DEPRECATED_IMPL</a></div><div class="ttdeci">#define _PCL_DEPRECATED_IMPL(Message)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00097">pcl_macros.h:97</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a02178296cc05b81651be019241c5116d"><div class="ttname"><a href="pcl__macros_8h.html#a02178296cc05b81651be019241c5116d">_PCL_PREPARE_REMOVAL_MESSAGE</a></div><div class="ttdeci">#define _PCL_PREPARE_REMOVAL_MESSAGE(Major, Minor, Msg)</div><div class="ttdoc">A handy way to inform the user of the removal deadline.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00122">pcl_macros.h:122</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_ab04c63808c6e6aa617363ac0e2d19ae6"><div class="ttname"><a href="pcl__macros_8h.html#ab04c63808c6e6aa617363ac0e2d19ae6">_PCL_COMPAT_MAJOR_VERSION</a></div><div class="ttdeci">#define _PCL_COMPAT_MAJOR_VERSION(Major, IfPass, IfFail)</div><div class="ttdoc">Tests for Major == PCL_MAJOR_VERSION.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00140">pcl_macros.h:140</a></div></div>
 <div class="ttc" id="apcl__macros_8h_html_a73ce99b3c9dca9b0742439cf93ce1908"><div class="ttname"><a href="pcl__macros_8h.html#a73ce99b3c9dca9b0742439cf93ce1908">_PCL_COMPAT_MINOR_VERSION</a></div><div class="ttdeci">#define _PCL_COMPAT_MINOR_VERSION(Minor, IfPass, IfFail)</div><div class="ttdoc">Tests for Minor &lt; PCL_MINOR_VERSION.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00130">pcl_macros.h:130</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:03</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:02</p>
 </div> <!-- #footer -->
 </body>
 </html>

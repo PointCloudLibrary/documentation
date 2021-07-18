@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -216,9 +216,9 @@ Additional Inherited Members</h2></td></tr>
 class pcl::LeastMedianSquares&lt; PointT &gt;</h3>
 
 <p><b><a class="el" href="classpcl_1_1_least_median_squares.html" title="LeastMedianSquares represents an implementation of the LMedS (Least Median of Squares) algorithm.">LeastMedianSquares</a></b> represents an implementation of the LMedS (Least Median of Squares) algorithm. </p>
-<p>LMedS is a RANSAC-like model-fitting algorithm that can tolerate up to 50% outliers without requiring thresholds to be set. See Andrea Fusiello's "Elements of Geometric Computer Vision" (<a href="http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/FUSIELLO4/tutorial.html#x1-520007">http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/FUSIELLO4/tutorial.html#x1-520007</a>) for more details. </p><dl class="section author"><dt>Author</dt><dd>Radu B. Rusu </dd></dl>
+<p>LMedS is a RANSAC-like model-fitting algorithm that can tolerate up to 50% outliers without requiring thresholds to be set. See Andrea Fusiello's "Elements of Geometric Computer Vision" (<a href="http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/FUSIELLO4/tutorial.html#x1-520007">http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/FUSIELLO4/tutorial.html#x1-520007</a>) for more details. In contrast to RANSAC, LMedS does not divide the points into inliers and outliers when finding the model. Instead, it uses the median of all point-model distances as the measure of how good a model is. A threshold is only needed at the end, when it is determined which points belong to the found model. </p><dl class="section author"><dt>Author</dt><dd>Radu B. Rusu </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00056">56</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00059">59</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa8727aaf38ed0b36f76356d87a35fc6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8727aaf38ed0b36f76356d87a35fc6e">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -234,7 +234,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00062">62</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00065">65</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00061">61</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00064">64</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
 
 </div>
 </div>
@@ -291,9 +291,9 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00075">75</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00078">78</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac_8h_source.html#l00339">pcl::SampleConsensus&lt; PointT &gt;::max_iterations_</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac_8h_source.html#l00341">pcl::SampleConsensus&lt; PointT &gt;::max_iterations_</a>.</p>
 
 </div>
 </div>
@@ -342,9 +342,9 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00086">86</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lmeds_8h_source.html#l00089">89</a> of file <a class="el" href="lmeds_8h_source.html">lmeds.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac_8h_source.html#l00339">pcl::SampleConsensus&lt; PointT &gt;::max_iterations_</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac_8h_source.html#l00341">pcl::SampleConsensus&lt; PointT &gt;::max_iterations_</a>.</p>
 
 </div>
 </div>
@@ -385,9 +385,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus.html#a6bb9db27c2f0226aaa1e0c2af2b3439e">pcl::SampleConsensus&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="lmeds_8hpp_source.html#l00048">48</a> of file <a class="el" href="lmeds_8hpp_source.html">lmeds.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lmeds_8hpp_source.html#l00049">49</a> of file <a class="el" href="lmeds_8hpp_source.html">lmeds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2geometry_8h_source.html#l00060">pcl::geometry::distance()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2common_8h_source.html#l00285">pcl::computeMedian()</a>, and <a class="el" href="common_2include_2pcl_2common_2geometry_8h_source.html#l00060">pcl::geometry::distance()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:11</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:21</p>
 </div> <!-- #footer -->
 </body>
 </html>

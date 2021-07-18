@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PCLPlotter &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>PCLPlotter &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -183,8 +183,6 @@ Please go through the <a class="reference external" href="http://docs.pointcloud
 <span class="cp">#include</span><span class="cpf">&lt;pcl/visualization/pcl_plotter.h&gt;</span><span class="cp"></span>
 <span class="c1">//...</span>
 
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
 <span class="kt">int</span>
 <span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
@@ -192,7 +190,7 @@ Please go through the <a class="reference external" href="http://docs.pointcloud
   <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLPlotter</span> <span class="o">*</span> <span class="n">plotter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PCLPlotter</span> <span class="p">();</span>
 
   <span class="c1">//defining the polynomial function, y = x^2. Index of x^2 is 1, rest is 0</span>
-  <span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">func1</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">func1</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
   <span class="n">func1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
   <span class="c1">//adding the polynomial func1 to the plotter with [-10, 10] as the range in X axis and &quot;y = x^2&quot; as title</span>
@@ -242,9 +240,9 @@ You can change the colorscheme by  <em>setColorScheme ()</em> function. To refle
 <p>Have a look at the <em>addPlotData()</em> functions in the documentation for their detailed signatures. The prototypes pretty much tell about their functionalities. The following subsections contains some of the important input method of the plot.</p>
 <div class="section" id="point-correspondences">
 <h2>Point-Correspondences</h2>
-<p>This the most fundamental way of providing input. Provide the point correspondences, that is (x,y) coordinates, for the plot using a vector&lt;pair&gt; in <em>addPlotData</em></p>
+<p>This the most fundamental way of providing input. Provide the point correspondences, that is (x,y) coordinates, for the plot using a std::vector&lt;std::pair&gt; in <em>addPlotData</em></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">...</span>
-<span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">data</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">data</span><span class="p">;</span>
 <span class="n">populateData</span> <span class="p">(</span><span class="n">data</span><span class="p">);</span>
 <span class="n">plotter</span><span class="o">-&gt;</span><span class="n">addPlotData</span> <span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="s">&quot;cos&quot;</span><span class="p">);</span>
 <span class="p">...</span>
@@ -273,9 +271,9 @@ You can change the colorscheme by  <em>setColorScheme ()</em> function. To refle
 <h2>Polynomial and Rational Functions</h2>
 <p>Polynomial are defined in terms of vector of coefficients and Rational functions are defined in terms of pair of polynomial (pair of numerator and denominator) . See the definition in the documentation. The following snippet plots the function y = 1/x</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">...</span>
-<span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">func1</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">func1</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
 <span class="n">func1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">func2</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">func2</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
 <span class="n">func1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
 <span class="n">plotter</span><span class="o">-&gt;</span><span class="n">addPlotData</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_pair</span> <span class="p">(</span><span class="n">func1</span><span class="p">,</span> <span class="n">func2</span><span class="p">),</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s">&quot;y = 1/x&quot;</span><span class="p">);</span>
@@ -323,7 +321,7 @@ You can change the colorscheme by  <em>setColorScheme ()</em> function. To refle
 <p>PCLPlotter provides a very convenient MATLAB like histogram plotting function (<a class="reference external" href="http://www.mathworks.fr/fr/help/matlab/ref/hist.html">hist()</a> in MATLAB). It takes raw data and bins them according to their frequency and plot them as bar chart.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">...</span>
 
-<span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">freqdata</span> <span class="o">=</span> <span class="n">generateNomalDistData</span> <span class="p">();</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">freqdata</span> <span class="o">=</span> <span class="n">generateNomalDistData</span> <span class="p">();</span>
 
 <span class="n">plotter</span><span class="o">-&gt;</span><span class="n">addHistogramData</span> <span class="p">(</span><span class="n">freqdata</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span> <span class="c1">//number of bins are 10</span>
 
@@ -471,8 +469,7 @@ The following snippet shows the functionality.</p>
 106
 107
 108
-109
-110</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Kripasindhu Sarkar */</span>
+109</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Kripasindhu Sarkar */</span>
 
 <span class="cp">#include</span><span class="cpf">&lt;pcl/visualization/pcl_plotter.h&gt;</span><span class="cp"></span>
 
@@ -481,7 +478,6 @@ The following snippet shows the functionality.</p>
 <span class="cp">#include</span><span class="cpf">&lt;utility&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="cpf">&lt;cmath&gt;  //for std::abs()</span><span class="cp"></span>
 
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="p">;</span>
 
 <span class="kt">void</span>
@@ -514,7 +510,7 @@ The following snippet shows the functionality.</p>
 <span class="c1">//............................................................................</span>
 
 <span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span> <span class="p">[])</span>
+<span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
   <span class="c1">//defining a plotter</span>
   <span class="n">PCLPlotter</span> <span class="o">*</span><span class="n">plotter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PCLPlotter</span> <span class="p">(</span><span class="s">&quot;My Plotter&quot;</span><span class="p">);</span>
@@ -594,7 +590,7 @@ The following snippet shows the functionality.</p>
 5
 6
 7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 <span class="nb">project</span><span class="p">(</span><span class="s">pcl_plotter</span><span class="p">)</span>
 <span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span> <span class="s">1.7</span> <span class="s">REQUIRED</span> <span class="s">COMPONENTS</span> <span class="s">common</span> <span class="s">visualization</span><span class="p">)</span>
 <span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
@@ -614,7 +610,7 @@ $ ./pcl_plotter_demo
 <div class="section" id="video">
 <h2>Video</h2>
 <p>The following video shows the the output of the demo.</p>
-<iframe width="480" height="270" src="http://www.youtube.com/embed/2Xgd67nkwzs" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/2Xgd67nkwzs" frameborder="0" allowfullscreen></iframe></div>
 </div>
 
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fast Point Feature Histograms (FPFH) descriptors &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Fast Point Feature Histograms (FPFH) descriptors &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -295,7 +295,7 @@ points in the input dataset.</p>
   <span class="c1">// Compute the features</span>
   <span class="n">fpfh</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="o">*</span><span class="n">fpfhs</span><span class="p">);</span>
 
-  <span class="c1">// fpfhs-&gt;points.size () should have the same size as the input cloud-&gt;points.size ()*</span>
+  <span class="c1">// fpfhs-&gt;size () should have the same size as the input cloud-&gt;size ()*</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
@@ -323,9 +323,9 @@ points in the input dataset.</p>
 Passing such values to <strong>compute()</strong> will result in undefined output.
 It is advisable to check the normals, at least during the design of the processing chain or when setting the parameters.
 This can be done by inserting the following code before the call to <strong>compute()</strong>:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">normals</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">normals</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pcl</span><span class="o">::</span><span class="n">isFinite</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="p">(</span><span class="n">normals</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pcl</span><span class="o">::</span><span class="n">isFinite</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="p">((</span><span class="o">*</span><span class="n">normals</span><span class="p">)[</span><span class="n">i</span><span class="p">]))</span>
   <span class="p">{</span>
     <span class="n">PCL_WARN</span><span class="p">(</span><span class="s">&quot;normals[%d] is not finite</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
   <span class="p">}</span>

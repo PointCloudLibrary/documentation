@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Grabbing point clouds from Ensenso cameras &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Grabbing point clouds from Ensenso cameras &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -200,6 +200,34 @@ display a point cloud grabbed from an Ensenso device using the <a class="referen
 The capture parameters (exposure, gain etc..) are set to default values.
 If you have performed and stored an extrinsic calibration it will be temporary reset.</p>
 <p>If you are using an Ensenso X device you have to calibrate the device before trying to run the PCL driver. If you don’t you will get an error like this:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Initialising</span> <span class="n">nxLib</span>
+<span class="n">Opening</span> <span class="n">Ensenso</span> <span class="n">stereo</span> <span class="n">camera</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nl">openDevice</span><span class="p">:</span> <span class="n">NxLib</span> <span class="n">error</span> <span class="n">ExecutionFailed</span> <span class="p">(</span><span class="mi">17</span><span class="p">)</span> <span class="n">occurred</span> <span class="k">while</span> <span class="n">accessing</span> <span class="n">item</span> <span class="o">/</span><span class="n">Execute</span><span class="p">.</span>
+
+<span class="p">{</span>
+        <span class="s">&quot;ErrorSymbol&quot;</span><span class="o">:</span> <span class="s">&quot;InvalidCalibrationData&quot;</span><span class="p">,</span>
+        <span class="s">&quot;ErrorText&quot;</span><span class="o">:</span> <span class="s">&quot;Stereo camera calibration data is corrupted or not supported yet by the current software version.&quot;</span><span class="p">,</span>
+        <span class="s">&quot;Execute&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s">&quot;Command&quot;</span><span class="o">:</span> <span class="s">&quot;Open&quot;</span><span class="p">,</span>
+                <span class="s">&quot;Parameters&quot;</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="s">&quot;AllowFirmwareUpload&quot;</span><span class="o">:</span> <span class="n">null</span><span class="p">,</span>
+                        <span class="s">&quot;Cameras&quot;</span><span class="o">:</span> <span class="s">&quot;171197&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;FirmwareUpload&quot;</span><span class="o">:</span> <span class="p">{</span>
+                                <span class="s">&quot;Camera&quot;</span><span class="o">:</span> <span class="n">null</span><span class="p">,</span>
+                                <span class="s">&quot;Projector&quot;</span><span class="o">:</span> <span class="n">null</span>
+                        <span class="p">},</span>
+                        <span class="s">&quot;LoadCalibration&quot;</span><span class="o">:</span> <span class="n">null</span><span class="p">,</span>
+                        <span class="s">&quot;Projector&quot;</span><span class="o">:</span> <span class="n">null</span><span class="p">,</span>
+                        <span class="s">&quot;Threads&quot;</span><span class="o">:</span> <span class="n">null</span>
+                <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="s">&quot;Time&quot;</span><span class="o">:</span> <span class="mi">8902</span><span class="p">,</span>
+        <span class="s">&quot;TimeExecute&quot;</span><span class="o">:</span> <span class="mi">8901</span><span class="p">,</span>
+        <span class="s">&quot;TimeFinalize&quot;</span><span class="o">:</span> <span class="mf">0.03477</span><span class="p">,</span>
+        <span class="s">&quot;TimePrepare&quot;</span><span class="o">:</span> <span class="mf">0.01185</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">ensenso_ptr</span><span class="o">-&gt;</span><span class="n">enumDevices</span> <span class="p">();</span>
 <span class="n">ensenso_ptr</span><span class="o">-&gt;</span><span class="n">openTcpPort</span> <span class="p">();</span>
 <span class="n">ensenso_ptr</span><span class="o">-&gt;</span><span class="n">openDevice</span> <span class="p">();</span>

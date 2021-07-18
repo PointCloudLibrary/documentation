@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -131,10 +131,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abcb66724809b1ee50b791ff39432d770 inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the 3D edge detection (edges from depth discontinuities)  <a href="classpcl_1_1_organized_edge_base.html#abcb66724809b1ee50b791ff39432d770">More...</a><br /></td></tr>
 <tr class="separator:abcb66724809b1ee50b791ff39432d770 inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad325a65b1b1213608dda815a522faf8e inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#ad325a65b1b1213608dda815a522faf8e">setDepthDisconThreshold</a> (const float th)</td></tr>
-<tr class="memdesc:ad325a65b1b1213608dda815a522faf8e inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the tolerance in meters for difference in depth values between neighboring points.  <a href="classpcl_1_1_organized_edge_base.html#ad325a65b1b1213608dda815a522faf8e">More...</a><br /></td></tr>
+<tr class="memdesc:ad325a65b1b1213608dda815a522faf8e inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the tolerance in meters for the relative difference in depth values between neighboring points.  <a href="classpcl_1_1_organized_edge_base.html#ad325a65b1b1213608dda815a522faf8e">More...</a><br /></td></tr>
 <tr class="separator:ad325a65b1b1213608dda815a522faf8e inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1be7d1bedac230c86499f9ebff7ee3a inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#aa1be7d1bedac230c86499f9ebff7ee3a">getDepthDisconThreshold</a> () const</td></tr>
-<tr class="memdesc:aa1be7d1bedac230c86499f9ebff7ee3a inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance in meters for difference in depth values between neighboring points.  <a href="classpcl_1_1_organized_edge_base.html#aa1be7d1bedac230c86499f9ebff7ee3a">More...</a><br /></td></tr>
+<tr class="memdesc:aa1be7d1bedac230c86499f9ebff7ee3a inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tolerance in meters for the relative difference in depth values between neighboring points.  <a href="classpcl_1_1_organized_edge_base.html#aa1be7d1bedac230c86499f9ebff7ee3a">More...</a><br /></td></tr>
 <tr class="separator:aa1be7d1bedac230c86499f9ebff7ee3a inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6089208a7e7aa53757ffe22906d6965 inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#ab6089208a7e7aa53757ffe22906d6965">setMaxSearchNeighbors</a> (const int max_dist)</td></tr>
 <tr class="memdesc:ab6089208a7e7aa53757ffe22906d6965 inherit pub_methods_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the max search distance for deciding occluding and occluded edges.  <a href="classpcl_1_1_organized_edge_base.html#ab6089208a7e7aa53757ffe22906d6965">More...</a><br /></td></tr>
@@ -219,7 +219,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a690b2a8a209970fba5198135ce0909b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classpcl_1_1_organized_edge_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classpcl_1_1_organized_edge_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classpcl_1_1_organized_edge_base.html">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;</a></td></tr>
 <tr class="memitem:a21238690cf73007388b6557a798c5e5c inherit pro_attribs_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#a21238690cf73007388b6557a798c5e5c">th_depth_discon_</a></td></tr>
-<tr class="memdesc:a21238690cf73007388b6557a798c5e5c inherit pro_attribs_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance in meters for difference in depth values between neighboring points (The value is set for 1 meter and is adapted with respect to depth value linearly.  <a href="classpcl_1_1_organized_edge_base.html#a21238690cf73007388b6557a798c5e5c">More...</a><br /></td></tr>
+<tr class="memdesc:a21238690cf73007388b6557a798c5e5c inherit pro_attribs_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tolerance in meters for the relative difference in depth values between neighboring points (The default value is set for .02 meters and is adapted with respect to depth value linearly.  <a href="classpcl_1_1_organized_edge_base.html#a21238690cf73007388b6557a798c5e5c">More...</a><br /></td></tr>
 <tr class="separator:a21238690cf73007388b6557a798c5e5c inherit pro_attribs_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af354fad4b7a870f40800bbb5530ca6c0 inherit pro_attribs_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#af354fad4b7a870f40800bbb5530ca6c0">max_search_neighbors_</a></td></tr>
 <tr class="memdesc:af354fad4b7a870f40800bbb5530ca6c0 inherit pro_attribs_classpcl_1_1_organized_edge_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max search distance for deciding occluding and occluded edges.  <a href="classpcl_1_1_organized_edge_base.html#af354fad4b7a870f40800bbb5530ca6c0">More...</a><br /></td></tr>
@@ -244,16 +244,16 @@ Protected Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classpcl_1_1_organized_edge_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcl_1_1_organized_edge_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcl_1_1_organized_edge_base.html">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;</a></td></tr>
-<tr class="memitem:a6718762ee10a88ca2e4dea46e27e6727 inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="classpcl_1_1_organized_edge_base.html#a6718762ee10a88ca2e4dea46e27e6727addc8dec5cfb98cac3d43c026d38291b2">EDGELABEL_NAN_BOUNDARY</a> =1, 
-<a class="el" href="classpcl_1_1_organized_edge_base.html#a6718762ee10a88ca2e4dea46e27e6727aeffef6e6062d09612caa3bd9cef9c632">EDGELABEL_OCCLUDING</a> =2, 
-<a class="el" href="classpcl_1_1_organized_edge_base.html#a6718762ee10a88ca2e4dea46e27e6727a6aa8fc86822de55d77548f837f5af24d">EDGELABEL_OCCLUDED</a> =4, 
-<a class="el" href="classpcl_1_1_organized_edge_base.html#a6718762ee10a88ca2e4dea46e27e6727aca436590fdf8ceb378c3ff5813d34694">EDGELABEL_HIGH_CURVATURE</a> =8, 
+<tr class="memitem:a11da0a0c71d3326d3aede38decc4a309 inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="classpcl_1_1_organized_edge_base.html#a11da0a0c71d3326d3aede38decc4a309addc8dec5cfb98cac3d43c026d38291b2">EDGELABEL_NAN_BOUNDARY</a> =1, 
+<a class="el" href="classpcl_1_1_organized_edge_base.html#a11da0a0c71d3326d3aede38decc4a309aeffef6e6062d09612caa3bd9cef9c632">EDGELABEL_OCCLUDING</a> =2, 
+<a class="el" href="classpcl_1_1_organized_edge_base.html#a11da0a0c71d3326d3aede38decc4a309a6aa8fc86822de55d77548f837f5af24d">EDGELABEL_OCCLUDED</a> =4, 
+<a class="el" href="classpcl_1_1_organized_edge_base.html#a11da0a0c71d3326d3aede38decc4a309aca436590fdf8ceb378c3ff5813d34694">EDGELABEL_HIGH_CURVATURE</a> =8, 
 <br />
-&#160;&#160;<a class="el" href="classpcl_1_1_organized_edge_base.html#a6718762ee10a88ca2e4dea46e27e6727a599635a92543f1765cfb27352d538ecb">EDGELABEL_RGB_CANNY</a> =16
+&#160;&#160;<a class="el" href="classpcl_1_1_organized_edge_base.html#a11da0a0c71d3326d3aede38decc4a309a599635a92543f1765cfb27352d538ecb">EDGELABEL_RGB_CANNY</a> =16
 <br />
  }</td></tr>
-<tr class="separator:a6718762ee10a88ca2e4dea46e27e6727 inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a11da0a0c71d3326d3aede38decc4a309 inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea9544f216f712dbed2ff8a86e1e72ad inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#aea9544f216f712dbed2ff8a86e1e72ad">Ptr</a> = shared_ptr&lt; <a class="el" href="classpcl_1_1_organized_edge_base.html">OrganizedEdgeBase</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, PointLT &gt; &gt;</td></tr>
 <tr class="separator:aea9544f216f712dbed2ff8a86e1e72ad inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65452b533acd68ef6efe30df3062868 inherit pub_types_classpcl_1_1_organized_edge_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_organized_edge_base.html#ad65452b533acd68ef6efe30df3062868">ConstPtr</a> = shared_ptr&lt; const <a class="el" href="classpcl_1_1_organized_edge_base.html">OrganizedEdgeBase</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, PointLT &gt; &gt;</td></tr>
@@ -278,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
 class pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00268">268</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00269">269</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7406db1b72c7d4ba7616eb02fa7ef0a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7406db1b72c7d4ba7616eb02fa7ef0a0">&#9670;&nbsp;</a></span>OrganizedEdgeFromNormals()</h2>
@@ -307,9 +307,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Constructor for <a class="el" href="classpcl_1_1_organized_edge_from_normals.html">OrganizedEdgeFromNormals</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00294">294</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00295">295</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00138">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_HIGH_CURVATURE</a>, <a class="el" href="organized__edge__detection_8h_source.html#l00138">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_NAN_BOUNDARY</a>, <a class="el" href="organized__edge__detection_8h_source.html#l00138">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_OCCLUDED</a>, <a class="el" href="organized__edge__detection_8h_source.html#l00138">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_OCCLUDING</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00126">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::setEdgeType()</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00140">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_HIGH_CURVATURE</a>, <a class="el" href="organized__edge__detection_8h_source.html#l00140">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_NAN_BOUNDARY</a>, <a class="el" href="organized__edge__detection_8h_source.html#l00140">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_OCCLUDED</a>, <a class="el" href="organized__edge__detection_8h_source.html#l00140">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::EDGELABEL_OCCLUDING</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00128">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;::setEdgeType()</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Destructor for <a class="el" href="classpcl_1_1_organized_edge_from_normals.html">OrganizedEdgeFromNormals</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00305">305</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00306">306</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
 </div>
 </div>
@@ -382,9 +382,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8hpp_source.html#l00275">275</a> of file <a class="el" href="organized__edge__detection_8hpp_source.html">organized_edge_detection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8hpp_source.html#l00274">274</a> of file <a class="el" href="organized__edge__detection_8hpp_source.html">organized_edge_detection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="point__types_8hpp_source.html#l00517">pcl::Label::label</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="point__types_8hpp_source.html#l00563">pcl::Label::label</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -422,9 +422,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8hpp_source.html#l00291">291</a> of file <a class="el" href="organized__edge__detection_8hpp_source.html">organized_edge_detection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8hpp_source.html#l00290">290</a> of file <a class="el" href="organized__edge__detection_8hpp_source.html">organized_edge_detection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="edge_8hpp_source.html#l00376">pcl::Edge&lt; PointInT, PointOutT &gt;::canny()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="edge_8h_source.html#l00155">pcl::Edge&lt; PointInT, PointOutT &gt;::setHysteresisThresholdHigh()</a>, <a class="el" href="edge_8h_source.html#l00149">pcl::Edge&lt; PointInT, PointOutT &gt;::setHysteresisThresholdLow()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="edge_8hpp_source.html#l00376">pcl::Edge&lt; PointInT, PointOutT &gt;::canny()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="edge_8h_source.html#l00155">pcl::Edge&lt; PointInT, PointOutT &gt;::setHysteresisThresholdHigh()</a>, <a class="el" href="edge_8h_source.html#l00149">pcl::Edge&lt; PointInT, PointOutT &gt;::setHysteresisThresholdLow()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -455,9 +455,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Get the high threshold value for high curvature Canny edge detection. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00355">355</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00356">356</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00374">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_high_</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00375">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_high_</a>.</p>
 
 </div>
 </div>
@@ -488,9 +488,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Get the low threshold value for high curvature Canny edge detection. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00341">341</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00342">342</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00371">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_low_</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00372">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_low_</a>.</p>
 
 </div>
 </div>
@@ -521,9 +521,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Get the input normals. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00327">327</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00328">328</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00368">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::normals_</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00369">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::normals_</a>.</p>
 
 </div>
 </div>
@@ -555,9 +555,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Set the high threshold value for high curvature Canny edge detection. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00348">348</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00349">349</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00374">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_high_</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00375">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_high_</a>.</p>
 
 </div>
 </div>
@@ -589,9 +589,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>Set the low threshold value for high curvature Canny edge detection. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00334">334</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00335">335</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00371">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_low_</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00372">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::th_hc_canny_low_</a>.</p>
 
 </div>
 </div>
@@ -629,9 +629,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00320">320</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00321">321</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00368">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::normals_</a>.</p>
+<p class="reference">References <a class="el" href="organized__edge__detection_8h_source.html#l00369">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::normals_</a>.</p>
 
 </div>
 </div>
@@ -660,9 +660,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>A pointer to the input normals. </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00368">368</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00369">369</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="organized__edge__detection_8h_source.html#l00327">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::getInputNormals()</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00320">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::setInputNormals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="organized__edge__detection_8h_source.html#l00328">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::getInputNormals()</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00321">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::setInputNormals()</a>.</p>
 
 </div>
 </div>
@@ -690,9 +690,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>The high threshold value for high curvature Canny edge detection (default: 1.1) </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00374">374</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00375">375</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="organized__edge__detection_8h_source.html#l00355">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::getHCCannyHighThreshold()</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00348">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::setHCCannyHighThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="organized__edge__detection_8h_source.html#l00356">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::getHCCannyHighThreshold()</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00349">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::setHCCannyHighThreshold()</a>.</p>
 
 </div>
 </div>
@@ -720,9 +720,9 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 
 <p>The low threshold value for high curvature Canny edge detection (default: 0.4) </p>
 
-<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00371">371</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="organized__edge__detection_8h_source.html#l00372">372</a> of file <a class="el" href="organized__edge__detection_8h_source.html">organized_edge_detection.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="organized__edge__detection_8h_source.html#l00341">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::getHCCannyLowThreshold()</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00334">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::setHCCannyLowThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="organized__edge__detection_8h_source.html#l00342">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::getHCCannyLowThreshold()</a>, and <a class="el" href="organized__edge__detection_8h_source.html#l00335">pcl::OrganizedEdgeFromNormals&lt; PointT, PointNT, PointLT &gt;::setHCCannyLowThreshold()</a>.</p>
 
 </div>
 </div>
@@ -736,7 +736,7 @@ template&lt;typename PointT , typename PointNT , typename PointLT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:26</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:36</p>
 </div> <!-- #footer -->
 </body>
 </html>

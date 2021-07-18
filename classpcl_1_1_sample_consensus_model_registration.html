@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -207,6 +207,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#acd821e0e4699a143f48f728e597842fb">getRadiusLimits</a> (double &amp;min_radius, double &amp;max_radius) const</td></tr>
 <tr class="memdesc:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum and maximum allowable radius limits for the model as set by the user.  <a href="classpcl_1_1_sample_consensus_model.html#acd821e0e4699a143f48f728e597842fb">More...</a><br /></td></tr>
 <tr class="separator:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a6e225e7e1e57af8191a4b6ecb20026ca">setModelConstraints</a> (std::function&lt; bool(const Eigen::VectorXf &amp;)&gt; function)</td></tr>
+<tr class="memdesc:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to impose any kind of constraint on the model, e.g.  <a href="classpcl_1_1_sample_consensus_model.html#a6e225e7e1e57af8191a4b6ecb20026ca">More...</a><br /></td></tr>
+<tr class="separator:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#af9eea9dd0e12e1de8671ac542400d3f1">setSamplesMaxDist</a> (const double &amp;radius, <a class="el" href="classpcl_1_1_sample_consensus_model.html#acda5c0c04feaaab330cac68377cbd9d4">SearchPtr</a> search)</td></tr>
 <tr class="memdesc:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum distance allowed when drawing random samples.  <a href="classpcl_1_1_sample_consensus_model.html#af9eea9dd0e12e1de8671ac542400d3f1">More...</a><br /></td></tr>
 <tr class="separator:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,9 +265,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a2f412c2d5f33d210337fdd5e189838e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#ab11731b62628e35f6adc312d1cdaf372">IndicesPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_registration.html#a2f412c2d5f33d210337fdd5e189838e1">indices_tgt_</a></td></tr>
 <tr class="memdesc:a2f412c2d5f33d210337fdd5e189838e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the vector of target point indices to use.  <a href="classpcl_1_1_sample_consensus_model_registration.html#a2f412c2d5f33d210337fdd5e189838e1">More...</a><br /></td></tr>
 <tr class="separator:a2f412c2d5f33d210337fdd5e189838e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc82c76d1880b0cfefbe9ae71e1d95f7"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_registration.html#afc82c76d1880b0cfefbe9ae71e1d95f7">correspondences_</a></td></tr>
-<tr class="memdesc:afc82c76d1880b0cfefbe9ae71e1d95f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the index in the original point cloud, give the matching original index in the target cloud.  <a href="classpcl_1_1_sample_consensus_model_registration.html#afc82c76d1880b0cfefbe9ae71e1d95f7">More...</a><br /></td></tr>
-<tr class="separator:afc82c76d1880b0cfefbe9ae71e1d95f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d75fdc4a88c7e75a04bb3c86ecb1447"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a>, <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_registration.html#a0d75fdc4a88c7e75a04bb3c86ecb1447">correspondences_</a></td></tr>
+<tr class="memdesc:a0d75fdc4a88c7e75a04bb3c86ecb1447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the index in the original point cloud, give the matching original index in the target cloud.  <a href="classpcl_1_1_sample_consensus_model_registration.html#a0d75fdc4a88c7e75a04bb3c86ecb1447">More...</a><br /></td></tr>
+<tr class="separator:a0d75fdc4a88c7e75a04bb3c86ecb1447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab103a0344b6dbb2e67af3fa4e7bbfd1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_registration.html#aab103a0344b6dbb2e67af3fa4e7bbfd1">sample_dist_thresh_</a></td></tr>
 <tr class="memdesc:aab103a0344b6dbb2e67af3fa4e7bbfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal distance threshold used for the sample selection step.  <a href="classpcl_1_1_sample_consensus_model_registration.html#aab103a0344b6dbb2e67af3fa4e7bbfd1">More...</a><br /></td></tr>
 <tr class="separator:aab103a0344b6dbb2e67af3fa4e7bbfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,6 +313,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#ab7f51bf1c63fcfb05694d0f19c2f7dc3">model_size_</a></td></tr>
 <tr class="memdesc:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of coefficients in the model.  <a href="classpcl_1_1_sample_consensus_model.html#ab7f51bf1c63fcfb05694d0f19c2f7dc3">More...</a><br /></td></tr>
 <tr class="separator:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const Eigen::VectorXf &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">custom_model_constraints_</a></td></tr>
+<tr class="memdesc:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user defined function that takes model coefficients and returns whether the model is acceptable or not.  <a href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">More...</a><br /></td></tr>
+<tr class="separator:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -465,7 +471,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00080">80</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00525">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00566">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00563">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00119">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputCloud()</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00550">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00591">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00588">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00119">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputCloud()</a>.</p>
 
 </div>
 </div>
@@ -523,7 +529,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00098">98</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00308">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00236">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeSampleDistanceThreshold()</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00525">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00566">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00563">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>.</p>
+<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00305">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00233">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeSampleDistanceThreshold()</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00550">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00591">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00588">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>.</p>
 
 </div>
 </div>
@@ -606,7 +612,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a1eba45e7f98e29baf90d3e30bdab31af">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00071">71</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00069">69</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 </div>
 </div>
@@ -637,9 +643,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Compute mappings between original indices of the input_/target_ clouds. </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00308">308</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00305">305</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00323">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::correspondences_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00531">pcl::SampleConsensusModel&lt; PointT &gt;::indices_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00320">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::indices_tgt_</a>.</p>
+<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00340">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::correspondences_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00556">pcl::SampleConsensusModel&lt; PointT &gt;::indices_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00337">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::indices_tgt_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00098">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::SampleConsensusModelRegistration()</a>, <a class="el" href="sac__model__registration__2d_8h_source.html#l00094">pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;::SampleConsensusModelRegistration2D()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00119">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputCloud()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00130">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputTarget()</a>.</p>
 
@@ -679,9 +685,9 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00236">236</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00233">233</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="centroid_8hpp_source.html#l00485">pcl::computeMeanAndCovarianceMatrix()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2eigen_8hpp_source.html#l00296">pcl::eigen33()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00326">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::sample_dist_thresh_</a>.</p>
+<p class="reference">References <a class="el" href="centroid_8hpp_source.html#l00485">pcl::computeMeanAndCovarianceMatrix()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2eigen_8hpp_source.html#l00296">pcl::eigen33()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00343">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::sample_dist_thresh_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00098">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::SampleConsensusModelRegistration()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00119">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputCloud()</a>.</p>
 
@@ -732,9 +738,9 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00265">265</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00262">262</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="centroid_8hpp_source.html#l00485">pcl::computeMeanAndCovarianceMatrix()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2eigen_8hpp_source.html#l00296">pcl::eigen33()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00326">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::sample_dist_thresh_</a>.</p>
+<p class="reference">References <a class="el" href="centroid_8hpp_source.html#l00485">pcl::computeMeanAndCovarianceMatrix()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2eigen_8hpp_source.html#l00296">pcl::eigen33()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00343">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::sample_dist_thresh_</a>.</p>
 
 </div>
 </div>
@@ -788,7 +794,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classpcl_1_1_sample_consensus_model_registration2_d.html#a9cfd642eb8276655096c5cac43e8fc95">pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00199">199</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00204">204</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 </div>
 </div>
@@ -847,7 +853,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a8d57de9d1ea374251b826ef0b47e2c84">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00209">209</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00206">206</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
 </div>
 </div>
@@ -918,7 +924,7 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <p>This method is an implementation of: Horn, B. “Closed-Form Solution of Absolute Orientation Using Unit Quaternions,” JOSA A, Vol. 4, No. 4, 1987 </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00276">276</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00289">289</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2eigen_8hpp_source.html#l00660">pcl::umeyama()</a>.</p>
 
@@ -973,7 +979,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classpcl_1_1_sample_consensus_model_registration2_d.html#adc4d46f9e92bd3b715c09c34db2eb722">pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00096">96</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00101">101</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1012,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a2c2824f82edf6564ba8a0160526992f0">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00218">218</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00215">215</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
 <p class="reference">References <a class="el" href="model__types_8h_source.html#l00060">pcl::SACMODEL_REGISTRATION</a>.</p>
 
@@ -1050,7 +1056,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classpcl_1_1_sample_consensus_model_registration2_d.html#ad32fb4f84868285978b49ffcda028de0">pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00050">50</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00048">48</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1114,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a43c57e5a4def4d0edb94dcce0ccf1e1a">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00247">247</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00252">252</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1179,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a6de98b810dc0969940daa7cc564e6f26">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00202">202</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00199">199</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1239,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classpcl_1_1_sample_consensus_model_registration2_d.html#a05ff6251f38f3dd5ab84efbda15ce3ef">pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00142">142</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8hpp_source.html#l00147">147</a> of file <a class="el" href="sac__model__registration_8hpp_source.html">sac_model_registration.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="common_2include_2pcl_2common_2geometry_8h_source.html#l00060">pcl::geometry::distance()</a>.</p>
 
@@ -1275,7 +1281,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00119">119</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00308">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00236">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeSampleDistanceThreshold()</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00295">pcl::SampleConsensusModel&lt; PointT &gt;::setInputCloud()</a>.</p>
+<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00305">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00233">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeSampleDistanceThreshold()</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00300">pcl::SampleConsensusModel&lt; PointT &gt;::setInputCloud()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00080">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::SampleConsensusModelRegistration()</a>, and <a class="el" href="sac__model__registration__2d_8h_source.html#l00077">pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;::SampleConsensusModelRegistration2D()</a>.</p>
 
@@ -1317,9 +1323,9 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00130">130</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00308">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00320">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::indices_tgt_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00317">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::target_</a>.</p>
+<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00305">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00337">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::indices_tgt_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00334">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::target_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="correspondence__rejection__sample__consensus__2d_8hpp_source.html#l00055">pcl::registration::CorrespondenceRejectorSampleConsensus2D&lt; PointT &gt;::getRemainingCorrespondences()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="correspondence__rejection__sample__consensus__2d_8hpp_source.html#l00053">pcl::registration::CorrespondenceRejectorSampleConsensus2D&lt; PointT &gt;::getRemainingCorrespondences()</a>.</p>
 
 </div>
 </div>
@@ -1368,15 +1374,15 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00148">148</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00145">145</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00308">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00320">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::indices_tgt_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00317">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::target_</a>.</p>
+<p class="reference">References <a class="el" href="sac__model__registration_8h_source.html#l00305">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, <a class="el" href="sac__model__registration_8h_source.html#l00337">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::indices_tgt_</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00334">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::target_</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afc82c76d1880b0cfefbe9ae71e1d95f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc82c76d1880b0cfefbe9ae71e1d95f7">&#9670;&nbsp;</a></span>correspondences_</h2>
+<a id="a0d75fdc4a88c7e75a04bb3c86ecb1447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d75fdc4a88c7e75a04bb3c86ecb1447">&#9670;&nbsp;</a></span>correspondences_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1387,7 +1393,7 @@ template&lt;typename PointT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;int, int&gt; <a class="el" href="classpcl_1_1_sample_consensus_model_registration.html">pcl::SampleConsensusModelRegistration</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::correspondences_</td>
+          <td class="memname">std::map&lt;<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a>, <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a>&gt; <a class="el" href="classpcl_1_1_sample_consensus_model_registration.html">pcl::SampleConsensusModelRegistration</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::correspondences_</td>
         </tr>
       </table>
   </td>
@@ -1399,9 +1405,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Given the index in the original point cloud, give the matching original index in the target cloud. </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00323">323</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00340">340</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00308">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00305">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>.</p>
 
 </div>
 </div>
@@ -1429,9 +1435,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>A pointer to the vector of target point indices to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00320">320</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00337">337</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00308">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00130">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputTarget()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00305">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeOriginalIndexMapping()</a>, and <a class="el" href="sac__model__registration_8h_source.html#l00130">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputTarget()</a>.</p>
 
 </div>
 </div>
@@ -1459,9 +1465,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Internal distance threshold used for the sample selection step. </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00326">326</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00343">343</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00236">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeSampleDistanceThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00233">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::computeSampleDistanceThreshold()</a>.</p>
 
 </div>
 </div>
@@ -1489,7 +1495,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>A boost shared pointer to the target point cloud data array. </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00317">317</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__registration_8h_source.html#l00334">334</a> of file <a class="el" href="sac__model__registration_8h_source.html">sac_model_registration.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sac__model__registration_8h_source.html#l00130">pcl::SampleConsensusModelRegistration&lt; PointT &gt;::setInputTarget()</a>.</p>
 
@@ -1505,7 +1511,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:54</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

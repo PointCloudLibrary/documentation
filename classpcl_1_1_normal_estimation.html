@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -124,10 +124,10 @@ Public Types</h2></td></tr>
 <tr class="separator:a9fd0bb565f9d1dabfaf6842c74a0c8ba inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecdcec3b14e094e6076d20963ba723b inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a1ecdcec3b14e094e6076d20963ba723b">PointCloudOut</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointOutT &gt;</td></tr>
 <tr class="separator:a1ecdcec3b14e094e6076d20963ba723b inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277f33db3bd30d6455aadfae1d4ba66d inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a277f33db3bd30d6455aadfae1d4ba66d">SearchMethod</a> = std::function&lt; int(std::size_t, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a277f33db3bd30d6455aadfae1d4ba66d inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e00597c5f775755842869f59635c6b inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a> = std::function&lt; int(const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a61e00597c5f775755842869f59635c6b inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb7fb6afc2e34edf85875f8b526369b inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a2eb7fb6afc2e34edf85875f8b526369b">SearchMethod</a> = std::function&lt; int(std::size_t, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a2eb7fb6afc2e34edf85875f8b526369b inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f4449c9ad6054e934904d3076e229e inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a> = std::function&lt; int(const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a94f4449c9ad6054e934904d3076e229e inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classpcl_1_1_p_c_l_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcl_1_1_p_c_l_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointInT &gt;</a></td></tr>
 <tr class="memitem:a69de4001826d45c280087187322d779d inherit pub_types_classpcl_1_1_p_c_l_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt;</td></tr>
 <tr class="separator:a69de4001826d45c280087187322d779d inherit pub_types_classpcl_1_1_p_c_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,12 +148,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aafe4df19413ef86752d9a70df532cf7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_normal_estimation.html#aafe4df19413ef86752d9a70df532cf7c">~NormalEstimation</a> ()</td></tr>
 <tr class="memdesc:aafe4df19413ef86752d9a70df532cf7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty destructor.  <a href="classpcl_1_1_normal_estimation.html#aafe4df19413ef86752d9a70df532cf7c">More...</a><br /></td></tr>
 <tr class="separator:aafe4df19413ef86752d9a70df532cf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd83b3241b46704f1ffc424dee2aa031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_normal_estimation.html#abd83b3241b46704f1ffc424dee2aa031">computePointNormal</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt; &amp;cloud, const std::vector&lt; int &gt; &amp;indices, Eigen::Vector4f &amp;plane_parameters, float &amp;curvature)</td></tr>
-<tr class="memdesc:abd83b3241b46704f1ffc424dee2aa031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Least-Squares plane fit for a given set of points, using their indices, and return the estimated plane parameters together with the surface curvature.  <a href="classpcl_1_1_normal_estimation.html#abd83b3241b46704f1ffc424dee2aa031">More...</a><br /></td></tr>
-<tr class="separator:abd83b3241b46704f1ffc424dee2aa031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819fe2980b5e532780209b75f17d02ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_normal_estimation.html#a819fe2980b5e532780209b75f17d02ff">computePointNormal</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt; &amp;cloud, const std::vector&lt; int &gt; &amp;indices, float &amp;nx, float &amp;ny, float &amp;nz, float &amp;curvature)</td></tr>
-<tr class="memdesc:a819fe2980b5e532780209b75f17d02ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Least-Squares plane fit for a given set of points, using their indices, and return the estimated plane parameters together with the surface curvature.  <a href="classpcl_1_1_normal_estimation.html#a819fe2980b5e532780209b75f17d02ff">More...</a><br /></td></tr>
-<tr class="separator:a819fe2980b5e532780209b75f17d02ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b73d67bfdb2d70e09d8b2cd4749f45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_normal_estimation.html#a81b73d67bfdb2d70e09d8b2cd4749f45">computePointNormal</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt; &amp;cloud, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, Eigen::Vector4f &amp;plane_parameters, float &amp;curvature)</td></tr>
+<tr class="memdesc:a81b73d67bfdb2d70e09d8b2cd4749f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Least-Squares plane fit for a given set of points, using their indices, and return the estimated plane parameters together with the surface curvature.  <a href="classpcl_1_1_normal_estimation.html#a81b73d67bfdb2d70e09d8b2cd4749f45">More...</a><br /></td></tr>
+<tr class="separator:a81b73d67bfdb2d70e09d8b2cd4749f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a301fbecaa04fd52b1a42824055dfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_normal_estimation.html#ab3a301fbecaa04fd52b1a42824055dfc">computePointNormal</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt; &amp;cloud, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, float &amp;nx, float &amp;ny, float &amp;nz, float &amp;curvature)</td></tr>
+<tr class="memdesc:ab3a301fbecaa04fd52b1a42824055dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Least-Squares plane fit for a given set of points, using their indices, and return the estimated plane parameters together with the surface curvature.  <a href="classpcl_1_1_normal_estimation.html#ab3a301fbecaa04fd52b1a42824055dfc">More...</a><br /></td></tr>
+<tr class="separator:ab3a301fbecaa04fd52b1a42824055dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff25e25bac3a8f682149025e293a919d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_normal_estimation.html#aff25e25bac3a8f682149025e293a919d">setInputCloud</a> (const <a class="el" href="classpcl_1_1_normal_estimation.html#ad5daeb93bc4bbb0bf208c3def127c3f0">PointCloudConstPtr</a> &amp;cloud) override</td></tr>
 <tr class="memdesc:aff25e25bac3a8f682149025e293a919d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a pointer to the input dataset.  <a href="classpcl_1_1_normal_estimation.html#aff25e25bac3a8f682149025e293a919d">More...</a><br /></td></tr>
 <tr class="separator:aff25e25bac3a8f682149025e293a919d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,12 +256,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab235b6b76033922b19aae91714d7e413 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ab235b6b76033922b19aae91714d7e413">deinitCompute</a> ()</td></tr>
 <tr class="memdesc:ab235b6b76033922b19aae91714d7e413 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called after ending the actual computation.  <a href="classpcl_1_1_feature.html#ab235b6b76033922b19aae91714d7e413">More...</a><br /></td></tr>
 <tr class="separator:ab235b6b76033922b19aae91714d7e413 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de023a1a95aead61403dfdf3e8eac22 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a7de023a1a95aead61403dfdf3e8eac22">searchForNeighbors</a> (std::size_t index, double parameter, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
-<tr class="memdesc:a7de023a1a95aead61403dfdf3e8eac22 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a7de023a1a95aead61403dfdf3e8eac22">More...</a><br /></td></tr>
-<tr class="separator:a7de023a1a95aead61403dfdf3e8eac22 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a666e3643281a3e05698ae6d588429d83 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a666e3643281a3e05698ae6d588429d83">searchForNeighbors</a> (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double parameter, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
-<tr class="memdesc:a666e3643281a3e05698ae6d588429d83 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a666e3643281a3e05698ae6d588429d83">More...</a><br /></td></tr>
-<tr class="separator:a666e3643281a3e05698ae6d588429d83 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ad44afa45c694b438e2e72e8772ed4 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a13ad44afa45c694b438e2e72e8772ed4">searchForNeighbors</a> (std::size_t index, double parameter, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
+<tr class="memdesc:a13ad44afa45c694b438e2e72e8772ed4 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a13ad44afa45c694b438e2e72e8772ed4">More...</a><br /></td></tr>
+<tr class="separator:a13ad44afa45c694b438e2e72e8772ed4 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1af533a19f7ecc520ad738d8020edd5 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ab1af533a19f7ecc520ad738d8020edd5">searchForNeighbors</a> (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double parameter, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
+<tr class="memdesc:ab1af533a19f7ecc520ad738d8020edd5 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#ab1af533a19f7ecc520ad738d8020edd5">More...</a><br /></td></tr>
+<tr class="separator:ab1af533a19f7ecc520ad738d8020edd5 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_p_c_l_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_p_c_l_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointInT &gt;</a></td></tr>
 <tr class="memitem:acceb20854934f4cf77e266eb5a44d4f0 inherit pro_methods_classpcl_1_1_p_c_l_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_p_c_l_base.html#acceb20854934f4cf77e266eb5a44d4f0">initCompute</a> ()</td></tr>
 <tr class="memdesc:acceb20854934f4cf77e266eb5a44d4f0 inherit pro_methods_classpcl_1_1_p_c_l_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called before starting the actual computation.  <a href="classpcl_1_1_p_c_l_base.html#acceb20854934f4cf77e266eb5a44d4f0">More...</a><br /></td></tr>
@@ -292,7 +292,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a54032b79551164878ff59ed93b5c1dc5 inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">feature_name_</a></td></tr>
 <tr class="memdesc:a54032b79551164878ff59ed93b5c1dc5 inherit pro_attribs_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">The feature name.  <a href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">More...</a><br /></td></tr>
 <tr class="separator:a54032b79551164878ff59ed93b5c1dc5 inherit pro_attribs_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">search_method_surface_</a></td></tr>
+<tr class="memitem:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">search_method_surface_</a></td></tr>
 <tr class="memdesc:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">The search method template for points.  <a href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">More...</a><br /></td></tr>
 <tr class="separator:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f8c497ac78cf49d9274c3ab5fe52df inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a9fd0bb565f9d1dabfaf6842c74a0c8ba">PointCloudInConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a98f8c497ac78cf49d9274c3ab5fe52df">surface_</a></td></tr>
@@ -515,8 +515,8 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 </div>
 </div>
-<a id="abd83b3241b46704f1ffc424dee2aa031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd83b3241b46704f1ffc424dee2aa031">&#9670;&nbsp;</a></span>computePointNormal() <span class="overload">[1/2]</span></h2>
+<a id="a81b73d67bfdb2d70e09d8b2cd4749f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b73d67bfdb2d70e09d8b2cd4749f45">&#9670;&nbsp;</a></span>computePointNormal() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,7 +535,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -581,8 +581,8 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 </div>
 </div>
-<a id="a819fe2980b5e532780209b75f17d02ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819fe2980b5e532780209b75f17d02ff">&#9670;&nbsp;</a></span>computePointNormal() <span class="overload">[2/2]</span></h2>
+<a id="ab3a301fbecaa04fd52b1a42824055dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a301fbecaa04fd52b1a42824055dfc">&#9670;&nbsp;</a></span>computePointNormal() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +601,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -754,7 +754,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="features_2include_2pcl_2features_2normal__3d_8h_source.html#l00332">332</a> of file <a class="el" href="features_2include_2pcl_2features_2normal__3d_8h_source.html">normal_3d.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="unary__classifier_8hpp_source.html#l00206">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, <a class="el" href="hough__3d_8hpp_source.html#l00054">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, <a class="el" href="harris__6d_8hpp_source.html#l00143">pcl::HarrisKeypoint6D&lt; PointInT, PointOutT, NormalT &gt;::detectKeypoints()</a>, <a class="el" href="features_2test_2data__source_8hpp_source.html#l00110">pcl::gpu::DataSource::estimateNormals()</a>, <a class="el" href="harris__3d_8hpp_source.html#l00195">pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="susan_8hpp_source.html#l00215">pcl::SUSANKeypoint&lt; PointInT, PointOutT, NormalT, IntensityT &gt;::initCompute()</a>, and <a class="el" href="iss__3d_8hpp_source.html#l00200">pcl::ISSKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="unary__classifier_8hpp_source.html#l00205">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, <a class="el" href="hough__3d_8hpp_source.html#l00055">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, <a class="el" href="harris__6d_8hpp_source.html#l00142">pcl::HarrisKeypoint6D&lt; PointInT, PointOutT, NormalT &gt;::detectKeypoints()</a>, <a class="el" href="data__source_8hpp_source.html#l00107">pcl::gpu::DataSource::estimateNormals()</a>, <a class="el" href="harris__3d_8hpp_source.html#l00192">pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="susan_8hpp_source.html#l00216">pcl::SUSANKeypoint&lt; PointInT, PointOutT, NormalT, IntensityT &gt;::initCompute()</a>, and <a class="el" href="iss__3d_8hpp_source.html#l00201">pcl::ISSKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1034,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:21</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:31</p>
 </div> <!-- #footer -->
 </body>
 </html>

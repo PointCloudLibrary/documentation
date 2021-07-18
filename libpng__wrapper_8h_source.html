@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="common_2include_2pcl_2common_2common_8h.html">pcl/common/common.h</a>&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;pcl/common/io.h&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span> <span class="comment">// uint8_t, uint16_t</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;pcl/pcl_exports.h&gt;</span> <span class="comment">// for PCL_EXPORTS</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
@@ -209,17 +209,16 @@ $(function() {
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="acommon_2include_2pcl_2common_2common_8h_html"><div class="ttname"><a href="common_2include_2pcl_2common_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="agroup__io_html_ga8e51d7d9ba50f7aa99a20d3885432424"><div class="ttname"><a href="group__io.html#ga8e51d7d9ba50f7aa99a20d3885432424">pcl::io::encodeRGBImageToPNG</a></div><div class="ttdeci">PCL_EXPORTS void encodeRGBImageToPNG(std::vector&lt; std::uint8_t &gt; &amp;image_arg, std::size_t width_arg, std::size_t height_arg, std::vector&lt; std::uint8_t &gt; &amp;pngData_arg, int png_level_arg=-1)</div><div class="ttdoc">Encodes 8-bit RGB image to PNG format.</div></div>
 <div class="ttc" id="agroup__io_html_ga5edc4fa49cee81e2602e78c84d6441f7"><div class="ttname"><a href="group__io.html#ga5edc4fa49cee81e2602e78c84d6441f7">pcl::io::decodePNGToImage</a></div><div class="ttdeci">PCL_EXPORTS void decodePNGToImage(std::vector&lt; std::uint8_t &gt; &amp;pngData_arg, std::vector&lt; std::uint8_t &gt; &amp;imageData_arg, std::size_t &amp;width_arg, std::size_t &amp;heigh_argt, unsigned int &amp;channels_arg)</div><div class="ttdoc">Decode compressed PNG to 8-bit image.</div></div>
 <div class="ttc" id="agroup__io_html_gad5813526bed165852e90417c75365851"><div class="ttname"><a href="group__io.html#gad5813526bed165852e90417c75365851">pcl::io::encodeMonoImageToPNG</a></div><div class="ttdeci">PCL_EXPORTS void encodeMonoImageToPNG(std::vector&lt; std::uint8_t &gt; &amp;image_arg, std::size_t width_arg, std::size_t height_arg, std::vector&lt; std::uint8_t &gt; &amp;pngData_arg, int png_level_arg=-1)</div><div class="ttdoc">Encodes 8-bit mono image to PNG format.</div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:35</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:32</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Point Cloud Compression &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Point Cloud Compression &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -362,7 +362,7 @@ In the presented example, we capture point clouds with the OpenNIGrabber to be c
 <span class="p">};</span>
 
 <span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
   <span class="n">SimpleOpenNIViewer</span> <span class="n">v</span><span class="p">;</span>
   <span class="n">v</span><span class="p">.</span><span class="n">run</span> <span class="p">();</span>
@@ -376,7 +376,7 @@ In the presented example, we capture point clouds with the OpenNIGrabber to be c
 <h1>The explanation</h1>
 <p>Now, let’s discuss the code in detail. Let’s start at the main() function: First we create a new SimpleOpenNIViewer instance and call its run() method.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
   <span class="n">SimpleOpenNIViewer</span> <span class="n">v</span><span class="p">;</span>
   <span class="n">v</span><span class="p">.</span><span class="n">run</span> <span class="p">();</span>
@@ -465,7 +465,7 @@ decompression step, which decodes the compressed binary data into a new point cl
  9
 10
 11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">point_cloud_compression</span><span class="p">)</span>
 

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -141,7 +141,7 @@ $(function() {
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classpcl_1_1_approximate_progressive_morphological_filter.html#a64d34973694bdb38b70708caee0909a5">   72</a></span>&#160;<a class="code" href="classpcl_1_1_approximate_progressive_morphological_filter.html#a64d34973694bdb38b70708caee0909a5">pcl::ApproximateProgressiveMorphologicalFilter&lt;PointT&gt;::extract</a> (std::vector&lt;int&gt;&amp; ground)</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classpcl_1_1_approximate_progressive_morphological_filter.html#a0dbd0e6a3d332b2b3f93e850e64ad866">   72</a></span>&#160;<a class="code" href="classpcl_1_1_approximate_progressive_morphological_filter.html#a0dbd0e6a3d332b2b3f93e850e64ad866">pcl::ApproximateProgressiveMorphologicalFilter&lt;PointT&gt;::extract</a> (<a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a>&amp; ground)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">bool</span> segmentation_is_possible = initCompute ();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">if</span> (!segmentation_is_possible)</div>
@@ -201,10 +201,10 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">  default(none) \</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">  shared(A, global_min) \</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">  num_threads(threads_)</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int)input_-&gt;points.size (); ++i)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int)input_-&gt;size (); ++i)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// ...then test for lower points within the cell</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> p = input_-&gt;points[i];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> p = (*input_)[i];</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span> row = std::floor((p.y - global_min.y ()) / cell_size_);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">int</span> col = std::floor((p.x - global_min.x ()) / cell_size_);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
@@ -301,10 +301,10 @@ $(function() {
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="comment">// Find indices of the points whose difference between the source and</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment">// filtered point clouds is less than the current height threshold.</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    std::vector&lt;int&gt; pt_indices;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> pt_indices;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">for</span> (std::size_t p_idx = 0; p_idx &lt; ground.size (); ++p_idx)</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> p = cloud-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[p_idx];</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> p = (*cloud)[p_idx];</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="keywordtype">int</span> erow = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (std::floor ((p.y - global_min.y ()) / cell_size_));</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordtype">int</span> ecol = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span> (std::floor ((p.x - global_min.x ()) / cell_size_));</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
@@ -333,18 +333,18 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1_approximate_progressive_morphological_filter_html_a98fd92580e94e6cff8aa5296a5978321"><div class="ttname"><a href="classpcl_1_1_approximate_progressive_morphological_filter.html#a98fd92580e94e6cff8aa5296a5978321">pcl::ApproximateProgressiveMorphologicalFilter::~ApproximateProgressiveMorphologicalFilter</a></div><div class="ttdeci">~ApproximateProgressiveMorphologicalFilter()</div><div class="ttdef"><b>Definition:</b> <a href="approximate__progressive__morphological__filter_8hpp_source.html#l00066">approximate_progressive_morphological_filter.hpp:66</a></div></div>
 <div class="ttc" id="acommon_2include_2pcl_2point__types_8h_html"><div class="ttname"><a href="common_2include_2pcl_2point__types_8h.html">point_types.h</a></div></div>
 <div class="ttc" id="acommon_2include_2pcl_2common_2common_8h_html"><div class="ttname"><a href="common_2include_2pcl_2common_2common_8h.html">common.h</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af16a62638198313b9c093127c492c884"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">pcl::PointCloud::points</a></div><div class="ttdeci">std::vector&lt; PointT, Eigen::aligned_allocator&lt; PointT &gt; &gt; points</div><div class="ttdoc">The point data.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">point_cloud.h:411</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00628">point_types.hpp:628</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00674">point_types.hpp:674</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_approximate_progressive_morphological_filter_html_a849b22e7b5536d3f314e4e6f78c6fd0f"><div class="ttname"><a href="classpcl_1_1_approximate_progressive_morphological_filter.html#a849b22e7b5536d3f314e4e6f78c6fd0f">pcl::ApproximateProgressiveMorphologicalFilter::ApproximateProgressiveMorphologicalFilter</a></div><div class="ttdeci">ApproximateProgressiveMorphologicalFilter()</div><div class="ttdoc">Constructor that sets default values for member variables.</div><div class="ttdef"><b>Definition:</b> <a href="approximate__progressive__morphological__filter_8hpp_source.html#l00052">approximate_progressive_morphological_filter.hpp:52</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_approximate_progressive_morphological_filter_html_a64d34973694bdb38b70708caee0909a5"><div class="ttname"><a href="classpcl_1_1_approximate_progressive_morphological_filter.html#a64d34973694bdb38b70708caee0909a5">pcl::ApproximateProgressiveMorphologicalFilter::extract</a></div><div class="ttdeci">virtual void extract(std::vector&lt; int &gt; &amp;ground)</div><div class="ttdoc">This method launches the segmentation algorithm and returns indices of points determined to be ground...</div><div class="ttdef"><b>Definition:</b> <a href="approximate__progressive__morphological__filter_8hpp_source.html#l00072">approximate_progressive_morphological_filter.hpp:72</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a8bfe09b8680e7129dd0fd6177c1a2ce6"><div class="ttname"><a href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a></div><div class="ttdeci">IndicesAllocator&lt;&gt; Indices</div><div class="ttdoc">Type used for indices in PCL.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00133">types.h:133</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_approximate_progressive_morphological_filter_html_a0dbd0e6a3d332b2b3f93e850e64ad866"><div class="ttname"><a href="classpcl_1_1_approximate_progressive_morphological_filter.html#a0dbd0e6a3d332b2b3f93e850e64ad866">pcl::ApproximateProgressiveMorphologicalFilter::extract</a></div><div class="ttdeci">virtual void extract(Indices &amp;ground)</div><div class="ttdoc">This method launches the segmentation algorithm and returns indices of points determined to be ground...</div><div class="ttdef"><b>Definition:</b> <a href="approximate__progressive__morphological__filter_8hpp_source.html#l00072">approximate_progressive_morphological_filter.hpp:72</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:52</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:49</p>
 </div> <!-- #footer -->
 </body>
 </html>

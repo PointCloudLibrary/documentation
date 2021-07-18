@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Visualization of the NARF descriptor and descriptor distances &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Visualization of the NARF descriptor and descriptor distances &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -403,7 +403,8 @@ editor, and place the following code inside it:</p>
 240
 241
 242
-243</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Bastian Steder */</span>
+243
+244</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Bastian Steder */</span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 
@@ -413,6 +414,7 @@ editor, and place the following code inside it:</p>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/range_image/range_image.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/features/narf.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/console/parse.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/file_io.h&gt; // for getFilenameWithoutExtension</span><span class="cp"></span>
 
 <span class="kt">float</span> <span class="n">angular_resolution</span> <span class="o">=</span> <span class="mf">0.5f</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">rotation_invariant</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -523,14 +525,14 @@ editor, and place the following code inside it:</p>
   <span class="c1">// Extract NARF features:</span>
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Now extracting NARFs in every image point.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
   <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Narf</span><span class="o">*&gt;</span> <span class="o">&gt;</span> <span class="n">narfs</span><span class="p">;</span>
-  <span class="n">narfs</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">range_image</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
-  <span class="kt">int</span> <span class="n">last_percentage</span><span class="o">=-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="n">narfs</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">range_image</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">last_percentage</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
   <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">range_image</span><span class="p">.</span><span class="n">height</span><span class="p">;</span> <span class="o">++</span><span class="n">y</span><span class="p">)</span>
   <span class="p">{</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">range_image</span><span class="p">.</span><span class="n">width</span><span class="p">;</span> <span class="o">++</span><span class="n">x</span><span class="p">)</span>
     <span class="p">{</span>
-      <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">y</span><span class="o">*</span><span class="n">range_image</span><span class="p">.</span><span class="n">width</span><span class="o">+</span><span class="n">x</span><span class="p">;</span>
-      <span class="kt">int</span> <span class="n">percentage</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">((</span><span class="mi">100</span><span class="o">*</span><span class="n">index</span><span class="p">)</span> <span class="o">/</span> <span class="n">range_image</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+      <span class="k">const</span> <span class="k">auto</span> <span class="n">index</span> <span class="o">=</span> <span class="n">y</span><span class="o">*</span><span class="n">range_image</span><span class="p">.</span><span class="n">width</span><span class="o">+</span><span class="n">x</span><span class="p">;</span>
+      <span class="k">const</span> <span class="k">auto</span> <span class="n">percentage</span> <span class="o">=</span> <span class="p">((</span><span class="mi">100</span><span class="o">*</span><span class="n">index</span><span class="p">)</span> <span class="o">/</span> <span class="n">range_image</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
       <span class="k">if</span> <span class="p">(</span><span class="n">percentage</span> <span class="o">&gt;</span> <span class="n">last_percentage</span><span class="p">)</span>
       <span class="p">{</span>
         <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">percentage</span><span class="o">&lt;&lt;</span><span class="s">&quot;% &quot;</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">flush</span><span class="p">;</span>
@@ -592,27 +594,27 @@ editor, and place the following code inside it:</p>
     <span class="kt">float</span> <span class="n">surface_patch_world_size</span> <span class="o">=</span> <span class="n">narf</span><span class="p">.</span><span class="n">getSurfacePatchWorldSize</span> <span class="p">();</span>
     <span class="n">surface_patch_widget</span><span class="p">.</span><span class="n">showFloatImage</span> <span class="p">(</span><span class="n">narf</span><span class="p">.</span><span class="n">getSurfacePatch</span> <span class="p">(),</span> <span class="n">surface_patch_pixel_size</span><span class="p">,</span> <span class="n">surface_patch_pixel_size</span><span class="p">,</span>
                                          <span class="o">-</span><span class="mf">0.5f</span><span class="o">*</span><span class="n">surface_patch_world_size</span><span class="p">,</span> <span class="mf">0.5f</span><span class="o">*</span><span class="n">surface_patch_world_size</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
-    <span class="kt">float</span> <span class="n">surface_patch_rotation</span> <span class="o">=</span> <span class="n">narf</span><span class="p">.</span><span class="n">getSurfacePatchRotation</span> <span class="p">();</span>
-    <span class="kt">float</span> <span class="n">patch_middle</span> <span class="o">=</span> <span class="mf">0.5f</span><span class="o">*</span> <span class="p">(</span><span class="kt">float</span> <span class="p">(</span><span class="n">surface_patch_pixel_size</span><span class="o">-</span><span class="mi">1</span><span class="p">));</span>
-    <span class="kt">float</span> <span class="n">angle_step_size</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">deg2rad</span> <span class="p">(</span><span class="mf">360.0f</span><span class="p">)</span><span class="o">/</span><span class="n">narf</span><span class="p">.</span><span class="n">getDescriptorSize</span> <span class="p">();</span>
-    <span class="kt">float</span> <span class="n">cell_size</span> <span class="o">=</span> <span class="n">surface_patch_world_size</span><span class="o">/</span><span class="kt">float</span> <span class="p">(</span><span class="n">surface_patch_pixel_size</span><span class="p">),</span>
-          <span class="n">cell_factor</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="o">/</span><span class="n">cell_size</span><span class="p">,</span>
-          <span class="n">max_dist</span> <span class="o">=</span> <span class="mf">0.5f</span><span class="o">*</span><span class="n">surface_patch_world_size</span><span class="p">,</span>
-          <span class="n">line_length</span> <span class="o">=</span> <span class="n">cell_factor</span><span class="o">*</span> <span class="p">(</span><span class="n">max_dist</span><span class="o">-</span><span class="mf">0.5f</span><span class="o">*</span><span class="n">cell_size</span><span class="p">);</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">descriptor_value_idx</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">descriptor_value_idx</span><span class="o">&lt;</span><span class="n">narf</span><span class="p">.</span><span class="n">getDescriptorSize</span> <span class="p">();</span> <span class="o">++</span><span class="n">descriptor_value_idx</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="kt">float</span> <span class="n">angle</span> <span class="o">=</span> <span class="n">descriptor_value_idx</span><span class="o">*</span><span class="n">angle_step_size</span> <span class="o">+</span> <span class="n">surface_patch_rotation</span><span class="p">;</span>
-      <span class="c1">//surface_patch_widget.markLine (patch_middle, patch_middle, patch_middle+line_length*sinf (angle),</span>
-                                     <span class="c1">//patch_middle+line_length*-std::cos (angle), pcl::visualization::Vector3ub (0,255,0));</span>
-    <span class="p">}</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span> <span class="n">rotations</span><span class="p">,</span> <span class="n">strengths</span><span class="p">;</span>
-    <span class="n">narf</span><span class="p">.</span><span class="n">getRotations</span> <span class="p">(</span><span class="n">rotations</span><span class="p">,</span> <span class="n">strengths</span><span class="p">);</span>
-    <span class="kt">float</span> <span class="n">radius</span> <span class="o">=</span> <span class="mf">0.5f</span><span class="o">*</span><span class="n">surface_patch_pixel_size</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">rotations</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="c1">//surface_patch_widget.markLine (radius-0.5, radius-0.5, radius-0.5f + 2.0f*radius*sinf (rotations[i]),</span>
-                                                <span class="c1">//radius-0.5f - 2.0f*radius*std::cos (rotations[i]), pcl::visualization::Vector3ub (255,0,0));</span>
-    <span class="p">}</span>
+    <span class="cm">/*float surface_patch_rotation = narf.getSurfacePatchRotation ();</span>
+<span class="cm">    float patch_middle = 0.5f* (float (surface_patch_pixel_size-1));</span>
+<span class="cm">    float angle_step_size = pcl::deg2rad (360.0f)/narf.getDescriptorSize ();</span>
+<span class="cm">    float cell_size = surface_patch_world_size/float (surface_patch_pixel_size),</span>
+<span class="cm">          cell_factor = 1.0f/cell_size,</span>
+<span class="cm">          max_dist = 0.5f*surface_patch_world_size,</span>
+<span class="cm">          line_length = cell_factor* (max_dist-0.5f*cell_size);</span>
+<span class="cm">    for (int descriptor_value_idx=0; descriptor_value_idx&lt;narf.getDescriptorSize (); ++descriptor_value_idx)</span>
+<span class="cm">    {</span>
+<span class="cm">      float angle = descriptor_value_idx*angle_step_size + surface_patch_rotation;</span>
+<span class="cm">      //surface_patch_widget.markLine (patch_middle, patch_middle, patch_middle+line_length*sinf (angle),</span>
+<span class="cm">                                     //patch_middle+line_length*-std::cos (angle), pcl::visualization::Vector3ub (0,255,0));</span>
+<span class="cm">    }</span>
+<span class="cm">    std::vector&lt;float&gt; rotations, strengths;</span>
+<span class="cm">    narf.getRotations (rotations, strengths);</span>
+<span class="cm">    float radius = 0.5f*surface_patch_pixel_size;</span>
+<span class="cm">    for (unsigned int i=0; i&lt;rotations.size (); ++i)</span>
+<span class="cm">    {</span>
+<span class="cm">      //surface_patch_widget.markLine (radius-0.5, radius-0.5, radius-0.5f + 2.0f*radius*sinf (rotations[i]),</span>
+<span class="cm">                                                //radius-0.5f - 2.0f*radius*std::cos (rotations[i]), pcl::visualization::Vector3ub (255,0,0));</span>
+<span class="cm">    }*/</span>
     
     <span class="n">descriptor_widget</span><span class="p">.</span><span class="n">showFloatImage</span> <span class="p">(</span><span class="n">narf</span><span class="p">.</span><span class="n">getDescriptor</span> <span class="p">(),</span> <span class="n">narf</span><span class="p">.</span><span class="n">getDescriptorSize</span> <span class="p">(),</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1f</span><span class="p">,</span> <span class="mf">0.3f</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
 
@@ -624,8 +626,8 @@ editor, and place the following code inside it:</p>
       <span class="k">continue</span><span class="p">;</span>
     
     <span class="c1">//descriptor_distances_widget.show (false);</span>
-    <span class="kt">float</span><span class="o">*</span> <span class="n">descriptor_distance_image</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">float</span><span class="p">[</span><span class="n">range_image</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">()];</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">point_index</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">point_index</span><span class="o">&lt;</span><span class="n">range_image</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">point_index</span><span class="p">)</span>
+    <span class="kt">float</span><span class="o">*</span> <span class="n">descriptor_distance_image</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">float</span><span class="p">[</span><span class="n">range_image</span><span class="p">.</span><span class="n">size</span> <span class="p">()];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">point_index</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">point_index</span><span class="o">&lt;</span><span class="n">range_image</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">point_index</span><span class="p">)</span>
     <span class="p">{</span>
       <span class="kt">float</span><span class="o">&amp;</span> <span class="n">descriptor_distance</span> <span class="o">=</span> <span class="n">descriptor_distance_image</span><span class="p">[</span><span class="n">point_index</span><span class="p">];</span>
       <span class="n">descriptor_distance</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;::</span><span class="n">infinity</span> <span class="p">();</span>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -163,7 +163,7 @@ $(function() {
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="structpcl_1_1_normal.html">NormalT</a>&amp; tmpj = tmp[j];</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="comment">// Refine</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="group__filters.html#ga4e839ff3bbae897de75ffaa70e096236">refineNormal</a> (output, j, k_indices_[j], k_sqr_distances_[j], tmpj))</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="group__filters.html#ga97a19f59a33da441d2e7ba35506627ad">refineNormal</a> (output, j, k_indices_[j], k_sqr_distances_[j], tmpj))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// Accumulate using similarity in direction between previous iteration and current</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">const</span> <a class="code" href="structpcl_1_1_normal.html">NormalT</a>&amp; outputj = output[j];</div>
@@ -193,15 +193,15 @@ $(function() {
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructpcl_1_1_normal_html"><div class="ttname"><a href="structpcl_1_1_normal.html">pcl::Normal</a></div><div class="ttdoc">A point structure representing normal coordinates and the surface curvature estimate.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00812">point_types.hpp:812</a></div></div>
-<div class="ttc" id="agroup__filters_html_ga4e839ff3bbae897de75ffaa70e096236"><div class="ttname"><a href="group__filters.html#ga4e839ff3bbae897de75ffaa70e096236">pcl::refineNormal</a></div><div class="ttdeci">bool refineNormal(const PointCloud&lt; NormalT &gt; &amp;cloud, int index, const std::vector&lt; int &gt; &amp;k_indices, const std::vector&lt; float &gt; &amp;k_sqr_distances, NormalT &amp;point)</div><div class="ttdoc">Refine an indexed point based on its neighbors, this function only writes to the normal_* fields.</div><div class="ttdef"><b>Definition:</b> <a href="normal__refinement_8h_source.html#l00084">normal_refinement.h:84</a></div></div>
+<div class="ttc" id="astructpcl_1_1_normal_html"><div class="ttname"><a href="structpcl_1_1_normal.html">pcl::Normal</a></div><div class="ttdoc">A point structure representing normal coordinates and the surface curvature estimate.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00899">point_types.hpp:899</a></div></div>
+<div class="ttc" id="agroup__filters_html_ga97a19f59a33da441d2e7ba35506627ad"><div class="ttname"><a href="group__filters.html#ga97a19f59a33da441d2e7ba35506627ad">pcl::refineNormal</a></div><div class="ttdeci">bool refineNormal(const PointCloud&lt; NormalT &gt; &amp;cloud, int index, const Indices &amp;k_indices, const std::vector&lt; float &gt; &amp;k_sqr_distances, NormalT &amp;point)</div><div class="ttdoc">Refine an indexed point based on its neighbors, this function only writes to the normal_* fields.</div><div class="ttdef"><b>Definition:</b> <a href="normal__refinement_8h_source.html#l00083">normal_refinement.h:83</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_normal_refinement_html_a3ff5080049cb21620fde47d115b02c02"><div class="ttname"><a href="classpcl_1_1_normal_refinement.html#a3ff5080049cb21620fde47d115b02c02">pcl::NormalRefinement::applyFilter</a></div><div class="ttdeci">void applyFilter(PointCloud &amp;output) override</div><div class="ttdoc">Filter a Point Cloud.</div><div class="ttdef"><b>Definition:</b> <a href="normal__refinement_8hpp_source.html#l00048">normal_refinement.hpp:48</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:30</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:26</p>
 </div> <!-- #footer -->
 </body>
 </html>

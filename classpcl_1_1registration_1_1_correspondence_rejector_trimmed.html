@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -144,9 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72c90f3fb93739b0366d3528cf7d502f inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector.html#a72c90f3fb93739b0366d3528cf7d502f">getCorrespondences</a> (<a class="el" href="namespacepcl.html#a5f8e904e5c6f763188a410832f96ac00">pcl::Correspondences</a> &amp;correspondences)</td></tr>
 <tr class="memdesc:a72c90f3fb93739b0366d3528cf7d502f inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run correspondence rejection.  <a href="classpcl_1_1registration_1_1_correspondence_rejector.html#a72c90f3fb93739b0366d3528cf7d502f">More...</a><br /></td></tr>
 <tr class="separator:a72c90f3fb93739b0366d3528cf7d502f inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1c8dff3bcce8f99ec98b9982838ffc inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector.html#a6a1c8dff3bcce8f99ec98b9982838ffc">getRejectedQueryIndices</a> (const <a class="el" href="namespacepcl.html#a5f8e904e5c6f763188a410832f96ac00">pcl::Correspondences</a> &amp;correspondences, std::vector&lt; int &gt; &amp;indices)</td></tr>
-<tr class="memdesc:a6a1c8dff3bcce8f99ec98b9982838ffc inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the indices of query points of correspondences that have been rejected, i.e., the difference between the input correspondences (set via <em>setInputCorrespondences</em>) and the given correspondence vector.  <a href="classpcl_1_1registration_1_1_correspondence_rejector.html#a6a1c8dff3bcce8f99ec98b9982838ffc">More...</a><br /></td></tr>
-<tr class="separator:a6a1c8dff3bcce8f99ec98b9982838ffc inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9818abc1f67d4c824e711d9234e0c7ed inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector.html#a9818abc1f67d4c824e711d9234e0c7ed">getRejectedQueryIndices</a> (const <a class="el" href="namespacepcl.html#a5f8e904e5c6f763188a410832f96ac00">pcl::Correspondences</a> &amp;correspondences, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices)</td></tr>
+<tr class="memdesc:a9818abc1f67d4c824e711d9234e0c7ed inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the indices of query points of correspondences that have been rejected, i.e., the difference between the input correspondences (set via <em>setInputCorrespondences</em>) and the given correspondence vector.  <a href="classpcl_1_1registration_1_1_correspondence_rejector.html#a9818abc1f67d4c824e711d9234e0c7ed">More...</a><br /></td></tr>
+<tr class="separator:a9818abc1f67d4c824e711d9234e0c7ed inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5996af869d7aaa6b8b8dc156038dd3f inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector.html#aa5996af869d7aaa6b8b8dc156038dd3f">getClassName</a> () const</td></tr>
 <tr class="memdesc:aa5996af869d7aaa6b8b8dc156038dd3f inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of the name of this class.  <a href="classpcl_1_1registration_1_1_correspondence_rejector.html#aa5996af869d7aaa6b8b8dc156038dd3f">More...</a><br /></td></tr>
 <tr class="separator:aa5996af869d7aaa6b8b8dc156038dd3f inherit pub_methods_classpcl_1_1registration_1_1_correspondence_rejector"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +202,7 @@ Protected Attributes</h2></td></tr>
 <p>Reference: 'The Trimmed Iterative Closest Point Algorithm' by D. Chetverikov, D. Svirko, D. Stepanov, and Pavel Krsek. In Proceedings of the 16th International Conference on Pattern Recognition (ICPR 2002).</p>
 <dl class="section author"><dt>Author</dt><dd>Dirk Holz </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00063">63</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00061">61</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4d033eec41cf5ff04145938465d87836"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d033eec41cf5ff04145938465d87836">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -216,7 +216,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00071">71</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00068">68</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00070">70</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00067">67</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Empty constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00074">74</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00071">71</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00082">82</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00077">77</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector.html#a60dbdcf8f1005a1405dcab244a5c5608">pcl::registration::CorrespondenceRejector</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00124">124</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00132">132</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +359,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Get the minimum number of correspondences. </p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00107">107</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00113">113</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Get the maximum distance used for thresholding in correspondence rejection. </p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00094">94</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00093">93</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +429,7 @@ Protected Attributes</h2></td></tr>
 <p>Get a list of valid correspondences after rejection from the original set of correspondences. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">original_correspondences</td><td>the set of initial correspondences given </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">original_correspondences</td><td>the set of initial correspondences given</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">remaining_correspondences</td><td>the resultant filtered set of remaining correspondences </td></tr>
   </table>
   </dd>
@@ -464,14 +464,14 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a minimum number of correspondences. </p>
-<p>If the specified overlap ratio causes to have less correspondences, <em><a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector_trimmed.html" title="CorrespondenceRejectorTrimmed implements a correspondence rejection for ICP-like registration algorit...">CorrespondenceRejectorTrimmed</a></em> will try to return at least <em>nr_min_correspondences_</em> correspondences (or all correspondences in case <em>nr_min_correspondences_</em> is less than the number of given correspondences). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If the specified overlap ratio causes to have less correspondences, <em><a class="el" href="classpcl_1_1registration_1_1_correspondence_rejector_trimmed.html" title="CorrespondenceRejectorTrimmed implements a correspondence rejection for ICP-like registration algorit...">CorrespondenceRejectorTrimmed</a></em> will try to return at least <em>nr_min_correspondences_</em> correspondences (or all correspondences in case <em>nr_min_correspondences_</em> is less than the number of given correspondences).</p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">min_correspondences</td><td>the minimum number of correspondences </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00103">103</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00106">106</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -507,7 +507,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00090">90</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00085">85</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Minimum number of correspondences. </p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00133">133</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00141">141</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -560,7 +560,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Overlap Ratio in [0..1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00130">130</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="correspondence__rejection__trimmed_8h_source.html#l00138">138</a> of file <a class="el" href="correspondence__rejection__trimmed_8h_source.html">correspondence_rejection_trimmed.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Protected Attributes</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:25</p>
+<p>Pages generated on Sun Jul 18 2021 17:43:41</p>
 </div> <!-- #footer -->
 </body>
 </html>

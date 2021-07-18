@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to extract NARF keypoint from a range image &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>How to extract NARF keypoint from a range image &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -360,7 +360,8 @@ editor, and place the following code inside it:</p>
 197
 198
 199
-200</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Bastian Steder */</span>
+200
+201</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Bastian Steder */</span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 
@@ -371,6 +372,7 @@ editor, and place the following code inside it:</p>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/features/range_image_border_extractor.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/keypoints/narf_keypoint.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/console/parse.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/file_io.h&gt; // for getFilenameWithoutExtension</span><span class="cp"></span>
 
 <span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span> <span class="n">PointType</span><span class="p">;</span>
 
@@ -476,10 +478,10 @@ editor, and place the following code inside it:</p>
       <span class="k">for</span> <span class="p">(</span><span class="kt">float</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.5f</span><span class="p">;</span> <span class="n">y</span><span class="o">&lt;=</span><span class="mf">0.5f</span><span class="p">;</span> <span class="n">y</span><span class="o">+=</span><span class="mf">0.01f</span><span class="p">)</span>
       <span class="p">{</span>
         <span class="n">PointType</span> <span class="n">point</span><span class="p">;</span>  <span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>  <span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>  <span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">2.0f</span> <span class="o">-</span> <span class="n">y</span><span class="p">;</span>
-        <span class="n">point_cloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">point</span><span class="p">);</span>
+        <span class="n">point_cloud</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">point</span><span class="p">);</span>
       <span class="p">}</span>
     <span class="p">}</span>
-    <span class="n">point_cloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">point_cloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span>  <span class="n">point_cloud</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">point_cloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">point_cloud</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span>  <span class="n">point_cloud</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
   <span class="p">}</span>
   
   <span class="c1">// -----------------------------------------------</span>
@@ -528,23 +530,23 @@ editor, and place the following code inside it:</p>
   
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">keypoint_indices</span><span class="p">;</span>
   <span class="n">narf_keypoint_detector</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="n">keypoint_indices</span><span class="p">);</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Found &quot;</span><span class="o">&lt;&lt;</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; key points.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Found &quot;</span><span class="o">&lt;&lt;</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; key points.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 
   <span class="c1">// ----------------------------------------------</span>
   <span class="c1">// -----Show keypoints in range image widget-----</span>
   <span class="c1">// ----------------------------------------------</span>
-  <span class="c1">//for (std::size_t i=0; i&lt;keypoint_indices.points.size (); ++i)</span>
-    <span class="c1">//range_image_widget.markPoint (keypoint_indices.points[i]%range_image.width,</span>
-                                  <span class="c1">//keypoint_indices.points[i]/range_image.width);</span>
+  <span class="c1">//for (std::size_t i=0; i&lt;keypoint_indices.size (); ++i)</span>
+    <span class="c1">//range_image_widget.markPoint (keypoint_indices[i]%range_image.width,</span>
+                                  <span class="c1">//keypoint_indices[i]/range_image.width);</span>
   
   <span class="c1">// -------------------------------------</span>
   <span class="c1">// -----Show keypoints in 3D viewer-----</span>
   <span class="c1">// -------------------------------------</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">keypoints_ptr</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;&amp;</span> <span class="n">keypoints</span> <span class="o">=</span> <span class="o">*</span><span class="n">keypoints_ptr</span><span class="p">;</span>
-  <span class="n">keypoints</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
-  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">keypoints</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getVector3fMap</span> <span class="p">()</span> <span class="o">=</span> <span class="n">range_image</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]].</span><span class="n">getVector3fMap</span> <span class="p">();</span>
+  <span class="n">keypoints</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">keypoints</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">getVector3fMap</span> <span class="p">()</span> <span class="o">=</span> <span class="n">range_image</span><span class="p">[</span><span class="n">keypoint_indices</span><span class="p">[</span><span class="n">i</span><span class="p">]].</span><span class="n">getVector3fMap</span> <span class="p">();</span>
 
   <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">keypoints_color_handler</span> <span class="p">(</span><span class="n">keypoints_ptr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
   <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">keypoints_ptr</span><span class="p">,</span> <span class="n">keypoints_color_handler</span><span class="p">,</span> <span class="s">&quot;keypoints&quot;</span><span class="p">);</span>
@@ -579,7 +581,7 @@ steps are already covered in the previous tutorial <a class="reference external"
 
 <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">keypoint_indices</span><span class="p">;</span>
 <span class="n">narf_keypoint_detector</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="n">keypoint_indices</span><span class="p">);</span>
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Found &quot;</span><span class="o">&lt;&lt;</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; key points.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Found &quot;</span><span class="o">&lt;&lt;</span><span class="n">keypoint_indices</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span><span class="o">&lt;&lt;</span><span class="s">&quot; key points.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">...</span>
 </pre></div>
 </div>

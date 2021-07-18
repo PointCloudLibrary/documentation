@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1372c023005888d181e5f3c42bbcc35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_clipper3_d.html#ae1372c023005888d181e5f3c42bbcc35">clipPlanarPolygon3D</a> (const std::vector&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, Eigen::aligned_allocator&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt; &gt; &amp;polygon, std::vector&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, Eigen::aligned_allocator&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt; &gt; &amp;clipped_polygon) const =0</td></tr>
 <tr class="memdesc:ae1372c023005888d181e5f3c42bbcc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface to clip a planar polygon given by an ordered list of points  <a href="classpcl_1_1_clipper3_d.html#ae1372c023005888d181e5f3c42bbcc35">More...</a><br /></td></tr>
 <tr class="separator:ae1372c023005888d181e5f3c42bbcc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0e4194e161e3212b5adc4322209ba3b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_clipper3_d.html#ae0e4194e161e3212b5adc4322209ba3b">clipPointCloud3D</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt; &amp;cloud_in, std::vector&lt; int &gt; &amp;clipped, const std::vector&lt; int &gt; &amp;indices=std::vector&lt; int &gt;()) const =0</td></tr>
-<tr class="memdesc:ae0e4194e161e3212b5adc4322209ba3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface to clip a point cloud  <a href="classpcl_1_1_clipper3_d.html#ae0e4194e161e3212b5adc4322209ba3b">More...</a><br /></td></tr>
-<tr class="separator:ae0e4194e161e3212b5adc4322209ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4b60630ab0f98b6969bf2250128816"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_clipper3_d.html#a8c4b60630ab0f98b6969bf2250128816">clipPointCloud3D</a> (const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt; &amp;cloud_in, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;clipped, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;indices=<a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a>()) const =0</td></tr>
+<tr class="memdesc:a8c4b60630ab0f98b6969bf2250128816"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface to clip a point cloud  <a href="classpcl_1_1_clipper3_d.html#a8c4b60630ab0f98b6969bf2250128816">More...</a><br /></td></tr>
+<tr class="separator:a8c4b60630ab0f98b6969bf2250128816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8326abaae42f64048b367bb8c54e2e07"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcl_1_1_clipper3_d.html">Clipper3D</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_clipper3_d.html#a8326abaae42f64048b367bb8c54e2e07">clone</a> () const =0</td></tr>
 <tr class="memdesc:a8326abaae42f64048b367bb8c54e2e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">polymorphic method to clone the underlying clipper with its parameters.  <a href="classpcl_1_1_clipper3_d.html#a8326abaae42f64048b367bb8c54e2e07">More...</a><br /></td></tr>
 <tr class="separator:a8326abaae42f64048b367bb8c54e2e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -378,8 +378,8 @@ template&lt;typename PointT &gt; </div>
 
 </div>
 </div>
-<a id="ae0e4194e161e3212b5adc4322209ba3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0e4194e161e3212b5adc4322209ba3b">&#9670;&nbsp;</a></span>clipPointCloud3D()</h2>
+<a id="a8c4b60630ab0f98b6969bf2250128816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4b60630ab0f98b6969bf2250128816">&#9670;&nbsp;</a></span>clipPointCloud3D()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,14 +398,14 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>clipped</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>indices</em> = <code>std::vector&lt;&#160;int&#160;&gt;()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
+          <td class="paramname"><em>indices</em> = <code><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -431,7 +431,7 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>list of indices of remaining points after clipping. </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcl_1_1_box_clipper3_d.html#abaf1b2a559899b282c1334db76e3e9be">pcl::BoxClipper3D&lt; PointT &gt;</a>, and <a class="el" href="classpcl_1_1_plane_clipper3_d.html#aaac8ed63813f1c33ab272745dcc69bfa">pcl::PlaneClipper3D&lt; PointT &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classpcl_1_1_box_clipper3_d.html#af11e7496af553d84bdf8d2b0db8e5ce4">pcl::BoxClipper3D&lt; PointT &gt;</a>, and <a class="el" href="classpcl_1_1_plane_clipper3_d.html#a95c7f0d50d392c6481c7932b32fa8c54">pcl::PlaneClipper3D&lt; PointT &gt;</a>.</p>
 
 </div>
 </div>
@@ -476,7 +476,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:36</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:40</p>
 </div> <!-- #footer -->
 </body>
 </html>

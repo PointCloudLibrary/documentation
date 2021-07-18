@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -231,6 +231,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#acd821e0e4699a143f48f728e597842fb">getRadiusLimits</a> (double &amp;min_radius, double &amp;max_radius) const</td></tr>
 <tr class="memdesc:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum and maximum allowable radius limits for the model as set by the user.  <a href="classpcl_1_1_sample_consensus_model.html#acd821e0e4699a143f48f728e597842fb">More...</a><br /></td></tr>
 <tr class="separator:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a6e225e7e1e57af8191a4b6ecb20026ca">setModelConstraints</a> (std::function&lt; bool(const Eigen::VectorXf &amp;)&gt; function)</td></tr>
+<tr class="memdesc:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to impose any kind of constraint on the model, e.g.  <a href="classpcl_1_1_sample_consensus_model.html#a6e225e7e1e57af8191a4b6ecb20026ca">More...</a><br /></td></tr>
+<tr class="separator:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#af9eea9dd0e12e1de8671ac542400d3f1">setSamplesMaxDist</a> (const double &amp;radius, <a class="el" href="classpcl_1_1_sample_consensus_model.html#acda5c0c04feaaab330cac68377cbd9d4">SearchPtr</a> search)</td></tr>
 <tr class="memdesc:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum distance allowed when drawing random samples.  <a href="classpcl_1_1_sample_consensus_model.html#af9eea9dd0e12e1de8671ac542400d3f1">More...</a><br /></td></tr>
 <tr class="separator:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,6 +320,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#ab7f51bf1c63fcfb05694d0f19c2f7dc3">model_size_</a></td></tr>
 <tr class="memdesc:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of coefficients in the model.  <a href="classpcl_1_1_sample_consensus_model.html#ab7f51bf1c63fcfb05694d0f19c2f7dc3">More...</a><br /></td></tr>
 <tr class="separator:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const Eigen::VectorXf &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">custom_model_constraints_</a></td></tr>
+<tr class="memdesc:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user defined function that takes model coefficients and returns whether the model is acceptable or not.  <a href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">More...</a><br /></td></tr>
+<tr class="separator:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -482,7 +488,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__parallel__line_8h_source.html#l00081">81</a> of file <a class="el" href="sac__model__parallel__line_8h_source.html">sac_model_parallel_line.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00525">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00566">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00563">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00550">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00591">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00588">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>.</p>
 
 </div>
 </div>
@@ -540,7 +546,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__parallel__line_8h_source.html#l00097">97</a> of file <a class="el" href="sac__model__parallel__line_8h_source.html">sac_model_parallel_line.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00525">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00566">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00563">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00550">pcl::SampleConsensusModel&lt; PointT &gt;::model_name_</a>, <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00591">pcl::SampleConsensusModel&lt; PointT &gt;::model_size_</a>, and <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model_8h_source.html#l00588">pcl::SampleConsensusModel&lt; PointT &gt;::sample_size_</a>.</p>
 
 </div>
 </div>
@@ -822,7 +828,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sac__model__parallel__line_8hpp_source.html#l00093">93</a> of file <a class="el" href="sac__model__parallel__line_8hpp_source.html">sac_model_parallel_line.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2common_8hpp_source.html#l00046">pcl::getAngle3D()</a>, and <a class="el" href="pcl__macros_8h_source.html#l00195">M_PI</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2common_8hpp_source.html#l00047">pcl::getAngle3D()</a>, and <a class="el" href="pcl__macros_8h_source.html#l00201">M_PI</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1045,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:53</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:06</p>
 </div> <!-- #footer -->
 </body>
 </html>

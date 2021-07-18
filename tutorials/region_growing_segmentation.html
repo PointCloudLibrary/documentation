@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Region growing segmentation &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Region growing segmentation &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -333,11 +333,7 @@ Next what you need to do is to create a file <code class="docutils literal notra
 66
 67
 68
-69
-70
-71
-72
-73</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+69</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
@@ -345,11 +341,11 @@ Next what you need to do is to create a file <code class="docutils literal notra
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/search/kdtree.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/features/normal_3d.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/cloud_viewer.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/passthrough.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/filters/filter_indices.h&gt; // for pcl::removeNaNFromPointCloud</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/segmentation/region_growing.h&gt;</span><span class="cp"></span>
 
 <span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span> <span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span> <span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="p">(</span><span class="s">&quot;region_growing_tutorial.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">cloud</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -367,11 +363,7 @@ Next what you need to do is to create a file <code class="docutils literal notra
   <span class="n">normal_estimator</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="o">*</span><span class="n">normals</span><span class="p">);</span>
 
   <span class="n">pcl</span><span class="o">::</span><span class="n">IndicesPtr</span> <span class="n">indices</span> <span class="p">(</span><span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PassThrough</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">pass</span><span class="p">;</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">setFilterFieldName</span> <span class="p">(</span><span class="s">&quot;z&quot;</span><span class="p">);</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">setFilterLimits</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">filter</span> <span class="p">(</span><span class="o">*</span><span class="n">indices</span><span class="p">);</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">removeNaNFromPointCloud</span><span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">indices</span><span class="p">);</span>
 
   <span class="n">pcl</span><span class="o">::</span><span class="n">RegionGrowing</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span> <span class="n">reg</span><span class="p">;</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setMinClusterSize</span> <span class="p">(</span><span class="mi">50</span><span class="p">);</span>
@@ -379,7 +371,7 @@ Next what you need to do is to create a file <code class="docutils literal notra
   <span class="n">reg</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setNumberOfNeighbours</span> <span class="p">(</span><span class="mi">30</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="c1">//reg.setIndices (indices);</span>
+  <span class="n">reg</span><span class="p">.</span><span class="n">setIndices</span> <span class="p">(</span><span class="n">indices</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setInputNormals</span> <span class="p">(</span><span class="n">normals</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setSmoothnessThreshold</span> <span class="p">(</span><span class="mf">3.0</span> <span class="o">/</span> <span class="mf">180.0</span> <span class="o">*</span> <span class="n">M_PI</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setCurvatureThreshold</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
@@ -391,7 +383,7 @@ Next what you need to do is to create a file <code class="docutils literal notra
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;First cluster has &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">clusters</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">indices</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;These are the indices of the points of the initial&quot;</span> <span class="o">&lt;&lt;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;cloud that belong to the first cluster:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="k">while</span> <span class="p">(</span><span class="n">counter</span> <span class="o">&lt;</span> <span class="n">clusters</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">indices</span><span class="p">.</span><span class="n">size</span> <span class="p">())</span>
   <span class="p">{</span>
     <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">clusters</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">indices</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;, &quot;</span><span class="p">;</span>
@@ -438,15 +430,10 @@ Next what you need to do is to create a file <code class="docutils literal notra
 <p>As mentioned before, the algorithm requires normals. Here the <code class="docutils literal notranslate"><span class="pre">pcl::NormalEstimation</span></code> class is used to compute them.
 To learn more about how it is done you should take a look at the <a class="reference internal" href="normal_estimation.html#normal-estimation"><span class="std std-ref">Estimating Surface Normals in a PointCloud</span></a> tutorial in the <strong>Features</strong> section.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">IndicesPtr</span> <span class="n">indices</span> <span class="p">(</span><span class="k">new</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span> <span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PassThrough</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">pass</span><span class="p">;</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">setFilterFieldName</span> <span class="p">(</span><span class="s">&quot;z&quot;</span><span class="p">);</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">setFilterLimits</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
-  <span class="n">pass</span><span class="p">.</span><span class="n">filter</span> <span class="p">(</span><span class="o">*</span><span class="n">indices</span><span class="p">);</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">removeNaNFromPointCloud</span><span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">indices</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>These lines are given only for example. You can safely comment this part. Insofar as <code class="docutils literal notranslate"><span class="pre">pcl::RegionGrowing</span></code> is derived from <code class="docutils literal notranslate"><span class="pre">pcl::PCLBase</span></code>,
-it can work with indices. It means you can instruct that you only segment those points that are listed in the indices array instead of the whole point cloud.</p>
+<p>Insofar as <code class="docutils literal notranslate"><span class="pre">pcl::RegionGrowing</span></code> is derived from <code class="docutils literal notranslate"><span class="pre">pcl::PCLBase</span></code>, it can work with indices. It means you can instruct that you only segment those points that are listed in the indices array instead of the whole point cloud. Here, only the valid points are chosen for segmentation.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">RegionGrowing</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span> <span class="n">reg</span><span class="p">;</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setMinClusterSize</span> <span class="p">(</span><span class="mi">50</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setMaxClusterSize</span> <span class="p">(</span><span class="mi">1000000</span><span class="p">);</span>
@@ -463,7 +450,7 @@ The default values for minimum and maximum are 1 and ‘as much as possible’ r
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">reg</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setNumberOfNeighbours</span> <span class="p">(</span><span class="mi">30</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="c1">//reg.setIndices (indices);</span>
+  <span class="n">reg</span><span class="p">.</span><span class="n">setIndices</span> <span class="p">(</span><span class="n">indices</span><span class="p">);</span>
   <span class="n">reg</span><span class="p">.</span><span class="n">setInputNormals</span> <span class="p">(</span><span class="n">normals</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -488,7 +475,7 @@ And if this value is less than the curvature threshold then the algorithm will c
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;First cluster has &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">clusters</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">indices</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;These are the indices of the points of the initial&quot;</span> <span class="o">&lt;&lt;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;cloud that belong to the first cluster:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
   <span class="k">while</span> <span class="p">(</span><span class="n">counter</span> <span class="o">&lt;</span> <span class="n">clusters</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">indices</span><span class="p">.</span><span class="n">size</span> <span class="p">())</span>
   <span class="p">{</span>
     <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">clusters</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">indices</span><span class="p">[</span><span class="n">counter</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;, &quot;</span><span class="p">;</span>
@@ -530,7 +517,7 @@ You can learn more about cloud visualization in the <a class="reference internal
  9
 10
 11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">region_growing_segmentation</span><span class="p">)</span>
 

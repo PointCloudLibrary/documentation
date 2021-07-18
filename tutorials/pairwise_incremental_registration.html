@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to incrementally register pairs of clouds &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>How to incrementally register pairs of clouds &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -687,11 +687,11 @@ to incrementally register a series of point clouds two by two.</p>
 
   <span class="n">PointCloudColorHandlerGenericField</span><span class="o">&lt;</span><span class="n">PointNormalT</span><span class="o">&gt;</span> <span class="n">tgt_color_handler</span> <span class="p">(</span><span class="n">cloud_target</span><span class="p">,</span> <span class="s">&quot;curvature&quot;</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tgt_color_handler</span><span class="p">.</span><span class="n">isCapable</span> <span class="p">())</span>
-      <span class="n">PCL_WARN</span> <span class="p">(</span><span class="s">&quot;Cannot create curvature color handler!&quot;</span><span class="p">);</span>
+      <span class="n">PCL_WARN</span> <span class="p">(</span><span class="s">&quot;Cannot create curvature color handler!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 
   <span class="n">PointCloudColorHandlerGenericField</span><span class="o">&lt;</span><span class="n">PointNormalT</span><span class="o">&gt;</span> <span class="n">src_color_handler</span> <span class="p">(</span><span class="n">cloud_source</span><span class="p">,</span> <span class="s">&quot;curvature&quot;</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">src_color_handler</span><span class="p">.</span><span class="n">isCapable</span> <span class="p">())</span>
-      <span class="n">PCL_WARN</span> <span class="p">(</span><span class="s">&quot;Cannot create curvature color handler!&quot;</span><span class="p">);</span>
+      <span class="n">PCL_WARN</span> <span class="p">(</span><span class="s">&quot;Cannot create curvature color handler!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 
 
   <span class="n">p</span><span class="o">-&gt;</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">cloud_target</span><span class="p">,</span> <span class="n">tgt_color_handler</span><span class="p">,</span> <span class="s">&quot;target&quot;</span><span class="p">,</span> <span class="n">vp_2</span><span class="p">);</span>
@@ -876,11 +876,11 @@ to incrementally register a series of point clouds two by two.</p>
   <span class="c1">// Check user input</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">empty</span> <span class="p">())</span>
   <span class="p">{</span>
-    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Syntax is: %s &lt;source.pcd&gt; &lt;target.pcd&gt; [*]&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;[*] - multiple files can be added. The registration results of (i, i+1) will be registered against (i+2), etc&quot;</span><span class="p">);</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Syntax is: %s &lt;source.pcd&gt; &lt;target.pcd&gt; [*]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;[*] - multiple files can be added. The registration results of (i, i+1) will be registered against (i+2), etc</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
   <span class="p">}</span>
-  <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Loaded %d datasets.&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">data</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+  <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Loaded %d datasets.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">data</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
   
   <span class="c1">// Create a PCLVisualizer object</span>
   <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;Pairwise Incremental Registration example&quot;</span><span class="p">);</span>
@@ -899,7 +899,7 @@ to incrementally register a series of point clouds two by two.</p>
     <span class="n">showCloudsLeft</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
 
     <span class="n">PointCloud</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">temp</span> <span class="p">(</span><span class="k">new</span> <span class="n">PointCloud</span><span class="p">);</span>
-    <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Aligning %s (%d) with %s (%d).</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="n">source</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">(),</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="n">target</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+    <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Aligning %s (%zu) with %s (%zu).</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">source</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()),</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">target</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()));</span>
     <span class="n">pairAlign</span> <span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">pairTransform</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
 
     <span class="c1">//transform current pair into the global transform</span>
@@ -1006,11 +1006,11 @@ to incrementally register a series of point clouds two by two.</p>
   <span class="c1">// Check user input</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">empty</span> <span class="p">())</span>
   <span class="p">{</span>
-    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Syntax is: %s &lt;source.pcd&gt; &lt;target.pcd&gt; [*]&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;[*] - multiple files can be added. The registration results of (i, i+1) will be registered against (i+2), etc&quot;</span><span class="p">);</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;Syntax is: %s &lt;source.pcd&gt; &lt;target.pcd&gt; [*]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+    <span class="n">PCL_ERROR</span> <span class="p">(</span><span class="s">&quot;[*] - multiple files can be added. The registration results of (i, i+1) will be registered against (i+2), etc</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
   <span class="p">}</span>
-  <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Loaded %d datasets.&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">data</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+  <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Loaded %d datasets.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">data</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
   
   <span class="c1">// Create a PCLVisualizer object</span>
   <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;Pairwise Incremental Registration example&quot;</span><span class="p">);</span>
@@ -1029,7 +1029,7 @@ to incrementally register a series of point clouds two by two.</p>
     <span class="n">showCloudsLeft</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
 
     <span class="n">PointCloud</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">temp</span> <span class="p">(</span><span class="k">new</span> <span class="n">PointCloud</span><span class="p">);</span>
-    <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Aligning %s (%d) with %s (%d).</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="n">source</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">(),</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="n">target</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+    <span class="n">PCL_INFO</span> <span class="p">(</span><span class="s">&quot;Aligning %s (%zu) with %s (%zu).</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">source</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()),</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">f_name</span><span class="p">.</span><span class="n">c_str</span> <span class="p">(),</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">target</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()));</span>
     <span class="n">pairAlign</span> <span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">pairTransform</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
 
     <span class="c1">//transform current pair into the global transform</span>

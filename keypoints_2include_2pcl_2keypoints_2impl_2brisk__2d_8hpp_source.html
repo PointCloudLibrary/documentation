@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a> (output_temp, output);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// we do not change the denseness</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  output.width = int (output.points.size ());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  output.width = output.size ();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  output.height = 1;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  output.is_dense = <span class="keyword">false</span>;      <span class="comment">// set to false to be sure</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
@@ -186,10 +186,10 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af16a62638198313b9c093127c492c884"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">pcl::PointCloud::points</a></div><div class="ttdeci">std::vector&lt; PointT, Eigen::aligned_allocator&lt; PointT &gt; &gt; points</div><div class="ttdoc">The point data.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">point_cloud.h:411</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af16a62638198313b9c093127c492c884"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">pcl::PointCloud::points</a></div><div class="ttdeci">std::vector&lt; PointT, Eigen::aligned_allocator&lt; PointT &gt; &gt; points</div><div class="ttdoc">The point data.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00395">point_cloud.h:395</a></div></div>
 <div class="ttc" id="anamespacepcl_html_a2adb775f2d234f57c4e7c1209eb95a1d"><div class="ttname"><a href="namespacepcl.html#a2adb775f2d234f57c4e7c1209eb95a1d">pcl::isFinite</a></div><div class="ttdeci">bool isFinite(const PointT &amp;pt)</div><div class="ttdoc">Tests if the 3D components of a point are all finite param[in] pt point to be tested return true if f...</div><div class="ttdef"><b>Definition:</b> <a href="point__tests_8h_source.html#l00055">point_tests.h:55</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
-<div class="ttc" id="agroup__common_html_gaff182bca8d0295d727baaa1fd368c6ad"><div class="ttname"><a href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a></div><div class="ttdeci">void copyPointCloud(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud_in, pcl::PointCloud&lt; PointOutT &gt; &amp;cloud_out)</div><div class="ttdoc">Copy all the fields from a given point cloud into a new point cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">io.hpp:121</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
+<div class="ttc" id="agroup__common_html_gaff182bca8d0295d727baaa1fd368c6ad"><div class="ttname"><a href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a></div><div class="ttdeci">void copyPointCloud(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud_in, pcl::PointCloud&lt; PointOutT &gt; &amp;cloud_out)</div><div class="ttdoc">Copy all the fields from a given point cloud into a new point cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">io.hpp:144</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_brisk_keypoint2_d_html_a19558d10925200524bea743011be4a87"><div class="ttname"><a href="classpcl_1_1_brisk_keypoint2_d.html#a19558d10925200524bea743011be4a87">pcl::BriskKeypoint2D::detectKeypoints</a></div><div class="ttdeci">void detectKeypoints(PointCloudOut &amp;output) override</div><div class="ttdoc">Detects the keypoints.</div><div class="ttdef"><b>Definition:</b> <a href="keypoints_2include_2pcl_2keypoints_2impl_2brisk__2d_8hpp_source.html#l00069">brisk_2d.hpp:69</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_brisk_keypoint2_d_html_a33eca38658c08b7bc20b8aad32e7180f"><div class="ttname"><a href="classpcl_1_1_brisk_keypoint2_d.html#a33eca38658c08b7bc20b8aad32e7180f">pcl::BriskKeypoint2D::PointCloudOut</a></div><div class="ttdeci">typename Keypoint&lt; PointInT, PointOutT &gt;::PointCloudOut PointCloudOut</div><div class="ttdef"><b>Definition:</b> <a href="keypoints_2include_2pcl_2keypoints_2brisk__2d_8h_source.html#l00080">brisk_2d.h:80</a></div></div>
 <div class="ttc" id="aclasspcl_1_1keypoints_1_1brisk_1_1_scale_space_html_a7d76800cce5c06421299877f195dc0ba"><div class="ttname"><a href="classpcl_1_1keypoints_1_1brisk_1_1_scale_space.html#a7d76800cce5c06421299877f195dc0ba">pcl::keypoints::brisk::ScaleSpace::constructPyramid</a></div><div class="ttdeci">void constructPyramid(const std::vector&lt; unsigned char &gt; &amp;image, int width, int height)</div><div class="ttdoc">Construct the image pyramids.</div></div>
@@ -202,7 +202,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:28</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:24</p>
 </div> <!-- #footer -->
 </body>
 </html>

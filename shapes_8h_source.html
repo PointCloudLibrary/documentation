@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -111,24 +111,24 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;pcl/ModelCoefficients.h&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;pcl/point_cloud.h&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;pcl/visualization/eigen.h&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;pcl/geometry/planar_polygon.h&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">class </span>vtkDataSet;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">class </span>vtkUnstructuredGrid;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">  * \file pcl/visualization/common/shapes.h</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">  * Define methods or creating 3D shapes from parametric models</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">  * \ingroup visualization</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/*@{*/</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;pcl/point_cloud.h&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>vtkDataSet;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span>vtkUnstructuredGrid;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">  * \file pcl/visualization/common/shapes.h</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">  * Define methods or creating 3D shapes from parametric models</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  * \ingroup visualization</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/*@{*/</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">struct </span>ModelCoefficients;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keyword">class </span>PlanarPolygon;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">namespace </span>visualization</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {<span class="comment"></span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    /** \brief Create a 3d poly line from a set of points. </span></div>
@@ -352,39 +352,52 @@ $(function() {
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="group__visualization.html#gab6ea58c22c330bda060ab17eece4cde0">createCube</a> (<span class="keywordtype">double</span> x_min, <span class="keywordtype">double</span> x_max,</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                <span class="keywordtype">double</span> y_min, <span class="keywordtype">double</span> y_max,</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <span class="keywordtype">double</span> z_min, <span class="keywordtype">double</span> z_max);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment"></span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">    /** \brief Allocate a new unstructured grid smartpointer. For internal use only.</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">      * \param[out] polydata the resultant unstructured grid. </span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">      */</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <a class="code" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">allocVtkUnstructuredGrid</a> (<a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkUnstructuredGrid&gt;</a> &amp;polydata);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}<span class="comment"></span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">/*@}*/</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#include &lt;pcl/visualization/common/impl/shapes.hpp&gt;</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">    /** \brief Create an ellipsoid shape from the given parameters.</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">      *</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">      * \param[in] transform a transformation to apply to the ellipsoid from 0,0,0</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">      * \param[in] radius_x the ellipsoid&#39;s radius along its local x-axis</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">      * \param[in] radius_y the ellipsoid&#39;s radius along its local y-axis</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">      * \param[in] radius_z the ellipsoid&#39;s radius along its local z-axis</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">      * \ingroup visualization</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">      */</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkDataSet&gt;</a> </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">createEllipsoid</a> (<span class="keyword">const</span> Eigen::Isometry3d &amp;transform,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                     <span class="keywordtype">double</span> radius_x, <span class="keywordtype">double</span> radius_y, <span class="keywordtype">double</span> radius_z);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment"></span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">    /** \brief Allocate a new unstructured grid smartpointer. For internal use only.</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">      * \param[out] polydata the resultant unstructured grid. </span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">      */</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">allocVtkUnstructuredGrid</a> (<a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkUnstructuredGrid&gt;</a> &amp;polydata);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}<span class="comment"></span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">/*@}*/</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#include &lt;pcl/visualization/common/impl/shapes.hpp&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
 <div class="ttc" id="agroup__visualization_html_gab6ea58c22c330bda060ab17eece4cde0"><div class="ttname"><a href="group__visualization.html#gab6ea58c22c330bda060ab17eece4cde0">pcl::visualization::createCube</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createCube(const pcl::ModelCoefficients &amp;coefficients)</div><div class="ttdoc">Create a cube shape from a set of model coefficients.</div></div>
 <div class="ttc" id="agroup__visualization_html_ga3d7d6b7f35877b9feb237e898094c01e"><div class="ttname"><a href="group__visualization.html#ga3d7d6b7f35877b9feb237e898094c01e">pcl::visualization::createPlane</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createPlane(const pcl::ModelCoefficients &amp;coefficients)</div><div class="ttdoc">Create a planar shape from a set of model coefficients.</div></div>
 <div class="ttc" id="anamespacepcl_1_1visualization_html_aeabaade9c81f6faf7e6d0be905df8f6e"><div class="ttname"><a href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">pcl::visualization::allocVtkUnstructuredGrid</a></div><div class="ttdeci">PCL_EXPORTS void allocVtkUnstructuredGrid(vtkSmartPointer&lt; vtkUnstructuredGrid &gt; &amp;polydata)</div><div class="ttdoc">Allocate a new unstructured grid smartpointer.</div></div>
-<div class="ttc" id="astructpcl_1_1_model_coefficients_html"><div class="ttname"><a href="structpcl_1_1_model_coefficients.html">pcl::ModelCoefficients</a></div><div class="ttdef"><b>Definition:</b> <a href="_model_coefficients_8h_source.html#l00012">ModelCoefficients.h:12</a></div></div>
+<div class="ttc" id="astructpcl_1_1_model_coefficients_html"><div class="ttname"><a href="structpcl_1_1_model_coefficients.html">pcl::ModelCoefficients</a></div><div class="ttdef"><b>Definition:</b> <a href="_model_coefficients_8h_source.html#l00011">ModelCoefficients.h:11</a></div></div>
 <div class="ttc" id="agroup__visualization_html_gae9c0726430adf81fbdbbc8f21bec56d2"><div class="ttname"><a href="group__visualization.html#gae9c0726430adf81fbdbbc8f21bec56d2">pcl::visualization::create2DCircle</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; create2DCircle(const pcl::ModelCoefficients &amp;coefficients, double z=0.0)</div><div class="ttdoc">Create a 2d circle shape from a set of model coefficients.</div></div>
 <div class="ttc" id="agroup__visualization_html_gabcd9db6ceafdd6b36b3700df9134272d"><div class="ttname"><a href="group__visualization.html#gabcd9db6ceafdd6b36b3700df9134272d">pcl::visualization::createCone</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createCone(const pcl::ModelCoefficients &amp;coefficients)</div><div class="ttdoc">Create a cone shape from a set of model coefficients.</div></div>
+<div class="ttc" id="agroup__visualization_html_ga5f3163ddfcb7a3358ff62e40d6015294"><div class="ttname"><a href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">pcl::visualization::createEllipsoid</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createEllipsoid(const Eigen::Isometry3d &amp;transform, double radius_x, double radius_y, double radius_z)</div><div class="ttdoc">Create an ellipsoid shape from the given parameters.</div></div>
 <div class="ttc" id="agroup__visualization_html_ga50da15e5aac6b239552e56d5f3b0d209"><div class="ttname"><a href="group__visualization.html#ga50da15e5aac6b239552e56d5f3b0d209">pcl::visualization::createPolygon</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkDataSet &gt; createPolygon(const typename pcl::PointCloud&lt; PointT &gt;::ConstPtr &amp;cloud)</div><div class="ttdoc">Create a 3d poly line from a set of points.</div><div class="ttdef"><b>Definition:</b> <a href="shapes_8hpp_source.html#l00054">shapes.hpp:54</a></div></div>
 <div class="ttc" id="agroup__visualization_html_gab2a90030af80dd8874ca727d2cc2858f"><div class="ttname"><a href="group__visualization.html#gab2a90030af80dd8874ca727d2cc2858f">pcl::visualization::createSphere</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createSphere(const Eigen::Vector4f &amp;center, double radius, int res=10)</div><div class="ttdoc">Create a sphere shape from a point and a radius.</div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">point_cloud.h:430</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
 <div class="ttc" id="agroup__visualization_html_gaa1aef97113fc6a707a7f133832fb78e6"><div class="ttname"><a href="group__visualization.html#gaa1aef97113fc6a707a7f133832fb78e6">pcl::visualization::createCylinder</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createCylinder(const pcl::ModelCoefficients &amp;coefficients, int numsides=30)</div><div class="ttdoc">Create a cylinder shape from a set of model coefficients.</div></div>
-<div class="ttc" id="aclasspcl_1_1_planar_polygon_html"><div class="ttname"><a href="classpcl_1_1_planar_polygon.html">pcl::PlanarPolygon</a></div><div class="ttdoc">PlanarPolygon represents a planar (2D) polygon, potentially in a 3D space.</div><div class="ttdef"><b>Definition:</b> <a href="planar__polygon_8h_source.html#l00054">planar_polygon.h:54</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_planar_polygon_html"><div class="ttname"><a href="classpcl_1_1_planar_polygon.html">pcl::PlanarPolygon</a></div><div class="ttdoc">PlanarPolygon represents a planar (2D) polygon, potentially in a 3D space.</div><div class="ttdef"><b>Definition:</b> <a href="planar__polygon_8h_source.html#l00052">planar_polygon.h:52</a></div></div>
 <div class="ttc" id="agroup__visualization_html_gabb746d0348192ce0950dc7adf19052f4"><div class="ttname"><a href="group__visualization.html#gabb746d0348192ce0950dc7adf19052f4">pcl::visualization::createLine</a></div><div class="ttdeci">PCL_EXPORTS vtkSmartPointer&lt; vtkDataSet &gt; createLine(const Eigen::Vector4f &amp;pt1, const Eigen::Vector4f &amp;pt2)</div><div class="ttdoc">Create a line shape from two points.</div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <div class="ttc" id="aclassvtk_smart_pointer_html"><div class="ttname"><a href="classvtk_smart_pointer.html">vtkSmartPointer</a></div><div class="ttdef"><b>Definition:</b> <a href="actor__map_8h_source.html#l00051">actor_map.h:51</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:01</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:59</p>
 </div> <!-- #footer -->
 </body>
 </html>

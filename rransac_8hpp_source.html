@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">double</span> k = std::numeric_limits&lt;double&gt;::max();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> selection;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  Eigen::VectorXf model_coefficients;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  Eigen::VectorXf model_coefficients (sac_model_-&gt;getModelSize ());</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  std::set&lt;index_t&gt; indices_subset;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> log_probability  = std::log (1.0 - probability_);</div>
@@ -237,14 +237,14 @@ $(function() {
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasspcl_1_1_randomized_random_sample_consensus_html_a904874c4f7c09bbec3a12e5cc3f1af94"><div class="ttname"><a href="classpcl_1_1_randomized_random_sample_consensus.html#a904874c4f7c09bbec3a12e5cc3f1af94">pcl::RandomizedRandomSampleConsensus::computeModel</a></div><div class="ttdeci">bool computeModel(int debug_verbosity_level=0) override</div><div class="ttdoc">Compute the actual model and find the inliers.</div><div class="ttdef"><b>Definition:</b> <a href="rransac_8hpp_source.html#l00048">rransac.hpp:48</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a8bfe09b8680e7129dd0fd6177c1a2ce6"><div class="ttname"><a href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a></div><div class="ttdeci">IndicesAllocator&lt;&gt; Indices</div><div class="ttdoc">Type used for indices in PCL.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00149">types.h:149</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2fb546a20b60833752d930e0321d53d8"><div class="ttname"><a href="pcl__macros_8h.html#a2fb546a20b60833752d930e0321d53d8">pcl_lrint</a></div><div class="ttdeci">#define pcl_lrint(x)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00261">pcl_macros.h:261</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a8bfe09b8680e7129dd0fd6177c1a2ce6"><div class="ttname"><a href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a></div><div class="ttdeci">IndicesAllocator&lt;&gt; Indices</div><div class="ttdoc">Type used for indices in PCL.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00133">types.h:133</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2fb546a20b60833752d930e0321d53d8"><div class="ttname"><a href="pcl__macros_8h.html#a2fb546a20b60833752d930e0321d53d8">pcl_lrint</a></div><div class="ttdeci">#define pcl_lrint(x)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00253">pcl_macros.h:253</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:50</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:48</p>
 </div> <!-- #footer -->
 </body>
 </html>

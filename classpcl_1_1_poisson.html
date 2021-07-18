@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -208,6 +208,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf9dd92535d6304d1d985c2f937f87f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_poisson.html#aaf9dd92535d6304d1d985c2f937f87f0">getManifold</a> ()</td></tr>
 <tr class="memdesc:aaf9dd92535d6304d1d985c2f937f87f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the manifold flag.  <a href="classpcl_1_1_poisson.html#aaf9dd92535d6304d1d985c2f937f87f0">More...</a><br /></td></tr>
 <tr class="separator:aaf9dd92535d6304d1d985c2f937f87f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09adbdfc4fad6f20f004326db8f0286c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_poisson.html#a09adbdfc4fad6f20f004326db8f0286c">setThreads</a> (int threads)</td></tr>
+<tr class="memdesc:a09adbdfc4fad6f20f004326db8f0286c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of threads to use.  <a href="classpcl_1_1_poisson.html#a09adbdfc4fad6f20f004326db8f0286c">More...</a><br /></td></tr>
+<tr class="separator:a09adbdfc4fad6f20f004326db8f0286c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9bd49ad80850c2dad8b40e8a74f1f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_poisson.html#a2a9bd49ad80850c2dad8b40e8a74f1f1">getThreads</a> ()</td></tr>
+<tr class="memdesc:a2a9bd49ad80850c2dad8b40e8a74f1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of threads.  <a href="classpcl_1_1_poisson.html#a2a9bd49ad80850c2dad8b40e8a74f1f1">More...</a><br /></td></tr>
+<tr class="separator:a2a9bd49ad80850c2dad8b40e8a74f1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcl_1_1_surface_reconstruction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcl_1_1_surface_reconstruction')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcl_1_1_surface_reconstruction.html">pcl::SurfaceReconstruction&lt; PointNT &gt;</a></td></tr>
 <tr class="memitem:a62586eb3779c4f30358cbc5610f45704 inherit pub_methods_classpcl_1_1_surface_reconstruction"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_surface_reconstruction.html#a62586eb3779c4f30358cbc5610f45704">SurfaceReconstruction</a> ()</td></tr>
 <tr class="memdesc:a62586eb3779c4f30358cbc5610f45704 inherit pub_methods_classpcl_1_1_surface_reconstruction"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classpcl_1_1_surface_reconstruction.html#a62586eb3779c4f30358cbc5610f45704">More...</a><br /></td></tr>
@@ -455,7 +461,7 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00089">89</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00090">90</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
 
 </div>
 </div>
@@ -487,7 +493,7 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Class get name method. </p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_8h_source.html#l00222">222</a> of file <a class="el" href="poisson_8h_source.html">poisson.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_8h_source.html#l00236">236</a> of file <a class="el" href="poisson_8h_source.html">poisson.h</a>.</p>
 
 </div>
 </div>
@@ -828,6 +834,37 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
+<a id="a2a9bd49ad80850c2dad8b40e8a74f1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9bd49ad80850c2dad8b40e8a74f1f1">&#9670;&nbsp;</a></span>getThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointNT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classpcl_1_1_poisson.html">pcl::Poisson</a>&lt; PointNT &gt;::getThreads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of threads. </p>
+
+<p class="definition">Definition at line <a class="el" href="poisson_8h_source.html#l00228">228</a> of file <a class="el" href="poisson_8h_source.html">poisson.h</a>.</p>
+
+</div>
+</div>
 <a id="a8798eee19302e27b3c02b84f05d09660"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8798eee19302e27b3c02b84f05d09660">&#9670;&nbsp;</a></span>performReconstruction() <span class="overload">[1/2]</span></h2>
 
@@ -875,9 +912,9 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_surface_reconstruction.html#adb79f4f50df09a4b8364a7a9f1920e7a">pcl::SurfaceReconstruction&lt; PointNT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00232">232</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00247">247</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00052">pcl::poisson::Point3D&lt; Real &gt;::coords</a>, <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00202">pcl::poisson::CoredMeshData::inCorePoints</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a75a98872464aa9cb1159d3774d16f4cd">pcl::poisson::CoredVectorMeshData::nextOutOfCorePoint()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a4715587f973914ced2f9bcda74e003d8">pcl::poisson::CoredVectorMeshData::nextPolygon()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a6b26aa75409f47f05bc3b49e83627ccf">pcl::poisson::CoredVectorMeshData::outOfCorePointCount()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a263a15b1ff8008fb1779d4cce901b77c">pcl::poisson::CoredVectorMeshData::polygonCount()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">pcl::PointCloud&lt; PointT &gt;::resize()</a>, and <a class="el" href="_vertices_8h_source.html#l00020">pcl::Vertices::vertices</a>.</p>
+<p class="reference">References <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00052">pcl::poisson::Point3D&lt; Real &gt;::coords</a>, <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00202">pcl::poisson::CoredMeshData::inCorePoints</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a75a98872464aa9cb1159d3774d16f4cd">pcl::poisson::CoredVectorMeshData::nextOutOfCorePoint()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a4715587f973914ced2f9bcda74e003d8">pcl::poisson::CoredVectorMeshData::nextPolygon()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a6b26aa75409f47f05bc3b49e83627ccf">pcl::poisson::CoredVectorMeshData::outOfCorePointCount()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a263a15b1ff8008fb1779d4cce901b77c">pcl::poisson::CoredVectorMeshData::polygonCount()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, and <a class="el" href="_vertices_8h_source.html#l00019">pcl::Vertices::vertices</a>.</p>
 
 </div>
 </div>
@@ -917,9 +954,9 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_surface_reconstruction.html#a181cf1cc5feb909f5e8405bb82780cc1">pcl::SurfaceReconstruction&lt; PointNT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00152">152</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00167">167</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_polygon_mesh_8h_source.html#l00022">pcl::PolygonMesh::cloud</a>, <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00052">pcl::poisson::Point3D&lt; Real &gt;::coords</a>, <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00202">pcl::poisson::CoredMeshData::inCorePoints</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a75a98872464aa9cb1159d3774d16f4cd">pcl::poisson::CoredVectorMeshData::nextOutOfCorePoint()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a4715587f973914ced2f9bcda74e003d8">pcl::poisson::CoredVectorMeshData::nextPolygon()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a6b26aa75409f47f05bc3b49e83627ccf">pcl::poisson::CoredVectorMeshData::outOfCorePointCount()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a263a15b1ff8008fb1779d4cce901b77c">pcl::poisson::CoredVectorMeshData::polygonCount()</a>, <a class="el" href="_polygon_mesh_8h_source.html#l00024">pcl::PolygonMesh::polygons</a>, <a class="el" href="conversions_8h_source.html#l00241">pcl::toPCLPointCloud2()</a>, and <a class="el" href="_vertices_8h_source.html#l00020">pcl::Vertices::vertices</a>.</p>
+<p class="reference">References <a class="el" href="_polygon_mesh_8h_source.html#l00021">pcl::PolygonMesh::cloud</a>, <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00052">pcl::poisson::Point3D&lt; Real &gt;::coords</a>, <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00202">pcl::poisson::CoredMeshData::inCorePoints</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a75a98872464aa9cb1159d3774d16f4cd">pcl::poisson::CoredVectorMeshData::nextOutOfCorePoint()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a4715587f973914ced2f9bcda74e003d8">pcl::poisson::CoredVectorMeshData::nextPolygon()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a6b26aa75409f47f05bc3b49e83627ccf">pcl::poisson::CoredVectorMeshData::outOfCorePointCount()</a>, <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a263a15b1ff8008fb1779d4cce901b77c">pcl::poisson::CoredVectorMeshData::polygonCount()</a>, <a class="el" href="_polygon_mesh_8h_source.html#l00023">pcl::PolygonMesh::polygons</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="conversions_8h_source.html#l00239">pcl::toPCLPointCloud2()</a>, and <a class="el" href="_vertices_8h_source.html#l00019">pcl::Vertices::vertices</a>.</p>
 
 </div>
 </div>
@@ -1331,6 +1368,36 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
+<a id="a09adbdfc4fad6f20f004326db8f0286c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09adbdfc4fad6f20f004326db8f0286c">&#9670;&nbsp;</a></span>setThreads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointNT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classpcl_1_1_poisson.html">pcl::Poisson</a>&lt; PointNT &gt;::setThreads </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>threads</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the number of threads to use. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threads</td><td>the number of threads </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="poisson_8hpp_source.html#l00096">96</a> of file <a class="el" href="poisson_8hpp_source.html">poisson.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>pcl/surface/<a class="el" href="poisson_8h_source.html">poisson.h</a></li>
 <li>pcl/surface/impl/<a class="el" href="poisson_8hpp_source.html">poisson.hpp</a></li>
@@ -1341,7 +1408,7 @@ template&lt;typename PointNT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:38</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:49</p>
 </div> <!-- #footer -->
 </body>
 </html>

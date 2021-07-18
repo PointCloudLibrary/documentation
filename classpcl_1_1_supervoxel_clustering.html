@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -141,8 +141,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa91db439be84dadc9143483aa2240835"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">SupervoxelClustering</a> (float voxel_resolution, float seed_resolution)</td></tr>
 <tr class="memdesc:aa91db439be84dadc9143483aa2240835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets default values for member variables.  <a href="classpcl_1_1_supervoxel_clustering.html#aa91db439be84dadc9143483aa2240835">More...</a><br /></td></tr>
 <tr class="separator:aa91db439be84dadc9143483aa2240835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a902a00129f2e209c6ef9533bb08dc5f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_supervoxel_clustering.html#a902a00129f2e209c6ef9533bb08dc5f2">SupervoxelClustering</a> (float voxel_resolution, float seed_resolution, bool)</td></tr>
-<tr class="separator:a902a00129f2e209c6ef9533bb08dc5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac09241a0bd7d0799f97a688d89dcd6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">~SupervoxelClustering</a> ()</td></tr>
 <tr class="memdesc:ac09241a0bd7d0799f97a688d89dcd6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destructor destroys the cloud, normals and search method used for finding neighbors.  <a href="classpcl_1_1_supervoxel_clustering.html#ac09241a0bd7d0799f97a688d89dcd6e3">More...</a><br /></td></tr>
 <tr class="separator:ac09241a0bd7d0799f97a688d89dcd6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +180,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22530dcbbf39536ba7220e0d058bb42b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">refineSupervoxels</a> (int num_itr, std::map&lt; std::uint32_t, typename <a class="el" href="classpcl_1_1_supervoxel.html">Supervoxel</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::Ptr &gt; &amp;supervoxel_clusters)</td></tr>
 <tr class="memdesc:a22530dcbbf39536ba7220e0d058bb42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method refines the calculated supervoxels - may only be called after extract.  <a href="classpcl_1_1_supervoxel_clustering.html#a22530dcbbf39536ba7220e0d058bb42b">More...</a><br /></td></tr>
 <tr class="separator:a22530dcbbf39536ba7220e0d058bb42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ddb159d39a3da31c756a66786b232a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b_a.html">PointXYZRGBA</a> &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_supervoxel_clustering.html#a1ddb159d39a3da31c756a66786b232a8">getColoredCloud</a> () const</td></tr>
-<tr class="memdesc:a1ddb159d39a3da31c756a66786b232a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an <a class="el" href="structpcl_1_1_r_g_b.html" title="A structure representing RGB color information.">RGB</a> colorized cloud showing superpixels Otherwise it returns an empty pointer.  <a href="classpcl_1_1_supervoxel_clustering.html#a1ddb159d39a3da31c756a66786b232a8">More...</a><br /></td></tr>
-<tr class="separator:a1ddb159d39a3da31c756a66786b232a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768a1fad8f67a7ea5e18a36cd4cf4af5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_supervoxel_clustering.html#a768a1fad8f67a7ea5e18a36cd4cf4af5">getVoxelCentroidCloud</a> () const</td></tr>
 <tr class="memdesc:a768a1fad8f67a7ea5e18a36cd4cf4af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a deep copy of the voxel centroid cloud.  <a href="classpcl_1_1_supervoxel_clustering.html#a768a1fad8f67a7ea5e18a36cd4cf4af5">More...</a><br /></td></tr>
 <tr class="separator:a768a1fad8f67a7ea5e18a36cd4cf4af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,7 +487,7 @@ template&lt;typename PointT &gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa91db439be84dadc9143483aa2240835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa91db439be84dadc9143483aa2240835">&#9670;&nbsp;</a></span>SupervoxelClustering() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91db439be84dadc9143483aa2240835">&#9670;&nbsp;</a></span>SupervoxelClustering()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,55 +523,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00047">47</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a902a00129f2e209c6ef9533bb08dc5f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a902a00129f2e209c6ef9533bb08dc5f2">&#9670;&nbsp;</a></span>SupervoxelClustering() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PointT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_supervoxel_clustering.html">SupervoxelClustering</a> </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>voxel_resolution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>seed_resolution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "constructor with flag for using the single camera transform is deprecated. Default behavior is now to use the transform for organized clouds, and not use it for unorganized. Use setUseSingleCameraTransform() to override the defaults." <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8h_source.html#l00199">199</a> of file <a class="el" href="supervoxel__clustering_8h_source.html">supervoxel_clustering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00048">48</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
 </div>
 </div>
@@ -597,7 +544,7 @@ template&lt;typename PointT &gt; </div>
 <p>This destructor destroys the cloud, normals and search method used for finding neighbors. </p>
 <p>In other words it frees memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00062">62</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00063">63</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
 </div>
 </div>
@@ -636,41 +583,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00096">96</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a1ddb159d39a3da31c756a66786b232a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ddb159d39a3da31c756a66786b232a8">&#9670;&nbsp;</a></span>getColoredCloud()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PointT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt;<a class="el" href="structpcl_1_1_point_x_y_z_r_g_b_a.html">PointXYZRGBA</a>&gt;::Ptr <a class="el" href="classpcl_1_1_supervoxel_clustering.html">pcl::SupervoxelClustering</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::getColoredCloud </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an <a class="el" href="structpcl_1_1_r_g_b.html" title="A structure representing RGB color information.">RGB</a> colorized cloud showing superpixels Otherwise it returns an empty pointer. </p>
-<p>Points that belong to the same supervoxel have the same color. But this function doesn't guarantee that different segments will have different color(it's random). Points that are unlabeled will be black </p><dl class="section note"><dt>Note</dt><dd>This will expand the label_colors_ vector so that it can accommodate all labels </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "use getLabeledCloud() instead. An example of how to display and save with colorized labels can be found in examples/segmentation/example_supervoxels.cpp" <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8h_source.html#l00284">284</a> of file <a class="el" href="supervoxel__clustering_8h_source.html">supervoxel_clustering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00097">97</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
 </div>
 </div>
@@ -693,7 +606,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00582">582</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::begin()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00446">pcl::PointCloud&lt; PointT &gt;::end()</a>, <a class="el" href="octree__pointcloud__adjacency__container_8h_source.html#l00103">pcl::octree::OctreePointCloudAdjacencyContainer&lt; PointInT, DataT &gt;::getData()</a>, and <a class="el" href="supervoxel__clustering_8h_source.html#l00166">pcl::SupervoxelClustering&lt; PointT &gt;::VoxelData::owner_</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">pcl::PointCloud&lt; PointT &gt;::begin()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">pcl::PointCloud&lt; PointT &gt;::end()</a>, <a class="el" href="octree__pointcloud__adjacency__container_8h_source.html#l00105">pcl::octree::OctreePointCloudAdjacencyContainer&lt; PointInT, DataT &gt;::getData()</a>, and <a class="el" href="supervoxel__clustering_8h_source.html#l00166">pcl::SupervoxelClustering&lt; PointT &gt;::VoxelData::owner_</a>.</p>
 
 </div>
 </div>
@@ -716,7 +629,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00560">560</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::begin()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00446">pcl::PointCloud&lt; PointT &gt;::end()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">pcl::PointCloud&lt; PointT &gt;::begin()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">pcl::PointCloud&lt; PointT &gt;::end()</a>.</p>
 
 </div>
 </div>
@@ -838,7 +751,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00551">551</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>.</p>
 
 </div>
 </div>
@@ -899,7 +812,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00609">609</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::begin()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">pcl::PointCloud&lt; PointT &gt;::resize()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">pcl::PointCloud&lt; PointT &gt;::begin()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>.</p>
 
 </div>
 </div>
@@ -948,7 +861,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00148">148</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00149">149</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
 </div>
 </div>
@@ -1010,9 +923,9 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00069">69</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00070">70</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00461">pcl::PointCloud&lt; PointT &gt;::empty()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00446">pcl::PointCloud&lt; PointT &gt;::empty()</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +963,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00083">83</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="supervoxel__clustering_8hpp_source.html#l00084">84</a> of file <a class="el" href="supervoxel__clustering_8hpp_source.html">supervoxel_clustering.hpp</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1153,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:04</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:17</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -188,7 +188,7 @@ $(function() {
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">bool</span> </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        addFeatureHistogram (<span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointT&gt;</a> &amp;cloud, </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                             <span class="keyword">const</span> std::string &amp;field_name, </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">int</span> index,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                             <span class="keyword">const</span> <a class="code" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index,</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                             <span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span> = <span class="stringliteral">&quot;cloud&quot;</span>, <span class="keywordtype">int</span> win_width = 640, <span class="keywordtype">int</span> win_height = 200);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">        /** \brief Add a histogram feature to screen as a separate window.</span></div>
@@ -202,7 +202,7 @@ $(function() {
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">bool</span> </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        addFeatureHistogram (<span class="keyword">const</span> <a class="code" href="structpcl_1_1_p_c_l_point_cloud2.html">pcl::PCLPointCloud2</a> &amp;cloud,</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                             <span class="keyword">const</span> std::string &amp;field_name, </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">int</span> index,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                             <span class="keyword">const</span> <a class="code" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index,</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                             <span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span> = <span class="stringliteral">&quot;cloud&quot;</span>, <span class="keywordtype">int</span> win_width = 640, <span class="keywordtype">int</span> win_height = 200);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment"></span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">        /** \brief Update a histogram feature that is already on screen, with a cloud containing a single histogram.</span></div>
@@ -233,7 +233,7 @@ $(function() {
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>T&gt; <span class="keywordtype">bool</span> </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        updateFeatureHistogram (<span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointT&gt;</a> &amp;cloud, <span class="keyword">const</span> std::string &amp;field_name,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">int</span> index, <span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span> = <span class="stringliteral">&quot;cloud&quot;</span>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index, <span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span> = <span class="stringliteral">&quot;cloud&quot;</span>);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                             <span class="comment"></span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">        /** \brief Update a histogram feature that is already on screen, with a cloud containing a single histogram.</span></div>
@@ -244,7 +244,7 @@ $(function() {
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">          */</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">bool</span> </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        updateFeatureHistogram (<span class="keyword">const</span> <a class="code" href="structpcl_1_1_p_c_l_point_cloud2.html">pcl::PCLPointCloud2</a> &amp;cloud,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                <span class="keyword">const</span> std::string &amp;field_name, <span class="keyword">const</span> <span class="keywordtype">int</span> index,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                <span class="keyword">const</span> std::string &amp;field_name, <span class="keyword">const</span> <a class="code" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index,</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                <span class="keyword">const</span> std::string &amp;<span class="keywordtype">id</span> = <span class="stringliteral">&quot;cloud&quot;</span>);         </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"></span> </div>
@@ -327,21 +327,22 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasspcl_1_1visualization_1_1_p_c_l_histogram_visualizer_html"><div class="ttname"><a href="classpcl_1_1visualization_1_1_p_c_l_histogram_visualizer.html">pcl::visualization::PCLHistogramVisualizer</a></div><div class="ttdoc">PCL histogram visualizer main class.</div><div class="ttdef"><b>Definition:</b> <a href="histogram__visualizer_8h_source.html#l00056">histogram_visualizer.h:56</a></div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a45edbae979af563e6a1e39fd1aad3911"><div class="ttname"><a href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a></div><div class="ttdeci">detail::int_type_t&lt; detail::index_type_size, detail::index_type_signed &gt; index_t</div><div class="ttdoc">Type used for an index in PCL.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00112">types.h:112</a></div></div>
 <div class="ttc" id="aclasspcl_1_1visualization_1_1_p_c_l_histogram_visualizer_html_af45fff6a0ca05eb6c40b146bc691660e"><div class="ttname"><a href="classpcl_1_1visualization_1_1_p_c_l_histogram_visualizer.html#af45fff6a0ca05eb6c40b146bc691660e">pcl::visualization::PCLHistogramVisualizer::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PCLHistogramVisualizer &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="histogram__visualizer_8h_source.html#l00059">histogram_visualizer.h:59</a></div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html">pcl::visualization::RenWinInteract</a></div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00055">ren_win_interact_map.h:55</a></div></div>
-<div class="ttc" id="anamespacepcl_1_1visualization_html_a9b5b17170d7fcf2f006db9297c202a1c"><div class="ttname"><a href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">pcl::visualization::RenWinInteractMap</a></div><div class="ttdeci">std::map&lt; std::string, RenWinInteract &gt; RenWinInteractMap</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00077">ren_win_interact_map.h:77</a></div></div>
-<div class="ttc" id="astructpcl_1_1_p_c_l_point_cloud2_html"><div class="ttname"><a href="structpcl_1_1_p_c_l_point_cloud2.html">pcl::PCLPointCloud2</a></div><div class="ttdef"><b>Definition:</b> <a href="_p_c_l_point_cloud2_8h_source.html#l00015">PCLPointCloud2.h:15</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html">pcl::visualization::RenWinInteract</a></div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00056">ren_win_interact_map.h:56</a></div></div>
+<div class="ttc" id="anamespacepcl_1_1visualization_html_a9b5b17170d7fcf2f006db9297c202a1c"><div class="ttname"><a href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">pcl::visualization::RenWinInteractMap</a></div><div class="ttdeci">std::map&lt; std::string, RenWinInteract &gt; RenWinInteractMap</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00078">ren_win_interact_map.h:78</a></div></div>
+<div class="ttc" id="astructpcl_1_1_p_c_l_point_cloud2_html"><div class="ttname"><a href="structpcl_1_1_p_c_l_point_cloud2.html">pcl::PCLPointCloud2</a></div><div class="ttdef"><b>Definition:</b> <a href="_p_c_l_point_cloud2_8h_source.html#l00016">PCLPointCloud2.h:16</a></div></div>
 <div class="ttc" id="aclasspcl_1_1visualization_1_1_p_c_l_histogram_visualizer_html_a3ab6924d9076065687c6f71ad7216e41"><div class="ttname"><a href="classpcl_1_1visualization_1_1_p_c_l_histogram_visualizer.html#a3ab6924d9076065687c6f71ad7216e41">pcl::visualization::PCLHistogramVisualizer::~PCLHistogramVisualizer</a></div><div class="ttdeci">virtual ~PCLHistogramVisualizer()</div><div class="ttdef"><b>Definition:</b> <a href="histogram__visualizer_8h_source.html#l00065">histogram_visualizer.h:65</a></div></div>
 <div class="ttc" id="aclasspcl_1_1visualization_1_1_p_c_l_histogram_visualizer_html_a33892fdf2d5438bf4ab09e4a33f9a949"><div class="ttname"><a href="classpcl_1_1visualization_1_1_p_c_l_histogram_visualizer.html#a33892fdf2d5438bf4ab09e4a33f9a949">pcl::visualization::PCLHistogramVisualizer::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PCLHistogramVisualizer &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="histogram__visualizer_8h_source.html#l00060">histogram_visualizer.h:60</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <div class="ttc" id="aclassvtk_smart_pointer_html"><div class="ttname"><a href="classvtk_smart_pointer.html">vtkSmartPointer</a></div><div class="ttdef"><b>Definition:</b> <a href="actor__map_8h_source.html#l00051">actor_map.h:51</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:01</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:59</p>
 </div> <!-- #footer -->
 </body>
 </html>

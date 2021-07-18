@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -153,8 +153,8 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">        * \param[out] j3 the resultant third moment invariant</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">        */</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordtype">void</span> </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classpcl_1_1_moment_invariants_estimation.html#ae742555b169df15c2da92c81de98bfbc">computePointMomentInvariants</a> (<span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointInT&gt;</a> &amp;cloud, </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                    <span class="keyword">const</span> std::vector&lt;int&gt; &amp;indices, </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classpcl_1_1_moment_invariants_estimation.html#ad659fe28d71dc391dfbdd6e89a36a773">computePointMomentInvariants</a> (<span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointInT&gt;</a> &amp;cloud, </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                    <span class="keywordtype">float</span> &amp;j1, <span class="keywordtype">float</span> &amp;j2, <span class="keywordtype">float</span> &amp;j3);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">      /** \brief Compute the 3 moment invariants (j1, j2, j3) for a given set of points, using their indices.</span></div>
@@ -164,7 +164,7 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">        * \param[out] j3 the resultant third moment invariant</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">        */</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordtype">void</span> </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="classpcl_1_1_moment_invariants_estimation.html#ae742555b169df15c2da92c81de98bfbc">computePointMomentInvariants</a> (<span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointInT&gt;</a> &amp;cloud, </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="classpcl_1_1_moment_invariants_estimation.html#ad659fe28d71dc391dfbdd6e89a36a773">computePointMomentInvariants</a> (<span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;PointInT&gt;</a> &amp;cloud, </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                    <span class="keywordtype">float</span> &amp;j1, <span class="keywordtype">float</span> &amp;j2, <span class="keywordtype">float</span> &amp;j3);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">protected</span>:</div>
@@ -194,7 +194,8 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1_feature_html_a6425d91342ae6b8c968c96dd0a12d1f3"><div class="ttname"><a href="classpcl_1_1_feature.html#a6425d91342ae6b8c968c96dd0a12d1f3">pcl::Feature::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const Feature&lt; PointInT, PointOutT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="feature_8h_source.html#l00115">feature.h:115</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_moment_invariants_estimation_html"><div class="ttname"><a href="classpcl_1_1_moment_invariants_estimation.html">pcl::MomentInvariantsEstimation</a></div><div class="ttdoc">MomentInvariantsEstimation estimates the 3 moment invariants (j1, j2, j3) at each 3D point.</div><div class="ttdef"><b>Definition:</b> <a href="moment__invariants_8h_source.html#l00055">moment_invariants.h:55</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_moment_invariants_estimation_html_aaee8b74d7dd4dde93e90e8840fbf6ef4"><div class="ttname"><a href="classpcl_1_1_moment_invariants_estimation.html#aaee8b74d7dd4dde93e90e8840fbf6ef4">pcl::MomentInvariantsEstimation::computeFeature</a></div><div class="ttdeci">void computeFeature(PointCloudOut &amp;output) override</div><div class="ttdoc">Estimate moment invariants for all points given in &lt;setInputCloud (), setIndices ()&gt; using the surfac...</div><div class="ttdef"><b>Definition:</b> <a href="moment__invariants_8hpp_source.html#l00116">moment_invariants.hpp:116</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_moment_invariants_estimation_html_ae742555b169df15c2da92c81de98bfbc"><div class="ttname"><a href="classpcl_1_1_moment_invariants_estimation.html#ae742555b169df15c2da92c81de98bfbc">pcl::MomentInvariantsEstimation::computePointMomentInvariants</a></div><div class="ttdeci">void computePointMomentInvariants(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud, const std::vector&lt; int &gt; &amp;indices, float &amp;j1, float &amp;j2, float &amp;j3)</div><div class="ttdoc">Compute the 3 moment invariants (j1, j2, j3) for a given set of points, using their indices.</div><div class="ttdef"><b>Definition:</b> <a href="moment__invariants_8hpp_source.html#l00049">moment_invariants.hpp:49</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a8bfe09b8680e7129dd0fd6177c1a2ce6"><div class="ttname"><a href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a></div><div class="ttdeci">IndicesAllocator&lt;&gt; Indices</div><div class="ttdoc">Type used for indices in PCL.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00133">types.h:133</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_moment_invariants_estimation_html_ad659fe28d71dc391dfbdd6e89a36a773"><div class="ttname"><a href="classpcl_1_1_moment_invariants_estimation.html#ad659fe28d71dc391dfbdd6e89a36a773">pcl::MomentInvariantsEstimation::computePointMomentInvariants</a></div><div class="ttdeci">void computePointMomentInvariants(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud, const pcl::Indices &amp;indices, float &amp;j1, float &amp;j2, float &amp;j3)</div><div class="ttdoc">Compute the 3 moment invariants (j1, j2, j3) for a given set of points, using their indices.</div><div class="ttdef"><b>Definition:</b> <a href="moment__invariants_8hpp_source.html#l00049">moment_invariants.hpp:49</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_moment_invariants_estimation_html_a22e73955cdd4cc7bcc896b4293e1e887"><div class="ttname"><a href="classpcl_1_1_moment_invariants_estimation.html#a22e73955cdd4cc7bcc896b4293e1e887">pcl::MomentInvariantsEstimation::MomentInvariantsEstimation</a></div><div class="ttdeci">MomentInvariantsEstimation()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="moment__invariants_8h_source.html#l00071">moment_invariants.h:71</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_feature_html_a54032b79551164878ff59ed93b5c1dc5"><div class="ttname"><a href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">pcl::Feature::feature_name_</a></div><div class="ttdeci">std::string feature_name_</div><div class="ttdoc">The feature name.</div><div class="ttdef"><b>Definition:</b> <a href="feature_8h_source.html#l00223">feature.h:223</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_moment_invariants_estimation_html_ab8819fd0ec7ca0398e8deeb6a60493f7"><div class="ttname"><a href="classpcl_1_1_moment_invariants_estimation.html#ab8819fd0ec7ca0398e8deeb6a60493f7">pcl::MomentInvariantsEstimation::PointCloudOut</a></div><div class="ttdeci">typename Feature&lt; PointInT, PointOutT &gt;::PointCloudOut PointCloudOut</div><div class="ttdef"><b>Definition:</b> <a href="moment__invariants_8h_source.html#l00068">moment_invariants.h:68</a></div></div>
@@ -204,7 +205,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:29</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:25</p>
 </div> <!-- #footer -->
 </body>
 </html>

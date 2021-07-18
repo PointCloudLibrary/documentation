@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -444,7 +444,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00132">132</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="extract__clusters_8hpp_source.html#l00118">pcl::extractEuclideanClusters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="extract__clusters_8hpp_source.html#l00127">pcl::extractEuclideanClusters()</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00125">125</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="extract__clusters_8hpp_source.html#l00045">pcl::extractEuclideanClusters()</a>, <a class="el" href="extract__labeled__clusters_8hpp_source.html#l00044">pcl::extractLabeledEuclideanClusters()</a>, and <a class="el" href="seeded__hue__segmentation_8hpp_source.html#l00046">pcl::seededHueSegmentation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="extract__clusters_8hpp_source.html#l00046">pcl::extractEuclideanClusters()</a>, <a class="el" href="extract__labeled__clusters_8hpp_source.html#l00064">pcl::extractLabeledEuclideanClusters()</a>, and <a class="el" href="seeded__hue__segmentation_8hpp_source.html#l00049">pcl::seededHueSegmentation()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="search_8hpp_source.html#l00068">68</a> of file <a class="el" href="search_8hpp_source.html">search.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="extract__clusters_8hpp_source.html#l00045">pcl::extractEuclideanClusters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="extract__clusters_8hpp_source.html#l00046">pcl::extractEuclideanClusters()</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ template&lt;typename PointT &gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classpcl_1_1search_1_1_search.html" title="Generic search class.">Search</a> for k-nearest neighbors for the given query point. </p>
-<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.points.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cloud</td><td>the point cloud data </td></tr>
@@ -751,7 +751,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implemented in <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a20501b588a7971de1dbe92a634deafc5">pcl::search::KdTree&lt; SceneT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_flann_search.html#a987c7af46db6148d4a305412e3aea1f4">pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_octree.html#adefcc0b4b428f0f3e2398a5e0009d370">pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a20501b588a7971de1dbe92a634deafc5">pcl::search::KdTree&lt; PointT, Tree &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a20501b588a7971de1dbe92a634deafc5">pcl::search::KdTree&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_brute_force.html#a059de152db62d7816028cc198a2f40a3">pcl::search::BruteForce&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_organized_neighbor.html#a477438d0d657faa6b8162d26078e4d5f">pcl::search::OrganizedNeighbor&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_octree.html#adefcc0b4b428f0f3e2398a5e0009d370">pcl::search::Octree&lt; PointInT &gt;</a>, and <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a20501b588a7971de1dbe92a634deafc5">pcl::search::KdTree&lt; pcl::PointXYZRGB &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="segment__differences_8hpp_source.html#l00048">pcl::getPointCloudDifference()</a>, and <a class="el" href="search_8h_source.html#l00159">pcl::search::Search&lt; PointXYZRGB &gt;::nearestKSearchT()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="segment__differences_8hpp_source.html#l00050">pcl::getPointCloudDifference()</a>, and <a class="el" href="search_8h_source.html#l00159">pcl::search::Search&lt; PointXYZRGB &gt;::nearestKSearchT()</a>.</p>
 
 </div>
 </div>
@@ -804,7 +804,7 @@ template&lt;typename PointT &gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classpcl_1_1search_1_1_search.html" title="Generic search class.">Search</a> for k-nearest neighbors for the given query point (zero-copy). </p>
-<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.points.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>a <em>valid</em> index representing a <em>valid</em> query point in the dataset given by <em>setInputCloud</em>. If indices were given in setInputCloud, index will be the position in the indices vector.</td></tr>
@@ -1105,7 +1105,7 @@ template&lt;typename PointT &gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classpcl_1_1search_1_1_search.html" title="Generic search class.">Search</a> for all the nearest neighbors of the query point in a given radius. </p>
-<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.points.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cloud</td><td>the point cloud data </td></tr>
@@ -1200,7 +1200,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implemented in <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#addf4dfd296faf0f33a12c21092c0ea2c">pcl::search::KdTree&lt; SceneT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_flann_search.html#a1e6c027e14a505d9b1eeadbbacdb0964">pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#addf4dfd296faf0f33a12c21092c0ea2c">pcl::search::KdTree&lt; PointT, Tree &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#addf4dfd296faf0f33a12c21092c0ea2c">pcl::search::KdTree&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_brute_force.html#aa87867f6ee47ecec7d3ba4b7e143487c">pcl::search::BruteForce&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_octree.html#a2df30d0bea715e5b2ec267f33e20fc77">pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_organized_neighbor.html#a4306593d67bec97367bcdd5115548154">pcl::search::OrganizedNeighbor&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_octree.html#a2df30d0bea715e5b2ec267f33e20fc77">pcl::search::Octree&lt; PointInT &gt;</a>, and <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#addf4dfd296faf0f33a12c21092c0ea2c">pcl::search::KdTree&lt; pcl::PointXYZRGB &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="smoothed__surfaces__keypoint_8hpp_source.html#l00071">pcl::SmoothedSurfacesKeypoint&lt; PointT, PointNT &gt;::detectKeypoints()</a>, <a class="el" href="extract__clusters_8hpp_source.html#l00045">pcl::extractEuclideanClusters()</a>, <a class="el" href="extract__labeled__clusters_8hpp_source.html#l00044">pcl::extractLabeledEuclideanClusters()</a>, <a class="el" href="search_8h_source.html#l00287">pcl::search::Search&lt; PointXYZRGB &gt;::radiusSearchT()</a>, and <a class="el" href="seeded__hue__segmentation_8hpp_source.html#l00046">pcl::seededHueSegmentation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="smoothed__surfaces__keypoint_8hpp_source.html#l00071">pcl::SmoothedSurfacesKeypoint&lt; PointT, PointNT &gt;::detectKeypoints()</a>, <a class="el" href="extract__clusters_8hpp_source.html#l00046">pcl::extractEuclideanClusters()</a>, <a class="el" href="extract__labeled__clusters_8hpp_source.html#l00064">pcl::extractLabeledEuclideanClusters()</a>, <a class="el" href="search_8h_source.html#l00287">pcl::search::Search&lt; PointXYZRGB &gt;::radiusSearchT()</a>, and <a class="el" href="seeded__hue__segmentation_8hpp_source.html#l00049">pcl::seededHueSegmentation()</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1259,7 @@ template&lt;typename PointT &gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classpcl_1_1search_1_1_search.html" title="Generic search class.">Search</a> for all the nearest neighbors of the query point in a given radius (zero-copy). </p>
-<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.points.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This method does not do any bounds checking for the input index (i.e., index &gt;= cloud.size () || index &lt; 0), and assumes valid (i.e., finite) data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>a <em>valid</em> index representing a <em>valid</em> query point in the dataset given by <em>setInputCloud</em>. If indices were given in setInputCloud, index will be the position in the indices vector.</td></tr>
@@ -1482,7 +1482,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a5eea1a9b7bd6016ad57813846e8522b7">pcl::search::KdTree&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_organized_neighbor.html#a1e15b503c0a32e6dd4dd35492cd3e9a9">pcl::search::OrganizedNeighbor&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_octree.html#a07beda83b148ab67802a974b4a0f354a">pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;</a>, and <a class="el" href="classpcl_1_1search_1_1_octree.html#a07beda83b148ab67802a974b4a0f354a">pcl::search::Octree&lt; PointInT &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a5eea1a9b7bd6016ad57813846e8522b7">pcl::search::KdTree&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a5eea1a9b7bd6016ad57813846e8522b7">pcl::search::KdTree&lt; pcl::PointXYZRGB &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_kd_tree.html#a5eea1a9b7bd6016ad57813846e8522b7">pcl::search::KdTree&lt; SceneT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_organized_neighbor.html#a1e15b503c0a32e6dd4dd35492cd3e9a9">pcl::search::OrganizedNeighbor&lt; PointT &gt;</a>, <a class="el" href="classpcl_1_1search_1_1_octree.html#a07beda83b148ab67802a974b4a0f354a">pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;</a>, and <a class="el" href="classpcl_1_1search_1_1_octree.html#a07beda83b148ab67802a974b4a0f354a">pcl::search::Octree&lt; PointInT &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="search_8hpp_source.html#l00075">75</a> of file <a class="el" href="search_8hpp_source.html">search.hpp</a>.</p>
 
@@ -1595,7 +1595,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00404">404</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="search_8h_source.html#l00132">pcl::search::Search&lt; PointXYZRGB &gt;::getIndices()</a>, <a class="el" href="search_2include_2pcl_2search_2octree_8h_source.html#l00120">pcl::search::Octree&lt; PointInT &gt;::setInputCloud()</a>, <a class="el" href="organized_8h_source.html#l00128">pcl::search::OrganizedNeighbor&lt; PointT &gt;::setInputCloud()</a>, and <a class="el" href="flann__search_8h_source.html#l00316">pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;::setPointRepresentation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="search_8h_source.html#l00132">pcl::search::Search&lt; PointXYZRGB &gt;::getIndices()</a>, <a class="el" href="search_2include_2pcl_2search_2octree_8h_source.html#l00120">pcl::search::Octree&lt; PointInT &gt;::setInputCloud()</a>, <a class="el" href="organized_8h_source.html#l00125">pcl::search::OrganizedNeighbor&lt; PointT &gt;::setInputCloud()</a>, and <a class="el" href="flann__search_8h_source.html#l00316">pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;::setPointRepresentation()</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1623,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="search_8h_source.html#l00403">403</a> of file <a class="el" href="search_8h_source.html">search.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="search_8h_source.html#l00125">pcl::search::Search&lt; PointXYZRGB &gt;::getInputCloud()</a>, <a class="el" href="organized_8h_source.html#l00107">pcl::search::OrganizedNeighbor&lt; PointT &gt;::isValid()</a>, <a class="el" href="search_2include_2pcl_2search_2octree_8h_source.html#l00107">pcl::search::Octree&lt; PointInT &gt;::setInputCloud()</a>, <a class="el" href="organized_8h_source.html#l00128">pcl::search::OrganizedNeighbor&lt; PointT &gt;::setInputCloud()</a>, <a class="el" href="flann__search_8h_source.html#l00316">pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;::setPointRepresentation()</a>, and <a class="el" href="organized_8h_source.html#l00215">pcl::search::OrganizedNeighbor&lt; PointT &gt;::testPoint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="search_8h_source.html#l00125">pcl::search::Search&lt; PointXYZRGB &gt;::getInputCloud()</a>, <a class="el" href="organized_8h_source.html#l00104">pcl::search::OrganizedNeighbor&lt; PointT &gt;::isValid()</a>, <a class="el" href="search_2include_2pcl_2search_2octree_8h_source.html#l00107">pcl::search::Octree&lt; PointInT &gt;::setInputCloud()</a>, <a class="el" href="organized_8h_source.html#l00125">pcl::search::OrganizedNeighbor&lt; PointT &gt;::setInputCloud()</a>, <a class="el" href="flann__search_8h_source.html#l00316">pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;::setPointRepresentation()</a>, and <a class="el" href="organized_8h_source.html#l00212">pcl::search::OrganizedNeighbor&lt; PointT &gt;::testPoint()</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1691,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:40</p>
+<p>Pages generated on Sun Jul 18 2021 17:43:56</p>
 </div> <!-- #footer -->
 </body>
 </html>

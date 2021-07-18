@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -80,6 +80,8 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepcl_1_1visualization_1_1context__items"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1visualization_1_1context__items.html">context_items</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacepcl_1_1visualization_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1visualization_1_1details.html">details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -346,9 +348,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga480eeeb88d5db9a5145ef7463dcc13ae"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkDataSet &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__visualization.html#ga480eeeb88d5db9a5145ef7463dcc13ae">createPolygon</a> (const <a class="el" href="classpcl_1_1_planar_polygon.html">pcl::PlanarPolygon</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt; &amp;planar_polygon)</td></tr>
 <tr class="memdesc:ga480eeeb88d5db9a5145ef7463dcc13ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d poly line from a set of points on the boundary of a planar region.  <a href="group__visualization.html#ga480eeeb88d5db9a5145ef7463dcc13ae">More...</a><br /></td></tr>
 <tr class="separator:ga480eeeb88d5db9a5145ef7463dcc13ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f2f7acf0305773269cac90e2e12acfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__visualization.html#ga7f2f7acf0305773269cac90e2e12acfa">getCorrespondingPointCloud</a> (vtkPolyData *src, const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a> &gt; &amp;tgt, std::vector&lt; int &gt; &amp;indices)</td></tr>
-<tr class="memdesc:ga7f2f7acf0305773269cac90e2e12acfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a list of corresponding indices, for a set of vtk points, from a <a class="el" href="classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points.">pcl::PointCloud</a>.  <a href="group__visualization.html#ga7f2f7acf0305773269cac90e2e12acfa">More...</a><br /></td></tr>
-<tr class="separator:ga7f2f7acf0305773269cac90e2e12acfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga598437f146d15ed279d3b2cb3b12c713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__visualization.html#ga598437f146d15ed279d3b2cb3b12c713">getCorrespondingPointCloud</a> (vtkPolyData *src, const <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a> &gt; &amp;tgt, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices)</td></tr>
+<tr class="memdesc:ga598437f146d15ed279d3b2cb3b12c713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a list of corresponding indices, for a set of vtk points, from a <a class="el" href="classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points.">pcl::PointCloud</a>.  <a href="group__visualization.html#ga598437f146d15ed279d3b2cb3b12c713">More...</a><br /></td></tr>
+<tr class="separator:ga598437f146d15ed279d3b2cb3b12c713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8035e3f759b9a0a97cb29694494185d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__visualization.html#ga8035e3f759b9a0a97cb29694494185d7">savePointData</a> (vtkPolyData *data, const std::string &amp;out_file, const <a class="el" href="namespacepcl_1_1visualization.html#a98e7533ef69b79343e9b457236d70e71">CloudActorMapPtr</a> &amp;actors)</td></tr>
 <tr class="memdesc:ga8035e3f759b9a0a97cb29694494185d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the vtk-formatted Point Cloud data into a set of files, based on whether the data comes from previously loaded PCD files.  <a href="group__visualization.html#ga8035e3f759b9a0a97cb29694494185d7">More...</a><br /></td></tr>
 <tr class="separator:ga8035e3f759b9a0a97cb29694494185d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,6 +390,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1c190a94892d418f0d3435dd8bcacada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkDataSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1visualization.html#a1c190a94892d418f0d3435dd8bcacada">createCube</a> (double x_min, double x_max, double y_min, double y_max, double z_min, double z_max)</td></tr>
 <tr class="memdesc:a1c190a94892d418f0d3435dd8bcacada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cube from a set of bounding points.  <a href="namespacepcl_1_1visualization.html#a1c190a94892d418f0d3435dd8bcacada">More...</a><br /></td></tr>
 <tr class="separator:a1c190a94892d418f0d3435dd8bcacada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f3163ddfcb7a3358ff62e40d6015294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkDataSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">createEllipsoid</a> (const Eigen::Isometry3d &amp;transform, double radius_x, double radius_y, double radius_z)</td></tr>
+<tr class="memdesc:ga5f3163ddfcb7a3358ff62e40d6015294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ellipsoid shape from the given parameters.  <a href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">More...</a><br /></td></tr>
+<tr class="separator:ga5f3163ddfcb7a3358ff62e40d6015294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeabaade9c81f6faf7e6d0be905df8f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">allocVtkUnstructuredGrid</a> (<a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkUnstructuredGrid &gt; &amp;polydata)</td></tr>
 <tr class="memdesc:aeabaade9c81f6faf7e6d0be905df8f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a new unstructured grid smartpointer.  <a href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">More...</a><br /></td></tr>
 <tr class="separator:aeabaade9c81f6faf7e6d0be905df8f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -475,7 +480,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ren__win__interact__map_8h_source.html#l00077">77</a> of file <a class="el" href="ren__win__interact__map_8h_source.html">ren_win_interact_map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ren__win__interact__map_8h_source.html#l00078">78</a> of file <a class="el" href="ren__win__interact__map_8h_source.html">ren_win_interact_map.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +550,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aed5b7817e251717c1d4640b6b7d1dd58a331c67f41c92a3acfae46e9700aa6626"></a>PCL_OUTSIDE_FRUSTUM&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00086">86</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00087">87</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -568,7 +573,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a239442a6fa89340fef4d85fa37af4d0cad5bbda0b65e47583675a96b78870b06a"></a>INTERACTOR_KB_MOD_SHIFT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="interactor__style_8h_source.html#l00070">70</a> of file <a class="el" href="interactor__style_8h_source.html">interactor_style.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="interactor__style_8h_source.html#l00069">69</a> of file <a class="el" href="interactor__style_8h_source.html">interactor_style.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +608,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00129">129</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00130">130</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -639,7 +644,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00100">100</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00101">101</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -660,7 +665,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3b507f3bba8e944d46b657adfe83fc51a0bc863b3546953088810b7f0e8989fff"></a>PCL_VISUALIZER_REPRESENTATION_SURFACE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00114">114</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00115">115</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +686,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a78cb670b93cffcb1b45c64c12a4aada1ae807dd2d9e76c7489d90273c472a94c2"></a>PCL_VISUALIZER_SHADING_PHONG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00121">121</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html#l00122">122</a> of file <a class="el" href="visualization_2include_2pcl_2visualization_2common_2common_8h_source.html">common.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +715,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="pcl__visualizer_8hpp_source.html#l01618">pcl::visualization::PCLVisualizer::addPolygonMesh()</a>, and <a class="el" href="shapes_8hpp_source.html#l00054">createPolygon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcl__visualizer_8hpp_source.html#l01636">pcl::visualization::PCLVisualizer::addPolygonMesh()</a>, and <a class="el" href="shapes_8hpp_source.html#l00054">createPolygon()</a>.</p>
 
 </div>
 </div>
@@ -949,7 +954,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="point__cloud__color__handlers_8hpp_source.html#l00082">pcl::visualization::PointCloudColorHandlerRandom&lt; PointT &gt;::getColor()</a>, and <a class="el" href="image__viewer_8hpp_source.html#l00352">pcl::visualization::ImageViewer::showCorrespondences()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="point__cloud__color__handlers_8hpp_source.html#l00083">pcl::visualization::PointCloudColorHandlerRandom&lt; PointT &gt;::getColor()</a>, and <a class="el" href="image__viewer_8hpp_source.html#l00352">pcl::visualization::ImageViewer::showCorrespondences()</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1230,7 @@ Functions</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:44</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:01</p>
 </div> <!-- #footer -->
 </body>
 </html>

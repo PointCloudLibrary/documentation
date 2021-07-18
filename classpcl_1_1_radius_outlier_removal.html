@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -152,9 +152,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72c8696f1bc2e4a6e92172371a45d592 inherit pub_methods_classpcl_1_1_filter_indices"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_filter_indices.html#a72c8696f1bc2e4a6e92172371a45d592">FilterIndices</a> (bool extract_removed_indices=false)</td></tr>
 <tr class="memdesc:a72c8696f1bc2e4a6e92172371a45d592 inherit pub_methods_classpcl_1_1_filter_indices"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classpcl_1_1_filter_indices.html#a72c8696f1bc2e4a6e92172371a45d592">More...</a><br /></td></tr>
 <tr class="separator:a72c8696f1bc2e4a6e92172371a45d592 inherit pub_methods_classpcl_1_1_filter_indices"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbfa3686df4bdb6cd333a182180970d inherit pub_methods_classpcl_1_1_filter_indices"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_filter_indices.html#abbbfa3686df4bdb6cd333a182180970d">filter</a> (std::vector&lt; int &gt; &amp;indices)</td></tr>
-<tr class="memdesc:abbbfa3686df4bdb6cd333a182180970d inherit pub_methods_classpcl_1_1_filter_indices"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the filtering method and returns the filtered point cloud indices.  <a href="classpcl_1_1_filter_indices.html#abbbfa3686df4bdb6cd333a182180970d">More...</a><br /></td></tr>
-<tr class="separator:abbbfa3686df4bdb6cd333a182180970d inherit pub_methods_classpcl_1_1_filter_indices"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8343144f19a74a2f4bef0e4e55850fa0 inherit pub_methods_classpcl_1_1_filter_indices"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_filter_indices.html#a8343144f19a74a2f4bef0e4e55850fa0">filter</a> (<a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;indices)</td></tr>
+<tr class="memdesc:a8343144f19a74a2f4bef0e4e55850fa0 inherit pub_methods_classpcl_1_1_filter_indices"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the filtering method and returns the filtered point cloud indices.  <a href="classpcl_1_1_filter_indices.html#a8343144f19a74a2f4bef0e4e55850fa0">More...</a><br /></td></tr>
+<tr class="separator:a8343144f19a74a2f4bef0e4e55850fa0 inherit pub_methods_classpcl_1_1_filter_indices"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8da0b86892188e59b0deb8d420a682bb inherit pub_methods_classpcl_1_1_filter_indices"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_filter_indices.html#a8da0b86892188e59b0deb8d420a682bb">setNegative</a> (bool negative)</td></tr>
 <tr class="memdesc:a8da0b86892188e59b0deb8d420a682bb inherit pub_methods_classpcl_1_1_filter_indices"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the regular conditions for points filtering should apply, or the inverted conditions.  <a href="classpcl_1_1_filter_indices.html#a8da0b86892188e59b0deb8d420a682bb">More...</a><br /></td></tr>
 <tr class="separator:a8da0b86892188e59b0deb8d420a682bb inherit pub_methods_classpcl_1_1_filter_indices"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,17 +229,17 @@ Protected Types</h2></td></tr>
 <tr class="separator:a393d6637f916ff243d93359de11f2467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740eac99a40ad04a536e9f901d7d8f5a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#a740eac99a40ad04a536e9f901d7d8f5a">PointCloudConstPtr</a> = typename <a class="el" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">PointCloud::ConstPtr</a></td></tr>
 <tr class="separator:a740eac99a40ad04a536e9f901d7d8f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78e14f7118ac1a94f5c9a2e1b780367"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#aa78e14f7118ac1a94f5c9a2e1b780367">SearcherPtr</a> = typename <a class="el" href="classpcl_1_1search_1_1_search.html">pcl::search::Search</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_filter.html#a969e31c2abab3767dc28e223374543f2">Ptr</a></td></tr>
+<tr class="memitem:aa78e14f7118ac1a94f5c9a2e1b780367"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#aa78e14f7118ac1a94f5c9a2e1b780367">SearcherPtr</a> = typename <a class="el" href="classpcl_1_1search_1_1_search.html">pcl::search::Search</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_radius_outlier_removal.html#a83886d7dadf001a891c7af948eb192ef">Ptr</a></td></tr>
 <tr class="separator:aa78e14f7118ac1a94f5c9a2e1b780367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6440dee772a74492e69347991751ca9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#a6440dee772a74492e69347991751ca9e">applyFilter</a> (std::vector&lt; int &gt; &amp;indices) override</td></tr>
-<tr class="memdesc:a6440dee772a74492e69347991751ca9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtered results are indexed by an indices array.  <a href="classpcl_1_1_radius_outlier_removal.html#a6440dee772a74492e69347991751ca9e">More...</a><br /></td></tr>
-<tr class="separator:a6440dee772a74492e69347991751ca9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add87896d31617f64fcd3386211a89bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#add87896d31617f64fcd3386211a89bae">applyFilterIndices</a> (std::vector&lt; int &gt; &amp;indices)</td></tr>
-<tr class="memdesc:add87896d31617f64fcd3386211a89bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtered results are indexed by an indices array.  <a href="classpcl_1_1_radius_outlier_removal.html#add87896d31617f64fcd3386211a89bae">More...</a><br /></td></tr>
-<tr class="separator:add87896d31617f64fcd3386211a89bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cfd81a168cf0d4b8968ba54e2eeb33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#a24cfd81a168cf0d4b8968ba54e2eeb33">applyFilter</a> (<a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;indices) override</td></tr>
+<tr class="memdesc:a24cfd81a168cf0d4b8968ba54e2eeb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtered results are indexed by an indices array.  <a href="classpcl_1_1_radius_outlier_removal.html#a24cfd81a168cf0d4b8968ba54e2eeb33">More...</a><br /></td></tr>
+<tr class="separator:a24cfd81a168cf0d4b8968ba54e2eeb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0076e5530520a4915111ae71c5d48ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_radius_outlier_removal.html#a0076e5530520a4915111ae71c5d48ef2">applyFilterIndices</a> (<a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;indices)</td></tr>
+<tr class="memdesc:a0076e5530520a4915111ae71c5d48ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtered results are indexed by an indices array.  <a href="classpcl_1_1_radius_outlier_removal.html#a0076e5530520a4915111ae71c5d48ef2">More...</a><br /></td></tr>
+<tr class="separator:a0076e5530520a4915111ae71c5d48ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_filter_indices"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_filter_indices')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_filter_indices.html">pcl::FilterIndices&lt; PointT &gt;</a></td></tr>
 <tr class="memitem:a237872d14a14ba3881592d3106cf4338 inherit pro_methods_classpcl_1_1_filter_indices"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_filter_indices.html#a237872d14a14ba3881592d3106cf4338">applyFilter</a> (<a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> &amp;output) override</td></tr>
 <tr class="memdesc:a237872d14a14ba3881592d3106cf4338 inherit pro_methods_classpcl_1_1_filter_indices"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract filter method for point cloud.  <a href="classpcl_1_1_filter_indices.html#a237872d14a14ba3881592d3106cf4338">More...</a><br /></td></tr>
@@ -418,7 +418,7 @@ template&lt;typename PointT &gt; </div>
 template&lt;typename PointT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classpcl_1_1_radius_outlier_removal.html">pcl::RadiusOutlierRemoval</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_filter.html#a969e31c2abab3767dc28e223374543f2">Ptr</a> =  shared_ptr&lt;<a class="el" href="classpcl_1_1_radius_outlier_removal.html">RadiusOutlierRemoval</a>&lt;<a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="classpcl_1_1_radius_outlier_removal.html">pcl::RadiusOutlierRemoval</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_radius_outlier_removal.html#a83886d7dadf001a891c7af948eb192ef">Ptr</a> =  shared_ptr&lt;<a class="el" href="classpcl_1_1_radius_outlier_removal.html">RadiusOutlierRemoval</a>&lt;<a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -439,7 +439,7 @@ template&lt;typename PointT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classpcl_1_1_radius_outlier_removal.html">pcl::RadiusOutlierRemoval</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_radius_outlier_removal.html#aa78e14f7118ac1a94f5c9a2e1b780367">SearcherPtr</a> =  typename <a class="el" href="classpcl_1_1search_1_1_search.html">pcl::search::Search</a>&lt;<a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>&gt;::<a class="el" href="classpcl_1_1_filter.html#a969e31c2abab3767dc28e223374543f2">Ptr</a></td>
+          <td class="memname">using <a class="el" href="classpcl_1_1_radius_outlier_removal.html">pcl::RadiusOutlierRemoval</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::<a class="el" href="classpcl_1_1_radius_outlier_removal.html#aa78e14f7118ac1a94f5c9a2e1b780367">SearcherPtr</a> =  typename <a class="el" href="classpcl_1_1search_1_1_search.html">pcl::search::Search</a>&lt;<a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>&gt;::<a class="el" href="classpcl_1_1_radius_outlier_removal.html#a83886d7dadf001a891c7af948eb192ef">Ptr</a></td>
         </tr>
       </table>
   </td>
@@ -490,13 +490,13 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="radius__outlier__removal_8h_source.html#l00088">88</a> of file <a class="el" href="radius__outlier__removal_8h_source.html">radius_outlier_removal.h</a>.</p>
 
-<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00161">pcl::Filter&lt; PointT &gt;::filter_name_</a>.</p>
+<p class="reference">References <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00158">pcl::Filter&lt; PointT &gt;::filter_name_</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6440dee772a74492e69347991751ca9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6440dee772a74492e69347991751ca9e">&#9670;&nbsp;</a></span>applyFilter()</h2>
+<a id="a24cfd81a168cf0d4b8968ba54e2eeb33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cfd81a168cf0d4b8968ba54e2eeb33">&#9670;&nbsp;</a></span>applyFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,7 +509,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_radius_outlier_removal.html">pcl::RadiusOutlierRemoval</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::applyFilter </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em></td><td>)</td>
           <td></td>
         </tr>
@@ -529,16 +529,16 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classpcl_1_1_filter_indices.html#a96adbc8e3d7a076cc00a938260160466">pcl::FilterIndices&lt; PointT &gt;</a>.</p>
+<p>Implements <a class="el" href="classpcl_1_1_filter_indices.html#a8030a7f808decb673ed8444170ffa354">pcl::FilterIndices&lt; PointT &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="radius__outlier__removal_8h_source.html#l00156">156</a> of file <a class="el" href="radius__outlier__removal_8h_source.html">radius_outlier_removal.h</a>.</p>
 
-<p class="reference">References <a class="el" href="radius__outlier__removal_8hpp_source.html#l00048">pcl::RadiusOutlierRemoval&lt; PointT &gt;::applyFilterIndices()</a>.</p>
+<p class="reference">References <a class="el" href="radius__outlier__removal_8hpp_source.html#l00049">pcl::RadiusOutlierRemoval&lt; PointT &gt;::applyFilterIndices()</a>.</p>
 
 </div>
 </div>
-<a id="add87896d31617f64fcd3386211a89bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add87896d31617f64fcd3386211a89bae">&#9670;&nbsp;</a></span>applyFilterIndices()</h2>
+<a id="a0076e5530520a4915111ae71c5d48ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0076e5530520a4915111ae71c5d48ef2">&#9670;&nbsp;</a></span>applyFilterIndices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,7 +551,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_radius_outlier_removal.html">pcl::RadiusOutlierRemoval</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::applyFilterIndices </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em></td><td>)</td>
           <td></td>
         </tr>
@@ -571,7 +571,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="radius__outlier__removal_8hpp_source.html#l00048">48</a> of file <a class="el" href="radius__outlier__removal_8hpp_source.html">radius_outlier_removal.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="radius__outlier__removal_8hpp_source.html#l00049">49</a> of file <a class="el" href="radius__outlier__removal_8hpp_source.html">radius_outlier_removal.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="radius__outlier__removal_8h_source.html#l00156">pcl::RadiusOutlierRemoval&lt; PointT &gt;::applyFilter()</a>.</p>
 
@@ -728,7 +728,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:42</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:54</p>
 </div> <!-- #footer -->
 </body>
 </html>

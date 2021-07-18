@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -364,6 +364,9 @@ $(function() {
 <li>cloud_host_color_
 : <a class="el" href="classpcl_1_1gpu_1_1people_1_1_people_detector.html#acdcc5e0a8edd1d9bc61a25d31518796c">pcl::gpu::people::PeopleDetector</a>
 </li>
+<li>cloud_lab_
+: <a class="el" href="classpcl_1_1_generalized_iterative_closest_point6_d.html#a76c81ba496a6e9209184bc9eac491342">pcl::GeneralizedIterativeClosestPoint6D</a>
+</li>
 <li>cloud_normals_
 : <a class="el" href="classpcl_1_1_model_outlier_removal.html#ad634fa7eb3cc9f417e1f72491f9f6fba">pcl::ModelOutlierRemoval&lt; PointT &gt;</a>
 </li>
@@ -397,7 +400,7 @@ $(function() {
 </li>
 <li>cluster_tolerance_
 : <a class="el" href="classpcl_1_1_euclidean_cluster_extraction.html#a0c681cd8d1d06bebd64070f02e383880">pcl::EuclideanClusterExtraction&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1gpu_1_1_euclidean_cluster_extraction.html#a6b53d0688720222882181e18967ca731">pcl::gpu::EuclideanClusterExtraction</a>
+, <a class="el" href="classpcl_1_1gpu_1_1_euclidean_cluster_extraction.html#acff949fa550301ac6946ff8e7d56401e">pcl::gpu::EuclideanClusterExtraction&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1gpu_1_1_euclidean_labeled_cluster_extraction.html#a8585a773e7074e619ecbf2db888e85d5">pcl::gpu::EuclideanLabeledClusterExtraction&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1gpu_1_1_seeded_hue_segmentation.html#a9589b350768eebe75079ac4ea85512af">pcl::gpu::SeededHueSegmentation</a>
 , <a class="el" href="classpcl_1_1_labeled_euclidean_cluster_extraction.html#a289a8169284944c230d7e588263c4a3c">pcl::LabeledEuclideanClusterExtraction&lt; PointT &gt;</a>
@@ -718,7 +721,7 @@ $(function() {
 <li>correspondences_
 : <a class="el" href="classpcl_1_1_registration.html#a98f1c160391fff07f34339b63286e228">pcl::Registration&lt; PointSource, PointTarget, Scalar &gt;</a>
 , <a class="el" href="classpcl_1_1registration_1_1_default_convergence_criteria.html#a599456356e647fb385523f0660ae9569">pcl::registration::DefaultConvergenceCriteria&lt; Scalar &gt;</a>
-, <a class="el" href="classpcl_1_1_sample_consensus_model_registration.html#afc82c76d1880b0cfefbe9ae71e1d95f7">pcl::SampleConsensusModelRegistration&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_sample_consensus_model_registration.html#a0d75fdc4a88c7e75a04bb3c86ecb1447">pcl::SampleConsensusModelRegistration&lt; PointT &gt;</a>
 </li>
 <li>correspondences_cur_mse_
 : <a class="el" href="classpcl_1_1registration_1_1_default_convergence_criteria.html#a1a9b10bb8d05cd7e8c1ed67a612af227">pcl::registration::DefaultConvergenceCriteria&lt; Scalar &gt;</a>
@@ -745,7 +748,7 @@ $(function() {
 : <a class="el" href="structpcl_1_1_h_d_l_grabber_1_1_h_d_l_laser_correction.html#a69eda05d28881848a9e361d8f2cbfacf">pcl::HDLGrabber::HDLLaserCorrection</a>
 </li>
 <li>count
-: <a class="el" href="structpcl_1_1_p_c_l_point_field.html#a1696c116c396b5db6b6a2274e00d23b7">pcl::PCLPointField</a>
+: <a class="el" href="structpcl_1_1_p_c_l_point_field.html#ae14f3365e54d0f272e6648c231fa56ac">pcl::PCLPointField</a>
 </li>
 <li>Count
 : <a class="el" href="classvtk_vertex_buffer_object.html#aeddba6f7185a38fb2c1b1943b88a2e21">vtkVertexBufferObject</a>
@@ -798,9 +801,6 @@ $(function() {
 </li>
 <li>Ctrl
 : <a class="el" href="classpcl_1_1visualization_1_1_keyboard_event.html#ae86f7f0e2a4af8b6d728317f26f8279a">pcl::visualization::KeyboardEvent</a>
-</li>
-<li>cube_size
-: <a class="el" href="structpcl_1_1gpu_1_1_data_generator.html#ad630beea497891d5cfa4a18de470bd16">pcl::gpu::DataGenerator</a>
 </li>
 <li>current_
 : <a class="el" href="classpcl_1_1_dense_crf.html#a682df30d9499ee3ef820a4a93e891e5b">pcl::DenseCrf</a>
@@ -856,6 +856,9 @@ $(function() {
 : <a class="el" href="classpcl_1_1_edge_aware_plane_comparator.html#a836a28a7af168267a67225929877b324">pcl::EdgeAwarePlaneComparator&lt; PointT, PointNT &gt;</a>
 , <a class="el" href="classpcl_1_1_region_growing.html#a8afe22fadb13bbd9a0d90753129b336c">pcl::RegionGrowing&lt; PointT, NormalT &gt;</a>
 </li>
+<li>custom_model_constraints_
+: <a class="el" href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">pcl::SampleConsensusModel&lt; PointT &gt;</a>
+</li>
 <li>cut_
 : <a class="el" href="classpcl_1_1segmentation_1_1grabcut_1_1_boykov_kolmogorov.html#a12a00bbbbec04bddc5a4b109bf1caa50">pcl::segmentation::grabcut::BoykovKolmogorov</a>
 </li>
@@ -886,7 +889,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:15:37</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:57</p>
 </div> <!-- #footer -->
 </body>
 </html>

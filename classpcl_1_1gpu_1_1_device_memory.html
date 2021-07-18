@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -135,9 +135,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aedc9e55247563dab696161fac96cf650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1gpu_1_1_device_memory.html#aedc9e55247563dab696161fac96cf650">upload</a> (const void *host_ptr_arg, std::size_t sizeBytes_arg)</td></tr>
 <tr class="memdesc:aedc9e55247563dab696161fac96cf650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data to internal buffer in GPU memory.  <a href="classpcl_1_1gpu_1_1_device_memory.html#aedc9e55247563dab696161fac96cf650">More...</a><br /></td></tr>
 <tr class="separator:aedc9e55247563dab696161fac96cf650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ee7d59e5431ee0c61f9c6c151fa748"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1gpu_1_1_device_memory.html#a92ee7d59e5431ee0c61f9c6c151fa748">upload</a> (const void *host_ptr, std::size_t device_begin_byte_offset, std::size_t num_bytes)</td></tr>
+<tr class="memdesc:a92ee7d59e5431ee0c61f9c6c151fa748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads data from CPU memory to device array.  <a href="classpcl_1_1gpu_1_1_device_memory.html#a92ee7d59e5431ee0c61f9c6c151fa748">More...</a><br /></td></tr>
+<tr class="separator:a92ee7d59e5431ee0c61f9c6c151fa748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3dde5e26915ca28d8ce521edf211464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1gpu_1_1_device_memory.html#ad3dde5e26915ca28d8ce521edf211464">download</a> (void *host_ptr_arg) const</td></tr>
 <tr class="memdesc:ad3dde5e26915ca28d8ce521edf211464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads data from internal buffer to CPU memory.  <a href="classpcl_1_1gpu_1_1_device_memory.html#ad3dde5e26915ca28d8ce521edf211464">More...</a><br /></td></tr>
 <tr class="separator:ad3dde5e26915ca28d8ce521edf211464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554840dde893f325990c77fed34da453"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1gpu_1_1_device_memory.html#a554840dde893f325990c77fed34da453">download</a> (void *host_ptr, std::size_t device_begin_byte_offset, std::size_t num_bytes) const</td></tr>
+<tr class="memdesc:a554840dde893f325990c77fed34da453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Downloads data from internal buffer to CPU memory.  <a href="classpcl_1_1gpu_1_1_device_memory.html#a554840dde893f325990c77fed34da453">More...</a><br /></td></tr>
+<tr class="separator:a554840dde893f325990c77fed34da453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70dc06ec14d680c4b97f71575ef6a963"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1gpu_1_1_device_memory.html#a70dc06ec14d680c4b97f71575ef6a963">swap</a> (<a class="el" href="classpcl_1_1gpu_1_1_device_memory.html">DeviceMemory</a> &amp;other_arg)</td></tr>
 <tr class="memdesc:a70dc06ec14d680c4b97f71575ef6a963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs swap of data pointed with another device memory.  <a href="classpcl_1_1gpu_1_1_device_memory.html#a70dc06ec14d680c4b97f71575ef6a963">More...</a><br /></td></tr>
 <tr class="separator:a70dc06ec14d680c4b97f71575ef6a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,11 +167,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><b><a class="el" href="classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class">DeviceMemory</a></b> class </p>
-<dl class="section note"><dt>Note</dt><dd>This is a BLOB container class with reference counting for GPU memory. <br  />
-</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is a BLOB container class with reference counting for GPU memory.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Anatoly Baksheev </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8h_source.html#l00054">54</a> of file <a class="el" href="device__memory_8h_source.html">device_memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8h_source.html#l00052">52</a> of file <a class="el" href="device__memory_8h_source.html">device_memory.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1715c6703bf020d262f1814245d81049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1715c6703bf020d262f1814245d81049">&#9670;&nbsp;</a></span>DeviceMemory() <span class="overload">[1/4]</span></h2>
@@ -333,8 +338,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allocates internal buffer in GPU memory. </p>
-<p>If internal buffer was created before the function recreates it with new size. If new and old sizes are equal it does nothing. <br  />
- </p><dl class="params"><dt>Parameters</dt><dd>
+<p>If internal buffer was created before the function recreates it with new size. If new and old sizes are equal it does nothing. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sizeBytes_arg</td><td>buffer size </td></tr>
   </table>
@@ -343,8 +347,53 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a554840dde893f325990c77fed34da453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554840dde893f325990c77fed34da453">&#9670;&nbsp;</a></span>download() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcl::gpu::DeviceMemory::download </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>host_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>device_begin_byte_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Downloads data from internal buffer to CPU memory. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if download successful </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host_ptr_arg</td><td>pointer to buffer to download </td></tr>
+    <tr><td class="paramname">device_begin_byte_offset</td><td>first byte position to download </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes to download </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad3dde5e26915ca28d8ce521edf211464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3dde5e26915ca28d8ce521edf211464">&#9670;&nbsp;</a></span>download()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3dde5e26915ca28d8ce521edf211464">&#9670;&nbsp;</a></span>download() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,8 +411,7 @@ Public Member Functions</h2></td></tr>
 <p>Downloads data from internal buffer to CPU memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">host_ptr_arg</td><td>pointer to buffer to download <br  />
- </td></tr>
+    <tr><td class="paramname">host_ptr_arg</td><td>pointer to buffer to download </td></tr>
   </table>
   </dd>
 </dl>
@@ -417,7 +465,7 @@ template&lt;class U &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00060">60</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kernel__containers_8h_source.html#l00056">pcl::gpu::DevPtr&lt; T &gt;::data</a>, and <a class="el" href="kernel__containers_8h_source.html#l00071">pcl::gpu::PtrSz&lt; T &gt;::size</a>.</p>
+<p class="reference">References <a class="el" href="kernel__containers_8h_source.html#l00054">pcl::gpu::DevPtr&lt; T &gt;::data</a>, and <a class="el" href="kernel__containers_8h_source.html#l00081">pcl::gpu::PtrSz&lt; T &gt;::size</a>.</p>
 
 </div>
 </div>
@@ -466,7 +514,7 @@ template&lt;class T &gt; </div>
 
 <p>Returns pointer for internal buffer in GPU memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00048">48</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00047">47</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -555,8 +603,53 @@ template&lt;class T &gt; </div>
 <p>Performs swap of data pointed with another device memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other_arg</td><td>device memory to swap with <br  />
- </td></tr>
+    <tr><td class="paramname">other_arg</td><td>device memory to swap with </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92ee7d59e5431ee0c61f9c6c151fa748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ee7d59e5431ee0c61f9c6c151fa748">&#9670;&nbsp;</a></span>upload() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcl::gpu::DeviceMemory::upload </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>host_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>device_begin_byte_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uploads data from CPU memory to device array. </p>
+<dl class="section note"><dt>Note</dt><dd>This overload never allocates memory in contrast to the other upload function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if upload successful </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host_ptr_arg</td><td>pointer to buffer to upload </td></tr>
+    <tr><td class="paramname">device_begin_byte_offset</td><td>first byte position to upload to </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes to upload </td></tr>
   </table>
   </dd>
 </dl>
@@ -564,7 +657,7 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <a id="aedc9e55247563dab696161fac96cf650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedc9e55247563dab696161fac96cf650">&#9670;&nbsp;</a></span>upload()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc9e55247563dab696161fac96cf650">&#9670;&nbsp;</a></span>upload() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,8 +685,7 @@ template&lt;class T &gt; </div>
 <p>Uploads data to internal buffer in GPU memory. </p>
 <p>It calls <a class="el" href="classpcl_1_1gpu_1_1_device_memory.html#af059094fdcafcb88a2966378199bbde5" title="Allocates internal buffer in GPU memory.">create()</a> inside to ensure that intenal buffer size is enough. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">host_ptr_arg</td><td>pointer to buffer to upload <br  />
- </td></tr>
+    <tr><td class="paramname">host_ptr_arg</td><td>pointer to buffer to upload </td></tr>
     <tr><td class="paramname">sizeBytes_arg</td><td>buffer size </td></tr>
   </table>
   </dd>
@@ -611,7 +703,7 @@ template&lt;class T &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:31</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:45</p>
 </div> <!-- #footer -->
 </body>
 </html>

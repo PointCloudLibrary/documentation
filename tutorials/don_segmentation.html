@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Difference of Normals Based Segmentation &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Difference of Normals Based Segmentation &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -425,8 +425,7 @@
 186
 187
 188
-189
-190</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+189</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm"> * @file don_segmentation.cpp</span>
 <span class="cm"> * Difference of Normals Example for PCL Segmentation Tutorials.</span>
 <span class="cm"> *</span>
@@ -446,7 +445,6 @@
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/features/don.h&gt;</span><span class="cp"></span>
 
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">pcl</span><span class="p">;</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="kt">int</span>
 <span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
@@ -470,13 +468,13 @@
   <span class="p">}</span>
 
   <span class="c1">/// the file to read from.</span>
-  <span class="n">string</span> <span class="n">infile</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">infile</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
   <span class="c1">/// small scale</span>
-  <span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">scale1</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">scale1</span><span class="p">;</span>
   <span class="c1">/// large scale</span>
-  <span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">scale2</span><span class="p">;</span>
-  <span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">threshold</span><span class="p">;</span>   <span class="c1">// threshold for DoN magnitude</span>
-  <span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">segradius</span><span class="p">;</span>   <span class="c1">// threshold for radius segmentation</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">scale2</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">threshold</span><span class="p">;</span>   <span class="c1">// threshold for DoN magnitude</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">istringstream</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="o">&gt;&gt;</span> <span class="n">segradius</span><span class="p">;</span>   <span class="c1">// threshold for radius segmentation</span>
 
   <span class="c1">// Load cloud in blob format</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span> <span class="n">blob</span><span class="p">;</span>
@@ -576,7 +574,7 @@
   <span class="n">doncloud</span> <span class="o">=</span> <span class="n">doncloud_filtered</span><span class="p">;</span>
 
   <span class="c1">// Save filtered output</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Filtered Pointcloud: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">doncloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Filtered Pointcloud: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">doncloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
   <span class="n">writer</span><span class="p">.</span><span class="n">write</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span> <span class="p">(</span><span class="s">&quot;don_filtered.pcd&quot;</span><span class="p">,</span> <span class="o">*</span><span class="n">doncloud</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span> 
 
@@ -600,18 +598,18 @@
   <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointIndices</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">cluster_indices</span><span class="p">.</span><span class="n">begin</span> <span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">cluster_indices</span><span class="p">.</span><span class="n">end</span> <span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">,</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
   <span class="p">{</span>
     <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud_cluster_don</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">const_iterator</span> <span class="n">pit</span> <span class="o">=</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">indices</span><span class="p">.</span><span class="n">begin</span> <span class="p">();</span> <span class="n">pit</span> <span class="o">!=</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">indices</span><span class="p">.</span><span class="n">end</span> <span class="p">();</span> <span class="o">++</span><span class="n">pit</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="k">auto</span><span class="o">&amp;</span> <span class="nl">idx</span> <span class="p">:</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">indices</span><span class="p">)</span>
     <span class="p">{</span>
-      <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">doncloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="o">*</span><span class="n">pit</span><span class="p">]);</span>
+      <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">push_back</span> <span class="p">((</span><span class="o">*</span><span class="n">doncloud</span><span class="p">)[</span><span class="n">idx</span><span class="p">]);</span>
     <span class="p">}</span>
 
-    <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">width</span> <span class="o">=</span> <span class="kt">int</span> <span class="p">(</span><span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+    <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">width</span> <span class="o">=</span> <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">();</span>
     <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
     <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">is_dense</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
 
     <span class="c1">//Save cluster</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;PointCloud representing the Cluster: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;PointCloud representing the Cluster: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">cloud_cluster_don</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; data points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
     <span class="n">ss</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;don_cluster_&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;.pcd&quot;</span><span class="p">;</span>
     <span class="n">writer</span><span class="p">.</span><span class="n">write</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">ss</span><span class="p">.</span><span class="n">str</span> <span class="p">(),</span> <span class="o">*</span><span class="n">cloud_cluster_don</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
   <span class="p">}</span>
@@ -632,7 +630,7 @@
  9
 10
 11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">don_segmentation</span><span class="p">)</span>
 
@@ -663,8 +661,7 @@ $ make
 <h2><a class="toc-backref" href="#id13">The Explanation</a></h2>
 <div class="section" id="large-small-radius-normal-estimation">
 <h3><a class="toc-backref" href="#id14">Large/Small Radius Normal Estimation</a></h3>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create a search tree, use KDTreee for non-organized data.</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">Search</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">tree</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">Search</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">tree</span><span class="p">;</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">isOrganized</span> <span class="p">())</span>
   <span class="p">{</span>
     <span class="n">tree</span><span class="p">.</span><span class="n">reset</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">OrganizedNeighbor</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span> <span class="p">());</span>
@@ -679,8 +676,7 @@ $ make
 </pre></div>
 </div>
 <p>We will skip the code for loading files and parsing command line arguments, and go straight to the first major PCL calls. For our later calls to calculate normals, we need to create a search tree. For organized data (i.e. a depth image), a much faster search tree is the OrganizedNeighbor search tree. For unorganized data, i.e. LiDAR scans, a KDTree is a good option.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Compute normals using both small and large scales at each point</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">NormalEstimationOMP</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="p">,</span> <span class="n">PointNormal</span><span class="o">&gt;</span> <span class="n">ne</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">NormalEstimationOMP</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="p">,</span> <span class="n">PointNormal</span><span class="o">&gt;</span> <span class="n">ne</span><span class="p">;</span>
   <span class="n">ne</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
   <span class="n">ne</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree</span><span class="p">);</span>
 
@@ -689,6 +685,8 @@ $ make
 <span class="cm">   * normals are all pointed in the same direction!</span>
 <span class="cm">   */</span>
   <span class="n">ne</span><span class="p">.</span><span class="n">setViewPoint</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;::</span><span class="n">max</span> <span class="p">(),</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;::</span><span class="n">max</span> <span class="p">(),</span> <span class="n">std</span><span class="o">::</span><span class="n">numeric_limits</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;::</span><span class="n">max</span> <span class="p">());</span>
+
+  <span class="c1">// calculate normals with the small scale</span>
 </pre></div>
 </div>
 <p>This is perhaps the most important section of code, estimating the normals. This is also the bottleneck computationally, and so we will use the <code class="docutils literal notranslate"><span class="pre">pcl::NormalEstimationOMP</span></code> class which makes use of OpenMP to use many threads to calculate the normal using the multiple cores found in most modern processors.  We could also use the standard single-threaded class <code class="docutils literal notranslate"><span class="pre">pcl::NormalEstimation</span></code>, or even the GPU accelerated class <code class="docutils literal notranslate"><span class="pre">pcl::gpu::NormalEstimation</span></code>. Whatever class we use, it is important to set an arbitrary viewpoint to be used across all the normal calculations - this ensures that normals estimated at different scales share a consistent orientation.</p>
@@ -696,8 +694,7 @@ $ make
 <p class="admonition-title">Note</p>
 <p>For information and examples on estimating normals, normal ambiguity, and the different normal estimation methods in PCL, please read the <a class="reference internal" href="normal_estimation.html#normal-estimation"><span class="std std-ref">Estimating Surface Normals in a PointCloud</span></a> tutorial.</p>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// calculate normals with the small scale</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Calculating normals for scale...&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">scale1</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Calculating normals for scale...&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">scale1</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">normals_small_scale</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
 
   <span class="n">ne</span><span class="p">.</span><span class="n">setRadiusSearch</span> <span class="p">(</span><span class="n">scale1</span><span class="p">);</span>
@@ -719,14 +716,12 @@ $ make
 </div>
 <div class="section" id="difference-of-normals-feature-calculation">
 <h3><a class="toc-backref" href="#id15">Difference of Normals Feature Calculation</a></h3>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create output cloud for DoN results</span>
-  <span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">doncloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">doncloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
   <span class="n">copyPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">doncloud</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>We can now perform the actual Difference of Normals feature calculation using our normal estimates. The Difference of Normals result is a vector field, so we initialize the point cloud to store the results in as a <code class="docutils literal notranslate"><span class="pre">pcl::PointNormal</span></code> point cloud, and copy the points from our input pointcloud over to it, so we have what may be regarded as an uninitialized vector field for our point cloud.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create DoN operator</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">DifferenceOfNormalsEstimation</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="p">,</span> <span class="n">PointNormal</span><span class="p">,</span> <span class="n">PointNormal</span><span class="o">&gt;</span> <span class="n">don</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">DifferenceOfNormalsEstimation</span><span class="o">&lt;</span><span class="n">PointXYZRGB</span><span class="p">,</span> <span class="n">PointNormal</span><span class="p">,</span> <span class="n">PointNormal</span><span class="o">&gt;</span> <span class="n">don</span><span class="p">;</span>
   <span class="n">don</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
   <span class="n">don</span><span class="p">.</span><span class="n">setNormalScaleLarge</span> <span class="p">(</span><span class="n">normals_large_scale</span><span class="p">);</span>
   <span class="n">don</span><span class="p">.</span><span class="n">setNormalScaleSmall</span> <span class="p">(</span><span class="n">normals_small_scale</span><span class="p">);</span>
@@ -798,8 +793,7 @@ small <img class="math" src="_images/math/376ecbf379a469bb046dea170a6c0d6fc8bd33
 </tbody>
 </table>
 <p>In this example we will do a simple magnitude threshold, looking for objects of a scale regardless of their orientation in the scene. To do so, we must create a conditional filter:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Build the condition for filtering</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">ConditionOr</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">range_cond</span> <span class="p">(</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">ConditionOr</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">range_cond</span> <span class="p">(</span>
     <span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">ConditionOr</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;</span> <span class="p">()</span>
     <span class="p">);</span>
   <span class="n">range_cond</span><span class="o">-&gt;</span><span class="n">addComparison</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">FieldComparison</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">ConstPtr</span> <span class="p">(</span>
@@ -824,8 +818,7 @@ small <img class="math" src="_images/math/376ecbf379a469bb046dea170a6c0d6fc8bd33
 </div>
 <div class="section" id="clustering-the-results">
 <h3><a class="toc-backref" href="#id17">Clustering the Results</a></h3>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Filter by magnitude</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Clustering using EuclideanClusterExtraction with tolerance &lt;= &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">segradius</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;...&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Clustering using EuclideanClusterExtraction with tolerance &lt;= &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">segradius</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;...&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
   <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">segtree</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
   <span class="n">segtree</span><span class="o">-&gt;</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">doncloud</span><span class="p">);</span>

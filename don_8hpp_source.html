@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Check if the size of normals is the same as the size of the surface</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (input_normals_small_-&gt;points.size () != input_-&gt;points.size ())</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (input_normals_small_-&gt;size () != input_-&gt;size ())</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::%s::initCompute] &quot;</span>, getClassName().c_str ());</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;The number of points in the input dataset differs from &quot;</span>);</div>
@@ -140,7 +140,7 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span> (input_normals_large_-&gt;points.size () != input_-&gt;points.size ())</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span> (input_normals_large_-&gt;size () != input_-&gt;size ())</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;[pcl::%s::initCompute] &quot;</span>, getClassName().c_str ());</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    PCL_ERROR (<span class="stringliteral">&quot;The number of points in the input dataset differs from &quot;</span>);</div>
@@ -157,16 +157,16 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classpcl_1_1_difference_of_normals_estimation.html#a9e3bc6d78c8a95dc054b6579373fe6f4">   85</a></span>&#160;<a class="code" href="classpcl_1_1_difference_of_normals_estimation.html#a9e3bc6d78c8a95dc054b6579373fe6f4">pcl::DifferenceOfNormalsEstimation&lt;PointInT, PointNT, PointOutT&gt;::computeFeature</a> (PointCloudOut &amp;output)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">//perform DoN subtraction and return results</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">for</span> (std::size_t point_id = 0; point_id &lt; input_-&gt;points.size (); ++point_id)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">for</span> (std::size_t point_id = 0; point_id &lt; input_-&gt;size (); ++point_id)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    output.points[point_id].getNormalVector3fMap () =  (input_normals_small_-&gt;points[point_id].getNormalVector3fMap ()</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        - input_normals_large_-&gt;points[point_id].getNormalVector3fMap ()) / 2.0;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span>(!std::isfinite (output.points[point_id].normal_x) ||</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        !std::isfinite (output.points[point_id].normal_y) ||</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        !std::isfinite (output.points[point_id].normal_z)){</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      output.points[point_id].getNormalVector3fMap () = Eigen::Vector3f(0,0,0);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    output[point_id].getNormalVector3fMap () =  ((*input_normals_small_)[point_id].getNormalVector3fMap ()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        - (*input_normals_large_)[point_id].getNormalVector3fMap ()) / 2.0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span>(!std::isfinite (output[point_id].normal_x) ||</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        !std::isfinite (output[point_id].normal_y) ||</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        !std::isfinite (output[point_id].normal_z)){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      output[point_id].getNormalVector3fMap () = Eigen::Vector3f(0,0,0);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    output.points[point_id].curvature = output.points[point_id].getNormalVector3fMap ().norm();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    output[point_id].curvature = output[point_id].getNormalVector3fMap ().norm();</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
@@ -183,7 +183,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:28</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:24</p>
 </div> <!-- #footer -->
 </body>
 </html>

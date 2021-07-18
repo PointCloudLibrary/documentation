@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h1><a class="anchor" id="secSampleConsensusPresentation"></a>
 Overview</h1>
-<p>The <b>pcl_sample_consensus</b> library holds SAmple Consensus (SAC) methods like <a href="http://en.wikipedia.org/wiki/RANSAC">RANSAC</a> and models like planes and cylinders. These can combined freely in order to detect specific models and their parameters in point clouds.</p>
+<p>The <b>pcl_sample_consensus</b> library holds SAmple Consensus (SAC) methods like <a href="http://en.wikipedia.org/wiki/RANSAC">RANSAC</a> and models like planes and cylinders. These can be combined freely in order to detect specific models and their parameters in point clouds.</p>
 <p>Some of the models implemented in this library include: lines, planes, cylinders, and spheres. Plane fitting is often applied to the task of detecting common indoor surfaces, such as walls, floors, and table tops. Other models can be used to detect and segment objects with common geometric structures (e.g., fitting a cylinder model to a mug).</p>
 <div class="image">
 <img src="http://www.pointclouds.org/assets/images/contents/documentation/sample_consensus_planes_cylinders.png" alt=""/>
@@ -115,15 +115,15 @@ SACMODEL_PARALLEL_LINES - not implemented yet </li>
 <li>
 <a href="http://en.wikipedia.org/wiki/RANSAC">SAC_RANSAC</a> - RANdom SAmple Consensus </li>
 <li>
-<a href="http://research.microsoft.com/en-us/um/people/zhang/INRIA/Publis/Tutorial-Estim/node25.html">SAC_LMEDS</a> - Least Median of Squares </li>
+<a href="https://www-sop.inria.fr/odyssee/software/old_robotvis/Tutorial-Estim/node25.html">SAC_LMEDS</a> - Least Median of Squares </li>
 <li>
-<a href="http://www.robots.ox.ac.uk/~vgg/publications-new/Public/2000/Torr00/torr00.pdf">SAC_MSAC</a> - M-Estimator SAmple Consensus </li>
+<a href="https://www.robots.ox.ac.uk/~vgg/publications/2000/Torr00/torr00.pdf">SAC_MSAC</a> - M-Estimator SAmple Consensus </li>
 <li>
-<a href="http://cmp.felk.cvut.cz/~matas/papers/presentations/rransac-cvww02_pres.pdf">SAC_RRANSAC</a> - Randomized RANSAC </li>
+<a href="https://web.archive.org/web/20170811194151/http://www.bmva.org/bmvc/2002/papers/50/full_50.pdf">SAC_RRANSAC</a> - Randomized RANSAC </li>
 <li>
-<a href="http://cmp.felk.cvut.cz/~matas/papers/presentations/rransac-cvww02_pres.pdf">SAC_RMSAC</a> - Randomized MSAC </li>
+<a href="https://web.archive.org/web/20170811194151/http://www.bmva.org/bmvc/2002/papers/50/full_50.pdf">SAC_RMSAC</a> - Randomized MSAC </li>
 <li>
-<a href="http://www.robots.ox.ac.uk/~vgg/publications-new/Public/2000/Torr00/torr00.pdf">SAC_MLESAC</a> - Maximum LikeLihood Estimation SAmple Consensus </li>
+<a href="https://www.robots.ox.ac.uk/~vgg/publications/2000/Torr00/torr00.pdf">SAC_MLESAC</a> - Maximum LikeLihood Estimation SAmple Consensus </li>
 <li>
 <a href="http://cmp.felk.cvut.cz/~matas/papers/chum-prosac-cvpr05.pdf">SAC_PROSAC</a> - PROgressive SAmple Consensus </li>
 </ul>
@@ -147,23 +147,26 @@ estimating image geometry", P.H.S.  <a href="classpcl_1_1_maximum_likelihood_sam
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_m_estimator_sample_consensus.html" title="MEstimatorSampleConsensus represents an implementation of the MSAC (M-estimator SAmple Consensus) alg...">MEstimatorSampleConsensus</a></b> represents an implementation of the MSAC (M-estimator SAmple Consensus) algorithm, as described in: "MLESAC: A new robust estimator with application to estimating image geometry", P.H.S.  <a href="classpcl_1_1_m_estimator_sample_consensus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_progressive_sample_consensus.html">pcl::ProgressiveSampleConsensus&lt; PointT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_random_sample_consensus.html" title="RandomSampleConsensus represents an implementation of the RANSAC (RANdom SAmple Consensus) algorithm,...">RandomSampleConsensus</a></b> represents an implementation of the RANSAC (RAndom SAmple Consensus) algorithm, as described in: "Matching with PROSAC – Progressive Sample Consensus", Chum, O.  <a href="classpcl_1_1_progressive_sample_consensus.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_progressive_sample_consensus.html" title="ProgressiveSampleConsensus represents an implementation of the PROSAC (PROgressive SAmple Consensus) ...">ProgressiveSampleConsensus</a></b> represents an implementation of the PROSAC (PROgressive SAmple Consensus) algorithm, as described in: "Matching with PROSAC – Progressive Sample Consensus", Chum, O.  <a href="classpcl_1_1_progressive_sample_consensus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_random_sample_consensus.html">pcl::RandomSampleConsensus&lt; PointT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_random_sample_consensus.html" title="RandomSampleConsensus represents an implementation of the RANSAC (RANdom SAmple Consensus) algorithm,...">RandomSampleConsensus</a></b> represents an implementation of the RANSAC (RANdom SAmple Consensus) algorithm, as described in: "Random Sample Consensus: A Paradigm for Model Fitting with Applications to Image Analysis and 
 Automated Cartography", Martin A.  <a href="classpcl_1_1_random_sample_consensus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_randomized_m_estimator_sample_consensus.html">pcl::RandomizedMEstimatorSampleConsensus&lt; PointT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_randomized_m_estimator_sample_consensus.html" title="RandomizedMEstimatorSampleConsensus represents an implementation of the RMSAC (Randomized M-estimator...">RandomizedMEstimatorSampleConsensus</a></b> represents an implementation of the RMSAC (Randomized M-estimator SAmple Consensus) algorithm, which basically adds a Td,d test (see <em><a class="el" href="classpcl_1_1_randomized_random_sample_consensus.html" title="RandomizedRandomSampleConsensus represents an implementation of the RRANSAC (Randomized RAndom SAmple...">RandomizedRandomSampleConsensus</a></em>) to an MSAC estimator (see <em><a class="el" href="classpcl_1_1_m_estimator_sample_consensus.html" title="MEstimatorSampleConsensus represents an implementation of the MSAC (M-estimator SAmple Consensus) alg...">MEstimatorSampleConsensus</a></em>).  <a href="classpcl_1_1_randomized_m_estimator_sample_consensus.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_randomized_m_estimator_sample_consensus.html" title="RandomizedMEstimatorSampleConsensus represents an implementation of the RMSAC (Randomized M-estimator...">RandomizedMEstimatorSampleConsensus</a></b> represents an implementation of the RMSAC (Randomized M-estimator SAmple Consensus) algorithm, which basically adds a Td,d test (see <em><a class="el" href="classpcl_1_1_randomized_random_sample_consensus.html" title="RandomizedRandomSampleConsensus represents an implementation of the RRANSAC (Randomized RANdom SAmple...">RandomizedRandomSampleConsensus</a></em>) to an MSAC estimator (see <em><a class="el" href="classpcl_1_1_m_estimator_sample_consensus.html" title="MEstimatorSampleConsensus represents an implementation of the MSAC (M-estimator SAmple Consensus) alg...">MEstimatorSampleConsensus</a></em>).  <a href="classpcl_1_1_randomized_m_estimator_sample_consensus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_randomized_random_sample_consensus.html">pcl::RandomizedRandomSampleConsensus&lt; PointT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_randomized_random_sample_consensus.html" title="RandomizedRandomSampleConsensus represents an implementation of the RRANSAC (Randomized RAndom SAmple...">RandomizedRandomSampleConsensus</a></b> represents an implementation of the RRANSAC (Randomized RAndom SAmple Consensus), as described in "Randomized RANSAC with Td,d test", O.  <a href="classpcl_1_1_randomized_random_sample_consensus.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_randomized_random_sample_consensus.html" title="RandomizedRandomSampleConsensus represents an implementation of the RRANSAC (Randomized RANdom SAmple...">RandomizedRandomSampleConsensus</a></b> represents an implementation of the RRANSAC (Randomized RANdom SAmple Consensus), as described in "Randomized RANSAC with Td,d test", O.  <a href="classpcl_1_1_randomized_random_sample_consensus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus.html">pcl::SampleConsensus&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class.">SampleConsensus</a> represents the base class.  <a href="classpcl_1_1_sample_consensus.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html">pcl::SampleConsensusModel&lt; PointT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class.">SampleConsensusModel</a></b> represents the base model class.  <a href="classpcl_1_1_sample_consensus_model.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_from_normals.html">pcl::SampleConsensusModelFromNormals&lt; PointT, PointNT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b><a class="el" href="classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su...">SampleConsensusModelFromNormals</a></b> represents the base model class for models that require the use of surface normals for estimation.  <a href="classpcl_1_1_sample_consensus_model_from_normals.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_circle2_d.html">pcl::SampleConsensusModelCircle2D&lt; PointT &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpcl_1_1_sample_consensus_model_circle2_d.html" title="SampleConsensusModelCircle2D defines a model for 2D circle segmentation on the X-Y plane.">SampleConsensusModelCircle2D</a> defines a model for 2D circle segmentation on the X-Y plane.  <a href="classpcl_1_1_sample_consensus_model_circle2_d.html#details">More...</a><br /></td></tr>
@@ -281,9 +284,9 @@ template&lt;typename Point &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00118">118</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00125">125</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00082">pcl::pointToPlaneDistanceSigned()</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00089">pcl::pointToPlaneDistanceSigned()</a>.</p>
 
 </div>
 </div>
@@ -355,11 +358,11 @@ template&lt;typename Point &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00107">107</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00114">114</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00082">pcl::pointToPlaneDistanceSigned()</a>.</p>
+<p class="reference">References <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00089">pcl::pointToPlaneDistanceSigned()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ia__fpcs_8hpp_source.html#l00341">pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, pcl::Normal, float &gt;::selectBase()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ia__fpcs_8hpp_source.html#l00347">pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, pcl::Normal, float &gt;::selectBase()</a>.</p>
 
 </div>
 </div>
@@ -410,7 +413,7 @@ template&lt;typename Point &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00093">93</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00100">100</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
 
 </div>
 </div>
@@ -482,9 +485,9 @@ template&lt;typename Point &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00082">82</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00089">89</a> of file <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html">sac_model_plane.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00107">pcl::pointToPlaneDistance()</a>, and <a class="el" href="extract__polygonal__prism__data_8hpp_source.html#l00148">pcl::ExtractPolygonalPrismData&lt; PointT &gt;::segment()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sample__consensus_2include_2pcl_2sample__consensus_2sac__model__plane_8h_source.html#l00114">pcl::pointToPlaneDistance()</a>, and <a class="el" href="extract__polygonal__prism__data_8hpp_source.html#l00149">pcl::ExtractPolygonalPrismData&lt; PointT &gt;::segment()</a>.</p>
 
 </div>
 </div>
@@ -494,7 +497,7 @@ template&lt;typename Point &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:04</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:02</p>
 </div> <!-- #footer -->
 </body>
 </html>

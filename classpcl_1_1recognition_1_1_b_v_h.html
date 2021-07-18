@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -79,7 +79,7 @@ $(function() {
 <p>This class is an implementation of bounding volume hierarchies.  
  <a href="classpcl_1_1recognition_1_1_b_v_h.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="bvh_8h_source.html">pcl/recognition/ransac_based/bvh.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ransac__based_2bvh_8h_source.html">pcl/recognition/ransac_based/bvh.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -121,7 +121,7 @@ class pcl::recognition::BVH&lt; UserData &gt;</h3>
 <p>Use the build method to construct the data structure. To use the class, construct an std::vector of pointers to <a class="el" href="classpcl_1_1recognition_1_1_b_v_h_1_1_bounded_object.html">BVH::BoundedObject</a> objects and pass it to the build method. <a class="el" href="classpcl_1_1recognition_1_1_b_v_h_1_1_bounded_object.html">BVH::BoundedObject</a> is a template class, so you can save user-defined data in it.</p>
 <p>The tree is built such that each leaf contains exactly one object. </p>
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00065">65</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00065">65</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3bfad2776a44417ccda2bf1c7b68a38c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bfad2776a44417ccda2bf1c7b68a38c">&#9670;&nbsp;</a></span>BVH()</h2>
@@ -148,7 +148,7 @@ template&lt;class UserData &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00212">212</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00212">212</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ template&lt;class UserData &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00218">218</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00218">218</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ template&lt;class UserData &gt; </div>
 <p>No need to call clear, it's called within the method. 'objects' is a vector of pointers to bounded objects which have to have valid bounds and centroids. Use the getData method of <a class="el" href="classpcl_1_1recognition_1_1_b_v_h_1_1_bounded_object.html">BoundedObject</a> to retrieve the user-defined data saved in the object. Note that vector will be sorted within the method!</p>
 <p>The tree is built such that each leaf contains exactly one object. </p>
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00230">230</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00230">230</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ template&lt;class UserData &gt; </div>
 <p>Frees the memory allocated by this object. </p>
 <p>After that, you have to call build to use the tree again. </p>
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00248">248</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00248">248</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ template&lt;class UserData &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00255">255</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00255">255</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
@@ -316,9 +316,9 @@ template&lt;class UserData &gt; </div>
 <p>Pushes back in 'intersected_objects' the bounded objects intersected by the input 'box' and returns true. </p>
 <p>Returns false if no objects are intersected. </p>
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00263">263</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00263">263</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
-<p class="reference">References <a class="el" href="bvh_8h_source.html#l00165">pcl::recognition::BVH&lt; UserData &gt;::Node::getLeftChild()</a>, <a class="el" href="bvh_8h_source.html#l00177">pcl::recognition::BVH&lt; UserData &gt;::Node::getObject()</a>, <a class="el" href="bvh_8h_source.html#l00171">pcl::recognition::BVH&lt; UserData &gt;::Node::getRightChild()</a>, <a class="el" href="bvh_8h_source.html#l00159">pcl::recognition::BVH&lt; UserData &gt;::Node::hasChildren()</a>, and <a class="el" href="bvh_8h_source.html#l00190">pcl::recognition::BVH&lt; UserData &gt;::Node::intersect()</a>.</p>
+<p class="reference">References <a class="el" href="ransac__based_2bvh_8h_source.html#l00165">pcl::recognition::BVH&lt; UserData &gt;::Node::getLeftChild()</a>, <a class="el" href="ransac__based_2bvh_8h_source.html#l00177">pcl::recognition::BVH&lt; UserData &gt;::Node::getObject()</a>, <a class="el" href="ransac__based_2bvh_8h_source.html#l00171">pcl::recognition::BVH&lt; UserData &gt;::Node::getRightChild()</a>, <a class="el" href="ransac__based_2bvh_8h_source.html#l00159">pcl::recognition::BVH&lt; UserData &gt;::Node::hasChildren()</a>, and <a class="el" href="ransac__based_2bvh_8h_source.html#l00190">pcl::recognition::BVH&lt; UserData &gt;::Node::intersect()</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ template&lt;class UserData &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00300">300</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00300">300</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
@@ -371,12 +371,12 @@ template&lt;class UserData &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bvh_8h_source.html#l00301">301</a> of file <a class="el" href="bvh_8h_source.html">bvh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ransac__based_2bvh_8h_source.html#l00301">301</a> of file <a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pcl/recognition/ransac_based/<a class="el" href="bvh_8h_source.html">bvh.h</a></li>
+<li>pcl/recognition/ransac_based/<a class="el" href="ransac__based_2bvh_8h_source.html">bvh.h</a></li>
 </ul>
 </div><!-- contents -->
 <hr>
@@ -384,7 +384,7 @@ template&lt;class UserData &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:18</p>
+<p>Pages generated on Sun Jul 18 2021 17:43:34</p>
 </div> <!-- #footer -->
 </body>
 </html>

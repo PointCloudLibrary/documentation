@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -164,13 +164,13 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html#a9be623e4543dd45fa6a04e7589eefea4">   92</a></span>&#160;      <a class="code" href="classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html#a9be623e4543dd45fa6a04e7589eefea4">applyFilter</a> (<a class="code" href="classpcl__cuda_1_1_filter.html#a40ba4033df255bdd7eb892937d28105f">PointCloud</a> &amp;output)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// Allocate enough space</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        output.points.resize (input_-&gt;points.size ());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        output.resize (input_-&gt;points.size ());</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// Copy data</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        Device&lt;PointXYZRGB&gt;::type::iterator nr_points = thrust::copy_if (input_-&gt;points.begin (), input_-&gt;points.end (), output.points.begin (), <a class="code" href="structpcl__cuda_1_1is_finite_a_o_s.html">isFiniteAOS</a> ());</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        output.points.resize (nr_points - output.points.begin ());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        Device&lt;PointXYZRGB&gt;::type::iterator nr_points = thrust::copy_if (input_-&gt;points.begin (), input_-&gt;points.end (), output.begin (), <a class="code" href="structpcl__cuda_1_1is_finite_a_o_s.html">isFiniteAOS</a> ());</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        output.resize (nr_points - output.begin ());</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">//std::cerr &lt;&lt; &quot;[applyFilterAOS]: &quot;;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//std::cerr &lt;&lt; input_-&gt;points.size () &lt;&lt; &quot; &quot; &lt;&lt; output.points.size () &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//std::cerr &lt;&lt; input_-&gt;points.size () &lt;&lt; &quot; &quot; &lt;&lt; output.size () &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  };</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; <span class="comment"></span></div>
@@ -250,9 +250,9 @@ $(function() {
 <div class="ttc" id="aclasspcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4_html_a2cd3370660557a9fdea45e3395e99ec8"><div class="ttname"><a href="classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html#a2cd3370660557a9fdea45e3395e99ec8">pcl_cuda::VoxelGrid&lt; PointCloudAOS&lt; Device &gt; &gt;::VoxelGrid</a></div><div class="ttdeci">VoxelGrid()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2voxel__grid_8h_source.html#l00082">voxel_grid.h:82</a></div></div>
 <div class="ttc" id="anamespacepcl__cuda_html"><div class="ttname"><a href="namespacepcl__cuda.html">pcl_cuda</a></div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00041">filter.h:41</a></div></div>
 <div class="ttc" id="astructpcl__cuda_1_1is_finite_a_o_s_html"><div class="ttname"><a href="structpcl__cuda_1_1is_finite_a_o_s.html">pcl_cuda::isFiniteAOS</a></div><div class="ttdoc">Check if a specific point is valid or not.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2passthrough_8h_source.html#l00047">passthrough.h:47</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4_html_a9be623e4543dd45fa6a04e7589eefea4"><div class="ttname"><a href="classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html#a9be623e4543dd45fa6a04e7589eefea4">pcl_cuda::VoxelGrid&lt; PointCloudAOS&lt; Device &gt; &gt;::applyFilter</a></div><div class="ttdeci">void applyFilter(PointCloud &amp;output)</div><div class="ttdoc">Filter a Point Cloud.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2voxel__grid_8h_source.html#l00092">voxel_grid.h:92</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">point_cloud.h:430</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a1e84824c6ceb17620a8cc51da3f4bf29"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a1e84824c6ceb17620a8cc51da3f4bf29">pcl_cuda::Filter::PointCloudConstPtr</a></div><div class="ttdeci">typename PointCloud::ConstPtr PointCloudConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00068">filter.h:68</a></div></div>
 <div class="ttc" id="astructpcl__cuda_1_1is_finite_z_i_p_s_o_a_html"><div class="ttname"><a href="structpcl__cuda_1_1is_finite_z_i_p_s_o_a.html">pcl_cuda::isFiniteZIPSOA</a></div><div class="ttdoc">Check if a specific point is valid or not.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2passthrough_8h_source.html#l00068">passthrough.h:68</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_voxel_grid_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4_html_a6e500fb9ed405cb6c8938d028f704491"><div class="ttname"><a href="classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4.html#a6e500fb9ed405cb6c8938d028f704491">pcl_cuda::VoxelGrid&lt; PointCloudSOA&lt; Device &gt; &gt;::applyFilter</a></div><div class="ttdeci">void applyFilter(PointCloud &amp;output)</div><div class="ttdoc">Filter a Point Cloud.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2voxel__grid_8h_source.html#l00128">voxel_grid.h:128</a></div></div>
@@ -262,7 +262,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:27</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:22</p>
 </div> <!-- #footer -->
 </body>
 </html>

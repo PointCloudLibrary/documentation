@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -223,7 +223,7 @@ $(function() {
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        displayDepth = octree_-&gt;getDepth ();</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">if</span> (display_depth_ != <span class="keyword">static_cast&lt;</span><a class="code" href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">std::uint64_t</a><span class="keyword">&gt;</span> (displayDepth))</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">if</span> (display_depth_ != <span class="keyword">static_cast&lt;</span>std::uint64_t<span class="keyword">&gt;</span> (displayDepth))</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        display_depth_ = displayDepth;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="class_outofcore_cloud.html#afdde004b623eb9b85e71fc2b6d1ef2b4">updateVoxelData</a> ();</div>
@@ -237,13 +237,13 @@ $(function() {
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">return</span> display_depth_;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">std::uint64_t</a></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::uint64_t</div>
 <div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_outofcore_cloud.html#a788c7f61c736af1bc88f7a21c1428db2">  169</a></span>&#160;    <a class="code" href="class_outofcore_cloud.html#a788c7f61c736af1bc88f7a21c1428db2">getPointsLoaded</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">return</span> points_loaded_;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">std::uint64_t</a></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    std::uint64_t</div>
 <div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="class_outofcore_cloud.html#a7d3f28f0d727ff9231382933413940f4">  175</a></span>&#160;    <a class="code" href="class_outofcore_cloud.html#a7d3f28f0d727ff9231382933413940f4">getDataLoaded</a> ()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">return</span> data_loaded_;</div>
@@ -337,9 +337,9 @@ $(function() {
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    OctreeDiskPtr octree_;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">std::uint64_t</a> display_depth_;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">std::uint64_t</a> points_loaded_;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">std::uint64_t</a> data_loaded_;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    std::uint64_t display_depth_;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    std::uint64_t points_loaded_;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    std::uint64_t data_loaded_;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    Eigen::Vector3d bbox_min_, bbox_max_;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
@@ -387,7 +387,7 @@ $(function() {
 <div class="ttc" id="aclass_outofcore_cloud_html_a6e6b1ee5ac19d9783131c9e74f7db2f9"><div class="ttname"><a href="class_outofcore_cloud.html#a6e6b1ee5ac19d9783131c9e74f7db2f9">OutofcoreCloud::pcdReaderThread</a></div><div class="ttdeci">static void pcdReaderThread()</div></div>
 <div class="ttc" id="aclass_outofcore_cloud_html_aec904d3452aa3a2c404d4ffbecf3f71c"><div class="ttname"><a href="class_outofcore_cloud.html#aec904d3452aa3a2c404d4ffbecf3f71c">OutofcoreCloud::getVoxelActor</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkActor &gt; getVoxelActor() const</div><div class="ttdef"><b>Definition:</b> <a href="outofcore__cloud_8h_source.html#l00131">outofcore_cloud.h:131</a></div></div>
 <div class="ttc" id="aclass_outofcore_cloud_html_a54ac9e03f67d23fda4d96f49b8a43a1a"><div class="ttname"><a href="class_outofcore_cloud.html#a54ac9e03f67d23fda4d96f49b8a43a1a">OutofcoreCloud::setDisplayVoxels</a></div><div class="ttdeci">void setDisplayVoxels(bool display_voxels)</div><div class="ttdef"><b>Definition:</b> <a href="outofcore__cloud_8h_source.html#l00193">outofcore_cloud.h:193</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00300">point_types.hpp:300</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00346">point_types.hpp:346</a></div></div>
 <div class="ttc" id="aclass_outofcore_cloud_html_a2e53532e932977517f94a028b7640f11"><div class="ttname"><a href="class_outofcore_cloud.html#a2e53532e932977517f94a028b7640f11">OutofcoreCloud::setLodPixelThreshold</a></div><div class="ttdeci">void setLodPixelThreshold(int lod_pixel_threshold)</div><div class="ttdef"><b>Definition:</b> <a href="outofcore__cloud_8h_source.html#l00217">outofcore_cloud.h:217</a></div></div>
 <div class="ttc" id="aclass_outofcore_cloud_html_ada7d5db3c324bac9c53bcc22aa87601b"><div class="ttname"><a href="class_outofcore_cloud.html#ada7d5db3c324bac9c53bcc22aa87601b">OutofcoreCloud::pcd_queue</a></div><div class="ttdeci">static PcdQueue pcd_queue</div><div class="ttdef"><b>Definition:</b> <a href="outofcore__cloud_8h_source.html#l00078">outofcore_cloud.h:78</a></div></div>
 <div class="ttc" id="aclass_outofcore_cloud_1_1_cloud_data_cache_item_html_a297aaf7158127cc57d6e20972617b18a"><div class="ttname"><a href="class_outofcore_cloud_1_1_cloud_data_cache_item.html#a297aaf7158127cc57d6e20972617b18a">OutofcoreCloud::CloudDataCacheItem::pcd_file</a></div><div class="ttdeci">std::string pcd_file</div><div class="ttdef"><b>Definition:</b> <a href="outofcore__cloud_8h_source.html#l00100">outofcore_cloud.h:100</a></div></div>
@@ -409,13 +409,12 @@ $(function() {
 <div class="ttc" id="aclass_outofcore_cloud_html_a788c7f61c736af1bc88f7a21c1428db2"><div class="ttname"><a href="class_outofcore_cloud.html#a788c7f61c736af1bc88f7a21c1428db2">OutofcoreCloud::getPointsLoaded</a></div><div class="ttdeci">std::uint64_t getPointsLoaded() const</div><div class="ttdef"><b>Definition:</b> <a href="outofcore__cloud_8h_source.html#l00169">outofcore_cloud.h:169</a></div></div>
 <div class="ttc" id="amemory_8h_html"><div class="ttname"><a href="memory_8h.html">memory.h</a></div><div class="ttdoc">Defines functions, macros and traits for allocating and using memory.</div></div>
 <div class="ttc" id="aclassvtk_smart_pointer_html"><div class="ttname"><a href="classvtk_smart_pointer.html">vtkSmartPointer&lt; vtkPolyData &gt;</a></div></div>
-<div class="ttc" id="anamespacepcl_html_ad85445a07c77c6f3645992c10121518b"><div class="ttname"><a href="namespacepcl.html#ad85445a07c77c6f3645992c10121518b">pcl::uint64_t</a></div><div class="ttdeci">std::uint64_t uint64_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00060">types.h:60</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:39</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:36</p>
 </div> <!-- #footer -->
 </body>
 </html>

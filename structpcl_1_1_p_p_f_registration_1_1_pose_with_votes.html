@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -97,9 +97,12 @@ Public Attributes</h2></td></tr>
 struct pcl::PPFRegistration&lt; PointSource, PointTarget &gt;::PoseWithVotes</h3>
 
 <p>Structure for storing a pose (represented as an Eigen::Affine3f) and an integer for counting votes. </p>
-<dl class="section note"><dt>Note</dt><dd>initially used std::pair&lt;Eigen::Affine3f, unsigned int&gt;, but it proved problematic because of the <a class="el" href="namespace_eigen.html">Eigen</a> structures alignment problems - std::pair does not have a custom allocator </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>initially used std::pair&lt;Eigen::Affine3f, unsigned int&gt;, but it proved problematic because of the <a class="el" href="namespace_eigen.html">Eigen</a> structures alignment problems<ul>
+<li>std::pair does not have a custom allocator </li>
+</ul>
+</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00162">162</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00183">183</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad548ffbc167891772cfa501b5a71156d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad548ffbc167891772cfa501b5a71156d">&#9670;&nbsp;</a></span>PoseWithVotes()</h2>
@@ -137,7 +140,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00164">164</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00184">184</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
 
 </div>
 </div>
@@ -156,7 +159,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00169">169</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00188">188</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
 
 </div>
 </div>
@@ -174,7 +177,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00170">170</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ppf__registration_8h_source.html#l00189">189</a> of file <a class="el" href="ppf__registration_8h_source.html">ppf_registration.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +190,7 @@ template&lt;typename PointSource , typename PointTarget &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:38</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:50</p>
 </div> <!-- #footer -->
 </body>
 </html>

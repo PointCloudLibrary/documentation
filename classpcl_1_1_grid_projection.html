@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -277,42 +277,42 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:addddfa2765e87d007286da283e1bb785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#addddfa2765e87d007286da283e1bb785">fillPad</a> (const Eigen::Vector3i &amp;index)</td></tr>
 <tr class="memdesc:addddfa2765e87d007286da283e1bb785"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given 3d index of a cell, test whether the cells within its padding area exist in the hash table, if no, create an entry for that cell.  <a href="classpcl_1_1_grid_projection.html#addddfa2765e87d007286da283e1bb785">More...</a><br /></td></tr>
 <tr class="separator:addddfa2765e87d007286da283e1bb785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8911f8091c13fced97e02517394cc92b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a8911f8091c13fced97e02517394cc92b">getDataPtsUnion</a> (const Eigen::Vector3i &amp;index, std::vector&lt; int &gt; &amp;pt_union_indices)</td></tr>
-<tr class="memdesc:a8911f8091c13fced97e02517394cc92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the index of a cell and the pad size.  <a href="classpcl_1_1_grid_projection.html#a8911f8091c13fced97e02517394cc92b">More...</a><br /></td></tr>
-<tr class="separator:a8911f8091c13fced97e02517394cc92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5eb7fadd9ea168c7e7f6b179e9e03f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ac5eb7fadd9ea168c7e7f6b179e9e03f9">createSurfaceForCell</a> (const Eigen::Vector3i &amp;index, std::vector&lt; int &gt; &amp;pt_union_indices)</td></tr>
-<tr class="memdesc:ac5eb7fadd9ea168c7e7f6b179e9e03f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the index of a cell, exam it's up, left, front edges, and add the vectices to m_surface list.the up, left, front edges only share 4 points, we first get the vectors at these 4 points and exam whether those three edges are intersected by the surface.  <a href="classpcl_1_1_grid_projection.html#ac5eb7fadd9ea168c7e7f6b179e9e03f9">More...</a><br /></td></tr>
-<tr class="separator:ac5eb7fadd9ea168c7e7f6b179e9e03f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae80852b9daa1e3969edbcb55de2f9bfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ae80852b9daa1e3969edbcb55de2f9bfd">getProjection</a> (const Eigen::Vector4f &amp;p, std::vector&lt; int &gt; &amp;pt_union_indices, Eigen::Vector4f &amp;projection)</td></tr>
-<tr class="memdesc:ae80852b9daa1e3969edbcb55de2f9bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the coordinates of one point, project it onto the surface, return the projected point.  <a href="classpcl_1_1_grid_projection.html#ae80852b9daa1e3969edbcb55de2f9bfd">More...</a><br /></td></tr>
-<tr class="separator:ae80852b9daa1e3969edbcb55de2f9bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fcbd49493eae00ac9b08c3ad9d84470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a8fcbd49493eae00ac9b08c3ad9d84470">getProjectionWithPlaneFit</a> (const Eigen::Vector4f &amp;p, std::vector&lt; int &gt; &amp;pt_union_indices, Eigen::Vector4f &amp;projection)</td></tr>
-<tr class="memdesc:a8fcbd49493eae00ac9b08c3ad9d84470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the coordinates of one point, project it onto the surface, return the projected point.  <a href="classpcl_1_1_grid_projection.html#a8fcbd49493eae00ac9b08c3ad9d84470">More...</a><br /></td></tr>
-<tr class="separator:a8fcbd49493eae00ac9b08c3ad9d84470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074763eb0e0911eaad45550917bd8d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a074763eb0e0911eaad45550917bd8d83">getVectorAtPoint</a> (const Eigen::Vector4f &amp;p, std::vector&lt; int &gt; &amp;pt_union_indices, Eigen::Vector3f &amp;vo)</td></tr>
-<tr class="memdesc:a074763eb0e0911eaad45550917bd8d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the location of a point, get it's vector.  <a href="classpcl_1_1_grid_projection.html#a074763eb0e0911eaad45550917bd8d83">More...</a><br /></td></tr>
-<tr class="separator:a074763eb0e0911eaad45550917bd8d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a060f7e37755634942614e7db6a51bc2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a060f7e37755634942614e7db6a51bc2f">getVectorAtPointKNN</a> (const Eigen::Vector4f &amp;p, std::vector&lt; int &gt; &amp;k_indices, std::vector&lt; float &gt; &amp;k_squared_distances, Eigen::Vector3f &amp;vo)</td></tr>
-<tr class="memdesc:a060f7e37755634942614e7db6a51bc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the location of a point, get it's vector.  <a href="classpcl_1_1_grid_projection.html#a060f7e37755634942614e7db6a51bc2f">More...</a><br /></td></tr>
-<tr class="separator:a060f7e37755634942614e7db6a51bc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd2b2c908b476f89d409fdd75eaf651"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a0dd2b2c908b476f89d409fdd75eaf651">getMagAtPoint</a> (const Eigen::Vector4f &amp;p, const std::vector&lt; int &gt; &amp;pt_union_indices)</td></tr>
-<tr class="memdesc:a0dd2b2c908b476f89d409fdd75eaf651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the magnitude of the vector by summing up the distance.  <a href="classpcl_1_1_grid_projection.html#a0dd2b2c908b476f89d409fdd75eaf651">More...</a><br /></td></tr>
-<tr class="separator:a0dd2b2c908b476f89d409fdd75eaf651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4088a346e9317fccdf6ab2d0f6f21026"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a4088a346e9317fccdf6ab2d0f6f21026">getD1AtPoint</a> (const Eigen::Vector4f &amp;p, const Eigen::Vector3f &amp;vec, const std::vector&lt; int &gt; &amp;pt_union_indices)</td></tr>
-<tr class="memdesc:a4088a346e9317fccdf6ab2d0f6f21026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the 1st derivative.  <a href="classpcl_1_1_grid_projection.html#a4088a346e9317fccdf6ab2d0f6f21026">More...</a><br /></td></tr>
-<tr class="separator:a4088a346e9317fccdf6ab2d0f6f21026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a548e9827c1cb590510e55b6285952ca1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a548e9827c1cb590510e55b6285952ca1">getD2AtPoint</a> (const Eigen::Vector4f &amp;p, const Eigen::Vector3f &amp;vec, const std::vector&lt; int &gt; &amp;pt_union_indices)</td></tr>
-<tr class="memdesc:a548e9827c1cb590510e55b6285952ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the 2nd derivative.  <a href="classpcl_1_1_grid_projection.html#a548e9827c1cb590510e55b6285952ca1">More...</a><br /></td></tr>
-<tr class="separator:a548e9827c1cb590510e55b6285952ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad417229bdf16b68c1ce7830bcbfbf758"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ad417229bdf16b68c1ce7830bcbfbf758">isIntersected</a> (const std::vector&lt; Eigen::Vector4f, Eigen::aligned_allocator&lt; Eigen::Vector4f &gt; &gt; &amp;end_pts, std::vector&lt; Eigen::Vector3f, Eigen::aligned_allocator&lt; Eigen::Vector3f &gt; &gt; &amp;vect_at_end_pts, std::vector&lt; int &gt; &amp;pt_union_indices)</td></tr>
-<tr class="memdesc:ad417229bdf16b68c1ce7830bcbfbf758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether the edge is intersected by the surface by doing the dot product of the vector at two end points.  <a href="classpcl_1_1_grid_projection.html#ad417229bdf16b68c1ce7830bcbfbf758">More...</a><br /></td></tr>
-<tr class="separator:ad417229bdf16b68c1ce7830bcbfbf758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a624615f1f4b63e4c7b9094bdc14a64f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a624615f1f4b63e4c7b9094bdc14a64f4">findIntersection</a> (int level, const std::vector&lt; Eigen::Vector4f, Eigen::aligned_allocator&lt; Eigen::Vector4f &gt; &gt; &amp;end_pts, const std::vector&lt; Eigen::Vector3f, Eigen::aligned_allocator&lt; Eigen::Vector3f &gt; &gt; &amp;vect_at_end_pts, const Eigen::Vector4f &amp;start_pt, std::vector&lt; int &gt; &amp;pt_union_indices, Eigen::Vector4f &amp;intersection)</td></tr>
-<tr class="memdesc:a624615f1f4b63e4c7b9094bdc14a64f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find point where the edge intersects the surface.  <a href="classpcl_1_1_grid_projection.html#a624615f1f4b63e4c7b9094bdc14a64f4">More...</a><br /></td></tr>
-<tr class="separator:a624615f1f4b63e4c7b9094bdc14a64f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac13ae4b11bb74d2efd2253dcca78862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#aac13ae4b11bb74d2efd2253dcca78862">storeVectAndSurfacePoint</a> (int index_1d, const Eigen::Vector3i &amp;index_3d, std::vector&lt; int &gt; &amp;pt_union_indices, const <a class="el" href="structpcl_1_1_grid_projection_1_1_leaf.html">Leaf</a> &amp;cell_data)</td></tr>
-<tr class="memdesc:aac13ae4b11bb74d2efd2253dcca78862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all the entries in the hash table and update the cellData.  <a href="classpcl_1_1_grid_projection.html#aac13ae4b11bb74d2efd2253dcca78862">More...</a><br /></td></tr>
-<tr class="separator:aac13ae4b11bb74d2efd2253dcca78862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9781114b3c6910079764ae5eb3a7f7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ab9781114b3c6910079764ae5eb3a7f7d">getDataPtsUnion</a> (const Eigen::Vector3i &amp;index, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices)</td></tr>
+<tr class="memdesc:ab9781114b3c6910079764ae5eb3a7f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the index of a cell and the pad size.  <a href="classpcl_1_1_grid_projection.html#ab9781114b3c6910079764ae5eb3a7f7d">More...</a><br /></td></tr>
+<tr class="separator:ab9781114b3c6910079764ae5eb3a7f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b746fc26ad9684280f97ea0aafd7c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a9b746fc26ad9684280f97ea0aafd7c3a">createSurfaceForCell</a> (const Eigen::Vector3i &amp;index, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices)</td></tr>
+<tr class="memdesc:a9b746fc26ad9684280f97ea0aafd7c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the index of a cell, exam it's up, left, front edges, and add the vectices to m_surface list.the up, left, front edges only share 4 points, we first get the vectors at these 4 points and exam whether those three edges are intersected by the surface.  <a href="classpcl_1_1_grid_projection.html#a9b746fc26ad9684280f97ea0aafd7c3a">More...</a><br /></td></tr>
+<tr class="separator:a9b746fc26ad9684280f97ea0aafd7c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0740d80452bb12d8c94d102faf49977d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a0740d80452bb12d8c94d102faf49977d">getProjection</a> (const Eigen::Vector4f &amp;p, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices, Eigen::Vector4f &amp;projection)</td></tr>
+<tr class="memdesc:a0740d80452bb12d8c94d102faf49977d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the coordinates of one point, project it onto the surface, return the projected point.  <a href="classpcl_1_1_grid_projection.html#a0740d80452bb12d8c94d102faf49977d">More...</a><br /></td></tr>
+<tr class="separator:a0740d80452bb12d8c94d102faf49977d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ed0a97b93b5e2d5b89ad80900b5b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ac1ed0a97b93b5e2d5b89ad80900b5b51">getProjectionWithPlaneFit</a> (const Eigen::Vector4f &amp;p, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices, Eigen::Vector4f &amp;projection)</td></tr>
+<tr class="memdesc:ac1ed0a97b93b5e2d5b89ad80900b5b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the coordinates of one point, project it onto the surface, return the projected point.  <a href="classpcl_1_1_grid_projection.html#ac1ed0a97b93b5e2d5b89ad80900b5b51">More...</a><br /></td></tr>
+<tr class="separator:ac1ed0a97b93b5e2d5b89ad80900b5b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad7d7f8506ced8255b26b1ec884b440"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#afad7d7f8506ced8255b26b1ec884b440">getVectorAtPoint</a> (const Eigen::Vector4f &amp;p, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices, Eigen::Vector3f &amp;vo)</td></tr>
+<tr class="memdesc:afad7d7f8506ced8255b26b1ec884b440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the location of a point, get it's vector.  <a href="classpcl_1_1_grid_projection.html#afad7d7f8506ced8255b26b1ec884b440">More...</a><br /></td></tr>
+<tr class="separator:afad7d7f8506ced8255b26b1ec884b440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b14202d073ad1c2e0c31bea655868e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a51b14202d073ad1c2e0c31bea655868e">getVectorAtPointKNN</a> (const Eigen::Vector4f &amp;p, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;k_indices, std::vector&lt; float &gt; &amp;k_squared_distances, Eigen::Vector3f &amp;vo)</td></tr>
+<tr class="memdesc:a51b14202d073ad1c2e0c31bea655868e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the location of a point, get it's vector.  <a href="classpcl_1_1_grid_projection.html#a51b14202d073ad1c2e0c31bea655868e">More...</a><br /></td></tr>
+<tr class="separator:a51b14202d073ad1c2e0c31bea655868e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add20ff67e93dd9238bc6ac8ba1f29c16"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#add20ff67e93dd9238bc6ac8ba1f29c16">getMagAtPoint</a> (const Eigen::Vector4f &amp;p, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices)</td></tr>
+<tr class="memdesc:add20ff67e93dd9238bc6ac8ba1f29c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the magnitude of the vector by summing up the distance.  <a href="classpcl_1_1_grid_projection.html#add20ff67e93dd9238bc6ac8ba1f29c16">More...</a><br /></td></tr>
+<tr class="separator:add20ff67e93dd9238bc6ac8ba1f29c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc2c791f1e3e573953982577014a923"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#aabc2c791f1e3e573953982577014a923">getD1AtPoint</a> (const Eigen::Vector4f &amp;p, const Eigen::Vector3f &amp;vec, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices)</td></tr>
+<tr class="memdesc:aabc2c791f1e3e573953982577014a923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the 1st derivative.  <a href="classpcl_1_1_grid_projection.html#aabc2c791f1e3e573953982577014a923">More...</a><br /></td></tr>
+<tr class="separator:aabc2c791f1e3e573953982577014a923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527f0a24e1f26cb14517fe02f5c696ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a527f0a24e1f26cb14517fe02f5c696ed">getD2AtPoint</a> (const Eigen::Vector4f &amp;p, const Eigen::Vector3f &amp;vec, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices)</td></tr>
+<tr class="memdesc:a527f0a24e1f26cb14517fe02f5c696ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the 2nd derivative.  <a href="classpcl_1_1_grid_projection.html#a527f0a24e1f26cb14517fe02f5c696ed">More...</a><br /></td></tr>
+<tr class="separator:a527f0a24e1f26cb14517fe02f5c696ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32eaa0884127161b3f7c1826239a67c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ae32eaa0884127161b3f7c1826239a67c">isIntersected</a> (const std::vector&lt; Eigen::Vector4f, Eigen::aligned_allocator&lt; Eigen::Vector4f &gt; &gt; &amp;end_pts, std::vector&lt; Eigen::Vector3f, Eigen::aligned_allocator&lt; Eigen::Vector3f &gt; &gt; &amp;vect_at_end_pts, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices)</td></tr>
+<tr class="memdesc:ae32eaa0884127161b3f7c1826239a67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether the edge is intersected by the surface by doing the dot product of the vector at two end points.  <a href="classpcl_1_1_grid_projection.html#ae32eaa0884127161b3f7c1826239a67c">More...</a><br /></td></tr>
+<tr class="separator:ae32eaa0884127161b3f7c1826239a67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59f99ceb91797c6fa2495156747ca01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ae59f99ceb91797c6fa2495156747ca01">findIntersection</a> (int level, const std::vector&lt; Eigen::Vector4f, Eigen::aligned_allocator&lt; Eigen::Vector4f &gt; &gt; &amp;end_pts, const std::vector&lt; Eigen::Vector3f, Eigen::aligned_allocator&lt; Eigen::Vector3f &gt; &gt; &amp;vect_at_end_pts, const Eigen::Vector4f &amp;start_pt, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices, Eigen::Vector4f &amp;intersection)</td></tr>
+<tr class="memdesc:ae59f99ceb91797c6fa2495156747ca01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find point where the edge intersects the surface.  <a href="classpcl_1_1_grid_projection.html#ae59f99ceb91797c6fa2495156747ca01">More...</a><br /></td></tr>
+<tr class="separator:ae59f99ceb91797c6fa2495156747ca01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab008fd9d97a1a259ce7f815fc78518ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#ab008fd9d97a1a259ce7f815fc78518ac">storeVectAndSurfacePoint</a> (int index_1d, const Eigen::Vector3i &amp;index_3d, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;pt_union_indices, const <a class="el" href="structpcl_1_1_grid_projection_1_1_leaf.html">Leaf</a> &amp;cell_data)</td></tr>
+<tr class="memdesc:ab008fd9d97a1a259ce7f815fc78518ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all the entries in the hash table and update the cellData.  <a href="classpcl_1_1_grid_projection.html#ab008fd9d97a1a259ce7f815fc78518ac">More...</a><br /></td></tr>
+<tr class="separator:ab008fd9d97a1a259ce7f815fc78518ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18151db726b30e36c9e7cfbb45b4a47f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grid_projection.html#a18151db726b30e36c9e7cfbb45b4a47f">storeVectAndSurfacePointKNN</a> (int index_1d, const Eigen::Vector3i &amp;index_3d, const <a class="el" href="structpcl_1_1_grid_projection_1_1_leaf.html">Leaf</a> &amp;cell_data)</td></tr>
 <tr class="memdesc:a18151db726b30e36c9e7cfbb45b4a47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go through all the entries in the hash table and update the cellData.  <a href="classpcl_1_1_grid_projection.html#a18151db726b30e36c9e7cfbb45b4a47f">More...</a><br /></td></tr>
 <tr class="separator:a18151db726b30e36c9e7cfbb45b4a47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -545,8 +545,8 @@ template&lt;typename PointNT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5eb7fadd9ea168c7e7f6b179e9e03f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5eb7fadd9ea168c7e7f6b179e9e03f9">&#9670;&nbsp;</a></span>createSurfaceForCell()</h2>
+<a id="a9b746fc26ad9684280f97ea0aafd7c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b746fc26ad9684280f97ea0aafd7c3a">&#9670;&nbsp;</a></span>createSurfaceForCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -565,7 +565,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -590,7 +590,7 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00175">175</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00172">172</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="grid__projection_8h_source.html#l00060">pcl::I_SHIFT_EDGE</a>, and <a class="el" href="grid__projection_8h_source.html#l00056">pcl::I_SHIFT_PT</a>.</p>
 
@@ -630,12 +630,12 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00555">555</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00551">551</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a624615f1f4b63e4c7b9094bdc14a64f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a624615f1f4b63e4c7b9094bdc14a64f4">&#9670;&nbsp;</a></span>findIntersection()</h2>
+<a id="ae59f99ceb91797c6fa2495156747ca01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59f99ceb91797c6fa2495156747ca01">&#9670;&nbsp;</a></span>findIntersection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,7 +672,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>, </td>
         </tr>
         <tr>
@@ -707,7 +707,7 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00507">507</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00503">503</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
@@ -735,9 +735,9 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Get the bounding box for the input data points, also calculating the cell size, and the gaussian scale factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00088">88</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00085">85</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2common_8hpp_source.html#l00242">pcl::getMinMax3D()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2common_8hpp_source.html#l00295">pcl::getMinMax3D()</a>.</p>
 
 </div>
 </div>
@@ -868,8 +868,8 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
-<a id="a4088a346e9317fccdf6ab2d0f6f21026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4088a346e9317fccdf6ab2d0f6f21026">&#9670;&nbsp;</a></span>getD1AtPoint()</h2>
+<a id="aabc2c791f1e3e573953982577014a923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc2c791f1e3e573953982577014a923">&#9670;&nbsp;</a></span>getD1AtPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -894,7 +894,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -920,12 +920,12 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00446">446</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00442">442</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a548e9827c1cb590510e55b6285952ca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a548e9827c1cb590510e55b6285952ca1">&#9670;&nbsp;</a></span>getD2AtPoint()</h2>
+<a id="a527f0a24e1f26cb14517fe02f5c696ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527f0a24e1f26cb14517fe02f5c696ed">&#9670;&nbsp;</a></span>getD2AtPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -950,7 +950,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -976,12 +976,12 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00459">459</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00455">455</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a8911f8091c13fced97e02517394cc92b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8911f8091c13fced97e02517394cc92b">&#9670;&nbsp;</a></span>getDataPtsUnion()</h2>
+<a id="ab9781114b3c6910079764ae5eb3a7f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9781114b3c6910079764ae5eb3a7f7d">&#9670;&nbsp;</a></span>getDataPtsUnion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,7 +1000,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -1025,7 +1025,7 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00149">149</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00146">146</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
@@ -1116,8 +1116,8 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
-<a id="a0dd2b2c908b476f89d409fdd75eaf651"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd2b2c908b476f89d409fdd75eaf651">&#9670;&nbsp;</a></span>getMagAtPoint()</h2>
+<a id="add20ff67e93dd9238bc6ac8ba1f29c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add20ff67e93dd9238bc6ac8ba1f29c16">&#9670;&nbsp;</a></span>getMagAtPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1136,7 +1136,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -1161,9 +1161,9 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00429">429</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00426">426</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="pcl__macros_8h_source.html#l00190">M_E</a>.</p>
+<p class="reference">References <a class="el" href="pcl__macros_8h_source.html#l00196">M_E</a>.</p>
 
 </div>
 </div>
@@ -1254,8 +1254,8 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
-<a id="ae80852b9daa1e3969edbcb55de2f9bfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae80852b9daa1e3969edbcb55de2f9bfd">&#9670;&nbsp;</a></span>getProjection()</h2>
+<a id="a0740d80452bb12d8c94d102faf49977d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0740d80452bb12d8c94d102faf49977d">&#9670;&nbsp;</a></span>getProjection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1274,7 +1274,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>, </td>
         </tr>
         <tr>
@@ -1306,12 +1306,12 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00274">274</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00271">271</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a8fcbd49493eae00ac9b08c3ad9d84470"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fcbd49493eae00ac9b08c3ad9d84470">&#9670;&nbsp;</a></span>getProjectionWithPlaneFit()</h2>
+<a id="ac1ed0a97b93b5e2d5b89ad80900b5b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ed0a97b93b5e2d5b89ad80900b5b51">&#9670;&nbsp;</a></span>getProjectionWithPlaneFit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1330,7 +1330,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>, </td>
         </tr>
         <tr>
@@ -1363,7 +1363,7 @@ template&lt;typename PointNT &gt; </div>
 </dl>
 <dl class="section remark"><dt>Remarks</dt><dd>iterative weighted least squares or sac might give better results</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00313">313</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00310">310</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="centroid_8hpp_source.html#l00485">pcl::computeMeanAndCovarianceMatrix()</a>, <a class="el" href="common_2include_2pcl_2common_2geometry_8h_source.html#l00060">pcl::geometry::distance()</a>, and <a class="el" href="common_2include_2pcl_2common_2impl_2eigen_8hpp_source.html#l00296">pcl::eigen33()</a>.</p>
 
@@ -1456,8 +1456,8 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
-<a id="a074763eb0e0911eaad45550917bd8d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a074763eb0e0911eaad45550917bd8d83">&#9670;&nbsp;</a></span>getVectorAtPoint()</h2>
+<a id="afad7d7f8506ced8255b26b1ec884b440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad7d7f8506ced8255b26b1ec884b440">&#9670;&nbsp;</a></span>getVectorAtPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1476,7 +1476,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>, </td>
         </tr>
         <tr>
@@ -1508,14 +1508,14 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00348">348</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00345">345</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="vector__average_8hpp_source.html#l00061">pcl::VectorAverage&lt; real, dimension &gt;::add()</a>, <a class="el" href="vector__average_8h_source.html#l00070">pcl::VectorAverage&lt; real, dimension &gt;::getMean()</a>, and <a class="el" href="pcl__macros_8h_source.html#l00190">M_E</a>.</p>
+<p class="reference">References <a class="el" href="vector__average_8hpp_source.html#l00063">pcl::VectorAverage&lt; real, dimension &gt;::add()</a>, <a class="el" href="vector__average_8h_source.html#l00071">pcl::VectorAverage&lt; real, dimension &gt;::getMean()</a>, and <a class="el" href="pcl__macros_8h_source.html#l00196">M_E</a>.</p>
 
 </div>
 </div>
-<a id="a060f7e37755634942614e7db6a51bc2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a060f7e37755634942614e7db6a51bc2f">&#9670;&nbsp;</a></span>getVectorAtPointKNN()</h2>
+<a id="a51b14202d073ad1c2e0c31bea655868e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b14202d073ad1c2e0c31bea655868e">&#9670;&nbsp;</a></span>getVectorAtPointKNN()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1534,7 +1534,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>k_indices</em>, </td>
         </tr>
         <tr>
@@ -1573,9 +1573,9 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00395">395</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00392">392</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="vector__average_8hpp_source.html#l00061">pcl::VectorAverage&lt; real, dimension &gt;::add()</a>, <a class="el" href="vector__average_8hpp_source.html#l00119">pcl::VectorAverage&lt; real, dimension &gt;::getEigenVector1()</a>, and <a class="el" href="pcl__macros_8h_source.html#l00190">M_E</a>.</p>
+<p class="reference">References <a class="el" href="vector__average_8hpp_source.html#l00063">pcl::VectorAverage&lt; real, dimension &gt;::add()</a>, <a class="el" href="vector__average_8hpp_source.html#l00121">pcl::VectorAverage&lt; real, dimension &gt;::getEigenVector1()</a>, and <a class="el" href="pcl__macros_8h_source.html#l00196">M_E</a>.</p>
 
 </div>
 </div>
@@ -1624,12 +1624,12 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00129">129</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00126">126</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ad417229bdf16b68c1ce7830bcbfbf758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad417229bdf16b68c1ce7830bcbfbf758">&#9670;&nbsp;</a></span>isIntersected()</h2>
+<a id="ae32eaa0884127161b3f7c1826239a67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32eaa0884127161b3f7c1826239a67c">&#9670;&nbsp;</a></span>isIntersected()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1654,7 +1654,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -1680,7 +1680,7 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00472">472</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00468">468</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 </div>
 </div>
@@ -1732,9 +1732,9 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_surface_reconstruction.html#adb79f4f50df09a4b8364a7a9f1920e7a">pcl::SurfaceReconstruction&lt; PointNT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00749">749</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00745">745</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00408">pcl::PointCloud&lt; PointT &gt;::header</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00419">pcl::PointCloud&lt; PointT &gt;::is_dense</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00392">pcl::PointCloud&lt; PointT &gt;::header</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00403">pcl::PointCloud&lt; PointT &gt;::is_dense</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -1775,9 +1775,9 @@ template&lt;typename PointNT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_surface_reconstruction.html#a181cf1cc5feb909f5e8405bb82780cc1">pcl::SurfaceReconstruction&lt; PointNT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00723">723</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00719">719</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_polygon_mesh_8h_source.html#l00022">pcl::PolygonMesh::cloud</a>, <a class="el" href="_polygon_mesh_8h_source.html#l00020">pcl::PolygonMesh::header</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00419">pcl::PointCloud&lt; PointT &gt;::is_dense</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="_polygon_mesh_8h_source.html#l00024">pcl::PolygonMesh::polygons</a>, <a class="el" href="conversions_8h_source.html#l00241">pcl::toPCLPointCloud2()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="_polygon_mesh_8h_source.html#l00021">pcl::PolygonMesh::cloud</a>, <a class="el" href="_polygon_mesh_8h_source.html#l00019">pcl::PolygonMesh::header</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00403">pcl::PointCloud&lt; PointT &gt;::is_dense</a>, <a class="el" href="_polygon_mesh_8h_source.html#l00023">pcl::PolygonMesh::polygons</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>, <a class="el" href="conversions_8h_source.html#l00239">pcl::toPCLPointCloud2()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -1815,9 +1815,9 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00619">619</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00615">615</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="grid__projection_8h_source.html#l00094">pcl::GridProjection&lt; PointNT &gt;::Leaf::data_indices</a>, <a class="el" href="grid__projection_8h_source.html#l00095">pcl::GridProjection&lt; PointNT &gt;::Leaf::pt_on_surface</a>, and <a class="el" href="_vertices_8h_source.html#l00020">pcl::Vertices::vertices</a>.</p>
+<p class="reference">References <a class="el" href="grid__projection_8h_source.html#l00094">pcl::GridProjection&lt; PointNT &gt;::Leaf::data_indices</a>, <a class="el" href="grid__projection_8h_source.html#l00095">pcl::GridProjection&lt; PointNT &gt;::Leaf::pt_on_surface</a>, and <a class="el" href="_vertices_8h_source.html#l00019">pcl::Vertices::vertices</a>.</p>
 
 </div>
 </div>
@@ -2006,8 +2006,8 @@ template&lt;typename PointNT &gt; </div>
 
 </div>
 </div>
-<a id="aac13ae4b11bb74d2efd2253dcca78862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac13ae4b11bb74d2efd2253dcca78862">&#9670;&nbsp;</a></span>storeVectAndSurfacePoint()</h2>
+<a id="ab008fd9d97a1a259ce7f815fc78518ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab008fd9d97a1a259ce7f815fc78518ac">&#9670;&nbsp;</a></span>storeVectAndSurfacePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2032,7 +2032,7 @@ template&lt;typename PointNT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>pt_union_indices</em>, </td>
         </tr>
         <tr>
@@ -2066,7 +2066,7 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00578">578</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00574">574</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="grid__projection_8h_source.html#l00095">pcl::GridProjection&lt; PointNT &gt;::Leaf::pt_on_surface</a>.</p>
 
@@ -2125,7 +2125,7 @@ template&lt;typename PointNT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00596">596</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grid__projection_8hpp_source.html#l00592">592</a> of file <a class="el" href="grid__projection_8hpp_source.html">grid_projection.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="grid__projection_8h_source.html#l00095">pcl::GridProjection&lt; PointNT &gt;::Leaf::pt_on_surface</a>.</p>
 
@@ -2141,7 +2141,7 @@ template&lt;typename PointNT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:03</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:12</p>
 </div> <!-- #footer -->
 </body>
 </html>

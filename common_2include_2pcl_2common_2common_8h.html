@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -73,8 +73,8 @@ $(function() {
 <div class="title">common.h File Reference<div class="ingroups"><a class="el" href="group__common.html">Module common</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pcl/pcl_base.h&gt;</code><br />
-<code>#include &lt;cfloat&gt;</code><br />
+<div class="textblock"><code>#include &lt;pcl/point_cloud.h&gt;</code><br />
+<code>#include &lt;pcl/PointIndices.h&gt;</code><br />
 <code>#include &lt;pcl/common/impl/common.hpp&gt;</code><br />
 </div>
 <p><a href="common_2include_2pcl_2common_2common_8h_source.html">Go to the source code of this file.</a></p>
@@ -145,6 +145,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gacb684087702126b29c8b99f1e2c2786b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__common.html#gacb684087702126b29c8b99f1e2c2786b">pcl::getMeanStdDev</a> (const std::vector&lt; float &gt; &amp;values, double &amp;mean, double &amp;stddev)</td></tr>
 <tr class="memdesc:gacb684087702126b29c8b99f1e2c2786b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute both the mean and the standard deviation of an array of values.  <a href="group__common.html#gacb684087702126b29c8b99f1e2c2786b">More...</a><br /></td></tr>
 <tr class="separator:gacb684087702126b29c8b99f1e2c2786b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c587d03c993047dd078bf5050ba10e9"><td class="memTemplParams" colspan="2">template&lt;typename IteratorT , typename Functor &gt; </td></tr>
+<tr class="memitem:ga7c587d03c993047dd078bf5050ba10e9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__common.html#ga7c587d03c993047dd078bf5050ba10e9">pcl::computeMedian</a> (IteratorT begin, IteratorT end, Functor f) noexcept -&gt; typename std::result_of&lt; Functor(decltype(*begin))&gt;::type</td></tr>
+<tr class="memdesc:ga7c587d03c993047dd078bf5050ba10e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the median of a list of values (fast).  <a href="group__common.html#ga7c587d03c993047dd078bf5050ba10e9">More...</a><br /></td></tr>
+<tr class="separator:ga7c587d03c993047dd078bf5050ba10e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba79ef8875ca3f1085f257ca1530fffe"><td class="memTemplParams" colspan="2">template&lt;typename IteratorT &gt; </td></tr>
+<tr class="memitem:aba79ef8875ca3f1085f257ca1530fffe"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl.html#aba79ef8875ca3f1085f257ca1530fffe">pcl::computeMedian</a> (IteratorT begin, IteratorT end) noexcept -&gt; typename std::iterator_traits&lt; IteratorT &gt;::value_type</td></tr>
+<tr class="memdesc:aba79ef8875ca3f1085f257ca1530fffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the median of a list of values (fast).  <a href="namespacepcl.html#aba79ef8875ca3f1085f257ca1530fffe">More...</a><br /></td></tr>
+<tr class="separator:aba79ef8875ca3f1085f257ca1530fffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <hr>
@@ -152,7 +160,7 @@ Functions</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:03</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:02</p>
 </div> <!-- #footer -->
 </body>
 </html>

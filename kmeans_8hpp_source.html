@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -160,10 +160,10 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    PCL_INFO(<span class="stringliteral">&quot;Use X Y Z as input data\n&quot;</span>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// create input data</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">        for (std::size_t i = 0; i &lt; input_-&gt;points.size (); i++)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">        for (std::size_t i = 0; i &lt; input_-&gt;size (); i++)</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">        {</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">          DataPoint data (3);</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">          data[0] = input_-&gt;points[i].data[0];</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">          data[0] = (*input_)[i].data[0];</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span> </div>
@@ -173,18 +173,18 @@ $(function() {
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;x index: &quot;</span> &lt;&lt; x_index &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">float</span> x = 0.0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    memcpy(&amp;x, &amp;input_-&gt;points[0] + fields[x_index].offset, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    memcpy(&amp;x, &amp;(*input_)[0] + fields[x_index].offset, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;xxx: &quot;</span> &lt;&lt; x &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// memcpy (&amp;x, reinterpret_cast&lt;float*&gt; (&amp;input_-&gt;points[0]) + x_index, sizeof</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// memcpy (&amp;x, reinterpret_cast&lt;float*&gt; (&amp;(*input_)[0]) + x_index, sizeof</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// (float));</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// int rgba_index = 1;</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// pcl::RGB rgb;</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// memcpy (&amp;rgb, reinterpret_cast&lt;const char*&gt;</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// (&amp;input_-&gt;points[index_vector[i].cloud_point_index]) + rgba_index, sizeof (RGB));</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// (&amp;(*input_)[index_vector[i].cloud_point_index]) + rgba_index, sizeof (RGB));</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// if cluster field name is set, check if field name is valid</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">else</span> {</div>
@@ -223,7 +223,7 @@ $(function() {
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">    for (std::size_t i = 0; i &lt; fields[vfh_idx].count; ++i)</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">    {</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">      //vfh.second[i] = point.points[0].histogram[i];</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">      //vfh.second[i] = point[0].histogram[i];</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">    }</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">  */</span></div>
@@ -235,8 +235,8 @@ $(function() {
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#define PCL_INSTANTIATE_Kmeans(T) template class PCL_EXPORTS pcl::Kmeans&lt;T&gt;;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_kmeans_html"><div class="ttname"><a href="classpcl_1_1_kmeans.html">pcl::Kmeans</a></div><div class="ttdoc">K-means clustering.</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8h_source.html#l00060">kmeans.h:60</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_kmeans_html"><div class="ttname"><a href="classpcl_1_1_kmeans.html">pcl::Kmeans</a></div><div class="ttdoc">K-means clustering.</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8h_source.html#l00055">kmeans.h:55</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_kmeans_html_a47501eb8e76a63d1d8c9b9af1ec349bf"><div class="ttname"><a href="classpcl_1_1_kmeans.html#a47501eb8e76a63d1d8c9b9af1ec349bf">pcl::Kmeans::~Kmeans</a></div><div class="ttdeci">~Kmeans()</div><div class="ttdoc">This destructor destroys.</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8hpp_source.html#l00056">kmeans.hpp:56</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_kmeans_html_a8788bd4098ea370e018119fc516a5eb4"><div class="ttname"><a href="classpcl_1_1_kmeans.html#a8788bd4098ea370e018119fc516a5eb4">pcl::Kmeans::Kmeans</a></div><div class="ttdeci">Kmeans(unsigned int num_points, unsigned int num_dimensions)</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8hpp_source.html#l00052">kmeans.hpp:52</a></div></div>
 <hr>
@@ -244,7 +244,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:39</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:36</p>
 </div> <!-- #footer -->
 </body>
 </html>

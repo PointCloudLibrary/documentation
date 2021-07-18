@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -211,6 +211,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6506c6e1ea932082c7f76c988afa85c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b068b18f45c46ca91bd01a8d6818eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#aaf931dfa9573efdfea6ca35cb8a52993">pcl::PointIndicesConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#ac6b068b18f45c46ca91bd01a8d6818eb">getPointsToTrackStatus</a> () const</td></tr>
 <tr class="separator:ac6b068b18f45c46ca91bd01a8d6818eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7ebec04fb65aefdf5d561ebde4165f"><td class="memItemLeft" align="right" valign="top">pcl::shared_ptr&lt; const std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0b7ebec04fb65aefdf5d561ebde4165f">getStatusOfPointsToTrack</a> () const</td></tr>
+<tr class="separator:a0b7ebec04fb65aefdf5d561ebde4165f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e47bc495ea6e1b8549f0e8ec27823f"><td class="memItemLeft" align="right" valign="top">Eigen::Affine3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a47e47bc495ea6e1b8549f0e8ec27823f">getResult</a> () const override</td></tr>
 <tr class="memdesc:a47e47bc495ea6e1b8549f0e8ec27823f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the computed transformation from tracked points.  <a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a47e47bc495ea6e1b8549f0e8ec27823f">More...</a><br /></td></tr>
 <tr class="separator:a47e47bc495ea6e1b8549f0e8ec27823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,9 +334,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aff99e3ce9e53287e4d139a7e438f8c1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_u_v.html">pcl::PointUV</a> &gt;::<a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#afa3310cb64400e4fccbda9e7c7739beb">ConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#aff99e3ce9e53287e4d139a7e438f8c1f">keypoints_</a></td></tr>
 <tr class="memdesc:aff99e3ce9e53287e4d139a7e438f8c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">detected keypoints 2D coordinates  <a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#aff99e3ce9e53287e4d139a7e438f8c1f">More...</a><br /></td></tr>
 <tr class="separator:aff99e3ce9e53287e4d139a7e438f8c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105002a257afbcb4c0e8fc378fe73155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#a9648b74014e6b52eb855a7f75dad9806">pcl::PointIndicesPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a105002a257afbcb4c0e8fc378fe73155">keypoints_status_</a></td></tr>
-<tr class="memdesc:a105002a257afbcb4c0e8fc378fe73155"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of keypoints of t-1 at t  <a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a105002a257afbcb4c0e8fc378fe73155">More...</a><br /></td></tr>
-<tr class="separator:a105002a257afbcb4c0e8fc378fe73155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005e198b3a486c18d41889f0d72656a8"><td class="memItemLeft" align="right" valign="top">pcl::shared_ptr&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a005e198b3a486c18d41889f0d72656a8">keypoints_status_</a></td></tr>
+<tr class="memdesc:a005e198b3a486c18d41889f0d72656a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of keypoints of t-1 at t  <a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a005e198b3a486c18d41889f0d72656a8">More...</a><br /></td></tr>
+<tr class="separator:a005e198b3a486c18d41889f0d72656a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39345a55890862cd5e85e037bfa6de0d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a39345a55890862cd5e85e037bfa6de0d">keypoints_nbr_</a></td></tr>
 <tr class="memdesc:a39345a55890862cd5e85e037bfa6de0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points to detect  <a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a39345a55890862cd5e85e037bfa6de0d">More...</a><br /></td></tr>
 <tr class="separator:a39345a55890862cd5e85e037bfa6de0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,7 +629,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00081">81</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00415">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::accuracy_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00418">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::epsilon_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00431">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::kernel_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00435">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::kernel_last_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00433">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::kernel_size_2_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00403">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_nbr_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00413">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::max_iterations_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00416">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::min_eigenvalue_threshold_</a>, and <a class="el" href="tracker_8h_source.html#l00090">pcl::tracking::Tracker&lt; PointInT, Eigen::Affine3f &gt;::tracker_name_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00431">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::accuracy_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00434">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::epsilon_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00447">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::kernel_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00451">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::kernel_last_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00449">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::kernel_size_2_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00419">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_nbr_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00429">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::max_iterations_</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00432">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::min_eigenvalue_threshold_</a>, and <a class="el" href="tracker_8h_source.html#l00090">pcl::tracking::Tracker&lt; PointInT, Eigen::Affine3f &gt;::tracker_name_</a>.</p>
 
 </div>
 </div>
@@ -717,7 +719,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00362">362</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00257">pcl::BORDER_CONSTANT</a>, and <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00223">pcl::BORDER_CONSTANT</a>, and <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>.</p>
 
 </div>
 </div>
@@ -747,9 +749,9 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1tracking_1_1_tracker.html">pcl::tracking::Tracker&lt; PointInT, Eigen::Affine3f &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00713">713</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00711">711</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00259">pcl::BORDER_REFLECT_101</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00460">pcl::PointCloud&lt; PointT &gt;::reserve()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00225">pcl::BORDER_REFLECT_101</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::reserve()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +956,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00171">171</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1007,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00233">233</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1102,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00132">132</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00415">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::accuracy_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00431">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::accuracy_</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1134,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00148">148</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00418">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::epsilon_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00434">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::epsilon_</a>.</p>
 
 </div>
 </div>
@@ -1162,9 +1164,9 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>initialization state </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00278">278</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00294">294</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00425">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::initialized_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00441">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::initialized_</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1198,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00233">233</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00413">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::max_iterations_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00429">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::max_iterations_</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1230,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00165">165</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00403">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_nbr_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00419">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_nbr_</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1262,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00116">116</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00397">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::nb_levels_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00413">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::nb_levels_</a>.</p>
 
 </div>
 </div>
@@ -1289,10 +1291,12 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the status of points to track. Status == 0 --&gt; points successfully tracked; Status &lt; 0 --&gt; point is lost; Status == -1 --&gt; point is out of bond; Status == -2 --&gt; optical flow can not be computed for this point. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 15 : "use getStatusOfPointsToTrack instead" <br  />
+ </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00264">264</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00265">265</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00401">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_status_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00417">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_status_</a>.</p>
 
 </div>
 </div>
@@ -1325,7 +1329,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00217">217</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00395">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::ref_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00411">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::ref_</a>.</p>
 
 </div>
 </div>
@@ -1356,9 +1360,41 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>Return the computed transformation from tracked points. </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00271">271</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00287">287</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00429">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::motion_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00445">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::motion_</a>.</p>
+
+</div>
+</div>
+<a id="a0b7ebec04fb65aefdf5d561ebde4165f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7ebec04fb65aefdf5d561ebde4165f">&#9670;&nbsp;</a></span>getStatusOfPointsToTrack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFieldAccessor&lt;PointInT&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcl::shared_ptr&lt;const std::vector&lt;int&gt; &gt; <a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html">pcl::tracking::PyramidalKLTTracker</a>&lt; PointInT, IntensityT &gt;::getStatusOfPointsToTrack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the status of points to track. Status == 0 --&gt; points successfully tracked; Status &lt; 0 --&gt; point is lost; Status == -1 --&gt; point is out of bond; Status == -2 --&gt; optical flow can not be computed for this point. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00280">280</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00417">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_status_</a>.</p>
 
 </div>
 </div>
@@ -1390,7 +1426,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00252">252</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00399">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00415">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1458,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00200">200</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00409">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_height_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00425">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_height_</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1490,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00186">186</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00405">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_width_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00421">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_width_</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1522,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00098">98</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00259">pcl::BORDER_REFLECT_101</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00225">pcl::BORDER_REFLECT_101</a>.</p>
 
 </div>
 </div>
@@ -1556,9 +1592,9 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00518">518</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00516">516</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -1598,7 +1634,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00125">125</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00415">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::accuracy_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00431">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::accuracy_</a>.</p>
 
 </div>
 </div>
@@ -1638,7 +1674,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00141">141</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00418">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::epsilon_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00434">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::epsilon_</a>.</p>
 
 </div>
 </div>
@@ -1678,7 +1714,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00226">226</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00413">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::max_iterations_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00429">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::max_iterations_</a>.</p>
 
 </div>
 </div>
@@ -1718,7 +1754,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00158">158</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00403">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_nbr_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00419">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::keypoints_nbr_</a>.</p>
 
 </div>
 </div>
@@ -1758,7 +1794,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00109">109</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00397">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::nb_levels_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00413">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::nb_levels_</a>.</p>
 
 </div>
 </div>
@@ -1798,7 +1834,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00210">210</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00421">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::threads_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00437">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::threads_</a>.</p>
 
 </div>
 </div>
@@ -1838,7 +1874,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00059">59</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00491">pcl::PointCloud&lt; PointT &gt;::push_back()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00460">pcl::PointCloud&lt; PointT &gt;::reserve()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">pcl::PointCloud&lt; PointT &gt;::resize()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">pcl::PointCloud&lt; PointT &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00652">pcl::PointCloud&lt; PointT &gt;::push_back()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::reserve()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">pcl::PointCloud&lt; PointT &gt;::resize()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -1878,7 +1914,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00079">79</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00491">pcl::PointCloud&lt; PointT &gt;::push_back()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00460">pcl::PointCloud&lt; PointT &gt;::reserve()</a>, <a class="el" href="point__types_8hpp_source.html#l00763">pcl::PointUV::u</a>, and <a class="el" href="point__types_8hpp_source.html#l00764">pcl::PointUV::v</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00652">pcl::PointCloud&lt; PointT &gt;::push_back()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::reserve()</a>, <a class="el" href="point__types_8hpp_source.html#l00850">pcl::PointUV::u</a>, and <a class="el" href="point__types_8hpp_source.html#l00851">pcl::PointUV::v</a>.</p>
 
 </div>
 </div>
@@ -1912,7 +1948,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00193">193</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00409">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_height_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00425">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_height_</a>.</p>
 
 </div>
 </div>
@@ -1995,7 +2031,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00179">179</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00405">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_width_</a>.</p>
+<p class="reference">References <a class="el" href="pyramidal__klt_8h_source.html#l00421">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::track_width_</a>.</p>
 
 </div>
 </div>
@@ -2096,7 +2132,7 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00472">472</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -2172,9 +2208,9 @@ template&lt;typename PointInT , typename IntensityT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00548">548</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8hpp_source.html#l00546">546</a> of file <a class="el" href="pyramidal__klt_8hpp_source.html">pyramidal_klt.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="transformation__from__correspondences_8hpp_source.html#l00059">pcl::TransformationFromCorrespondences::add()</a>, <a class="el" href="transformation__from__correspondences_8hpp_source.html#l00078">pcl::TransformationFromCorrespondences::getTransformation()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00491">pcl::PointCloud&lt; PointT &gt;::push_back()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">pcl::PointCloud&lt; PointT &gt;::size()</a>, <a class="el" href="point__types_8hpp_source.html#l00763">pcl::PointUV::u</a>, <a class="el" href="point__types_8hpp_source.html#l00764">pcl::PointUV::v</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="transformation__from__correspondences_8hpp_source.html#l00058">pcl::TransformationFromCorrespondences::add()</a>, <a class="el" href="transformation__from__correspondences_8hpp_source.html#l00077">pcl::TransformationFromCorrespondences::getTransformation()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00652">pcl::PointCloud&lt; PointT &gt;::push_back()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>, <a class="el" href="point__types_8hpp_source.html#l00850">pcl::PointUV::u</a>, <a class="el" href="point__types_8hpp_source.html#l00851">pcl::PointUV::v</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -2203,7 +2239,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>accuracy criterion to stop iterating </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00415">415</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00431">431</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00132">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getAccuracy()</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00125">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setAccuracy()</a>.</p>
 
@@ -2233,7 +2269,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>epsilon for subpixel computation </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00418">418</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00434">434</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00148">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getEpsilon()</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00141">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setEpsilon()</a>.</p>
 
@@ -2263,9 +2299,9 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>is the tracker initialized ? </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00425">425</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00441">441</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00278">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getInitialized()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00294">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getInitialized()</a>.</p>
 
 </div>
 </div>
@@ -2293,7 +2329,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>intensity accessor </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00423">423</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00439">439</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 </div>
 </div>
@@ -2321,7 +2357,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>smoothing kernel </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00431">431</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00447">447</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>.</p>
 
@@ -2351,7 +2387,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>index of last element in kernel </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00435">435</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00451">451</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>.</p>
 
@@ -2381,7 +2417,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>smoothing kernel half size </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00433">433</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00449">449</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>.</p>
 
@@ -2411,7 +2447,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>detected keypoints 2D coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00399">399</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00415">415</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00252">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getTrackedPoints()</a>.</p>
 
@@ -2441,14 +2477,14 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>number of points to detect </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00403">403</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00419">419</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00165">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getNumberOfKeypoints()</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00158">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setNumberOfKeypoints()</a>.</p>
 
 </div>
 </div>
-<a id="a105002a257afbcb4c0e8fc378fe73155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a105002a257afbcb4c0e8fc378fe73155">&#9670;&nbsp;</a></span>keypoints_status_</h2>
+<a id="a005e198b3a486c18d41889f0d72656a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005e198b3a486c18d41889f0d72656a8">&#9670;&nbsp;</a></span>keypoints_status_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2459,7 +2495,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacepcl.html#a9648b74014e6b52eb855a7f75dad9806">pcl::PointIndicesPtr</a> <a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html">pcl::tracking::PyramidalKLTTracker</a>&lt; PointInT, IntensityT &gt;::keypoints_status_</td>
+          <td class="memname">pcl::shared_ptr&lt;std::vector&lt;int&gt; &gt; <a class="el" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html">pcl::tracking::PyramidalKLTTracker</a>&lt; PointInT, IntensityT &gt;::keypoints_status_</td>
         </tr>
       </table>
   </td>
@@ -2471,9 +2507,9 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>status of keypoints of t-1 at t </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00401">401</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00417">417</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00264">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getPointsToTrackStatus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00265">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getPointsToTrackStatus()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00280">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getStatusOfPointsToTrack()</a>.</p>
 
 </div>
 </div>
@@ -2501,7 +2537,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>maximum number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00413">413</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00429">429</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00233">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getMaxIterationsNumber()</a>, <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00226">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setMaxIterationsNumber()</a>.</p>
 
@@ -2529,7 +2565,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00419">419</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00435">435</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 </div>
 </div>
@@ -2555,7 +2591,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00416">416</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00432">432</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00081">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::PyramidalKLTTracker()</a>.</p>
 
@@ -2585,9 +2621,9 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>computed transformation between tracked points </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00429">429</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00445">445</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00271">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00287">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getResult()</a>.</p>
 
 </div>
 </div>
@@ -2615,7 +2651,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>number of pyramid levels </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00397">397</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00413">413</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00116">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getNumberOfPyramidLevels()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00109">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setNumberOfPyramidLevels()</a>.</p>
 
@@ -2645,7 +2681,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>point cloud at t-1 </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00395">395</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00411">411</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00217">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getReferenceCloud()</a>.</p>
 
@@ -2675,7 +2711,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>input pyranid at t-1 </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00393">393</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00409">409</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 </div>
 </div>
@@ -2703,7 +2739,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>number of hardware threads </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00421">421</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00437">437</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00210">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setNumberOfThreads()</a>.</p>
 
@@ -2733,7 +2769,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>tracking height </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00409">409</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00425">425</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00200">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getTrackingWindowHeight()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00193">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setTrackingWindowHeight()</a>.</p>
 
@@ -2763,7 +2799,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>half of tracking window height </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00411">411</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00427">427</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 </div>
 </div>
@@ -2791,7 +2827,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>tracking width </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00405">405</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00421">421</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pyramidal__klt_8h_source.html#l00186">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::getTrackingWindowWidth()</a>, and <a class="el" href="pyramidal__klt_8h_source.html#l00179">pcl::tracking::PyramidalKLTTracker&lt; PointInT, IntensityT &gt;::setTrackingWindowWidth()</a>.</p>
 
@@ -2821,7 +2857,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>half of tracking window width </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00407">407</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00423">423</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 </div>
 </div>
@@ -2849,7 +2885,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 
 <p>compute transformation from successfully tracked points </p>
 
-<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00427">427</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pyramidal__klt_8h_source.html#l00443">443</a> of file <a class="el" href="pyramidal__klt_8h_source.html">pyramidal_klt.h</a>.</p>
 
 </div>
 </div>
@@ -2863,7 +2899,7 @@ template&lt;typename PointInT , typename IntensityT  = pcl::common::IntensityFie
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:44</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:01</p>
 </div> <!-- #footer -->
 </body>
 </html>

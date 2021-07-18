@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PCLVisualizer &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>PCLVisualizer &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -574,7 +574,7 @@ a file named <code class="docutils literal notranslate"><span class="pre">pcl_vi
 <span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;thread&gt;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/common_headers.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/common/angles.h&gt; // for pcl::deg2rad</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/features/normal_3d.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
@@ -684,9 +684,9 @@ a file named <code class="docutils literal notranslate"><span class="pre">pcl_vi
   <span class="c1">//------------------------------------</span>
   <span class="c1">//-----Add shapes at cloud points-----</span>
   <span class="c1">//------------------------------------</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addLine</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-                                     <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s">&quot;line&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addSphere</span> <span class="p">(</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s">&quot;sphere&quot;</span><span class="p">);</span>
+  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addLine</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span> <span class="p">((</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span>
+                                     <span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s">&quot;line&quot;</span><span class="p">);</span>
+  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addSphere</span> <span class="p">((</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s">&quot;sphere&quot;</span><span class="p">);</span>
 
   <span class="c1">//---------------------------------------</span>
   <span class="c1">//-----Add shapes at other locations-----</span>
@@ -888,9 +888,9 @@ a file named <code class="docutils literal notranslate"><span class="pre">pcl_vi
       <span class="n">b</span> <span class="o">+=</span> <span class="mi">12</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="p">}</span>
-  <span class="n">basic_cloud_ptr</span><span class="o">-&gt;</span><span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">basic_cloud_ptr</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span>
+  <span class="n">basic_cloud_ptr</span><span class="o">-&gt;</span><span class="n">width</span> <span class="o">=</span> <span class="n">basic_cloud_ptr</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">();</span>
   <span class="n">basic_cloud_ptr</span><span class="o">-&gt;</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="n">point_cloud_ptr</span><span class="o">-&gt;</span><span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">point_cloud_ptr</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span>
+  <span class="n">point_cloud_ptr</span><span class="o">-&gt;</span><span class="n">width</span> <span class="o">=</span> <span class="n">point_cloud_ptr</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">();</span>
   <span class="n">point_cloud_ptr</span><span class="o">-&gt;</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
   <span class="c1">// ----------------------------------------------------------------</span>
@@ -1214,7 +1214,7 @@ cloud.</p></li>
 <p>The relevant parts of the code sample for drawing shapes begin after the
 point cloud is added to the viewer.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">...</span>
-<span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addLine</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s">&quot;line&quot;</span><span class="p">);</span>
+<span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addLine</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span> <span class="p">((</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s">&quot;line&quot;</span><span class="p">);</span>
 <span class="p">...</span>
 </pre></div>
 </div>
@@ -1225,7 +1225,7 @@ the default colour, but you can also specify the colour of the line.
 Drawing shapes at points from a point cloud is very common, and various
 shapes are available.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">...</span>
-<span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addSphere</span> <span class="p">(</span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s">&quot;sphere&quot;</span><span class="p">);</span>
+<span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addSphere</span> <span class="p">((</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s">&quot;sphere&quot;</span><span class="p">);</span>
 <span class="p">...</span>
 </pre></div>
 </div>

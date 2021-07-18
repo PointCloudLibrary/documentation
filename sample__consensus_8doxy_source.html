@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  \section secSampleConsensusPresentation Overview</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">  The &lt;b&gt;pcl_sample_consensus&lt;/b&gt; library holds SAmple Consensus (SAC) methods like </span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">  &lt;a href=&quot;http://en.wikipedia.org/wiki/RANSAC&quot;&gt;RANSAC&lt;/a&gt; and models like planes and cylinders.  These can</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">  &lt;a href=&quot;http://en.wikipedia.org/wiki/RANSAC&quot;&gt;RANSAC&lt;/a&gt; and models like planes and cylinders.  These can be</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  combined freely in order to detect specific models and their parameters in point clouds.</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Some of the models implemented in this library include: lines, planes, cylinders, and spheres.  Plane fitting</span></div>
@@ -105,11 +105,11 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  The following list describes the robust sample consensus estimators implemented:</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">  &lt;ul&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/RANSAC&quot;&gt;SAC_RANSAC&lt;/a&gt; - RANdom SAmple Consensus&lt;/li&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://research.microsoft.com/en-us/um/people/zhang/INRIA/Publis/Tutorial-Estim/node25.html&quot;&gt;SAC_LMEDS&lt;/a&gt; - Least Median of Squares&lt;/li&gt; </span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://www.robots.ox.ac.uk/~vgg/publications-new/Public/2000/Torr00/torr00.pdf&quot;&gt;SAC_MSAC&lt;/a&gt; - M-Estimator SAmple Consensus&lt;/li&gt;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://cmp.felk.cvut.cz/~matas/papers/presentations/rransac-cvww02_pres.pdf&quot;&gt;SAC_RRANSAC&lt;/a&gt; - Randomized RANSAC&lt;/li&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://cmp.felk.cvut.cz/~matas/papers/presentations/rransac-cvww02_pres.pdf&quot;&gt;SAC_RMSAC&lt;/a&gt; - Randomized MSAC&lt;/li&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://www.robots.ox.ac.uk/~vgg/publications-new/Public/2000/Torr00/torr00.pdf&quot;&gt;SAC_MLESAC&lt;/a&gt; - Maximum LikeLihood Estimation SAmple Consensus&lt;/li&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;https://www-sop.inria.fr/odyssee/software/old_robotvis/Tutorial-Estim/node25.html&quot;&gt;SAC_LMEDS&lt;/a&gt; - Least Median of Squares&lt;/li&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/publications/2000/Torr00/torr00.pdf&quot;&gt;SAC_MSAC&lt;/a&gt; - M-Estimator SAmple Consensus&lt;/li&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;https://web.archive.org/web/20170811194151/http://www.bmva.org/bmvc/2002/papers/50/full_50.pdf&quot;&gt;SAC_RRANSAC&lt;/a&gt; - Randomized RANSAC&lt;/li&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;https://web.archive.org/web/20170811194151/http://www.bmva.org/bmvc/2002/papers/50/full_50.pdf&quot;&gt;SAC_RMSAC&lt;/a&gt; - Randomized MSAC&lt;/li&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;https://www.robots.ox.ac.uk/~vgg/publications/2000/Torr00/torr00.pdf&quot;&gt;SAC_MLESAC&lt;/a&gt; - Maximum LikeLihood Estimation SAmple Consensus&lt;/li&gt;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    &lt;li&gt;&lt;a href=&quot;http://cmp.felk.cvut.cz/~matas/papers/chum-prosac-cvpr05.pdf&quot;&gt;SAC_PROSAC&lt;/a&gt; - PROgressive SAmple Consensus&lt;/li&gt;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  &lt;/ul&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span> </div>
@@ -125,7 +125,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:50</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:48</p>
 </div> <!-- #footer -->
 </body>
 </html>

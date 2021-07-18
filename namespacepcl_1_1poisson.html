@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -196,15 +196,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ace587f294936d1941bebc9cee723459d"><td class="memTemplParams" colspan="2">template&lt;int Degree1, int Degree2&gt; </td></tr>
 <tr class="memitem:ace587f294936d1941bebc9cee723459d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#ace587f294936d1941bebc9cee723459d">SetBSplineElementIntegrals</a> (double integrals[Degree1+1][Degree2+1])</td></tr>
 <tr class="separator:ace587f294936d1941bebc9cee723459d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ccb598e9c6c147cb3c97aeeb0143c27"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
-<tr class="memitem:a8ccb598e9c6c147cb3c97aeeb0143c27"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#a8ccb598e9c6c147cb3c97aeeb0143c27">LeftOverlap</a> (unsigned int depth, int offset)</td></tr>
-<tr class="separator:a8ccb598e9c6c147cb3c97aeeb0143c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57daffa2081857eb43b6d53ffca9b130"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
-<tr class="memitem:a57daffa2081857eb43b6d53ffca9b130"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#a57daffa2081857eb43b6d53ffca9b130">RightOverlap</a> (unsigned int depth, int offset)</td></tr>
-<tr class="separator:a57daffa2081857eb43b6d53ffca9b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a918b74e17233eb1182385e2cc930b5e9"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
-<tr class="memitem:a918b74e17233eb1182385e2cc930b5e9"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#a918b74e17233eb1182385e2cc930b5e9">ReflectLeft</a> (unsigned int depth, int offset)</td></tr>
-<tr class="separator:a918b74e17233eb1182385e2cc930b5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e024df7ca5304a90eec245ecdde5fd3"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
+<tr class="memitem:a1e024df7ca5304a90eec245ecdde5fd3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#a1e024df7ca5304a90eec245ecdde5fd3">LeftOverlap</a> (unsigned int, int offset)</td></tr>
+<tr class="separator:a1e024df7ca5304a90eec245ecdde5fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169191b8dcc139d0110199368a864cb1"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
+<tr class="memitem:a169191b8dcc139d0110199368a864cb1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#a169191b8dcc139d0110199368a864cb1">RightOverlap</a> (unsigned int, int offset)</td></tr>
+<tr class="separator:a169191b8dcc139d0110199368a864cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82b9511550472d24100dc900067e440"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
+<tr class="memitem:aa82b9511550472d24100dc900067e440"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#aa82b9511550472d24100dc900067e440">ReflectLeft</a> (unsigned int, int offset)</td></tr>
+<tr class="separator:aa82b9511550472d24100dc900067e440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb71cafe54c82669df6ab946730d1888"><td class="memTemplParams" colspan="2">template&lt;int Degree&gt; </td></tr>
 <tr class="memitem:aeb71cafe54c82669df6ab946730d1888"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1poisson.html#aeb71cafe54c82669df6ab946730d1888">ReflectRight</a> (unsigned int depth, int offset)</td></tr>
 <tr class="separator:aeb71cafe54c82669df6ab946730d1888"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,9 +352,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="octree__poisson_8hpp_source.html#l00836">836</a> of file <a class="el" href="octree__poisson_8hpp_source.html">octree_poisson.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__poisson_8hpp_source.html#l00835">835</a> of file <a class="el" href="octree__poisson_8hpp_source.html">octree_poisson.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__poisson_8hpp_source.html#l00845">pcl::poisson::OctNode&lt; class TreeNodeData, Real &gt;::CompareByDepthAndZIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__poisson_8hpp_source.html#l00844">pcl::poisson::OctNode&lt; class TreeNodeData, Real &gt;::CompareByDepthAndZIndex()</a>.</p>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00591">591</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00590">590</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,9 +510,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00578">578</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00577">577</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sparse__matrix_8hpp_source.html#l00607">MultiplyAtomic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sparse__matrix_8hpp_source.html#l00606">MultiplyAtomic()</a>.</p>
 
 </div>
 </div>
@@ -740,7 +740,7 @@ template&lt;class Real &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="polynomial_8hpp_source.html#l00277">pcl::poisson::Polynomial&lt; Degree &gt;::getSolutions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="polynomial_8hpp_source.html#l00275">pcl::poisson::Polynomial&lt; Degree &gt;::getSolutions()</a>.</p>
 
 </div>
 </div>
@@ -900,8 +900,8 @@ template&lt;class Real &gt; </div>
 
 </div>
 </div>
-<a id="a8ccb598e9c6c147cb3c97aeeb0143c27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ccb598e9c6c147cb3c97aeeb0143c27">&#9670;&nbsp;</a></span>LeftOverlap()</h2>
+<a id="a1e024df7ca5304a90eec245ecdde5fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e024df7ca5304a90eec245ecdde5fd3">&#9670;&nbsp;</a></span>LeftOverlap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -915,7 +915,7 @@ template&lt;int Degree&gt; </div>
           <td class="memname">bool pcl::poisson::LeftOverlap </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -998,7 +998,7 @@ template&lt;class Real &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sparse__matrix_8hpp_source.html#l00309">pcl::poisson::SparseMatrix&lt; T &gt;::operator*()</a>, and <a class="el" href="sparse__matrix_8hpp_source.html#l00419">pcl::poisson::SparseSymmetricMatrix&lt; T &gt;::operator*()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sparse__matrix_8hpp_source.html#l00308">pcl::poisson::SparseMatrix&lt; T &gt;::operator*()</a>, and <a class="el" href="sparse__matrix_8hpp_source.html#l00418">pcl::poisson::SparseSymmetricMatrix&lt; T &gt;::operator*()</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1048,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00649">649</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00648">648</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="sparse__matrix_8hpp_source.html#l00578">AtomicIncrement()</a>, <a class="el" href="sparse__matrix_8h_source.html#l00049">pcl::poisson::MatrixEntry&lt; T &gt;::N</a>, <a class="el" href="sparse__matrix_8h_source.html#l00064">pcl::poisson::SparseMatrix&lt; T &gt;::rows</a>, <a class="el" href="sparse__matrix_8h_source.html#l00065">pcl::poisson::SparseMatrix&lt; T &gt;::rowSizes</a>, <a class="el" href="vector_8hpp_source.html#l00093">pcl::poisson::Vector&lt; T &gt;::SetZero()</a>, and <a class="el" href="sparse__matrix_8h_source.html#l00050">pcl::poisson::MatrixEntry&lt; T &gt;::Value</a>.</p>
+<p class="reference">References <a class="el" href="sparse__matrix_8hpp_source.html#l00577">AtomicIncrement()</a>, <a class="el" href="sparse__matrix_8h_source.html#l00049">pcl::poisson::MatrixEntry&lt; T &gt;::N</a>, <a class="el" href="sparse__matrix_8h_source.html#l00064">pcl::poisson::SparseMatrix&lt; T &gt;::rows</a>, <a class="el" href="sparse__matrix_8h_source.html#l00065">pcl::poisson::SparseMatrix&lt; T &gt;::rowSizes</a>, <a class="el" href="vector_8hpp_source.html#l00093">pcl::poisson::Vector&lt; T &gt;::SetZero()</a>, and <a class="el" href="sparse__matrix_8h_source.html#l00050">pcl::poisson::MatrixEntry&lt; T &gt;::Value</a>.</p>
 
 </div>
 </div>
@@ -1100,11 +1100,11 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00607">607</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sparse__matrix_8hpp_source.html#l00606">606</a> of file <a class="el" href="sparse__matrix_8hpp_source.html">sparse_matrix.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="sparse__matrix_8hpp_source.html#l00578">AtomicIncrement()</a>, <a class="el" href="sparse__matrix_8h_source.html#l00049">pcl::poisson::MatrixEntry&lt; T &gt;::N</a>, <a class="el" href="sparse__matrix_8h_source.html#l00064">pcl::poisson::SparseMatrix&lt; T &gt;::rows</a>, <a class="el" href="sparse__matrix_8h_source.html#l00065">pcl::poisson::SparseMatrix&lt; T &gt;::rowSizes</a>, <a class="el" href="vector_8hpp_source.html#l00093">pcl::poisson::Vector&lt; T &gt;::SetZero()</a>, and <a class="el" href="sparse__matrix_8h_source.html#l00050">pcl::poisson::MatrixEntry&lt; T &gt;::Value</a>.</p>
+<p class="reference">References <a class="el" href="sparse__matrix_8hpp_source.html#l00577">AtomicIncrement()</a>, <a class="el" href="sparse__matrix_8h_source.html#l00049">pcl::poisson::MatrixEntry&lt; T &gt;::N</a>, <a class="el" href="sparse__matrix_8h_source.html#l00064">pcl::poisson::SparseMatrix&lt; T &gt;::rows</a>, <a class="el" href="sparse__matrix_8h_source.html#l00065">pcl::poisson::SparseMatrix&lt; T &gt;::rowSizes</a>, <a class="el" href="vector_8hpp_source.html#l00093">pcl::poisson::Vector&lt; T &gt;::SetZero()</a>, and <a class="el" href="sparse__matrix_8h_source.html#l00050">pcl::poisson::MatrixEntry&lt; T &gt;::Value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sparse__matrix_8hpp_source.html#l00694">pcl::poisson::SparseSymmetricMatrix&lt; T &gt;::SolveAtomic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sparse__matrix_8hpp_source.html#l00693">pcl::poisson::SparseSymmetricMatrix&lt; T &gt;::SolveAtomic()</a>.</p>
 
 </div>
 </div>
@@ -1178,8 +1178,8 @@ template&lt;class Real &gt; </div>
 
 </div>
 </div>
-<a id="a918b74e17233eb1182385e2cc930b5e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a918b74e17233eb1182385e2cc930b5e9">&#9670;&nbsp;</a></span>ReflectLeft()</h2>
+<a id="aa82b9511550472d24100dc900067e440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82b9511550472d24100dc900067e440">&#9670;&nbsp;</a></span>ReflectLeft()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1193,7 +1193,7 @@ template&lt;int Degree&gt; </div>
           <td class="memname">int pcl::poisson::ReflectLeft </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1214,7 +1214,7 @@ template&lt;int Degree&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bspline__data_8hpp_source.html#l00072">72</a> of file <a class="el" href="bspline__data_8hpp_source.html">bspline_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bspline__data_8hpp_source.html#l00071">71</a> of file <a class="el" href="bspline__data_8hpp_source.html">bspline_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1254,12 +1254,12 @@ template&lt;int Degree&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bspline__data_8hpp_source.html#l00077">77</a> of file <a class="el" href="bspline__data_8hpp_source.html">bspline_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bspline__data_8hpp_source.html#l00076">76</a> of file <a class="el" href="bspline__data_8hpp_source.html">bspline_data.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a57daffa2081857eb43b6d53ffca9b130"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57daffa2081857eb43b6d53ffca9b130">&#9670;&nbsp;</a></span>RightOverlap()</h2>
+<a id="a169191b8dcc139d0110199368a864cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169191b8dcc139d0110199368a864cb1">&#9670;&nbsp;</a></span>RightOverlap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1273,7 +1273,7 @@ template&lt;int Degree&gt; </div>
           <td class="memname">bool pcl::poisson::RightOverlap </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1316,11 +1316,11 @@ template&lt;int Degree1, int Degree2&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bspline__data_8hpp_source.html#l00473">473</a> of file <a class="el" href="bspline__data_8hpp_source.html">bspline_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bspline__data_8hpp_source.html#l00472">472</a> of file <a class="el" href="bspline__data_8hpp_source.html">bspline_data.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="polynomial_8hpp_source.html#l00312">pcl::poisson::Polynomial&lt; Degree &gt;::BSplineComponent()</a>.</p>
+<p class="reference">References <a class="el" href="polynomial_8hpp_source.html#l00310">pcl::poisson::Polynomial&lt; Degree &gt;::BSplineComponent()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bspline__data_8hpp_source.html#l00176">pcl::poisson::BSplineData&lt; Degree, BSplineDataReal &gt;::setDotTables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bspline__data_8hpp_source.html#l00175">pcl::poisson::BSplineData&lt; Degree, BSplineDataReal &gt;::setDotTables()</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1424,7 @@ template&lt;class Real &gt; </div>
 
 <p class="reference">References <a class="el" href="surface_2include_2pcl_2surface_23rdparty_2poisson4_2geometry_8h_source.html#l00052">pcl::poisson::Point3D&lt; Real &gt;::coords</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="geometry_8hpp_source.html#l00071">Distance()</a>, <a class="el" href="geometry_8hpp_source.html#l00081">EdgeCollapse()</a>, <a class="el" href="octree__poisson_8hpp_source.html#l00745">pcl::poisson::OctNode&lt; class TreeNodeData, Real &gt;::getNearestLeaf()</a>, and <a class="el" href="geometry_8hpp_source.html#l00177">TriangleCollapse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="geometry_8hpp_source.html#l00071">Distance()</a>, <a class="el" href="geometry_8hpp_source.html#l00081">EdgeCollapse()</a>, <a class="el" href="octree__poisson_8hpp_source.html#l00744">pcl::poisson::OctNode&lt; class TreeNodeData, Real &gt;::getNearestLeaf()</a>, and <a class="el" href="geometry_8hpp_source.html#l00177">TriangleCollapse()</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1591,7 @@ template&lt;class Real &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:16</p>
+<p>Pages generated on Sun Jul 18 2021 17:43:32</p>
 </div> <!-- #footer -->
 </body>
 </html>

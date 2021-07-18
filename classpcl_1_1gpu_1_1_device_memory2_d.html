@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -169,11 +169,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><b><a class="el" href="classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class">DeviceMemory2D</a></b> class </p>
-<dl class="section note"><dt>Note</dt><dd>This is a BLOB container class with reference counting for pitched GPU memory. <br  />
-</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is a BLOB container class with reference counting for pitched GPU memory.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Anatoly Baksheev </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8h_source.html#l00142">142</a> of file <a class="el" href="device__memory_8h_source.html">device_memory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8h_source.html#l00181">181</a> of file <a class="el" href="device__memory_8h_source.html">device_memory.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aec937e87ebc5d55c51106d3d5cae57e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec937e87ebc5d55c51106d3d5cae57e8">&#9670;&nbsp;</a></span>DeviceMemory2D() <span class="overload">[1/4]</span></h2>
@@ -436,10 +435,8 @@ Public Member Functions</h2></td></tr>
 <p>Downloads data from internal buffer to CPU memory. </p>
 <p>User is responsible for correct host buffer size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">host_ptr_arg</td><td>pointer to host buffer to download <br  />
- </td></tr>
-    <tr><td class="paramname">host_step_arg</td><td>stride between two consecutive rows in bytes for host buffer <br  />
- </td></tr>
+    <tr><td class="paramname">host_ptr_arg</td><td>pointer to host buffer to download </td></tr>
+    <tr><td class="paramname">host_step_arg</td><td>stride between two consecutive rows in bytes for host buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -481,9 +478,9 @@ template&lt;class U &gt; </div>
 
 <p>Conversion to <a class="el" href="structpcl_1_1gpu_1_1_ptr_step.html">PtrStep</a> for passing to kernel functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00082">82</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00084">84</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kernel__containers_8h_source.html#l00056">pcl::gpu::DevPtr&lt; T &gt;::data</a>, and <a class="el" href="kernel__containers_8h_source.html#l00080">pcl::gpu::PtrStep&lt; T &gt;::step</a>.</p>
+<p class="reference">References <a class="el" href="kernel__containers_8h_source.html#l00054">pcl::gpu::DevPtr&lt; T &gt;::data</a>, and <a class="el" href="kernel__containers_8h_source.html#l00094">pcl::gpu::PtrStep&lt; T &gt;::step</a>.</p>
 
 </div>
 </div>
@@ -503,9 +500,9 @@ template&lt;class U &gt; </div>
 
 <p>Conversion to <a class="el" href="structpcl_1_1gpu_1_1_ptr_step_sz.html">PtrStepSz</a> for passing to kernel functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00091">91</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00093">93</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kernel__containers_8h_source.html#l00095">pcl::gpu::PtrStepSz&lt; T &gt;::cols</a>, <a class="el" href="kernel__containers_8h_source.html#l00056">pcl::gpu::DevPtr&lt; T &gt;::data</a>, <a class="el" href="kernel__containers_8h_source.html#l00096">pcl::gpu::PtrStepSz&lt; T &gt;::rows</a>, and <a class="el" href="kernel__containers_8h_source.html#l00080">pcl::gpu::PtrStep&lt; T &gt;::step</a>.</p>
+<p class="reference">References <a class="el" href="kernel__containers_8h_source.html#l00131">pcl::gpu::PtrStepSz&lt; T &gt;::cols</a>, <a class="el" href="kernel__containers_8h_source.html#l00054">pcl::gpu::DevPtr&lt; T &gt;::data</a>, <a class="el" href="kernel__containers_8h_source.html#l00132">pcl::gpu::PtrStepSz&lt; T &gt;::rows</a>, and <a class="el" href="kernel__containers_8h_source.html#l00094">pcl::gpu::PtrStep&lt; T &gt;::step</a>.</p>
 
 </div>
 </div>
@@ -551,13 +548,12 @@ template&lt;class T &gt; </div>
 <p>Returns pointer to given row in internal buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">y_arg</td><td>row index <br  />
- </td></tr>
+    <tr><td class="paramname">y_arg</td><td>row index </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00070">70</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00071">71</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,13 +578,12 @@ template&lt;class T &gt; </div>
 <p>Returns constant pointer to given row in internal buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">y_arg</td><td>row index <br  />
- </td></tr>
+    <tr><td class="paramname">y_arg</td><td>row index </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00076">76</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="device__memory_8hpp_source.html#l00078">78</a> of file <a class="el" href="device__memory_8hpp_source.html">device_memory.hpp</a>.</p>
 
 </div>
 </div>
@@ -671,8 +666,7 @@ template&lt;class T &gt; </div>
 <p>Performs swap of data pointed with another device memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other_arg</td><td>device memory to swap with <br  />
- </td></tr>
+    <tr><td class="paramname">other_arg</td><td>device memory to swap with </td></tr>
   </table>
   </dd>
 </dl>
@@ -720,8 +714,7 @@ template&lt;class T &gt; </div>
 <p>Uploads data to internal buffer in GPU memory. </p>
 <p>It calls <a class="el" href="classpcl_1_1gpu_1_1_device_memory2_d.html#a4e03c08aabf9c020cbe3d92d2b3434ab" title="Allocates internal buffer in GPU memory.">create()</a> inside to ensure that intenal buffer size is enough. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">host_ptr_arg</td><td>pointer to host buffer to upload <br  />
- </td></tr>
+    <tr><td class="paramname">host_ptr_arg</td><td>pointer to host buffer to upload </td></tr>
     <tr><td class="paramname">host_step_arg</td><td>stride between two consecutive rows in bytes for host buffer </td></tr>
     <tr><td class="paramname">rows_arg</td><td>number of rows to upload </td></tr>
     <tr><td class="paramname">colsBytes_arg</td><td>width of host buffer in bytes </td></tr>
@@ -741,7 +734,7 @@ template&lt;class T &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:31</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:46</p>
 </div> <!-- #footer -->
 </body>
 </html>

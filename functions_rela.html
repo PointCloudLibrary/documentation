@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -78,13 +78,6 @@ $(function() {
 </li>
 <li>BVH
 : <a class="el" href="classpcl_1_1recognition_1_1_b_v_h_1_1_node.html#a9cba446288d7c69a8b0d57e5cbe1cd39">pcl::recognition::BVH&lt; UserData &gt;::Node</a>
-</li>
-</ul>
-
-
-<h3><a id="index_d"></a>- d -</h3><ul>
-<li>detail::getMapping
-: <a class="el" href="classpcl_1_1_point_cloud.html#ad8bff7d0ad728e80ec67e83fd3c47050">pcl::PointCloud&lt; PointT &gt;</a>
 </li>
 </ul>
 
@@ -265,6 +258,7 @@ $(function() {
 , <a class="el" href="structpcl_1_1_point_x_y_z_i.html#ad0e2c056759aa978f3efeea2181beac1">pcl::PointXYZI</a>
 , <a class="el" href="structpcl_1_1_point_x_y_z_i_normal.html#a47a9cfc7dbb76d914c52453a2f09c8e3">pcl::PointXYZINormal</a>
 , <a class="el" href="structpcl_1_1_point_x_y_z_l.html#a584fad2cce546fcabf62369c17981279">pcl::PointXYZL</a>
+, <a class="el" href="structpcl_1_1_point_x_y_z_l_a_b.html#ad33b50278dfd2293fbea3fef3b5c150e">pcl::PointXYZLAB</a>
 , <a class="el" href="structpcl_1_1_point_x_y_z_l_normal.html#ab10e828b0a01391d1d17ff1d7f660859">pcl::PointXYZLNormal</a>
 , <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html#add586a92f38ccd11fe69dfeff9b27eb3">pcl::PointXYZRGB</a>
 , <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b_a.html#ae82234b9fc041d2931d6429b790109d8">pcl::PointXYZRGBA</a>
@@ -285,10 +279,7 @@ $(function() {
 , <a class="el" href="structpcl_1_1_v_f_h_signature308.html#a9781dca2696523940c4b2cd4064320d4">pcl::VFHSignature308</a>
 </li>
 <li>operator&gt;&gt;
-: <a class="el" href="classpcl_1_1geometry_1_1_edge_index.html#a769b92e7df16fcfa0f0b1ad78e0963dc">pcl::geometry::EdgeIndex</a>
-, <a class="el" href="classpcl_1_1geometry_1_1_face_index.html#a0a1298456cacd8cc105c6bce7c1347e8">pcl::geometry::FaceIndex</a>
-, <a class="el" href="classpcl_1_1geometry_1_1_half_edge_index.html#a6903450663506772463de8750038255c">pcl::geometry::HalfEdgeIndex</a>
-, <a class="el" href="classpcl_1_1geometry_1_1_vertex_index.html#a6b7a2a9bbf2e17f4e123e4ee27bd2025">pcl::geometry::VertexIndex</a>
+: <a class="el" href="classpcl_1_1detail_1_1_mesh_index.html#a1e2cd77ab800b44d0d98dee70c156d7c">pcl::detail::MeshIndex&lt; IndexTagT &gt;</a>
 </li>
 <li>ORRGraph
 : <a class="el" href="classpcl_1_1recognition_1_1_o_r_r_graph_1_1_node.html#ae6c1d504f52b7be2672abb19b6295a33">pcl::recognition::ORRGraph&lt; NodeData &gt;::Node</a>
@@ -309,13 +300,13 @@ $(function() {
 , <a class="el" href="classpcl_1_1geometry_1_1_vertex.html#a53af18507a8ef835e4591f523ec802ce">pcl::geometry::Vertex</a>
 </li>
 <li>pcl::geometry::MeshBase&lt; PolygonMesh&lt; MeshTraitsT &gt;, MeshTraitsT, pcl::geometry::PolygonMeshTag &gt;
-: <a class="el" href="classpcl_1_1geometry_1_1_polygon_mesh.html#a2ef7afd25981137f1114f7d9a590c8a4">pcl::geometry::PolygonMesh&lt; MeshTraitsT &gt;</a>
+: <a class="el" href="classpcl_1_1geometry_1_1_polygon_mesh.html#adbe0b989831505b9a5607d3a84fc75f4">pcl::geometry::PolygonMesh&lt; MeshTraitsT &gt;</a>
 </li>
 <li>pcl::geometry::MeshBase&lt; QuadMesh&lt; MeshTraitsT &gt;, MeshTraitsT, pcl::geometry::QuadMeshTag &gt;
-: <a class="el" href="classpcl_1_1geometry_1_1_quad_mesh.html#a2dbbae9e7b395c7cbead3a0f5db30336">pcl::geometry::QuadMesh&lt; MeshTraitsT &gt;</a>
+: <a class="el" href="classpcl_1_1geometry_1_1_quad_mesh.html#a96ccbebb805105c655b30f794919f206">pcl::geometry::QuadMesh&lt; MeshTraitsT &gt;</a>
 </li>
 <li>pcl::geometry::MeshBase&lt; TriangleMesh&lt; MeshTraitsT &gt;, MeshTraitsT, pcl::geometry::TriangleMeshTag &gt;
-: <a class="el" href="classpcl_1_1geometry_1_1_triangle_mesh.html#a2aabb8cd742ac6ac9c634ec2fe69c1eb">pcl::geometry::TriangleMesh&lt; MeshTraitsT &gt;</a>
+: <a class="el" href="classpcl_1_1geometry_1_1_triangle_mesh.html#a518cec692430e6ef939d70bcfde255f1">pcl::geometry::TriangleMesh&lt; MeshTraitsT &gt;</a>
 </li>
 <li>pcl::geometry::MeshIO
 : <a class="el" href="classpcl_1_1geometry_1_1_face.html#a911d805527382c9969e3c0684075cc56">pcl::geometry::Face</a>
@@ -372,7 +363,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:15:37</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:57</p>
 </div> <!-- #footer -->
 </body>
 </html>

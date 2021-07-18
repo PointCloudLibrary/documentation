@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -74,15 +74,17 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a6f8d000384e2c4df3d6fa50a41d922f4">approxNearestSearch</a>(const Queries &amp;queries, NeighborIndices &amp;result) const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ac41094b3ee693ebcfdaafb050a4026bc">approxNearestSearchHost</a>(const PointType &amp;query, int &amp;out_index, float &amp;sqr_dist)</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ad7d90421b68df2f155aa9119d561c1d4">build</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a9855f3324f5d796f57d8bb44b640a54d">clear</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ab8d9439cb3e10fce0b62a9836d7f3787">cloud_</a></td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a9aff6d4c118becd68d847d0a83c3d5db">ConstPtr</a> typedef</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ad6e1b1ad7522826f39c202bd2c2eea89">Indices</a> typedef</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a5a04460da9927a707dcf02699bc77a5b">internalDownload</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a0853023a1f460c0e7feb1ac55a130d45">isBuilt</a>() const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#aea2387c273c96c66ddbc86b2f7093651">nearestKSearchBatch</a>(const Queries &amp;queries, int k, NeighborIndices &amp;results) const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a5c99767afa0296d9bfafb9ef66eed348">approxNearestSearch</a>(const Queries &amp;queries, NeighborIndices &amp;result, ResultSqrDists &amp;sqr_distance) const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ac41094b3ee693ebcfdaafb050a4026bc">approxNearestSearchHost</a>(const PointType &amp;query, int &amp;out_index, float &amp;sqr_dist)</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ad7d90421b68df2f155aa9119d561c1d4">build</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a9855f3324f5d796f57d8bb44b640a54d">clear</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ab8d9439cb3e10fce0b62a9836d7f3787">cloud_</a></td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a9aff6d4c118becd68d847d0a83c3d5db">ConstPtr</a> typedef</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#ad6e1b1ad7522826f39c202bd2c2eea89">Indices</a> typedef</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a5a04460da9927a707dcf02699bc77a5b">internalDownload</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a0853023a1f460c0e7feb1ac55a130d45">isBuilt</a>() const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#aea2387c273c96c66ddbc86b2f7093651">nearestKSearchBatch</a>(const Queries &amp;queries, int k, NeighborIndices &amp;results) const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a33159b6d58e70c9158fbce9c7a6bb8ff">nearestKSearchBatch</a>(const Queries &amp;queries, int k, NeighborIndices &amp;results, ResultSqrDists &amp;sqr_distances) const</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#aa53266305b1eeffb82a885e2560637a4">Octree</a>()</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#af900ae3fcc3473e7c86b714a8af288a3">PointCloud</a> typedef</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html#a5379de45e51a24beb982b1b4a3ecb185">PointType</a> typedef</td><td class="entry"><a class="el" href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></td><td class="entry"></td></tr>
@@ -102,7 +104,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:32</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:47</p>
 </div> <!-- #footer -->
 </body>
 </html>

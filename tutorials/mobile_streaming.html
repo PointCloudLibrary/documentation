@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Point Cloud Streaming to Mobile Devices with Real-time Visualization &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Point Cloud Streaming to Mobile Devices with Real-time Visualization &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -296,9 +296,9 @@ that lie outside of the predefined bounding box or contain NaN values.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span>
 <span class="nf">CopyPointCloudToBuffers</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="o">&gt;::</span><span class="n">ConstPtr</span> <span class="n">cloud</span><span class="p">,</span> <span class="n">PointCloudBuffers</span><span class="o">&amp;</span> <span class="n">cloud_buffers</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">nr_points</span> <span class="o">=</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span>
+  <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">nr_points</span> <span class="o">=</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">();</span>
 
-  <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">nr_points</span><span class="o">*</span><span class="mi">3</span><span class="p">);</span>
+  <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">nr_points</span><span class="o">*</span><span class="mi">3</span><span class="p">);</span>
   <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">rgb</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">nr_points</span><span class="o">*</span><span class="mi">3</span><span class="p">);</span>
 
   <span class="k">const</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span>  <span class="n">bounds_min</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
@@ -308,7 +308,7 @@ that lie outside of the predefined bounding box or contain NaN values.</p>
   <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nr_points</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
   <span class="p">{</span>
 
-    <span class="k">const</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="o">&amp;</span> <span class="n">point</span> <span class="o">=</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">const</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="o">&amp;</span> <span class="n">point</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">)[</span><span class="n">i</span><span class="p">];</span>
 
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">pcl_isfinite</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">||</span>
         <span class="o">!</span><span class="n">pcl_isfinite</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">||</span>
@@ -325,9 +325,9 @@ that lie outside of the predefined bounding box or contain NaN values.</p>
 
     <span class="k">const</span> <span class="kt">int</span> <span class="n">conversion_factor</span> <span class="o">=</span> <span class="mi">500</span><span class="p">;</span>
 
-    <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">short</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">conversion_factor</span><span class="p">);</span>
-    <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">short</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">conversion_factor</span><span class="p">);</span>
-    <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">short</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">*</span> <span class="n">conversion_factor</span><span class="p">);</span>
+    <span class="n">cloud_buffers</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">short</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">conversion_factor</span><span class="p">);</span>
+    <span class="n">cloud_buffers</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">short</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">conversion_factor</span><span class="p">);</span>
+    <span class="n">cloud_buffers</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">short</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">*</span> <span class="n">conversion_factor</span><span class="p">);</span>
 
     <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">rgb</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">point</span><span class="p">.</span><span class="n">r</span><span class="p">;</span>
     <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">rgb</span><span class="p">[</span><span class="n">j</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">point</span><span class="p">.</span><span class="n">g</span><span class="p">;</span>
@@ -336,7 +336,7 @@ that lie outside of the predefined bounding box or contain NaN values.</p>
     <span class="n">j</span><span class="o">++</span><span class="p">;</span>
   <span class="p">}</span>
 
-  <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">j</span> <span class="o">*</span> <span class="mi">3</span><span class="p">);</span>
+  <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">j</span> <span class="o">*</span> <span class="mi">3</span><span class="p">);</span>
   <span class="n">cloud_buffers</span><span class="p">.</span><span class="n">rgb</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="n">j</span> <span class="o">*</span> <span class="mi">3</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
@@ -364,7 +364,7 @@ APIs provided by boost::asio and boost::asio::tcp.</p>
 
   <span class="n">PointCloudBuffers</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">buffers_to_send</span> <span class="o">=</span> <span class="n">getLatestBuffers</span> <span class="p">();</span>
 
-  <span class="n">nr_points</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">buffers_to_send</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span>
+  <span class="n">nr_points</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">buffers_to_send</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span>
   <span class="n">boost</span><span class="o">::</span><span class="n">asio</span><span class="o">::</span><span class="n">write</span> <span class="p">(</span><span class="n">socket</span><span class="p">,</span> <span class="n">boost</span><span class="o">::</span><span class="n">asio</span><span class="o">::</span><span class="n">buffer</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">nr_points</span><span class="p">,</span> <span class="k">sizeof</span> <span class="p">(</span><span class="n">nr_points</span><span class="p">)));</span>
 
   <span class="k">if</span> <span class="p">(</span><span class="n">nr_points</span><span class="p">)</span>
@@ -402,7 +402,7 @@ information to the server, such as new leaf size parameters to set on the voxel 
 callback function, and sends information about the buffer’s number of points to the client:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">PointCloudBuffers</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">buffers_to_send</span> <span class="o">=</span> <span class="n">getLatestBuffers</span> <span class="p">();</span>
 
-<span class="n">nr_points</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">buffers_to_send</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">nr_points</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">buffers_to_send</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">()</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span>
 <span class="n">boost</span><span class="o">::</span><span class="n">asio</span><span class="o">::</span><span class="n">write</span> <span class="p">(</span><span class="n">socket</span><span class="p">,</span> <span class="n">boost</span><span class="o">::</span><span class="n">asio</span><span class="o">::</span><span class="n">buffer</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">nr_points</span><span class="p">,</span> <span class="k">sizeof</span> <span class="p">(</span><span class="n">nr_points</span><span class="p">)));</span>
 </pre></div>
 </div>

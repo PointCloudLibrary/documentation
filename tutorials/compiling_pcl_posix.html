@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Compiling PCL from source on POSIX compliant systems &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Compiling PCL from source on POSIX compliant systems &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -193,8 +193,8 @@ For instructions on how to download and compile PCL in Windows (which uses a sli
 <h2><a class="toc-backref" href="#id3">Stable</a></h2>
 <p>For systems for which we do not offer precompiled binaries, you need to compile Point Cloud Library (PCL) from source. Here are the steps that you need to take:
 Go to <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/releases">Github</a> and download the version number of your choice.
-Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version number):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="n">xvfj</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mf">2.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+Uncompress the tar-gzip archive, e.g. (replace 1.7.2 with the correct version number):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="n">xvf</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mf">2.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
 <p>Change the directory to the pcl-pcl-1.7.2 (replace 1.7.2 with the correct version number) directory, and create a build directory in there:</p>
@@ -255,7 +255,10 @@ Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version nu
 <div class="section" id="mandatory">
 <h3><a class="toc-backref" href="#id6">Mandatory</a></h3>
 <p>The following code libraries are <strong>required</strong> for the compilation and usage of the PCL libraries shown below:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>pcl_* denotes all PCL libraries, meaning that the particular dependency is a strict requirement for the usage of anything in PCL.</p>
+</div>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 51%" />
@@ -335,7 +338,7 @@ Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version nu
 <tr class="row-even"><td><img alt="_images/cuda_logo.png" src="_images/cuda_logo.png" />
 </td>
 <td><p>CUDA</p></td>
-<td><p>4.0</p></td>
+<td><p>9.2</p></td>
 <td><p>pcl_*</p></td>
 </tr>
 </tbody>

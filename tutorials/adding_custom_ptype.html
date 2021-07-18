@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adding your own custom PointT type &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Adding your own custom PointT type &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -1055,14 +1055,14 @@ data (SSE padded), together with a test float.</p>
 <span class="n">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">MyPointType</span><span class="o">&gt;</span> <span class="n">cloud</span><span class="p">;</span>
-  <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="n">cloud</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="mi">2</span><span class="p">);</span>
   <span class="n">cloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
   <span class="n">cloud</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
-  <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">test</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">test</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-  <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="n">cloud</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">test</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="n">cloud</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">test</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="n">cloud</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">cloud</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="n">cloud</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
 
   <span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">savePCDFile</span> <span class="p">(</span><span class="s">&quot;test.pcd&quot;</span><span class="p">,</span> <span class="n">cloud</span><span class="p">);</span>
 <span class="p">}</span>

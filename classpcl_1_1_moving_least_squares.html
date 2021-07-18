@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -137,8 +137,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a211635f00d90fa9beeb7a49e2064d1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec38605d6446131ce2b161132056599"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a3ec38605d6446131ce2b161132056599">PointCloudInConstPtr</a> = typename <a class="el" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">PointCloudIn::ConstPtr</a></td></tr>
 <tr class="separator:a3ec38605d6446131ce2b161132056599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e9612801f8c7b6af433c7656708bde0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a4e9612801f8c7b6af433c7656708bde0">SearchMethod</a> = std::function&lt; int(int, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a4e9612801f8c7b6af433c7656708bde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea943f4285b54ae8c431bb532eeb6f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a4ea943f4285b54ae8c431bb532eeb6f0">SearchMethod</a> = std::function&lt; int(<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a4ea943f4285b54ae8c431bb532eeb6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classpcl_1_1_cloud_surface_processing"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcl_1_1_cloud_surface_processing')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcl_1_1_cloud_surface_processing.html">pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;</a></td></tr>
 <tr class="memitem:a5ee01cb41505dd8fd090a563d1a18cec inherit pub_types_classpcl_1_1_cloud_surface_processing"><td class="memItemLeft" align="right" valign="top">typedef shared_ptr&lt; <a class="el" href="classpcl_1_1_cloud_surface_processing.html">CloudSurfaceProcessing</a>&lt; PointInT, PointOutT &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_cloud_surface_processing.html#a5ee01cb41505dd8fd090a563d1a18cec">Ptr</a></td></tr>
 <tr class="separator:a5ee01cb41505dd8fd090a563d1a18cec inherit pub_types_classpcl_1_1_cloud_surface_processing"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,12 +179,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a31b20ae5edc27db50e771a5832d4f7ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a31b20ae5edc27db50e771a5832d4f7ea">getPolynomialOrder</a> () const</td></tr>
 <tr class="memdesc:a31b20ae5edc27db50e771a5832d4f7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the order of the polynomial to be fit.  <a href="classpcl_1_1_moving_least_squares.html#a31b20ae5edc27db50e771a5832d4f7ea">More...</a><br /></td></tr>
 <tr class="separator:a31b20ae5edc27db50e771a5832d4f7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec89a5e1f9001476eb1fc2b8db63d650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#aec89a5e1f9001476eb1fc2b8db63d650">setPolynomialFit</a> (bool polynomial_fit)</td></tr>
-<tr class="memdesc:aec89a5e1f9001476eb1fc2b8db63d650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the surface and normal are approximated using a polynomial, or only via tangent estimation.  <a href="classpcl_1_1_moving_least_squares.html#aec89a5e1f9001476eb1fc2b8db63d650">More...</a><br /></td></tr>
-<tr class="separator:aec89a5e1f9001476eb1fc2b8db63d650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16c07d35ff542961eacdf24852adfdcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a16c07d35ff542961eacdf24852adfdcd">getPolynomialFit</a> () const</td></tr>
-<tr class="memdesc:a16c07d35ff542961eacdf24852adfdcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the polynomial_fit value (true if the surface and normal are approximated using a polynomial).  <a href="classpcl_1_1_moving_least_squares.html#a16c07d35ff542961eacdf24852adfdcd">More...</a><br /></td></tr>
-<tr class="separator:a16c07d35ff542961eacdf24852adfdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5e4d16c7aae631ef02bf1ee843bd55e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#ae5e4d16c7aae631ef02bf1ee843bd55e">setSearchRadius</a> (double radius)</td></tr>
 <tr class="memdesc:ae5e4d16c7aae631ef02bf1ee843bd55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sphere radius that is to be used for determining the k-nearest neighbors used for fitting.  <a href="classpcl_1_1_moving_least_squares.html#ae5e4d16c7aae631ef02bf1ee843bd55e">More...</a><br /></td></tr>
 <tr class="separator:ae5e4d16c7aae631ef02bf1ee843bd55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,15 +301,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8450a26f10b00753056f01eef9042c1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a8450a26f10b00753056f01eef9042c1f">searchForNeighbors</a> (int index, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;sqr_distances) const</td></tr>
-<tr class="memdesc:a8450a26f10b00753056f01eef9042c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the closest nearest neighbors of a given point using a radius search.  <a href="classpcl_1_1_moving_least_squares.html#a8450a26f10b00753056f01eef9042c1f">More...</a><br /></td></tr>
-<tr class="separator:a8450a26f10b00753056f01eef9042c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ac6adf0fd368dd3d98c3d1e22f66b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#ae6ac6adf0fd368dd3d98c3d1e22f66b6">computeMLSPointNormal</a> (int index, const std::vector&lt; int &gt; &amp;nn_indices, <a class="el" href="classpcl_1_1_moving_least_squares.html#a380fb380351380354e1371052d130408">PointCloudOut</a> &amp;projected_points, <a class="el" href="classpcl_1_1_moving_least_squares.html#ab5d91c4e076b5a72f5a85ad43ac0f5de">NormalCloud</a> &amp;projected_points_normals, <a class="el" href="structpcl_1_1_point_indices.html">PointIndices</a> &amp;corresponding_input_indices, <a class="el" href="structpcl_1_1_m_l_s_result.html">MLSResult</a> &amp;mls_result) const</td></tr>
-<tr class="memdesc:ae6ac6adf0fd368dd3d98c3d1e22f66b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smooth a given point and its neighborghood using Moving Least Squares.  <a href="classpcl_1_1_moving_least_squares.html#ae6ac6adf0fd368dd3d98c3d1e22f66b6">More...</a><br /></td></tr>
-<tr class="separator:ae6ac6adf0fd368dd3d98c3d1e22f66b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b7808828728e6adc6a7c9d09a1b9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a95b7808828728e6adc6a7c9d09a1b9dc">addProjectedPointNormal</a> (int index, const Eigen::Vector3d &amp;point, const Eigen::Vector3d &amp;normal, double curvature, <a class="el" href="classpcl_1_1_moving_least_squares.html#a380fb380351380354e1371052d130408">PointCloudOut</a> &amp;projected_points, <a class="el" href="classpcl_1_1_moving_least_squares.html#ab5d91c4e076b5a72f5a85ad43ac0f5de">NormalCloud</a> &amp;projected_points_normals, <a class="el" href="structpcl_1_1_point_indices.html">PointIndices</a> &amp;corresponding_input_indices) const</td></tr>
-<tr class="memdesc:a95b7808828728e6adc6a7c9d09a1b9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper function for add projected points.  <a href="classpcl_1_1_moving_least_squares.html#a95b7808828728e6adc6a7c9d09a1b9dc">More...</a><br /></td></tr>
-<tr class="separator:a95b7808828728e6adc6a7c9d09a1b9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938ffc029b05b9590c4c40a3993e6adb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a938ffc029b05b9590c4c40a3993e6adb">searchForNeighbors</a> (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;sqr_distances) const</td></tr>
+<tr class="memdesc:a938ffc029b05b9590c4c40a3993e6adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the nearest neighbors of a given point using a radius search.  <a href="classpcl_1_1_moving_least_squares.html#a938ffc029b05b9590c4c40a3993e6adb">More...</a><br /></td></tr>
+<tr class="separator:a938ffc029b05b9590c4c40a3993e6adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf10a090f74e8860b0c215caee0e9564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#acf10a090f74e8860b0c215caee0e9564">computeMLSPointNormal</a> (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;nn_indices, <a class="el" href="classpcl_1_1_moving_least_squares.html#a380fb380351380354e1371052d130408">PointCloudOut</a> &amp;projected_points, <a class="el" href="classpcl_1_1_moving_least_squares.html#ab5d91c4e076b5a72f5a85ad43ac0f5de">NormalCloud</a> &amp;projected_points_normals, <a class="el" href="structpcl_1_1_point_indices.html">PointIndices</a> &amp;corresponding_input_indices, <a class="el" href="structpcl_1_1_m_l_s_result.html">MLSResult</a> &amp;mls_result) const</td></tr>
+<tr class="memdesc:acf10a090f74e8860b0c215caee0e9564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smooth a given point and its neighborghood using Moving Least Squares.  <a href="classpcl_1_1_moving_least_squares.html#acf10a090f74e8860b0c215caee0e9564">More...</a><br /></td></tr>
+<tr class="separator:acf10a090f74e8860b0c215caee0e9564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae177a8bdefce38ec4878bca18a008aeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#ae177a8bdefce38ec4878bca18a008aeb">addProjectedPointNormal</a> (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index, const Eigen::Vector3d &amp;point, const Eigen::Vector3d &amp;normal, double curvature, <a class="el" href="classpcl_1_1_moving_least_squares.html#a380fb380351380354e1371052d130408">PointCloudOut</a> &amp;projected_points, <a class="el" href="classpcl_1_1_moving_least_squares.html#ab5d91c4e076b5a72f5a85ad43ac0f5de">NormalCloud</a> &amp;projected_points_normals, <a class="el" href="structpcl_1_1_point_indices.html">PointIndices</a> &amp;corresponding_input_indices) const</td></tr>
+<tr class="memdesc:ae177a8bdefce38ec4878bca18a008aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper function for adding projected points.  <a href="classpcl_1_1_moving_least_squares.html#ae177a8bdefce38ec4878bca18a008aeb">More...</a><br /></td></tr>
+<tr class="separator:ae177a8bdefce38ec4878bca18a008aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596b1e2184766db3681a6d9059157cc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a596b1e2184766db3681a6d9059157cc7">copyMissingFields</a> (const PointInT &amp;point_in, PointOutT &amp;point_out) const</td></tr>
 <tr class="separator:a596b1e2184766db3681a6d9059157cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee1f0e03b61da2d1004cf8062370546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#acee1f0e03b61da2d1004cf8062370546">performProcessing</a> (<a class="el" href="classpcl_1_1_moving_least_squares.html#a380fb380351380354e1371052d130408">PointCloudOut</a> &amp;output) override</td></tr>
@@ -340,7 +334,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:afe8cc1328aa77f8262f4243dd4fdba37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_moving_least_squares.html#a3ec38605d6446131ce2b161132056599">PointCloudInConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#afe8cc1328aa77f8262f4243dd4fdba37">distinct_cloud_</a></td></tr>
 <tr class="memdesc:afe8cc1328aa77f8262f4243dd4fdba37"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distinct point cloud that will be projected to the MLS surface.  <a href="classpcl_1_1_moving_least_squares.html#afe8cc1328aa77f8262f4243dd4fdba37">More...</a><br /></td></tr>
 <tr class="separator:afe8cc1328aa77f8262f4243dd4fdba37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf7406e16a85ba21c0c100d8d0d95e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_moving_least_squares.html#a4e9612801f8c7b6af433c7656708bde0">SearchMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#adaf7406e16a85ba21c0c100d8d0d95e3">search_method_</a></td></tr>
+<tr class="memitem:adaf7406e16a85ba21c0c100d8d0d95e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_moving_least_squares.html#a4ea943f4285b54ae8c431bb532eeb6f0">SearchMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#adaf7406e16a85ba21c0c100d8d0d95e3">search_method_</a></td></tr>
 <tr class="memdesc:adaf7406e16a85ba21c0c100d8d0d95e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The search method template for indices.  <a href="classpcl_1_1_moving_least_squares.html#adaf7406e16a85ba21c0c100d8d0d95e3">More...</a><br /></td></tr>
 <tr class="separator:adaf7406e16a85ba21c0c100d8d0d95e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57adb49b99d770e7d32de6e64c872b4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_moving_least_squares.html#a29579e7d56d029efcc69234b9ac18b24">KdTreePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_moving_least_squares.html#a57adb49b99d770e7d32de6e64c872b4a">tree_</a></td></tr>
@@ -416,7 +410,7 @@ class pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;</h3>
 <p>It also contains methods for upsampling the resulting cloud based on the parametric fit. Reference paper: "Computing and Rendering Point Set Surfaces" by Marc Alexa, Johannes Behr, Daniel Cohen-Or, Shachar Fleishman, David Levin and Claudio T. Silva www.sci.utah.edu/~shachar/Publications/crpss.pdf </p><dl class="section note"><dt>Note</dt><dd>There is a parallelized version of the processing step, using the OpenMP standard. Compared to the standard version, an overhead is incurred in terms of runtime and memory usage. The upsampling methods DISTINCT_CLOUD and VOXEL_GRID_DILATION are not parallelized completely, i.e. parts of the algorithm run on a single thread only. </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Zoltan Csaba Marton, Radu B. Rusu, Alexandru E. Ichim, Suat Gedikli, Robert Huitl </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00253">253</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00261">261</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa61ad2135c7f24204171307382321ac3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa61ad2135c7f24204171307382321ac3">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -432,7 +426,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00257">257</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00265">265</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +444,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00265">265</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00273">273</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +462,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00266">266</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00274">274</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +480,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00267">267</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00275">275</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +498,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00268">268</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00276">276</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +516,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00274">274</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00282">282</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +534,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00276">276</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00284">284</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +552,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00275">275</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00283">283</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +570,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00270">270</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00278">278</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +588,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00272">272</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00280">280</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +606,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00271">271</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00279">279</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -630,12 +624,12 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00256">256</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00264">264</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
-<a id="a4e9612801f8c7b6af433c7656708bde0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e9612801f8c7b6af433c7656708bde0">&#9670;&nbsp;</a></span>SearchMethod</h2>
+<a id="a4ea943f4285b54ae8c431bb532eeb6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea943f4285b54ae8c431bb532eeb6f0">&#9670;&nbsp;</a></span>SearchMethod</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,12 +637,12 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 template&lt;typename PointInT , typename PointOutT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::<a class="el" href="classpcl_1_1_moving_least_squares.html#a4e9612801f8c7b6af433c7656708bde0">SearchMethod</a> =  std::function&lt;int (int, double, std::vector&lt;int&gt; &amp;, std::vector&lt;float&gt; &amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::<a class="el" href="classpcl_1_1_moving_least_squares.html#a4ea943f4285b54ae8c431bb532eeb6f0">SearchMethod</a> =  std::function&lt;int (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt;float&gt; &amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00278">278</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00286">286</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +673,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00280">280</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00288">288</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +705,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Empty constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00298">298</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00306">306</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -742,13 +736,13 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Empty destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00319">319</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00327">327</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a95b7808828728e6adc6a7c9d09a1b9dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95b7808828728e6adc6a7c9d09a1b9dc">&#9670;&nbsp;</a></span>addProjectedPointNormal()</h2>
+<a id="ae177a8bdefce38ec4878bca18a008aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae177a8bdefce38ec4878bca18a008aeb">&#9670;&nbsp;</a></span>addProjectedPointNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -761,7 +755,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::addProjectedPointNormal </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
@@ -813,7 +807,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This is a helper function for add projected points. </p>
+<p>This is a helper function for adding projected points. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>the index of the query point in the input cloud </td></tr>
@@ -827,14 +821,14 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00248">248</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00252">252</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00801">pcl::_Normal::curvature</a>, <a class="el" href="_point_indices_8h_source.html#l00023">pcl::PointIndices::indices</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00491">pcl::PointCloud&lt; PointT &gt;::push_back()</a>.</p>
+<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00888">pcl::_Normal::curvature</a>, <a class="el" href="_point_indices_8h_source.html#l00021">pcl::PointIndices::indices</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00652">pcl::PointCloud&lt; PointT &gt;::push_back()</a>.</p>
 
 </div>
 </div>
-<a id="ae6ac6adf0fd368dd3d98c3d1e22f66b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6ac6adf0fd368dd3d98c3d1e22f66b6">&#9670;&nbsp;</a></span>computeMLSPointNormal()</h2>
+<a id="acf10a090f74e8860b0c215caee0e9564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf10a090f74e8860b0c215caee0e9564">&#9670;&nbsp;</a></span>computeMLSPointNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -847,13 +841,13 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::computeMLSPointNormal </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>nn_indices</em>, </td>
         </tr>
         <tr>
@@ -898,7 +892,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>the index of the query point in the input cloud </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nn_indices</td><td>the set of nearest neighbors indices for pt </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">projected_points</td><td>the set of points projected points around the query point (in the case of upsampling method NONE, only the query point projected to its own fitted surface will be returned, in the case of the other upsampling methods, multiple points will be returned) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">projected_points</td><td>the set of projected points around the query point (in the case of upsampling method NONE, only the query point projected to its own fitted surface will be returned, in the case of the other upsampling methods, multiple points will be returned) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">projected_points_normals</td><td>the normals corresponding to the projected points </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">corresponding_input_indices</td><td>the set of indices with each point in output having the corresponding point in input </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">mls_result</td><td>stores the MLS result for each point in the input cloud (used only in the case of VOXEL_GRID_DILATION or DISTINCT_CLOUD upsampling) </td></tr>
@@ -906,9 +900,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00170">170</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00174">174</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8hpp_source.html#l00718">pcl::MLSResult::computeMLSSurface()</a>, <a class="el" href="mls_8h_source.html#l00223">pcl::MLSResult::curvature</a>, <a class="el" href="mls_8h_source.html#l00089">pcl::MLSResult::MLSProjectionResults::normal</a>, <a class="el" href="mls_8h_source.html#l00222">pcl::MLSResult::num_neighbors</a>, <a class="el" href="mls_8h_source.html#l00088">pcl::MLSResult::MLSProjectionResults::point</a>, <a class="el" href="mls_8hpp_source.html#l00642">pcl::MLSResult::projectPointSimpleToPolynomialSurface()</a>, <a class="el" href="mls_8hpp_source.html#l00630">pcl::MLSResult::projectPointToMLSPlane()</a>, and <a class="el" href="mls_8hpp_source.html#l00687">pcl::MLSResult::projectQueryPoint()</a>.</p>
+<p class="reference">References <a class="el" href="mls_8hpp_source.html#l00722">pcl::MLSResult::computeMLSSurface()</a>, <a class="el" href="mls_8h_source.html#l00231">pcl::MLSResult::curvature</a>, <a class="el" href="mls_8h_source.html#l00087">pcl::MLSResult::MLSProjectionResults::normal</a>, <a class="el" href="mls_8h_source.html#l00230">pcl::MLSResult::num_neighbors</a>, <a class="el" href="mls_8h_source.html#l00086">pcl::MLSResult::MLSProjectionResults::point</a>, <a class="el" href="mls_8hpp_source.html#l00646">pcl::MLSResult::projectPointSimpleToPolynomialSurface()</a>, <a class="el" href="mls_8hpp_source.html#l00634">pcl::MLSResult::projectPointToMLSPlane()</a>, and <a class="el" href="mls_8hpp_source.html#l00691">pcl::MLSResult::projectQueryPoint()</a>.</p>
 
 </div>
 </div>
@@ -948,7 +942,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00889">889</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00893">893</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="copy__point_8hpp_source.html#l00137">pcl::copyPoint()</a>.</p>
 
@@ -981,9 +975,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the cache_mls_results_ value (True if the mls results should be stored, otherwise false). </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00498">498</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00481">481</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00586">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::cache_mls_results_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00569">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::cache_mls_results_</a>.</p>
 
 </div>
 </div>
@@ -1014,9 +1008,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the set of indices with each point in output having the corresponding point in input. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00538">538</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00521">521</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00667">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::corresponding_input_indices_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00650">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::corresponding_input_indices_</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1042,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Get the number of dilation steps of the voxel grid. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the VOXEL_GRID_DILATION upsampling method </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00486">486</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00469">469</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00661">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::dilation_iteration_num_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00644">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::dilation_iteration_num_</a>.</p>
 
 </div>
 </div>
@@ -1082,9 +1076,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Get the voxel size for the voxel grid. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the VOXEL_GRID_DILATION upsampling method </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00473">473</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00456">456</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00658">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::voxel_size_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00641">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::voxel_size_</a>.</p>
 
 </div>
 </div>
@@ -1115,9 +1109,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the distinct cloud used for the DISTINCT_CLOUD upsampling method. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00416">416</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00399">399</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00545">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::distinct_cloud_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00528">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::distinct_cloud_</a>.</p>
 
 </div>
 </div>
@@ -1149,11 +1143,11 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Get the MLSResults for input cloud. </p>
 <dl class="section note"><dt>Note</dt><dd>The results are only stored if setCacheMLSResults(true) was called or when using the upsampling method DISTINCT_CLOUD or VOXEL_GRID_DILATION. </dd>
 <dd>
-This vector is align with the input cloud indices, so use getCorrespondingIndices to get the correct results when using output cloud indices. </dd></dl>
+This vector is aligned with the input cloud indices, so use getCorrespondingIndices to get the correct results when using output cloud indices. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00517">517</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00500">500</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00591">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::mls_results_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00574">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::mls_results_</a>.</p>
 
 </div>
 </div>
@@ -1185,44 +1179,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Get the parameter that specifies the desired number of points within the search radius. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of RANDOM_UNIFORM_DENSITY upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00459">459</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00442">442</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00581">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::desired_num_points_in_radius_</a>.</p>
-
-</div>
-</div>
-<a id="a16c07d35ff542961eacdf24852adfdcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16c07d35ff542961eacdf24852adfdcd">&#9670;&nbsp;</a></span>getPolynomialFit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PointInT , typename PointOutT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::getPolynomialFit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the polynomial_fit value (true if the surface and normal are approximated using a polynomial). </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "use getPolynomialOrder() instead" <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00380">380</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
-
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00554">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::order_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00564">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::desired_num_points_in_radius_</a>.</p>
 
 </div>
 </div>
@@ -1253,9 +1212,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the order of the polynomial to be fit. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00355">355</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00363">363</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00554">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::order_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00537">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::order_</a>.</p>
 
 </div>
 </div>
@@ -1286,9 +1245,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the current projection method being used. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00510">510</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00493">493</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00594">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::projection_method_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00577">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::projection_method_</a>.</p>
 
 </div>
 </div>
@@ -1319,9 +1278,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get a pointer to the search method used. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00344">344</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00352">352</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00551">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::tree_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00534">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::tree_</a>.</p>
 
 </div>
 </div>
@@ -1352,9 +1311,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the sphere radius used for determining the k-nearest neighbors. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00391">391</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00374">374</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00557">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_radius_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00540">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_radius_</a>.</p>
 
 </div>
 </div>
@@ -1385,9 +1344,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Get the parameter for distance based weighting of neighbors. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00402">402</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00385">385</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00560">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::sqr_gauss_param_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00543">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::sqr_gauss_param_</a>.</p>
 
 </div>
 </div>
@@ -1419,9 +1378,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Get the radius of the circle in the local point plane that will be sampled. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of SAMPLE_LOCAL_PLANE upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00430">430</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00413">413</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00571">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_radius_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00554">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_radius_</a>.</p>
 
 </div>
 </div>
@@ -1453,9 +1412,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Get the step size for the local plane sampling. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of SAMPLE_LOCAL_PLANE upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00444">444</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00427">427</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00576">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_step_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00559">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_step_</a>.</p>
 
 </div>
 </div>
@@ -1495,9 +1454,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_cloud_surface_processing.html#a3ae7ef7ec7f33418874a12b3edeead38">pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00280">280</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00284">284</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">pcl::PointCloud&lt; PointT &gt;::begin()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00446">pcl::PointCloud&lt; PointT &gt;::end()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00519">pcl::PointCloud&lt; PointT &gt;::insert()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">pcl::PointCloud&lt; PointT &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">pcl::PointCloud&lt; PointT &gt;::begin()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">pcl::PointCloud&lt; PointT &gt;::end()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00702">pcl::PointCloud&lt; PointT &gt;::insert()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -1535,9 +1494,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00366">366</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00370">370</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8hpp_source.html#l00860">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid::dilate()</a>, <a class="el" href="mls_8h_source.html#l00640">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid::getPosition()</a>, <a class="el" href="mls_8h_source.html#l00089">pcl::MLSResult::MLSProjectionResults::normal</a>, <a class="el" href="mls_8h_source.html#l00088">pcl::MLSResult::MLSProjectionResults::point</a>, and <a class="el" href="mls_8h_source.html#l00649">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid::voxel_grid_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8hpp_source.html#l00864">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid::dilate()</a>, <a class="el" href="mls_8h_source.html#l00623">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid::getPosition()</a>, <a class="el" href="mls_8h_source.html#l00087">pcl::MLSResult::MLSProjectionResults::normal</a>, <a class="el" href="mls_8h_source.html#l00086">pcl::MLSResult::MLSProjectionResults::point</a>, and <a class="el" href="mls_8h_source.html#l00632">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid::voxel_grid_</a>.</p>
 
 </div>
 </div>
@@ -1577,14 +1536,14 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_cloud_surface_processing.html#ae6912c1e996411e848c058720d8b543f">pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00057">57</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8hpp_source.html#l00061">61</a> of file <a class="el" href="mls_8hpp_source.html">mls.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00408">pcl::PointCloud&lt; PointT &gt;::header</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00874">pcl::PointCloud&lt; PointT &gt;::clear()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00392">pcl::PointCloud&lt; PointT &gt;::header</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">pcl::PointCloud&lt; PointT &gt;::size()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
-<a id="a8450a26f10b00753056f01eef9042c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8450a26f10b00753056f01eef9042c1f">&#9670;&nbsp;</a></span>searchForNeighbors()</h2>
+<a id="a938ffc029b05b9590c4c40a3993e6adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938ffc029b05b9590c4c40a3993e6adb">&#9670;&nbsp;</a></span>searchForNeighbors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1597,13 +1556,13 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="memname">int <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::searchForNeighbors </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -1625,19 +1584,19 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Search for the closest nearest neighbors of a given point using a radius search. </p>
+<p>Search for the nearest neighbors of a given point using a radius search. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>the index of the query point </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>the resultant vector of indices representing the k-nearest neighbors </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sqr_distances</td><td>the resultant squared distances from the query point to the k-nearest neighbors </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">indices</td><td>the resultant vector of indices representing the neighbors within search_radius_ </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sqr_distances</td><td>the resultant squared distances from the query point to the neighbors within search_radius_ </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00675">675</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00658">658</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00548">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_method_</a>, and <a class="el" href="mls_8h_source.html#l00557">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_radius_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00531">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_method_</a>, and <a class="el" href="mls_8h_source.html#l00540">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_radius_</a>.</p>
 
 </div>
 </div>
@@ -1674,13 +1633,13 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The cache_mls_results_ is forced to true when using upsampling method VOXEL_GRID_DILATION or DISTINCT_CLOUD. </dd>
+<dl class="section note"><dt>Note</dt><dd>The cache_mls_results_ is forced to be true when using upsampling method VOXEL_GRID_DILATION or DISTINCT_CLOUD. </dd>
 <dd>
-If memory consumption is a concern set to false when not using upsampling method VOXEL_GRID_DILATION or DISTINCT_CLOUD. </dd></dl>
+If memory consumption is a concern, then set it to false when not using upsampling method VOXEL_GRID_DILATION or DISTINCT_CLOUD. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00494">494</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00477">477</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00586">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::cache_mls_results_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00569">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::cache_mls_results_</a>.</p>
 
 </div>
 </div>
@@ -1713,9 +1672,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Set whether the algorithm should also store the normals computed. </p>
 <dl class="section note"><dt>Note</dt><dd>This is optional, but need a proper output cloud type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00326">326</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00334">334</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00563">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::compute_normals_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00546">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::compute_normals_</a>.</p>
 
 </div>
 </div>
@@ -1754,9 +1713,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00480">480</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00463">463</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00661">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::dilation_iteration_num_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00644">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::dilation_iteration_num_</a>.</p>
 
 </div>
 </div>
@@ -1795,9 +1754,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00466">466</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00449">449</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00658">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::voxel_size_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00641">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::voxel_size_</a>.</p>
 
 </div>
 </div>
@@ -1829,9 +1788,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Set the distinct cloud used for the DISTINCT_CLOUD upsampling method. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00412">412</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00395">395</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00545">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::distinct_cloud_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00528">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::distinct_cloud_</a>.</p>
 
 </div>
 </div>
@@ -1869,9 +1828,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00523">523</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00506">506</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00597">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::threads_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00580">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::threads_</a>.</p>
 
 </div>
 </div>
@@ -1910,51 +1869,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00452">452</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00435">435</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00581">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::desired_num_points_in_radius_</a>.</p>
-
-</div>
-</div>
-<a id="aec89a5e1f9001476eb1fc2b8db63d650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec89a5e1f9001476eb1fc2b8db63d650">&#9670;&nbsp;</a></span>setPolynomialFit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PointInT , typename PointOutT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::setPolynomialFit </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>polynomial_fit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets whether the surface and normal are approximated using a polynomial, or only via tangent estimation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">polynomial_fit</td><td>set to true for polynomial fit </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 12 : "use setPolynomialOrder() instead" <br  />
- </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00362">362</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
-
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00554">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::order_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00564">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::desired_num_points_in_radius_</a>.</p>
 
 </div>
 </div>
@@ -1993,9 +1910,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Setting order &gt; 1 indicates using a polynomial fit. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00351">351</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00359">359</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00554">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::order_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00537">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::order_</a>.</p>
 
 </div>
 </div>
@@ -2034,9 +1951,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This is only used when polynomial fit is enabled. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00505">505</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00488">488</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00594">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::projection_method_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00577">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::projection_method_</a>.</p>
 
 </div>
 </div>
@@ -2074,9 +1991,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00332">332</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00340">340</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00548">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_method_</a>, and <a class="el" href="mls_8h_source.html#l00551">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::tree_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00531">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_method_</a>, and <a class="el" href="mls_8h_source.html#l00534">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::tree_</a>.</p>
 
 </div>
 </div>
@@ -2115,9 +2032,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Calling this method resets the squared Gaussian parameter to radius * radius ! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00387">387</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00370">370</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00557">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_radius_</a>, and <a class="el" href="mls_8h_source.html#l00560">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::sqr_gauss_param_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00540">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::search_radius_</a>, and <a class="el" href="mls_8h_source.html#l00543">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::sqr_gauss_param_</a>.</p>
 
 </div>
 </div>
@@ -2155,9 +2072,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00398">398</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00381">381</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00560">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::sqr_gauss_param_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00543">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::sqr_gauss_param_</a>.</p>
 
 </div>
 </div>
@@ -2195,9 +2112,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00408">408</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00391">391</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00566">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsample_method_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00549">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsample_method_</a>.</p>
 
 </div>
 </div>
@@ -2236,9 +2153,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00424">424</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00407">407</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00571">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_radius_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00554">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_radius_</a>.</p>
 
 </div>
 </div>
@@ -2277,9 +2194,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00437">437</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00420">420</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mls_8h_source.html#l00576">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_step_</a>.</p>
+<p class="reference">References <a class="el" href="mls_8h_source.html#l00559">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::upsampling_step_</a>.</p>
 
 </div>
 </div>
@@ -2307,11 +2224,11 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 </div><div class="memdoc">
 
 <p>True if the mls results for the input cloud should be stored. </p>
-<dl class="section note"><dt>Note</dt><dd>This is forced to true when using upsampling methods VOXEL_GRID_DILATION or DISTINCT_CLOUD. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is forced to be true when using upsampling methods VOXEL_GRID_DILATION or DISTINCT_CLOUD. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00586">586</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00569">569</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00498">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getCacheMLSResults()</a>, and <a class="el" href="mls_8h_source.html#l00494">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setCacheMLSResults()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00481">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getCacheMLSResults()</a>, and <a class="el" href="mls_8h_source.html#l00477">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setCacheMLSResults()</a>.</p>
 
 </div>
 </div>
@@ -2339,9 +2256,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Parameter that specifies whether the normals should be computed for the input cloud or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00563">563</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00546">546</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00326">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setComputeNormals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00334">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setComputeNormals()</a>.</p>
 
 </div>
 </div>
@@ -2369,9 +2286,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Collects for each point in output the corrseponding point in the input. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00667">667</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00650">650</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00538">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getCorrespondingIndices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00521">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getCorrespondingIndices()</a>.</p>
 
 </div>
 </div>
@@ -2400,9 +2317,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Parameter that specifies the desired number of points within the search radius. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of RANDOM_UNIFORM_DENSITY upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00581">581</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00564">564</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00459">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getPointDensity()</a>, and <a class="el" href="mls_8h_source.html#l00452">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setPointDensity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00442">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getPointDensity()</a>, and <a class="el" href="mls_8h_source.html#l00435">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setPointDensity()</a>.</p>
 
 </div>
 </div>
@@ -2430,9 +2347,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Number of dilation steps for the VOXEL_GRID_DILATION upsampling method. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00661">661</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00644">644</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00486">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getDilationIterations()</a>, and <a class="el" href="mls_8h_source.html#l00480">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setDilationIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00469">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getDilationIterations()</a>, and <a class="el" href="mls_8h_source.html#l00463">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setDilationIterations()</a>.</p>
 
 </div>
 </div>
@@ -2460,9 +2377,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>The distinct point cloud that will be projected to the MLS surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00545">545</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00528">528</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00416">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getDistinctCloud()</a>, and <a class="el" href="mls_8h_source.html#l00412">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setDistinctCloud()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00399">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getDistinctCloud()</a>, and <a class="el" href="mls_8h_source.html#l00395">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setDistinctCloud()</a>.</p>
 
 </div>
 </div>
@@ -2491,9 +2408,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Stores the MLS result for each point in the input cloud. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of VOXEL_GRID_DILATION or DISTINCT_CLOUD upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00591">591</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00574">574</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00517">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getMLSResults()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00500">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getMLSResults()</a>.</p>
 
 </div>
 </div>
@@ -2521,7 +2438,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>The point cloud that will hold the estimated normals, if set. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00542">542</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00525">525</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -2549,7 +2466,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Number of coefficients, to be computed from the requested order. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00664">664</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00647">647</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
 </div>
 </div>
@@ -2577,9 +2494,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>The order of the polynomial to be fit. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00554">554</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00537">537</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00380">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getPolynomialFit()</a>, <a class="el" href="mls_8h_source.html#l00355">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getPolynomialOrder()</a>, <a class="el" href="mls_8h_source.html#l00362">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setPolynomialFit()</a>, and <a class="el" href="mls_8h_source.html#l00351">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setPolynomialOrder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00363">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getPolynomialOrder()</a>, and <a class="el" href="mls_8h_source.html#l00359">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setPolynomialOrder()</a>.</p>
 
 </div>
 </div>
@@ -2607,9 +2524,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Parameter that specifies the projection method to be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00594">594</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00577">577</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00510">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getProjectionMethod()</a>, and <a class="el" href="mls_8h_source.html#l00505">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setProjectionMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00493">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getProjectionMethod()</a>, and <a class="el" href="mls_8h_source.html#l00488">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setProjectionMethod()</a>.</p>
 
 </div>
 </div>
@@ -2625,7 +2542,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcl_1_1_moving_least_squares.html#a4e9612801f8c7b6af433c7656708bde0">SearchMethod</a> <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::search_method_</td>
+          <td class="memname"><a class="el" href="classpcl_1_1_moving_least_squares.html#a4ea943f4285b54ae8c431bb532eeb6f0">SearchMethod</a> <a class="el" href="classpcl_1_1_moving_least_squares.html">pcl::MovingLeastSquares</a>&lt; PointInT, PointOutT &gt;::search_method_</td>
         </tr>
       </table>
   </td>
@@ -2637,9 +2554,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>The search method template for indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00548">548</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00531">531</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00675">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::searchForNeighbors()</a>, and <a class="el" href="mls_8h_source.html#l00332">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00658">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::searchForNeighbors()</a>, and <a class="el" href="mls_8h_source.html#l00340">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchMethod()</a>.</p>
 
 </div>
 </div>
@@ -2667,9 +2584,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>The nearest neighbors search radius for each point. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00557">557</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00540">540</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00391">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getSearchRadius()</a>, <a class="el" href="mls_8h_source.html#l00675">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::searchForNeighbors()</a>, and <a class="el" href="mls_8h_source.html#l00387">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00374">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getSearchRadius()</a>, <a class="el" href="mls_8h_source.html#l00658">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::searchForNeighbors()</a>, and <a class="el" href="mls_8h_source.html#l00370">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchRadius()</a>.</p>
 
 </div>
 </div>
@@ -2697,9 +2614,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Parameter for distance based weighting of neighbors (search_radius_ * search_radius_ works fine) </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00560">560</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00543">543</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00402">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getSqrGaussParam()</a>, <a class="el" href="mls_8h_source.html#l00387">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchRadius()</a>, and <a class="el" href="mls_8h_source.html#l00398">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSqrGaussParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00385">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getSqrGaussParam()</a>, <a class="el" href="mls_8h_source.html#l00370">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchRadius()</a>, and <a class="el" href="mls_8h_source.html#l00381">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSqrGaussParam()</a>.</p>
 
 </div>
 </div>
@@ -2727,9 +2644,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>The maximum number of threads the scheduler should use. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00597">597</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00580">580</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00523">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setNumberOfThreads()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00506">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setNumberOfThreads()</a>.</p>
 
 </div>
 </div>
@@ -2757,9 +2674,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>A pointer to the spatial search object. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00551">551</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00534">534</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00344">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getSearchMethod()</a>, and <a class="el" href="mls_8h_source.html#l00332">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00352">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getSearchMethod()</a>, and <a class="el" href="mls_8h_source.html#l00340">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setSearchMethod()</a>.</p>
 
 </div>
 </div>
@@ -2787,9 +2704,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Parameter that specifies the upsampling method to be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00566">566</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00549">549</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00408">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setUpsamplingMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00391">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setUpsamplingMethod()</a>.</p>
 
 </div>
 </div>
@@ -2818,9 +2735,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Radius of the circle in the local point plane that will be sampled. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of SAMPLE_LOCAL_PLANE upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00571">571</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00554">554</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00430">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getUpsamplingRadius()</a>, and <a class="el" href="mls_8h_source.html#l00424">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setUpsamplingRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00413">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getUpsamplingRadius()</a>, and <a class="el" href="mls_8h_source.html#l00407">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setUpsamplingRadius()</a>.</p>
 
 </div>
 </div>
@@ -2849,9 +2766,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>Step size for the local plane sampling. </p>
 <dl class="section note"><dt>Note</dt><dd>Used only in the case of SAMPLE_LOCAL_PLANE upsampling </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00576">576</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00559">559</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00444">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getUpsamplingStepSize()</a>, and <a class="el" href="mls_8h_source.html#l00437">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setUpsamplingStepSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00427">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getUpsamplingStepSize()</a>, and <a class="el" href="mls_8h_source.html#l00420">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setUpsamplingStepSize()</a>.</p>
 
 </div>
 </div>
@@ -2879,9 +2796,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Voxel size for the VOXEL_GRID_DILATION upsampling method. </p>
 
-<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00658">658</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mls_8h_source.html#l00641">641</a> of file <a class="el" href="mls_8h_source.html">mls.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00473">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getDilationVoxelSize()</a>, and <a class="el" href="mls_8h_source.html#l00466">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setDilationVoxelSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mls_8h_source.html#l00456">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::getDilationVoxelSize()</a>, and <a class="el" href="mls_8h_source.html#l00449">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::setDilationVoxelSize()</a>.</p>
 
 </div>
 </div>
@@ -2895,7 +2812,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:17</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:27</p>
 </div> <!-- #footer -->
 </body>
 </html>

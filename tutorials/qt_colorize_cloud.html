@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create a PCL visualizer in Qt to colorize clouds &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Create a PCL visualizer in Qt to colorize clouds &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -284,9 +284,9 @@ Create the folder tree and download the sources files from <a class="reference e
 <h3><a class="toc-backref" href="#id6">pclviewer.cpp</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">PCLViewer</span><span class="o">::</span><span class="n">PCLViewer</span> <span class="p">(</span><span class="n">QWidget</span> <span class="o">*</span><span class="n">parent</span><span class="p">)</span> <span class="o">:</span>
     <span class="n">QMainWindow</span> <span class="p">(</span><span class="n">parent</span><span class="p">),</span>
-    <span class="n">ui</span> <span class="p">(</span><span class="k">new</span> <span class="n">Ui</span><span class="o">::</span><span class="n">PCLViewer</span><span class="p">),</span>
     <span class="n">filtering_axis_</span> <span class="p">(</span><span class="mi">1</span><span class="p">),</span>  <span class="c1">// = y</span>
-    <span class="n">color_mode_</span> <span class="p">(</span><span class="mi">4</span><span class="p">)</span>  <span class="c1">// = Rainbow</span>
+    <span class="n">color_mode_</span> <span class="p">(</span><span class="mi">4</span><span class="p">),</span>  <span class="c1">// = Rainbow</span>
+    <span class="n">ui</span> <span class="p">(</span><span class="k">new</span> <span class="n">Ui</span><span class="o">::</span><span class="n">PCLViewer</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We initialize the members of our class to default values (note that theses values should match with the UI buttons ticked)</p>
@@ -300,11 +300,11 @@ Create the folder tree and download the sources files from <a class="reference e
   <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">resize</span> <span class="p">(</span><span class="mi">500</span><span class="p">);</span>
 
   <span class="c1">// Fill the cloud with random points</span>
-  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
   <span class="p">{</span>
-    <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
-    <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
-    <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
+    <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
+    <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
+    <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="n">i</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
   <span class="p">}</span>
 </pre></div>
 </div>
@@ -495,16 +495,16 @@ We also call the coloring function and update the cloud / QVTK widget.</p>
   <span class="k">switch</span> <span class="p">(</span><span class="n">filtering_axis_</span><span class="p">)</span>
   <span class="p">{</span>
     <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>  <span class="c1">// x</span>
-      <span class="n">min</span> <span class="o">=</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">x</span><span class="p">;</span>
-      <span class="n">max</span> <span class="o">=</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">x</span><span class="p">;</span>
+      <span class="n">min</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">x</span><span class="p">;</span>
+      <span class="n">max</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">x</span><span class="p">;</span>
       <span class="k">break</span><span class="p">;</span>
     <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>  <span class="c1">// y</span>
-      <span class="n">min</span> <span class="o">=</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">y</span><span class="p">;</span>
-      <span class="n">max</span> <span class="o">=</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">y</span><span class="p">;</span>
+      <span class="n">min</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">y</span><span class="p">;</span>
+      <span class="n">max</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">y</span><span class="p">;</span>
       <span class="k">break</span><span class="p">;</span>
     <span class="k">default</span><span class="o">:</span>  <span class="c1">// z</span>
-      <span class="n">min</span> <span class="o">=</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">z</span><span class="p">;</span>
-      <span class="n">max</span> <span class="o">=</span> <span class="n">cloud_</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">z</span><span class="p">;</span>
+      <span class="n">min</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">z</span><span class="p">;</span>
+      <span class="n">max</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud_</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="n">z</span><span class="p">;</span>
       <span class="k">break</span><span class="p">;</span>
   <span class="p">}</span>
 </pre></div>

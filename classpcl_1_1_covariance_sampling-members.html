@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -74,7 +74,7 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classpcl_1_1_covariance_sampling.html">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html#addfd65264313e58e2cee791f45d96f0b">applyFilter</a>(Cloud &amp;output) override</td><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html#a3f171ee249fbf3007bfce316299bf932">applyFilter</a>(std::vector&lt; int &gt; &amp;indices) override</td><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html#a7feb25a54b7f79ad4c4ff2949d4498e5">applyFilter</a>(Indices &amp;indices) override</td><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html#a237872d14a14ba3881592d3106cf4338">pcl::FilterIndices::applyFilter</a>(PointCloud &amp;output) override</td><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html">pcl::FilterIndices&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html#a82eac9e85ffed525bb467e3cd58a87e4">computeConditionNumber</a>()</td><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html#a8f2b37a9be66d9745201d5cb1fa36774">computeConditionNumber</a>(const Eigen::Matrix&lt; double, 6, 6 &gt; &amp;covariance_matrix)</td><td class="entry"><a class="el" href="classpcl_1_1_covariance_sampling.html">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -85,7 +85,7 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classpcl_1_1_filter.html#a77b899631add791703f5d615f085bede">extract_removed_indices_</a></td><td class="entry"><a class="el" href="classpcl_1_1_filter.html">pcl::Filter&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_p_c_l_base.html#adadb0299f144528020ed558af6879662">fake_indices_</a></td><td class="entry"><a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcl_1_1_filter.html#af31e766a9092a766962f42005c1b84a4">Filter</a>(bool extract_removed_indices=false)</td><td class="entry"><a class="el" href="classpcl_1_1_filter.html">pcl::Filter&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html#abbbfa3686df4bdb6cd333a182180970d">filter</a>(std::vector&lt; int &gt; &amp;indices)</td><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html">pcl::FilterIndices&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html#a8343144f19a74a2f4bef0e4e55850fa0">filter</a>(Indices &amp;indices)</td><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html">pcl::FilterIndices&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcl_1_1_filter.html#a17115897ca28f6b12950d023958aa641">pcl::Filter::filter</a>(PointCloud &amp;output)</td><td class="entry"><a class="el" href="classpcl_1_1_filter.html">pcl::Filter&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcl_1_1_filter.html#ad700c7ab56dc82ad8811b87e9f793751">filter_name_</a></td><td class="entry"><a class="el" href="classpcl_1_1_filter.html">pcl::Filter&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html#a72c8696f1bc2e4a6e92172371a45d592">FilterIndices</a>(bool extract_removed_indices=false)</td><td class="entry"><a class="el" href="classpcl_1_1_filter_indices.html">pcl::FilterIndices&lt; PointT &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -137,7 +137,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:42</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:47</p>
 </div> <!-- #footer -->
 </body>
 </html>

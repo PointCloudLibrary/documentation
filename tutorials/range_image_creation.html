@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to create a range image from a point cloud &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>How to create a range image from a point cloud &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -193,7 +193,7 @@ editor, and place the following code inside it:</p>
 33
 34</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/range_image/range_image.h&gt;</span><span class="cp"></span>
 
-<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">pointCloud</span><span class="p">;</span>
   
   <span class="c1">// Generate the data</span>
@@ -203,10 +203,10 @@ editor, and place the following code inside it:</p>
       <span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0f</span> <span class="o">-</span> <span class="n">y</span><span class="p">;</span>
       <span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
       <span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">z</span><span class="p">;</span>
-      <span class="n">pointCloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">point</span><span class="p">);</span>
+      <span class="n">pointCloud</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">point</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
-  <span class="n">pointCloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">)</span> <span class="n">pointCloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+  <span class="n">pointCloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">pointCloud</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
   <span class="n">pointCloud</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
   
   <span class="c1">// We now want to create a range image from the above point cloud, with a 1deg angular resolution</span>
@@ -233,7 +233,7 @@ editor, and place the following code inside it:</p>
 <p>Lets look at this in parts:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/range_image/range_image.h&gt;</span><span class="cp"></span>
 
-<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span> <span class="n">pointCloud</span><span class="p">;</span>
   
   <span class="c1">// Generate the data</span>
@@ -243,10 +243,10 @@ editor, and place the following code inside it:</p>
       <span class="n">point</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0f</span> <span class="o">-</span> <span class="n">y</span><span class="p">;</span>
       <span class="n">point</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
       <span class="n">point</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">z</span><span class="p">;</span>
-      <span class="n">pointCloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">point</span><span class="p">);</span>
+      <span class="n">pointCloud</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">point</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
-  <span class="n">pointCloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">)</span> <span class="n">pointCloud</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+  <span class="n">pointCloud</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">pointCloud</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
   <span class="n">pointCloud</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>

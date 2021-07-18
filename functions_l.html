@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,9 @@ $(function() {
 <li>L_vertex_bimap
 : <a class="el" href="classpcl_1_1segmentation_1_1detail_1_1_random_walker.html#a07e056b7d8132389aee967f3c3faeb25">pcl::segmentation::detail::RandomWalker&lt; Graph, EdgeWeightMap, VertexColorMap &gt;</a>
 </li>
+<li>lab_weight_
+: <a class="el" href="classpcl_1_1_generalized_iterative_closest_point6_d.html#a6be35f290fadb82214e27b7ebce9206b">pcl::GeneralizedIterativeClosestPoint6D</a>
+</li>
 <li>label
 : <a class="el" href="structpcl_1_1___point_x_y_z_l.html#aed179625c6708cef9a5d8ecd0265e1d3">pcl::_PointXYZL</a>
 , <a class="el" href="structpcl_1_1___point_x_y_z_l_normal.html#afa97fd2caa697a3abb5c457fb032e898">pcl::_PointXYZLNormal</a>
@@ -103,13 +106,13 @@ $(function() {
 <li>label
 : <a class="el" href="structpcl_1_1gpu_1_1people_1_1_blob2.html#a50ea796d71ac53fbde274aa1fa475b63">pcl::gpu::people::Blob2</a>
 , <a class="el" href="structpcl_1_1gpu_1_1people_1_1_tree2.html#ae459749315157c2a5c721062b5f84b2a">pcl::gpu::people::Tree2</a>
+, <a class="el" href="structpcl_1_1_label.html#af73f84ddcafdc17f17e878d78900759d">pcl::Label</a>
 </li>
 <li>Label()
 : <a class="el" href="structpcl_1_1_label.html#abbdc1590ebf31053bb181cce6a1ddce0">pcl::Label</a>
 </li>
 <li>label
-: <a class="el" href="structpcl_1_1_label.html#af73f84ddcafdc17f17e878d78900759d">pcl::Label</a>
-, <a class="el" href="structpcl_1_1_s_v_m_data.html#a7921b67ce3ef716f50dacd357476a0b6">pcl::SVMData</a>
+: <a class="el" href="structpcl_1_1_s_v_m_data.html#a7921b67ce3ef716f50dacd357476a0b6">pcl::SVMData</a>
 , <a class="el" href="structsvm__model.html#ac66d192809e92b95875bdf8ebb749060">svm_model</a>
 </li>
 <li>label_
@@ -154,7 +157,7 @@ $(function() {
 , <a class="el" href="classpcl_1_1gpu_1_1people_1_1_r_d_f_body_parts_detector.html#af7972f3185295aa9aa27639cfa42d208">pcl::gpu::people::RDFBodyPartsDetector</a>
 </li>
 <li>labels_
-: <a class="el" href="classpcl_1_1experimental_1_1_euclidean_cluster_comparator.html#ad2463fca44456bb4e2304075a82eeaca">pcl::experimental::EuclideanClusterComparator&lt; PointT, PointLT &gt;</a>
+: <a class="el" href="classpcl_1_1_euclidean_cluster_comparator.html#a6954975fb3b0963247acc6af1e05da2b">pcl::EuclideanClusterComparator&lt; PointT, PointLT &gt;</a>
 , <a class="el" href="classpcl_1_1_feature_from_labels.html#a810821f686979285987850523148f727">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;</a>
 , <a class="el" href="classpcl_1_1gpu_1_1people_1_1_r_d_f_body_parts_detector.html#aff684169af9d9c4d2fbbbaf4b412ab43">pcl::gpu::people::RDFBodyPartsDetector</a>
 , <a class="el" href="classpcl_1_1_plane_refinement_comparator.html#a6ddf23a857f30fe0d232e0d0c5365860">pcl::PlaneRefinementComparator&lt; PointT, PointNT, PointLT &gt;</a>
@@ -292,13 +295,9 @@ $(function() {
 , <a class="el" href="structpcl_1_1_uniform_sampling_1_1_leaf.html#aefe7bac5401dde4ad36d64a7a1553c5e">pcl::UniformSampling&lt; PointT &gt;::Leaf</a>
 , <a class="el" href="structpcl_1_1_voxel_grid_covariance_1_1_leaf.html#a886049061b877300a4fab9f1b618319c">pcl::VoxelGridCovariance&lt; PointT &gt;::Leaf</a>
 </li>
-<li>leaf_begin()
-: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a291c62037fdf49307eec1c8ef47e907b">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#a7b1dce3e450fcfadf04383c0326d10d7">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-</li>
 <li>leaf_breadth_begin()
-: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a5f26afc8130606f9d105b2a036103415">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#aa494708e1fb6d02f4520babf3c00eb79">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
+: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a1db85b75a36b47f4bc7e3be513382afd">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#ac638e77f29179022f8f59cd49258756f">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
 </li>
 <li>leaf_breadth_end()
 : <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a2a9ba2061afbe82cbe45c26e43ff7698">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
@@ -309,16 +308,12 @@ $(function() {
 , <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#a2a74d829fa6bc41a9823e42b9bbb5e59">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
 </li>
 <li>leaf_depth_begin()
-: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a5e27f05dfd9523df58652f9864515d8c">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#a76ca0b3561226269765c0fe292cd85ae">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
+: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#aede628aa9ee95e46d7a4db379a367e87">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#a791f42af2d4a4412508fc30a6ad6ba27">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
 </li>
 <li>leaf_depth_end()
 : <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#af1d3ba2d8e84cfe719efb5f3fa05a166">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
 , <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#ab82c8d6f2284512476bccd15c2f3a89b">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-</li>
-<li>leaf_end()
-: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a2613a63aba37b05400d2e073404ac488">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#a1e14d8fab1cfd74381c27aadf6d8b093">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
 </li>
 <li>leaf_layout_
 : <a class="el" href="classpcl_1_1_voxel_grid.html#a33222904207e6304aa3fbd2b31a9ac84">pcl::VoxelGrid&lt; PointT &gt;</a>
@@ -342,7 +337,7 @@ $(function() {
 : <a class="el" href="classpcl_1_1_supervoxel_clustering.html#ab4f19c3b39a5aa356b2cae0c680f797a">pcl::SupervoxelClustering&lt; PointT &gt;</a>
 </li>
 <li>leafDataTVector_
-: <a class="el" href="classpcl_1_1octree_1_1_octree_container_point_indices.html#a28668d3d8290f4aaf01b0fbf97bfe444">pcl::octree::OctreeContainerPointIndices</a>
+: <a class="el" href="classpcl_1_1octree_1_1_octree_container_point_indices.html#ad8840d13a001704bb5c20a31ead08e3d">pcl::octree::OctreeContainerPointIndices</a>
 </li>
 <li>LeafNode
 : <a class="el" href="classpcl_1_1io_1_1_octree_point_cloud_compression.html#a8429e9db049755c0ec00e37e0f0475f0">pcl::io::OctreePointCloudCompression&lt; PointT, LeafT, BranchT, OctreeT &gt;</a>
@@ -449,7 +444,7 @@ $(function() {
 , <a class="el" href="class_o_n___line.html#a117ee201c98d9ef81f3a847422f51e9f">ON_Line</a>
 , <a class="el" href="class_o_n___polyline.html#a8ce38b5026d993925d7d264ad6f8b52e">ON_Polyline</a>
 , <a class="el" href="class_o_n___string.html#ac2a4a5e158c1f588fabe24c071a92ac1">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#a54018e3adb0ec2a536259d5faa98492b">ON_wString</a>
+, <a class="el" href="class_o_n__w_string.html#a96a8801342a0d5f69f84f7e4d29bc8e7">ON_wString</a>
 </li>
 <li>length
 : <a class="el" href="structpcl_1_1detail_1_1_eigen_vector.html#a6219707670e7c240d4e02566618c0101">pcl::detail::EigenVector&lt; Vector, Scalar &gt;</a>
@@ -592,7 +587,7 @@ $(function() {
 : <a class="el" href="class_o_n___instance_definition.html#a70cd8fd142c35ffe8ddd132100c7879f">ON_InstanceDefinition</a>
 </li>
 <li>linkMatchWithBase()
-: <a class="el" href="classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html#ab5b94e6b02f11c17f4b10af2c89f6228">pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;</a>
+: <a class="el" href="classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html#a3a35a935e0c84c923025ae53056c1a70">pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;</a>
 </li>
 <li>list_property_begin_callback_type
 : <a class="el" href="structpcl_1_1io_1_1ply_1_1ply__parser_1_1list__property__definition__callback__type.html#ade51bb2ff3c9cd29786f4f553de7e5a8">pcl::io::ply::ply_parser::list_property_definition_callback_type&lt; SizeType, ScalarType &gt;</a>
@@ -620,7 +615,7 @@ $(function() {
 : <a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base.html#a29f9e1335ba1352f4d87087b5a2fdb92">pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, PointT &gt;</a>
 </li>
 <li>loadBinary()
-: <a class="el" href="classpcl_1_1_narf.html#a87a7424251b04af12cc614b8a5748df3">pcl::Narf</a>
+: <a class="el" href="classpcl_1_1_narf.html#ac93851648c43f8b8cd638cac800a44fe">pcl::Narf</a>
 </li>
 <li>loadCameraParameters()
 : <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_visualizer.html#a939d25b9e09c722de6cb12e2c9f37290">pcl::visualization::PCLVisualizer</a>
@@ -658,8 +653,8 @@ $(function() {
 </li>
 <li>loadMetadataFromDisk()
 : <a class="el" href="classpcl_1_1outofcore_1_1_outofcore_abstract_metadata.html#af6e20ab74822b4e5245f9c49a66bee0a">pcl::outofcore::OutofcoreAbstractMetadata</a>
-, <a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base_metadata.html#abf8c335af81d1c0b62f2e674ddfdea34">pcl::outofcore::OutofcoreOctreeBaseMetadata</a>
-, <a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_node_metadata.html#ac7141afe4cf043a28423beb5b89ff4c6">pcl::outofcore::OutofcoreOctreeNodeMetadata</a>
+, <a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base_metadata.html#a883a41412e351d9c8fab1e92244d734c">pcl::outofcore::OutofcoreOctreeBaseMetadata</a>
+, <a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_node_metadata.html#a6be31f76fb4098041612a6cb112591af">pcl::outofcore::OutofcoreOctreeNodeMetadata</a>
 </li>
 <li>loadModelFromfile()
 : <a class="el" href="structpcl_1_1features_1_1_i_s_m_model.html#a7752d924c5d4a19ec3d584e52881bb3c">pcl::features::ISMModel</a>
@@ -679,7 +674,7 @@ $(function() {
 </li>
 <li>loadTemplates()
 : <a class="el" href="classpcl_1_1_d_o_t_m_o_d.html#a17b1d6c25e9628415123682ff3aa1899">pcl::DOTMOD</a>
-, <a class="el" href="classpcl_1_1_l_i_n_e_m_o_d.html#ae205f4aa9800d645d8d0ce54c78b2e0a">pcl::LINEMOD</a>
+, <a class="el" href="classpcl_1_1_l_i_n_e_m_o_d.html#ac62518c051bfbafe3a64f039a5ac29d6">pcl::LINEMOD</a>
 , <a class="el" href="classpcl_1_1_line_r_g_b_d.html#ae58fc5805ab187572b1146b7a777d80d">pcl::LineRGBD&lt; PointXYZT, PointRGBT &gt;</a>
 </li>
 <li>loadTsdfCloudToGPU()
@@ -739,14 +734,9 @@ $(function() {
 : <a class="el" href="classpcl_1_1_edge.html#ad150d45deb291a8588a5732871a39131ac30c95c28ba404b77179abc69631f208">pcl::Edge&lt; PointInT, PointOutT &gt;</a>
 , <a class="el" href="classpcl_1_1kernel.html#a51aa54fcb30b6f085acccbc3c1f40200ab6c4852261c6ad2bca9839af9db8b08d">pcl::kernel&lt; PointT &gt;</a>
 </li>
-<li>Log2()
-: <a class="el" href="classpcl_1_1octree_1_1_octree2_buf_base.html#a0ad52b712883298d7cb687692c8eb4ac">pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_base.html#a84f6098ca21b73b3cf13ca2596238326">pcl::octree::OctreeBase&lt; LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1_static_range_coder.html#a72b5f38f745569b4ef06d1c6a4db9b74">pcl::StaticRangeCoder</a>
-</li>
 <li>LOG_WARP_SIZE
-: <a class="el" href="structpcl_1_1device_1_1kinfu_l_s_1_1_warp.html#a7efa99bb52759caac384cad3e87a3131aac5dfa388d6cd1275e31b2d36a6b0134">pcl::device::kinfuLS::Warp</a>
-, <a class="el" href="structpcl_1_1device_1_1_warp.html#ab39c20ab26445e80e7d968e61d2456c3a312cccf01bfeadf353532f954ee75c6f">pcl::device::Warp</a>
+: <a class="el" href="structpcl_1_1device_1_1kinfu_l_s_1_1_warp.html#a1af616a1d36a68559bdc217c76b01400aac5dfa388d6cd1275e31b2d36a6b0134">pcl::device::kinfuLS::Warp</a>
+, <a class="el" href="structpcl_1_1device_1_1_warp.html#a86cb012d125742d68738f9877f4c04d3a312cccf01bfeadf353532f954ee75c6f">pcl::device::Warp</a>
 </li>
 <li>loGKernel()
 : <a class="el" href="classpcl_1_1kernel.html#a28077c923085e5ffc3be0834dedd2913">pcl::kernel&lt; PointT &gt;</a>
@@ -788,7 +778,7 @@ $(function() {
 : <a class="el" href="class_o_n___brep.html#a4fe2304fe39ca52c948b7aaa26af6c0f">ON_Brep</a>
 </li>
 <li>Loop3dCurve()
-: <a class="el" href="class_o_n___brep.html#a5f9e2fe44e52d107de2990ad11e0b35f">ON_Brep</a>
+: <a class="el" href="class_o_n___brep.html#ab8d1ddcd353d346d6f7cf4fc52cf680f">ON_Brep</a>
 </li>
 <li>LoopCount()
 : <a class="el" href="class_o_n___brep_face.html#a3bb07c67a9b766137d3a0868bc94ef68">ON_BrepFace</a>
@@ -801,7 +791,7 @@ $(function() {
 : <a class="el" href="class_o_n___brep.html#af9053adc75275f2784a559120891093e">ON_Brep</a>
 </li>
 <li>LoopGraph
-: <a class="el" href="classpcl_1_1registration_1_1_e_l_c_h.html#a682ba1b5b17185db0766e3b38223a9ba">pcl::registration::ELCH&lt; PointT &gt;</a>
+: <a class="el" href="classpcl_1_1registration_1_1_e_l_c_h.html#a13190b50de5b1f998478a0b50f64d3b0">pcl::registration::ELCH&lt; PointT &gt;</a>
 </li>
 <li>LoopGraphPtr
 : <a class="el" href="classpcl_1_1registration_1_1_e_l_c_h.html#a83951358023e67abcbd4711472e5acfb">pcl::registration::ELCH&lt; PointT &gt;</a>
@@ -886,7 +876,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:15:37</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:57</p>
 </div> <!-- #footer -->
 </body>
 </html>

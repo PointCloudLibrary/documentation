@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -134,10 +134,10 @@ Public Types</h2></td></tr>
 <tr class="separator:a9fd0bb565f9d1dabfaf6842c74a0c8ba inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecdcec3b14e094e6076d20963ba723b inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a1ecdcec3b14e094e6076d20963ba723b">PointCloudOut</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointOutT &gt;</td></tr>
 <tr class="separator:a1ecdcec3b14e094e6076d20963ba723b inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277f33db3bd30d6455aadfae1d4ba66d inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a277f33db3bd30d6455aadfae1d4ba66d">SearchMethod</a> = std::function&lt; int(std::size_t, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a277f33db3bd30d6455aadfae1d4ba66d inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e00597c5f775755842869f59635c6b inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a> = std::function&lt; int(const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a61e00597c5f775755842869f59635c6b inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb7fb6afc2e34edf85875f8b526369b inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a2eb7fb6afc2e34edf85875f8b526369b">SearchMethod</a> = std::function&lt; int(std::size_t, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a2eb7fb6afc2e34edf85875f8b526369b inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f4449c9ad6054e934904d3076e229e inherit pub_types_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a> = std::function&lt; int(const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a94f4449c9ad6054e934904d3076e229e inherit pub_types_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classpcl_1_1_p_c_l_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcl_1_1_p_c_l_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointInT &gt;</a></td></tr>
 <tr class="memitem:a69de4001826d45c280087187322d779d inherit pub_types_classpcl_1_1_p_c_l_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt;</td></tr>
 <tr class="separator:a69de4001826d45c280087187322d779d inherit pub_types_classpcl_1_1_p_c_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97c8f700009e95ce388b00c43595b87d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a97c8f700009e95ce388b00c43595b87d">~SHOTEstimationBase</a> ()</td></tr>
 <tr class="memdesc:a97c8f700009e95ce388b00c43595b87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty destructor.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#a97c8f700009e95ce388b00c43595b87d">More...</a><br /></td></tr>
 <tr class="separator:a97c8f700009e95ce388b00c43595b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a5d586d92994cb0366cfcf7587a3fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a59a5d586d92994cb0366cfcf7587a3fd">computePointSHOT</a> (const int index, const std::vector&lt; int &gt; &amp;indices, const std::vector&lt; float &gt; &amp;sqr_dists, Eigen::VectorXf &amp;shot)=0</td></tr>
-<tr class="memdesc:a59a5d586d92994cb0366cfcf7587a3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the SHOT descriptor for a given point based on its spatial neighborhood of 3D points with normals.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#a59a5d586d92994cb0366cfcf7587a3fd">More...</a><br /></td></tr>
-<tr class="separator:a59a5d586d92994cb0366cfcf7587a3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ea8c011e6b2c89ca9287245fff9d37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#ab3ea8c011e6b2c89ca9287245fff9d37">computePointSHOT</a> (const int index, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, const std::vector&lt; float &gt; &amp;sqr_dists, Eigen::VectorXf &amp;shot)=0</td></tr>
+<tr class="memdesc:ab3ea8c011e6b2c89ca9287245fff9d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the SHOT descriptor for a given point based on its spatial neighborhood of 3D points with normals.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#ab3ea8c011e6b2c89ca9287245fff9d37">More...</a><br /></td></tr>
+<tr class="separator:ab3ea8c011e6b2c89ca9287245fff9d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88acfb7d17db95cd1c6b4c5fae5a892"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#ad88acfb7d17db95cd1c6b4c5fae5a892">setLRFRadius</a> (float radius)</td></tr>
 <tr class="memdesc:ad88acfb7d17db95cd1c6b4c5fae5a892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the radius used for local reference frame estimation if the frames are not set by the user.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#ad88acfb7d17db95cd1c6b4c5fae5a892">More...</a><br /></td></tr>
 <tr class="separator:ad88acfb7d17db95cd1c6b4c5fae5a892"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,15 +280,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5e0cd1d75ae40e4089cead3e92b74c0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">initCompute</a> () override</td></tr>
 <tr class="memdesc:a5e0cd1d75ae40e4089cead3e92b74c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called before starting the actual computation.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">More...</a><br /></td></tr>
 <tr class="separator:a5e0cd1d75ae40e4089cead3e92b74c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa83ce6c4529df2561a45f129354ef935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#aa83ce6c4529df2561a45f129354ef935">interpolateSingleChannel</a> (const std::vector&lt; int &gt; &amp;indices, const std::vector&lt; float &gt; &amp;sqr_dists, const int index, std::vector&lt; double &gt; &amp;binDistance, const int nr_bins, Eigen::VectorXf &amp;shot)</td></tr>
-<tr class="memdesc:aa83ce6c4529df2561a45f129354ef935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quadrilinear interpolation used when color and shape descriptions are NOT activated simultaneously.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#aa83ce6c4529df2561a45f129354ef935">More...</a><br /></td></tr>
-<tr class="separator:aa83ce6c4529df2561a45f129354ef935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23224f44e4b87f55295af5fc2a8b10a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#ab23224f44e4b87f55295af5fc2a8b10a">interpolateSingleChannel</a> (const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, const std::vector&lt; float &gt; &amp;sqr_dists, const int index, std::vector&lt; double &gt; &amp;binDistance, const int nr_bins, Eigen::VectorXf &amp;shot)</td></tr>
+<tr class="memdesc:ab23224f44e4b87f55295af5fc2a8b10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quadrilinear interpolation used when color and shape descriptions are NOT activated simultaneously.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#ab23224f44e4b87f55295af5fc2a8b10a">More...</a><br /></td></tr>
+<tr class="separator:ab23224f44e4b87f55295af5fc2a8b10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61daefe73f28310f3c97a561b905c2ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a61daefe73f28310f3c97a561b905c2ef">normalizeHistogram</a> (Eigen::VectorXf &amp;shot, int desc_length)</td></tr>
 <tr class="memdesc:a61daefe73f28310f3c97a561b905c2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize the SHOT histogram.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#a61daefe73f28310f3c97a561b905c2ef">More...</a><br /></td></tr>
 <tr class="separator:a61daefe73f28310f3c97a561b905c2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69b1265449ec2c727f54e4308d6178d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#ae69b1265449ec2c727f54e4308d6178d">createBinDistanceShape</a> (int index, const std::vector&lt; int &gt; &amp;indices, std::vector&lt; double &gt; &amp;bin_distance_shape)</td></tr>
-<tr class="memdesc:ae69b1265449ec2c727f54e4308d6178d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a binned distance shape histogram.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#ae69b1265449ec2c727f54e4308d6178d">More...</a><br /></td></tr>
-<tr class="separator:ae69b1265449ec2c727f54e4308d6178d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad510653f068257fd81ade9910a71f3e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#ad510653f068257fd81ade9910a71f3e5">createBinDistanceShape</a> (int index, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; double &gt; &amp;bin_distance_shape)</td></tr>
+<tr class="memdesc:ad510653f068257fd81ade9910a71f3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a binned distance shape histogram.  <a href="classpcl_1_1_s_h_o_t_estimation_base.html#ad510653f068257fd81ade9910a71f3e5">More...</a><br /></td></tr>
+<tr class="separator:ad510653f068257fd81ade9910a71f3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_feature"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_feature')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_feature.html">pcl::Feature&lt; PointInT, PointOutT &gt;</a></td></tr>
 <tr class="memitem:ae6b4d5717999b6267a670dc704146fdc inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ae6b4d5717999b6267a670dc704146fdc">getClassName</a> () const</td></tr>
 <tr class="memdesc:ae6b4d5717999b6267a670dc704146fdc inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of the name of this class.  <a href="classpcl_1_1_feature.html#ae6b4d5717999b6267a670dc704146fdc">More...</a><br /></td></tr>
@@ -296,12 +296,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab235b6b76033922b19aae91714d7e413 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ab235b6b76033922b19aae91714d7e413">deinitCompute</a> ()</td></tr>
 <tr class="memdesc:ab235b6b76033922b19aae91714d7e413 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called after ending the actual computation.  <a href="classpcl_1_1_feature.html#ab235b6b76033922b19aae91714d7e413">More...</a><br /></td></tr>
 <tr class="separator:ab235b6b76033922b19aae91714d7e413 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de023a1a95aead61403dfdf3e8eac22 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a7de023a1a95aead61403dfdf3e8eac22">searchForNeighbors</a> (std::size_t index, double parameter, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
-<tr class="memdesc:a7de023a1a95aead61403dfdf3e8eac22 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a7de023a1a95aead61403dfdf3e8eac22">More...</a><br /></td></tr>
-<tr class="separator:a7de023a1a95aead61403dfdf3e8eac22 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a666e3643281a3e05698ae6d588429d83 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a666e3643281a3e05698ae6d588429d83">searchForNeighbors</a> (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double parameter, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
-<tr class="memdesc:a666e3643281a3e05698ae6d588429d83 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a666e3643281a3e05698ae6d588429d83">More...</a><br /></td></tr>
-<tr class="separator:a666e3643281a3e05698ae6d588429d83 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ad44afa45c694b438e2e72e8772ed4 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a13ad44afa45c694b438e2e72e8772ed4">searchForNeighbors</a> (std::size_t index, double parameter, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
+<tr class="memdesc:a13ad44afa45c694b438e2e72e8772ed4 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a13ad44afa45c694b438e2e72e8772ed4">More...</a><br /></td></tr>
+<tr class="separator:a13ad44afa45c694b438e2e72e8772ed4 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1af533a19f7ecc520ad738d8020edd5 inherit pro_methods_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ab1af533a19f7ecc520ad738d8020edd5">searchForNeighbors</a> (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double parameter, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
+<tr class="memdesc:ab1af533a19f7ecc520ad738d8020edd5 inherit pro_methods_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#ab1af533a19f7ecc520ad738d8020edd5">More...</a><br /></td></tr>
+<tr class="separator:ab1af533a19f7ecc520ad738d8020edd5 inherit pro_methods_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_p_c_l_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_p_c_l_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointInT &gt;</a></td></tr>
 <tr class="memitem:acceb20854934f4cf77e266eb5a44d4f0 inherit pro_methods_classpcl_1_1_p_c_l_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_p_c_l_base.html#acceb20854934f4cf77e266eb5a44d4f0">initCompute</a> ()</td></tr>
 <tr class="memdesc:acceb20854934f4cf77e266eb5a44d4f0 inherit pro_methods_classpcl_1_1_p_c_l_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called before starting the actual computation.  <a href="classpcl_1_1_p_c_l_base.html#acceb20854934f4cf77e266eb5a44d4f0">More...</a><br /></td></tr>
@@ -353,7 +353,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a54032b79551164878ff59ed93b5c1dc5 inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">feature_name_</a></td></tr>
 <tr class="memdesc:a54032b79551164878ff59ed93b5c1dc5 inherit pro_attribs_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">The feature name.  <a href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">More...</a><br /></td></tr>
 <tr class="separator:a54032b79551164878ff59ed93b5c1dc5 inherit pro_attribs_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">search_method_surface_</a></td></tr>
+<tr class="memitem:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">search_method_surface_</a></td></tr>
 <tr class="memdesc:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="mdescLeft">&#160;</td><td class="mdescRight">The search method template for points.  <a href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">More...</a><br /></td></tr>
 <tr class="separator:af2d27cdd139bd79335008303cf68ba82 inherit pro_attribs_classpcl_1_1_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f8c497ac78cf49d9274c3ab5fe52df inherit pro_attribs_classpcl_1_1_feature"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a9fd0bb565f9d1dabfaf6842c74a0c8ba">PointCloudInConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a98f8c497ac78cf49d9274c3ab5fe52df">surface_</a></td></tr>
@@ -415,7 +415,7 @@ class pcl::SHOTEstimationBase&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</h
 </ul>
 <dl class="section author"><dt>Author</dt><dd>Samuele Salti, Federico Tombari </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00067">67</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00069">69</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a016ca54cba6cae4f13d4b68cb32f5056"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a016ca54cba6cae4f13d4b68cb32f5056">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -431,7 +431,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00072">72</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00074">74</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00085">85</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00087">87</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00071">71</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00073">73</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +506,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00091">91</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00093">93</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -537,13 +537,13 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>Empty destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00106">106</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00107">107</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a59a5d586d92994cb0366cfcf7587a3fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59a5d586d92994cb0366cfcf7587a3fd">&#9670;&nbsp;</a></span>computePointSHOT()</h2>
+<a id="ab3ea8c011e6b2c89ca9287245fff9d37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ea8c011e6b2c89ca9287245fff9d37">&#9670;&nbsp;</a></span>computePointSHOT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -562,7 +562,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -601,12 +601,12 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classpcl_1_1_s_h_o_t_color_estimation.html#ab9fb159aef3ecee6f8f435a7f76e890c">pcl::SHOTColorEstimation&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_color_estimation.html#ab9fb159aef3ecee6f8f435a7f76e890c">pcl::SHOTColorEstimation&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation.html#a3c0d2104f7a44eb1af317b6542e5147d">pcl::SHOTEstimation&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, and <a class="el" href="classpcl_1_1_s_h_o_t_estimation.html#a3c0d2104f7a44eb1af317b6542e5147d">pcl::SHOTEstimation&lt; PointInT, PointNT, pcl::SHOT352, pcl::ReferenceFrame &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classpcl_1_1_s_h_o_t_color_estimation.html#ad14b792113983c5884c2bba69d380d42">pcl::SHOTColorEstimation&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_color_estimation.html#ad14b792113983c5884c2bba69d380d42">pcl::SHOTColorEstimation&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation.html#ae145c1aeab3c61ae34fb35eed1ddceed">pcl::SHOTEstimation&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, and <a class="el" href="classpcl_1_1_s_h_o_t_estimation.html#ae145c1aeab3c61ae34fb35eed1ddceed">pcl::SHOTEstimation&lt; PointInT, PointNT, pcl::SHOT352, pcl::ReferenceFrame &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ae69b1265449ec2c727f54e4308d6178d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69b1265449ec2c727f54e4308d6178d">&#9670;&nbsp;</a></span>createBinDistanceShape()</h2>
+<a id="ad510653f068257fd81ade9910a71f3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad510653f068257fd81ade9910a71f3e5">&#9670;&nbsp;</a></span>createBinDistanceShape()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -625,7 +625,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -657,7 +657,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00195">195</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00176">176</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
 
 </div>
 </div>
@@ -688,7 +688,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>Get the radius used for local reference frame estimation. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00126">126</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00127">127</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -718,12 +718,12 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, PointOutT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00159">159</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00140">140</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
 
 </div>
 </div>
-<a id="aa83ce6c4529df2561a45f129354ef935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa83ce6c4529df2561a45f129354ef935">&#9670;&nbsp;</a></span>interpolateSingleChannel()</h2>
+<a id="ab23224f44e4b87f55295af5fc2a8b10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23224f44e4b87f55295af5fc2a8b10a">&#9670;&nbsp;</a></span>interpolateSingleChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -736,7 +736,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html">pcl::SHOTEstimationBase</a>&lt; PointInT, PointNT, PointOutT, PointRFT &gt;::interpolateSingleChannel </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -795,7 +795,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00256">256</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00237">237</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
 
 </div>
 </div>
@@ -844,7 +844,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00239">239</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8hpp_source.html#l00220">220</a> of file <a class="el" href="shot_8hpp_source.html">shot.hpp</a>.</p>
 
 </div>
 </div>
@@ -876,7 +876,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>Set the radius used for local reference frame estimation if the frames are not set by the user. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00122">122</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00123">123</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +905,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>One SHOT length. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00196">196</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00197">197</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -933,9 +933,9 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>The radius used for the LRF computation. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00175">175</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00176">176</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shot_8h_source.html#l00126">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;::getLRFRadius()</a>, and <a class="el" href="shot_8h_source.html#l00122">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;::setLRFRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shot_8h_source.html#l00127">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;::getLRFRadius()</a>, and <a class="el" href="shot_8h_source.html#l00123">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;::setLRFRadius()</a>.</p>
 
 </div>
 </div>
@@ -963,7 +963,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>... </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00193">193</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00194">194</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +991,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>Number of azimuthal sectors. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00190">190</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00191">191</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1019,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>The number of bins in each shape histogram. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00169">169</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00170">170</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1047,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>1/2 of the search radius. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00187">187</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00188">188</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1075,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>1/4 of the search radius. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00184">184</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00185">185</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1103,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>3/4 of the search radius. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00181">181</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00182">182</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1131,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>Placeholder for a point's SHOT. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00172">172</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00173">173</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1159,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 
 <p>The squared search radius. </p>
 
-<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00178">178</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shot_8h_source.html#l00179">179</a> of file <a class="el" href="shot_8h_source.html">shot.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1173,7 @@ template&lt;typename PointInT , typename PointNT , typename PointOutT , typename
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:59</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:13</p>
 </div> <!-- #footer -->
 </body>
 </html>

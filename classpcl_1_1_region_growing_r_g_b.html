@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">pcl::RegionGrowingRGB&lt; PointT, NormalT &gt; Class Template Reference</div>  </div>
+<div class="title">pcl::RegionGrowingRGB&lt; PointT, NormalT &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__segmentation.html">Module segmentation</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -140,9 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a38585d1038d6a6a55ada1ba7a7134772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a38585d1038d6a6a55ada1ba7a7134772">extract</a> (std::vector&lt; <a class="el" href="structpcl_1_1_point_indices.html">pcl::PointIndices</a> &gt; &amp;clusters) override</td></tr>
 <tr class="memdesc:a38585d1038d6a6a55ada1ba7a7134772"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method launches the segmentation algorithm and returns the clusters that were obtained during the segmentation.  <a href="classpcl_1_1_region_growing_r_g_b.html#a38585d1038d6a6a55ada1ba7a7134772">More...</a><br /></td></tr>
 <tr class="separator:a38585d1038d6a6a55ada1ba7a7134772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a491387aac00e33f33e1da93d5d021e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a491387aac00e33f33e1da93d5d021e3f">getSegmentFromPoint</a> (int index, <a class="el" href="structpcl_1_1_point_indices.html">pcl::PointIndices</a> &amp;cluster) override</td></tr>
-<tr class="memdesc:a491387aac00e33f33e1da93d5d021e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given point this function builds a segment to which it belongs and returns this segment.  <a href="classpcl_1_1_region_growing_r_g_b.html#a491387aac00e33f33e1da93d5d021e3f">More...</a><br /></td></tr>
-<tr class="separator:a491387aac00e33f33e1da93d5d021e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ce6d3f0acafe52c81e8c7c4e090418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a09ce6d3f0acafe52c81e8c7c4e090418">getSegmentFromPoint</a> (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a> index, <a class="el" href="structpcl_1_1_point_indices.html">pcl::PointIndices</a> &amp;cluster) override</td></tr>
+<tr class="memdesc:a09ce6d3f0acafe52c81e8c7c4e090418"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given point this function builds a segment to which it belongs and returns this segment.  <a href="classpcl_1_1_region_growing_r_g_b.html#a09ce6d3f0acafe52c81e8c7c4e090418">More...</a><br /></td></tr>
+<tr class="separator:a09ce6d3f0acafe52c81e8c7c4e090418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcl_1_1_region_growing"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcl_1_1_region_growing')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcl_1_1_region_growing.html">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a></td></tr>
 <tr class="memitem:a32553136086e9bab3f0f9482ae088576 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a32553136086e9bab3f0f9482ae088576">RegionGrowing</a> ()</td></tr>
 <tr class="memdesc:a32553136086e9bab3f0f9482ae088576 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that sets default values for member variables.  <a href="classpcl_1_1_region_growing.html#a32553136086e9bab3f0f9482ae088576">More...</a><br /></td></tr>
@@ -150,18 +150,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd5307cad362027812ce6703af129046 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#abd5307cad362027812ce6703af129046">~RegionGrowing</a> ()</td></tr>
 <tr class="memdesc:abd5307cad362027812ce6703af129046 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destructor destroys the cloud, normals and search method used for finding KNN.  <a href="classpcl_1_1_region_growing.html#abd5307cad362027812ce6703af129046">More...</a><br /></td></tr>
 <tr class="separator:abd5307cad362027812ce6703af129046 inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a503eb2ff26d2ff282332c62665cdf451 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a503eb2ff26d2ff282332c62665cdf451">getMinClusterSize</a> ()</td></tr>
-<tr class="memdesc:a503eb2ff26d2ff282332c62665cdf451 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#a503eb2ff26d2ff282332c62665cdf451">More...</a><br /></td></tr>
-<tr class="separator:a503eb2ff26d2ff282332c62665cdf451 inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac040a7d547bb09b295386045725aa848 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#ac040a7d547bb09b295386045725aa848">setMinClusterSize</a> (int min_cluster_size)</td></tr>
-<tr class="memdesc:ac040a7d547bb09b295386045725aa848 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the minimum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#ac040a7d547bb09b295386045725aa848">More...</a><br /></td></tr>
-<tr class="separator:ac040a7d547bb09b295386045725aa848 inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bef7a2920c179c99928acc7474c41ab inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a7bef7a2920c179c99928acc7474c41ab">getMaxClusterSize</a> ()</td></tr>
-<tr class="memdesc:a7bef7a2920c179c99928acc7474c41ab inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#a7bef7a2920c179c99928acc7474c41ab">More...</a><br /></td></tr>
-<tr class="separator:a7bef7a2920c179c99928acc7474c41ab inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51294408aa0da3e72690e9ab03bae90d inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a51294408aa0da3e72690e9ab03bae90d">setMaxClusterSize</a> (int max_cluster_size)</td></tr>
-<tr class="memdesc:a51294408aa0da3e72690e9ab03bae90d inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#a51294408aa0da3e72690e9ab03bae90d">More...</a><br /></td></tr>
-<tr class="separator:a51294408aa0da3e72690e9ab03bae90d inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31170002b628bbd3e8b33d26fbb5dc2a inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a31170002b628bbd3e8b33d26fbb5dc2a">getMinClusterSize</a> ()</td></tr>
+<tr class="memdesc:a31170002b628bbd3e8b33d26fbb5dc2a inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#a31170002b628bbd3e8b33d26fbb5dc2a">More...</a><br /></td></tr>
+<tr class="separator:a31170002b628bbd3e8b33d26fbb5dc2a inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c86c15ec77c853811c7888a09e2c6fd inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a6c86c15ec77c853811c7888a09e2c6fd">setMinClusterSize</a> (<a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a> min_cluster_size)</td></tr>
+<tr class="memdesc:a6c86c15ec77c853811c7888a09e2c6fd inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the minimum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#a6c86c15ec77c853811c7888a09e2c6fd">More...</a><br /></td></tr>
+<tr class="separator:a6c86c15ec77c853811c7888a09e2c6fd inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcb8ef2c85e56ff4c5eed1d01206ef8 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#aadcb8ef2c85e56ff4c5eed1d01206ef8">getMaxClusterSize</a> ()</td></tr>
+<tr class="memdesc:aadcb8ef2c85e56ff4c5eed1d01206ef8 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#aadcb8ef2c85e56ff4c5eed1d01206ef8">More...</a><br /></td></tr>
+<tr class="separator:aadcb8ef2c85e56ff4c5eed1d01206ef8 inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d886945c1254d71a5a82dfe02a4160 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#ad2d886945c1254d71a5a82dfe02a4160">setMaxClusterSize</a> (<a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a> max_cluster_size)</td></tr>
+<tr class="memdesc:ad2d886945c1254d71a5a82dfe02a4160 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#ad2d886945c1254d71a5a82dfe02a4160">More...</a><br /></td></tr>
+<tr class="separator:ad2d886945c1254d71a5a82dfe02a4160 inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae14b6b9cb6a6aaf8872c3c965f2e6e00 inherit pub_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#ae14b6b9cb6a6aaf8872c3c965f2e6e00">getSmoothModeFlag</a> () const</td></tr>
 <tr class="memdesc:ae14b6b9cb6a6aaf8872c3c965f2e6e00 inherit pub_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flag value.  <a href="classpcl_1_1_region_growing.html#ae14b6b9cb6a6aaf8872c3c965f2e6e00">More...</a><br /></td></tr>
 <tr class="separator:ae14b6b9cb6a6aaf8872c3c965f2e6e00 inherit pub_methods_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,24 +265,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:adea4bb708dcff1412a93b8ee46c9f05f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#adea4bb708dcff1412a93b8ee46c9f05f">findSegmentNeighbours</a> ()</td></tr>
 <tr class="memdesc:adea4bb708dcff1412a93b8ee46c9f05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method simply calls the findRegionsKNN for each segment and saves the results for later use.  <a href="classpcl_1_1_region_growing_r_g_b.html#adea4bb708dcff1412a93b8ee46c9f05f">More...</a><br /></td></tr>
 <tr class="separator:adea4bb708dcff1412a93b8ee46c9f05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a1ca832b5cf24da14f0bdb853d68ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a35a1ca832b5cf24da14f0bdb853d68ba">findRegionsKNN</a> (int index, int nghbr_number, std::vector&lt; int &gt; &amp;nghbrs, std::vector&lt; float &gt; &amp;dist)</td></tr>
-<tr class="memdesc:a35a1ca832b5cf24da14f0bdb853d68ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method finds K nearest neighbours of the given segment.  <a href="classpcl_1_1_region_growing_r_g_b.html#a35a1ca832b5cf24da14f0bdb853d68ba">More...</a><br /></td></tr>
-<tr class="separator:a35a1ca832b5cf24da14f0bdb853d68ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e74e4b9a932c2f145f3de0975ecd58b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a6e74e4b9a932c2f145f3de0975ecd58b">findRegionsKNN</a> (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> index, <a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a> nghbr_number, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;nghbrs, std::vector&lt; float &gt; &amp;dist)</td></tr>
+<tr class="memdesc:a6e74e4b9a932c2f145f3de0975ecd58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method finds K nearest neighbours of the given segment.  <a href="classpcl_1_1_region_growing_r_g_b.html#a6e74e4b9a932c2f145f3de0975ecd58b">More...</a><br /></td></tr>
+<tr class="separator:a6e74e4b9a932c2f145f3de0975ecd58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cc209fc830c696158e21723fecf9d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a27cc209fc830c696158e21723fecf9d4">applyRegionMergingAlgorithm</a> ()</td></tr>
 <tr class="memdesc:a27cc209fc830c696158e21723fecf9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function implements the merging algorithm described in the article "Color-based segmentation of point clouds" by Qingming Zhan, Yubin Liang, Yinghui Xiao.  <a href="classpcl_1_1_region_growing_r_g_b.html#a27cc209fc830c696158e21723fecf9d4">More...</a><br /></td></tr>
 <tr class="separator:a27cc209fc830c696158e21723fecf9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5246c94d7656b82c4b91575f3ec9ddf8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a5246c94d7656b82c4b91575f3ec9ddf8">calculateColorimetricalDifference</a> (std::vector&lt; unsigned int &gt; &amp;first_color, std::vector&lt; unsigned int &gt; &amp;second_color) const</td></tr>
 <tr class="memdesc:a5246c94d7656b82c4b91575f3ec9ddf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method calculates the colorimetrical difference between two points.  <a href="classpcl_1_1_region_growing_r_g_b.html#a5246c94d7656b82c4b91575f3ec9ddf8">More...</a><br /></td></tr>
 <tr class="separator:a5246c94d7656b82c4b91575f3ec9ddf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a440c1ca16804fb47ae2971eae1400b69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a440c1ca16804fb47ae2971eae1400b69">findRegionNeighbours</a> (std::vector&lt; std::vector&lt; std::pair&lt; float, int &gt; &gt; &gt; &amp;neighbours_out, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;regions_in)</td></tr>
-<tr class="memdesc:a440c1ca16804fb47ae2971eae1400b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assembles the array containing neighbours of each homogeneous region.  <a href="classpcl_1_1_region_growing_r_g_b.html#a440c1ca16804fb47ae2971eae1400b69">More...</a><br /></td></tr>
-<tr class="separator:a440c1ca16804fb47ae2971eae1400b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221fbdbec11eaebec151f0ce01b03cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a221fbdbec11eaebec151f0ce01b03cad">findRegionNeighbours</a> (std::vector&lt; std::vector&lt; std::pair&lt; float, <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> &gt; &gt; &gt; &amp;neighbours_out, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;regions_in)</td></tr>
+<tr class="memdesc:a221fbdbec11eaebec151f0ce01b03cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assembles the array containing neighbours of each homogeneous region.  <a href="classpcl_1_1_region_growing_r_g_b.html#a221fbdbec11eaebec151f0ce01b03cad">More...</a><br /></td></tr>
+<tr class="separator:a221fbdbec11eaebec151f0ce01b03cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af47eafd7764a18e107ee52f36d62233e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#af47eafd7764a18e107ee52f36d62233e">assembleRegions</a> (std::vector&lt; unsigned int &gt; &amp;num_pts_in_region, int num_regions)</td></tr>
 <tr class="memdesc:af47eafd7764a18e107ee52f36d62233e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function simply assembles the regions from list of point labels.  <a href="classpcl_1_1_region_growing_r_g_b.html#af47eafd7764a18e107ee52f36d62233e">More...</a><br /></td></tr>
 <tr class="separator:af47eafd7764a18e107ee52f36d62233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a368139d5964ddde552032a22eac0a7ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a368139d5964ddde552032a22eac0a7ef">validatePoint</a> (int initial_seed, int point, int nghbr, bool &amp;is_a_seed) const override</td></tr>
-<tr class="memdesc:a368139d5964ddde552032a22eac0a7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is checking if the point with index 'nghbr' belongs to the segment.  <a href="classpcl_1_1_region_growing_r_g_b.html#a368139d5964ddde552032a22eac0a7ef">More...</a><br /></td></tr>
-<tr class="separator:a368139d5964ddde552032a22eac0a7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed28804ec3083137f1bd20308ccb1047"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#aed28804ec3083137f1bd20308ccb1047">validatePoint</a> (<a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a> initial_seed, <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a> point, <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">index_t</a> nghbr, bool &amp;is_a_seed) const override</td></tr>
+<tr class="memdesc:aed28804ec3083137f1bd20308ccb1047"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is checking if the point with index 'nghbr' belongs to the segment.  <a href="classpcl_1_1_region_growing_r_g_b.html#aed28804ec3083137f1bd20308ccb1047">More...</a><br /></td></tr>
+<tr class="separator:aed28804ec3083137f1bd20308ccb1047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_region_growing"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_region_growing')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_region_growing.html">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a></td></tr>
 <tr class="memitem:ad9fdb4c1edc24da8b149866dcfc819d5 inherit pro_methods_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#ad9fdb4c1edc24da8b149866dcfc819d5">applySmoothRegionGrowingAlgorithm</a> ()</td></tr>
 <tr class="memdesc:ad9fdb4c1edc24da8b149866dcfc819d5 inherit pro_methods_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function implements the algorithm described in the article "Segmentation of point clouds using smoothness constraint" by T.  <a href="classpcl_1_1_region_growing.html#ad9fdb4c1edc24da8b149866dcfc819d5">More...</a><br /></td></tr>
@@ -318,9 +318,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a1bb643cd07f392ac605ab28abd329051"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a1bb643cd07f392ac605ab28abd329051">point_distances_</a></td></tr>
 <tr class="memdesc:a1bb643cd07f392ac605ab28abd329051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores distances for the point neighbours from point_neighbours_.  <a href="classpcl_1_1_region_growing_r_g_b.html#a1bb643cd07f392ac605ab28abd329051">More...</a><br /></td></tr>
 <tr class="separator:a1bb643cd07f392ac605ab28abd329051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36d4dd5612a3758ae6b3256cb5ec63e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#ab36d4dd5612a3758ae6b3256cb5ec63e">segment_neighbours_</a></td></tr>
-<tr class="memdesc:ab36d4dd5612a3758ae6b3256cb5ec63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the neighboures for the corresponding segments.  <a href="classpcl_1_1_region_growing_r_g_b.html#ab36d4dd5612a3758ae6b3256cb5ec63e">More...</a><br /></td></tr>
-<tr class="separator:ab36d4dd5612a3758ae6b3256cb5ec63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d54a46d409023b55e0df80c59582fb6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a1d54a46d409023b55e0df80c59582fb6">segment_neighbours_</a></td></tr>
+<tr class="memdesc:a1d54a46d409023b55e0df80c59582fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the neighboures for the corresponding segments.  <a href="classpcl_1_1_region_growing_r_g_b.html#a1d54a46d409023b55e0df80c59582fb6">More...</a><br /></td></tr>
+<tr class="separator:a1d54a46d409023b55e0df80c59582fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5068db244252c85621b939f3a493ed33"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing_r_g_b.html#a5068db244252c85621b939f3a493ed33">segment_distances_</a></td></tr>
 <tr class="memdesc:a5068db244252c85621b939f3a493ed33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores distances for the segment neighbours from segment_neighbours_.  <a href="classpcl_1_1_region_growing_r_g_b.html#a5068db244252c85621b939f3a493ed33">More...</a><br /></td></tr>
 <tr class="separator:a5068db244252c85621b939f3a493ed33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,12 +328,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:ac792b931046d98cc4c223c5686520ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores new indices for segments that were obtained at the region growing stage.  <a href="classpcl_1_1_region_growing_r_g_b.html#ac792b931046d98cc4c223c5686520ab7">More...</a><br /></td></tr>
 <tr class="separator:ac792b931046d98cc4c223c5686520ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classpcl_1_1_region_growing"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classpcl_1_1_region_growing')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classpcl_1_1_region_growing.html">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a></td></tr>
-<tr class="memitem:aaf5fe4e97596798764ebd768193b3054 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#aaf5fe4e97596798764ebd768193b3054">min_pts_per_cluster_</a></td></tr>
-<tr class="memdesc:aaf5fe4e97596798764ebd768193b3054 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the minimum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#aaf5fe4e97596798764ebd768193b3054">More...</a><br /></td></tr>
-<tr class="separator:aaf5fe4e97596798764ebd768193b3054 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740af3118950d0bef662a7ab60177b6a inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a740af3118950d0bef662a7ab60177b6a">max_pts_per_cluster_</a></td></tr>
-<tr class="memdesc:a740af3118950d0bef662a7ab60177b6a inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the maximum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#a740af3118950d0bef662a7ab60177b6a">More...</a><br /></td></tr>
-<tr class="separator:a740af3118950d0bef662a7ab60177b6a inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4a5a0378bf42e771fcadc60c1f37c1 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#aea4a5a0378bf42e771fcadc60c1f37c1">min_pts_per_cluster_</a></td></tr>
+<tr class="memdesc:aea4a5a0378bf42e771fcadc60c1f37c1 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the minimum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#aea4a5a0378bf42e771fcadc60c1f37c1">More...</a><br /></td></tr>
+<tr class="separator:aea4a5a0378bf42e771fcadc60c1f37c1 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1226a4efa3b0a39bbc7e021b52b10f9 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#aa1226a4efa3b0a39bbc7e021b52b10f9">max_pts_per_cluster_</a></td></tr>
+<tr class="memdesc:aa1226a4efa3b0a39bbc7e021b52b10f9 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the maximum number of points that a cluster needs to contain in order to be considered valid.  <a href="classpcl_1_1_region_growing.html#aa1226a4efa3b0a39bbc7e021b52b10f9">More...</a><br /></td></tr>
+<tr class="separator:aa1226a4efa3b0a39bbc7e021b52b10f9 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9411960ec9656fa6e727e0558d57f7 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a8d9411960ec9656fa6e727e0558d57f7">smooth_mode_flag_</a></td></tr>
 <tr class="memdesc:a8d9411960ec9656fa6e727e0558d57f7 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag that signalizes if the smoothness constraint will be used.  <a href="classpcl_1_1_region_growing.html#a8d9411960ec9656fa6e727e0558d57f7">More...</a><br /></td></tr>
 <tr class="separator:a8d9411960ec9656fa6e727e0558d57f7 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,18 +361,18 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a071c48f5d44f919aba6f8f386fd5e988 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_region_growing.html#af68e35ee7522cde7e517c8e4e8589f80">NormalPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a071c48f5d44f919aba6f8f386fd5e988">normals_</a></td></tr>
 <tr class="memdesc:a071c48f5d44f919aba6f8f386fd5e988 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains normals of the points that will be segmented.  <a href="classpcl_1_1_region_growing.html#a071c48f5d44f919aba6f8f386fd5e988">More...</a><br /></td></tr>
 <tr class="separator:a071c48f5d44f919aba6f8f386fd5e988 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4cd088c8a767b380613c9471cc15d5 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a3e4cd088c8a767b380613c9471cc15d5">point_neighbours_</a></td></tr>
-<tr class="memdesc:a3e4cd088c8a767b380613c9471cc15d5 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains neighbours of each point.  <a href="classpcl_1_1_region_growing.html#a3e4cd088c8a767b380613c9471cc15d5">More...</a><br /></td></tr>
-<tr class="separator:a3e4cd088c8a767b380613c9471cc15d5 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaeb3ec1a34fc6a663ba90190b11c430 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#acaeb3ec1a34fc6a663ba90190b11c430">point_neighbours_</a></td></tr>
+<tr class="memdesc:acaeb3ec1a34fc6a663ba90190b11c430 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains neighbours of each point.  <a href="classpcl_1_1_region_growing.html#acaeb3ec1a34fc6a663ba90190b11c430">More...</a><br /></td></tr>
+<tr class="separator:acaeb3ec1a34fc6a663ba90190b11c430 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83457053cb030294787154b4d29a9e87 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a83457053cb030294787154b4d29a9e87">point_labels_</a></td></tr>
 <tr class="memdesc:a83457053cb030294787154b4d29a9e87 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point labels that tells to which segment each point belongs.  <a href="classpcl_1_1_region_growing.html#a83457053cb030294787154b4d29a9e87">More...</a><br /></td></tr>
 <tr class="separator:a83457053cb030294787154b4d29a9e87 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f1b3605f488bcaa677d166f2b0f362 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a95f1b3605f488bcaa677d166f2b0f362">normal_flag_</a></td></tr>
 <tr class="memdesc:a95f1b3605f488bcaa677d166f2b0f362 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to true then normal/smoothness test will be done during segmentation.  <a href="classpcl_1_1_region_growing.html#a95f1b3605f488bcaa677d166f2b0f362">More...</a><br /></td></tr>
 <tr class="separator:a95f1b3605f488bcaa677d166f2b0f362 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d9823fcc36dd839f1b0e35f5949b468 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#a2d9823fcc36dd839f1b0e35f5949b468">num_pts_in_segment_</a></td></tr>
-<tr class="memdesc:a2d9823fcc36dd839f1b0e35f5949b468 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells how much points each segment contains.  <a href="classpcl_1_1_region_growing.html#a2d9823fcc36dd839f1b0e35f5949b468">More...</a><br /></td></tr>
-<tr class="separator:a2d9823fcc36dd839f1b0e35f5949b468 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda38f98bd8104a45444cbdab8cd5a97 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#aeda38f98bd8104a45444cbdab8cd5a97">num_pts_in_segment_</a></td></tr>
+<tr class="memdesc:aeda38f98bd8104a45444cbdab8cd5a97 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells how much points each segment contains.  <a href="classpcl_1_1_region_growing.html#aeda38f98bd8104a45444cbdab8cd5a97">More...</a><br /></td></tr>
+<tr class="separator:aeda38f98bd8104a45444cbdab8cd5a97 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af330bc7d3ac671aee8e1a48608608b72 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structpcl_1_1_point_indices.html">pcl::PointIndices</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#af330bc7d3ac671aee8e1a48608608b72">clusters_</a></td></tr>
 <tr class="memdesc:af330bc7d3ac671aee8e1a48608608b72 inherit pro_attribs_classpcl_1_1_region_growing"><td class="mdescLeft">&#160;</td><td class="mdescRight">After the segmentation it will contain the segments.  <a href="classpcl_1_1_region_growing.html#af330bc7d3ac671aee8e1a48608608b72">More...</a><br /></td></tr>
 <tr class="separator:af330bc7d3ac671aee8e1a48608608b72 inherit pro_attribs_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a222d05eda04130697ae5c23a3448b828 inherit pub_types_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb2b5603154fe12be437a34cdbd11651 inherit pub_types_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#afb2b5603154fe12be437a34cdbd11651">Normal</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_normal.html">pcl::Normal</a> &gt;</td></tr>
 <tr class="separator:afb2b5603154fe12be437a34cdbd11651 inherit pub_types_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68e35ee7522cde7e517c8e4e8589f80 inherit pub_types_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#af68e35ee7522cde7e517c8e4e8589f80">NormalPtr</a> = typename Normal::Ptr</td></tr>
+<tr class="memitem:af68e35ee7522cde7e517c8e4e8589f80 inherit pub_types_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#af68e35ee7522cde7e517c8e4e8589f80">NormalPtr</a> = typename <a class="el" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">Normal::Ptr</a></td></tr>
 <tr class="separator:af68e35ee7522cde7e517c8e4e8589f80 inherit pub_types_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaab067f585e2ff6621a7d1ce5b6625a inherit pub_types_classpcl_1_1_region_growing"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_region_growing.html#afaab067f585e2ff6621a7d1ce5b6625a">PointCloud</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;</td></tr>
 <tr class="separator:afaab067f585e2ff6621a7d1ce5b6625a inherit pub_types_classpcl_1_1_region_growing"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,7 +425,7 @@ class pcl::RegionGrowingRGB&lt; PointT, NormalT &gt;</h3>
 <p>Implements the well known Region Growing algorithm used for segmentation based on color of points. </p>
 <p>Description can be found in the article "Color-based segmentation of point clouds" by Qingming Zhan, Yubin Liang, Yinghui Xiao </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00055">55</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00056">56</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a74a0032e342ceaa0e1831379e20858a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74a0032e342ceaa0e1831379e20858a5">&#9670;&nbsp;</a></span>RegionGrowingRGB()</h2>
@@ -443,9 +443,9 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Constructor that sets default values for member variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00051">51</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00052">52</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="region__growing_8h_source.html#l00293">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::curvature_flag_</a>, <a class="el" href="region__growing_8h_source.html#l00284">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::min_pts_per_cluster_</a>, <a class="el" href="region__growing_8h_source.html#l00325">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::normal_flag_</a>, and <a class="el" href="region__growing_8h_source.html#l00296">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::residual_flag_</a>.</p>
+<p class="reference">References <a class="el" href="region__growing_8h_source.html#l00291">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::curvature_flag_</a>, <a class="el" href="region__growing_8h_source.html#l00282">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::min_pts_per_cluster_</a>, <a class="el" href="region__growing_8h_source.html#l00323">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::normal_flag_</a>, and <a class="el" href="region__growing_8h_source.html#l00294">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;::residual_flag_</a>.</p>
 
 </div>
 </div>
@@ -465,7 +465,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Destructor that frees memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00069">69</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00070">70</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00368">368</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="region__growing_8h_source.html#l00342">pcl::comparePair()</a>.</p>
+<p class="reference">References <a class="el" href="region__growing_8h_source.html#l00340">pcl::comparePair()</a>.</p>
 
 </div>
 </div>
@@ -545,9 +545,9 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00564">564</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00554">554</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_point_indices_8h_source.html#l00023">pcl::PointIndices::indices</a>.</p>
+<p class="reference">References <a class="el" href="_point_indices_8h_source.html#l00021">pcl::PointIndices::indices</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00519">519</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00511">511</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -636,7 +636,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#a9ef8286d7ced3ff97667653b96a4bd21">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00163">163</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00164">164</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="region__growing_8hpp_source.html#l00539">pcl::RegionGrowing&lt; PointT, NormalT &gt;::assembleRegions()</a>.</p>
 
@@ -668,12 +668,12 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#a541edb18fa47990020ceb640186c95dc">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00272">272</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00273">273</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a440c1ca16804fb47ae2971eae1400b69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a440c1ca16804fb47ae2971eae1400b69">&#9670;&nbsp;</a></span>findRegionNeighbours()</h2>
+<a id="a221fbdbec11eaebec151f0ce01b03cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221fbdbec11eaebec151f0ce01b03cad">&#9670;&nbsp;</a></span>findRegionNeighbours()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -686,7 +686,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_region_growing_r_g_b.html">pcl::RegionGrowingRGB</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, <a class="el" href="structpcl_1_1_normal.html">NormalT</a> &gt;::findRegionNeighbours </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; std::pair&lt; float, int &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; std::pair&lt; float, <a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a> &gt; &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>neighbours_out</em>, </td>
         </tr>
         <tr>
@@ -717,14 +717,14 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00530">530</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00522">522</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="region__growing_8h_source.html#l00342">pcl::comparePair()</a>.</p>
+<p class="reference">References <a class="el" href="region__growing_8h_source.html#l00340">pcl::comparePair()</a>.</p>
 
 </div>
 </div>
-<a id="a35a1ca832b5cf24da14f0bdb853d68ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35a1ca832b5cf24da14f0bdb853d68ba">&#9670;&nbsp;</a></span>findRegionsKNN()</h2>
+<a id="a6e74e4b9a932c2f145f3de0975ecd58b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e74e4b9a932c2f145f3de0975ecd58b">&#9670;&nbsp;</a></span>findRegionsKNN()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -737,19 +737,19 @@ template&lt;typename PointT , typename NormalT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_region_growing_r_g_b.html">pcl::RegionGrowingRGB</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, <a class="el" href="structpcl_1_1_normal.html">NormalT</a> &gt;::findRegionsKNN </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">pcl::uindex_t</a>&#160;</td>
           <td class="paramname"><em>nghbr_number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>nghbrs</em>, </td>
         </tr>
         <tr>
@@ -782,7 +782,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00313">313</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00314">314</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -810,7 +810,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>This method simply calls the findRegionsKNN for each segment and saves the results for later use. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00294">294</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00295">295</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -831,7 +831,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 <p>Returns the distance threshold. </p>
 <p>If the distance between two points is less or equal to distance threshold value, then those points assumed to be neighbouring points. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00107">107</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00108">108</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Returns the flag that signalize if the smoothness test is turned on/off. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00135">135</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00136">136</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -872,7 +872,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 <p>Returns the number of nearest neighbours used for searching K nearest segments. </p>
 <p>Note that here it refers to the segments(not the points). </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00121">121</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00122">122</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -892,7 +892,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Returns the color threshold value used for testing if points belong to the same region. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00079">79</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00080">80</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -912,12 +912,12 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Returns the color threshold value used for testing if regions can be merged. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00093">93</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00094">94</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a491387aac00e33f33e1da93d5d021e3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a491387aac00e33f33e1da93d5d021e3f">&#9670;&nbsp;</a></span>getSegmentFromPoint()</h2>
+<a id="a09ce6d3f0acafe52c81e8c7c4e090418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ce6d3f0acafe52c81e8c7c4e090418">&#9670;&nbsp;</a></span>getSegmentFromPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -930,7 +930,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1_region_growing_r_g_b.html">pcl::RegionGrowingRGB</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, <a class="el" href="structpcl_1_1_normal.html">NormalT</a> &gt;::getSegmentFromPoint </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
@@ -961,11 +961,11 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#a72b71b0e82a8080dcd26142968eb21e3">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#acead3f4549361e922cadc30595221edd">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00690">690</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00678">678</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="region__growing_8hpp_source.html#l00539">pcl::RegionGrowing&lt; PointT, NormalT &gt;::assembleRegions()</a>, and <a class="el" href="_point_indices_8h_source.html#l00023">pcl::PointIndices::indices</a>.</p>
+<p class="reference">References <a class="el" href="region__growing_8hpp_source.html#l00539">pcl::RegionGrowing&lt; PointT, NormalT &gt;::assembleRegions()</a>, and <a class="el" href="_point_indices_8h_source.html#l00021">pcl::PointIndices::indices</a>.</p>
 
 </div>
 </div>
@@ -996,7 +996,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#a510496b033f5261bc0325da4a9ec0e3b">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00217">217</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00218">218</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1036,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#a1f7a093b9cdc5337309cdeabffc1cd92">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00149">149</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00150">150</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1066,7 +1066,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00114">114</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00115">115</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1096,7 +1096,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00142">142</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00143">143</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1126,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00128">128</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00129">129</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1156,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00086">86</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00087">87</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +1186,7 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00100">100</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00101">101</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1226,12 +1226,12 @@ template&lt;typename PointT , typename NormalT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#ad1846b7d16b40f3187c42c81b80abc79">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00156">156</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00157">157</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a368139d5964ddde552032a22eac0a7ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a368139d5964ddde552032a22eac0a7ef">&#9670;&nbsp;</a></span>validatePoint()</h2>
+<a id="aed28804ec3083137f1bd20308ccb1047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed28804ec3083137f1bd20308ccb1047">&#9670;&nbsp;</a></span>validatePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1244,19 +1244,19 @@ template&lt;typename PointT , typename NormalT &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classpcl_1_1_region_growing_r_g_b.html">pcl::RegionGrowingRGB</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, <a class="el" href="structpcl_1_1_normal.html">NormalT</a> &gt;::validatePoint </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>initial_seed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a45edbae979af563e6a1e39fd1aad3911">pcl::index_t</a>&#160;</td>
           <td class="paramname"><em>nghbr</em>, </td>
         </tr>
         <tr>
@@ -1289,9 +1289,9 @@ template&lt;typename PointT , typename NormalT &gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#a71c8914239d04758cc94e59886b8308a">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="classpcl_1_1_region_growing.html#aef634922c9eda63f15284e431cdca7fd">pcl::RegionGrowing&lt; PointT, pcl::Normal &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00611">611</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8hpp_source.html#l00599">599</a> of file <a class="el" href="region__growing__rgb_8hpp_source.html">region_growing_rgb.hpp</a>.</p>
 
 </div>
 </div>
@@ -1320,7 +1320,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Thershold used in color test for points. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00254">254</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00255">255</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1348,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Thershold used in color test for regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00257">257</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00258">258</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1376,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Threshold that tells which points we need to assume neighbouring. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00260">260</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00261">261</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1404,7 +1404,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Stores distances for the point neighbours from point_neighbours_. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00266">266</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00267">267</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1432,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Number of neighbouring segments to find. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00263">263</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00264">264</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1460,7 +1460,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Stores distances for the segment neighbours from segment_neighbours_. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00272">272</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00273">273</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1488,12 +1488,12 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Stores new indices for segments that were obtained at the region growing stage. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00275">275</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00276">276</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
-<a id="ab36d4dd5612a3758ae6b3256cb5ec63e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab36d4dd5612a3758ae6b3256cb5ec63e">&#9670;&nbsp;</a></span>segment_neighbours_</h2>
+<a id="a1d54a46d409023b55e0df80c59582fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d54a46d409023b55e0df80c59582fb6">&#9670;&nbsp;</a></span>segment_neighbours_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1504,7 +1504,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;int&gt; &gt; <a class="el" href="classpcl_1_1_region_growing_r_g_b.html">pcl::RegionGrowingRGB</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, <a class="el" href="structpcl_1_1_normal.html">NormalT</a> &gt;::segment_neighbours_</td>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &gt; <a class="el" href="classpcl_1_1_region_growing_r_g_b.html">pcl::RegionGrowingRGB</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a>, <a class="el" href="structpcl_1_1_normal.html">NormalT</a> &gt;::segment_neighbours_</td>
         </tr>
       </table>
   </td>
@@ -1516,7 +1516,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 
 <p>Stores the neighboures for the corresponding segments. </p>
 
-<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00269">269</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="region__growing__rgb_8h_source.html#l00270">270</a> of file <a class="el" href="region__growing__rgb_8h_source.html">region_growing_rgb.h</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1530,7 @@ template&lt;typename PointT , typename NormalT  = pcl::Normal&gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:46</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:58</p>
 </div> <!-- #footer -->
 </body>
 </html>

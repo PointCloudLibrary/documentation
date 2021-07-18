@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -459,6 +459,13 @@ Functions</h2></td></tr>
 <tr class="separator:a542e59ff2ee175db4bafaf045c14bbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef004a5f753dcd5133a4256d56d534ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1device.html#aef004a5f753dcd5133a4256d56d534ca">bruteForceRadiusSearch</a> (const <a class="el" href="classpcl_1_1device_1_1_octree_impl.html#aba52e57948f11d6db619c608483f0ac6">OctreeImpl::PointCloud</a> &amp;cloud, const <a class="el" href="classpcl_1_1device_1_1_octree_impl.html#ac483cc126d3adff7bfa41def7e45b2da">OctreeImpl::PointType</a> &amp;query, float radius, <a class="el" href="classpcl_1_1gpu_1_1_device_array.html">DeviceArray</a>&lt; int &gt; &amp;result, <a class="el" href="classpcl_1_1gpu_1_1_device_array.html">DeviceArray</a>&lt; int &gt; &amp;buffer)</td></tr>
 <tr class="separator:aef004a5f753dcd5133a4256d56d534ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae495106f81cc56857cabf2937b2141"><td class="memItemLeft" align="right" valign="top">__device__ __host__ __forceinline__ unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1device.html#a8ae495106f81cc56857cabf2937b2141">getBitsNum</a> (const unsigned integer)</td></tr>
+<tr class="separator:a8ae495106f81cc56857cabf2937b2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af640af8977a0a8870b2c0182259373b5"><td class="memItemLeft" align="right" valign="top">__host__ __device__ __forceinline__ std::pair&lt; uint3, std::uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1device.html#af640af8977a0a8870b2c0182259373b5">nearestVoxel</a> (const float3 query, const unsigned &amp;level, const std::uint8_t &amp;mask, const float3 &amp;minp, const float3 &amp;maxp, const uint3 &amp;index)</td></tr>
+<tr class="separator:af640af8977a0a8870b2c0182259373b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7289a2916491f0e6dace4ecd1d894c76"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7289a2916491f0e6dace4ecd1d894c76"><td class="memTemplItemLeft" align="right" valign="top">__device__ __host__ int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1device.html#a7289a2916491f0e6dace4ecd1d894c76">findNode</a> (const float3 minp, const float3 maxp, const float3 query, const T nodes)</td></tr>
+<tr class="separator:a7289a2916491f0e6dace4ecd1d894c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52dd7ab83604a07aecdbd6c68ea5b5e8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a52dd7ab83604a07aecdbd6c68ea5b5e8"><td class="memTemplItemLeft" align="right" valign="top">__device__ __forceinline__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1device.html#a52dd7ab83604a07aecdbd6c68ea5b5e8">swap</a> (T &amp;a, T &amp;b)</td></tr>
 <tr class="separator:a52dd7ab83604a07aecdbd6c68ea5b5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3927,6 +3934,52 @@ template&lt;typename NormalType &gt; </div>
 
 </div>
 </div>
+<a id="a7289a2916491f0e6dace4ecd1d894c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7289a2916491f0e6dace4ecd1d894c76">&#9670;&nbsp;</a></span>findNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __host__ int pcl::device::findNode </td>
+          <td>(</td>
+          <td class="paramtype">const float3&#160;</td>
+          <td class="paramname"><em>minp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float3&#160;</td>
+          <td class="paramname"><em>maxp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float3&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>nodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="approx__nearest__utils_8hpp_source.html#l00081">81</a> of file <a class="el" href="approx__nearest__utils_8hpp_source.html">approx_nearest_utils.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="morton_8hpp_source.html#l00084">pcl::device::Morton::decomposeCode()</a>, <a class="el" href="morton_8hpp_source.html#l00098">pcl::device::Morton::extractLevelCode()</a>, <a class="el" href="approx__nearest__utils_8hpp_source.html#l00023">getBitsNum()</a>, <a class="el" href="morton_8hpp_source.html#l00047">pcl::device::Morton::levels</a>, and <a class="el" href="approx__nearest__utils_8hpp_source.html#l00033">nearestVoxel()</a>.</p>
+
+</div>
+</div>
 <a id="a38e2885e97ffd0e77c66241a94464cea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38e2885e97ffd0e77c66241a94464cea">&#9670;&nbsp;</a></span>flipNormalTowardsViewpoint() <span class="overload">[1/2]</span></h2>
 
@@ -4234,6 +4287,28 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8ae495106f81cc56857cabf2937b2141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae495106f81cc56857cabf2937b2141">&#9670;&nbsp;</a></span>getBitsNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__device__ __host__ __forceinline__ unsigned pcl::device::getBitsNum </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>integer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="approx__nearest__utils_8hpp_source.html#l00023">23</a> of file <a class="el" href="approx__nearest__utils_8hpp_source.html">approx_nearest_utils.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="approx__nearest__utils_8hpp_source.html#l00081">findNode()</a>.</p>
 
 </div>
 </div>
@@ -4797,6 +4872,62 @@ template&lt;typename Iterator , typename T , typename BinaryPredicate &gt; </div
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af640af8977a0a8870b2c0182259373b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af640af8977a0a8870b2c0182259373b5">&#9670;&nbsp;</a></span>nearestVoxel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__host__ __device__ __forceinline__ std::pair&lt;uint3, std::uint8_t&gt; pcl::device::nearestVoxel </td>
+          <td>(</td>
+          <td class="paramtype">const float3&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned &amp;&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float3 &amp;&#160;</td>
+          <td class="paramname"><em>minp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float3 &amp;&#160;</td>
+          <td class="paramname"><em>maxp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint3 &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="approx__nearest__utils_8hpp_source.html#l00033">33</a> of file <a class="el" href="approx__nearest__utils_8hpp_source.html">approx_nearest_utils.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="approx__nearest__utils_8hpp_source.html#l00081">findNode()</a>.</p>
 
 </div>
 </div>
@@ -6578,7 +6709,7 @@ template&lt;class T &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:25</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:39</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">  /** \brief Removes points with x, y, or z equal to NaN</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    * \param cloud_in the input point cloud</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    * \param cloud_out the input point cloud</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    * \param index the mapping (ordered): cloud_out.points[i] = cloud_in.points[index[i]]</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    * \param index the mapping (ordered): cloud_out[i] = cloud_in[index[i]]</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    * \note The density of the point cloud is lost.</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    * \note Can be called with cloud_in == cloud_out</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    */</span></div>
@@ -264,10 +264,10 @@ $(function() {
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a7ad0faec6cd36907bc911dcf8b235e63"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a7ad0faec6cd36907bc911dcf8b235e63">pcl_cuda::Filter::filter_limit_max_</a></div><div class="ttdeci">double filter_limit_max_</div><div class="ttdoc">The maximum allowed filter value a point will be considered from.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00161">filter.h:161</a></div></div>
 <div class="ttc" id="anamespacepcl__cuda_html"><div class="ttname"><a href="namespacepcl__cuda.html">pcl_cuda</a></div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00041">filter.h:41</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a0e2ad4eb6da6960aec0615fc66db7788"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a0e2ad4eb6da6960aec0615fc66db7788">pcl_cuda::Filter::setFilterLimitsNegative</a></div><div class="ttdeci">void setFilterLimitsNegative(const bool limit_negative)</div><div class="ttdoc">Set to true if we want to return the data outside the interval specified by setFilterLimits (min,...</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00117">filter.h:117</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a7408c2d6a46f7fe9faa8e4de5d90695e"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a7408c2d6a46f7fe9faa8e4de5d90695e">pcl_cuda::Filter::setFilterFieldName</a></div><div class="ttdeci">void setFilterFieldName(const std::string &amp;field_name)</div><div class="ttdoc">Provide the name of the field to be used for filtering data.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00082">filter.h:82</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a391a5d4cfd9f3f884ab2b0a1170c6fa9"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a391a5d4cfd9f3f884ab2b0a1170c6fa9">pcl_cuda::Filter::filter_field_name_</a></div><div class="ttdeci">std::string filter_field_name_</div><div class="ttdoc">The desired user filter field name.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00155">filter.h:155</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">point_cloud.h:430</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a1e84824c6ceb17620a8cc51da3f4bf29"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a1e84824c6ceb17620a8cc51da3f4bf29">pcl_cuda::Filter&lt; PointCloudAOS&lt; Device &gt; &gt;::PointCloudConstPtr</a></div><div class="ttdeci">typename PointCloud::ConstPtr PointCloudConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00068">filter.h:68</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a8908b29b01abba9a7062493540fb9fb6"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a8908b29b01abba9a7062493540fb9fb6">pcl_cuda::Filter::Filter</a></div><div class="ttdeci">Filter()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00071">filter.h:71</a></div></div>
 <div class="ttc" id="aclasspcl__cuda_1_1_filter_html_a68cbc41b793515cbae01451750f5f3ea"><div class="ttname"><a href="classpcl__cuda_1_1_filter.html#a68cbc41b793515cbae01451750f5f3ea">pcl_cuda::Filter::getFilterFieldName</a></div><div class="ttdeci">const std::string getFilterFieldName()</div><div class="ttdoc">Get the name of the field used for filtering.</div><div class="ttdef"><b>Definition:</b> <a href="cuda_2filters_2include_2pcl_2cuda_2filters_2filter_8h_source.html#l00086">filter.h:86</a></div></div>
@@ -276,7 +276,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:27</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:22</p>
 </div> <!-- #footer -->
 </body>
 </html>

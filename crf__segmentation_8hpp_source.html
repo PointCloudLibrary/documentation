@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -112,11 +112,11 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef PCL_CRF_SEGMENTATION_HPP_</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define PCL_CRF_SEGMENTATION_HPP_</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;pcl/segmentation/crf_segmentation.h&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;pcl/common/io.h&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;pcl/filters/voxel_grid_label.h&gt;</span> <span class="comment">// for VoxelGridLabel</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;pcl/segmentation/crf_segmentation.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;pcl/common/io.h&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span> </div>
@@ -297,7 +297,7 @@ $(function() {
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">        if (index != -1)</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">        {</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">          data_.push_back (Eigen::Vector3i (i, j, k));</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">          color_.push_back (input_cloud_-&gt;points[index].getRGBVector3i ());</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">          color_.push_back ((*input_cloud_)[index].getRGBVector3i ());</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">        }</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">      }</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">    }</span></div>
@@ -316,7 +316,7 @@ $(function() {
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// reserve space for the data vector</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  data_.resize (filtered_cloud_-&gt;points.size ());</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  data_.resize (filtered_cloud_-&gt;size ());</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  std::vector&lt; pcl::PCLPointField &gt; fields;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// check if we have color data</span></div>
@@ -328,7 +328,7 @@ $(function() {
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (rgba_index &gt;= 0)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  {</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    color_data = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    color_.resize (filtered_cloud_-&gt;points.size ());    </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    color_.resize (filtered_cloud_-&gt;size ());    </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  }</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
@@ -340,45 +340,45 @@ $(function() {
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">  if (rgba_index &gt;= 0)</span></div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">  {</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">    normal_data = true;</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">    normal_.resize (filtered_cloud_-&gt;points.size ());    </span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">    normal_.resize (filtered_cloud_-&gt;size ());    </span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">  }</span></div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="comment">// fill the data vector</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; filtered_cloud_-&gt;points.size (); i++)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; filtered_cloud_-&gt;size (); i++)</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    Eigen::Vector3f p (filtered_anno_-&gt;points[i].x,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                       filtered_anno_-&gt;points[i].y,</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                       filtered_anno_-&gt;points[i].z);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    Eigen::Vector3f p ((*filtered_anno_)[i].x,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                       (*filtered_anno_)[i].y,</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                       (*filtered_anno_)[i].z);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    Eigen::Vector3i c = voxel_grid_.getGridCoordinates (p.x (), p.y (), p.y ());</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    data_[i] = c;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">if</span> (color_data)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    {    </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> rgb = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(&amp;filtered_cloud_-&gt;points[i].rgba);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> r = (rgb &gt;&gt; 16) &amp; 0x0000ff;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> g = (rgb &gt;&gt; 8)  &amp; 0x0000ff;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> b = (rgb)       &amp; 0x0000ff;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      std::uint32_t rgb = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(&amp;(*filtered_cloud_)[i].rgba);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      std::uint8_t r = (rgb &gt;&gt; 16) &amp; 0x0000ff;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      std::uint8_t g = (rgb &gt;&gt; 8)  &amp; 0x0000ff;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      std::uint8_t b = (rgb)       &amp; 0x0000ff;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      color_[i] = Eigen::Vector3i (r, g, b);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">    if (normal_data)</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">    {</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">      float n_x = filtered_cloud_-&gt;points[i].normal_x;</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">      float n_y = filtered_cloud_-&gt;points[i].normal_y;</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">      float n_z = filtered_cloud_-&gt;points[i].normal_z;</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">      float n_x = (*filtered_cloud_)[i].normal_x;</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">      float n_y = (*filtered_cloud_)[i].normal_y;</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">      float n_z = (*filtered_cloud_)[i].normal_z;</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">      normal_[i] = Eigen::Vector3f (n_x, n_y, n_z);</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">    }</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  }</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  normal_.resize (filtered_normal_-&gt;points.size ());</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; filtered_normal_-&gt;points.size (); i++)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  normal_.resize (filtered_normal_-&gt;size ());</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; filtered_normal_-&gt;size (); i++)</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">float</span> n_x = filtered_normal_-&gt;points[i].normal_x;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">float</span> n_y = filtered_normal_-&gt;points[i].normal_y;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">float</span> n_z = filtered_normal_-&gt;points[i].normal_z;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">float</span> n_x = (*filtered_normal_)[i].normal_x;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">float</span> n_y = (*filtered_normal_)[i].normal_y;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">float</span> n_z = (*filtered_normal_)[i].normal_z;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    normal_[i] = Eigen::Vector3f (n_x, n_y, n_z);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  </div>
@@ -401,9 +401,9 @@ $(function() {
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> n_energy = -std::log ( (1.0f - GT_PROB) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(n_labels - 1) );</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> p_energy = -std::log ( GT_PROB );</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span> (std::size_t k = 0; k &lt; filtered_anno_-&gt;points.size (); k++)</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span> (std::size_t k = 0; k &lt; filtered_anno_-&gt;size (); k++)</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">int</span> label = filtered_anno_-&gt;points[k].label;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordtype">int</span> label = (*filtered_anno_)[k].label;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (labels.empty () &amp;&amp; label &gt; 0)</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      labels.push_back (label);</div>
@@ -522,7 +522,7 @@ $(function() {
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment">  for (std::size_t i = 0; i &lt; N; i++)</span></div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">    tmp_cloud_OLD.points[i].label = map[i];</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">    tmp_cloud_OLD[i].label = map[i];</span></div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">  }</span></div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment"></span> </div>
@@ -613,7 +613,7 @@ $(function() {
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  {</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    output.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[i].label = labels[r[i]];</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    output[i].label = labels[r[i]];</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  }</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
@@ -622,12 +622,12 @@ $(function() {
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">  tmp_cloud = *filtered_anno_;</span></div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment">  bool c = true;</span></div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">  for (std::size_t i = 0; i &lt; tmp_cloud.points.size (); i++)</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">  for (std::size_t i = 0; i &lt; tmp_cloud.size (); i++)</span></div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">  {</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">    if (tmp_cloud.points[i].label != tmp_cloud_OLD.points[i].label)</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">    if (tmp_cloud[i].label != tmp_cloud_OLD[i].label)</span></div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">    {</span></div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">      </span></div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="comment">      std::cout &lt;&lt; &quot;idx: &quot; &lt;&lt; i &lt;&lt; &quot; =  &quot; &lt;&lt;tmp_cloud.points[i].label &lt;&lt; &quot; |  &quot; &lt;&lt; tmp_cloud_OLD.points[i].label &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="comment">      std::cout &lt;&lt; &quot;idx: &quot; &lt;&lt; i &lt;&lt; &quot; =  &quot; &lt;&lt;tmp_cloud[i].label &lt;&lt; &quot; |  &quot; &lt;&lt; tmp_cloud_OLD[i].label &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="comment">      c = false;</span></div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="comment">      break;</span></div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="comment">    }</span></div>
@@ -673,25 +673,23 @@ $(function() {
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="preprocessor">#endif    // PCL_CRF_SEGMENTATION_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasspcl_1_1_voxel_grid_html"><div class="ttname"><a href="classpcl_1_1_voxel_grid.html">pcl::VoxelGrid</a></div><div class="ttdoc">VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2voxel__grid_8h_source.html#l00177">voxel_grid.h:177</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_dense_crf_html"><div class="ttname"><a href="classpcl_1_1_dense_crf.html">pcl::DenseCrf</a></div><div class="ttdef"><b>Definition:</b> <a href="densecrf_8h_source.html#l00050">densecrf.h:50</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_voxel_grid_html"><div class="ttname"><a href="classpcl_1_1_voxel_grid.html">pcl::VoxelGrid</a></div><div class="ttdoc">VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2voxel__grid_8h_source.html#l00176">voxel_grid.h:176</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_dense_crf_html"><div class="ttname"><a href="classpcl_1_1_dense_crf.html">pcl::DenseCrf</a></div><div class="ttdef"><b>Definition:</b> <a href="densecrf_8h_source.html#l00048">densecrf.h:48</a></div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a7c55bf09e463d214a43d2bd7ceab7753"><div class="ttname"><a href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">pcl::uint32_t</a></div><div class="ttdeci">std::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00058">types.h:58</a></div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdef"><b>Definition:</b> <a href="bfgs_8h_source.html#l00009">bfgs.h:9</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af16a62638198313b9c093127c492c884"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">pcl::PointCloud::points</a></div><div class="ttdeci">std::vector&lt; PointT, Eigen::aligned_allocator&lt; PointT &gt; &gt; points</div><div class="ttdoc">The point data.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">point_cloud.h:411</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_voxel_grid_html_a1694d46442c66f7071235a8571dd602a"><div class="ttname"><a href="classpcl_1_1_voxel_grid.html#a1694d46442c66f7071235a8571dd602a">pcl::VoxelGrid::setDownsampleAllData</a></div><div class="ttdeci">void setDownsampleAllData(bool downsample)</div><div class="ttdoc">Set to true if all fields need to be downsampled, or false if just XYZ.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2voxel__grid_8h_source.html#l00256">voxel_grid.h:256</a></div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdef"><b>Definition:</b> <a href="bfgs_8h_source.html#l00010">bfgs.h:10</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_voxel_grid_html_a1694d46442c66f7071235a8571dd602a"><div class="ttname"><a href="classpcl_1_1_voxel_grid.html#a1694d46442c66f7071235a8571dd602a">pcl::VoxelGrid::setDownsampleAllData</a></div><div class="ttdeci">void setDownsampleAllData(bool downsample)</div><div class="ttdoc">Set to true if all fields need to be downsampled, or false if just XYZ.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2voxel__grid_8h_source.html#l00255">voxel_grid.h:255</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_dense_crf_html_a5bb93254b147b20fff03f849353a0679"><div class="ttname"><a href="classpcl_1_1_dense_crf.html#a5bb93254b147b20fff03f849353a0679">pcl::DenseCrf::addPairwiseGaussian</a></div><div class="ttdeci">void addPairwiseGaussian(float sx, float sy, float sz, float w)</div><div class="ttdoc">Add a pairwise gaussian kernel.</div></div>
-<div class="ttc" id="aclasspcl_1_1_voxel_grid_html_aa5d7831e665977bdce76ed05bd0005cf"><div class="ttname"><a href="classpcl_1_1_voxel_grid.html#aa5d7831e665977bdce76ed05bd0005cf">pcl::VoxelGrid::setLeafSize</a></div><div class="ttdeci">void setLeafSize(const Eigen::Vector4f &amp;leaf_size)</div><div class="ttdoc">Set the voxel grid leaf size.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2voxel__grid_8h_source.html#l00222">voxel_grid.h:222</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_l_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b_l.html">pcl::PointXYZRGBL</a></div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00659">point_types.hpp:659</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_voxel_grid_html_aa5d7831e665977bdce76ed05bd0005cf"><div class="ttname"><a href="classpcl_1_1_voxel_grid.html#aa5d7831e665977bdce76ed05bd0005cf">pcl::VoxelGrid::setLeafSize</a></div><div class="ttdeci">void setLeafSize(const Eigen::Vector4f &amp;leaf_size)</div><div class="ttdoc">Set the voxel grid leaf size.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2voxel__grid_8h_source.html#l00221">voxel_grid.h:221</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_l_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b_l.html">pcl::PointXYZRGBL</a></div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00705">point_types.hpp:705</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_dense_crf_html_a7bd8a262e025dcc1ea406842d9669c35"><div class="ttname"><a href="classpcl_1_1_dense_crf.html#a7bd8a262e025dcc1ea406842d9669c35">pcl::DenseCrf::addPairwiseBilateral</a></div><div class="ttdeci">void addPairwiseBilateral(float sx, float sy, float sz, float sr, float sg, float sb, float w)</div><div class="ttdoc">Add a bilateral gaussian kernel.</div></div>
 <div class="ttc" id="aclasspcl_1_1_dense_crf_html_ab4194885f99688000dab1a5809c3881d"><div class="ttname"><a href="classpcl_1_1_dense_crf.html#ab4194885f99688000dab1a5809c3881d">pcl::DenseCrf::mapInference</a></div><div class="ttdeci">void mapInference(int n_iterations, std::vector&lt; int &gt; &amp;result, float relax=1.0f)</div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a1386282c07bec32f93163e9cb390c49c"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a1386282c07bec32f93163e9cb390c49c">pcl::CrfSegmentation::segmentPoints</a></div><div class="ttdeci">void segmentPoints(pcl::PointCloud&lt; pcl::PointXYZRGBL &gt; &amp;output)</div><div class="ttdoc">This method simply launches the segmentation algorithm.</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00384">crf_segmentation.hpp:384</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_filter_html_a17115897ca28f6b12950d023958aa641"><div class="ttname"><a href="classpcl_1_1_filter.html#a17115897ca28f6b12950d023958aa641">pcl::Filter::filter</a></div><div class="ttdeci">void filter(PointCloud &amp;output)</div><div class="ttdoc">Calls the filtering method and returns the filtered dataset in output.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00124">filter.h:124</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_filter_html_a17115897ca28f6b12950d023958aa641"><div class="ttname"><a href="classpcl_1_1_filter.html#a17115897ca28f6b12950d023958aa641">pcl::Filter::filter</a></div><div class="ttdeci">void filter(PointCloud &amp;output)</div><div class="ttdoc">Calls the filtering method and returns the filtered dataset in output.</div><div class="ttdef"><b>Definition:</b> <a href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00121">filter.h:121</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a41a3fd6f0d0630bff6c3bf1c414e2855"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a41a3fd6f0d0630bff6c3bf1c414e2855">pcl::CrfSegmentation::setAnnotatedCloud</a></div><div class="ttdeci">void setAnnotatedCloud(typename pcl::PointCloud&lt; pcl::PointXYZRGBL &gt;::Ptr anno_cloud)</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00079">crf_segmentation.hpp:79</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="projection__matrix_8h_source.html#l00053">projection_matrix.h:53</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a></div><div class="ttdoc">PointCloud represents the base class in PCL for storing collections of 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2distances_8h_source.html#l00055">distances.h:55</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a638a8fc586d7375d4ac519387e31a956"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a638a8fc586d7375d4ac519387e31a956">pcl::CrfSegmentation::setSmoothnessKernelParameters</a></div><div class="ttdeci">void setSmoothnessKernelParameters(const float sx, const float sy, const float sz, const float w)</div><div class="ttdoc">Set the smoothness kernel parameters.</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00102">crf_segmentation.hpp:102</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_p_c_l_base_html_a1952d7101f3942bac3b69ed55c1ca7ea"><div class="ttname"><a href="classpcl_1_1_p_c_l_base.html#a1952d7101f3942bac3b69ed55c1ca7ea">pcl::PCLBase::setInputCloud</a></div><div class="ttdeci">virtual void setInputCloud(const PointCloudConstPtr &amp;cloud)</div><div class="ttdoc">Provide a pointer to the input dataset.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__base_8hpp_source.html#l00065">pcl_base.hpp:65</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00628">point_types.hpp:628</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00674">point_types.hpp:674</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a09a2d626e38c6f10bcd40720e521459f"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a09a2d626e38c6f10bcd40720e521459f">pcl::CrfSegmentation::createVoxelGrid</a></div><div class="ttdeci">void createVoxelGrid()</div><div class="ttdoc">Create a voxel grid to discretize the scene.</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00144">crf_segmentation.hpp:144</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_dense_crf_html_a663f306e79a003f9dbb98a7a5cdebfab"><div class="ttname"><a href="classpcl_1_1_dense_crf.html#a663f306e79a003f9dbb98a7a5cdebfab">pcl::DenseCrf::setUnaryEnergy</a></div><div class="ttdeci">void setUnaryEnergy(const std::vector&lt; float &gt; unary)</div></div>
 <div class="ttc" id="aclasspcl_1_1_dense_crf_html_a33e8213e584327007736f63ba5f1ea2e"><div class="ttname"><a href="classpcl_1_1_dense_crf.html#a33e8213e584327007736f63ba5f1ea2e">pcl::DenseCrf::setColorVector</a></div><div class="ttdeci">void setColorVector(const std::vector&lt; Eigen::Vector3i, Eigen::aligned_allocator&lt; Eigen::Vector3i &gt;&gt; color)</div><div class="ttdoc">The associated color of the data.</div></div>
@@ -699,10 +697,9 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a08176d7e3402c06c477d5cbfd61bc68e"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a08176d7e3402c06c477d5cbfd61bc68e">pcl::CrfSegmentation::createUnaryPotentials</a></div><div class="ttdeci">void createUnaryPotentials(std::vector&lt; float &gt; &amp;unary, std::vector&lt; int &gt; &amp;colors, unsigned int n_labels)</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00318">crf_segmentation.hpp:318</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_ae38ac15bbb1fd068f489ca2f1abbb546"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#ae38ac15bbb1fd068f489ca2f1abbb546">pcl::CrfSegmentation::setInputCloud</a></div><div class="ttdeci">void setInputCloud(typename pcl::PointCloud&lt; PointT &gt;::Ptr input_cloud)</div><div class="ttdoc">This method sets the input cloud.</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00072">crf_segmentation.hpp:72</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a2034500b09110432396c7eb30acaca7e"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a2034500b09110432396c7eb30acaca7e">pcl::CrfSegmentation::~CrfSegmentation</a></div><div class="ttdeci">~CrfSegmentation()</div><div class="ttdoc">This destructor destroys the cloud...</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00066">crf_segmentation.hpp:66</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_normal_html"><div class="ttname"><a href="structpcl_1_1_point_normal.html">pcl::PointNormal</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, together with normal coordinates and the su...</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00885">point_types.hpp:885</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_normal_html"><div class="ttname"><a href="structpcl_1_1_point_normal.html">pcl::PointNormal</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, together with normal coordinates and the su...</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00972">point_types.hpp:972</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_voxel_grid_label_html"><div class="ttname"><a href="classpcl_1_1_voxel_grid_label.html">pcl::VoxelGridLabel</a></div><div class="ttdef"><b>Definition:</b> <a href="voxel__grid__label_8h_source.html#l00050">voxel_grid_label.h:50</a></div></div>
-<div class="ttc" id="anamespacepcl_html_aea8ace9e1a2351f301fd4b89b2940811"><div class="ttname"><a href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">pcl::uint8_t</a></div><div class="ttdeci">std::uint8_t uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_dense_crf_html_a57ca364763a074da34a36b30ffeb25ad"><div class="ttname"><a href="classpcl_1_1_dense_crf.html#a57ca364763a074da34a36b30ffeb25ad">pcl::DenseCrf::setDataVector</a></div><div class="ttdeci">void setDataVector(const std::vector&lt; Eigen::Vector3i, Eigen::aligned_allocator&lt; Eigen::Vector3i &gt;&gt; data)</div><div class="ttdoc">Set the input data vector.</div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a19fc8b979cd5bd7e8a80054329b63f56"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a19fc8b979cd5bd7e8a80054329b63f56">pcl::CrfSegmentation::setVoxelGridLeafSize</a></div><div class="ttdeci">void setVoxelGridLeafSize(const float x, const float y, const float z)</div><div class="ttdoc">Set the leaf size for the voxel grid.</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00093">crf_segmentation.hpp:93</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_crf_segmentation_html_a9e6711e047952f4b01f19ce74bda83d0"><div class="ttname"><a href="classpcl_1_1_crf_segmentation.html#a9e6711e047952f4b01f19ce74bda83d0">pcl::CrfSegmentation::setNormalCloud</a></div><div class="ttdeci">void setNormalCloud(typename pcl::PointCloud&lt; pcl::PointNormal &gt;::Ptr normal_cloud)</div><div class="ttdef"><b>Definition:</b> <a href="crf__segmentation_8hpp_source.html#l00086">crf_segmentation.hpp:86</a></div></div>
@@ -715,7 +712,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:52</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:49</p>
 </div> <!-- #footer -->
 </body>
 </html>

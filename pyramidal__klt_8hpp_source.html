@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -137,12 +137,12 @@ $(function() {
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointUV&gt;::Ptr</a> p(<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;pcl::PointUV&gt;</a>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    p-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#ab2d68c32d71772ac16943d65e87deb98">reserve</a>(keypoints_nbr_);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; keypoints_nbr_; ++i)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      p-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a0b4d7abee110e47d90635eb042488bb4">push_back</a>(keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[i]);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      p-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a0b4d7abee110e47d90635eb042488bb4">push_back</a>((*keypoints)[i]);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    keypoints_ = p;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  keypoints_status_.reset(<span class="keyword">new</span> <a class="code" href="structpcl_1_1_point_indices.html">pcl::PointIndices</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  keypoints_status_-&gt;indices.<a class="code" href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">resize</a>(keypoints_-&gt;size(), 0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  keypoints_status_.reset(<span class="keyword">new</span> std::vector&lt;int&gt;);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  keypoints_status_-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">resize</a>(keypoints_-&gt;size(), 0);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
@@ -177,13 +177,13 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (!input_-&gt;isOrganized()) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    PCL_ERROR(</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="stringliteral">&quot;[pcl::tracking::%s::initCompute] Need an organized point cloud to proceed!&quot;</span>,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="stringliteral">&quot;[pcl::tracking::%s::initCompute] Need an organized point cloud to proceed!\n&quot;</span>,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        tracker_name_.c_str());</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">if</span> (!keypoints_ || keypoints_-&gt;empty()) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    PCL_ERROR(<span class="stringliteral">&quot;[pcl::tracking::%s::initCompute] No keypoints aborting!&quot;</span>,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    PCL_ERROR(<span class="stringliteral">&quot;[pcl::tracking::%s::initCompute] No keypoints aborting!\n&quot;</span>,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;              tracker_name_.c_str());</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
@@ -216,14 +216,14 @@ $(function() {
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (nb_levels_ &lt; 2) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      PCL_ERROR(<span class="stringliteral">&quot;[pcl::tracking::%s::initCompute] Number of pyramid levels should be &quot;</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="stringliteral">&quot;at least 2!&quot;</span>,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="stringliteral">&quot;at least 2!\n&quot;</span>,</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                tracker_name_.c_str());</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span> (nb_levels_ &gt; 5) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      PCL_ERROR(<span class="stringliteral">&quot;[pcl::tracking::%s::initCompute] Number of pyramid levels should not &quot;</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="stringliteral">&quot;exceed 5!&quot;</span>,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="stringliteral">&quot;exceed 5!\n&quot;</span>,</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                tracker_name_.c_str());</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">return</span> (<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
@@ -268,15 +268,15 @@ $(function() {
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  ++trow0;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">float</span>* trow1 = row1;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  ++trow1;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span>* src_ptr = &amp;(src.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[0]);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span>* src_ptr = &amp;(src[0]);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++) {</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* srow0 = src_ptr + (y &gt; 0 ? y - 1 : height &gt; 1 ? 1 : 0) * width;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* srow1 = src_ptr + y * width;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* srow2 =</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        src_ptr + (y &lt; height - 1 ? y + 1 : height &gt; 1 ? height - 2 : 0) * width;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">float</span>* grad_x_row = &amp;(grad_x.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[y * width]);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">float</span>* grad_y_row = &amp;(grad_y.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[y * width]);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">float</span>* grad_x_row = &amp;(grad_x[y * width]);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">float</span>* grad_y_row = &amp;(grad_y[y * width]);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// do vertical convolution</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; width; x++) {</div>
@@ -448,7 +448,7 @@ $(function() {
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">  num_threads(threads_)</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="comment">// clang-format on</span></div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; static_cast&lt;int&gt;(input-&gt;size()); ++i)</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    tmp-&gt;points[i] = intensity_(input-&gt;points[i]);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    (*tmp)[i] = intensity_((*input)[i]);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  previous = tmp;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a7a84910bccd8a31f285f4949b22cb4e7">FloatImagePtr</a> img(<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>(previous-&gt;width + 2 * track_width_,</div>
@@ -556,303 +556,298 @@ $(function() {
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  covariance.setZero();</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; track_height_; y++) {</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* img_ptr = &amp;(img.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[0]) + (y + location[1]) * step + location[0];</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* grad_x_ptr =</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        &amp;(grad_x.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[0]) + (y + location[1]) * step + location[0];</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* grad_y_ptr =</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        &amp;(grad_y.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[0]) + (y + location[1]) * step + location[0];</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordtype">float</span>* win_ptr = win.data() + y * win.cols();</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordtype">float</span>* grad_x_win_ptr = grad_x_win.data() + y * grad_x_win.cols();</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordtype">float</span>* grad_y_win_ptr = grad_y_win.data() + y * grad_y_win.cols();</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; track_width_; ++x, ++grad_x_ptr, ++grad_y_ptr) {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      *win_ptr++ = img_ptr[x] * weight[0] + img_ptr[x + 1] * weight[1] +</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                   img_ptr[x + step] * weight[2] + img_ptr[x + step + 1] * weight[3];</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      <span class="keywordtype">float</span> ixval = grad_x_ptr[0] * weight[0] + grad_x_ptr[1] * weight[1] +</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                    grad_x_ptr[step] * weight[2] + grad_x_ptr[step + 1] * weight[3];</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;      <span class="keywordtype">float</span> iyval = grad_y_ptr[0] * weight[0] + grad_y_ptr[1] * weight[1] +</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                    grad_y_ptr[step] * weight[2] + grad_y_ptr[step + 1] * weight[3];<span class="comment"></span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">      //!!! store those</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment"></span>      *grad_x_win_ptr++ = ixval;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;      *grad_y_win_ptr++ = iyval;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      <span class="comment">// covariance components</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      covariance[0] += ixval * ixval;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      covariance[1] += ixval * iyval;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      covariance[2] += iyval * iyval;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  }</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;}</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>InT, <span class="keyword">typename</span> IntensityT&gt;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno"><a class="line" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0ca3900df6b883042d58d75038a4ddbc">  518</a></span>&#160;<a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0ca3900df6b883042d58d75038a4ddbc">PyramidalKLTTracker&lt;PointInT, IntensityT&gt;::mismatchVector</a>(</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">const</span> Eigen::ArrayXXf&amp; prev,</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keyword">const</span> Eigen::ArrayXXf&amp; prev_grad_x,</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keyword">const</span> Eigen::ArrayXXf&amp; prev_grad_y,</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; next,</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keyword">const</span> Eigen::Array2i&amp; location,</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keyword">const</span> Eigen::Array4f&amp; weight,</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    Eigen::Array2f&amp; b)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> step = next.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a>;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  b.setZero();</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; track_height_; y++) {</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* next_ptr = &amp;(next.<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[0]) + (y + location[1]) * step + location[0];</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* prev_ptr = prev.data() + y * prev.cols();</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* prev_grad_x_ptr = prev_grad_x.data() + y * prev_grad_x.cols();</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* prev_grad_y_ptr = prev_grad_y.data() + y * prev_grad_y.cols();</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160; </div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; track_width_; ++x, ++prev_grad_y_ptr, ++prev_grad_x_ptr) {</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;      <span class="keywordtype">float</span> diff = next_ptr[x] * weight[0] + next_ptr[x + 1] * weight[1] +</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                   next_ptr[x + step] * weight[2] + next_ptr[x + step + 1] * weight[3] -</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                   prev_ptr[x];</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      b[0] += *prev_grad_x_ptr * diff;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      b[1] += *prev_grad_y_ptr * diff;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  }</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>InT, <span class="keyword">typename</span> IntensityT&gt;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00548"></a><span class="lineno"><a class="line" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9e94ed5e077752d3f13d2a33e28d1a4a">  548</a></span>&#160;<a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9e94ed5e077752d3f13d2a33e28d1a4a">PyramidalKLTTracker&lt;PointInT, IntensityT&gt;::track</a>(</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a6af3c6374dbd2147b5907a5e04015058">PointCloudInConstPtr</a>&amp; prev_input,</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a6af3c6374dbd2147b5907a5e04015058">PointCloudInConstPtr</a>&amp; input,</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keyword">const</span> std::vector&lt;FloatImageConstPtr&gt;&amp; prev_pyramid,</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keyword">const</span> std::vector&lt;FloatImageConstPtr&gt;&amp; pyramid,</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud&lt;pcl::PointUV&gt;::ConstPtr</a>&amp; prev_keypoints,</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointUV&gt;::Ptr</a>&amp; keypoints,</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    std::vector&lt;int&gt;&amp; status,</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    Eigen::Affine3f&amp; motion)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  std::vector&lt;Eigen::Array2f, Eigen::aligned_allocator&lt;Eigen::Array2f&gt;&gt; next_pts(</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">size</a>());</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  Eigen::Array2f half_win((track_width_ - 1) * 0.5f, (track_height_ - 1) * 0.5f);</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  <a class="code" href="classpcl_1_1_transformation_from_correspondences.html">pcl::TransformationFromCorrespondences</a> transformation_computer;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_points = prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">size</a>();</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = nb_levels_ - 1; level &gt;= 0; --level) {</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; prev = *(prev_pyramid[level * 3]);</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; next = *(pyramid[level * 3]);</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; grad_x = *(prev_pyramid[level * 3 + 1]);</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; grad_y = *(prev_pyramid[level * 3 + 2]);</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    Eigen::ArrayXXf prev_win(track_height_, track_width_);</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    Eigen::ArrayXXf grad_x_win(track_height_, track_width_);</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    Eigen::ArrayXXf grad_y_win(track_height_, track_width_);</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordtype">float</span> ratio(1. / (1 &lt;&lt; level));</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ptidx = 0; ptidx &lt; nb_points; ptidx++) {</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;      Eigen::Array2f prev_pt(prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[ptidx].u * ratio,</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                             prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[ptidx].v * ratio);</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;      Eigen::Array2f next_pt;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      <span class="keywordflow">if</span> (level == nb_levels_ - 1)</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        next_pt = prev_pt;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        next_pt = next_pts[ptidx] * 2.f;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* img_ptr = &amp;(img[0]) + (y + location[1]) * step + location[0];</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* grad_x_ptr = &amp;(grad_x[0]) + (y + location[1]) * step + location[0];</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* grad_y_ptr = &amp;(grad_y[0]) + (y + location[1]) * step + location[0];</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordtype">float</span>* win_ptr = win.data() + y * win.cols();</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">float</span>* grad_x_win_ptr = grad_x_win.data() + y * grad_x_win.cols();</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keywordtype">float</span>* grad_y_win_ptr = grad_y_win.data() + y * grad_y_win.cols();</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; track_width_; ++x, ++grad_x_ptr, ++grad_y_ptr) {</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      *win_ptr++ = img_ptr[x] * weight[0] + img_ptr[x + 1] * weight[1] +</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                   img_ptr[x + step] * weight[2] + img_ptr[x + step + 1] * weight[3];</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      <span class="keywordtype">float</span> ixval = grad_x_ptr[0] * weight[0] + grad_x_ptr[1] * weight[1] +</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                    grad_x_ptr[step] * weight[2] + grad_x_ptr[step + 1] * weight[3];</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      <span class="keywordtype">float</span> iyval = grad_y_ptr[0] * weight[0] + grad_y_ptr[1] * weight[1] +</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                    grad_y_ptr[step] * weight[2] + grad_y_ptr[step + 1] * weight[3];<span class="comment"></span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="comment">      //!!! store those</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="comment"></span>      *grad_x_win_ptr++ = ixval;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;      *grad_y_win_ptr++ = iyval;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;      <span class="comment">// covariance components</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;      covariance[0] += ixval * ixval;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      covariance[1] += ixval * iyval;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      covariance[2] += iyval * iyval;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    }</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  }</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>InT, <span class="keyword">typename</span> IntensityT&gt;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno"><a class="line" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0ca3900df6b883042d58d75038a4ddbc">  516</a></span>&#160;<a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0ca3900df6b883042d58d75038a4ddbc">PyramidalKLTTracker&lt;PointInT, IntensityT&gt;::mismatchVector</a>(</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keyword">const</span> Eigen::ArrayXXf&amp; prev,</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keyword">const</span> Eigen::ArrayXXf&amp; prev_grad_x,</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">const</span> Eigen::ArrayXXf&amp; prev_grad_y,</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; next,</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keyword">const</span> Eigen::Array2i&amp; location,</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keyword">const</span> Eigen::Array4f&amp; weight,</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    Eigen::Array2f&amp; b)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> step = next.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a>;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  b.setZero();</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; track_height_; y++) {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* next_ptr = &amp;(next[0]) + (y + location[1]) * step + location[0];</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* prev_ptr = prev.data() + y * prev.cols();</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* prev_grad_x_ptr = prev_grad_x.data() + y * prev_grad_x.cols();</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>* prev_grad_y_ptr = prev_grad_y.data() + y * prev_grad_y.cols();</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; track_width_; ++x, ++prev_grad_y_ptr, ++prev_grad_x_ptr) {</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;      <span class="keywordtype">float</span> diff = next_ptr[x] * weight[0] + next_ptr[x + 1] * weight[1] +</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                   next_ptr[x + step] * weight[2] + next_ptr[x + step + 1] * weight[3] -</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                   prev_ptr[x];</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      b[0] += *prev_grad_x_ptr * diff;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      b[1] += *prev_grad_y_ptr * diff;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    }</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  }</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;}</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>InT, <span class="keyword">typename</span> IntensityT&gt;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno"><a class="line" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9e94ed5e077752d3f13d2a33e28d1a4a">  546</a></span>&#160;<a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9e94ed5e077752d3f13d2a33e28d1a4a">PyramidalKLTTracker&lt;PointInT, IntensityT&gt;::track</a>(</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a6af3c6374dbd2147b5907a5e04015058">PointCloudInConstPtr</a>&amp; prev_input,</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a6af3c6374dbd2147b5907a5e04015058">PointCloudInConstPtr</a>&amp; input,</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keyword">const</span> std::vector&lt;FloatImageConstPtr&gt;&amp; prev_pyramid,</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">const</span> std::vector&lt;FloatImageConstPtr&gt;&amp; pyramid,</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud&lt;pcl::PointUV&gt;::ConstPtr</a>&amp; prev_keypoints,</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointUV&gt;::Ptr</a>&amp; keypoints,</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    std::vector&lt;int&gt;&amp; status,</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    Eigen::Affine3f&amp; motion)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  std::vector&lt;Eigen::Array2f, Eigen::aligned_allocator&lt;Eigen::Array2f&gt;&gt; next_pts(</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">size</a>());</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;  Eigen::Array2f half_win((track_width_ - 1) * 0.5f, (track_height_ - 1) * 0.5f);</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  <a class="code" href="classpcl_1_1_transformation_from_correspondences.html">pcl::TransformationFromCorrespondences</a> transformation_computer;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_points = prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">size</a>();</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> level = nb_levels_ - 1; level &gt;= 0; --level) {</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; prev = *(prev_pyramid[level * 3]);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; next = *(pyramid[level * 3]);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; grad_x = *(prev_pyramid[level * 3 + 1]);</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keyword">const</span> <a class="code" href="classpcl_1_1_point_cloud.html">FloatImage</a>&amp; grad_y = *(prev_pyramid[level * 3 + 2]);</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160; </div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    Eigen::ArrayXXf prev_win(track_height_, track_width_);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    Eigen::ArrayXXf grad_x_win(track_height_, track_width_);</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    Eigen::ArrayXXf grad_y_win(track_height_, track_width_);</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordtype">float</span> ratio(1. / (1 &lt;&lt; level));</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ptidx = 0; ptidx &lt; nb_points; ptidx++) {</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;      Eigen::Array2f prev_pt((*prev_keypoints)[ptidx].u * ratio,</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                             (*prev_keypoints)[ptidx].v * ratio);</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;      Eigen::Array2f next_pt;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;      <span class="keywordflow">if</span> (level == nb_levels_ - 1)</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        next_pt = prev_pt;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        next_pt = next_pts[ptidx] * 2.f;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      next_pts[ptidx] = next_pt;</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160; </div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;      next_pts[ptidx] = next_pt;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      Eigen::Array2i iprev_point;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;      prev_pt -= half_win;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;      iprev_point[0] = std::floor(prev_pt[0]);</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      iprev_point[1] = std::floor(prev_pt[1]);</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;      <span class="keywordflow">if</span> (iprev_point[0] &lt; -track_width_ ||</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;          (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)iprev_point[0] &gt;= grad_x.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> ||</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;          iprev_point[1] &lt; -track_height_ ||</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;          (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)iprev_point[1] &gt;= grad_y.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>) {</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordflow">if</span> (level == 0)</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;          status[ptidx] = -1;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;      }</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160; </div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      <span class="keywordtype">float</span> a = prev_pt[0] - iprev_point[0];</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;      <span class="keywordtype">float</span> b = prev_pt[1] - iprev_point[1];</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      Eigen::Array4f weight;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;      weight[0] = (1.f - a) * (1.f - b);</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;      weight[1] = a * (1.f - b);</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;      weight[2] = (1.f - a) * b;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;      weight[3] = 1 - weight[0] - weight[1] - weight[2];</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;      Eigen::Array3f covar = Eigen::Array3f::Zero();</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;      spatialGradient(prev,</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                      grad_x,</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                      grad_y,</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                      iprev_point,</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                      weight,</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                      prev_win,</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                      grad_x_win,</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                      grad_y_win,</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                      covar);</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;      <span class="keywordtype">float</span> det = covar[0] * covar[2] - covar[1] * covar[1];</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;      <span class="keywordtype">float</span> min_eigenvalue = (covar[2] + covar[0] -</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                              std::sqrt((covar[0] - covar[2]) * (covar[0] - covar[2]) +</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                                        4.f * covar[1] * covar[1])) /</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                             2.f;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;      <span class="keywordflow">if</span> (min_eigenvalue &lt; min_eigenvalue_threshold_ ||</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;          det &lt; std::numeric_limits&lt;float&gt;::epsilon()) {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        status[ptidx] = -2;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;      }</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;      det = 1.f / det;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;      next_pt -= half_win;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160; </div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;      Eigen::Array2f prev_delta(0, 0);</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; max_iterations_; j++) {</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        Eigen::Array2i inext_pt = next_pt.floor().cast&lt;<span class="keywordtype">int</span>&gt;();</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        <span class="keywordflow">if</span> (inext_pt[0] &lt; -track_width_ || (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)inext_pt[0] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> ||</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;            inext_pt[1] &lt; -track_height_ || (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)inext_pt[1] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>) {</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;          <span class="keywordflow">if</span> (level == 0)</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            status[ptidx] = -1;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        }</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        a = next_pt[0] - inext_pt[0];</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        b = next_pt[1] - inext_pt[1];</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        weight[0] = (1.f - a) * (1.f - b);</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        weight[1] = a * (1.f - b);</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        weight[2] = (1.f - a) * b;</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        weight[3] = 1 - weight[0] - weight[1] - weight[2];</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="comment">// compute mismatch vector</span></div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        Eigen::Array2f beta = Eigen::Array2f::Zero();</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        mismatchVector(prev_win, grad_x_win, grad_y_win, next, inext_pt, weight, beta);</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        <span class="comment">// optical flow resolution</span></div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        Eigen::Vector2f delta((covar[1] * beta[1] - covar[2] * beta[0]) * det,</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                              (covar[1] * beta[0] - covar[0] * beta[1]) * det);</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <span class="comment">// update position</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        next_pt[0] += delta[0];</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        next_pt[1] += delta[1];</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        next_pts[ptidx] = next_pt + half_win;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keywordflow">if</span> (delta.squaredNorm() &lt;= epsilon_)</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="keywordflow">if</span> (j &gt; 0 &amp;&amp; std::abs(delta[0] + prev_delta[0]) &lt; 0.01 &amp;&amp;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            std::abs(delta[1] + prev_delta[1]) &lt; 0.01) {</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;          next_pts[ptidx][0] -= delta[0] * 0.5f;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;          next_pts[ptidx][1] -= delta[1] * 0.5f;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        }</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        <span class="comment">// update delta</span></div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        prev_delta = delta;</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;      }</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160; </div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;      <span class="comment">// update tracked points</span></div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;      <span class="keywordflow">if</span> (level == 0 &amp;&amp; !status[ptidx]) {</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        Eigen::Array2f next_point = next_pts[ptidx] - half_win;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        Eigen::Array2i inext_point;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160; </div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        inext_point[0] = std::floor(next_point[0]);</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        inext_point[1] = std::floor(next_point[1]);</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keywordflow">if</span> (inext_point[0] &lt; -track_width_ ||</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;            (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)inext_point[0] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> ||</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            inext_point[1] &lt; -track_height_ ||</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)inext_point[1] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>) {</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;          status[ptidx] = -1;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        }</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        <span class="comment">// insert valid keypoint</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <a class="code" href="structpcl_1_1_point_u_v.html">pcl::PointUV</a> n;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        n.<a class="code" href="structpcl_1_1_point_u_v.html#a359095abf28692c22c5f9723e8e12ea8">u</a> = next_pts[ptidx][0];</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        n.<a class="code" href="structpcl_1_1_point_u_v.html#a9f7fc4bac2b480c5bb5287072e47b134">v</a> = next_pts[ptidx][1];</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a0b4d7abee110e47d90635eb042488bb4">push_back</a>(n);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="comment">// add points pair to compute transformation</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        inext_point[0] = std::floor(next_pts[ptidx][0]);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        inext_point[1] = std::floor(next_pts[ptidx][1]);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        iprev_point[0] = std::floor(prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[ptidx].u);</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        iprev_point[1] = std::floor(prev_keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">points</a>[ptidx].v);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keyword">const</span> PointInT&amp; prev_pt =</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            prev_input-&gt;points[iprev_point[1] * prev_input-&gt;width + iprev_point[0]];</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="keyword">const</span> PointInT&amp; next_pt =</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            input-&gt;points[inext_point[1] * input-&gt;width + inext_point[0]];</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        transformation_computer.<a class="code" href="classpcl_1_1_transformation_from_correspondences.html#a156ee80d46da72d70f4a1411e9dd06f6">add</a>(</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            prev_pt.getVector3fMap(), next_pt.getVector3fMap(), 1.0);</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;      }</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    }</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;  }</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  motion = transformation_computer.<a class="code" href="classpcl_1_1_transformation_from_correspondences.html#a0126a0d3c7fcf5f762bd76359fffc95f">getTransformation</a>();</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;}</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>InT, <span class="keyword">typename</span> IntensityT&gt;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno"><a class="line" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a8b83d360af5da71df3c8640fa91795e4">  713</a></span>&#160;<a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a8b83d360af5da71df3c8640fa91795e4">PyramidalKLTTracker&lt;PointInT, IntensityT&gt;::computeTracking</a>()</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;{</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="keywordflow">if</span> (!initialized_)</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160; </div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  std::vector&lt;FloatImageConstPtr&gt; pyramid;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  computePyramids(input_, pyramid, <a class="code" href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485a26da236fd0703b20c18e7ee64cb6422b">pcl::BORDER_REFLECT_101</a>);</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointUV&gt;::Ptr</a> keypoints(<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;pcl::PointUV&gt;</a>);</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#ab2d68c32d71772ac16943d65e87deb98">reserve</a>(keypoints_-&gt;size());</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  std::vector&lt;int&gt; status(keypoints_-&gt;size(), 0);</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  track(ref_, input_, ref_pyramid_, pyramid, keypoints_, keypoints, status, motion_);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="comment">// swap reference and input</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  ref_ = input_;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;  ref_pyramid_ = pyramid;</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  keypoints_ = keypoints;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  keypoints_status_-&gt;indices = status;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;}</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;} <span class="comment">// namespace tracking</span></div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;} <span class="comment">// namespace pcl</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;      Eigen::Array2i iprev_point;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;      prev_pt -= half_win;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      iprev_point[0] = std::floor(prev_pt[0]);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;      iprev_point[1] = std::floor(prev_pt[1]);</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      <span class="keywordflow">if</span> (iprev_point[0] &lt; -track_width_ ||</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;          (std::uint32_t)iprev_point[0] &gt;= grad_x.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> ||</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;          iprev_point[1] &lt; -track_height_ ||</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;          (std::uint32_t)iprev_point[1] &gt;= grad_y.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>) {</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="keywordflow">if</span> (level == 0)</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;          status[ptidx] = -1;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;      }</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;      <span class="keywordtype">float</span> a = prev_pt[0] - iprev_point[0];</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;      <span class="keywordtype">float</span> b = prev_pt[1] - iprev_point[1];</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;      Eigen::Array4f weight;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;      weight[0] = (1.f - a) * (1.f - b);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;      weight[1] = a * (1.f - b);</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;      weight[2] = (1.f - a) * b;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;      weight[3] = 1 - weight[0] - weight[1] - weight[2];</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;      Eigen::Array3f covar = Eigen::Array3f::Zero();</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;      spatialGradient(prev,</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                      grad_x,</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                      grad_y,</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                      iprev_point,</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                      weight,</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                      prev_win,</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                      grad_x_win,</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                      grad_y_win,</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                      covar);</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;      <span class="keywordtype">float</span> det = covar[0] * covar[2] - covar[1] * covar[1];</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;      <span class="keywordtype">float</span> min_eigenvalue = (covar[2] + covar[0] -</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                              std::sqrt((covar[0] - covar[2]) * (covar[0] - covar[2]) +</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                                        4.f * covar[1] * covar[1])) /</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                             2.f;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160; </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;      <span class="keywordflow">if</span> (min_eigenvalue &lt; min_eigenvalue_threshold_ ||</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;          det &lt; std::numeric_limits&lt;float&gt;::epsilon()) {</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        status[ptidx] = -2;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;      }</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;      det = 1.f / det;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      next_pt -= half_win;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;      Eigen::Array2f prev_delta(0, 0);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; max_iterations_; j++) {</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        Eigen::Array2i inext_pt = next_pt.floor().cast&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160; </div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="keywordflow">if</span> (inext_pt[0] &lt; -track_width_ || (std::uint32_t)inext_pt[0] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> ||</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            inext_pt[1] &lt; -track_height_ || (std::uint32_t)inext_pt[1] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>) {</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;          <span class="keywordflow">if</span> (level == 0)</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;            status[ptidx] = -1;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        }</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        a = next_pt[0] - inext_pt[0];</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        b = next_pt[1] - inext_pt[1];</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        weight[0] = (1.f - a) * (1.f - b);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        weight[1] = a * (1.f - b);</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        weight[2] = (1.f - a) * b;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        weight[3] = 1 - weight[0] - weight[1] - weight[2];</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="comment">// compute mismatch vector</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        Eigen::Array2f beta = Eigen::Array2f::Zero();</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        mismatchVector(prev_win, grad_x_win, grad_y_win, next, inext_pt, weight, beta);</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="comment">// optical flow resolution</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        Eigen::Vector2f delta((covar[1] * beta[1] - covar[2] * beta[0]) * det,</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                              (covar[1] * beta[0] - covar[0] * beta[1]) * det);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="comment">// update position</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        next_pt[0] += delta[0];</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        next_pt[1] += delta[1];</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        next_pts[ptidx] = next_pt + half_win;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160; </div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <span class="keywordflow">if</span> (delta.squaredNorm() &lt;= epsilon_)</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160; </div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <span class="keywordflow">if</span> (j &gt; 0 &amp;&amp; std::abs(delta[0] + prev_delta[0]) &lt; 0.01 &amp;&amp;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            std::abs(delta[1] + prev_delta[1]) &lt; 0.01) {</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;          next_pts[ptidx][0] -= delta[0] * 0.5f;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;          next_pts[ptidx][1] -= delta[1] * 0.5f;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        }</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="comment">// update delta</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        prev_delta = delta;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;      }</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;      <span class="comment">// update tracked points</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;      <span class="keywordflow">if</span> (level == 0 &amp;&amp; !status[ptidx]) {</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        Eigen::Array2f next_point = next_pts[ptidx] - half_win;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        Eigen::Array2i inext_point;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160; </div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        inext_point[0] = std::floor(next_point[0]);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        inext_point[1] = std::floor(next_point[1]);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160; </div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        <span class="keywordflow">if</span> (inext_point[0] &lt; -track_width_ ||</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            (std::uint32_t)inext_point[0] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">width</a> ||</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            inext_point[1] &lt; -track_height_ ||</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;            (std::uint32_t)inext_point[1] &gt;= next.<a class="code" href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">height</a>) {</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;          status[ptidx] = -1;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        }</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="comment">// insert valid keypoint</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        <a class="code" href="structpcl_1_1_point_u_v.html">pcl::PointUV</a> n;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        n.<a class="code" href="structpcl_1_1_point_u_v.html#a359095abf28692c22c5f9723e8e12ea8">u</a> = next_pts[ptidx][0];</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        n.<a class="code" href="structpcl_1_1_point_u_v.html#a9f7fc4bac2b480c5bb5287072e47b134">v</a> = next_pts[ptidx][1];</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#a0b4d7abee110e47d90635eb042488bb4">push_back</a>(n);</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="comment">// add points pair to compute transformation</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        inext_point[0] = std::floor(next_pts[ptidx][0]);</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        inext_point[1] = std::floor(next_pts[ptidx][1]);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        iprev_point[0] = std::floor((*prev_keypoints)[ptidx].u);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        iprev_point[1] = std::floor((*prev_keypoints)[ptidx].v);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="keyword">const</span> PointInT&amp; prev_pt =</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            (*prev_input)[iprev_point[1] * prev_input-&gt;width + iprev_point[0]];</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keyword">const</span> PointInT&amp; next_pt =</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            (*input)[inext_point[1] * input-&gt;width + inext_point[0]];</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        transformation_computer.<a class="code" href="classpcl_1_1_transformation_from_correspondences.html#a156ee80d46da72d70f4a1411e9dd06f6">add</a>(</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            prev_pt.getVector3fMap(), next_pt.getVector3fMap(), 1.0);</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;      }</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    }</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;  }</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;  motion = transformation_computer.<a class="code" href="classpcl_1_1_transformation_from_correspondences.html#a0126a0d3c7fcf5f762bd76359fffc95f">getTransformation</a>();</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;}</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="comment">///////////////////////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>InT, <span class="keyword">typename</span> IntensityT&gt;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno"><a class="line" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a8b83d360af5da71df3c8640fa91795e4">  711</a></span>&#160;<a class="code" href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a8b83d360af5da71df3c8640fa91795e4">PyramidalKLTTracker&lt;PointInT, IntensityT&gt;::computeTracking</a>()</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;{</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <span class="keywordflow">if</span> (!initialized_)</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160; </div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  std::vector&lt;FloatImageConstPtr&gt; pyramid;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  computePyramids(input_, pyramid, <a class="code" href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485a26da236fd0703b20c18e7ee64cb6422b">pcl::BORDER_REFLECT_101</a>);</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <a class="code" href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud&lt;pcl::PointUV&gt;::Ptr</a> keypoints(<span class="keyword">new</span> <a class="code" href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt;pcl::PointUV&gt;</a>);</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;  keypoints-&gt;<a class="code" href="classpcl_1_1_point_cloud.html#ab2d68c32d71772ac16943d65e87deb98">reserve</a>(keypoints_-&gt;size());</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  std::vector&lt;int&gt; status(keypoints_-&gt;size(), 0);</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  track(ref_, input_, ref_pyramid_, pyramid, keypoints_, keypoints, status, motion_);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  <span class="comment">// swap reference and input</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  ref_ = input_;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  ref_pyramid_ = pyramid;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  keypoints_ = keypoints;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;  *keypoints_status_ = status;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;}</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160; </div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;} <span class="comment">// namespace tracking</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;} <span class="comment">// namespace pcl</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructpcl_1_1_point_u_v_html"><div class="ttname"><a href="structpcl_1_1_point_u_v.html">pcl::PointUV</a></div><div class="ttdoc">A 2D point structure representing pixel image coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00761">point_types.hpp:761</a></div></div>
-<div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a0ca3900df6b883042d58d75038a4ddbc"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0ca3900df6b883042d58d75038a4ddbc">pcl::tracking::PyramidalKLTTracker::mismatchVector</a></div><div class="ttdeci">void mismatchVector(const Eigen::ArrayXXf &amp;prev, const Eigen::ArrayXXf &amp;prev_grad_x, const Eigen::ArrayXXf &amp;prev_grad_y, const FloatImage &amp;next, const Eigen::Array2i &amp;location, const Eigen::Array4f &amp;weights, Eigen::Array2f &amp;b) const</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00518">pyramidal_klt.hpp:518</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_u_v_html"><div class="ttname"><a href="structpcl_1_1_point_u_v.html">pcl::PointUV</a></div><div class="ttdoc">A 2D point structure representing pixel image coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00848">point_types.hpp:848</a></div></div>
+<div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a0ca3900df6b883042d58d75038a4ddbc"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a0ca3900df6b883042d58d75038a4ddbc">pcl::tracking::PyramidalKLTTracker::mismatchVector</a></div><div class="ttdeci">void mismatchVector(const Eigen::ArrayXXf &amp;prev, const Eigen::ArrayXXf &amp;prev_grad_x, const Eigen::ArrayXXf &amp;prev_grad_y, const FloatImage &amp;next, const Eigen::Array2i &amp;location, const Eigen::Array4f &amp;weights, Eigen::Array2f &amp;b) const</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00516">pyramidal_klt.hpp:516</a></div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a7c55bf09e463d214a43d2bd7ceab7753"><div class="ttname"><a href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">pcl::uint32_t</a></div><div class="ttdeci">std::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00058">types.h:58</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a917b6eb0ef204836c56a2334ddd703fe"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">pcl::PointCloud::height</a></div><div class="ttdeci">std::uint32_t height</div><div class="ttdoc">The point cloud height (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">point_cloud.h:416</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a917b6eb0ef204836c56a2334ddd703fe"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a917b6eb0ef204836c56a2334ddd703fe">pcl::PointCloud::height</a></div><div class="ttdeci">std::uint32_t height</div><div class="ttdoc">The point cloud height (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">point_cloud.h:400</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_af00aa146a5122444e596060a26fc1bc6"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#af00aa146a5122444e596060a26fc1bc6">pcl::tracking::PyramidalKLTTracker::convolveCols</a></div><div class="ttdeci">void convolveCols(const FloatImageConstPtr &amp;input, FloatImage &amp;output) const</div><div class="ttdoc">Convolve image columns.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00327">pyramidal_klt.hpp:327</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af16a62638198313b9c093127c492c884"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af16a62638198313b9c093127c492c884">pcl::PointCloud::points</a></div><div class="ttdeci">std::vector&lt; PointT, Eigen::aligned_allocator&lt; PointT &gt; &gt; points</div><div class="ttdoc">The point data.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">point_cloud.h:411</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_u_v_html_a359095abf28692c22c5f9723e8e12ea8"><div class="ttname"><a href="structpcl_1_1_point_u_v.html#a359095abf28692c22c5f9723e8e12ea8">pcl::PointUV::u</a></div><div class="ttdeci">float u</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00763">point_types.hpp:763</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_u_v_html_a359095abf28692c22c5f9723e8e12ea8"><div class="ttname"><a href="structpcl_1_1_point_u_v.html#a359095abf28692c22c5f9723e8e12ea8">pcl::PointUV::u</a></div><div class="ttdeci">float u</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00850">point_types.hpp:850</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a99549bf819b6eae79b2c0fe98e524d1b"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a99549bf819b6eae79b2c0fe98e524d1b">pcl::tracking::PyramidalKLTTracker::downsample</a></div><div class="ttdeci">void downsample(const FloatImageConstPtr &amp;input, FloatImageConstPtr &amp;output) const</div><div class="ttdoc">downsample input</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00233">pyramidal_klt.hpp:233</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_u_v_html_a9f7fc4bac2b480c5bb5287072e47b134"><div class="ttname"><a href="structpcl_1_1_point_u_v.html#a9f7fc4bac2b480c5bb5287072e47b134">pcl::PointUV::v</a></div><div class="ttdeci">float v</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00764">point_types.hpp:764</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_u_v_html_a9f7fc4bac2b480c5bb5287072e47b134"><div class="ttname"><a href="structpcl_1_1_point_u_v.html#a9f7fc4bac2b480c5bb5287072e47b134">pcl::PointUV::v</a></div><div class="ttdeci">float v</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00851">point_types.hpp:851</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a1291f82b866df89fd94b4e2bf5dbd386"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a1291f82b866df89fd94b4e2bf5dbd386">pcl::tracking::PyramidalKLTTracker::derivatives</a></div><div class="ttdeci">void derivatives(const FloatImage &amp;src, FloatImage &amp;grad_x, FloatImage &amp;grad_y) const</div><div class="ttdoc">compute Scharr derivatives of a source cloud.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00171">pyramidal_klt.hpp:171</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af1d1f92898f0bda85d8bb18bd64dbcb1"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af1d1f92898f0bda85d8bb18bd64dbcb1">pcl::PointCloud::resize</a></div><div class="ttdeci">void resize(std::size_t n)</div><div class="ttdoc">Resize the cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00466">point_cloud.h:466</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a223710941333ffcbfd147e4f4c9a1485a803e6fa833a297b2e4c193665afc9175"><div class="ttname"><a href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485a803e6fa833a297b2e4c193665afc9175">pcl::BORDER_CONSTANT</a></div><div class="ttdeci">@ BORDER_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2io_8h_source.html#l00257">io.h:257</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a223710941333ffcbfd147e4f4c9a1485a803e6fa833a297b2e4c193665afc9175"><div class="ttname"><a href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485a803e6fa833a297b2e4c193665afc9175">pcl::BORDER_CONSTANT</a></div><div class="ttdeci">@ BORDER_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2io_8h_source.html#l00223">io.h:223</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_p_c_l_base_html"><div class="ttname"><a href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase</a></div><div class="ttdoc">PCL base class.</div><div class="ttdef"><b>Definition:</b> <a href="pcl__base_8h_source.html#l00069">pcl_base.h:69</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a5d1aea4dfe4160a47a072819b5990e74"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a5d1aea4dfe4160a47a072819b5990e74">pcl::tracking::PyramidalKLTTracker::initCompute</a></div><div class="ttdeci">bool initCompute() override</div><div class="ttdoc">This method should get called before starting the actual computation.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00098">pyramidal_klt.hpp:98</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt; pcl::PointUV &gt;</a></div></div>
-<div class="ttc" id="agroup__common_html_gaff182bca8d0295d727baaa1fd368c6ad"><div class="ttname"><a href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a></div><div class="ttdeci">void copyPointCloud(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud_in, pcl::PointCloud&lt; PointOutT &gt; &amp;cloud_out)</div><div class="ttdoc">Copy all the fields from a given point cloud into a new point cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">io.hpp:121</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_transformation_from_correspondences_html"><div class="ttname"><a href="classpcl_1_1_transformation_from_correspondences.html">pcl::TransformationFromCorrespondences</a></div><div class="ttdoc">Calculates a transformation based on corresponding 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="transformation__from__correspondences_8h_source.html#l00048">transformation_from_correspondences.h:48</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a223710941333ffcbfd147e4f4c9a1485a26da236fd0703b20c18e7ee64cb6422b"><div class="ttname"><a href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485a26da236fd0703b20c18e7ee64cb6422b">pcl::BORDER_REFLECT_101</a></div><div class="ttdeci">@ BORDER_REFLECT_101</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2io_8h_source.html#l00259">io.h:259</a></div></div>
+<div class="ttc" id="agroup__common_html_gaff182bca8d0295d727baaa1fd368c6ad"><div class="ttname"><a href="group__common.html#gaff182bca8d0295d727baaa1fd368c6ad">pcl::copyPointCloud</a></div><div class="ttdeci">void copyPointCloud(const pcl::PointCloud&lt; PointInT &gt; &amp;cloud_in, pcl::PointCloud&lt; PointOutT &gt; &amp;cloud_out)</div><div class="ttdoc">Copy all the fields from a given point cloud into a new point cloud.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">io.hpp:144</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_transformation_from_correspondences_html"><div class="ttname"><a href="classpcl_1_1_transformation_from_correspondences.html">pcl::TransformationFromCorrespondences</a></div><div class="ttdoc">Calculates a transformation based on corresponding 3D points.</div><div class="ttdef"><b>Definition:</b> <a href="transformation__from__correspondences_8h_source.html#l00049">transformation_from_correspondences.h:49</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a223710941333ffcbfd147e4f4c9a1485a26da236fd0703b20c18e7ee64cb6422b"><div class="ttname"><a href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485a26da236fd0703b20c18e7ee64cb6422b">pcl::BORDER_REFLECT_101</a></div><div class="ttdeci">@ BORDER_REFLECT_101</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2io_8h_source.html#l00225">io.h:225</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_ac15a39d187c4ee9cd00da5ccccdc4878"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#ac15a39d187c4ee9cd00da5ccccdc4878">pcl::tracking::PyramidalKLTTracker::FloatImageConstPtr</a></div><div class="ttdeci">FloatImage::ConstPtr FloatImageConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8h_source.html#l00072">pyramidal_klt.h:72</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a644dc7161c2e3f23bc4d36d36c58e7b4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">pcl::PointCloud::width</a></div><div class="ttdeci">std::uint32_t width</div><div class="ttdoc">The point cloud width (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
-<div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a8b83d360af5da71df3c8640fa91795e4"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a8b83d360af5da71df3c8640fa91795e4">pcl::tracking::PyramidalKLTTracker::computeTracking</a></div><div class="ttdeci">void computeTracking() override</div><div class="ttdoc">Abstract tracking method.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00713">pyramidal_klt.hpp:713</a></div></div>
-<div class="ttc" id="anamespacepcl_html_aaf931dfa9573efdfea6ca35cb8a52993"><div class="ttname"><a href="namespacepcl.html#aaf931dfa9573efdfea6ca35cb8a52993">pcl::PointIndicesConstPtr</a></div><div class="ttdeci">PointIndices::ConstPtr PointIndicesConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="_point_indices_8h_source.html#l00027">PointIndices.h:27</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a644dc7161c2e3f23bc4d36d36c58e7b4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a644dc7161c2e3f23bc4d36d36c58e7b4">pcl::PointCloud::width</a></div><div class="ttdeci">std::uint32_t width</div><div class="ttdoc">The point cloud width (if organized as an image-structure).</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">point_cloud.h:398</a></div></div>
+<div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a8b83d360af5da71df3c8640fa91795e4"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a8b83d360af5da71df3c8640fa91795e4">pcl::tracking::PyramidalKLTTracker::computeTracking</a></div><div class="ttdeci">void computeTracking() override</div><div class="ttdoc">Abstract tracking method.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00711">pyramidal_klt.hpp:711</a></div></div>
+<div class="ttc" id="anamespacepcl_html_aaf931dfa9573efdfea6ca35cb8a52993"><div class="ttname"><a href="namespacepcl.html#aaf931dfa9573efdfea6ca35cb8a52993">pcl::PointIndicesConstPtr</a></div><div class="ttdeci">PointIndices::ConstPtr PointIndicesConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="_point_indices_8h_source.html#l00025">PointIndices.h:25</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_ad8d75914e16311af2381c23b1d81e04f"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#ad8d75914e16311af2381c23b1d81e04f">pcl::tracking::PyramidalKLTTracker::convolveRows</a></div><div class="ttdeci">void convolveRows(const FloatImageConstPtr &amp;input, FloatImage &amp;output) const</div><div class="ttdoc">Convolve image rows.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00293">pyramidal_klt.hpp:293</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a9168e3b0b3758e1d39fbce80f512e03c"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9168e3b0b3758e1d39fbce80f512e03c">pcl::tracking::PyramidalKLTTracker::computePyramids</a></div><div class="ttdeci">virtual void computePyramids(const PointCloudInConstPtr &amp;input, std::vector&lt; FloatImageConstPtr &gt; &amp;pyramid, pcl::InterpolationType border_type) const</div><div class="ttdoc">Compute the pyramidal representation of an image.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00362">pyramidal_klt.hpp:362</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a90e1723b09ffd63f88972b892d7c509b"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a90e1723b09ffd63f88972b892d7c509b">pcl::tracking::PyramidalKLTTracker::setTrackingWindowSize</a></div><div class="ttdeci">void setTrackingWindowSize(int width, int height)</div><div class="ttdoc">set the tracking window size</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00050">pyramidal_klt.hpp:50</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_afd0d46566a85573a1d467f86a145dea8"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#afd0d46566a85573a1d467f86a145dea8">pcl::tracking::PyramidalKLTTracker::convolve</a></div><div class="ttdeci">void convolve(const FloatImageConstPtr &amp;input, FloatImage &amp;output) const</div><div class="ttdoc">Separately convolve image with decomposable convolution kernel.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00282">pyramidal_klt.hpp:282</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab2d68c32d71772ac16943d65e87deb98"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab2d68c32d71772ac16943d65e87deb98">pcl::PointCloud::reserve</a></div><div class="ttdeci">void reserve(std::size_t n)</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00460">point_cloud.h:460</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab2d68c32d71772ac16943d65e87deb98"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab2d68c32d71772ac16943d65e87deb98">pcl::PointCloud::reserve</a></div><div class="ttdeci">void reserve(std::size_t n)</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00445">point_cloud.h:445</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a6af3c6374dbd2147b5907a5e04015058"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a6af3c6374dbd2147b5907a5e04015058">pcl::tracking::PyramidalKLTTracker::PointCloudInConstPtr</a></div><div class="ttdeci">typename PointCloudIn::ConstPtr PointCloudInConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8h_source.html#l00069">pyramidal_klt.h:69</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a223710941333ffcbfd147e4f4c9a1485"><div class="ttname"><a href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485">pcl::InterpolationType</a></div><div class="ttdeci">InterpolationType</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2io_8h_source.html#l00255">io.h:255</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a223710941333ffcbfd147e4f4c9a1485"><div class="ttname"><a href="namespacepcl.html#a223710941333ffcbfd147e4f4c9a1485">pcl::InterpolationType</a></div><div class="ttdeci">InterpolationType</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2common_2io_8h_source.html#l00221">io.h:221</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a7a84910bccd8a31f285f4949b22cb4e7"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a7a84910bccd8a31f285f4949b22cb4e7">pcl::tracking::PyramidalKLTTracker::FloatImagePtr</a></div><div class="ttdeci">FloatImage::Ptr FloatImagePtr</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8h_source.html#l00071">pyramidal_klt.h:71</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_indices_html"><div class="ttname"><a href="structpcl_1_1_point_indices.html">pcl::PointIndices</a></div><div class="ttdef"><b>Definition:</b> <a href="_point_indices_8h_source.html#l00013">PointIndices.h:13</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_transformation_from_correspondences_html_a0126a0d3c7fcf5f762bd76359fffc95f"><div class="ttname"><a href="classpcl_1_1_transformation_from_correspondences.html#a0126a0d3c7fcf5f762bd76359fffc95f">pcl::TransformationFromCorrespondences::getTransformation</a></div><div class="ttdeci">Eigen::Affine3f getTransformation()</div><div class="ttdoc">Calculate the transformation that will best transform the points into their correspondences.</div><div class="ttdef"><b>Definition:</b> <a href="transformation__from__correspondences_8hpp_source.html#l00078">transformation_from_correspondences.hpp:78</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_aa3fc6f30bae069ca325b80f60757276e"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">pcl::PointCloud::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00459">point_cloud.h:459</a></div></div>
-<div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a9e94ed5e077752d3f13d2a33e28d1a4a"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9e94ed5e077752d3f13d2a33e28d1a4a">pcl::tracking::PyramidalKLTTracker::track</a></div><div class="ttdeci">virtual void track(const PointCloudInConstPtr &amp;previous_input, const PointCloudInConstPtr &amp;current_input, const std::vector&lt; FloatImageConstPtr &gt; &amp;previous_pyramid, const std::vector&lt; FloatImageConstPtr &gt; &amp;current_pyramid, const pcl::PointCloud&lt; pcl::PointUV &gt;::ConstPtr &amp;previous_keypoints, pcl::PointCloud&lt; pcl::PointUV &gt;::Ptr &amp;current_keypoints, std::vector&lt; int &gt; &amp;status, Eigen::Affine3f &amp;motion) const</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00548">pyramidal_klt.hpp:548</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_transformation_from_correspondences_html_a156ee80d46da72d70f4a1411e9dd06f6"><div class="ttname"><a href="classpcl_1_1_transformation_from_correspondences.html#a156ee80d46da72d70f4a1411e9dd06f6">pcl::TransformationFromCorrespondences::add</a></div><div class="ttdeci">void add(const Eigen::Vector3f &amp;point, const Eigen::Vector3f &amp;corresponding_point, float weight=1.0)</div><div class="ttdoc">Add a new sample.</div><div class="ttdef"><b>Definition:</b> <a href="transformation__from__correspondences_8hpp_source.html#l00059">transformation_from_correspondences.hpp:59</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00429">point_cloud.h:429</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a552575b03243c7f5d95bb03c59842238"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a552575b03243c7f5d95bb03c59842238">pcl::PointCloud::resize</a></div><div class="ttdeci">void resize(std::size_t count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00462">point_cloud.h:462</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_transformation_from_correspondences_html_a0126a0d3c7fcf5f762bd76359fffc95f"><div class="ttname"><a href="classpcl_1_1_transformation_from_correspondences.html#a0126a0d3c7fcf5f762bd76359fffc95f">pcl::TransformationFromCorrespondences::getTransformation</a></div><div class="ttdeci">Eigen::Affine3f getTransformation()</div><div class="ttdoc">Calculate the transformation that will best transform the points into their correspondences.</div><div class="ttdef"><b>Definition:</b> <a href="transformation__from__correspondences_8hpp_source.html#l00077">transformation_from_correspondences.hpp:77</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_aa3fc6f30bae069ca325b80f60757276e"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#aa3fc6f30bae069ca325b80f60757276e">pcl::PointCloud::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00443">point_cloud.h:443</a></div></div>
+<div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a9e94ed5e077752d3f13d2a33e28d1a4a"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9e94ed5e077752d3f13d2a33e28d1a4a">pcl::tracking::PyramidalKLTTracker::track</a></div><div class="ttdeci">virtual void track(const PointCloudInConstPtr &amp;previous_input, const PointCloudInConstPtr &amp;current_input, const std::vector&lt; FloatImageConstPtr &gt; &amp;previous_pyramid, const std::vector&lt; FloatImageConstPtr &gt; &amp;current_pyramid, const pcl::PointCloud&lt; pcl::PointUV &gt;::ConstPtr &amp;previous_keypoints, pcl::PointCloud&lt; pcl::PointUV &gt;::Ptr &amp;current_keypoints, std::vector&lt; int &gt; &amp;status, Eigen::Affine3f &amp;motion) const</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00546">pyramidal_klt.hpp:546</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_transformation_from_correspondences_html_a156ee80d46da72d70f4a1411e9dd06f6"><div class="ttname"><a href="classpcl_1_1_transformation_from_correspondences.html#a156ee80d46da72d70f4a1411e9dd06f6">pcl::TransformationFromCorrespondences::add</a></div><div class="ttdeci">void add(const Eigen::Vector3f &amp;point, const Eigen::Vector3f &amp;corresponding_point, float weight=1.0)</div><div class="ttdoc">Add a new sample.</div><div class="ttdef"><b>Definition:</b> <a href="transformation__from__correspondences_8hpp_source.html#l00058">transformation_from_correspondences.hpp:58</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_ab805ba3b19e952ad19d084a9caa3dc60"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#ab805ba3b19e952ad19d084a9caa3dc60">pcl::PointCloud::Ptr</a></div><div class="ttdeci">shared_ptr&lt; PointCloud&lt; PointT &gt; &gt; Ptr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00413">point_cloud.h:413</a></div></div>
 <div class="ttc" id="acommon_2time_8h_html"><div class="ttname"><a href="common_2time_8h.html">time.h</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a825ff7281312ad78b2a94bab22046a3e"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a825ff7281312ad78b2a94bab22046a3e">pcl::tracking::PyramidalKLTTracker::setPointsToTrack</a></div><div class="ttdeci">void setPointsToTrack(const pcl::PointIndicesConstPtr &amp;points)</div><div class="ttdoc">Provide a pointer to points to track.</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00079">pyramidal_klt.hpp:79</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00430">point_cloud.h:430</a></div></div>
-<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a0b4d7abee110e47d90635eb042488bb4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a0b4d7abee110e47d90635eb042488bb4">pcl::PointCloud::push_back</a></div><div class="ttdeci">void push_back(const PointT &amp;pt)</div><div class="ttdoc">Insert a new point in the cloud, at the end of the container.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00491">point_cloud.h:491</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_af70fd81ce582ccabf683dd782ed3f032"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#af70fd81ce582ccabf683dd782ed3f032">pcl::PointCloud::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const PointCloud&lt; PointT &gt; &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">point_cloud.h:414</a></div></div>
+<div class="ttc" id="aclasspcl_1_1_point_cloud_html_a0b4d7abee110e47d90635eb042488bb4"><div class="ttname"><a href="classpcl_1_1_point_cloud.html#a0b4d7abee110e47d90635eb042488bb4">pcl::PointCloud::push_back</a></div><div class="ttdeci">void push_back(const PointT &amp;pt)</div><div class="ttdoc">Insert a new point in the cloud, at the end of the container.</div><div class="ttdef"><b>Definition:</b> <a href="common_2include_2pcl_2point__cloud_8h_source.html#l00652">point_cloud.h:652</a></div></div>
 <div class="ttc" id="aclasspcl_1_1tracking_1_1_pyramidal_k_l_t_tracker_html_a9f85940b6be97925fc57ee052dd8e158"><div class="ttname"><a href="classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html#a9f85940b6be97925fc57ee052dd8e158">pcl::tracking::PyramidalKLTTracker::spatialGradient</a></div><div class="ttdeci">virtual void spatialGradient(const FloatImage &amp;img, const FloatImage &amp;grad_x, const FloatImage &amp;grad_y, const Eigen::Array2i &amp;location, const Eigen::Array4f &amp;weights, Eigen::ArrayXXf &amp;win, Eigen::ArrayXXf &amp;grad_x_win, Eigen::ArrayXXf &amp;grad_y_win, Eigen::Array3f &amp;covariance) const</div><div class="ttdoc">extract the patch from the previous image, previous image gradients surrounding pixel alocation while...</div><div class="ttdef"><b>Definition:</b> <a href="pyramidal__klt_8hpp_source.html#l00472">pyramidal_klt.hpp:472</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:59</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:56</p>
 </div> <!-- #footer -->
 </body>
 </html>

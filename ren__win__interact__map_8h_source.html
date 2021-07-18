@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -113,59 +113,60 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>vtkXYPlotActor;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span>vtkRenderer;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span>vtkRenderWindow;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">class </span>vtkRenderWindowInteractor;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">class </span>vtkInteractorStyleTrackballCamera;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">namespace </span>visualization</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html">   55</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html">RenWinInteract</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#ab6cbf0e0bd87b30f22a64aef640b24e8">RenWinInteract</a> ();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">        /** \brief The XY plot actor holding the actual data. */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#af1ab04d53bf0e40903f7518d6449a3ae">   62</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkXYPlotActor&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#af1ab04d53bf0e40903f7518d6449a3ae">xy_plot_</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">        /** \brief The renderer used. */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a8be329ac0ffb58c6c342b1e4954477cf">   65</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkRenderer&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a8be329ac0ffb58c6c342b1e4954477cf">ren_</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">        /** \brief The render window. */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#acd64e5718d971369a58d7486f68a42a1">   68</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkRenderWindow&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#acd64e5718d971369a58d7486f68a42a1">win_</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">        /** \brief The render window interactor. */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a39a2949ddd3e5bacaeed74e653ddca35">   72</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkRenderWindowInteractor&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a39a2949ddd3e5bacaeed74e653ddca35">interactor_</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">        /** \brief The render window interactor style. */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a95f56e07eb011da548c9040403c01682">   75</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkInteractorStyleTrackballCamera&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a95f56e07eb011da548c9040403c01682">style_</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">   77</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">RenWinInteractMap</a> = std::map&lt;std::string, RenWinInteract&gt;;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;vtkXYPlotActor.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span>vtkRenderer;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">class </span>vtkRenderWindow;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">class </span>vtkRenderWindowInteractor;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">class </span>vtkInteractorStyleTrackballCamera;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcl.html">pcl</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">namespace </span>visualization</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html">   56</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html">RenWinInteract</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#ab6cbf0e0bd87b30f22a64aef640b24e8">RenWinInteract</a> ();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">        /** \brief The XY plot actor holding the actual data. */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#af1ab04d53bf0e40903f7518d6449a3ae">   63</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkXYPlotActor&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#af1ab04d53bf0e40903f7518d6449a3ae">xy_plot_</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">        /** \brief The renderer used. */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a8be329ac0ffb58c6c342b1e4954477cf">   66</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkRenderer&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a8be329ac0ffb58c6c342b1e4954477cf">ren_</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">        /** \brief The render window. */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#acd64e5718d971369a58d7486f68a42a1">   69</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkRenderWindow&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#acd64e5718d971369a58d7486f68a42a1">win_</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">        /** \brief The render window interactor. */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a39a2949ddd3e5bacaeed74e653ddca35">   73</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkRenderWindowInteractor&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a39a2949ddd3e5bacaeed74e653ddca35">interactor_</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">        /** \brief The render window interactor style. */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a95f56e07eb011da548c9040403c01682">   76</a></span>&#160;        <a class="code" href="classvtk_smart_pointer.html">vtkSmartPointer&lt;vtkInteractorStyleTrackballCamera&gt;</a> <a class="code" href="classpcl_1_1visualization_1_1_ren_win_interact.html#a95f56e07eb011da548c9040403c01682">style_</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">   78</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">RenWinInteractMap</a> = std::map&lt;std::string, RenWinInteract&gt;;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_a95f56e07eb011da548c9040403c01682"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#a95f56e07eb011da548c9040403c01682">pcl::visualization::RenWinInteract::style_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkInteractorStyleTrackballCamera &gt; style_</div><div class="ttdoc">The render window interactor style.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00075">ren_win_interact_map.h:75</a></div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_a39a2949ddd3e5bacaeed74e653ddca35"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#a39a2949ddd3e5bacaeed74e653ddca35">pcl::visualization::RenWinInteract::interactor_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkRenderWindowInteractor &gt; interactor_</div><div class="ttdoc">The render window interactor.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00072">ren_win_interact_map.h:72</a></div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_acd64e5718d971369a58d7486f68a42a1"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#acd64e5718d971369a58d7486f68a42a1">pcl::visualization::RenWinInteract::win_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkRenderWindow &gt; win_</div><div class="ttdoc">The render window.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00068">ren_win_interact_map.h:68</a></div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html">pcl::visualization::RenWinInteract</a></div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00055">ren_win_interact_map.h:55</a></div></div>
-<div class="ttc" id="anamespacepcl_1_1visualization_html_a9b5b17170d7fcf2f006db9297c202a1c"><div class="ttname"><a href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">pcl::visualization::RenWinInteractMap</a></div><div class="ttdeci">std::map&lt; std::string, RenWinInteract &gt; RenWinInteractMap</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00077">ren_win_interact_map.h:77</a></div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_a8be329ac0ffb58c6c342b1e4954477cf"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#a8be329ac0ffb58c6c342b1e4954477cf">pcl::visualization::RenWinInteract::ren_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkRenderer &gt; ren_</div><div class="ttdoc">The renderer used.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00065">ren_win_interact_map.h:65</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_a95f56e07eb011da548c9040403c01682"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#a95f56e07eb011da548c9040403c01682">pcl::visualization::RenWinInteract::style_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkInteractorStyleTrackballCamera &gt; style_</div><div class="ttdoc">The render window interactor style.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00076">ren_win_interact_map.h:76</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_a39a2949ddd3e5bacaeed74e653ddca35"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#a39a2949ddd3e5bacaeed74e653ddca35">pcl::visualization::RenWinInteract::interactor_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkRenderWindowInteractor &gt; interactor_</div><div class="ttdoc">The render window interactor.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00073">ren_win_interact_map.h:73</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_acd64e5718d971369a58d7486f68a42a1"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#acd64e5718d971369a58d7486f68a42a1">pcl::visualization::RenWinInteract::win_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkRenderWindow &gt; win_</div><div class="ttdoc">The render window.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00069">ren_win_interact_map.h:69</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html">pcl::visualization::RenWinInteract</a></div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00056">ren_win_interact_map.h:56</a></div></div>
+<div class="ttc" id="anamespacepcl_1_1visualization_html_a9b5b17170d7fcf2f006db9297c202a1c"><div class="ttname"><a href="namespacepcl_1_1visualization.html#a9b5b17170d7fcf2f006db9297c202a1c">pcl::visualization::RenWinInteractMap</a></div><div class="ttdeci">std::map&lt; std::string, RenWinInteract &gt; RenWinInteractMap</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00078">ren_win_interact_map.h:78</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_a8be329ac0ffb58c6c342b1e4954477cf"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#a8be329ac0ffb58c6c342b1e4954477cf">pcl::visualization::RenWinInteract::ren_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkRenderer &gt; ren_</div><div class="ttdoc">The renderer used.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00066">ren_win_interact_map.h:66</a></div></div>
 <div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_ab6cbf0e0bd87b30f22a64aef640b24e8"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#ab6cbf0e0bd87b30f22a64aef640b24e8">pcl::visualization::RenWinInteract::RenWinInteract</a></div><div class="ttdeci">RenWinInteract()</div></div>
-<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_af1ab04d53bf0e40903f7518d6449a3ae"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#af1ab04d53bf0e40903f7518d6449a3ae">pcl::visualization::RenWinInteract::xy_plot_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkXYPlotActor &gt; xy_plot_</div><div class="ttdoc">The XY plot actor holding the actual data.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00062">ren_win_interact_map.h:62</a></div></div>
+<div class="ttc" id="aclasspcl_1_1visualization_1_1_ren_win_interact_html_af1ab04d53bf0e40903f7518d6449a3ae"><div class="ttname"><a href="classpcl_1_1visualization_1_1_ren_win_interact.html#af1ab04d53bf0e40903f7518d6449a3ae">pcl::visualization::RenWinInteract::xy_plot_</a></div><div class="ttdeci">vtkSmartPointer&lt; vtkXYPlotActor &gt; xy_plot_</div><div class="ttdoc">The XY plot actor holding the actual data.</div><div class="ttdef"><b>Definition:</b> <a href="ren__win__interact__map_8h_source.html#l00063">ren_win_interact_map.h:63</a></div></div>
 <div class="ttc" id="aclassvtk_smart_pointer_html"><div class="ttname"><a href="classvtk_smart_pointer.html">vtkSmartPointer</a></div><div class="ttdef"><b>Definition:</b> <a href="actor__map_8h_source.html#l00051">actor_map.h:51</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:01</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:59</p>
 </div> <!-- #footer -->
 </body>
 </html>

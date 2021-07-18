@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -129,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd9de2b9a8a4595afb761f9afd77a332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_bilateral_filter.html#acd9de2b9a8a4595afb761f9afd77a332">applyFilter</a> (<a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> &amp;output) override</td></tr>
 <tr class="memdesc:acd9de2b9a8a4595afb761f9afd77a332"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpcl_1_1_filter.html" title="Filter represents the base filter class.">Filter</a> the input data and store the results into output.  <a href="classpcl_1_1_bilateral_filter.html#acd9de2b9a8a4595afb761f9afd77a332">More...</a><br /></td></tr>
 <tr class="separator:acd9de2b9a8a4595afb761f9afd77a332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066c204ca8bc026925fef5f5bf7e7837"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_bilateral_filter.html#a066c204ca8bc026925fef5f5bf7e7837">computePointWeight</a> (const int pid, const std::vector&lt; int &gt; &amp;indices, const std::vector&lt; float &gt; &amp;distances)</td></tr>
-<tr class="memdesc:a066c204ca8bc026925fef5f5bf7e7837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the intensity average for a single point.  <a href="classpcl_1_1_bilateral_filter.html#a066c204ca8bc026925fef5f5bf7e7837">More...</a><br /></td></tr>
-<tr class="separator:a066c204ca8bc026925fef5f5bf7e7837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdff640ef8260527ff9922cc02196537"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_bilateral_filter.html#afdff640ef8260527ff9922cc02196537">computePointWeight</a> (const int pid, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;indices, const std::vector&lt; float &gt; &amp;distances)</td></tr>
+<tr class="memdesc:afdff640ef8260527ff9922cc02196537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the intensity average for a single point.  <a href="classpcl_1_1_bilateral_filter.html#afdff640ef8260527ff9922cc02196537">More...</a><br /></td></tr>
+<tr class="separator:afdff640ef8260527ff9922cc02196537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc66e9881892c38ab0583a3e794e10be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_bilateral_filter.html#afc66e9881892c38ab0583a3e794e10be">setHalfSize</a> (const double sigma_s)</td></tr>
 <tr class="memdesc:afc66e9881892c38ab0583a3e794e10be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the half size of the Gaussian bilateral filter window.  <a href="classpcl_1_1_bilateral_filter.html#afc66e9881892c38ab0583a3e794e10be">More...</a><br /></td></tr>
 <tr class="separator:afc66e9881892c38ab0583a3e794e10be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,14 +351,12 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_filter.html#a1f703f36f50546e950f03af2453da623">pcl::Filter&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="bilateral_8hpp_source.html#l00073">73</a> of file <a class="el" href="bilateral_8hpp_source.html">bilateral.hpp</a>.</p>
-
-<p class="reference">References <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bilateral_8hpp_source.html#l00075">75</a> of file <a class="el" href="bilateral_8hpp_source.html">bilateral.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a066c204ca8bc026925fef5f5bf7e7837"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a066c204ca8bc026925fef5f5bf7e7837">&#9670;&nbsp;</a></span>computePointWeight()</h2>
+<a id="afdff640ef8260527ff9922cc02196537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdff640ef8260527ff9922cc02196537">&#9670;&nbsp;</a></span>computePointWeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +372,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -402,7 +400,7 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the intensity average at a given point index </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bilateral_8hpp_source.html#l00047">47</a> of file <a class="el" href="bilateral_8hpp_source.html">bilateral.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bilateral_8hpp_source.html#l00049">49</a> of file <a class="el" href="bilateral_8hpp_source.html">bilateral.hpp</a>.</p>
 
 </div>
 </div>
@@ -592,7 +590,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:33</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:37</p>
 </div> <!-- #footer -->
 </body>
 </html>

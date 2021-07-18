@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -169,6 +169,7 @@ $(function() {
 : <a class="el" href="classpcl_1_1_custom_point_representation.html#ae8c7f363b289ad6136e1d470baee6456">pcl::CustomPointRepresentation&lt; PointDefault &gt;</a>
 , <a class="el" href="classpcl_1_1_default_feature_representation.html#af87703cc2f4b7aba62c234763a662487">pcl::DefaultFeatureRepresentation&lt; PointDefault &gt;</a>
 , <a class="el" href="classpcl_1_1_default_point_representation.html#aed3b3497eaf94bd894d623b56a45e5ac">pcl::DefaultPointRepresentation&lt; PointDefault &gt;</a>
+, <a class="el" href="classpcl_1_1_generalized_iterative_closest_point6_d_1_1_my_point_representation.html#a7050b15dd66f335abff973b31eb2f2f2">pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation</a>
 , <a class="el" href="classpcl_1_1_kd_tree_f_l_a_n_n.html#a3b2346732b715083bd2559d701d87d6d">pcl::KdTreeFLANN&lt; PointT, Dist &gt;</a>
 , <a class="el" href="classpcl_1_1_point_cloud.html#afebbbb9c522a94cf245dd3968b50ed5e">pcl::PointCloud&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_p_p_f_hash_map_search.html#a52abba6107018e140caa04f1383c943d">pcl::PPFHashMapSearch</a>
@@ -302,6 +303,9 @@ $(function() {
 : <a class="el" href="class_o_n___bounding_box.html#a268daebf59a24919c052796f9a0b3182">ON_BoundingBox</a>
 , <a class="el" href="class_o_n___interval.html#a6339c5b2079763dba5c99bc807467925">ON_Interval</a>
 </li>
+<li>max_size()
+: <a class="el" href="classpcl_1_1_point_cloud.html#ac23c437751d8449ccd9fda9b0a473c4e">pcl::PointCloud&lt; PointT &gt;</a>
+</li>
 <li>MaxCount()
 : <a class="el" href="class_o_n___matrix.html#a4e72cc2950350310e1df283aab5e2ee1">ON_Matrix</a>
 </li>
@@ -404,7 +408,7 @@ $(function() {
 : <a class="el" href="classpcl_1_1people_1_1_head_based_subclustering.html#a694972594161a1d257c6131f8f0d406d">pcl::people::HeadBasedSubclustering&lt; PointT &gt;</a>
 </li>
 <li>MergeFaces()
-: <a class="el" href="class_o_n___brep.html#a267bbcf84836b9de198404f5f8447114">ON_Brep</a>
+: <a class="el" href="class_o_n___brep.html#a9b9d2a090e11afada04a61fc92824720">ON_Brep</a>
 </li>
 <li>mergeSmallSegments()
 : <a class="el" href="classpcl_1_1_l_c_c_p_segmentation.html#a7f0ada4d9a4918d9dbb9e33e32b23d46">pcl::LCCPSegmentation&lt; PointT &gt;</a>
@@ -427,6 +431,9 @@ $(function() {
 </li>
 <li>MeshFace()
 : <a class="el" href="class_o_n___mesh_face_ref.html#a03fe50cd93c7de3f170b68cd0cc27317">ON_MeshFaceRef</a>
+</li>
+<li>MeshIndex()
+: <a class="el" href="classpcl_1_1detail_1_1_mesh_index.html#affe88aa070d7406f9f6b319b1b8874d8">pcl::detail::MeshIndex&lt; IndexTagT &gt;</a>
 </li>
 <li>MeshIO()
 : <a class="el" href="classpcl_1_1geometry_1_1_mesh_i_o.html#aa8f504efc938060c919353c007586477">pcl::geometry::MeshIO&lt; MeshT &gt;</a>
@@ -475,8 +482,8 @@ $(function() {
 </li>
 <li>Mid()
 : <a class="el" href="class_o_n___interval.html#ab010b6851ec912307b117c3dc711c142">ON_Interval</a>
-, <a class="el" href="class_o_n___string.html#adedc92d9448e8e2542690762a6055961">ON_String</a>
-, <a class="el" href="class_o_n__w_string.html#a01dfa77d1d01155aef84cba4ee762dca">ON_wString</a>
+, <a class="el" href="class_o_n___string.html#afb81da5739045af63ad9a2d6bae70578">ON_String</a>
+, <a class="el" href="class_o_n__w_string.html#a747b2a37d6458d376ba225268570e027">ON_wString</a>
 </li>
 <li>MidPoint()
 : <a class="el" href="class_o_n___arc.html#ad78336faf3fa089460cddd2467320dd8">ON_Arc</a>
@@ -549,14 +556,14 @@ $(function() {
 : <a class="el" href="structpcl_1_1_m_l_s_result_1_1_m_l_s_projection_results.html#aac3f01208e1b09c2447ef856d845afc9">pcl::MLSResult::MLSProjectionResults</a>
 </li>
 <li>MLSResult()
-: <a class="el" href="structpcl_1_1_m_l_s_result.html#a02d5c062526c6ed23ad57100c1c66330">pcl::MLSResult</a>
+: <a class="el" href="structpcl_1_1_m_l_s_result.html#a138c28bbeba83e4faa25bacce8dfd500">pcl::MLSResult</a>
 </li>
 <li>MLSVoxelGrid()
 : <a class="el" href="classpcl_1_1_moving_least_squares_1_1_m_l_s_voxel_grid.html#a2c1cb3ae952c1121bf1d2f7a5c8b0134">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;::MLSVoxelGrid</a>
 </li>
 <li>Mode()
 : <a class="el" href="class_o_n__3dm_object_attributes.html#a8651b5951e627bf2eb9c4e8b20206023">ON_3dmObjectAttributes</a>
-, <a class="el" href="structpcl_1_1_real_sense_grabber_1_1_mode.html#a56b86f89b583be9cb021fb3fd042d954">pcl::RealSenseGrabber::Mode</a>
+, <a class="el" href="structpcl_1_1_real_sense_grabber_1_1_mode.html#a24acc3a6384ba8e42635bd0de202dce1">pcl::RealSenseGrabber::Mode</a>
 </li>
 <li>ModeFromInt()
 : <a class="el" href="class_o_n___texture.html#afae1f19eaaa4383f29f801c671d66a15">ON_Texture</a>
@@ -594,7 +601,7 @@ $(function() {
 : <a class="el" href="class_o_n___mesh.html#ada53612193f21d8cf439c36e7dacfee9">ON_Mesh</a>
 </li>
 <li>MomentInvariants()
-: <a class="el" href="structpcl_1_1_moment_invariants.html#afb26a394341b2db3cfe7d3244af364a6">pcl::MomentInvariants</a>
+: <a class="el" href="structpcl_1_1_moment_invariants.html#a2a61af3bae179a35f0d7ec559e19ffd2">pcl::MomentInvariants</a>
 </li>
 <li>MomentInvariantsEstimation()
 : <a class="el" href="classpcl_1_1_moment_invariants_estimation.html#a22e73955cdd4cc7bcc896b4293e1e887">pcl::MomentInvariantsEstimation&lt; PointInT, PointOutT &gt;</a>
@@ -649,13 +656,13 @@ $(function() {
 <li>Multiply()
 : <a class="el" href="class_o_n___matrix.html#ad8527842943c0f6d49218b1f45f0541d">ON_Matrix</a>
 , <a class="el" href="classpcl_1_1poisson_1_1_sparse_matrix.html#a7ae61574dea08c5e5b24403589f08a15">pcl::poisson::SparseMatrix&lt; T &gt;</a>
-, <a class="el" href="classpcl_1_1poisson_1_1_sparse_symmetric_matrix.html#aa570b1069ece1128b58920b2d4f5e44b">pcl::poisson::SparseSymmetricMatrix&lt; T &gt;</a>
+, <a class="el" href="classpcl_1_1poisson_1_1_sparse_symmetric_matrix.html#a6b050a2c4640408ef914c6b32d912d5d">pcl::poisson::SparseSymmetricMatrix&lt; T &gt;</a>
 </li>
 <li>MultiplyTranspose()
 : <a class="el" href="classpcl_1_1poisson_1_1_sparse_matrix.html#a5ebf5a7057adece0b41ab8261d308e68">pcl::poisson::SparseMatrix&lt; T &gt;</a>
 </li>
 <li>MultiRandomSampleConsensus()
-: <a class="el" href="classpcl_1_1cuda_1_1_multi_random_sample_consensus.html#af3a795dc44e988143c2bedb97f864938">pcl::cuda::MultiRandomSampleConsensus&lt; Storage &gt;</a>
+: <a class="el" href="classpcl_1_1cuda_1_1_multi_random_sample_consensus.html#a2d30c49d773e4ac88bf50d5019edd09e">pcl::cuda::MultiRandomSampleConsensus&lt; Storage &gt;</a>
 </li>
 <li>MultiscaleFeaturePersistence()
 : <a class="el" href="classpcl_1_1_multiscale_feature_persistence.html#acad907a232d8f53922d837685a7a1d88">pcl::MultiscaleFeaturePersistence&lt; PointSource, PointFeature &gt;</a>
@@ -664,7 +671,8 @@ $(function() {
 : <a class="el" href="classpcl_1_1device_1_1_multi_tree_live_proc.html#abda82c7e2aa36e862da641753e24d8fd">pcl::device::MultiTreeLiveProc</a>
 </li>
 <li>MyPointRepresentation()
-: <a class="el" href="classpcl_1_1registration_1_1_transformation_validation_euclidean_1_1_my_point_representation.html#ab96bc919235cd07a903c85f927032751">pcl::registration::TransformationValidationEuclidean&lt; PointSource, PointTarget, Scalar &gt;::MyPointRepresentation</a>
+: <a class="el" href="classpcl_1_1_generalized_iterative_closest_point6_d_1_1_my_point_representation.html#aacd68b0bb2497bab49164d3ca70d0317">pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation</a>
+, <a class="el" href="classpcl_1_1registration_1_1_transformation_validation_euclidean_1_1_my_point_representation.html#ab96bc919235cd07a903c85f927032751">pcl::registration::TransformationValidationEuclidean&lt; PointSource, PointTarget, Scalar &gt;::MyPointRepresentation</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -673,7 +681,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:15:37</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:57</p>
 </div> <!-- #footer -->
 </body>
 </html>

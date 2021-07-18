@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -216,34 +216,50 @@ $(function() {
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">              * \param[in] queries array of centers</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">              * \param[out] result array of results ( one index for each query ) </span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">              */</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordtype">void</span> approxNearestSearch(<span class="keyword">const</span> <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Queries</a>&amp; queries, <a class="code" href="structpcl_1_1gpu_1_1_neighbor_indices.html">NeighborIndices</a>&amp; result) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">            /** \brief Batch exact k-nearest search on GPU for k == 1 only!</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">              * \param[in] queries array of centers</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">              * \param[in] k number of neighbors (only k == 1 is supported)</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">              * \param[out] results array of results</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">              */</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordtype">void</span> nearestKSearchBatch(<span class="keyword">const</span> <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Queries</a>&amp; queries, <span class="keywordtype">int</span> k, <a class="code" href="structpcl_1_1gpu_1_1_neighbor_indices.html">NeighborIndices</a>&amp; results) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">            /** \brief Desroys octree and release all resources */</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordtype">void</span> clear();            </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordtype">void</span> *impl;            </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordtype">bool</span> built_;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        };        </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">      /** \brief Performs brute force radius search on GPU</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">        * \param[in] cloud cloud where to search</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">        * \param[in] query query point</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">        * \param[in] radius radius</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">        * \param[out] result indeces of points within give sphere</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">        * \param[in] buffer buffer for intermediate results. Keep reference to it between calls to eliminate internal allocations</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">        */</span>             </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="namespacepcl_1_1gpu.html#a4baae8cab370ad34293a52741e6cf948">bruteForceRadiusSearchGPU</a>(<span class="keyword">const</span> <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Octree::PointCloud</a>&amp; cloud, <span class="keyword">const</span> <a class="code" href="structpcl_1_1_point_x_y_z.html">Octree::PointType</a>&amp; query, <span class="keywordtype">float</span> radius, <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">DeviceArray&lt;int&gt;</a>&amp; result, <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">DeviceArray&lt;int&gt;</a>&amp; buffer);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PCL_GPU_OCTREE_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="pcl__macros_8h.html#a4a8c1cf238590cc2faee3a8d1b523975">PCL_DEPRECATED</a>(1, 14, <span class="stringliteral">&quot;use approxNearestSearch() which returns square distances instead&quot;</span>)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            void approxNearestSearch(const <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Queries</a>&amp; queries, <a class="code" href="structpcl_1_1gpu_1_1_neighbor_indices.html">NeighborIndices</a>&amp; result) const;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">            /** \brief Batch approximate nearest search on GPU</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">              * \param[in] queries array of centers</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">              * \param[out] result array of results ( one index for each query )</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">              * \param[out] sqr_distance corresponding square distances to results from query point</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">              */</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordtype">void</span> approxNearestSearch(const <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Queries</a>&amp; queries, <a class="code" href="structpcl_1_1gpu_1_1_neighbor_indices.html">NeighborIndices</a>&amp; result, <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">ResultSqrDists</a>&amp; sqr_distance) const;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">            /** \brief Batch exact k-nearest search on GPU for k == 1 only!</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">              * \param[in] queries array of centers</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">              * \param[in] k number of neighbors (only k == 1 is supported)</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">              * \param[out] results array of results</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">              */</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordtype">void</span> nearestKSearchBatch(const <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Queries</a>&amp; queries, <span class="keywordtype">int</span> k, <a class="code" href="structpcl_1_1gpu_1_1_neighbor_indices.html">NeighborIndices</a>&amp; results) const;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">            /** \brief Batch exact k-nearest search on GPU for k == 1 only!</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">              * \param[in] queries array of centers</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">              * \param[in] k number of neighbors (only k == 1 is supported)</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">              * \param[out] results array of results</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">              * \param[out] sqr_distances square distances to results</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">              */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordtype">void</span> nearestKSearchBatch(const <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">Queries</a>&amp; queries, <span class="keywordtype">int</span> k, <a class="code" href="structpcl_1_1gpu_1_1_neighbor_indices.html">NeighborIndices</a>&amp; results, <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">ResultSqrDists</a>&amp; sqr_distances) const;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">            /** \brief Desroys octree and release all resources */</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordtype">void</span> clear();            </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        private:</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordtype">void</span> *impl;            </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordtype">bool</span> built_;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        };        </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">      /** \brief Performs brute force radius search on GPU</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">        * \param[in] cloud cloud where to search</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">        * \param[in] query query point</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">        * \param[in] radius radius</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">        * \param[out] result indeces of points within give sphere</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">        * \param[in] buffer buffer for intermediate results. Keep reference to it between calls to eliminate internal allocations</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">        */</span>             </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <span class="keywordtype">void</span> <a class="code" href="namespacepcl_1_1gpu.html#a4baae8cab370ad34293a52741e6cf948">bruteForceRadiusSearchGPU</a>(const <a class="code" href="classpcl_1_1gpu_1_1_octree.html">Octree</a>::<a class="code" href="classpcl_1_1gpu_1_1_device_array.html">PointCloud</a>&amp; cloud, const <a class="code" href="classpcl_1_1gpu_1_1_octree.html">Octree</a>::<a class="code" href="structpcl_1_1_point_x_y_z.html">PointType</a>&amp; query, <span class="keywordtype">float</span> radius, <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">DeviceArray</a>&lt;<span class="keywordtype">int</span>&gt;&amp; result, <a class="code" href="classpcl_1_1gpu_1_1_device_array.html">DeviceArray</a>&lt;<span class="keywordtype">int</span>&gt;&amp; buffer);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PCL_GPU_OCTREE_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="apcl__macros_8h_html"><div class="ttname"><a href="pcl__macros_8h.html">pcl_macros.h</a></div><div class="ttdoc">Defines all the PCL and non-PCL macros used.</div></div>
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
@@ -251,19 +267,20 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1gpu_1_1_octree_html"><div class="ttname"><a href="classpcl_1_1gpu_1_1_octree.html">pcl::gpu::Octree</a></div><div class="ttdoc">Octree implementation on GPU.</div><div class="ttdef"><b>Definition:</b> <a href="octree_8hpp_source.html#l00057">octree.hpp:57</a></div></div>
 <div class="ttc" id="aclasspcl_1_1gpu_1_1_octree_html_a9aff6d4c118becd68d847d0a83c3d5db"><div class="ttname"><a href="classpcl_1_1gpu_1_1_octree.html#a9aff6d4c118becd68d847d0a83c3d5db">pcl::gpu::Octree::ConstPtr</a></div><div class="ttdeci">shared_ptr&lt; const Octree &gt; ConstPtr</div><div class="ttdef"><b>Definition:</b> <a href="octree_8hpp_source.html#l00069">octree.hpp:69</a></div></div>
 <div class="ttc" id="astructpcl_1_1gpu_1_1_neighbor_indices_html"><div class="ttname"><a href="structpcl_1_1gpu_1_1_neighbor_indices.html">pcl::gpu::NeighborIndices</a></div><div class="ttdef"><b>Definition:</b> <a href="device__format_8hpp_source.html#l00046">device_format.hpp:46</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00300">point_types.hpp:300</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a4a8c1cf238590cc2faee3a8d1b523975"><div class="ttname"><a href="pcl__macros_8h.html#a4a8c1cf238590cc2faee3a8d1b523975">PCL_DEPRECATED</a></div><div class="ttdeci">#define PCL_DEPRECATED(Major, Minor, Message)</div><div class="ttdoc">macro for compatibility across compilers and help remove old deprecated items for the Major....</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00156">pcl_macros.h:156</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z.html">pcl::PointXYZ</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00346">point_types.hpp:346</a></div></div>
 <div class="ttc" id="aclasspcl_1_1gpu_1_1_device_array_html"><div class="ttname"><a href="classpcl_1_1gpu_1_1_device_array.html">pcl::gpu::DeviceArray&lt; PointType &gt;</a></div></div>
 <div class="ttc" id="aclasspcl_1_1gpu_1_1_octree_html_ab8d9439cb3e10fce0b62a9836d7f3787"><div class="ttname"><a href="classpcl_1_1gpu_1_1_octree.html#ab8d9439cb3e10fce0b62a9836d7f3787">pcl::gpu::Octree::cloud_</a></div><div class="ttdeci">const PointCloud * cloud_</div><div class="ttdef"><b>Definition:</b> <a href="octree_8hpp_source.html#l00089">octree.hpp:89</a></div></div>
 <div class="ttc" id="anamespacepcl_1_1gpu_html_a4baae8cab370ad34293a52741e6cf948"><div class="ttname"><a href="namespacepcl_1_1gpu.html#a4baae8cab370ad34293a52741e6cf948">pcl::gpu::bruteForceRadiusSearchGPU</a></div><div class="ttdeci">PCL_EXPORTS void bruteForceRadiusSearchGPU(const Octree::PointCloud &amp;cloud, const Octree::PointType &amp;query, float radius, DeviceArray&lt; int &gt; &amp;result, DeviceArray&lt; int &gt; &amp;buffer)</div><div class="ttdoc">Performs brute force radius search on GPU.</div></div>
 <div class="ttc" id="aclasspcl_1_1gpu_1_1_octree_html_a3b7148e7aae9577d3eceae143ecc55c9"><div class="ttname"><a href="classpcl_1_1gpu_1_1_octree.html#a3b7148e7aae9577d3eceae143ecc55c9">pcl::gpu::Octree::Ptr</a></div><div class="ttdeci">shared_ptr&lt; Octree &gt; Ptr</div><div class="ttdoc">Types.</div><div class="ttdef"><b>Definition:</b> <a href="octree_8hpp_source.html#l00068">octree.hpp:68</a></div></div>
 <div class="ttc" id="amemory_8h_html"><div class="ttname"><a href="memory_8h.html">memory.h</a></div><div class="ttdoc">Defines functions, macros and traits for allocating and using memory.</div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:34</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:30</p>
 </div> <!-- #footer -->
 </body>
 </html>

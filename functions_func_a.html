@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -123,6 +123,7 @@ $(function() {
 , <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_01_4.html#ab66be13ff28aca145acc730d5014f70b">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZ &gt;</a>
 , <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_h_s_v_01_4.html#ae16e7757d222fa4a2f3a00f804b28770">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZHSV &gt;</a>
 , <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_l_01_4.html#ad41008fe3952fd865407218b430728ca">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZL &gt;</a>
+, <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_l_a_b_01_4.html#a702a9f75b7b30c82b7532b4385586f80">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLAB &gt;</a>
 , <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_l_normal_01_4.html#ac530a1a650915c253c101f52da845780">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLNormal &gt;</a>
 , <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_r_g_b_01_4.html#aeaea84634bcd1f8a9efdbf444dd2bea2">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZRGB &gt;</a>
 , <a class="el" href="structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_r_g_b_a_01_4.html#a3f2daff5f1668709d8e17b7b6f8b6085">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZRGBA &gt;</a>
@@ -257,6 +258,9 @@ $(function() {
 </li>
 <li>addEllipse()
 : <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_painter2_d.html#a6b73f2170057cde3fbbe1c3e4a869c62">pcl::visualization::PCLPainter2D</a>
+</li>
+<li>addEllipsoid()
+: <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_visualizer.html#aeb3eeabde64fa016defedcebd3745101">pcl::visualization::PCLVisualizer</a>
 </li>
 <li>addEllipticArc()
 : <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_painter2_d.html#a485c43dd70b1f58885cba470c829e47a">pcl::visualization::PCLPainter2D</a>
@@ -441,20 +445,20 @@ $(function() {
 : <a class="el" href="classpcl_1_1tracking_1_1_point_cloud_coherence.html#ae05198ff2b61b740fb61cecc62b46ba2">pcl::tracking::PointCloudCoherence&lt; PointInT &gt;</a>
 </li>
 <li>addPointFromCloud()
-: <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud.html#ac740d5e678cca7d165771f0c9e480050">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;</a>
+: <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud.html#a491c8c023c2c6fe2441a02cd6091d871">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;</a>
 </li>
 <li>addPointIdx()
-: <a class="el" href="classpcl_1_1io_1_1_octree_point_cloud_compression.html#a52c2d6fd6697d9df2a227373c4602cc4">pcl::io::OctreePointCloudCompression&lt; PointT, LeafT, BranchT, OctreeT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud.html#a8a1dcd695db20c10dd2ca049b3e6851e">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html#a5ff436b001cd8860a64718304b692eb5">pcl::octree::OctreePointCloudAdjacency&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_voxel_centroid.html#ad1fc1d5315fb84acbd54b0948a4dd820">pcl::octree::OctreePointCloudVoxelCentroid&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
+: <a class="el" href="classpcl_1_1io_1_1_octree_point_cloud_compression.html#a6f94b1b0f9dee98a3037adcf02bb4052">pcl::io::OctreePointCloudCompression&lt; PointT, LeafT, BranchT, OctreeT &gt;</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud.html#a8bae50ceb002237c6fbb2be6dc0d6546">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html#a80d06d345bee128f392ff9adcd217f51">pcl::octree::OctreePointCloudAdjacency&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_voxel_centroid.html#abe1953df07f8d6709729156fbd01ac27">pcl::octree::OctreePointCloudVoxelCentroid&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
 </li>
 <li>addPointIndex()
-: <a class="el" href="classpcl_1_1octree_1_1_octree_container_base.html#ae9eead54d1484998b444287ad5c331fc">pcl::octree::OctreeContainerBase</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_container_empty.html#af5989083d2dae8b9a29b2703d4e77ea2">pcl::octree::OctreeContainerEmpty</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_container_point_index.html#a81bc3388358213cc40bdc9cd0691c6fe">pcl::octree::OctreeContainerPointIndex</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_container_point_indices.html#a5ede7754faa12ab9b998d0e6f6fb73e2">pcl::octree::OctreeContainerPointIndices</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_density_container.html#a4e2bc0061fd531f754e1024728b18f0e">pcl::octree::OctreePointCloudDensityContainer</a>
+: <a class="el" href="classpcl_1_1octree_1_1_octree_container_base.html#a6d23baa84cd9f72f0e1a31d1743253b2">pcl::octree::OctreeContainerBase</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_container_empty.html#a4e4b39767adfed1e1dd191ddbb7932d3">pcl::octree::OctreeContainerEmpty</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_container_point_index.html#abb7f6b30095b77b61f93b8487845f469">pcl::octree::OctreeContainerPointIndex</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_container_point_indices.html#af9c3c9d58652c121b51250a7c924f6ad">pcl::octree::OctreeContainerPointIndices</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_density_container.html#a20c3e4f00cb49c981bec6615a46db50f">pcl::octree::OctreePointCloudDensityContainer</a>
 </li>
 <li>addPoints()
 : <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_painter2_d.html#a4af9c8c253b615196fb6c550cd353ab8">pcl::visualization::PCLPainter2D</a>
@@ -474,7 +478,7 @@ $(function() {
 , <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data2.html#a8f94370e16cd7c6ec93294db87280152">pcl::poisson::CoredVectorMeshData2</a>
 , <a class="el" href="classpcl_1_1poisson_1_1_cored_vector_mesh_data.html#a4275494b121da809c6fbcddfb67c7b7c">pcl::poisson::CoredVectorMeshData</a>
 , <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_painter2_d.html#aa25c38fb60e6f4d0100bf0e206e4e821">pcl::visualization::PCLPainter2D</a>
-, <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_visualizer.html#a53bdfc5812684721a5f47ff7da42f5c8">pcl::visualization::PCLVisualizer</a>
+, <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_visualizer.html#a05dd41c59b8323e9b5153aab7c45e1d4">pcl::visualization::PCLVisualizer</a>
 </li>
 <li>addPolygonMesh()
 : <a class="el" href="classpcl_1_1visualization_1_1_p_c_l_visualizer.html#a04b488bead8ef944b22690be9f768e24">pcl::visualization::PCLVisualizer</a>
@@ -486,7 +490,7 @@ $(function() {
 : <a class="el" href="classpcl_1_1registration_1_1_graph_handler.html#abce0aa4ae0403c9bcb17332c00fec890">pcl::registration::GraphHandler&lt; GraphT &gt;</a>
 </li>
 <li>addProjectedPointNormal()
-: <a class="el" href="classpcl_1_1_moving_least_squares.html#a95b7808828728e6adc6a7c9d09a1b9dc">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;</a>
+: <a class="el" href="classpcl_1_1_moving_least_squares.html#ae177a8bdefce38ec4878bca18a008aeb">pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;</a>
 </li>
 <li>addQuad()
 : <a class="el" href="classpcl_1_1_organized_fast_mesh.html#a5d65d8b8d6f87d86ce99237d7be43838">pcl::OrganizedFastMesh&lt; PointInT &gt;</a>
@@ -793,8 +797,8 @@ $(function() {
 , <a class="el" href="class_o_n___poly_curve.html#aeef34b01b31622f65c518e0051bf49d9">ON_PolyCurve</a>
 , <a class="el" href="class_o_n___poly_edge_curve.html#af903a28442ef16587622428de2f1b576">ON_PolyEdgeCurve</a>
 , <a class="el" href="class_o_n___polyline_curve.html#abdcc3c04482667c0615ea402c4d02b85">ON_PolylineCurve</a>
-, <a class="el" href="class_o_n___simple_array.html#a191f36f7af3813d99dac25c910a7f9a5">ON_SimpleArray&lt; T &gt;</a>
-, <a class="el" href="class_o_n___string.html#a8cb5be32e89e62133e343de72ce6f922">ON_String</a>
+, <a class="el" href="class_o_n___simple_array.html#a5e10b309af51f313e265059bb1240559">ON_SimpleArray&lt; T &gt;</a>
+, <a class="el" href="class_o_n___string.html#a419b18510490cb476acd2bf59d10d3bb">ON_String</a>
 , <a class="el" href="class_o_n__w_string.html#a4154720a855e9ee00f13e9c7dd33f8c7">ON_wString</a>
 </li>
 <li>AppendAndMatch()
@@ -815,10 +819,10 @@ $(function() {
 : <a class="el" href="class_o_n___linetype.html#ab13d440f5206161be16754eeccfd82d4">ON_Linetype</a>
 </li>
 <li>AppendText()
-: <a class="el" href="class_o_n___text_log.html#ad1ae5fea182499a9f2bf0eab1b14bb7a">ON_TextLog</a>
+: <a class="el" href="class_o_n___text_log.html#a4c5d1faf3fe24cd2c9dd7b6f7025bb41">ON_TextLog</a>
 </li>
 <li>AppendToArray()
-: <a class="el" href="class_o_n___string.html#a672612e6c149487edab39c272c60c0a7">ON_String</a>
+: <a class="el" href="class_o_n___string.html#ac969fcea36a8c4a876d9e05e2c7faed3">ON_String</a>
 , <a class="el" href="class_o_n__w_string.html#adf9b10205b146008d7e3c7a0c1bd2fda">ON_wString</a>
 </li>
 <li>applyFilter()
@@ -826,38 +830,39 @@ $(function() {
 , <a class="el" href="classpcl_1_1_bilateral_filter.html#acd9de2b9a8a4595afb761f9afd77a332">pcl::BilateralFilter&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_conditional_removal.html#a3d1084a0b78477a2a80162e711b94109">pcl::ConditionalRemoval&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_convolution.html#aff1e33e44370369b203496ebe7e0a63c">pcl::Convolution&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_covariance_sampling.html#addfd65264313e58e2cee791f45d96f0b">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a>
-, <a class="el" href="classpcl_1_1_crop_box.html#af16f9210caa470a230f9a6e0fda41235">pcl::CropBox&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_covariance_sampling.html#a7feb25a54b7f79ad4c4ff2949d4498e5">pcl::CovarianceSampling&lt; PointT, PointNT &gt;</a>
+, <a class="el" href="classpcl_1_1_crop_box.html#a7fa5eed3348dee153f7c406f099a25fe">pcl::CropBox&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_crop_box_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a11cfc894c79bbb1e48afb86bf78f858a">pcl::CropBox&lt; pcl::PCLPointCloud2 &gt;</a>
-, <a class="el" href="classpcl_1_1_crop_hull.html#a715fb3dff497b2cdf0da65301daee880">pcl::CropHull&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_crop_hull.html#a9a3ec2a3eebd0f730414a089dd53df8e">pcl::CropHull&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_edge.html#a20df146859d075581befb3db08b71fd6">pcl::Edge&lt; PointInT, PointOutT &gt;</a>
+, <a class="el" href="classpcl_1_1experimental_1_1advanced_1_1_functor_filter.html#a094323a4cd0c7ae57dbe7e7dca6ee026">pcl::experimental::advanced::FunctorFilter&lt; PointT, FunctionObject &gt;</a>
 , <a class="el" href="classpcl_1_1_extract_indices.html#ae895333b929b9dacb0469c356f499e07">pcl::ExtractIndices&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_extract_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#abd7ebceadcb0020c4ef821c011c41b88">pcl::ExtractIndices&lt; pcl::PCLPointCloud2 &gt;</a>
+, <a class="el" href="classpcl_1_1_extract_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#ad9d579b95b3faaa9a31f0f4ee1f6b346">pcl::ExtractIndices&lt; pcl::PCLPointCloud2 &gt;</a>
 , <a class="el" href="classpcl_1_1_fast_bilateral_filter.html#a18bdd38f07209726da71e30271702984">pcl::FastBilateralFilter&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_fast_bilateral_filter_o_m_p.html#a721625d63cbda9195a86c20257d8648c">pcl::FastBilateralFilterOMP&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_filter.html#a1f703f36f50546e950f03af2453da623">pcl::Filter&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a256be01434982abe84294a90c7dbc241">pcl::Filter&lt; pcl::PCLPointCloud2 &gt;</a>
-, <a class="el" href="classpcl_1_1_filter_indices.html#a96adbc8e3d7a076cc00a938260160466">pcl::FilterIndices&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a7975e7f871539a99c033173d557b31b4">pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;</a>
-, <a class="el" href="classpcl_1_1_frustum_culling.html#a1fa17e773c146cd1bcd3c24408e3a77c">pcl::FrustumCulling&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_grid_minimum.html#a62b11b6cd83d0e8affc76784cd22a08f">pcl::GridMinimum&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_filter_indices.html#a237872d14a14ba3881592d3106cf4338">pcl::FilterIndices&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a0d7c7e14086867e5d4c121a51b333623">pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;</a>
+, <a class="el" href="classpcl_1_1_frustum_culling.html#aeff473eb91fc55a0278a5d713710e1d6">pcl::FrustumCulling&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_grid_minimum.html#ac77132266aab30c32988d921cf73a1a8">pcl::GridMinimum&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_local_maximum.html#a1ba47b183064c2e8f83b6fac18fd6518">pcl::LocalMaximum&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_median_filter.html#a7adb2d74a146afc8a58bd75432a1bc13">pcl::MedianFilter&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_model_outlier_removal.html#a99de852528b9af9b5fa91a1f9487613b">pcl::ModelOutlierRemoval&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_model_outlier_removal.html#a9766c48284eeaa5783fc1d48ff9ab95c">pcl::ModelOutlierRemoval&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_normal_refinement.html#a3ff5080049cb21620fde47d115b02c02">pcl::NormalRefinement&lt; NormalT &gt;</a>
-, <a class="el" href="classpcl_1_1_normal_space_sampling.html#af17095c92915736197f0c843bfd12330">pcl::NormalSpaceSampling&lt; PointT, NormalT &gt;</a>
-, <a class="el" href="classpcl_1_1_pass_through.html#a9f21cb6737302aca641549ad83c571b5">pcl::PassThrough&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_normal_space_sampling.html#a652be792088e2ce8e0cc5151e7590f30">pcl::NormalSpaceSampling&lt; PointT, NormalT &gt;</a>
+, <a class="el" href="classpcl_1_1_pass_through.html#a1f9d2919241e332a8ca528dbe7682d80">pcl::PassThrough&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_pass_through_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a469a559ae815b6e99bfc0ddbe7959a23">pcl::PassThrough&lt; pcl::PCLPointCloud2 &gt;</a>
 , <a class="el" href="classpcl_1_1_project_inliers.html#a43a65b30fe60e31e558a10898ec10981">pcl::ProjectInliers&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_project_inliers_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a973f1669d5b559e812967a2b17b96c6d">pcl::ProjectInliers&lt; pcl::PCLPointCloud2 &gt;</a>
-, <a class="el" href="classpcl_1_1_radius_outlier_removal.html#a6440dee772a74492e69347991751ca9e">pcl::RadiusOutlierRemoval&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_radius_outlier_removal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a4deb9a714c377babd48151b4de5503e4">pcl::RadiusOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;</a>
-, <a class="el" href="classpcl_1_1_random_sample.html#acfc171233ff488113ff83ddb113b3ba7">pcl::RandomSample&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_random_sample_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a1485b4504693b3858cbf890023ddb4f0">pcl::RandomSample&lt; pcl::PCLPointCloud2 &gt;</a>
+, <a class="el" href="classpcl_1_1_radius_outlier_removal.html#a24cfd81a168cf0d4b8968ba54e2eeb33">pcl::RadiusOutlierRemoval&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_radius_outlier_removal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#af83e1f49e3e365322b612ea113d557f7">pcl::RadiusOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;</a>
+, <a class="el" href="classpcl_1_1_random_sample.html#a59c9bbd871e1d406bcf308490bb67784">pcl::RandomSample&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_random_sample_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#acc401d80c77e78176a6dc508da883c2d">pcl::RandomSample&lt; pcl::PCLPointCloud2 &gt;</a>
 , <a class="el" href="classpcl_1_1_sampling_surface_normal.html#a69621ccbcfeab1ce6c44a41103f760c0">pcl::SamplingSurfaceNormal&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_shadow_points.html#af0592a4c4b6bad1ef5b027f7f1a210d5">pcl::ShadowPoints&lt; PointT, NormalT &gt;</a>
-, <a class="el" href="classpcl_1_1_statistical_outlier_removal.html#a9fd2835b1f263181ad08dfc684885211">pcl::StatisticalOutlierRemoval&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_statistical_outlier_removal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a7a211355556f9169d94158f28ee45ebf">pcl::StatisticalOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;</a>
+, <a class="el" href="classpcl_1_1_shadow_points.html#a98e5b61c5b095d4aff9f10395695ab54">pcl::ShadowPoints&lt; PointT, NormalT &gt;</a>
+, <a class="el" href="classpcl_1_1_statistical_outlier_removal.html#a79cbfb5d8f27f22b8bcf705ce8e9a0da">pcl::StatisticalOutlierRemoval&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_statistical_outlier_removal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a2f60b5bcf9f4ff09cdb6b1ed6c76193c">pcl::StatisticalOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;</a>
 , <a class="el" href="classpcl_1_1_uniform_sampling.html#ad6e1fb5d711d7785e04d5d3ee3eddd00">pcl::UniformSampling&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_voxel_grid.html#a2f4184df5120afff5d372736ae6c5078">pcl::VoxelGrid&lt; PointT &gt;</a>
 , <a class="el" href="classpcl_1_1_voxel_grid_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a58a3863cdf7bf2d5b761c7917a04a00d">pcl::VoxelGrid&lt; pcl::PCLPointCloud2 &gt;</a>
@@ -872,13 +877,13 @@ $(function() {
 , <a class="el" href="classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4.html#a6e500fb9ed405cb6c8938d028f704491">pcl_cuda::VoxelGrid&lt; PointCloudSOA&lt; Device &gt; &gt;</a>
 </li>
 <li>applyFilterIndices()
-: <a class="el" href="classpcl_1_1_extract_indices.html#a29def1e4b40857d4d3b78fd6b81507a1">pcl::ExtractIndices&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_grid_minimum.html#a22172ca3586699b90b94584e0165890a">pcl::GridMinimum&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_local_maximum.html#a1ac8d14d66524c3f8f7277b7029fa0a1">pcl::LocalMaximum&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_model_outlier_removal.html#a3cf4bbd4c9245d3f5935ce5a2055571c">pcl::ModelOutlierRemoval&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_pass_through.html#a5322c04b5797d7d10f56c9040e12c30e">pcl::PassThrough&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_radius_outlier_removal.html#add87896d31617f64fcd3386211a89bae">pcl::RadiusOutlierRemoval&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1_statistical_outlier_removal.html#ac559940193a9be8ce2e9efa90437bcd0">pcl::StatisticalOutlierRemoval&lt; PointT &gt;</a>
+: <a class="el" href="classpcl_1_1_extract_indices.html#a5cb2e7b1f3266b7bed5aab1cf6e400e4">pcl::ExtractIndices&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_grid_minimum.html#a47ea4d48f248a7e230a98900461ff2fe">pcl::GridMinimum&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_local_maximum.html#a73724d20783e60a126149d0af92496f8">pcl::LocalMaximum&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_model_outlier_removal.html#a26682963db310c865176cd9c16861ecc">pcl::ModelOutlierRemoval&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_pass_through.html#ab81af7ce25c0ec5d29c4f1873643426a">pcl::PassThrough&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_radius_outlier_removal.html#a0076e5530520a4915111ae71c5d48ef2">pcl::RadiusOutlierRemoval&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_statistical_outlier_removal.html#a7d50c468fc729c66fe0af06df24e0509">pcl::StatisticalOutlierRemoval&lt; PointT &gt;</a>
 </li>
 <li>applyFiltersAndSegment()
 : <a class="el" href="class_object_recognition.html#a1c4979200977bc7507100611e8726a6f">ObjectRecognition</a>
@@ -893,10 +898,10 @@ $(function() {
 : <a class="el" href="classpcl_1_1_morphology.html#aa5cd7554ee53f464d94163c7b57d7c87">pcl::Morphology&lt; PointT &gt;</a>
 </li>
 <li>applyNonMaxSuppression()
-: <a class="el" href="classpcl_1_1keypoints_1_1agast_1_1_abstract_agast_detector.html#ae936195a723d48c3730584a74eb32bb1">pcl::keypoints::agast::AbstractAgastDetector</a>
+: <a class="el" href="classpcl_1_1keypoints_1_1agast_1_1_abstract_agast_detector.html#aa994a405e6650454483e29f0d9b907cb">pcl::keypoints::agast::AbstractAgastDetector</a>
 </li>
 <li>ApplyParentalControl()
-: <a class="el" href="class_o_n__3dm_object_attributes.html#a810497ed2c4cea814734971725b6899e">ON_3dmObjectAttributes</a>
+: <a class="el" href="class_o_n__3dm_object_attributes.html#ab43b6417b9507ca53a1e7bf4be6d7357">ON_3dmObjectAttributes</a>
 </li>
 <li>applyProjectiveDepthICPOnDetections()
 : <a class="el" href="classpcl_1_1_line_r_g_b_d.html#a276ccfd0f7ac632f77d49ecc8caff121">pcl::LineRGBD&lt; PointXYZT, PointRGBT &gt;</a>
@@ -946,17 +951,17 @@ $(function() {
 : <a class="el" href="classpcl_1_1tracking_1_1_approx_nearest_pair_point_cloud_coherence.html#ade1643a78bd318139e4634f4a9c15e66">pcl::tracking::ApproxNearestPairPointCloudCoherence&lt; PointInT &gt;</a>
 </li>
 <li>approxNearestSearch()
-: <a class="el" href="classpcl_1_1device_1_1_octree_impl.html#a8f2d0eb4b78b0fac17dedbfef33ac04a">pcl::device::OctreeImpl</a>
-, <a class="el" href="classpcl_1_1gpu_1_1_octree.html#a6f8d000384e2c4df3d6fa50a41d922f4">pcl::gpu::Octree</a>
-, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_search.html#a9dbe80e71348afa35b7eea4e0d7de225">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1search_1_1_octree.html#ad80da17553d7e7c9442dd4aad89b7eda">pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;</a>
+: <a class="el" href="classpcl_1_1device_1_1_octree_impl.html#afc6bc2f185ddbeb0caef36ade9f1975e">pcl::device::OctreeImpl</a>
+, <a class="el" href="classpcl_1_1gpu_1_1_octree.html#a5c99767afa0296d9bfafb9ef66eed348">pcl::gpu::Octree</a>
+, <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_search.html#acd8ebb74c7e8a72d057cdd37c5f4cd92">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
+, <a class="el" href="classpcl_1_1search_1_1_octree.html#a4fa02f0075f91861d6f3fcba9be3394f">pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;</a>
 </li>
 <li>approxNearestSearchHost()
 : <a class="el" href="classpcl_1_1device_1_1_octree_impl.html#ad449d776ded85c944aaf8786019a5428">pcl::device::OctreeImpl</a>
 , <a class="el" href="classpcl_1_1gpu_1_1_octree.html#ac41094b3ee693ebcfdaafb050a4026bc">pcl::gpu::Octree</a>
 </li>
 <li>approxNearestSearchRecursive()
-: <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_search.html#a2361d272532234458d3a6a5d32fe0d01">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
+: <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_search.html#a8bcb8b22c2819ca1b2d4faf05811babe">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
 </li>
 <li>Archive()
 : <a class="el" href="class_o_n___dimension_extra.html#a8c62b43ae2a99ad33f2df538194c5ecc">ON_DimensionExtra</a>
@@ -979,16 +984,16 @@ $(function() {
 , <a class="el" href="class_o_n___box.html#a8ac70d170fea67540379b3b3f4103201">ON_Box</a>
 </li>
 <li>area()
-: <a class="el" href="classpcl_1_1_ear_clipping.html#a3e279cd70d60ef6136d134ea2bcbe845">pcl::EarClipping</a>
+: <a class="el" href="classpcl_1_1_ear_clipping.html#a01b889cb809bb75fc06288936b87292f">pcl::EarClipping</a>
 </li>
 <li>Area()
 : <a class="el" href="classpcl_1_1poisson_1_1_triangle.html#afd94f8ceccddd9ab4a8b7178310798aa">pcl::poisson::Triangle</a>
 </li>
 <li>area()
-: <a class="el" href="classpcl_1_1poisson_1_1_triangulation.html#ae52f804acd613d810c5bf9f465f79639">pcl::poisson::Triangulation&lt; Real &gt;</a>
+: <a class="el" href="classpcl_1_1poisson_1_1_triangulation.html#a759ff2d4a2097bd97c46cb1505af7fa7">pcl::poisson::Triangulation&lt; Real &gt;</a>
 </li>
 <li>AreaPickingEvent()
-: <a class="el" href="classpcl_1_1visualization_1_1_area_picking_event.html#a40af2c21b7ff031f8b348d730b1c5b40">pcl::visualization::AreaPickingEvent</a>
+: <a class="el" href="classpcl_1_1visualization_1_1_area_picking_event.html#a07dd609528bd0117a1cb97f8e3481b65">pcl::visualization::AreaPickingEvent</a>
 </li>
 <li>areEquals()
 : <a class="el" href="classpcl_1_1_b_o_a_r_d_local_reference_frame_estimation.html#aee8fdbbcd1053a970dd15835cce2d9b1">pcl::BOARDLocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>
@@ -997,9 +1002,9 @@ $(function() {
 : <a class="el" href="class_o_n__2dex_map.html#a185fe5879cfdbe59f88abb5adeb7e3e3">ON_2dexMap</a>
 , <a class="el" href="class_o_n___class_array.html#aaed80bbce99f3e7c8fdfef236c701439">ON_ClassArray&lt; T &gt;</a>
 , <a class="el" href="class_o_n___simple_array.html#a3f15ab76bb2eb78bd546feed68e449c6">ON_SimpleArray&lt; T &gt;</a>
-, <a class="el" href="class_o_n___string.html#ab849dcd3d58338c932a350b73513ecfd">ON_String</a>
+, <a class="el" href="class_o_n___string.html#a6e618ce4be0f95e2fe680273d1ca0470">ON_String</a>
 , <a class="el" href="class_o_n___uuid_list.html#a2e0e47fe0b8979066aa361ba2413c4be">ON_UuidList</a>
-, <a class="el" href="class_o_n__w_string.html#abf6b5a32152cd5b4b47399ade6ee4c02">ON_wString</a>
+, <a class="el" href="class_o_n__w_string.html#ab444fd1486023180a7545fa5bbacf648">ON_wString</a>
 </li>
 <li>Array3D()
 : <a class="el" href="classpcl_1_1_fast_bilateral_filter_1_1_array3_d.html#a51dde4b8246e6f31beaa647ca28de992">pcl::FastBilateralFilter&lt; PointT &gt;::Array3D</a>
@@ -1036,18 +1041,19 @@ $(function() {
 : <a class="el" href="structfunctor_add_values.html#ace1225a8f584acbb0fe5b39f915b1c96">functorAddValues&lt; T &gt;</a>
 , <a class="el" href="structfunctor_max_values.html#a879dc0c0f8e92bcfcf3bb2686b23a950">functorMaxValues&lt; T &gt;</a>
 , <a class="el" href="structfunctor_min_values.html#a37033f41232b9a5c2c1167ecd6bf1dd1">functorMinValues&lt; T &gt;</a>
+, <a class="el" href="classpcl_1_1_point_cloud.html#ae7cc1fb81be813d45dcda878c9a43d44">pcl::PointCloud&lt; PointT &gt;</a>
 </li>
 <li>assignColors()
 : <a class="el" href="classpcl_1_1segmentation_1_1detail_1_1_random_walker.html#abb0e9ead2f2f23e7050dfa6c0cc2eb16">pcl::segmentation::detail::RandomWalker&lt; Graph, EdgeWeightMap, VertexColorMap &gt;</a>
 </li>
 <li>assignIf()
-: <a class="el" href="classpcl_1_1geometry_1_1_mesh_base.html#aa05fb70a936834a610cfe1732d32f5b3">pcl::geometry::MeshBase&lt; DerivedT, MeshTraitsT, MeshTagT &gt;</a>
+: <a class="el" href="classpcl_1_1geometry_1_1_mesh_base.html#a79de00dd9686d5d4b497f57ffc054c17">pcl::geometry::MeshBase&lt; DerivedT, MeshTraitsT, MeshTagT &gt;</a>
 </li>
 <li>assignLabelIndices()
 : <a class="el" href="classpcl_1_1_organized_edge_base.html#a97fa07dbeb07a1aec159d72fcceba2fd">pcl::OrganizedEdgeBase&lt; PointT, PointLT &gt;</a>
 </li>
 <li>assignLabels()
-: <a class="el" href="classpcl_1_1_unary_classifier.html#a4b6976db00e3e1d995d4bb7b2181f4b7">pcl::UnaryClassifier&lt; PointT &gt;</a>
+: <a class="el" href="classpcl_1_1_unary_classifier.html#a6ef7ea6736f195eee9be3e4d7cd00be8">pcl::UnaryClassifier&lt; PointT &gt;</a>
 </li>
 <li>AsyncCopy()
 : <a class="el" href="classpcl_1_1gpu_1_1_async_copy.html#a20beb136610417440f8a896440d83bc1">pcl::gpu::AsyncCopy&lt; T &gt;</a>
@@ -1056,16 +1062,16 @@ $(function() {
 : <a class="el" href="class_n_c_v_matrix.html#ab78352fac82e9c22e0f8b3964ada27ca">NCVMatrix&lt; T &gt;</a>
 </li>
 <li>At()
-: <a class="el" href="class_o_n___class_array.html#a3a8d1c926554aad1bc07de202572d88f">ON_ClassArray&lt; T &gt;</a>
-, <a class="el" href="class_o_n___simple_array.html#ae161661243669e43d36200489c54003e">ON_SimpleArray&lt; T &gt;</a>
+: <a class="el" href="class_o_n___class_array.html#af163db1328a3ff14d6eae781bb872dc4">ON_ClassArray&lt; T &gt;</a>
+, <a class="el" href="class_o_n___simple_array.html#a96a27ef6a8d802224df16a88770514f4">ON_SimpleArray&lt; T &gt;</a>
 </li>
 <li>at()
 : <a class="el" href="classpcl_1_1_color_l_u_t.html#a6c46d99ed649d2d688229f9a6ea56e2a">pcl::ColorLUT&lt; T &gt;</a>
 , <a class="el" href="classpcl_1_1cuda_1_1_point_cloud_a_o_s.html#acf5e24c06d226b5df5126b2a38c7f597">pcl::cuda::PointCloudAOS&lt; Storage &gt;</a>
 , <a class="el" href="classpcl_1_1_file_grabber.html#aa7eb2098165e8764b16fb86db42f8c73">pcl::FileGrabber&lt; PointT &gt;</a>
-, <a class="el" href="classpcl_1_1io_1_1ply_1_1ply__parser.html#a7385117cb3d8f5ccc85bf285706118cd">pcl::io::ply::ply_parser</a>
+, <a class="el" href="classpcl_1_1io_1_1ply_1_1ply__parser.html#a9f20de9aa5f707ee5e3f214973b4f974">pcl::io::ply::ply_parser</a>
 , <a class="el" href="classpcl_1_1octree_1_1_octree_point_cloud_adjacency.html#af8c860680359a97026d7ca863fd0a9e8">pcl::octree::OctreePointCloudAdjacency&lt; PointT, LeafContainerT, BranchContainerT &gt;</a>
-, <a class="el" href="classpcl_1_1_point_cloud.html#a930c2d1f3d8682ca228873ce1c5cc7c4">pcl::PointCloud&lt; PointT &gt;</a>
+, <a class="el" href="classpcl_1_1_point_cloud.html#a47a5ee1f334013d9413e11457e695e41">pcl::PointCloud&lt; PointT &gt;</a>
 </li>
 <li>atan2LookUp()
 : <a class="el" href="classpcl_1_1_range_image.html#a17835570c515cca3ba1ecd0f132bf013">pcl::RangeImage</a>
@@ -1088,10 +1094,10 @@ $(function() {
 : <a class="el" href="class_o_n___object.html#ab6d28b2b8f63b854c8ffe461eddeffc3">ON_Object</a>
 </li>
 <li>Attenuation()
-: <a class="el" href="class_o_n___light.html#a1594edf09482c1b0c862e3a1f6850811">ON_Light</a>
+: <a class="el" href="class_o_n___light.html#a8940237940c927b1dda33417163a4c47">ON_Light</a>
 </li>
 <li>AttribLocation()
-: <a class="el" href="structpcl_1_1gpu_1_1people_1_1trees_1_1_attrib_location.html#a0d4b93ca740367d1ba7f4eccaaa07a5c">pcl::gpu::people::trees::AttribLocation</a>
+: <a class="el" href="structpcl_1_1gpu_1_1people_1_1trees_1_1_attrib_location.html#acb39f1aa0cf8fa9f7d39901e4fb0f8c1">pcl::gpu::people::trees::AttribLocation</a>
 </li>
 <li>Audit()
 : <a class="el" href="class_o_n_x___model.html#a6c03b350b381fd7f906e5e5f6c6781cc">ONX_Model</a>
@@ -1100,10 +1106,10 @@ $(function() {
 : <a class="el" href="classpcl_1_1segmentation_1_1grabcut_1_1_boykov_kolmogorov.html#a304cea3dae4656b0e48617a27b78be73">pcl::segmentation::grabcut::BoykovKolmogorov</a>
 </li>
 <li>auxilaryFunction_dPsiMT()
-: <a class="el" href="classpcl_1_1_normal_distributions_transform.html#a93428f5aa08e84203bde53cd554c6794">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;</a>
+: <a class="el" href="classpcl_1_1_normal_distributions_transform.html#a2e1010bf281c33b298e39f5b9d41902a">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;</a>
 </li>
 <li>auxilaryFunction_PsiMT()
-: <a class="el" href="classpcl_1_1_normal_distributions_transform.html#a8fc05efdb729b163d4e3f175186b5e5a">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;</a>
+: <a class="el" href="classpcl_1_1_normal_distributions_transform.html#ad78f7ae927db97f28c6a43b859256690">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;</a>
 </li>
 <li>AverageBuffer()
 : <a class="el" href="classpcl_1_1io_1_1_average_buffer.html#a5d73eb7258fb7c09f17c8a9bde724a55">pcl::io::AverageBuffer&lt; T &gt;</a>
@@ -1118,7 +1124,7 @@ $(function() {
 : <a class="el" href="class_o_n___cone.html#ab61bd901e2f7d739c927750cd84f2d68">ON_Cone</a>
 , <a class="el" href="class_o_n___cylinder.html#a5c81901e5da1cb1f365c287dc6dd3109">ON_Cylinder</a>
 , <a class="el" href="class_o_n___torus.html#afed743a8d52166e87fe3adeec045c540">ON_Torus</a>
-, <a class="el" href="structpcl_1_1_axis.html#a00fcba7bea15b7fe471f01a79a44e8ff">pcl::Axis</a>
+, <a class="el" href="structpcl_1_1_axis.html#abb3815c6663ba713641d0c7af74640a3">pcl::Axis</a>
 </li>
 <li>axisChosen()
 : <a class="el" href="class_p_c_l_viewer.html#ad7d2cbcbbc8a2aecd680194f89607835">PCLViewer</a>
@@ -1130,7 +1136,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:15:37</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:57</p>
 </div> <!-- #footer -->
 </body>
 </html>

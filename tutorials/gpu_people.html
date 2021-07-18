@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Detecting people and their poses using PointCloud Library &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Detecting people and their poses using PointCloud Library &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -156,7 +156,7 @@
 This is based on work from Koen Buys, Cedric Cagniart, Anatoly Bashkeev and Caroline Pantofaru, this
 has been presented on ICRA2012 and IROS2012 and an official reference for a journal paper is in progress. A coarse outline of how it works can be seen in the following video.</p>
 <blockquote>
-<div><iframe width="560" height="315" src="http://www.youtube.com/embed/Wd4OM8wOO1E?rel=0" frameborder="0" allowfullscreen></iframe></div></blockquote>
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/Wd4OM8wOO1E?rel=0" frameborder="0" allowfullscreen></iframe></div></blockquote>
 <p>This shows how to detect people with an Primesense device, the full version
 working on oni and pcd files can be found in the git master.
 The code assumes an organised and projectable pointcloud, and should work with other
@@ -177,10 +177,7 @@ This version can be found in doc/tutorials/content/sources/gpu/people_detect.</p
 <div class="section" id="the-explanation">
 <h1>The explanation</h1>
 <p>Now, let’s break down the code piece by piece. Starting from the main routine.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="n">DeviceArray</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">RGB</span><span class="o">&gt;</span> <span class="n">color_map_</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="c1">// selecting GPU and prining info</span>
   <span class="kt">int</span> <span class="n">device</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -192,7 +189,7 @@ This version can be found in doc/tutorials/content/sources/gpu/people_detect.</p
   <span class="n">pcl</span><span class="o">::</span><span class="n">Grabber</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">capture</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">OpenNIGrabber</span><span class="p">());</span>
 
   <span class="c1">//selecting tree files</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">tree_files</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">tree_files</span><span class="p">;</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest1/tree_20.txt&quot;</span><span class="p">);</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest2/tree_20.txt&quot;</span><span class="p">);</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest3/tree_20.txt&quot;</span><span class="p">);</span>
@@ -228,43 +225,46 @@ This version can be found in doc/tutorials/content/sources/gpu/people_detect.</p
   <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
   <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">bad_alloc</span><span class="o">&amp;</span> <span class="cm">/*e*/</span><span class="p">)</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Bad alloc&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
   <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="cm">/*e*/</span><span class="p">)</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Exception&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>First the GPU device is set, by default this is the first GPU found in the bus, but if you have multiple GPU’s in
 your system, this allows you to select a specific one.
 Then a OpenNI Capture is made, see the OpenNI Grabber tutorial for more info on this. (TODO add link)</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">Grabber</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">capture</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">OpenNIGrabber</span><span class="p">());</span>
-
-  <span class="c1">//selecting tree files</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">tree_files</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">tree_files</span><span class="p">;</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest1/tree_20.txt&quot;</span><span class="p">);</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest2/tree_20.txt&quot;</span><span class="p">);</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest3/tree_20.txt&quot;</span><span class="p">);</span>
   <span class="n">tree_files</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">&quot;Data/forest4/tree_20.txt&quot;</span><span class="p">);</span>
 
   <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-tree0&quot;</span><span class="p">,</span> <span class="n">tree_files</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+  <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-tree1&quot;</span><span class="p">,</span> <span class="n">tree_files</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+  <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-tree2&quot;</span><span class="p">,</span> <span class="n">tree_files</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+  <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-tree3&quot;</span><span class="p">,</span> <span class="n">tree_files</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
 </pre></div>
 </div>
 <p>The implementation is based on a similar approach as Shotton et al. and thus needs off-line learned random
 decision forests for labeling. The current implementation allows up to 4 decision trees to be loaded into
 the forest. This is done by giving it the names of the text files to load.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-tree2&quot;</span><span class="p">,</span> <span class="n">tree_files</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
-  <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-tree3&quot;</span><span class="p">,</span> <span class="n">tree_files</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="kt">int</span> <span class="n">num_trees</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">tree_files</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+  <span class="n">pc</span><span class="o">::</span><span class="n">parse_argument</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-numTrees&quot;</span><span class="p">,</span> <span class="n">num_trees</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>An additional parameter allows you to configure the number of trees to be loaded.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="k">try</span>
-  <span class="p">{</span>
-    <span class="c1">// loading trees</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">gpu</span><span class="o">::</span><span class="n">people</span><span class="o">::</span><span class="n">RDFBodyPartsDetector</span> <span class="n">RDFBodyPartsDetector</span><span class="p">;</span>
+    <span class="n">RDFBodyPartsDetector</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">rdf</span><span class="p">(</span><span class="k">new</span> <span class="n">RDFBodyPartsDetector</span><span class="p">(</span><span class="n">tree_files</span><span class="p">));</span>
+    <span class="n">PCL_INFO</span><span class="p">(</span><span class="s">&quot;Loaded files into rdf&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Then the RDF object is created, loading the trees upon creation.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="n">RDFBodyPartsDetector</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">rdf</span><span class="p">(</span><span class="k">new</span> <span class="n">RDFBodyPartsDetector</span><span class="p">(</span><span class="n">tree_files</span><span class="p">));</span>
-    <span class="n">PCL_INFO</span><span class="p">(</span><span class="s">&quot;Loaded files into rdf&quot;</span><span class="p">);</span>
-
-    <span class="c1">// Create the app</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="c1">// Create the app</span>
     <span class="n">PeoplePCDApp</span> <span class="nf">app</span><span class="p">(</span><span class="o">*</span><span class="n">capture</span><span class="p">);</span>
     <span class="n">app</span><span class="p">.</span><span class="n">people_detector_</span><span class="p">.</span><span class="n">rdf_detector_</span> <span class="o">=</span> <span class="n">rdf</span><span class="p">;</span>
+
+    <span class="c1">// executing</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">startMainLoop</span> <span class="p">();</span>
 </pre></div>
 </div>
 <p>Now we create the application object, give it the pointer to the RDF object and start the loop.
@@ -318,6 +318,9 @@ Now we’ll have a look at the main loop.</p>
         <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="cm">/*e*/</span><span class="p">)</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Exception&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
 
         <span class="n">capture_</span><span class="p">.</span><span class="n">stop</span> <span class="p">();</span>
+      <span class="p">}</span>
+      <span class="n">c</span><span class="p">.</span><span class="n">disconnect</span><span class="p">();</span>
+    <span class="p">}</span>
 </pre></div>
 </div>
 <p>This routine first connects a callback routine to the grabber and waits for valid data to arrive.
@@ -336,7 +339,7 @@ The visualizeAndWrite method will illustrate one of the available methods of the
       <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
       <span class="n">cmap_host_</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">cmap_device_</span><span class="p">.</span><span class="n">cols</span><span class="p">();</span>
       <span class="n">cmap_host_</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">cmap_device_</span><span class="p">.</span><span class="n">rows</span><span class="p">();</span>
-      <span class="n">cmap_host_</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">cmap_host_</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">cmap_host_</span><span class="p">.</span><span class="n">height</span><span class="p">);</span>
+      <span class="n">cmap_host_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">cmap_host_</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">cmap_host_</span><span class="p">.</span><span class="n">height</span><span class="p">);</span>
       <span class="n">cmap_device_</span><span class="p">.</span><span class="n">download</span><span class="p">(</span><span class="n">cmap_host_</span><span class="p">.</span><span class="n">points</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
 
       <span class="n">final_view_</span><span class="p">.</span><span class="n">showRGBImage</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">RGB</span><span class="o">&gt;</span><span class="p">(</span><span class="n">cmap_host_</span><span class="p">);</span>
@@ -346,11 +349,11 @@ The visualizeAndWrite method will illustrate one of the available methods of the
       <span class="p">{</span>
         <span class="n">depth_host_</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">people_detector_</span><span class="p">.</span><span class="n">depth_device1_</span><span class="p">.</span><span class="n">cols</span><span class="p">();</span>
         <span class="n">depth_host_</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">people_detector_</span><span class="p">.</span><span class="n">depth_device1_</span><span class="p">.</span><span class="n">rows</span><span class="p">();</span>
-        <span class="n">depth_host_</span><span class="p">.</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">depth_host_</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">depth_host_</span><span class="p">.</span><span class="n">height</span><span class="p">);</span>
+        <span class="n">depth_host_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">depth_host_</span><span class="p">.</span><span class="n">width</span> <span class="o">*</span> <span class="n">depth_host_</span><span class="p">.</span><span class="n">height</span><span class="p">);</span>
         <span class="n">people_detector_</span><span class="p">.</span><span class="n">depth_device1_</span><span class="p">.</span><span class="n">download</span><span class="p">(</span><span class="n">depth_host_</span><span class="p">.</span><span class="n">points</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
       <span class="p">}</span>
 
-      <span class="n">depth_view_</span><span class="p">.</span><span class="n">showShortImage</span><span class="p">(</span><span class="o">&amp;</span><span class="n">depth_host_</span><span class="p">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">depth_host_</span><span class="p">.</span><span class="n">width</span><span class="p">,</span> <span class="n">depth_host_</span><span class="p">.</span><span class="n">height</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+      <span class="n">depth_view_</span><span class="p">.</span><span class="n">showShortImage</span><span class="p">(</span><span class="o">&amp;</span><span class="n">depth_host_</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">depth_host_</span><span class="p">.</span><span class="n">width</span><span class="p">,</span> <span class="n">depth_host_</span><span class="p">.</span><span class="n">height</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
       <span class="n">depth_view_</span><span class="p">.</span><span class="n">spinOnce</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
 
       <span class="k">if</span> <span class="p">(</span><span class="n">write</span><span class="p">)</span>
@@ -367,11 +370,11 @@ The visualizeAndWrite method will illustrate one of the available methods of the
     <span class="p">}</span>
 </pre></div>
 </div>
-<p>Line 144 calls the RDF getLabels method which returns the labels on the device, these however
+<p>Line 143 calls the RDF getLabels method which returns the labels on the device, these however
 are a discrete enum of the labels and are visually hard to recognize, so these are converted to
-colors that illustrate each body part in line 145.
+colors that illustrate each body part in line 144.
 At this point the results are still stored in the device memory and need to be copied to the CPU
-host memory, this is done in line 151. Afterwards the images are shown and stored to disk.</p>
+host memory, this is done in line 150. Afterwards the images are shown and stored to disk.</p>
 </div>
 <div class="section" id="compiling-and-running-the-program">
 <h1>Compiling and running the program</h1>
@@ -393,7 +396,7 @@ host memory, this is done in line 151. Afterwards the images are shown and store
 15
 16
 17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">people_detect</span><span class="p">)</span>
 

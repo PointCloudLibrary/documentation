@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -311,9 +311,9 @@ $(function() {
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// Convert the image to array of float:</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">float</span>* sample_float = <span class="keyword">new</span> <span class="keywordtype">float</span>[sample-&gt;width * sample-&gt;height * 3]; </div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">int</span> delta = sample-&gt;height * sample-&gt;width;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> row = 0; row &lt; sample-&gt;height; row++)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">for</span> (std::uint32_t row = 0; row &lt; sample-&gt;height; row++)</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> col = 0; col &lt; sample-&gt;width; col++)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <span class="keywordflow">for</span> (std::uint32_t col = 0; col &lt; sample-&gt;width; col++)</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        sample_float[row + sample-&gt;height * col] = ((float) ((*sample)(col, row).r))/255; <span class="comment">//ptr[col * 3 + 2];</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        sample_float[row + sample-&gt;height * col + delta] = ((float) ((*sample)(col, row).g))/255; <span class="comment">//ptr[col * 3 + 1];</span></div>
@@ -377,9 +377,8 @@ $(function() {
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCL_PEOPLE_PERSON_CLASSIFIER_HPP_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespacepcl_html_a7c55bf09e463d214a43d2bd7ceab7753"><div class="ttname"><a href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">pcl::uint32_t</a></div><div class="ttdeci">std::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00058">types.h:58</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_point_cloud_html"><div class="ttname"><a href="classpcl_1_1_point_cloud.html">pcl::PointCloud&lt; pcl::RGB &gt;</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00628">point_types.hpp:628</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00674">point_types.hpp:674</a></div></div>
 <div class="ttc" id="aclasspcl_1_1people_1_1_person_classifier_html_ad28b1f631021433d3cbff384c3df279a"><div class="ttname"><a href="classpcl_1_1people_1_1_person_classifier.html#ad28b1f631021433d3cbff384c3df279a">pcl::people::PersonClassifier::resize</a></div><div class="ttdeci">void resize(PointCloudPtr &amp;input_image, PointCloudPtr &amp;output_image, int width, int height)</div><div class="ttdoc">Resize an image represented by a pointcloud containing RGB information.</div><div class="ttdef"><b>Definition:</b> <a href="person__classifier_8hpp_source.html#l00109">person_classifier.hpp:109</a></div></div>
 <div class="ttc" id="aclasspcl_1_1people_1_1_h_o_g_html"><div class="ttname"><a href="classpcl_1_1people_1_1_h_o_g.html">pcl::people::HOG</a></div><div class="ttdoc">HOG represents a class for computing the HOG descriptor described in Dalal, N.</div><div class="ttdef"><b>Definition:</b> <a href="hog_8h_source.html#l00054">hog.h:54</a></div></div>
 <div class="ttc" id="aclasspcl_1_1people_1_1_person_classifier_html_a5b162853f8c578c680045f404dc46914"><div class="ttname"><a href="classpcl_1_1people_1_1_person_classifier.html#a5b162853f8c578c680045f404dc46914">pcl::people::PersonClassifier&lt; pcl::RGB &gt;::PointCloudPtr</a></div><div class="ttdeci">typename PointCloud::Ptr PointCloudPtr</div><div class="ttdef"><b>Definition:</b> <a href="person__classifier_8h_source.html#l00072">person_classifier.h:72</a></div></div>
@@ -396,7 +395,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:40</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:37</p>
 </div> <!-- #footer -->
 </body>
 </html>

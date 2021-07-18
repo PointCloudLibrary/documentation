@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -156,6 +156,9 @@ $(function() {
 <li>comparePoints2D()
 : <a class="el" href="group__surface.html#ga29068d47bc7d9776344c7a7947cead1d">pcl</a>
 </li>
+<li>CompatWithFlann
+: <a class="el" href="namespacepcl_1_1detail.html#a9833dcf5e5e0b20fd99bb8653826dafd">pcl::detail</a>
+</li>
 <li>COMPRESSION_PROFILE_COUNT
 : <a class="el" href="namespacepcl_1_1io.html#ace28c28f4a188903e34afa2125d8410ba015ba3dc68f9359df2731a4e8d67752d">pcl::io</a>
 </li>
@@ -186,7 +189,7 @@ $(function() {
 : <a class="el" href="namespacepcl_1_1features.html#a8ddefbc073fdcbbafc592b2c50361156">pcl::features</a>
 </li>
 <li>computeCentroid()
-: <a class="el" href="group__common.html#ga24ba1c9605f3bb1e3063e30fa04857c2">pcl</a>
+: <a class="el" href="group__common.html#ga9e10574ff42edc90e7dd583a36e94ce6">pcl</a>
 </li>
 <li>computeCloud()
 : <a class="el" href="namespacepcl_1_1device.html#a6c74401441d8066e855c2f7242b69e93">pcl::device</a>
@@ -225,7 +228,8 @@ $(function() {
 : <a class="el" href="group__common.html#ga72dfb6e965df9752c88790e026a8ab5f">pcl</a>
 </li>
 <li>computeMedian()
-: <a class="el" href="namespacepcl_1_1distances.html#a68aeb857174dd6901cec913c57e6500c">pcl::distances</a>
+: <a class="el" href="group__common.html#ga7c587d03c993047dd078bf5050ba10e9">pcl</a>
+, <a class="el" href="namespacepcl_1_1distances.html#a68aeb857174dd6901cec913c57e6500c">pcl::distances</a>
 </li>
 <li>computeNDCentroid()
 : <a class="el" href="group__common.html#ga4d047d6f7b50a2d81306cc59ac927179">pcl</a>
@@ -255,7 +259,7 @@ $(function() {
 : <a class="el" href="namespacepcl_1_1device.html#a3b43a7fb1e50c39bd3c2901b487fca11">pcl::device</a>
 </li>
 <li>computePointNormal()
-: <a class="el" href="group__features.html#gacd392447cd77d22a66f1f7b885f923e1">pcl</a>
+: <a class="el" href="group__features.html#gab0d3ced73abbf469ed7fd6f53a467226">pcl</a>
 </li>
 <li>computePointNormals()
 : <a class="el" href="namespacepcl_1_1cuda.html#a39bb0a230d430ec5c6403f702b861cd1">pcl::cuda</a>
@@ -298,7 +302,7 @@ $(function() {
 , <a class="el" href="namespacepcl_1_1device_1_1kinfu_l_s.html#aed0e1c1434ccaa77957c0255dcd34df3">pcl::device::kinfuLS</a>
 </li>
 <li>computeRSD()
-: <a class="el" href="namespacepcl.html#ab613e1f38731c3438c9b668876ce7d73">pcl</a>
+: <a class="el" href="group__features.html#gaa1d42d8d792cf835ece2ee2a7cf7180a">pcl</a>
 </li>
 <li>computeSPFH()
 : <a class="el" href="namespacepcl_1_1device.html#a05c34dc1d7c2efd72c3b2fe4b8790525">pcl::device</a>
@@ -327,9 +331,6 @@ $(function() {
 <li>concatenateFields()
 : <a class="el" href="group__common.html#gac6add803f86fd16a998dce541e9ef402">pcl</a>
 </li>
-<li>concatenatePointCloud()
-: <a class="el" href="group__common.html#gaaebfbeb8e50f90057188131228b2e8b6">pcl</a>
-</li>
 <li>convert()
 : <a class="el" href="namespacepcl_1_1device.html#a8b293c6f3b7c9fe00b5df8b6ad633e10">pcl::device</a>
 , <a class="el" href="namespacepcl_1_1device_1_1kinfu_l_s.html#a5e0d23f93a0428aed0004eff14db0b92">pcl::device::kinfuLS</a>
@@ -349,7 +350,7 @@ $(function() {
 </li>
 <li>copyFields()
 : <a class="el" href="namespacepcl_1_1device.html#a8c57bd7545a96f8db557e2cf5ab0c878">pcl::device</a>
-, <a class="el" href="namespacepcl_1_1gpu.html#afaac4839d21926713543b7cf315f898b">pcl::gpu</a>
+, <a class="el" href="namespacepcl_1_1gpu.html#aa804bdacd17c0a6371a3919eab8b9b10">pcl::gpu</a>
 </li>
 <li>copyFieldsEx()
 : <a class="el" href="namespacepcl_1_1gpu.html#a3d88ed78f2b521af6b96deca07e25166">pcl::gpu</a>
@@ -358,7 +359,7 @@ $(function() {
 : <a class="el" href="namespacepcl_1_1gpu.html#ac8ec6f96f7821ee60a04d4a641a566db">pcl::gpu</a>
 </li>
 <li>copyFieldsZ()
-: <a class="el" href="namespacepcl_1_1gpu.html#a739c73e32ff4baefad177fd0ba033698">pcl::gpu</a>
+: <a class="el" href="namespacepcl_1_1gpu.html#a00d12d0c7f4e1a7dbe243f08501284ab">pcl::gpu</a>
 </li>
 <li>CopyKernel()
 : <a class="el" href="namespacepcl_1_1device.html#a3936099c2660394d35d1aafc2660ad4d">pcl::device</a>
@@ -367,25 +368,29 @@ $(function() {
 : <a class="el" href="group__common.html#gab978bf1754771246b2f140a5b52a8f8b">pcl</a>
 </li>
 <li>copyPointCloud()
-: <a class="el" href="group__common.html#ga63889e8e562908917ec218b86ef826b4">pcl</a>
+: <a class="el" href="group__common.html#ga44ece0c2faffdb26cd75417200454577">pcl</a>
+</li>
+<li>copyPointCloudMemcpy()
+: <a class="el" href="namespacepcl_1_1detail.html#aff6ac575dbcafe6f09cf3f5230a16231">pcl::detail</a>
 </li>
 <li>copyStringValue()
-: <a class="el" href="namespacepcl.html#aae70f37202b99e3b5141bec4eed26b7e">pcl</a>
+: <a class="el" href="namespacepcl.html#a5a827fa8433559d96d4a42ff0dc6d078">pcl</a>
+, <a class="el" href="namespacepcl_1_1detail.html#a93b2338236d3a301bf2e82477fd6d197">pcl::detail</a>
 </li>
 <li>copyStringValue&lt; std::int8_t &gt;()
-: <a class="el" href="namespacepcl.html#a3f236818f0518be865257e4cccfb6574">pcl</a>
+: <a class="el" href="namespacepcl_1_1detail.html#a317c73abbd065aad8bb740cc0da80b34">pcl::detail</a>
 </li>
 <li>copyStringValue&lt; std::uint8_t &gt;()
-: <a class="el" href="namespacepcl.html#a6935fca775b09562df04e9639e777276">pcl</a>
+: <a class="el" href="namespacepcl_1_1detail.html#af68168a03f7fa557abf6d48a62ce2151">pcl::detail</a>
 </li>
 <li>copyValueString()
-: <a class="el" href="namespacepcl.html#a9287d2c4eee3af2533e5b3dd3e61ac69">pcl</a>
+: <a class="el" href="namespacepcl.html#a3a46e84ce36af31ee22110992e64b51e">pcl</a>
 </li>
 <li>copyValueString&lt; std::int8_t &gt;()
-: <a class="el" href="namespacepcl.html#a5f18c6e45e183d003b410bcc6212cf52">pcl</a>
+: <a class="el" href="namespacepcl.html#aa0a8fcc1c042f11aea193e34d82b3fe1">pcl</a>
 </li>
 <li>copyValueString&lt; std::uint8_t &gt;()
-: <a class="el" href="namespacepcl.html#ae29ba375961de1791a710ebdc08be151">pcl</a>
+: <a class="el" href="namespacepcl.html#a9c052c33dd8c3f1237576fc5dce2642f">pcl</a>
 </li>
 <li>Correspondences
 : <a class="el" href="namespacepcl.html#a5f8e904e5c6f763188a410832f96ac00">pcl</a>
@@ -406,16 +411,19 @@ $(function() {
 : <a class="el" href="group__visualization.html#gabcd9db6ceafdd6b36b3700df9134272d">pcl::visualization</a>
 </li>
 <li>createCube()
-: <a class="el" href="namespacepcl_1_1visualization.html#a1c190a94892d418f0d3435dd8bcacada">pcl::visualization</a>
+: <a class="el" href="group__visualization.html#gab6ea58c22c330bda060ab17eece4cde0">pcl::visualization</a>
 </li>
 <li>createCylinder()
 : <a class="el" href="group__visualization.html#gaa1aef97113fc6a707a7f133832fb78e6">pcl::visualization</a>
+</li>
+<li>createEllipsoid()
+: <a class="el" href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">pcl::visualization</a>
 </li>
 <li>createIndicesImage()
 : <a class="el" href="namespacepcl_1_1cuda.html#a6aeb55364867ec2705c54757cb8ef7fb">pcl::cuda</a>
 </li>
 <li>createLine()
-: <a class="el" href="group__visualization.html#ga587f761c86fb1ffc1defe987dd039a7a">pcl::visualization</a>
+: <a class="el" href="group__visualization.html#gabb746d0348192ce0950dc7adf19052f4">pcl::visualization</a>
 </li>
 <li>createMapping()
 : <a class="el" href="namespacepcl.html#a8b1e6bf082a51cc2d633495a03a18a6a">pcl</a>
@@ -437,7 +445,7 @@ $(function() {
 : <a class="el" href="namespacepcl_1_1cuda.html#a0299de1e279474bc8efa0985575a10e9">pcl::cuda</a>
 </li>
 <li>createSphere()
-: <a class="el" href="group__visualization.html#ga27b62d4c72329ead01a5d0bdc29720b6">pcl::visualization</a>
+: <a class="el" href="group__visualization.html#gab2a90030af80dd8874ca727d2cc2858f">pcl::visualization</a>
 </li>
 <li>createVMap()
 : <a class="el" href="namespacepcl_1_1device.html#a3d4a01f41bfe4cce610b5ecaca2b2495">pcl::device</a>
@@ -470,7 +478,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:15:36</p>
+<p>Pages generated on Sun Jul 18 2021 17:44:56</p>
 </div> <!-- #footer -->
 </body>
 </html>

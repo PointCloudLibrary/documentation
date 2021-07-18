@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -392,9 +392,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>This method should get called after finishing the actual computation. </p>
 
-<p class="definition">Definition at line <a class="el" href="pcl__base_8hpp_source.html#l00171">171</a> of file <a class="el" href="pcl__base_8hpp_source.html">pcl_base.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcl__base_8hpp_source.html#l00174">174</a> of file <a class="el" href="pcl__base_8hpp_source.html">pcl_base.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filter__indices_8h_source.html#l00101">pcl::FilterIndices&lt; PointInT &gt;::filter()</a>, and <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00124">pcl::Filter&lt; pcl::PointXYZRGBL &gt;::filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filter__indices_8h_source.html#l00101">pcl::FilterIndices&lt; PointInT &gt;::filter()</a>, and <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00121">pcl::Filter&lt; pcl::PointXYZRGBL &gt;::filter()</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pcl__base_8hpp_source.html#l00138">138</a> of file <a class="el" href="pcl__base_8hpp_source.html">pcl_base.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filter__indices_8h_source.html#l00101">pcl::FilterIndices&lt; PointInT &gt;::filter()</a>, and <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00124">pcl::Filter&lt; pcl::PointXYZRGBL &gt;::filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filter__indices_8h_source.html#l00101">pcl::FilterIndices&lt; PointInT &gt;::filter()</a>, and <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00121">pcl::Filter&lt; pcl::PointXYZRGBL &gt;::filter()</a>.</p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ template&lt;typename PointT &gt; </div>
 </div><div class="memdoc">
 
 <p>Override <a class="el" href="classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points.">PointCloud</a> operator[] to shorten code. </p>
-<dl class="section note"><dt>Note</dt><dd>this method can be called instead of (*input_)[(*indices_)[pos]] or input_-&gt;points[(*indices_)[pos]] </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>this method can be called instead of (*input_)[(*indices_)[pos]] or (*input_)[(*indices_)[pos]] </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>position in indices_ vector </td></tr>
@@ -647,7 +647,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pcl__base_8hpp_source.html#l00072">72</a> of file <a class="el" href="pcl__base_8hpp_source.html">pcl_base.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ground__based__people__detection__app_8hpp_source.html#l00308">pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;::compute()</a>, <a class="el" href="pca_8h_source.html#l00134">pcl::PCA&lt; PointT &gt;::setIndices()</a>, and <a class="el" href="implicit__shape__model_8hpp_source.html#l01119">pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::simplifyCloud()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ground__based__people__detection__app_8hpp_source.html#l00311">pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;::compute()</a>, <a class="el" href="moment__of__inertia__estimation_8hpp_source.html#l00576">pcl::MomentOfInertiaEstimation&lt; PointT &gt;::setIndices()</a>, <a class="el" href="pca_8h_source.html#l00134">pcl::PCA&lt; PointT &gt;::setIndices()</a>, and <a class="el" href="implicit__shape__model_8hpp_source.html#l01119">pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::simplifyCloud()</a>.</p>
 
 </div>
 </div>
@@ -795,7 +795,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pcl__base_8hpp_source.html#l00065">65</a> of file <a class="el" href="pcl__base_8hpp_source.html">pcl_base.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="local__maximum_8hpp_source.html#l00072">pcl::LocalMaximum&lt; PointT &gt;::applyFilterIndices()</a>, <a class="el" href="ground__based__people__detection__app_8hpp_source.html#l00308">pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;::compute()</a>, <a class="el" href="grsd_8hpp_source.html#l00064">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>, <a class="el" href="crf__segmentation_8hpp_source.html#l00144">pcl::CrfSegmentation&lt; PointT &gt;::createVoxelGrid()</a>, <a class="el" href="sift__keypoint_8hpp_source.html#l00098">pcl::SIFTKeypoint&lt; PointInT, PointOutT &gt;::detectKeypoints()</a>, <a class="el" href="ground__based__people__detection__app_8hpp_source.html#l00296">pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;::filter()</a>, <a class="el" href="world__model_8hpp_source.html#l00060">pcl::kinfuLS::WorldModel&lt; pcl::PointXYZI &gt;::getExistingData()</a>, <a class="el" href="world__model_8hpp_source.html#l00133">pcl::kinfuLS::WorldModel&lt; pcl::PointXYZI &gt;::getWorldAsCubes()</a>, <a class="el" href="ndt_8h_source.html#l00254">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;::init()</a>, <a class="el" href="organized__multi__plane__segmentation_8hpp_source.html#l00084">pcl::OrganizedMultiPlaneSegmentation&lt; pcl::PointXYZRGBA, pcl::Normal, pcl::Label &gt;::segment()</a>, <a class="el" href="pca_8h_source.html#l00124">pcl::PCA&lt; PointT &gt;::setInputCloud()</a>, <a class="el" href="hough__3d_8h_source.html#l00184">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::setInputCloud()</a>, <a class="el" href="correspondence__estimation_8h_source.html#l00115">pcl::registration::CorrespondenceEstimationBase&lt; PointSource, PointTarget, float &gt;::setInputSource()</a>, <a class="el" href="registration_2include_2pcl_2registration_2registration_8h_source.html#l00191">pcl::Registration&lt; PointSource, PointTarget &gt;::setInputSource()</a>, <a class="el" href="hypotheses__verification_8h_source.html#l00294">pcl::HypothesisVerification&lt; ModelT, SceneT &gt;::setSceneCloud()</a>, <a class="el" href="world__model_8hpp_source.html#l00272">pcl::kinfuLS::WorldModel&lt; pcl::PointXYZI &gt;::setSliceAsNans()</a>, and <a class="el" href="implicit__shape__model_8hpp_source.html#l01119">pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::simplifyCloud()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="local__maximum_8hpp_source.html#l00074">pcl::LocalMaximum&lt; PointT &gt;::applyFilterIndices()</a>, <a class="el" href="ground__based__people__detection__app_8hpp_source.html#l00311">pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;::compute()</a>, <a class="el" href="grsd_8hpp_source.html#l00065">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>, <a class="el" href="crf__segmentation_8hpp_source.html#l00144">pcl::CrfSegmentation&lt; PointT &gt;::createVoxelGrid()</a>, <a class="el" href="sift__keypoint_8hpp_source.html#l00098">pcl::SIFTKeypoint&lt; PointInT, PointOutT &gt;::detectKeypoints()</a>, <a class="el" href="ground__based__people__detection__app_8hpp_source.html#l00299">pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;::filter()</a>, <a class="el" href="world__model_8hpp_source.html#l00063">pcl::kinfuLS::WorldModel&lt; pcl::PointXYZI &gt;::getExistingData()</a>, <a class="el" href="world__model_8hpp_source.html#l00136">pcl::kinfuLS::WorldModel&lt; pcl::PointXYZI &gt;::getWorldAsCubes()</a>, <a class="el" href="ndt_8h_source.html#l00252">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;::init()</a>, <a class="el" href="organized__multi__plane__segmentation_8hpp_source.html#l00083">pcl::OrganizedMultiPlaneSegmentation&lt; pcl::PointXYZRGBA, pcl::Normal, pcl::Label &gt;::segment()</a>, <a class="el" href="moment__of__inertia__estimation_8hpp_source.html#l00568">pcl::MomentOfInertiaEstimation&lt; PointT &gt;::setInputCloud()</a>, <a class="el" href="pca_8h_source.html#l00124">pcl::PCA&lt; PointT &gt;::setInputCloud()</a>, <a class="el" href="hough__3d_8h_source.html#l00183">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::setInputCloud()</a>, <a class="el" href="correspondence__estimation_8h_source.html#l00112">pcl::registration::CorrespondenceEstimationBase&lt; PointSource, PointTarget, float &gt;::setInputSource()</a>, <a class="el" href="registration_8hpp_source.html#l00047">pcl::Registration&lt; PointSource, PointTarget &gt;::setInputSource()</a>, <a class="el" href="hypotheses__verification_8h_source.html#l00293">pcl::HypothesisVerification&lt; ModelT, SceneT &gt;::setSceneCloud()</a>, <a class="el" href="world__model_8hpp_source.html#l00275">pcl::kinfuLS::WorldModel&lt; pcl::PointXYZI &gt;::setSliceAsNans()</a>, and <a class="el" href="implicit__shape__model_8hpp_source.html#l01119">pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::simplifyCloud()</a>.</p>
 
 </div>
 </div>
@@ -854,7 +854,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pcl__base_8h_source.html#l00150">150</a> of file <a class="el" href="pcl__base_8h_source.html">pcl_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcl__base_8h_source.html#l00129">pcl::PCLBase&lt; PointXYZRGB &gt;::getIndices()</a>, and <a class="el" href="pcl__base_8h_source.html#l00140">pcl::PCLBase&lt; PointXYZRGB &gt;::operator[]()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="functor__filter_8h_source.html#l00088">pcl::experimental::advanced::FunctorFilter&lt; PointT, FunctionObject &gt;::applyFilter()</a>, <a class="el" href="pcl__base_8h_source.html#l00129">pcl::PCLBase&lt; PointXYZRGB &gt;::getIndices()</a>, and <a class="el" href="pcl__base_8h_source.html#l00140">pcl::PCLBase&lt; PointXYZRGB &gt;::operator[]()</a>.</p>
 
 </div>
 </div>
@@ -884,7 +884,7 @@ template&lt;typename PointT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="pcl__base_8h_source.html#l00147">147</a> of file <a class="el" href="pcl__base_8h_source.html">pcl_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00124">pcl::Filter&lt; pcl::PointXYZRGBL &gt;::filter()</a>, <a class="el" href="pcl__base_8h_source.html#l00096">pcl::PCLBase&lt; PointXYZRGB &gt;::getInputCloud()</a>, and <a class="el" href="pcl__base_8h_source.html#l00140">pcl::PCLBase&lt; PointXYZRGB &gt;::operator[]()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="functor__filter_8h_source.html#l00088">pcl::experimental::advanced::FunctorFilter&lt; PointT, FunctionObject &gt;::applyFilter()</a>, <a class="el" href="filters_2include_2pcl_2filters_2filter_8h_source.html#l00121">pcl::Filter&lt; pcl::PointXYZRGBL &gt;::filter()</a>, <a class="el" href="pcl__base_8h_source.html#l00096">pcl::PCLBase&lt; PointXYZRGB &gt;::getInputCloud()</a>, and <a class="el" href="pcl__base_8h_source.html#l00140">pcl::PCLBase&lt; PointXYZRGB &gt;::operator[]()</a>.</p>
 
 </div>
 </div>
@@ -928,7 +928,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:32</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:42</p>
 </div> <!-- #footer -->
 </body>
 </html>

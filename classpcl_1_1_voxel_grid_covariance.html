@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -175,9 +175,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a601a5a50e9f9f4f5f5901fc4cd3302f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a601a5a50e9f9f4f5f5901fc4cd3302f7">getLeaf</a> (Eigen::Vector3f &amp;p)</td></tr>
 <tr class="memdesc:a601a5a50e9f9f4f5f5901fc4cd3302f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the voxel containing point p.  <a href="classpcl_1_1_voxel_grid_covariance.html#a601a5a50e9f9f4f5f5901fc4cd3302f7">More...</a><br /></td></tr>
 <tr class="separator:a601a5a50e9f9f4f5f5901fc4cd3302f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab24846085f7bd621a6edf415b0226679"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#ab24846085f7bd621a6edf415b0226679">getNeighborhoodAtPoint</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;reference_point, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;neighbors)</td></tr>
-<tr class="memdesc:ab24846085f7bd621a6edf415b0226679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the voxels surrounding point p, not including the voxel containing point p.  <a href="classpcl_1_1_voxel_grid_covariance.html#ab24846085f7bd621a6edf415b0226679">More...</a><br /></td></tr>
-<tr class="separator:ab24846085f7bd621a6edf415b0226679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab123b3be7b132d1b32a5284fcffc6d7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#ab123b3be7b132d1b32a5284fcffc6d7a">getNeighborhoodAtPoint</a> (const Eigen::Matrix&lt; int, 3, Eigen::Dynamic &gt; &amp;relative_coordinates, const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;reference_point, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;neighbors) const</td></tr>
+<tr class="memdesc:ab123b3be7b132d1b32a5284fcffc6d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the voxels surrounding point p designated by #relative_coordinates.  <a href="classpcl_1_1_voxel_grid_covariance.html#ab123b3be7b132d1b32a5284fcffc6d7a">More...</a><br /></td></tr>
+<tr class="separator:ab123b3be7b132d1b32a5284fcffc6d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e344b7255d2cdf4192aa7cc5bf6eba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a0e344b7255d2cdf4192aa7cc5bf6eba6">getNeighborhoodAtPoint</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;reference_point, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;neighbors) const</td></tr>
+<tr class="memdesc:a0e344b7255d2cdf4192aa7cc5bf6eba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the voxels surrounding point p, not including the voxel containing point p.  <a href="classpcl_1_1_voxel_grid_covariance.html#a0e344b7255d2cdf4192aa7cc5bf6eba6">More...</a><br /></td></tr>
+<tr class="separator:a0e344b7255d2cdf4192aa7cc5bf6eba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8b856598a1a68a5f150ebe8357d716"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a6d8b856598a1a68a5f150ebe8357d716">getVoxelAtPoint</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;reference_point, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;neighbors) const</td></tr>
+<tr class="memdesc:a6d8b856598a1a68a5f150ebe8357d716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the voxel at p.  <a href="classpcl_1_1_voxel_grid_covariance.html#a6d8b856598a1a68a5f150ebe8357d716">More...</a><br /></td></tr>
+<tr class="separator:a6d8b856598a1a68a5f150ebe8357d716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee0f8eb99293c53ce4eb2063f782137"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#afee0f8eb99293c53ce4eb2063f782137">getFaceNeighborsAtPoint</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;reference_point, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;neighbors) const</td></tr>
+<tr class="memdesc:afee0f8eb99293c53ce4eb2063f782137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the voxel at p and its facing voxels (up to 7 voxels).  <a href="classpcl_1_1_voxel_grid_covariance.html#afee0f8eb99293c53ce4eb2063f782137">More...</a><br /></td></tr>
+<tr class="separator:afee0f8eb99293c53ce4eb2063f782137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d80ccb6876267e6e4cb56ce1fc06e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a56d80ccb6876267e6e4cb56ce1fc06e7">getAllNeighborsAtPoint</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;reference_point, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;neighbors) const</td></tr>
+<tr class="memdesc:a56d80ccb6876267e6e4cb56ce1fc06e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all 3x3x3 neighbor voxels of p (up to 27 voxels).  <a href="classpcl_1_1_voxel_grid_covariance.html#a56d80ccb6876267e6e4cb56ce1fc06e7">More...</a><br /></td></tr>
+<tr class="separator:a56d80ccb6876267e6e4cb56ce1fc06e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea54c58ae991d4b3dc988c14a1eee55"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::size_t, <a class="el" href="structpcl_1_1_voxel_grid_covariance_1_1_leaf.html">Leaf</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#afea54c58ae991d4b3dc988c14a1eee55">getLeaves</a> ()</td></tr>
 <tr class="memdesc:afea54c58ae991d4b3dc988c14a1eee55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the leaf structure map.  <a href="classpcl_1_1_voxel_grid_covariance.html#afea54c58ae991d4b3dc988c14a1eee55">More...</a><br /></td></tr>
 <tr class="separator:afea54c58ae991d4b3dc988c14a1eee55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,18 +199,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accf21aea709481f32a3ab000efde490f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#accf21aea709481f32a3ab000efde490f">getDisplayCloud</a> (<a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z.html">PointXYZ</a> &gt; &amp;cell_cloud)</td></tr>
 <tr class="memdesc:accf21aea709481f32a3ab000efde490f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a cloud to visualize each voxels normal distribution.  <a href="classpcl_1_1_voxel_grid_covariance.html#accf21aea709481f32a3ab000efde490f">More...</a><br /></td></tr>
 <tr class="separator:accf21aea709481f32a3ab000efde490f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934c7720a7e95ad391af73691fc944b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a934c7720a7e95ad391af73691fc944b5">nearestKSearch</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;point, int k, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances)</td></tr>
-<tr class="memdesc:a934c7720a7e95ad391af73691fc944b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the k-nearest occupied voxels for the given query point.  <a href="classpcl_1_1_voxel_grid_covariance.html#a934c7720a7e95ad391af73691fc944b5">More...</a><br /></td></tr>
-<tr class="separator:a934c7720a7e95ad391af73691fc944b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34fef3799cca9e6bac062d1df4d53a5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a34fef3799cca9e6bac062d1df4d53a5f">nearestKSearch</a> (const <a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> &amp;cloud, int index, int k, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances)</td></tr>
-<tr class="memdesc:a34fef3799cca9e6bac062d1df4d53a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the k-nearest occupied voxels for the given query point.  <a href="classpcl_1_1_voxel_grid_covariance.html#a34fef3799cca9e6bac062d1df4d53a5f">More...</a><br /></td></tr>
-<tr class="separator:a34fef3799cca9e6bac062d1df4d53a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d605050ddda36d46f286a10469e26c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a5d605050ddda36d46f286a10469e26c1">radiusSearch</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;point, double radius, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances, unsigned int max_nn=0)</td></tr>
-<tr class="memdesc:a5d605050ddda36d46f286a10469e26c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all the nearest occupied voxels of the query point in a given radius.  <a href="classpcl_1_1_voxel_grid_covariance.html#a5d605050ddda36d46f286a10469e26c1">More...</a><br /></td></tr>
-<tr class="separator:a5d605050ddda36d46f286a10469e26c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be928c24b72e60e272a755c91ddcf62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a6be928c24b72e60e272a755c91ddcf62">radiusSearch</a> (const <a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> &amp;cloud, int index, double radius, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances, unsigned int max_nn=0)</td></tr>
-<tr class="memdesc:a6be928c24b72e60e272a755c91ddcf62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all the nearest occupied voxels of the query point in a given radius.  <a href="classpcl_1_1_voxel_grid_covariance.html#a6be928c24b72e60e272a755c91ddcf62">More...</a><br /></td></tr>
-<tr class="separator:a6be928c24b72e60e272a755c91ddcf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43acda604de40dce9ef9967360df3747"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a43acda604de40dce9ef9967360df3747">nearestKSearch</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;point, int k, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances) const</td></tr>
+<tr class="memdesc:a43acda604de40dce9ef9967360df3747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the k-nearest occupied voxels for the given query point.  <a href="classpcl_1_1_voxel_grid_covariance.html#a43acda604de40dce9ef9967360df3747">More...</a><br /></td></tr>
+<tr class="separator:a43acda604de40dce9ef9967360df3747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cb261ef728a460585602bb3e928044"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#ac2cb261ef728a460585602bb3e928044">nearestKSearch</a> (const <a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> &amp;cloud, int index, int k, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances) const</td></tr>
+<tr class="memdesc:ac2cb261ef728a460585602bb3e928044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the k-nearest occupied voxels for the given query point.  <a href="classpcl_1_1_voxel_grid_covariance.html#ac2cb261ef728a460585602bb3e928044">More...</a><br /></td></tr>
+<tr class="separator:ac2cb261ef728a460585602bb3e928044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2b4d63ba863779f731c27233d7d6d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#afd2b4d63ba863779f731c27233d7d6d9">radiusSearch</a> (const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;point, double radius, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances, unsigned int max_nn=0) const</td></tr>
+<tr class="memdesc:afd2b4d63ba863779f731c27233d7d6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all the nearest occupied voxels of the query point in a given radius.  <a href="classpcl_1_1_voxel_grid_covariance.html#afd2b4d63ba863779f731c27233d7d6d9">More...</a><br /></td></tr>
+<tr class="separator:afd2b4d63ba863779f731c27233d7d6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a6cfe595bfe80c19ea6b344d160eed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89a6cfe595bfe80c19ea6b344d160eed">radiusSearch</a> (const <a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> &amp;cloud, int index, double radius, std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;k_leaves, std::vector&lt; float &gt; &amp;k_sqr_distances, unsigned int max_nn=0) const</td></tr>
+<tr class="memdesc:a89a6cfe595bfe80c19ea6b344d160eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for all the nearest occupied voxels of the query point in a given radius.  <a href="classpcl_1_1_voxel_grid_covariance.html#a89a6cfe595bfe80c19ea6b344d160eed">More...</a><br /></td></tr>
+<tr class="separator:a89a6cfe595bfe80c19ea6b344d160eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcl_1_1_voxel_grid"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcl_1_1_voxel_grid')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcl_1_1_voxel_grid.html">pcl::VoxelGrid&lt; PointT &gt;</a></td></tr>
 <tr class="memitem:a76a7dabd27331f7348aca3f20397bfbc inherit pub_methods_classpcl_1_1_voxel_grid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_voxel_grid.html#a76a7dabd27331f7348aca3f20397bfbc">VoxelGrid</a> ()</td></tr>
 <tr class="memdesc:a76a7dabd27331f7348aca3f20397bfbc inherit pub_methods_classpcl_1_1_voxel_grid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructor.  <a href="classpcl_1_1_voxel_grid.html#a76a7dabd27331f7348aca3f20397bfbc">More...</a><br /></td></tr>
@@ -464,7 +476,7 @@ class pcl::VoxelGridCovariance&lt; PointT &gt;</h3>
 <dl class="section note"><dt>Note</dt><dd>For more information please see <b>Magnusson, M. (2009). The Three-Dimensional Normal-Distributions Transform — an Efﬁcient Representation for <a class="el" href="classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP-like methods.">Registration</a>, Surface Analysis, and Loop Detection. PhD thesis, Orebro University. Orebro Studies in Technology 36</b> </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Brian Okorn (Space and Naval Warfare Systems Center Pacific) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00056">56</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00055">55</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4969edf3d8b66172f46f2d94f1e641d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4969edf3d8b66172f46f2d94f1e641d7">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -480,7 +492,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00087">87</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00086">86</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +518,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00079">79</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00078">78</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +538,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Const pointer to <a class="el" href="classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel strucure containing the mean and covariance of the data.">VoxelGridCovariance</a> leaf structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00192">192</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00191">191</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -546,7 +558,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Pointer to <a class="el" href="classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel strucure containing the mean and covariance of the data.">VoxelGridCovariance</a> leaf structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00189">189</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00188">188</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +584,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00080">80</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00079">79</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +610,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00082">82</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00081">81</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +636,7 @@ template&lt;typename PointT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00081">81</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00080">80</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -642,7 +654,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00086">86</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00085">85</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -675,7 +687,7 @@ template&lt;typename PointT &gt; </div>
 <p>Constructor. </p>
 <p>Sets <a class="el" href="classpcl_1_1_voxel_grid.html#ad6e7aa7d90c1b75ab43d38c48dcff799">leaf_size_</a> to 0 and <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a709ed82c98db5808339c0a2ee7f8506d">searchable_</a> to false. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00199">199</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00198">198</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -716,9 +728,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_voxel_grid.html#a2f4184df5120afff5d372736ae6c5078">pcl::VoxelGrid&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00049">49</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00053">53</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00264">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00263">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>.</p>
 
 </div>
 </div>
@@ -756,7 +768,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00282">282</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00281">281</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -805,9 +817,52 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00264">264</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00263">263</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ndt_8h_source.html#l00254">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ndt_8h_source.html#l00252">pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;::init()</a>.</p>
+
+</div>
+</div>
+<a id="a56d80ccb6876267e6e4cb56ce1fc06e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d80ccb6876267e6e4cb56ce1fc06e7">&#9670;&nbsp;</a></span>getAllNeighborsAtPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classpcl_1_1_voxel_grid_covariance.html">pcl::VoxelGridCovariance</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::getAllNeighborsAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;&#160;</td>
+          <td class="paramname"><em>reference_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighbors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all 3x3x3 neighbor voxels of p (up to 27 voxels). </p>
+<dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reference_point</td><td>the point to get the leaf structure at </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of neighbors found (up to 27) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00433">433</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
 
 </div>
 </div>
@@ -840,7 +895,7 @@ template&lt;typename PointT &gt; </div>
 <dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a map contataining all leaves </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00387">387</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00423">423</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +927,7 @@ template&lt;typename PointT &gt; </div>
 <p>Get the minimum allowable ratio between eigenvalues to prevent singular covariance matrices. </p>
 <dl class="section return"><dt>Returns</dt><dd>the minimum allowable ratio between eigenvalues </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00254">254</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00253">253</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +957,50 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00409">409</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00444">444</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afee0f8eb99293c53ce4eb2063f782137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee0f8eb99293c53ce4eb2063f782137">&#9670;&nbsp;</a></span>getFaceNeighborsAtPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classpcl_1_1_voxel_grid_covariance.html">pcl::VoxelGridCovariance</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::getFaceNeighborsAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;&#160;</td>
+          <td class="paramname"><em>reference_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighbors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the voxel at p and its facing voxels (up to 7 voxels). </p>
+<dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reference_point</td><td>the point to get the leaf structure at </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of neighbors found (up to 7) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00417">417</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
 
 </div>
 </div>
@@ -941,7 +1039,7 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const pointer to leaf structure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00342">342</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00341">341</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1078,7 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const pointer to leaf structure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00300">300</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00299">299</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1117,7 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const pointer to leaf structure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00316">316</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00315">315</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1149,7 @@ template&lt;typename PointT &gt; </div>
 <p>Get the leaf structure map. </p>
 <dl class="section return"><dt>Returns</dt><dd>a map contataining all leaves </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00377">377</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00413">413</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -1083,12 +1181,62 @@ template&lt;typename PointT &gt; </div>
 <p>Get the minimum number of points required for a cell to be used. </p>
 <dl class="section return"><dt>Returns</dt><dd>the minimum number of points for required for a voxel to be used </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00236">236</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00235">235</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
-<a id="ab24846085f7bd621a6edf415b0226679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab24846085f7bd621a6edf415b0226679">&#9670;&nbsp;</a></span>getNeighborhoodAtPoint()</h2>
+<a id="ab123b3be7b132d1b32a5284fcffc6d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab123b3be7b132d1b32a5284fcffc6d7a">&#9670;&nbsp;</a></span>getNeighborhoodAtPoint() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classpcl_1_1_voxel_grid_covariance.html">pcl::VoxelGridCovariance</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::getNeighborhoodAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Matrix&lt; int, 3, Eigen::Dynamic &gt; &amp;&#160;</td>
+          <td class="paramname"><em>relative_coordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;&#160;</td>
+          <td class="paramname"><em>reference_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighbors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the voxels surrounding point p designated by #relative_coordinates. </p>
+<dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">relative_coordinates</td><td>3xN matrix that represents relative coordinates of N neighboring voxels with respect to the center voxel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reference_point</td><td>the point to get the leaf structure at </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of neighbors found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00370">370</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e344b7255d2cdf4192aa7cc5bf6eba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e344b7255d2cdf4192aa7cc5bf6eba6">&#9670;&nbsp;</a></span>getNeighborhoodAtPoint() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1110,13 +1258,13 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get the voxels surrounding point p, not including the voxel containing point p. </p>
-<dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used (slower than radius search in practice). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">reference_point</td><td>the point to get the leaf structure at </td></tr>
@@ -1124,14 +1272,57 @@ template&lt;typename PointT &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of neighbors found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of neighbors found (up to 26) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00374">374</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00402">402</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a34fef3799cca9e6bac062d1df4d53a5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34fef3799cca9e6bac062d1df4d53a5f">&#9670;&nbsp;</a></span>nearestKSearch() <span class="overload">[1/2]</span></h2>
+<a id="a6d8b856598a1a68a5f150ebe8357d716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8b856598a1a68a5f150ebe8357d716">&#9670;&nbsp;</a></span>getVoxelAtPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classpcl_1_1_voxel_grid_covariance.html">pcl::VoxelGridCovariance</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::getVoxelAtPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &amp;&#160;</td>
+          <td class="paramname"><em>reference_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a89ff4220fe0fabe28288c41a03c53744">LeafConstPtr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>neighbors</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the voxel at p. </p>
+<dl class="section note"><dt>Note</dt><dd>Only voxels containing a sufficient number of points are used. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reference_point</td><td>the point to get the leaf structure at </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">neighbors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of neighbors found (up to 1) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8hpp_source.html#l00410">410</a> of file <a class="el" href="voxel__grid__covariance_8hpp_source.html">voxel_grid_covariance.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac2cb261ef728a460585602bb3e928044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2cb261ef728a460585602bb3e928044">&#9670;&nbsp;</a></span>nearestKSearch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1174,7 +1365,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1198,12 +1389,12 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of neighbors found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00443">443</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00484">484</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
-<a id="a934c7720a7e95ad391af73691fc944b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a934c7720a7e95ad391af73691fc944b5">&#9670;&nbsp;</a></span>nearestKSearch() <span class="overload">[2/2]</span></h2>
+<a id="a43acda604de40dce9ef9967360df3747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43acda604de40dce9ef9967360df3747">&#9670;&nbsp;</a></span>nearestKSearch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1240,7 +1431,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1263,14 +1454,14 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of neighbors found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00408">408</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00444">444</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00443">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00484">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>.</p>
 
 </div>
 </div>
-<a id="a6be928c24b72e60e272a755c91ddcf62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6be928c24b72e60e272a755c91ddcf62">&#9670;&nbsp;</a></span>radiusSearch() <span class="overload">[1/2]</span></h2>
+<a id="a89a6cfe595bfe80c19ea6b344d160eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a6cfe595bfe80c19ea6b344d160eed">&#9670;&nbsp;</a></span>radiusSearch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1319,7 +1510,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1344,12 +1535,12 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of neighbors found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00498">498</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00544">544</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
-<a id="a5d605050ddda36d46f286a10469e26c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d605050ddda36d46f286a10469e26c1">&#9670;&nbsp;</a></span>radiusSearch() <span class="overload">[2/2]</span></h2>
+<a id="afd2b4d63ba863779f731c27233d7d6d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2b4d63ba863779f731c27233d7d6d9">&#9670;&nbsp;</a></span>radiusSearch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1392,7 +1583,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1416,9 +1607,9 @@ template&lt;typename PointT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of neighbors found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00462">462</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00503">503</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00498">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00544">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1647,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00245">245</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00244">244</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -1494,7 +1685,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00219">219</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00218">218</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
 </div>
 </div>
@@ -1523,9 +1714,9 @@ template&lt;typename PointT &gt; </div>
 
 <p><a class="el" href="classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd-tree implementations.">KdTree</a> generated using <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a47e3520b0631c9d8897717eddb9e8900">voxel_centroids_</a> (used for searching). </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00533">533</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00579">579</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00264">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00408">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00462">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00263">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00444">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00503">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -1553,9 +1744,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Voxel structure containing all leaf nodes (includes voxels with less than a sufficient number of points). </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00524">524</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00570">570</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00300">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getLeaf()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00377">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getLeaves()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00408">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00462">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00299">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getLeaf()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00413">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getLeaves()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00444">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00503">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -1583,9 +1774,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Minimum allowable ratio between eigenvalues to prevent singular covariance matrices. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00521">521</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00567">567</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00254">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getCovEigValueInflationRatio()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00245">pcl::VoxelGridCovariance&lt; PointTarget &gt;::setCovEigValueInflationRatio()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00253">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getCovEigValueInflationRatio()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00244">pcl::VoxelGridCovariance&lt; PointTarget &gt;::setCovEigValueInflationRatio()</a>.</p>
 
 </div>
 </div>
@@ -1613,9 +1804,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Minimum points contained with in a voxel to allow it to be usable. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00518">518</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00564">564</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00236">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getMinPointPerVoxel()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00219">pcl::VoxelGridCovariance&lt; PointTarget &gt;::setMinPointPerVoxel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00235">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getMinPointPerVoxel()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00218">pcl::VoxelGridCovariance&lt; PointTarget &gt;::setMinPointPerVoxel()</a>.</p>
 
 </div>
 </div>
@@ -1643,9 +1834,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Flag to determine if voxel structure is searchable. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00515">515</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00561">561</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00264">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00408">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00462">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00263">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>, <a class="el" href="voxel__grid__covariance_8h_source.html#l00444">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00503">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -1673,9 +1864,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Point cloud containing centroids of voxels containing atleast minimum number of points. </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00527">527</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00573">573</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00264">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00387">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getCentroids()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00263">pcl::VoxelGridCovariance&lt; PointTarget &gt;::filter()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00423">pcl::VoxelGridCovariance&lt; PointTarget &gt;::getCentroids()</a>.</p>
 
 </div>
 </div>
@@ -1703,9 +1894,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Indices of leaf structurs associated with each point in <a class="el" href="classpcl_1_1_voxel_grid_covariance.html#a47e3520b0631c9d8897717eddb9e8900">voxel_centroids_</a> (used for searching). </p>
 
-<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00530">530</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="voxel__grid__covariance_8h_source.html#l00576">576</a> of file <a class="el" href="voxel__grid__covariance_8h_source.html">voxel_grid_covariance.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00408">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00462">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="voxel__grid__covariance_8h_source.html#l00444">pcl::VoxelGridCovariance&lt; PointTarget &gt;::nearestKSearch()</a>, and <a class="el" href="voxel__grid__covariance_8h_source.html#l00503">pcl::VoxelGridCovariance&lt; PointTarget &gt;::radiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -1719,7 +1910,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:10</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:24</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="gicp6d_8h_source.html">pcl/registration/gicp6d.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="point__types_8hpp_source.html">pcl/impl/point_types.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for pcl::_PointXYZLAB:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -83,7 +83,7 @@ $(function() {
  <div class="center">
   <img src="structpcl_1_1___point_x_y_z_l_a_b.png" usemap="#pcl::_5FPointXYZLAB_map" alt=""/>
   <map id="pcl::_5FPointXYZLAB_map" name="pcl::_5FPointXYZLAB_map">
-<area href="structpcl_1_1_point_x_y_z_l_a_b.html" title="A custom point type for position and CIELAB color value." alt="pcl::PointXYZLAB" shape="rect" coords="0,56,121,80"/>
+<area href="structpcl_1_1_point_x_y_z_l_a_b.html" title="A point structure representing Euclidean xyz coordinates, and the CIELAB color." alt="pcl::PointXYZLAB" shape="rect" coords="0,56,121,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -91,27 +91,27 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6a9737bffcf9e6d564a4751e9695e1be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a6a9737bffcf9e6d564a4751e9695e1be">PCL_ADD_POINT4D</a></td></tr>
 <tr class="separator:a6a9737bffcf9e6d564a4751e9695e1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca753785c5f4088b6fb6df47ea07cd3a"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a2a8f0b9e7e296efee31737c086514676"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a3d607a56e6dbba4186a55465648ec434"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a91074e54c47b720f37bace4d66935e71">L</a></td></tr>
-<tr class="separator:a3d607a56e6dbba4186a55465648ec434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc8cca69ab8d774ce3f71eae83cbda3f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a3e4884cf4c27c9db1204990a013209da">a</a></td></tr>
-<tr class="separator:acc8cca69ab8d774ce3f71eae83cbda3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea92c9504fafe15b3d4a7d7c1ecd7211"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a4a8b934a8f38a9659b6720ed2e2d680b">b</a></td></tr>
-<tr class="separator:aea92c9504fafe15b3d4a7d7c1ecd7211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8f0b9e7e296efee31737c086514676"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2a8f0b9e7e296efee31737c086514676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2a8ff5cbd58afcc7ee14f0dfa40752"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a7e92336db44a015db4a4714b5d687f88">data_lab</a> [4]</td></tr>
-<tr class="separator:a7d2a8ff5cbd58afcc7ee14f0dfa40752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca753785c5f4088b6fb6df47ea07cd3a"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aca753785c5f4088b6fb6df47ea07cd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1da61994214f597acf1c9d83d653ef"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a49a5db00e591350c48bf98c4f9d2ed87"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a99a8a7a3070f9a92641c07f26af92a7b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a91074e54c47b720f37bace4d66935e71">L</a></td></tr>
+<tr class="separator:a99a8a7a3070f9a92641c07f26af92a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0b16c33ecf8f56c4aa55cdf9103dfa"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a3e4884cf4c27c9db1204990a013209da">a</a></td></tr>
+<tr class="separator:a3c0b16c33ecf8f56c4aa55cdf9103dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91c8800f33e8b381fef058e3454dbcb"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a4a8b934a8f38a9659b6720ed2e2d680b">b</a></td></tr>
+<tr class="separator:ae91c8800f33e8b381fef058e3454dbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a5db00e591350c48bf98c4f9d2ed87"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a49a5db00e591350c48bf98c4f9d2ed87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd38696f1a0e3e7e05bbcf26c8c459e"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="structpcl_1_1___point_x_y_z_l_a_b.html#a7e92336db44a015db4a4714b5d687f88">data_lab</a> [4]</td></tr>
+<tr class="separator:a9bd38696f1a0e3e7e05bbcf26c8c459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1da61994214f597acf1c9d83d653ef"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:afb1da61994214f597acf1c9d83d653ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gicp6d_8h_source.html#l00051">51</a> of file <a class="el" href="gicp6d_8h_source.html">gicp6d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00739">739</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="aca753785c5f4088b6fb6df47ea07cd3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca753785c5f4088b6fb6df47ea07cd3a">&#9670;&nbsp;</a></span>@126</h2>
+<a id="afb1da61994214f597acf1c9d83d653ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1da61994214f597acf1c9d83d653ef">&#9670;&nbsp;</a></span>@7</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,9 +136,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gicp6d_8h_source.html#l00059">59</a> of file <a class="el" href="gicp6d_8h_source.html">gicp6d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00747">747</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gicp6d_8h_source.html#l00070">pcl::PointXYZLAB::PointXYZLAB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gicp6d_8h_source.html#l00151">pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation::copyToFloatArray()</a>, <a class="el" href="point__types_8hpp_source.html#l00761">pcl::PointXYZLAB::PointXYZLAB()</a>, and <a class="el" href="point__types__conversion_8h_source.html#l00145">pcl::PointXYZRGBtoXYZLAB()</a>.</p>
 
 </div>
 </div>
@@ -154,9 +154,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gicp6d_8h_source.html#l00060">60</a> of file <a class="el" href="gicp6d_8h_source.html">gicp6d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00748">748</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gicp6d_8h_source.html#l00070">pcl::PointXYZLAB::PointXYZLAB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gicp6d_8h_source.html#l00151">pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation::copyToFloatArray()</a>, <a class="el" href="point__types_8hpp_source.html#l00761">pcl::PointXYZLAB::PointXYZLAB()</a>, and <a class="el" href="point__types__conversion_8h_source.html#l00145">pcl::PointXYZRGBtoXYZLAB()</a>.</p>
 
 </div>
 </div>
@@ -172,9 +172,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gicp6d_8h_source.html#l00062">62</a> of file <a class="el" href="gicp6d_8h_source.html">gicp6d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00750">750</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gicp6d_8h_source.html#l00070">pcl::PointXYZLAB::PointXYZLAB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="point__types_8hpp_source.html#l00767">pcl::PointXYZLAB::PointXYZLAB()</a>.</p>
 
 </div>
 </div>
@@ -190,9 +190,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gicp6d_8h_source.html#l00058">58</a> of file <a class="el" href="gicp6d_8h_source.html">gicp6d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00746">746</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gicp6d_8h_source.html#l00070">pcl::PointXYZLAB::PointXYZLAB()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="intensity_8hpp_source.html#l00307">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLAB &gt;::add()</a>, <a class="el" href="gicp6d_8h_source.html#l00151">pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation::copyToFloatArray()</a>, <a class="el" href="intensity_8hpp_source.html#l00301">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLAB &gt;::demean()</a>, <a class="el" href="intensity_8hpp_source.html#l00289">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLAB &gt;::get()</a>, <a class="el" href="intensity_8hpp_source.html#l00283">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLAB &gt;::operator()()</a>, <a class="el" href="point__types_8hpp_source.html#l00761">pcl::PointXYZLAB::PointXYZLAB()</a>, <a class="el" href="point__types__conversion_8h_source.html#l00145">pcl::PointXYZRGBtoXYZLAB()</a>, and <a class="el" href="intensity_8hpp_source.html#l00295">pcl::common::IntensityFieldAccessor&lt; pcl::PointXYZLAB &gt;::set()</a>.</p>
 
 </div>
 </div>
@@ -208,12 +208,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gicp6d_8h_source.html#l00053">53</a> of file <a class="el" href="gicp6d_8h_source.html">gicp6d.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00741">741</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>pcl/registration/<a class="el" href="gicp6d_8h_source.html">gicp6d.h</a></li>
+<li>pcl/impl/<a class="el" href="point__types_8hpp_source.html">point_types.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <hr>
@@ -221,7 +221,7 @@ Public Attributes</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:28</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:32</p>
 </div> <!-- #footer -->
 </body>
 </html>

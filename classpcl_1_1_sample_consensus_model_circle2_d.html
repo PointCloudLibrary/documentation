@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -203,6 +203,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#acd821e0e4699a143f48f728e597842fb">getRadiusLimits</a> (double &amp;min_radius, double &amp;max_radius) const</td></tr>
 <tr class="memdesc:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minimum and maximum allowable radius limits for the model as set by the user.  <a href="classpcl_1_1_sample_consensus_model.html#acd821e0e4699a143f48f728e597842fb">More...</a><br /></td></tr>
 <tr class="separator:acd821e0e4699a143f48f728e597842fb inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a6e225e7e1e57af8191a4b6ecb20026ca">setModelConstraints</a> (std::function&lt; bool(const Eigen::VectorXf &amp;)&gt; function)</td></tr>
+<tr class="memdesc:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to impose any kind of constraint on the model, e.g.  <a href="classpcl_1_1_sample_consensus_model.html#a6e225e7e1e57af8191a4b6ecb20026ca">More...</a><br /></td></tr>
+<tr class="separator:a6e225e7e1e57af8191a4b6ecb20026ca inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#af9eea9dd0e12e1de8671ac542400d3f1">setSamplesMaxDist</a> (const double &amp;radius, <a class="el" href="classpcl_1_1_sample_consensus_model.html#acda5c0c04feaaab330cac68377cbd9d4">SearchPtr</a> search)</td></tr>
 <tr class="memdesc:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum distance allowed when drawing random samples.  <a href="classpcl_1_1_sample_consensus_model.html#af9eea9dd0e12e1de8671ac542400d3f1">More...</a><br /></td></tr>
 <tr class="separator:af9eea9dd0e12e1de8671ac542400d3f1 inherit pub_methods_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +227,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:acd7baf0947f1b46e0a0a8bddb5ed87e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_circle2_d.html#acd7baf0947f1b46e0a0a8bddb5ed87e8">isSampleGood</a> (const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;samples) const override</td></tr>
 <tr class="memdesc:acd7baf0947f1b46e0a0a8bddb5ed87e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a sample of indices results in a good sample of points indices.  <a href="classpcl_1_1_sample_consensus_model_circle2_d.html#acd7baf0947f1b46e0a0a8bddb5ed87e8">More...</a><br /></td></tr>
 <tr class="separator:acd7baf0947f1b46e0a0a8bddb5ed87e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac799d91ab4132253c56e43c2ffd7d2c1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model_circle2_d.html#ac799d91ab4132253c56e43c2ffd7d2c1">countWithinDistanceStandard</a> (const Eigen::VectorXf &amp;model_coefficients, const double threshold, std::size_t i=0) const</td></tr>
+<tr class="memdesc:ac799d91ab4132253c56e43c2ffd7d2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This implementation uses no SIMD instructions.  <a href="classpcl_1_1_sample_consensus_model_circle2_d.html#ac799d91ab4132253c56e43c2ffd7d2c1">More...</a><br /></td></tr>
+<tr class="separator:ac799d91ab4132253c56e43c2ffd7d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_sample_consensus_model"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_sample_consensus_model')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_sample_consensus_model.html">pcl::SampleConsensusModel&lt; PointT &gt;</a></td></tr>
 <tr class="memitem:a910f3f0d75a6c2bf8bc4a9c43df825ce inherit pro_methods_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a910f3f0d75a6c2bf8bc4a9c43df825ce">SampleConsensusModel</a> (bool random=false)</td></tr>
 <tr class="memdesc:a910f3f0d75a6c2bf8bc4a9c43df825ce inherit pro_methods_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructor for base <a class="el" href="classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class.">SampleConsensusModel</a>.  <a href="classpcl_1_1_sample_consensus_model.html#a910f3f0d75a6c2bf8bc4a9c43df825ce">More...</a><br /></td></tr>
@@ -282,6 +288,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#ab7f51bf1c63fcfb05694d0f19c2f7dc3">model_size_</a></td></tr>
 <tr class="memdesc:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of coefficients in the model.  <a href="classpcl_1_1_sample_consensus_model.html#ab7f51bf1c63fcfb05694d0f19c2f7dc3">More...</a><br /></td></tr>
 <tr class="separator:ab7f51bf1c63fcfb05694d0f19c2f7dc3 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const Eigen::VectorXf &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">custom_model_constraints_</a></td></tr>
+<tr class="memdesc:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user defined function that takes model coefficients and returns whether the model is acceptable or not.  <a href="classpcl_1_1_sample_consensus_model.html#a3e592ff78a8122a61e34281d412108a9">More...</a><br /></td></tr>
+<tr class="separator:a3e592ff78a8122a61e34281d412108a9 inherit pro_attribs_classpcl_1_1_sample_consensus_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_classpcl_1_1_sample_consensus_model"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classpcl_1_1_sample_consensus_model')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classpcl_1_1_sample_consensus_model.html">pcl::SampleConsensusModel&lt; PointT &gt;</a></td></tr>
 <tr class="memitem:a19d4a467b5c0cd6267e6282ac0a2cf8c inherit pro_static_attribs_classpcl_1_1_sample_consensus_model"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_sample_consensus_model.html#a19d4a467b5c0cd6267e6282ac0a2cf8c">max_sample_checks_</a> = 1000</td></tr>
 <tr class="memdesc:a19d4a467b5c0cd6267e6282ac0a2cf8c inherit pro_static_attribs_classpcl_1_1_sample_consensus_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of samples to try until we get a good one.  <a href="classpcl_1_1_sample_consensus_model.html#a19d4a467b5c0cd6267e6282ac0a2cf8c">More...</a><br /></td></tr>
@@ -299,7 +308,7 @@ class pcl::SampleConsensusModelCircle2D&lt; PointT &gt;</h3>
 </ul>
 <dl class="section author"><dt>Author</dt><dd>Radu B. Rusu </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00059">59</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00066">66</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1e825a279323093cb758005355665d56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e825a279323093cb758005355665d56">&#9670;&nbsp;</a></span>ConstPtr</h2>
@@ -315,7 +324,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00074">74</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00081">81</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -333,7 +342,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00069">69</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00076">76</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +360,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00071">71</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00078">78</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +378,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00070">70</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00077">77</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +396,7 @@ template&lt;typename PointT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00073">73</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00080">80</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +446,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00080">80</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00087">87</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +502,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00093">93</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00100">100</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +540,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00106">106</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00113">113</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -562,7 +571,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Empty destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00114">114</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00121">121</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +675,56 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a50a427b069cd96f0695185c7191caa5b">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00173">173</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00199">199</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac799d91ab4132253c56e43c2ffd7d2c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac799d91ab4132253c56e43c2ffd7d2c1">&#9670;&nbsp;</a></span>countWithinDistanceStandard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PointT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classpcl_1_1_sample_consensus_model_circle2_d.html">pcl::SampleConsensusModelCircle2D</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::countWithinDistanceStandard </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::VectorXf &amp;&#160;</td>
+          <td class="paramname"><em>model_coefficients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This implementation uses no SIMD instructions. </p>
+<p>It is not intended for normal use. See countWithinDistance which automatically uses the fastest implementation. </p>
+
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00217">217</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -724,7 +782,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a8d57de9d1ea374251b826ef0b47e2c84">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00299">299</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00416">416</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -775,7 +833,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#afc6e1d8217e25d7f1db621dcbf8f442a">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00110">110</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00136">136</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -808,7 +866,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a2c2824f82edf6564ba8a0160526992f0">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00198">198</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00205">205</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +906,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classpcl_1_1_sample_consensus_model.html#a7e32592b85589f587600a37130edbca7">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00325">325</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00444">444</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -926,7 +984,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00120">120</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8h_source.html#l00127">127</a> of file <a class="el" href="sac__model__circle_8h_source.html">sac_model_circle.h</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1043,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a43c57e5a4def4d0edb94dcce0ccf1e1a">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00201">201</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00318">318</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1108,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#a6de98b810dc0969940daa7cc564e6f26">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00232">232</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00349">349</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1166,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Implements <a class="el" href="classpcl_1_1_sample_consensus_model.html#afc775fee4ca096bbe1843610dec6a22e">pcl::SampleConsensusModel&lt; PointT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00135">135</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sac__model__circle_8hpp_source.html#l00161">161</a> of file <a class="el" href="sac__model__circle_8hpp_source.html">sac_model_circle.hpp</a>.</p>
 
 </div>
 </div>
@@ -1122,7 +1180,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:52</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:04</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;map : maps_)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          <span class="comment">//maps_[map_index] = new unsigned char[mapsSize];</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          map = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span> (<a class="code" href="pcl__macros_8h.html#a35ab808c89b93ae98198fcf7bbe6066c">aligned_malloc</a> (mapsSize));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          map = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span> (<a class="code" href="namespacepcl.html#aa42ad839ccc8245d25b1d2e36699e2d5">aligned_malloc</a> (mapsSize));</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          memset (map, 0, mapsSize);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      }</div>
@@ -186,7 +186,7 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;map : maps_)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          <span class="comment">//if (maps_[map_index] != NULL) delete[] maps_[map_index];</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keywordflow">if</span> (map != <span class="keyword">nullptr</span>) <a class="code" href="pcl__macros_8h.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free</a> (map);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keywordflow">if</span> (map != <span class="keyword">nullptr</span>) <a class="code" href="namespacepcl.html#a396b870ea10246b9b7761358b68c4310">aligned_free</a> (map);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        maps_.clear ();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        width_ = 0;</div>
@@ -317,7 +317,7 @@ $(function() {
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;map : maps_)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        {</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;          <span class="comment">//maps_[map_index] = new unsigned char[2*mapsSize];</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          map = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span> (<a class="code" href="pcl__macros_8h.html#a35ab808c89b93ae98198fcf7bbe6066c">aligned_malloc</a> (2*mapsSize));</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          map = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span> (<a class="code" href="namespacepcl.html#aa42ad839ccc8245d25b1d2e36699e2d5">aligned_malloc</a> (2*mapsSize));</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          memset (map, 0, 2*mapsSize);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      }</div>
@@ -328,7 +328,7 @@ $(function() {
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      {</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;map : maps_)</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          <span class="comment">//if (maps_[map_index] != NULL) delete[] maps_[map_index];</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          <span class="keywordflow">if</span> (map != <span class="keyword">nullptr</span>) <a class="code" href="pcl__macros_8h.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free</a> (map);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          <span class="keywordflow">if</span> (map != <span class="keyword">nullptr</span>) <a class="code" href="namespacepcl.html#a396b870ea10246b9b7761358b68c4310">aligned_free</a> (map);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        maps_.clear ();</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        width_ = 0;</div>
@@ -552,7 +552,6 @@ $(function() {
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
 <div class="ttc" id="astructpcl_1_1_l_i_n_e_m_o_d_detection_html_a71652f6da75b189628e2176d13ba5474"><div class="ttname"><a href="structpcl_1_1_l_i_n_e_m_o_d_detection.html#a71652f6da75b189628e2176d13ba5474">pcl::LINEMODDetection::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">scale at which the template was detected.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00327">linemod.h:327</a></div></div>
 <div class="ttc" id="astructpcl_1_1_l_i_n_e_m_o_d_detection_html"><div class="ttname"><a href="structpcl_1_1_l_i_n_e_m_o_d_detection.html">pcl::LINEMODDetection</a></div><div class="ttdoc">Represents a detection of a template using the LINEMOD approach.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00313">linemod.h:313</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a274dd8714485eed9c9328973d44ec5dc"><div class="ttname"><a href="pcl__macros_8h.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free</a></div><div class="ttdeci">void aligned_free(void *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00410">pcl_macros.h:410</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_linearized_maps_html_abe7568327297193b8f03f83989a58e88"><div class="ttname"><a href="classpcl_1_1_linearized_maps.html#abe7568327297193b8f03f83989a58e88">pcl::LinearizedMaps::getMapMemorySize</a></div><div class="ttdeci">std::size_t getMapMemorySize() const</div><div class="ttdoc">Returns the size of the memory map.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00226">linemod.h:226</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_l_i_n_e_m_o_d_html_a349480f92ab9fc63abf848faeb4b1d49"><div class="ttname"><a href="classpcl_1_1_l_i_n_e_m_o_d.html#a349480f92ab9fc63abf848faeb4b1d49">pcl::LINEMOD::getTemplate</a></div><div class="ttdeci">const SparseQuantizedMultiModTemplate &amp; getTemplate(int template_id) const</div><div class="ttdoc">Returns the template with the specified ID.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00421">linemod.h:421</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_energy_maps_html_af28a2803dcae83ed9dc00b85655a0d2f"><div class="ttname"><a href="classpcl_1_1_energy_maps.html#af28a2803dcae83ed9dc00b85655a0d2f">pcl::EnergyMaps::getHeight</a></div><div class="ttdeci">std::size_t getHeight() const</div><div class="ttdoc">Returns the height of the energy maps.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00076">linemod.h:76</a></div></div>
@@ -566,7 +565,7 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1_linearized_maps_html_aa4e37131ae1142b1e4ba1fe403438104"><div class="ttname"><a href="classpcl_1_1_linearized_maps.html#aa4e37131ae1142b1e4ba1fe403438104">pcl::LinearizedMaps::getStepSize</a></div><div class="ttdeci">std::size_t getStepSize() const</div><div class="ttdoc">Returns the step-size used to construct the linearized map.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00222">linemod.h:222</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_energy_maps_html_a8a83450a69a8ba1ccbeb90e7c9366a14"><div class="ttname"><a href="classpcl_1_1_energy_maps.html#a8a83450a69a8ba1ccbeb90e7c9366a14">pcl::EnergyMaps::getWidth</a></div><div class="ttdeci">std::size_t getWidth() const</div><div class="ttdoc">Returns the width of the energy maps.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00069">linemod.h:69</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_linearized_maps_html_a9cd24a2151e83cd3dab9918baced0da4"><div class="ttname"><a href="classpcl_1_1_linearized_maps.html#a9cd24a2151e83cd3dab9918baced0da4">pcl::LinearizedMaps::getOffsetMap</a></div><div class="ttdeci">unsigned char * getOffsetMap(const std::size_t col_index, const std::size_t row_index)</div><div class="ttdoc">Returns a linearized map starting at the specified position.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00284">linemod.h:284</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a35ab808c89b93ae98198fcf7bbe6066c"><div class="ttname"><a href="pcl__macros_8h.html#a35ab808c89b93ae98198fcf7bbe6066c">aligned_malloc</a></div><div class="ttdeci">void * aligned_malloc(std::size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00388">pcl_macros.h:388</a></div></div>
+<div class="ttc" id="anamespacepcl_html_a396b870ea10246b9b7761358b68c4310"><div class="ttname"><a href="namespacepcl.html#a396b870ea10246b9b7761358b68c4310">pcl::aligned_free</a></div><div class="ttdeci">void aligned_free(void *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00404">pcl_macros.h:404</a></div></div>
 <div class="ttc" id="astructpcl_1_1_l_i_n_e_m_o_d_detection_html_ab79e94254c59b9f0f1445dbf8489ab36"><div class="ttname"><a href="structpcl_1_1_l_i_n_e_m_o_d_detection.html#ab79e94254c59b9f0f1445dbf8489ab36">pcl::LINEMODDetection::x</a></div><div class="ttdeci">int x</div><div class="ttdoc">x-position of the detection.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00319">linemod.h:319</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_energy_maps_html"><div class="ttname"><a href="classpcl_1_1_energy_maps.html">pcl::EnergyMaps</a></div><div class="ttdoc">Stores a set of energy maps.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00054">linemod.h:54</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_linearized_maps_html_ae53f5f20a4303ba7cb751775f05fdcd7"><div class="ttname"><a href="classpcl_1_1_linearized_maps.html#ae53f5f20a4303ba7cb751775f05fdcd7">pcl::LinearizedMaps::~LinearizedMaps</a></div><div class="ttdeci">virtual ~LinearizedMaps()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00208">linemod.h:208</a></div></div>
@@ -581,16 +580,17 @@ $(function() {
 <div class="ttc" id="aclasspcl_1_1_energy_maps_html_a6b446dfa89e547feaaf3aaad3c0bae33"><div class="ttname"><a href="classpcl_1_1_energy_maps.html#a6b446dfa89e547feaaf3aaad3c0bae33">pcl::EnergyMaps::releaseAll</a></div><div class="ttdeci">void releaseAll()</div><div class="ttdoc">Releases the internal data.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00113">linemod.h:113</a></div></div>
 <div class="ttc" id="astructpcl_1_1_l_i_n_e_m_o_d_detection_html_a8d1499ff25f160543569ddd6feefb805"><div class="ttname"><a href="structpcl_1_1_l_i_n_e_m_o_d_detection.html#a8d1499ff25f160543569ddd6feefb805">pcl::LINEMODDetection::score</a></div><div class="ttdeci">float score</div><div class="ttdoc">score of the detection.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00325">linemod.h:325</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_linearized_maps_html_a59f096b5ab6fe54cf74e761faafc5395"><div class="ttname"><a href="classpcl_1_1_linearized_maps.html#a59f096b5ab6fe54cf74e761faafc5395">pcl::LinearizedMaps::LinearizedMaps</a></div><div class="ttdeci">LinearizedMaps()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00203">linemod.h:203</a></div></div>
+<div class="ttc" id="anamespacepcl_html_aa42ad839ccc8245d25b1d2e36699e2d5"><div class="ttname"><a href="namespacepcl.html#aa42ad839ccc8245d25b1d2e36699e2d5">pcl::aligned_malloc</a></div><div class="ttdeci">void * aligned_malloc(std::size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00382">pcl_macros.h:382</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_l_i_n_e_m_o_d_html_a618e2dfbb8420926a8cf47592a53857e"><div class="ttname"><a href="classpcl_1_1_l_i_n_e_m_o_d.html#a618e2dfbb8420926a8cf47592a53857e">pcl::LINEMOD::setDetectionThreshold</a></div><div class="ttdeci">void setDetectionThreshold(float threshold)</div><div class="ttdoc">Sets the detection threshold.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00394">linemod.h:394</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_energy_maps_html_a3510f29e006f2d803bd7224cc7fbee83"><div class="ttname"><a href="classpcl_1_1_energy_maps.html#a3510f29e006f2d803bd7224cc7fbee83">pcl::EnergyMaps::EnergyMaps</a></div><div class="ttdeci">EnergyMaps()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00058">linemod.h:58</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <div class="ttc" id="aclasspcl_1_1_linearized_maps_html_aa44b8e4c0e56ed60aeb49f3fbd3ebcc1"><div class="ttname"><a href="classpcl_1_1_linearized_maps.html#aa44b8e4c0e56ed60aeb49f3fbd3ebcc1">pcl::LinearizedMaps::releaseAll</a></div><div class="ttdeci">void releaseAll()</div><div class="ttdoc">Releases the internal memory.</div><div class="ttdef"><b>Definition:</b> <a href="linemod_8h_source.html#l00255">linemod.h:255</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:42</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:39</p>
 </div> <!-- #footer -->
 </body>
 </html>

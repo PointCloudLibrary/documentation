@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -74,10 +74,7 @@ $(function() {
 <div class="title">shapes.h File Reference<div class="ingroups"><a class="el" href="group__visualization.html">Module visualization</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pcl/ModelCoefficients.h&gt;</code><br />
-<code>#include &lt;pcl/point_cloud.h&gt;</code><br />
-<code>#include &lt;pcl/visualization/eigen.h&gt;</code><br />
-<code>#include &lt;pcl/geometry/planar_polygon.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;pcl/point_cloud.h&gt;</code><br />
 <code>#include &lt;pcl/visualization/common/impl/shapes.hpp&gt;</code><br />
 </div>
 <p><a href="shapes_8h_source.html">Go to the source code of this file.</a></p>
@@ -89,6 +86,9 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_planar_polygon.html">pcl::PlanarPolygon&lt; PointT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classpcl_1_1_planar_polygon.html" title="PlanarPolygon represents a planar (2D) polygon, potentially in a 3D space.">PlanarPolygon</a> represents a planar (2D) polygon, potentially in a 3D space.  <a href="classpcl_1_1_planar_polygon.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -144,6 +144,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1c190a94892d418f0d3435dd8bcacada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkDataSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1visualization.html#a1c190a94892d418f0d3435dd8bcacada">pcl::visualization::createCube</a> (double x_min, double x_max, double y_min, double y_max, double z_min, double z_max)</td></tr>
 <tr class="memdesc:a1c190a94892d418f0d3435dd8bcacada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cube from a set of bounding points.  <a href="namespacepcl_1_1visualization.html#a1c190a94892d418f0d3435dd8bcacada">More...</a><br /></td></tr>
 <tr class="separator:a1c190a94892d418f0d3435dd8bcacada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f3163ddfcb7a3358ff62e40d6015294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> <a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkDataSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">pcl::visualization::createEllipsoid</a> (const Eigen::Isometry3d &amp;transform, double radius_x, double radius_y, double radius_z)</td></tr>
+<tr class="memdesc:ga5f3163ddfcb7a3358ff62e40d6015294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ellipsoid shape from the given parameters.  <a href="group__visualization.html#ga5f3163ddfcb7a3358ff62e40d6015294">More...</a><br /></td></tr>
+<tr class="separator:ga5f3163ddfcb7a3358ff62e40d6015294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeabaade9c81f6faf7e6d0be905df8f6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">pcl::visualization::allocVtkUnstructuredGrid</a> (<a class="el" href="classvtk_smart_pointer.html">vtkSmartPointer</a>&lt; vtkUnstructuredGrid &gt; &amp;polydata)</td></tr>
 <tr class="memdesc:aeabaade9c81f6faf7e6d0be905df8f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a new unstructured grid smartpointer.  <a href="namespacepcl_1_1visualization.html#aeabaade9c81f6faf7e6d0be905df8f6e">More...</a><br /></td></tr>
 <tr class="separator:aeabaade9c81f6faf7e6d0be905df8f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +157,7 @@ Functions</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:03</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:02</p>
 </div> <!-- #footer -->
 </body>
 </html>

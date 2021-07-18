@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -158,12 +158,15 @@ $(function() {
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace octree</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <span class="comment">// namespace pcl</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define PCL_INSTANTIATE_OctreePointCloudSinglePoint(T)                                 \</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  template class PCL_EXPORTS pcl::octree::OctreePointCloudSinglePoint&lt;T&gt;;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// needed since OctreePointCloud is not instantiated with template parameters used above</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#include &lt;pcl/octree/impl/octree_pointcloud.hpp&gt;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#define PCL_INSTANTIATE_OctreePointCloudSinglePoint(T)                                 \</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">  template class PCL_EXPORTS pcl::octree::OctreePointCloudSinglePoint&lt;T&gt;;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespacepcl_html"><div class="ttname"><a href="namespacepcl.html">pcl</a></div><div class="ttdef"><b>Definition:</b> <a href="2d_2include_2pcl_22d_2convolution_8h_source.html#l00046">convolution.h:46</a></div></div>
 <div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud.html">pcl::octree::OctreePointCloud</a></div><div class="ttdoc">Octree pointcloud class</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud_8h_source.html#l00072">octree_pointcloud.h:72</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00628">point_types.hpp:628</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html">pcl::PointXYZRGB</a></div><div class="ttdoc">A point structure representing Euclidean xyz coordinates, and the RGB color.</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00674">point_types.hpp:674</a></div></div>
 <div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_single_point_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_single_point.html">pcl::octree::OctreePointCloudSinglePoint</a></div><div class="ttdoc">Octree pointcloud single point class</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__singlepoint_8h_source.html#l00062">octree_pointcloud_singlepoint.h:62</a></div></div>
 <div class="ttc" id="aclasspcl_1_1octree_1_1_octree_base_html"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_base.html">pcl::octree::OctreeBase</a></div><div class="ttdoc">Octree class.</div><div class="ttdef"><b>Definition:</b> <a href="octree_2include_2pcl_2octree_2octree__base_8h_source.html#l00062">octree_base.h:62</a></div></div>
 <div class="ttc" id="aclasspcl_1_1octree_1_1_octree_point_cloud_single_point_html_ad26aeaa7f2ec0be434a7ef1504c1f1ca"><div class="ttname"><a href="classpcl_1_1octree_1_1_octree_point_cloud_single_point.html#ad26aeaa7f2ec0be434a7ef1504c1f1ca">pcl::octree::OctreePointCloudSinglePoint::~OctreePointCloudSinglePoint</a></div><div class="ttdeci">~OctreePointCloudSinglePoint()</div><div class="ttdoc">Empty class constructor.</div><div class="ttdef"><b>Definition:</b> <a href="octree__pointcloud__singlepoint_8h_source.html#l00083">octree_pointcloud_singlepoint.h:83</a></div></div>
@@ -173,7 +176,7 @@ $(function() {
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:39</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:36</p>
 </div> <!-- #footer -->
 </body>
 </html>

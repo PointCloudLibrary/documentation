@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -282,9 +282,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5c83580c33501bc9d74bc7edff2ac646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#a5c83580c33501bc9d74bc7edff2ac646">getOccupiedVoxelCentersRecursive</a> (std::vector&lt; Eigen::Vector3d, Eigen::aligned_allocator&lt; Eigen::Vector3d &gt; &gt; &amp;voxel_centers, const std::size_t query_depth)</td></tr>
 <tr class="memdesc:a5c83580c33501bc9d74bc7edff2ac646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vector of occupied voxel centers.  <a href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#a5c83580c33501bc9d74bc7edff2ac646">More...</a><br /></td></tr>
 <tr class="separator:a5c83580c33501bc9d74bc7edff2ac646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2fa43de548b52483b5ce1d4782f3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#add2fa43de548b52483b5ce1d4782f3d3">sortOctantIndices</a> (const <a class="el" href="structpcl_1_1_p_c_l_point_cloud2.html#a5123c3c0386ccc5efd7d7a3b70fdc9bc">pcl::PCLPointCloud2::Ptr</a> &amp;input_cloud, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;indices, const Eigen::Vector3d &amp;mid_xyz)</td></tr>
-<tr class="memdesc:add2fa43de548b52483b5ce1d4782f3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the indices based on x,y,z fields and pushes the index into the proper octant's vector; This could be overloaded with a parallelized implementation.  <a href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#add2fa43de548b52483b5ce1d4782f3d3">More...</a><br /></td></tr>
-<tr class="separator:add2fa43de548b52483b5ce1d4782f3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb45a38bc97ead9b714d84dc3adc3202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#aeb45a38bc97ead9b714d84dc3adc3202">sortOctantIndices</a> (const <a class="el" href="structpcl_1_1_p_c_l_point_cloud2.html#a5123c3c0386ccc5efd7d7a3b70fdc9bc">pcl::PCLPointCloud2::Ptr</a> &amp;input_cloud, std::vector&lt; <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &gt; &amp;indices, const Eigen::Vector3d &amp;mid_xyz)</td></tr>
+<tr class="memdesc:aeb45a38bc97ead9b714d84dc3adc3202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the indices based on x,y,z fields and pushes the index into the proper octant's vector; This could be overloaded with a parallelized implementation.  <a href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#aeb45a38bc97ead9b714d84dc3adc3202">More...</a><br /></td></tr>
+<tr class="separator:aeb45a38bc97ead9b714d84dc3adc3202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b8d2f58d75cea617af406fea88e7a05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#a7b8d2f58d75cea617af406fea88e7a05">enlargeToCube</a> (Eigen::Vector3d &amp;bb_min, Eigen::Vector3d &amp;bb_max)</td></tr>
 <tr class="memdesc:a7b8d2f58d75cea617af406fea88e7a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enlarges the shortest two sidelengths of the bounding box to a cubic shape; operation is done in place.  <a href="classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html#a7b8d2f58d75cea617af406fea88e7a05">More...</a><br /></td></tr>
 <tr class="separator:a7b8d2f58d75cea617af406fea88e7a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,7 +576,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l00109">109</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="octree__base__node_8hpp_source.html#l00268">countNumChildren()</a>, <a class="el" href="octree__base__node_8h_source.html#l00538">depth_</a>, <a class="el" href="octree__base__node_8h_source.html#l00272">getDepth()</a>, <a class="el" href="octree__base__node_8hpp_source.html#l00308">loadChildren()</a>, <a class="el" href="octree__base__node_8hpp_source.html#l01926">loadFromFile()</a>, <a class="el" href="octree__base__node_8h_source.html#l00119">node_index_extension</a>, <a class="el" href="octree__base__node_8h_source.html#l00568">node_metadata_</a>, <a class="el" href="octree__base__node_8h_source.html#l00543">num_children_</a>, and <a class="el" href="octree__base__node_8h_source.html#l00534">root_node_</a>.</p>
+<p class="reference">References <a class="el" href="octree__base__node_8hpp_source.html#l00268">countNumChildren()</a>, <a class="el" href="octree__base__node_8h_source.html#l00538">depth_</a>, <a class="el" href="octree__base__node_8h_source.html#l00272">getDepth()</a>, <a class="el" href="octree__base__node_8hpp_source.html#l00308">loadChildren()</a>, <a class="el" href="octree__base__node_8hpp_source.html#l01925">loadFromFile()</a>, <a class="el" href="octree__base__node_8h_source.html#l00119">node_index_extension</a>, <a class="el" href="octree__base__node_8h_source.html#l00568">node_metadata_</a>, <a class="el" href="octree__base__node_8h_source.html#l00543">num_children_</a>, and <a class="el" href="octree__base__node_8h_source.html#l00534">root_node_</a>.</p>
 
 </div>
 </div>
@@ -656,7 +656,7 @@ Friends</h2></td></tr>
 
 <p>Private constructor used for children. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01701">1701</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01700">1700</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="octree__base__node_8h_source.html#l00538">depth_</a>, <a class="el" href="octree__disk__container_8hpp_source.html#l00089">pcl::outofcore::OutofcoreOctreeDiskContainer&lt; PointT &gt;::getRandomUUIDString()</a>, <a class="el" href="octree__base__node_8h_source.html#l00532">m_tree_</a>, <a class="el" href="octree__base__node_8h_source.html#l00118">node_container_basename</a>, <a class="el" href="octree__base__node_8h_source.html#l00117">node_index_basename</a>, <a class="el" href="octree__base__node_8h_source.html#l00119">node_index_extension</a>, <a class="el" href="octree__base__node_8h_source.html#l00568">node_metadata_</a>, <a class="el" href="octree__base__node_8h_source.html#l00543">num_children_</a>, <a class="el" href="octree__base__node_8h_source.html#l00536">parent_</a>, <a class="el" href="octree__base__node_8h_source.html#l00556">payload_</a>, <a class="el" href="octree__base__node_8h_source.html#l00566">pcd_extension</a>, <a class="el" href="octree__base__node_8h_source.html#l00534">root_node_</a>, and <a class="el" href="octree__base__node_8hpp_source.html#l00284">saveIdx()</a>.</p>
 
@@ -930,7 +930,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l00495">495</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>.</p>
 
 </div>
 </div>
@@ -963,7 +963,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l00702">702</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>, <a class="el" href="classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a6b5e8205afd50eb785f77cd17162ccb5">pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;::filter()</a>, <a class="el" href="classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a375319f0863acd9dc9e980b6c8ef2c70">pcl::PCLBase&lt; pcl::PCLPointCloud2 &gt;::setIndices()</a>, <a class="el" href="classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a89fd19a5d925d75f66ae4cbd137463ad">pcl::PCLBase&lt; pcl::PCLPointCloud2 &gt;::setInputCloud()</a>, <a class="el" href="filter__indices_8h_source.html#l00224">pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;::setNegative()</a>, and <a class="el" href="random__sample_8h_source.html#l00172">pcl::RandomSample&lt; pcl::PCLPointCloud2 &gt;::setSample()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>, <a class="el" href="classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a9a798b459b3230944a1119074d77c5a4">pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;::filter()</a>, <a class="el" href="classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a375319f0863acd9dc9e980b6c8ef2c70">pcl::PCLBase&lt; pcl::PCLPointCloud2 &gt;::setIndices()</a>, <a class="el" href="classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html#a89fd19a5d925d75f66ae4cbd137463ad">pcl::PCLBase&lt; pcl::PCLPointCloud2 &gt;::setInputCloud()</a>, <a class="el" href="filter__indices_8h_source.html#l00224">pcl::FilterIndices&lt; pcl::PCLPointCloud2 &gt;::setNegative()</a>, and <a class="el" href="random__sample_8h_source.html#l00172">pcl::RandomSample&lt; pcl::PCLPointCloud2 &gt;::setSample()</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +1021,7 @@ Friends</h2></td></tr>
 
 <p>Recursively converts data files to ascii XZY files. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01944">1944</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01943">1943</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1051,7 @@ Friends</h2></td></tr>
 
 <p>Copies points from this and all children into a single point container (std::list) </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01753">1753</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01752">1752</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1089,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01776">1776</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01775">1775</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1149,7 @@ Friends</h2></td></tr>
 
 <p>Counts the number of loaded chilren by testing the <code>children_</code> array; used to update num_loaded_chilren_ internally. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01910">1910</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01909">1909</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="octree__base__node_8h_source.html#l00287">getNumLoadedChildren()</a>.</p>
 
@@ -1279,7 +1279,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01965">1965</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01964">1964</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1358,7 @@ Friends</h2></td></tr>
 
 <p>Returns a pointer to the child in octant index_arg. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01894">1894</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01893">1893</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="outofcore_2include_2pcl_2outofcore_2impl_2octree__base_8hpp_source.html#l00496">pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, pcl::PointXYZRGB &gt;::getBranchChildPtr()</a>.</p>
 
@@ -1389,7 +1389,7 @@ Friends</h2></td></tr>
 
 <p>Gets the number of points available in the PCD file. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01902">1902</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01901">1901</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1478,7 +1478,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00253">253</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">References <a class="el" href="octree__nodes_8h_source.html#l00054">pcl::octree::BRANCH_NODE</a>, <a class="el" href="octree__base__node_8h_source.html#l00279">getNumChildren()</a>, and <a class="el" href="octree__nodes_8h_source.html#l00054">pcl::octree::LEAF_NODE</a>.</p>
+<p class="reference">References <a class="el" href="octree__nodes_8h_source.html#l00051">pcl::octree::BRANCH_NODE</a>, <a class="el" href="octree__base__node_8h_source.html#l00279">getNumChildren()</a>, and <a class="el" href="octree__nodes_8h_source.html#l00051">pcl::octree::LEAF_NODE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="outofcore__breadth__first__iterator_8hpp_source.html#l00065">pcl::outofcore::OutofcoreBreadthFirstIterator&lt; PointT, ContainerT &gt;::operator++()</a>.</p>
 
@@ -1544,7 +1544,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00287">287</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">References <a class="el" href="octree__base__node_8hpp_source.html#l01910">countNumLoadedChildren()</a>.</p>
+<p class="reference">References <a class="el" href="octree__base__node_8hpp_source.html#l01909">countNumLoadedChildren()</a>.</p>
 
 </div>
 </div>
@@ -1744,7 +1744,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if the input bounding box falls inclusively within the boundaries of this node's bounding box </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01823">1823</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01822">1822</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1864,7 +1864,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if any portion of the bounding box intersects with this node's bounding box; false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01801">1801</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01800">1800</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -1936,7 +1936,7 @@ Friends</h2></td></tr>
 
 <p>Loads the nodes metadata from the JSON file. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01926">1926</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01925">1925</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l00109">OutofcoreOctreeBaseNode()</a>.</p>
 
@@ -2138,7 +2138,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01845">1845</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01844">1844</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -2326,7 +2326,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01375">1375</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00282">pcl::concatenate()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00121">pcl::copyPointCloud()</a>, <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2common_8hpp_source.html#l00101">pcl::getPointsInBox()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00416">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="utils_8h_source.html#l00062">pcl::utils::ignore()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00414">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2io_8h_source.html#l00248">pcl::concatenate()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00144">pcl::copyPointCloud()</a>, <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>, <a class="el" href="common_2include_2pcl_2common_2impl_2common_8hpp_source.html#l00154">pcl::getPointsInBox()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00400">pcl::PointCloud&lt; PointT &gt;::height</a>, <a class="el" href="utils_8h_source.html#l00062">pcl::utils::ignore()</a>, and <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00398">pcl::PointCloud&lt; PointT &gt;::width</a>.</p>
 
 </div>
 </div>
@@ -2698,7 +2698,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01886">1886</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01885">1885</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="outofcore_2include_2pcl_2outofcore_2impl_2octree__base_8hpp_source.html#l00594">pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, pcl::PointXYZRGB &gt;::buildLODRecursive()</a>.</p>
 
@@ -2767,7 +2767,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l00284">284</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>.</p>
 
 </div>
 </div>
@@ -2830,8 +2830,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="add2fa43de548b52483b5ce1d4782f3d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add2fa43de548b52483b5ce1d4782f3d3">&#9670;&nbsp;</a></span>sortOctantIndices()</h2>
+<a id="aeb45a38bc97ead9b714d84dc3adc3202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb45a38bc97ead9b714d84dc3adc3202">&#9670;&nbsp;</a></span>sortOctantIndices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2848,7 +2848,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -2872,9 +2872,9 @@ Friends</h2></td></tr>
 
 <p>Sorts the indices based on x,y,z fields and pushes the index into the proper octant's vector; This could be overloaded with a parallelized implementation. </p>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01977">1977</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01976">1976</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00053">pcl::getFieldIndex()</a>, and <a class="el" href="octree__base__node_8hpp_source.html#l00908">pcl::outofcore::pointInBoundingBox()</a>.</p>
+<p class="reference">References <a class="el" href="common_2include_2pcl_2common_2impl_2io_8hpp_source.html#l00054">pcl::getFieldIndex()</a>, and <a class="el" href="octree__base__node_8hpp_source.html#l00908">pcl::outofcore::pointInBoundingBox()</a>.</p>
 
 </div>
 </div>
@@ -2990,7 +2990,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01865">1865</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="octree__base__node_8hpp_source.html#l01864">1864</a> of file <a class="el" href="octree__base__node_8hpp_source.html">octree_base_node.hpp</a>.</p>
 
 </div>
 </div>
@@ -3248,7 +3248,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00532">532</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>.</p>
 
 </div>
 </div>
@@ -3274,7 +3274,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00118">118</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>.</p>
 
 </div>
 </div>
@@ -3324,7 +3324,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00117">117</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>.</p>
 
 </div>
 </div>
@@ -3460,7 +3460,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00536">536</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>.</p>
 
 </div>
 </div>
@@ -3489,7 +3489,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00556">556</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="outofcore_2include_2pcl_2outofcore_2impl_2octree__base_8hpp_source.html#l00594">pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, pcl::PointXYZRGB &gt;::buildLODRecursive()</a>, <a class="el" href="octree__base__node_8h_source.html#l00302">clearData()</a>, <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>, and <a class="el" href="octree__base__node_8h_source.html#l00467">size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="outofcore_2include_2pcl_2outofcore_2impl_2octree__base_8hpp_source.html#l00594">pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, pcl::PointXYZRGB &gt;::buildLODRecursive()</a>, <a class="el" href="octree__base__node_8h_source.html#l00302">clearData()</a>, <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>, and <a class="el" href="octree__base__node_8h_source.html#l00467">size()</a>.</p>
 
 </div>
 </div>
@@ -3517,7 +3517,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="octree__base__node_8h_source.html#l00566">566</a> of file <a class="el" href="octree__base__node_8h_source.html">octree_base_node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01701">OutofcoreOctreeBaseNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree__base__node_8hpp_source.html#l01700">OutofcoreOctreeBaseNode()</a>.</p>
 
 </div>
 </div>
@@ -3635,7 +3635,7 @@ Friends</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:09</p>
+<p>Pages generated on Sun Jul 18 2021 17:43:24</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -150,12 +150,20 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1538209e87c9b69feb11f4adf98373b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a1538209e87c9b69feb11f4adf98373b1">triangulate</a> (const <a class="el" href="structpcl_1_1_vertices.html">Vertices</a> &amp;vertices, <a class="el" href="structpcl_1_1_polygon_mesh.html">PolygonMesh</a> &amp;output)</td></tr>
 <tr class="memdesc:a1538209e87c9b69feb11f4adf98373b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triangulate one polygon.  <a href="classpcl_1_1_ear_clipping.html#a1538209e87c9b69feb11f4adf98373b1">More...</a><br /></td></tr>
 <tr class="separator:a1538209e87c9b69feb11f4adf98373b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e279cd70d60ef6136d134ea2bcbe845"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a3e279cd70d60ef6136d134ea2bcbe845">area</a> (const std::vector&lt; std::uint32_t &gt; &amp;vertices)</td></tr>
-<tr class="memdesc:a3e279cd70d60ef6136d134ea2bcbe845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the signed area of a polygon.  <a href="classpcl_1_1_ear_clipping.html#a3e279cd70d60ef6136d134ea2bcbe845">More...</a><br /></td></tr>
-<tr class="separator:a3e279cd70d60ef6136d134ea2bcbe845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a959e2e9e40a637f491fba32705d38734"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a959e2e9e40a637f491fba32705d38734">isEar</a> (int u, int v, int w, const std::vector&lt; std::uint32_t &gt; &amp;vertices)</td></tr>
-<tr class="memdesc:a959e2e9e40a637f491fba32705d38734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the triangle (u,v,w) is an ear.  <a href="classpcl_1_1_ear_clipping.html#a959e2e9e40a637f491fba32705d38734">More...</a><br /></td></tr>
-<tr class="separator:a959e2e9e40a637f491fba32705d38734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b889cb809bb75fc06288936b87292f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a01b889cb809bb75fc06288936b87292f">area</a> (const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;vertices)</td></tr>
+<tr class="memdesc:a01b889cb809bb75fc06288936b87292f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the signed area of a polygon.  <a href="classpcl_1_1_ear_clipping.html#a01b889cb809bb75fc06288936b87292f">More...</a><br /></td></tr>
+<tr class="separator:a01b889cb809bb75fc06288936b87292f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dfefab1a5049eaf735ec5bc9d05417"><td class="memTemplParams" colspan="2">template&lt;typename T  = pcl::index_t, std::enable_if_t&lt;!std::is_same&lt; T, std::uint32_t &gt;::value, pcl::index_t &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a96dfefab1a5049eaf735ec5bc9d05417"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a96dfefab1a5049eaf735ec5bc9d05417">area</a> (const std::vector&lt; std::uint32_t &gt; &amp;vertices)</td></tr>
+<tr class="memdesc:a96dfefab1a5049eaf735ec5bc9d05417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the signed area of a polygon.  <a href="classpcl_1_1_ear_clipping.html#a96dfefab1a5049eaf735ec5bc9d05417">More...</a><br /></td></tr>
+<tr class="separator:a96dfefab1a5049eaf735ec5bc9d05417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c507480b33e0ae101f83f13634bcf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a98c507480b33e0ae101f83f13634bcf3">isEar</a> (int u, int v, int w, const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;vertices)</td></tr>
+<tr class="memdesc:a98c507480b33e0ae101f83f13634bcf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the triangle (u,v,w) is an ear.  <a href="classpcl_1_1_ear_clipping.html#a98c507480b33e0ae101f83f13634bcf3">More...</a><br /></td></tr>
+<tr class="separator:a98c507480b33e0ae101f83f13634bcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e79b7076d72738f51c1032112760cf"><td class="memTemplParams" colspan="2">template&lt;typename T  = pcl::index_t, std::enable_if_t&lt;!std::is_same&lt; T, std::uint32_t &gt;::value, pcl::index_t &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a68e79b7076d72738f51c1032112760cf"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a68e79b7076d72738f51c1032112760cf">isEar</a> (int u, int v, int w, const std::vector&lt; std::uint32_t &gt; &amp;vertices)</td></tr>
+<tr class="memdesc:a68e79b7076d72738f51c1032112760cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the triangle (u,v,w) is an ear.  <a href="classpcl_1_1_ear_clipping.html#a68e79b7076d72738f51c1032112760cf">More...</a><br /></td></tr>
+<tr class="separator:a68e79b7076d72738f51c1032112760cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b3f9971f528061dab52b75febfdf42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_ear_clipping.html#a52b3f9971f528061dab52b75febfdf42">isInsideTriangle</a> (const Eigen::Vector3f &amp;u, const Eigen::Vector3f &amp;v, const Eigen::Vector3f &amp;w, const Eigen::Vector3f &amp;p)</td></tr>
 <tr class="memdesc:a52b3f9971f528061dab52b75febfdf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if p is inside the triangle (u,v,w).  <a href="classpcl_1_1_ear_clipping.html#a52b3f9971f528061dab52b75febfdf42">More...</a><br /></td></tr>
 <tr class="separator:a52b3f9971f528061dab52b75febfdf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,8 +257,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3e279cd70d60ef6136d134ea2bcbe845"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e279cd70d60ef6136d134ea2bcbe845">&#9670;&nbsp;</a></span>area()</h2>
+<a id="a01b889cb809bb75fc06288936b87292f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b889cb809bb75fc06288936b87292f">&#9670;&nbsp;</a></span>area() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +269,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">float pcl::EarClipping::area </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::uint32_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>vertices</em></td><td>)</td>
           <td></td>
         </tr>
@@ -280,6 +288,46 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a96dfefab1a5049eaf735ec5bc9d05417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dfefab1a5049eaf735ec5bc9d05417">&#9670;&nbsp;</a></span>area() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = pcl::index_t, std::enable_if_t&lt;!std::is_same&lt; T, std::uint32_t &gt;::value, pcl::index_t &gt;  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float pcl::EarClipping::area </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::uint32_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the signed area of a polygon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>the vertices representing the polygon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 14 : "This method creates a useless copy of the vertices vector. Use  area method which accepts Indices instead" <br  />
+ </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ear__clipping_8h_source.html#l00098">98</a> of file <a class="el" href="ear__clipping_8h_source.html">ear_clipping.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +374,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ear__clipping_8h_source.html#l00118">118</a> of file <a class="el" href="ear__clipping_8h_source.html">ear_clipping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ear__clipping_8h_source.html#l00143">143</a> of file <a class="el" href="ear__clipping_8h_source.html">ear_clipping.h</a>.</p>
 
 </div>
 </div>
@@ -376,11 +424,72 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a959e2e9e40a637f491fba32705d38734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a959e2e9e40a637f491fba32705d38734">&#9670;&nbsp;</a></span>isEar()</h2>
+<a id="a98c507480b33e0ae101f83f13634bcf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c507480b33e0ae101f83f13634bcf3">&#9670;&nbsp;</a></span>isEar() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcl::EarClipping::isEar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the triangle (u,v,w) is an ear. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>the first triangle vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>the second triangle vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>the third triangle vertex </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vertices</td><td>a set of input vertices </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68e79b7076d72738f51c1032112760cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e79b7076d72738f51c1032112760cf">&#9670;&nbsp;</a></span>isEar() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = pcl::index_t, std::enable_if_t&lt;!std::is_same&lt; T, std::uint32_t &gt;::value, pcl::index_t &gt;  = 0&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -417,7 +526,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -432,6 +541,10 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Scheduled for removal in version 1 . 14 : "This method creates a useless copy of the vertices vector. Use  isEar method which accepts Indices instead" <br  />
+ </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ear__clipping_8h_source.html#l00121">121</a> of file <a class="el" href="ear__clipping_8h_source.html">ear_clipping.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +703,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Input polygonal mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="processing_8h_source.html#l00146">146</a> of file <a class="el" href="processing_8h_source.html">processing.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="processing_8h_source.html#l00147">147</a> of file <a class="el" href="processing_8h_source.html">processing.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +742,7 @@ Protected Attributes</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:47</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:53</p>
 </div> <!-- #footer -->
 </body>
 </html>

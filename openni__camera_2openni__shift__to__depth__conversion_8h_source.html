@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        lookupTable_.resize(table_size);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// constants taken from openni driver</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        constexpr <a class="code" href="namespacepcl.html#a76057dcaa0702a6e8d9e773bf07d5b11">std::int16_t</a> nConstShift = 800;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        constexpr std::int16_t nConstShift = 800;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        constexpr <span class="keywordtype">double</span> nParamCoeff = 4.000000;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        constexpr <span class="keywordtype">double</span> dPlanePixelSize = 0.104200;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        constexpr <span class="keywordtype">double</span> nShiftScale = 10.000000;</div>
@@ -163,7 +163,7 @@ $(function() {
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">      /** \brief Generate a look-up table for converting openni shift values to depth</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a5325f7c3160c92fc7becd0e7a196028d">   94</a></span>&#160;      <a class="code" href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a5325f7c3160c92fc7becd0e7a196028d">shiftToDepth</a> (<a class="code" href="namespacepcl.html#a318eea0dc010eb432540e93fb326903b">std::uint16_t</a> shift_val)</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a5325f7c3160c92fc7becd0e7a196028d">   94</a></span>&#160;      <a class="code" href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a5325f7c3160c92fc7becd0e7a196028d">shiftToDepth</a> (std::uint16_t shift_val)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        assert (init_);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
@@ -194,21 +194,19 @@ $(function() {
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_ab3fb7965dfdee61857c75e5b0139d689"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#ab3fb7965dfdee61857c75e5b0139d689">openni_wrapper::ShiftToDepthConverter::isInitialized</a></div><div class="ttdeci">bool isInitialized() const</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00109">openni_shift_to_depth_conversion.h:109</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_a7388c68fa52f3d6783245f256538411d"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a7388c68fa52f3d6783245f256538411d">openni_wrapper::ShiftToDepthConverter::~ShiftToDepthConverter</a></div><div class="ttdeci">virtual ~ShiftToDepthConverter()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00059">openni_shift_to_depth_conversion.h:59</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_abebdc439fb18e7b243e64b10fa450b0f"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#abebdc439fb18e7b243e64b10fa450b0f">openni_wrapper::ShiftToDepthConverter::generateLookupTable</a></div><div class="ttdeci">void generateLookupTable()</div><div class="ttdoc">This method generates a look-up table to convert openni shift values to depth.</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00064">openni_shift_to_depth_conversion.h:64</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a76057dcaa0702a6e8d9e773bf07d5b11"><div class="ttname"><a href="namespacepcl.html#a76057dcaa0702a6e8d9e773bf07d5b11">pcl::int16_t</a></div><div class="ttdeci">std::int16_t int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00057">types.h:57</a></div></div>
-<div class="ttc" id="anamespacepcl_html_a318eea0dc010eb432540e93fb326903b"><div class="ttname"><a href="namespacepcl.html#a318eea0dc010eb432540e93fb326903b">pcl::uint16_t</a></div><div class="ttdeci">std::uint16_t uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00056">types.h:56</a></div></div>
-<div class="ttc" id="anamespaceopenni__wrapper_html"><div class="ttname"><a href="namespaceopenni__wrapper.html">openni_wrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="openni__depth__image_8h_source.html#l00052">openni_depth_image.h:52</a></div></div>
+<div class="ttc" id="anamespaceopenni__wrapper_html"><div class="ttname"><a href="namespaceopenni__wrapper.html">openni_wrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="openni__depth__image_8h_source.html#l00051">openni_depth_image.h:51</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_a9c8f5361cce2790bdfcee7f20185a66b"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a9c8f5361cce2790bdfcee7f20185a66b">openni_wrapper::ShiftToDepthConverter::init_</a></div><div class="ttdeci">bool init_</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00116">openni_shift_to_depth_conversion.h:116</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html">openni_wrapper::ShiftToDepthConverter</a></div><div class="ttdoc">This class provides conversion of the openni 11-bit shift data to depth;.</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00052">openni_shift_to_depth_conversion.h:52</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_a5325f7c3160c92fc7becd0e7a196028d"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a5325f7c3160c92fc7becd0e7a196028d">openni_wrapper::ShiftToDepthConverter::shiftToDepth</a></div><div class="ttdeci">float shiftToDepth(std::uint16_t shift_val)</div><div class="ttdoc">Generate a look-up table for converting openni shift values to depth.</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00094">openni_shift_to_depth_conversion.h:94</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_a62cc40240695997aeaf1168cfb48b857"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#a62cc40240695997aeaf1168cfb48b857">openni_wrapper::ShiftToDepthConverter::ShiftToDepthConverter</a></div><div class="ttdeci">ShiftToDepthConverter()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00056">openni_shift_to_depth_conversion.h:56</a></div></div>
 <div class="ttc" id="aclassopenni__wrapper_1_1_shift_to_depth_converter_html_abbf7294267104bbda33a893adeda07ca"><div class="ttname"><a href="classopenni__wrapper_1_1_shift_to_depth_converter.html#abbf7294267104bbda33a893adeda07ca">openni_wrapper::ShiftToDepthConverter::lookupTable_</a></div><div class="ttdeci">std::vector&lt; float &gt; lookupTable_</div><div class="ttdef"><b>Definition:</b> <a href="openni__camera_2openni__shift__to__depth__conversion_8h_source.html#l00115">openni_shift_to_depth_conversion.h:115</a></div></div>
-<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00331">pcl_macros.h:331</a></div></div>
+<div class="ttc" id="apcl__macros_8h_html_a2b443b7908f11aed38b620b570e5ebce"><div class="ttname"><a href="pcl__macros_8h.html#a2b443b7908f11aed38b620b570e5ebce">PCL_EXPORTS</a></div><div class="ttdeci">#define PCL_EXPORTS</div><div class="ttdef"><b>Definition:</b> <a href="pcl__macros_8h_source.html#l00323">pcl_macros.h:323</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:10:36</p>
+<p>Pages generated on Sun Jul 18 2021 17:39:33</p>
 </div> <!-- #footer -->
 </body>
 </html>

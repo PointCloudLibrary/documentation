@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -124,10 +124,10 @@ Public Types</h2></td></tr>
 <tr class="separator:a9fd0bb565f9d1dabfaf6842c74a0c8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecdcec3b14e094e6076d20963ba723b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a1ecdcec3b14e094e6076d20963ba723b">PointCloudOut</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointOutT &gt;</td></tr>
 <tr class="separator:a1ecdcec3b14e094e6076d20963ba723b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a277f33db3bd30d6455aadfae1d4ba66d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a277f33db3bd30d6455aadfae1d4ba66d">SearchMethod</a> = std::function&lt; int(std::size_t, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a277f33db3bd30d6455aadfae1d4ba66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e00597c5f775755842869f59635c6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a> = std::function&lt; int(const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, std::vector&lt; int &gt; &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
-<tr class="separator:a61e00597c5f775755842869f59635c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb7fb6afc2e34edf85875f8b526369b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a2eb7fb6afc2e34edf85875f8b526369b">SearchMethod</a> = std::function&lt; int(std::size_t, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a2eb7fb6afc2e34edf85875f8b526369b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f4449c9ad6054e934904d3076e229e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a> = std::function&lt; int(const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt; float &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a94f4449c9ad6054e934904d3076e229e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classpcl_1_1_p_c_l_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcl_1_1_p_c_l_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointInT &gt;</a></td></tr>
 <tr class="memitem:a69de4001826d45c280087187322d779d inherit pub_types_classpcl_1_1_p_c_l_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_p_c_l_base.html#a69de4001826d45c280087187322d779d">PointCloud</a> = <a class="el" href="classpcl_1_1_point_cloud.html">pcl::PointCloud</a>&lt; PointInT &gt;</td></tr>
 <tr class="separator:a69de4001826d45c280087187322d779d inherit pub_types_classpcl_1_1_p_c_l_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,12 +227,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab235b6b76033922b19aae91714d7e413"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ab235b6b76033922b19aae91714d7e413">deinitCompute</a> ()</td></tr>
 <tr class="memdesc:ab235b6b76033922b19aae91714d7e413"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called after ending the actual computation.  <a href="classpcl_1_1_feature.html#ab235b6b76033922b19aae91714d7e413">More...</a><br /></td></tr>
 <tr class="separator:ab235b6b76033922b19aae91714d7e413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de023a1a95aead61403dfdf3e8eac22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a7de023a1a95aead61403dfdf3e8eac22">searchForNeighbors</a> (std::size_t index, double parameter, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
-<tr class="memdesc:a7de023a1a95aead61403dfdf3e8eac22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a7de023a1a95aead61403dfdf3e8eac22">More...</a><br /></td></tr>
-<tr class="separator:a7de023a1a95aead61403dfdf3e8eac22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a666e3643281a3e05698ae6d588429d83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a666e3643281a3e05698ae6d588429d83">searchForNeighbors</a> (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double parameter, std::vector&lt; int &gt; &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
-<tr class="memdesc:a666e3643281a3e05698ae6d588429d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a666e3643281a3e05698ae6d588429d83">More...</a><br /></td></tr>
-<tr class="separator:a666e3643281a3e05698ae6d588429d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ad44afa45c694b438e2e72e8772ed4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a13ad44afa45c694b438e2e72e8772ed4">searchForNeighbors</a> (std::size_t index, double parameter, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
+<tr class="memdesc:a13ad44afa45c694b438e2e72e8772ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#a13ad44afa45c694b438e2e72e8772ed4">More...</a><br /></td></tr>
+<tr class="separator:a13ad44afa45c694b438e2e72e8772ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1af533a19f7ecc520ad738d8020edd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#ab1af533a19f7ecc520ad738d8020edd5">searchForNeighbors</a> (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double parameter, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;indices, std::vector&lt; float &gt; &amp;distances) const</td></tr>
+<tr class="memdesc:ab1af533a19f7ecc520ad738d8020edd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for k-nearest neighbors using the spatial locator from <em>setSearchmethod</em>, and the given surface from <em>setSearchSurface</em>.  <a href="classpcl_1_1_feature.html#ab1af533a19f7ecc520ad738d8020edd5">More...</a><br /></td></tr>
+<tr class="separator:ab1af533a19f7ecc520ad738d8020edd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcl_1_1_p_c_l_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcl_1_1_p_c_l_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcl_1_1_p_c_l_base.html">pcl::PCLBase&lt; PointInT &gt;</a></td></tr>
 <tr class="memitem:acceb20854934f4cf77e266eb5a44d4f0 inherit pro_methods_classpcl_1_1_p_c_l_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_p_c_l_base.html#acceb20854934f4cf77e266eb5a44d4f0">initCompute</a> ()</td></tr>
 <tr class="memdesc:acceb20854934f4cf77e266eb5a44d4f0 inherit pro_methods_classpcl_1_1_p_c_l_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method should get called before starting the actual computation.  <a href="classpcl_1_1_p_c_l_base.html#acceb20854934f4cf77e266eb5a44d4f0">More...</a><br /></td></tr>
@@ -246,7 +246,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a54032b79551164878ff59ed93b5c1dc5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">feature_name_</a></td></tr>
 <tr class="memdesc:a54032b79551164878ff59ed93b5c1dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The feature name.  <a href="classpcl_1_1_feature.html#a54032b79551164878ff59ed93b5c1dc5">More...</a><br /></td></tr>
 <tr class="separator:a54032b79551164878ff59ed93b5c1dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d27cdd139bd79335008303cf68ba82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">search_method_surface_</a></td></tr>
+<tr class="memitem:af2d27cdd139bd79335008303cf68ba82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">search_method_surface_</a></td></tr>
 <tr class="memdesc:af2d27cdd139bd79335008303cf68ba82"><td class="mdescLeft">&#160;</td><td class="mdescRight">The search method template for points.  <a href="classpcl_1_1_feature.html#af2d27cdd139bd79335008303cf68ba82">More...</a><br /></td></tr>
 <tr class="separator:af2d27cdd139bd79335008303cf68ba82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f8c497ac78cf49d9274c3ab5fe52df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcl_1_1_feature.html#a9fd0bb565f9d1dabfaf6842c74a0c8ba">PointCloudInConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_feature.html#a98f8c497ac78cf49d9274c3ab5fe52df">surface_</a></td></tr>
@@ -458,8 +458,8 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 </div>
 </div>
-<a id="a277f33db3bd30d6455aadfae1d4ba66d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a277f33db3bd30d6455aadfae1d4ba66d">&#9670;&nbsp;</a></span>SearchMethod</h2>
+<a id="a2eb7fb6afc2e34edf85875f8b526369b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb7fb6afc2e34edf85875f8b526369b">&#9670;&nbsp;</a></span>SearchMethod</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +467,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 template&lt;typename PointInT , typename PointOutT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classpcl_1_1_feature.html">pcl::Feature</a>&lt; PointInT, PointOutT &gt;::<a class="el" href="classpcl_1_1_feature.html#a277f33db3bd30d6455aadfae1d4ba66d">SearchMethod</a> =  std::function&lt;int (std::size_t, double, std::vector&lt;int&gt; &amp;, std::vector&lt;float&gt; &amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="classpcl_1_1_feature.html">pcl::Feature</a>&lt; PointInT, PointOutT &gt;::<a class="el" href="classpcl_1_1_feature.html#a2eb7fb6afc2e34edf85875f8b526369b">SearchMethod</a> =  std::function&lt;int (std::size_t, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt;float&gt; &amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -476,8 +476,8 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 </div>
 </div>
-<a id="a61e00597c5f775755842869f59635c6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61e00597c5f775755842869f59635c6b">&#9670;&nbsp;</a></span>SearchMethodSurface</h2>
+<a id="a94f4449c9ad6054e934904d3076e229e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f4449c9ad6054e934904d3076e229e">&#9670;&nbsp;</a></span>SearchMethodSurface</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -485,7 +485,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 template&lt;typename PointInT , typename PointOutT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classpcl_1_1_feature.html">pcl::Feature</a>&lt; PointInT, PointOutT &gt;::<a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a> =  std::function&lt;int (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, std::vector&lt;int&gt; &amp;, std::vector&lt;float&gt; &amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="classpcl_1_1_feature.html">pcl::Feature</a>&lt; PointInT, PointOutT &gt;::<a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a> =  std::function&lt;int (const <a class="el" href="classpcl_1_1_feature.html#ad8564266cbc6e467e6f8b41256c7642e">PointCloudIn</a> &amp;cloud, std::size_t index, double, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;, std::vector&lt;float&gt; &amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -584,9 +584,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="feature_8hpp_source.html#l00193">193</a> of file <a class="el" href="feature_8hpp_source.html">feature.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feature_8hpp_source.html#l00194">194</a> of file <a class="el" href="feature_8hpp_source.html">feature.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grsd_8hpp_source.html#l00064">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>, <a class="el" href="unary__classifier_8hpp_source.html#l00206">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, <a class="el" href="hough__3d_8hpp_source.html#l00054">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, <a class="el" href="surface__normal__modality_8h_source.html#l00544">pcl::SurfaceNormalModality&lt; PointXYZT &gt;::computeSurfaceNormals()</a>, <a class="el" href="harris__6d_8hpp_source.html#l00143">pcl::HarrisKeypoint6D&lt; PointInT, PointOutT, NormalT &gt;::detectKeypoints()</a>, <a class="el" href="features_2test_2data__source_8hpp_source.html#l00110">pcl::gpu::DataSource::estimateNormals()</a>, <a class="el" href="trajkovic__3d_8hpp_source.html#l00048">pcl::TrajkovicKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="harris__3d_8hpp_source.html#l00195">pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="susan_8hpp_source.html#l00215">pcl::SUSANKeypoint&lt; PointInT, PointOutT, NormalT, IntensityT &gt;::initCompute()</a>, and <a class="el" href="iss__3d_8hpp_source.html#l00200">pcl::ISSKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grsd_8hpp_source.html#l00065">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>, <a class="el" href="unary__classifier_8hpp_source.html#l00205">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, <a class="el" href="hough__3d_8hpp_source.html#l00055">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, <a class="el" href="surface__normal__modality_8h_source.html#l00544">pcl::SurfaceNormalModality&lt; PointXYZT &gt;::computeSurfaceNormals()</a>, <a class="el" href="harris__6d_8hpp_source.html#l00142">pcl::HarrisKeypoint6D&lt; PointInT, PointOutT, NormalT &gt;::detectKeypoints()</a>, <a class="el" href="data__source_8hpp_source.html#l00107">pcl::gpu::DataSource::estimateNormals()</a>, <a class="el" href="trajkovic__3d_8hpp_source.html#l00048">pcl::TrajkovicKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="harris__3d_8hpp_source.html#l00192">pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="susan_8hpp_source.html#l00216">pcl::SUSANKeypoint&lt; PointInT, PointOutT, NormalT, IntensityT &gt;::initCompute()</a>, and <a class="el" href="iss__3d_8hpp_source.html#l00201">pcl::ISSKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>.</p>
 
 </div>
 </div>
@@ -616,9 +616,9 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classpcl_1_1_f_l_a_r_e_local_reference_frame_estimation.html#a33b47a8caddc0091d321958d78f6d684">pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="feature_8hpp_source.html#l00180">180</a> of file <a class="el" href="feature_8hpp_source.html">feature.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feature_8hpp_source.html#l00181">181</a> of file <a class="el" href="feature_8hpp_source.html">feature.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="spin__image_8hpp_source.html#l00238">pcl::SpinImageEstimation&lt; PointInT, PointNT, PointOutT &gt;::initCompute()</a>, <a class="el" href="feature_8hpp_source.html#l00231">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PFHSignature125 &gt;::initCompute()</a>, and <a class="el" href="feature_8hpp_source.html#l00262">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;::initCompute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="spin__image_8hpp_source.html#l00237">pcl::SpinImageEstimation&lt; PointInT, PointNT, PointOutT &gt;::initCompute()</a>, <a class="el" href="feature_8hpp_source.html#l00232">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PFHSignature125 &gt;::initCompute()</a>, and <a class="el" href="feature_8hpp_source.html#l00265">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;::initCompute()</a>.</p>
 
 </div>
 </div>
@@ -651,7 +651,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00247">247</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="rsd_8h_source.html#l00203">pcl::RSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::setKSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="rsd_8h_source.html#l00183">pcl::RSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::setKSearch()</a>.</p>
 
 </div>
 </div>
@@ -834,14 +834,14 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p>This method should get called before starting the actual computation. </p>
 
-<p>Reimplemented in <a class="el" href="classpcl_1_1_spin_image_estimation.html#ab81b861f4dfafe17792838bd73c1277a">pcl::SpinImageEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_v_f_h_estimation.html#a8aee67cc11b324fccb4214668b0a4da7">pcl::VFHEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_f_l_a_r_e_local_reference_frame_estimation.html#abd9de776472628c7677680e29f70c854">pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html#afa6224ab473b6e62726861dd3071ea8d">pcl::SHOTColorEstimationOMP&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_shape_context3_d_estimation.html#a5ad35bf2e037d347e932a3ce2588dc01">pcl::ShapeContext3DEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_unique_shape_context.html#ab00140ee7d9f123f83a188b3ad84adcd">pcl::UniqueShapeContext&lt; PointInT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">pcl::SHOTEstimationBase&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT352, pcl::ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_difference_of_normals_estimation.html#a8e7b5906f3d7e966adfea5f4c0de6c6b">pcl::DifferenceOfNormalsEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_o_m_p.html#a41b1760fe4b41e4c273baf35b9e43e2b">pcl::SHOTEstimationOMP&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_labels.html#a93acfa34d625f616e094f65ddef10ae9">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::FPFHSignature33 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PFHRGBSignature250 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::SHOT1344 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::ShapeContext1980 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::SHOT352 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::VFHSignature308 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::Histogram&lt; 90 &gt; &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointT, PointNT, PointFeature &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PrincipalCurvatures &gt;</a>, and <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PFHSignature125 &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classpcl_1_1_spin_image_estimation.html#ab81b861f4dfafe17792838bd73c1277a">pcl::SpinImageEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_v_f_h_estimation.html#a8aee67cc11b324fccb4214668b0a4da7">pcl::VFHEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_f_l_a_r_e_local_reference_frame_estimation.html#abd9de776472628c7677680e29f70c854">pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html#afa6224ab473b6e62726861dd3071ea8d">pcl::SHOTColorEstimationOMP&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_shape_context3_d_estimation.html#a5ad35bf2e037d347e932a3ce2588dc01">pcl::ShapeContext3DEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_unique_shape_context.html#ab00140ee7d9f123f83a188b3ad84adcd">pcl::UniqueShapeContext&lt; PointInT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">pcl::SHOTEstimationBase&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT352, pcl::ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_base.html#a5e0cd1d75ae40e4089cead3e92b74c0f">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_difference_of_normals_estimation.html#a8e7b5906f3d7e966adfea5f4c0de6c6b">pcl::DifferenceOfNormalsEstimation&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_s_h_o_t_estimation_o_m_p.html#a41b1760fe4b41e4c273baf35b9e43e2b">pcl::SHOTEstimationOMP&lt; PointInT, PointNT, PointOutT, PointRFT &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_labels.html#a93acfa34d625f616e094f65ddef10ae9">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, PointOutT &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PFHRGBSignature250 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::FPFHSignature33 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::SHOT1344 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::ShapeContext1980 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::SHOT352 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::VFHSignature308 &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, ReferenceFrame &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::Histogram&lt; 90 &gt; &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointT, PointNT, PointFeature &gt;</a>, <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PrincipalCurvatures &gt;</a>, and <a class="el" href="classpcl_1_1_feature_from_normals.html#a2720af3323c9bb15c073156fe568ced3">pcl::FeatureFromNormals&lt; PointInT, PointNT, pcl::PFHSignature125 &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="feature_8hpp_source.html#l00094">94</a> of file <a class="el" href="feature_8hpp_source.html">feature.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="feature_8hpp_source.html#l00095">95</a> of file <a class="el" href="feature_8hpp_source.html">feature.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a666e3643281a3e05698ae6d588429d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a666e3643281a3e05698ae6d588429d83">&#9670;&nbsp;</a></span>searchForNeighbors() <span class="overload">[1/2]</span></h2>
+<a id="ab1af533a19f7ecc520ad738d8020edd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1af533a19f7ecc520ad738d8020edd5">&#9670;&nbsp;</a></span>searchForNeighbors() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -872,7 +872,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -911,8 +911,8 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 </div>
 </div>
-<a id="a7de023a1a95aead61403dfdf3e8eac22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7de023a1a95aead61403dfdf3e8eac22">&#9670;&nbsp;</a></span>searchForNeighbors() <span class="overload">[2/2]</span></h2>
+<a id="a13ad44afa45c694b438e2e72e8772ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ad44afa45c694b438e2e72e8772ed4">&#9670;&nbsp;</a></span>searchForNeighbors() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -937,7 +937,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -1011,7 +1011,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00187">187</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hough__3d_8hpp_source.html#l00054">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, and <a class="el" href="features_2test_2data__source_8hpp_source.html#l00110">pcl::gpu::DataSource::estimateNormals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hough__3d_8hpp_source.html#l00055">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, and <a class="el" href="data__source_8hpp_source.html#l00107">pcl::gpu::DataSource::estimateNormals()</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1051,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00201">201</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grsd_8hpp_source.html#l00064">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>, <a class="el" href="unary__classifier_8hpp_source.html#l00206">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, <a class="el" href="hough__3d_8hpp_source.html#l00054">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, <a class="el" href="harris__6d_8hpp_source.html#l00143">pcl::HarrisKeypoint6D&lt; PointInT, PointOutT, NormalT &gt;::detectKeypoints()</a>, <a class="el" href="harris__3d_8hpp_source.html#l00195">pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="susan_8hpp_source.html#l00215">pcl::SUSANKeypoint&lt; PointInT, PointOutT, NormalT, IntensityT &gt;::initCompute()</a>, and <a class="el" href="iss__3d_8hpp_source.html#l00200">pcl::ISSKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grsd_8hpp_source.html#l00065">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>, <a class="el" href="unary__classifier_8hpp_source.html#l00205">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, <a class="el" href="hough__3d_8hpp_source.html#l00055">pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;::computeRf()</a>, <a class="el" href="harris__6d_8hpp_source.html#l00142">pcl::HarrisKeypoint6D&lt; PointInT, PointOutT, NormalT &gt;::detectKeypoints()</a>, <a class="el" href="harris__3d_8hpp_source.html#l00192">pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>, <a class="el" href="susan_8hpp_source.html#l00216">pcl::SUSANKeypoint&lt; PointInT, PointOutT, NormalT, IntensityT &gt;::initCompute()</a>, and <a class="el" href="iss__3d_8hpp_source.html#l00201">pcl::ISSKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;::initCompute()</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1091,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00167">167</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="unary__classifier_8hpp_source.html#l00206">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, and <a class="el" href="features_2test_2data__source_8hpp_source.html#l00110">pcl::gpu::DataSource::estimateNormals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="unary__classifier_8hpp_source.html#l00205">pcl::UnaryClassifier&lt; PointT &gt;::computeFPFH()</a>, and <a class="el" href="data__source_8hpp_source.html#l00107">pcl::gpu::DataSource::estimateNormals()</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1131,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00149">149</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grsd_8hpp_source.html#l00064">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grsd_8hpp_source.html#l00065">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::computeFeature()</a>.</p>
 
 </div>
 </div>
@@ -1192,7 +1192,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00223">223</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boundary_8h_source.html#l00103">pcl::BoundaryEstimation&lt; PointInT, PointNT, PointOutT &gt;::BoundaryEstimation()</a>, <a class="el" href="cppf_8hpp_source.html#l00049">pcl::CPPFEstimation&lt; PointInT, PointNT, PointOutT &gt;::CPPFEstimation()</a>, <a class="el" href="don_8h_source.html#l00084">pcl::DifferenceOfNormalsEstimation&lt; PointInT, PointNT, PointOutT &gt;::DifferenceOfNormalsEstimation()</a>, <a class="el" href="feature_8h_source.html#l00247">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getClassName()</a>, <a class="el" href="gfpfh_8h_source.html#l00083">pcl::GFPFHEstimation&lt; PointInT, PointLT, PointOutT &gt;::GFPFHEstimation()</a>, <a class="el" href="grsd_8h_source.html#l00090">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::GRSDEstimation()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00108">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::IntegralImageNormalEstimation()</a>, <a class="el" href="intensity__gradient_8h_source.html#l00072">pcl::IntensityGradientEstimation&lt; PointInT, PointNT, PointOutT, IntensitySelectorT &gt;::IntensityGradientEstimation()</a>, <a class="el" href="intensity__spin_8h_source.html#l00077">pcl::IntensitySpinEstimation&lt; PointInT, PointOutT &gt;::IntensitySpinEstimation()</a>, <a class="el" href="linear__least__squares__normal_8h_source.html#l00064">pcl::LinearLeastSquaresNormalEstimation&lt; PointInT, PointOutT &gt;::LinearLeastSquaresNormalEstimation()</a>, <a class="el" href="moment__invariants_8h_source.html#l00071">pcl::MomentInvariantsEstimation&lt; PointInT, PointOutT &gt;::MomentInvariantsEstimation()</a>, <a class="el" href="features_2include_2pcl_2features_2normal__3d_8h_source.html#l00261">pcl::NormalEstimation&lt; PointInT, PointNT &gt;::NormalEstimation()</a>, <a class="el" href="normal__3d__omp_8h_source.html#l00076">pcl::NormalEstimationOMP&lt; PointInT, PointOutT &gt;::NormalEstimationOMP()</a>, <a class="el" href="ppf_8hpp_source.html#l00048">pcl::PPFEstimation&lt; PointInT, PointNT, PointOutT &gt;::PPFEstimation()</a>, <a class="el" href="ppfrgb_8hpp_source.html#l00046">pcl::PPFRGBEstimation&lt; PointInT, PointNT, PointOutT &gt;::PPFRGBEstimation()</a>, <a class="el" href="ppfrgb_8hpp_source.html#l00114">pcl::PPFRGBRegionEstimation&lt; PointInT, PointNT, PointOutT &gt;::PPFRGBRegionEstimation()</a>, <a class="el" href="rift_8h_source.html#l00083">pcl::RIFTEstimation&lt; PointInT, GradientT, PointOutT &gt;::RIFTEstimation()</a>, <a class="el" href="rsd_8h_source.html#l00170">pcl::RSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::RSDEstimation()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00191">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::setNormalSmoothingSize()</a>, <a class="el" href="shot_8h_source.html#l00091">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;::SHOTEstimationBase()</a>, and <a class="el" href="spin__image_8hpp_source.html#l00053">pcl::SpinImageEstimation&lt; PointInT, PointNT, PointOutT &gt;::SpinImageEstimation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boundary_8h_source.html#l00102">pcl::BoundaryEstimation&lt; PointInT, PointNT, PointOutT &gt;::BoundaryEstimation()</a>, <a class="el" href="cppf_8hpp_source.html#l00048">pcl::CPPFEstimation&lt; PointInT, PointNT, PointOutT &gt;::CPPFEstimation()</a>, <a class="el" href="don_8h_source.html#l00084">pcl::DifferenceOfNormalsEstimation&lt; PointInT, PointNT, PointOutT &gt;::DifferenceOfNormalsEstimation()</a>, <a class="el" href="feature_8h_source.html#l00247">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getClassName()</a>, <a class="el" href="gfpfh_8h_source.html#l00083">pcl::GFPFHEstimation&lt; PointInT, PointLT, PointOutT &gt;::GFPFHEstimation()</a>, <a class="el" href="grsd_8h_source.html#l00089">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::GRSDEstimation()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00107">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::IntegralImageNormalEstimation()</a>, <a class="el" href="intensity__gradient_8h_source.html#l00072">pcl::IntensityGradientEstimation&lt; PointInT, PointNT, PointOutT, IntensitySelectorT &gt;::IntensityGradientEstimation()</a>, <a class="el" href="intensity__spin_8h_source.html#l00077">pcl::IntensitySpinEstimation&lt; PointInT, PointOutT &gt;::IntensitySpinEstimation()</a>, <a class="el" href="linear__least__squares__normal_8h_source.html#l00062">pcl::LinearLeastSquaresNormalEstimation&lt; PointInT, PointOutT &gt;::LinearLeastSquaresNormalEstimation()</a>, <a class="el" href="moment__invariants_8h_source.html#l00071">pcl::MomentInvariantsEstimation&lt; PointInT, PointOutT &gt;::MomentInvariantsEstimation()</a>, <a class="el" href="features_2include_2pcl_2features_2normal__3d_8h_source.html#l00261">pcl::NormalEstimation&lt; PointInT, PointNT &gt;::NormalEstimation()</a>, <a class="el" href="normal__3d__omp_8h_source.html#l00076">pcl::NormalEstimationOMP&lt; PointInT, PointOutT &gt;::NormalEstimationOMP()</a>, <a class="el" href="ppf_8hpp_source.html#l00049">pcl::PPFEstimation&lt; PointInT, PointNT, PointOutT &gt;::PPFEstimation()</a>, <a class="el" href="ppfrgb_8hpp_source.html#l00046">pcl::PPFRGBEstimation&lt; PointInT, PointNT, PointOutT &gt;::PPFRGBEstimation()</a>, <a class="el" href="ppfrgb_8hpp_source.html#l00114">pcl::PPFRGBRegionEstimation&lt; PointInT, PointNT, PointOutT &gt;::PPFRGBRegionEstimation()</a>, <a class="el" href="rift_8h_source.html#l00083">pcl::RIFTEstimation&lt; PointInT, GradientT, PointOutT &gt;::RIFTEstimation()</a>, <a class="el" href="rsd_8h_source.html#l00150">pcl::RSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::RSDEstimation()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00190">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::setNormalSmoothingSize()</a>, <a class="el" href="shot_8h_source.html#l00093">pcl::SHOTEstimationBase&lt; PointInT, PointNT, pcl::SHOT1344, pcl::ReferenceFrame &gt;::SHOTEstimationBase()</a>, and <a class="el" href="spin__image_8hpp_source.html#l00052">pcl::SpinImageEstimation&lt; PointInT, PointNT, PointOutT &gt;::SpinImageEstimation()</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1222,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00243">243</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="feature_8h_source.html#l00392">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;::FeatureFromLabels()</a>, <a class="el" href="feature_8h_source.html#l00191">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getKSearch()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00108">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::IntegralImageNormalEstimation()</a>, <a class="el" href="linear__least__squares__normal_8h_source.html#l00064">pcl::LinearLeastSquaresNormalEstimation&lt; PointInT, PointOutT &gt;::LinearLeastSquaresNormalEstimation()</a>, and <a class="el" href="feature_8h_source.html#l00187">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::setKSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="feature_8h_source.html#l00392">pcl::FeatureFromLabels&lt; PointInT, PointLT, PointOutT &gt;::FeatureFromLabels()</a>, <a class="el" href="feature_8h_source.html#l00191">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getKSearch()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00107">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::IntegralImageNormalEstimation()</a>, <a class="el" href="linear__least__squares__normal_8h_source.html#l00062">pcl::LinearLeastSquaresNormalEstimation&lt; PointInT, PointOutT &gt;::LinearLeastSquaresNormalEstimation()</a>, and <a class="el" href="feature_8h_source.html#l00187">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::setKSearch()</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1238,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcl_1_1_feature.html#a61e00597c5f775755842869f59635c6b">SearchMethodSurface</a> <a class="el" href="classpcl_1_1_feature.html">pcl::Feature</a>&lt; PointInT, PointOutT &gt;::search_method_surface_</td>
+          <td class="memname"><a class="el" href="classpcl_1_1_feature.html#a94f4449c9ad6054e934904d3076e229e">SearchMethodSurface</a> <a class="el" href="classpcl_1_1_feature.html">pcl::Feature</a>&lt; PointInT, PointOutT &gt;::search_method_surface_</td>
         </tr>
       </table>
   </td>
@@ -1312,7 +1312,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00240">240</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grsd_8h_source.html#l00107">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::getRadiusSearch()</a>, <a class="el" href="feature_8h_source.html#l00208">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getRadiusSearch()</a>, <a class="el" href="grsd_8h_source.html#l00101">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::setRadiusSearch()</a>, and <a class="el" href="feature_8h_source.html#l00201">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::setRadiusSearch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grsd_8h_source.html#l00106">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::getRadiusSearch()</a>, <a class="el" href="feature_8h_source.html#l00208">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getRadiusSearch()</a>, <a class="el" href="grsd_8h_source.html#l00100">pcl::GRSDEstimation&lt; PointInT, PointNT, PointOutT &gt;::setRadiusSearch()</a>, and <a class="el" href="feature_8h_source.html#l00201">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::setRadiusSearch()</a>.</p>
 
 </div>
 </div>
@@ -1372,7 +1372,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="feature_8h_source.html#l00234">234</a> of file <a class="el" href="feature_8h_source.html">feature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="feature_8h_source.html#l00171">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getSearchMethod()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00108">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::IntegralImageNormalEstimation()</a>, <a class="el" href="linear__least__squares__normal_8h_source.html#l00064">pcl::LinearLeastSquaresNormalEstimation&lt; PointInT, PointOutT &gt;::LinearLeastSquaresNormalEstimation()</a>, and <a class="el" href="feature_8h_source.html#l00167">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::setSearchMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="feature_8h_source.html#l00171">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::getSearchMethod()</a>, <a class="el" href="integral__image__normal_8h_source.html#l00107">pcl::IntegralImageNormalEstimation&lt; pcl::PointXYZRGBA, pcl::Normal &gt;::IntegralImageNormalEstimation()</a>, <a class="el" href="linear__least__squares__normal_8h_source.html#l00062">pcl::LinearLeastSquaresNormalEstimation&lt; PointInT, PointOutT &gt;::LinearLeastSquaresNormalEstimation()</a>, and <a class="el" href="feature_8h_source.html#l00167">pcl::Feature&lt; PointInT, pcl::SHOT352 &gt;::setSearchMethod()</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1386,7 @@ template&lt;typename PointInT , typename PointOutT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:53</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:59</p>
 </div> <!-- #footer -->
 </body>
 </html>

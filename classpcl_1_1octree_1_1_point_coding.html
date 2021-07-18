@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -106,12 +106,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b7fee0f682b1ad1a6652694090614f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1octree_1_1_point_coding.html#a2b7fee0f682b1ad1a6652694090614f1">getDifferentialDataVector</a> ()</td></tr>
 <tr class="memdesc:a2b7fee0f682b1ad1a6652694090614f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference to vector containing differential color data.  <a href="classpcl_1_1octree_1_1_point_coding.html#a2b7fee0f682b1ad1a6652694090614f1">More...</a><br /></td></tr>
 <tr class="separator:a2b7fee0f682b1ad1a6652694090614f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231c7d289e73e3c920639c853a600758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1octree_1_1_point_coding.html#a231c7d289e73e3c920639c853a600758">encodePoints</a> (const typename std::vector&lt; int &gt; &amp;indexVector_arg, const double *referencePoint_arg, PointCloudConstPtr inputCloud_arg)</td></tr>
-<tr class="memdesc:a231c7d289e73e3c920639c853a600758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode differential point information for a subset of points from point cloud.  <a href="classpcl_1_1octree_1_1_point_coding.html#a231c7d289e73e3c920639c853a600758">More...</a><br /></td></tr>
-<tr class="separator:a231c7d289e73e3c920639c853a600758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb223cd5e0748e82b09e366cc3c019d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1octree_1_1_point_coding.html#abb223cd5e0748e82b09e366cc3c019d5">decodePoints</a> (PointCloudPtr outputCloud_arg, const double *referencePoint_arg, std::size_t beginIdx_arg, std::size_t endIdx_arg)</td></tr>
-<tr class="memdesc:abb223cd5e0748e82b09e366cc3c019d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode differential point information.  <a href="classpcl_1_1octree_1_1_point_coding.html#abb223cd5e0748e82b09e366cc3c019d5">More...</a><br /></td></tr>
-<tr class="separator:abb223cd5e0748e82b09e366cc3c019d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0247fe47079732a840f4c9dce5f16ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1octree_1_1_point_coding.html#a0247fe47079732a840f4c9dce5f16ec2">encodePoints</a> (const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;indexVector_arg, const double *referencePoint_arg, PointCloudConstPtr inputCloud_arg)</td></tr>
+<tr class="memdesc:a0247fe47079732a840f4c9dce5f16ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode differential point information for a subset of points from point cloud.  <a href="classpcl_1_1octree_1_1_point_coding.html#a0247fe47079732a840f4c9dce5f16ec2">More...</a><br /></td></tr>
+<tr class="separator:a0247fe47079732a840f4c9dce5f16ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d036b8fba832864032e3f4782a2d1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1octree_1_1_point_coding.html#a3d036b8fba832864032e3f4782a2d1de">decodePoints</a> (PointCloudPtr outputCloud_arg, const double *referencePoint_arg, <a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">uindex_t</a> beginIdx_arg, <a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">uindex_t</a> endIdx_arg)</td></tr>
+<tr class="memdesc:a3d036b8fba832864032e3f4782a2d1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode differential point information.  <a href="classpcl_1_1octree_1_1_point_coding.html#a3d036b8fba832864032e3f4782a2d1de">More...</a><br /></td></tr>
+<tr class="separator:a3d036b8fba832864032e3f4782a2d1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -139,7 +139,7 @@ class pcl::octree::PointCoding&lt; PointT &gt;</h3>
 typename: PointT: type of point used in pointcloud </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Julius Kammerl (<a href="#" onclick="location.href='mai'+'lto:'+'jul'+'iu'+'s@k'+'am'+'mer'+'l.'+'de'; return false;">juliu<span style="display: none;">.nosp@m.</span>s@ka<span style="display: none;">.nosp@m.</span>mmerl<span style="display: none;">.nosp@m.</span>.de</a>) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00056">56</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00054">54</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0161e68dd81ecdc9821939df5f9bdd73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0161e68dd81ecdc9821939df5f9bdd73">&#9670;&nbsp;</a></span>PointCoding()</h2>
@@ -168,7 +168,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00065">65</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00063">63</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -199,13 +199,13 @@ template&lt;typename PointT &gt; </div>
 
 <p>Empty class constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00073">73</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00071">71</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abb223cd5e0748e82b09e366cc3c019d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb223cd5e0748e82b09e366cc3c019d5">&#9670;&nbsp;</a></span>decodePoints()</h2>
+<a id="a3d036b8fba832864032e3f4782a2d1de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d036b8fba832864032e3f4782a2d1de">&#9670;&nbsp;</a></span>decodePoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,13 +230,13 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">uindex_t</a>&#160;</td>
           <td class="paramname"><em>beginIdx_arg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a1b98b7f9535916d9dffec6d425d2eed9">uindex_t</a>&#160;</td>
           <td class="paramname"><em>endIdx_arg</em>&#160;</td>
         </tr>
         <tr>
@@ -263,12 +263,12 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00164">164</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00159">159</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
-<a id="a231c7d289e73e3c920639c853a600758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231c7d289e73e3c920639c853a600758">&#9670;&nbsp;</a></span>encodePoints()</h2>
+<a id="a0247fe47079732a840f4c9dce5f16ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0247fe47079732a840f4c9dce5f16ec2">&#9670;&nbsp;</a></span>encodePoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +281,7 @@ template&lt;typename PointT &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classpcl_1_1octree_1_1_point_coding.html">pcl::octree::PointCoding</a>&lt; <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html">PointT</a> &gt;::encodePoints </td>
           <td>(</td>
-          <td class="paramtype">const typename std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>indexVector_arg</em>, </td>
         </tr>
         <tr>
@@ -319,7 +319,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00131">131</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00129">129</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Get reference to vector containing differential color data. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00120">120</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00118">118</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ template&lt;typename PointT &gt; </div>
 <p>Retrieve precision of point information. </p>
 <dl class="section return"><dt>Returns</dt><dd>precision </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00090">90</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00088">88</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +413,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Initialize decoding of differential point. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00113">113</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00111">111</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Initialize encoding of differential point. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00106">106</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00104">104</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00099">99</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00097">97</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ template&lt;typename PointT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00081">81</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00079">79</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +549,7 @@ template&lt;typename PointT &gt; </div>
 
 <p>Pointer to output point cloud dataset. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00191">191</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00186">186</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
 </div>
 </div>
@@ -577,9 +577,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Precision of point coding. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00200">200</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00195">195</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="point__coding_8h_source.html#l00164">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::decodePoints()</a>, <a class="el" href="point__coding_8h_source.html#l00131">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::encodePoints()</a>, <a class="el" href="point__coding_8h_source.html#l00090">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::getPrecision()</a>, and <a class="el" href="point__coding_8h_source.html#l00081">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::setPrecision()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="point__coding_8h_source.html#l00159">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::decodePoints()</a>, <a class="el" href="point__coding_8h_source.html#l00129">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::encodePoints()</a>, <a class="el" href="point__coding_8h_source.html#l00088">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::getPrecision()</a>, and <a class="el" href="point__coding_8h_source.html#l00079">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::setPrecision()</a>.</p>
 
 </div>
 </div>
@@ -608,9 +608,9 @@ template&lt;typename PointT &gt; </div>
 <p>Vector for storing differential point information <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00194">194</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00189">189</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="point__coding_8h_source.html#l00131">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::encodePoints()</a>, <a class="el" href="point__coding_8h_source.html#l00120">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::getDifferentialDataVector()</a>, <a class="el" href="point__coding_8h_source.html#l00113">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::initializeDecoding()</a>, <a class="el" href="point__coding_8h_source.html#l00106">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::initializeEncoding()</a>, and <a class="el" href="point__coding_8h_source.html#l00099">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::setPointCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="point__coding_8h_source.html#l00129">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::encodePoints()</a>, <a class="el" href="point__coding_8h_source.html#l00118">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::getDifferentialDataVector()</a>, <a class="el" href="point__coding_8h_source.html#l00111">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::initializeDecoding()</a>, <a class="el" href="point__coding_8h_source.html#l00104">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::initializeEncoding()</a>, and <a class="el" href="point__coding_8h_source.html#l00097">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::setPointCount()</a>.</p>
 
 </div>
 </div>
@@ -638,9 +638,9 @@ template&lt;typename PointT &gt; </div>
 
 <p>Iterator on differential point information vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00197">197</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__coding_8h_source.html#l00192">192</a> of file <a class="el" href="point__coding_8h_source.html">point_coding.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="point__coding_8h_source.html#l00164">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::decodePoints()</a>, and <a class="el" href="point__coding_8h_source.html#l00113">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::initializeDecoding()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="point__coding_8h_source.html#l00159">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::decodePoints()</a>, and <a class="el" href="point__coding_8h_source.html#l00111">pcl::octree::PointCoding&lt; pcl::PointXYZRGB &gt;::initializeDecoding()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +653,7 @@ template&lt;typename PointT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:14:06</p>
+<p>Pages generated on Sun Jul 18 2021 17:43:22</p>
 </div> <!-- #footer -->
 </body>
 </html>

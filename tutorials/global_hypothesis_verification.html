@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tutorial: Hypothesis Verification for 3D Object Recognition &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Tutorial: Hypothesis Verification for 3D Object Recognition &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -1161,7 +1161,7 @@ used in this tutorial (milk.pcd and milk_cartoon_all_small_clorox.pcd), and plac
   <span class="n">GoHv</span><span class="p">.</span><span class="n">verify</span> <span class="p">();</span>
   <span class="n">GoHv</span><span class="p">.</span><span class="n">getMask</span> <span class="p">(</span><span class="n">hypotheses_mask</span><span class="p">);</span>  <span class="c1">// i-element TRUE if hvModels[i] verifies hypotheses</span>
 
-  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">hypotheses_mask</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">hypotheses_mask</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
   <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">hypotheses_mask</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
     <span class="p">{</span>
@@ -1457,90 +1457,91 @@ A. Aldoma, F. Tombari, L. Di Stefano, M. Vincze, <cite>A global hypothesis verif
 <h2>Model-in-Scene Projection</h2>
 <p>To improve the <cite>coarse</cite> transformation associated to each object hypothesis, we apply some ICP iterations.
 We create a <code class="docutils literal notranslate"><span class="pre">instances</span></code> list to store the “coarse” transformations :</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>   */
-  std::vector&lt;pcl::PointCloud&lt;PointType&gt;::ConstPtr&gt; instances;
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>  <span class="cm">/**</span>
+<span class="cm">   * Generates clouds for each instances found </span>
+<span class="cm">   */</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">ConstPtr</span><span class="o">&gt;</span> <span class="n">instances</span><span class="p">;</span>
 
-  for (std::size_t i = 0; i &lt; rototranslations.size (); ++i)
-  {
-    pcl::PointCloud&lt;PointType&gt;::Ptr rotated_model (new pcl::PointCloud&lt;PointType&gt; ());
-    pcl::transformPointCloud (*model, *rotated_model, rototranslations[i]);
-    instances.push_back (rotated_model);
-  }
-
-  /**
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">rototranslations</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">rotated_model</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="p">());</span>
+    <span class="n">pcl</span><span class="o">::</span><span class="n">transformPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">model</span><span class="p">,</span> <span class="o">*</span><span class="n">rotated_model</span><span class="p">,</span> <span class="n">rototranslations</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="n">instances</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">rotated_model</span><span class="p">);</span>
+  <span class="p">}</span>
 </pre></div>
 </div>
 <p>then, we run ICP on the <code class="docutils literal notranslate"><span class="pre">instances</span></code> wrt. the <code class="docutils literal notranslate"><span class="pre">scene</span></code> to obtain the <code class="docutils literal notranslate"><span class="pre">registered_instances</span></code>:</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>   */
-  std::vector&lt;pcl::PointCloud&lt;PointType&gt;::ConstPtr&gt; registered_instances;
-  if (true)
-  {
-    std::cout &lt;&lt; &quot;--- ICP ---------&quot; &lt;&lt; std::endl;
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>  <span class="cm">/**</span>
+<span class="cm">   * ICP</span>
+<span class="cm">   */</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">ConstPtr</span><span class="o">&gt;</span> <span class="n">registered_instances</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;--- ICP ---------&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
-    for (std::size_t i = 0; i &lt; rototranslations.size (); ++i)
-    {
-      pcl::IterativeClosestPoint&lt;PointType, PointType&gt; icp;
-      icp.setMaximumIterations (icp_max_iter_);
-      icp.setMaxCorrespondenceDistance (icp_corr_distance_);
-      icp.setInputTarget (scene);
-      icp.setInputSource (instances[i]);
-      pcl::PointCloud&lt;PointType&gt;::Ptr registered (new pcl::PointCloud&lt;PointType&gt;);
-      icp.align (*registered);
-      registered_instances.push_back (registered);
-      std::cout &lt;&lt; &quot;Instance &quot; &lt;&lt; i &lt;&lt; &quot; &quot;;
-      if (icp.hasConverged ())
-      {
-        std::cout &lt;&lt; &quot;Aligned!&quot; &lt;&lt; std::endl;
-      }
-      else
-      {
-        std::cout &lt;&lt; &quot;Not Aligned!&quot; &lt;&lt; std::endl;
-      }
-    }
+    <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">rototranslations</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">pcl</span><span class="o">::</span><span class="n">IterativeClosestPoint</span><span class="o">&lt;</span><span class="n">PointType</span><span class="p">,</span> <span class="n">PointType</span><span class="o">&gt;</span> <span class="n">icp</span><span class="p">;</span>
+      <span class="n">icp</span><span class="p">.</span><span class="n">setMaximumIterations</span> <span class="p">(</span><span class="n">icp_max_iter_</span><span class="p">);</span>
+      <span class="n">icp</span><span class="p">.</span><span class="n">setMaxCorrespondenceDistance</span> <span class="p">(</span><span class="n">icp_corr_distance_</span><span class="p">);</span>
+      <span class="n">icp</span><span class="p">.</span><span class="n">setInputTarget</span> <span class="p">(</span><span class="n">scene</span><span class="p">);</span>
+      <span class="n">icp</span><span class="p">.</span><span class="n">setInputSource</span> <span class="p">(</span><span class="n">instances</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+      <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">registered</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span><span class="p">);</span>
+      <span class="n">icp</span><span class="p">.</span><span class="n">align</span> <span class="p">(</span><span class="o">*</span><span class="n">registered</span><span class="p">);</span>
+      <span class="n">registered_instances</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">registered</span><span class="p">);</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Instance &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">icp</span><span class="p">.</span><span class="n">hasConverged</span> <span class="p">())</span>
+      <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Aligned!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">else</span>
+      <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Not Aligned!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
 
-    std::cout &lt;&lt; &quot;-----------------&quot; &lt;&lt; std::endl &lt;&lt; std::endl;
-  }
-
-  /**
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;-----------------&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="hypotheses-verification">
 <h2>Hypotheses Verification</h2>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>   */
-  std::cout &lt;&lt; &quot;--- Hypotheses Verification ---&quot; &lt;&lt; std::endl;
-  std::vector&lt;bool&gt; hypotheses_mask;  // Mask Vector to identify positive hypotheses
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>  <span class="cm">/**</span>
+<span class="cm">   * Hypothesis Verification</span>
+<span class="cm">   */</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;--- Hypotheses Verification ---&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">hypotheses_mask</span><span class="p">;</span>  <span class="c1">// Mask Vector to identify positive hypotheses</span>
 
-  pcl::GlobalHypothesesVerification&lt;PointType, PointType&gt; GoHv;
+  <span class="n">pcl</span><span class="o">::</span><span class="n">GlobalHypothesesVerification</span><span class="o">&lt;</span><span class="n">PointType</span><span class="p">,</span> <span class="n">PointType</span><span class="o">&gt;</span> <span class="n">GoHv</span><span class="p">;</span>
 
-  GoHv.setSceneCloud (scene);  // Scene Cloud
-  GoHv.addModels (registered_instances, true);  //Models to verify
-  GoHv.setResolution (hv_resolution_);
-  GoHv.setResolutionOccupancyGrid (hv_occupancy_grid_resolution_);
-  GoHv.setInlierThreshold (hv_inlier_th_);
-  GoHv.setOcclusionThreshold (hv_occlusion_th_);
-  GoHv.setRegularizer (hv_regularizer_);
-  GoHv.setRadiusClutter (hv_rad_clutter_);
-  GoHv.setClutterRegularizer (hv_clutter_reg_);
-  GoHv.setDetectClutter (hv_detect_clutter_);
-  GoHv.setRadiusNormals (hv_rad_normals_);
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setSceneCloud</span> <span class="p">(</span><span class="n">scene</span><span class="p">);</span>  <span class="c1">// Scene Cloud</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">addModels</span> <span class="p">(</span><span class="n">registered_instances</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>  <span class="c1">//Models to verify</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setResolution</span> <span class="p">(</span><span class="n">hv_resolution_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setResolutionOccupancyGrid</span> <span class="p">(</span><span class="n">hv_occupancy_grid_resolution_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setInlierThreshold</span> <span class="p">(</span><span class="n">hv_inlier_th_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setOcclusionThreshold</span> <span class="p">(</span><span class="n">hv_occlusion_th_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setRegularizer</span> <span class="p">(</span><span class="n">hv_regularizer_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setRadiusClutter</span> <span class="p">(</span><span class="n">hv_rad_clutter_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setClutterRegularizer</span> <span class="p">(</span><span class="n">hv_clutter_reg_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setDetectClutter</span> <span class="p">(</span><span class="n">hv_detect_clutter_</span><span class="p">);</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">setRadiusNormals</span> <span class="p">(</span><span class="n">hv_rad_normals_</span><span class="p">);</span>
 
-  GoHv.verify ();
-  GoHv.getMask (hypotheses_mask);  // i-element TRUE if hvModels[i] verifies hypotheses
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">verify</span> <span class="p">();</span>
+  <span class="n">GoHv</span><span class="p">.</span><span class="n">getMask</span> <span class="p">(</span><span class="n">hypotheses_mask</span><span class="p">);</span>  <span class="c1">// i-element TRUE if hvModels[i] verifies hypotheses</span>
 
-  for (int i = 0; i &lt; hypotheses_mask.size (); i++)
-  {
-    if (hypotheses_mask[i])
-    {
-      std::cout &lt;&lt; &quot;Instance &quot; &lt;&lt; i &lt;&lt; &quot; is GOOD! &lt;---&quot; &lt;&lt; std::endl;
-    }
-    else
-    {
-      std::cout &lt;&lt; &quot;Instance &quot; &lt;&lt; i &lt;&lt; &quot; is bad!&quot; &lt;&lt; std::endl;
-    }
-  }
-  std::cout &lt;&lt; &quot;-------------------------------&quot; &lt;&lt; std::endl;
-
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">hypotheses_mask</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">hypotheses_mask</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="p">{</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Instance &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; is GOOD! &lt;---&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Instance &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; is bad!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;-------------------------------&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">GlobalHypothesesVerification</span></code> takes as input a list of <code class="docutils literal notranslate"><span class="pre">registered_instances</span></code> and a <code class="docutils literal notranslate"><span class="pre">scene</span></code> so we can <code class="docutils literal notranslate"><span class="pre">verify()</span></code> them
@@ -1553,64 +1554,64 @@ verified hypothesis, <code class="docutils literal notranslate"><span class="pre
 with a <code class="docutils literal notranslate"><span class="pre">styleViolet</span></code> color.</p>
 <p>Later we iterate on <code class="docutils literal notranslate"><span class="pre">instances</span></code>, and each <code class="docutils literal notranslate"><span class="pre">instances[i]</span></code> will be displayed in <cite>Viewer</cite> with a <code class="docutils literal notranslate"><span class="pre">styleRed</span></code> color.
 Each <code class="docutils literal notranslate"><span class="pre">registered_instances[i]</span></code> will be displayed with two optional colors: <code class="docutils literal notranslate"><span class="pre">styleGreen</span></code> if the current instance is verified (<code class="docutils literal notranslate"><span class="pre">hypotheses_mask[i]</span></code> is <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>),  <code class="docutils literal notranslate"><span class="pre">styleCyan</span></code> otherwise.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>   *  Visualization
-   */
-  pcl::visualization::PCLVisualizer viewer (&quot;Hypotheses Verification&quot;);
-  viewer.addPointCloud (scene, &quot;scene_cloud&quot;);
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span>  <span class="cm">/**</span>
+<span class="cm">   *  Visualization</span>
+<span class="cm">   */</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="n">viewer</span> <span class="p">(</span><span class="s">&quot;Hypotheses Verification&quot;</span><span class="p">);</span>
+  <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">scene</span><span class="p">,</span> <span class="s">&quot;scene_cloud&quot;</span><span class="p">);</span>
 
-  pcl::PointCloud&lt;PointType&gt;::Ptr off_scene_model (new pcl::PointCloud&lt;PointType&gt; ());
-  pcl::PointCloud&lt;PointType&gt;::Ptr off_scene_model_keypoints (new pcl::PointCloud&lt;PointType&gt; ());
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">off_scene_model</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="p">());</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">off_scene_model_keypoints</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="p">());</span>
 
-  pcl::PointCloud&lt;PointType&gt;::Ptr off_model_good_kp (new pcl::PointCloud&lt;PointType&gt; ());
-  pcl::transformPointCloud (*model, *off_scene_model, Eigen::Vector3f (-1, 0, 0), Eigen::Quaternionf (1, 0, 0, 0));
-  pcl::transformPointCloud (*model_keypoints, *off_scene_model_keypoints, Eigen::Vector3f (-1, 0, 0), Eigen::Quaternionf (1, 0, 0, 0));
-  pcl::transformPointCloud (*model_good_kp, *off_model_good_kp, Eigen::Vector3f (-1, 0, 0), Eigen::Quaternionf (1, 0, 0, 0));
+  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">off_model_good_kp</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="p">());</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">transformPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">model</span><span class="p">,</span> <span class="o">*</span><span class="n">off_scene_model</span><span class="p">,</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Quaternionf</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">transformPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">model_keypoints</span><span class="p">,</span> <span class="o">*</span><span class="n">off_scene_model_keypoints</span><span class="p">,</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Quaternionf</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
+  <span class="n">pcl</span><span class="o">::</span><span class="n">transformPointCloud</span> <span class="p">(</span><span class="o">*</span><span class="n">model_good_kp</span><span class="p">,</span> <span class="o">*</span><span class="n">off_model_good_kp</span><span class="p">,</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Quaternionf</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
 
-  if (show_keypoints_)
-  {
-    CloudStyle modelStyle = style_white;
-    pcl::visualization::PointCloudColorHandlerCustom&lt;PointType&gt; off_scene_model_color_handler (off_scene_model, modelStyle.r, modelStyle.g, modelStyle.b);
-    viewer.addPointCloud (off_scene_model, off_scene_model_color_handler, &quot;off_scene_model&quot;);
-    viewer.setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, modelStyle.size, &quot;off_scene_model&quot;);
-  }
+  <span class="k">if</span> <span class="p">(</span><span class="n">show_keypoints_</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">CloudStyle</span> <span class="n">modelStyle</span> <span class="o">=</span> <span class="n">style_white</span><span class="p">;</span>
+    <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="n">off_scene_model_color_handler</span> <span class="p">(</span><span class="n">off_scene_model</span><span class="p">,</span> <span class="n">modelStyle</span><span class="p">.</span><span class="n">r</span><span class="p">,</span> <span class="n">modelStyle</span><span class="p">.</span><span class="n">g</span><span class="p">,</span> <span class="n">modelStyle</span><span class="p">.</span><span class="n">b</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">off_scene_model</span><span class="p">,</span> <span class="n">off_scene_model_color_handler</span><span class="p">,</span> <span class="s">&quot;off_scene_model&quot;</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span> <span class="n">modelStyle</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="s">&quot;off_scene_model&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  if (show_keypoints_)
-  {
-    CloudStyle goodKeypointStyle = style_violet;
-    pcl::visualization::PointCloudColorHandlerCustom&lt;PointType&gt; model_good_keypoints_color_handler (off_model_good_kp, goodKeypointStyle.r, goodKeypointStyle.g,
-                                                                                                    goodKeypointStyle.b);
-    viewer.addPointCloud (off_model_good_kp, model_good_keypoints_color_handler, &quot;model_good_keypoints&quot;);
-    viewer.setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, goodKeypointStyle.size, &quot;model_good_keypoints&quot;);
+  <span class="k">if</span> <span class="p">(</span><span class="n">show_keypoints_</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">CloudStyle</span> <span class="n">goodKeypointStyle</span> <span class="o">=</span> <span class="n">style_violet</span><span class="p">;</span>
+    <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="n">model_good_keypoints_color_handler</span> <span class="p">(</span><span class="n">off_model_good_kp</span><span class="p">,</span> <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">r</span><span class="p">,</span> <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">g</span><span class="p">,</span>
+                                                                                                    <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">b</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">off_model_good_kp</span><span class="p">,</span> <span class="n">model_good_keypoints_color_handler</span><span class="p">,</span> <span class="s">&quot;model_good_keypoints&quot;</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span> <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="s">&quot;model_good_keypoints&quot;</span><span class="p">);</span>
 
-    pcl::visualization::PointCloudColorHandlerCustom&lt;PointType&gt; scene_good_keypoints_color_handler (scene_good_kp, goodKeypointStyle.r, goodKeypointStyle.g,
-                                                                                                    goodKeypointStyle.b);
-    viewer.addPointCloud (scene_good_kp, scene_good_keypoints_color_handler, &quot;scene_good_keypoints&quot;);
-    viewer.setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, goodKeypointStyle.size, &quot;scene_good_keypoints&quot;);
-  }
+    <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="n">scene_good_keypoints_color_handler</span> <span class="p">(</span><span class="n">scene_good_kp</span><span class="p">,</span> <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">r</span><span class="p">,</span> <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">g</span><span class="p">,</span>
+                                                                                                    <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">b</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">scene_good_kp</span><span class="p">,</span> <span class="n">scene_good_keypoints_color_handler</span><span class="p">,</span> <span class="s">&quot;scene_good_keypoints&quot;</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span> <span class="n">goodKeypointStyle</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="s">&quot;scene_good_keypoints&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  for (std::size_t i = 0; i &lt; instances.size (); ++i)
-  {
-    std::stringstream ss_instance;
-    ss_instance &lt;&lt; &quot;instance_&quot; &lt;&lt; i;
+  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">instances</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">ss_instance</span><span class="p">;</span>
+    <span class="n">ss_instance</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;instance_&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span><span class="p">;</span>
 
-    CloudStyle clusterStyle = style_red;
-    pcl::visualization::PointCloudColorHandlerCustom&lt;PointType&gt; instance_color_handler (instances[i], clusterStyle.r, clusterStyle.g, clusterStyle.b);
-    viewer.addPointCloud (instances[i], instance_color_handler, ss_instance.str ());
-    viewer.setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, clusterStyle.size, ss_instance.str ());
+    <span class="n">CloudStyle</span> <span class="n">clusterStyle</span> <span class="o">=</span> <span class="n">style_red</span><span class="p">;</span>
+    <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="n">instance_color_handler</span> <span class="p">(</span><span class="n">instances</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">clusterStyle</span><span class="p">.</span><span class="n">r</span><span class="p">,</span> <span class="n">clusterStyle</span><span class="p">.</span><span class="n">g</span><span class="p">,</span> <span class="n">clusterStyle</span><span class="p">.</span><span class="n">b</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">instances</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">instance_color_handler</span><span class="p">,</span> <span class="n">ss_instance</span><span class="p">.</span><span class="n">str</span> <span class="p">());</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span> <span class="n">clusterStyle</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="n">ss_instance</span><span class="p">.</span><span class="n">str</span> <span class="p">());</span>
 
-    CloudStyle registeredStyles = hypotheses_mask[i] ? style_green : style_cyan;
-    ss_instance &lt;&lt; &quot;_registered&quot; &lt;&lt; std::endl;
-    pcl::visualization::PointCloudColorHandlerCustom&lt;PointType&gt; registered_instance_color_handler (registered_instances[i], registeredStyles.r,
-                                                                                                   registeredStyles.g, registeredStyles.b);
-    viewer.addPointCloud (registered_instances[i], registered_instance_color_handler, ss_instance.str ());
-    viewer.setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, registeredStyles.size, ss_instance.str ());
-  }
+    <span class="n">CloudStyle</span> <span class="n">registeredStyles</span> <span class="o">=</span> <span class="n">hypotheses_mask</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">?</span> <span class="nl">style_green</span> <span class="p">:</span> <span class="n">style_cyan</span><span class="p">;</span>
+    <span class="n">ss_instance</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;_registered&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PointCloudColorHandlerCustom</span><span class="o">&lt;</span><span class="n">PointType</span><span class="o">&gt;</span> <span class="n">registered_instance_color_handler</span> <span class="p">(</span><span class="n">registered_instances</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">registeredStyles</span><span class="p">.</span><span class="n">r</span><span class="p">,</span>
+                                                                                                   <span class="n">registeredStyles</span><span class="p">.</span><span class="n">g</span><span class="p">,</span> <span class="n">registeredStyles</span><span class="p">.</span><span class="n">b</span><span class="p">);</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">registered_instances</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">registered_instance_color_handler</span><span class="p">,</span> <span class="n">ss_instance</span><span class="p">.</span><span class="n">str</span> <span class="p">());</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span> <span class="n">registeredStyles</span><span class="p">.</span><span class="n">size</span><span class="p">,</span> <span class="n">ss_instance</span><span class="p">.</span><span class="n">str</span> <span class="p">());</span>
+  <span class="p">}</span>
 
-  while (!viewer.wasStopped ())
-  {
-    viewer.spinOnce ();
-  }
-
+  <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">viewer</span><span class="p">.</span><span class="n">wasStopped</span> <span class="p">())</span>
+  <span class="p">{</span>
+    <span class="n">viewer</span><span class="p">.</span><span class="n">spinOnce</span> <span class="p">();</span>
+  <span class="p">}</span>
 </pre></div>
 </div>
 </div>

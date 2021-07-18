@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -140,9 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a668faabadd56405940c58e37f30e357f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_texture_mapping.html#a668faabadd56405940c58e37f30e357f">isPointOccluded</a> (const PointInT &amp;pt, const <a class="el" href="classpcl_1_1_texture_mapping.html#a541d37a43606f0ed104b8fba0e44b806">OctreePtr</a> octree)</td></tr>
 <tr class="memdesc:a668faabadd56405940c58e37f30e357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is occluded using raycasting on octree.  <a href="classpcl_1_1_texture_mapping.html#a668faabadd56405940c58e37f30e357f">More...</a><br /></td></tr>
 <tr class="separator:a668faabadd56405940c58e37f30e357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b7b447112268bd059e798397b991ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_texture_mapping.html#a9b7b447112268bd059e798397b991ad5">removeOccludedPoints</a> (const <a class="el" href="classpcl_1_1_texture_mapping.html#a5121481d7eec77e2122341f852df93d9">PointCloudPtr</a> &amp;input_cloud, <a class="el" href="classpcl_1_1_texture_mapping.html#a5121481d7eec77e2122341f852df93d9">PointCloudPtr</a> &amp;filtered_cloud, const double octree_voxel_size, std::vector&lt; int &gt; &amp;visible_indices, std::vector&lt; int &gt; &amp;occluded_indices)</td></tr>
-<tr class="memdesc:a9b7b447112268bd059e798397b991ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove occluded points from a point cloud.  <a href="classpcl_1_1_texture_mapping.html#a9b7b447112268bd059e798397b991ad5">More...</a><br /></td></tr>
-<tr class="separator:a9b7b447112268bd059e798397b991ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab195308737b1bc101436b69c5c6ede5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_texture_mapping.html#ab195308737b1bc101436b69c5c6ede5e">removeOccludedPoints</a> (const <a class="el" href="classpcl_1_1_texture_mapping.html#a5121481d7eec77e2122341f852df93d9">PointCloudPtr</a> &amp;input_cloud, <a class="el" href="classpcl_1_1_texture_mapping.html#a5121481d7eec77e2122341f852df93d9">PointCloudPtr</a> &amp;filtered_cloud, const double octree_voxel_size, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;visible_indices, <a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;occluded_indices)</td></tr>
+<tr class="memdesc:ab195308737b1bc101436b69c5c6ede5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove occluded points from a point cloud.  <a href="classpcl_1_1_texture_mapping.html#ab195308737b1bc101436b69c5c6ede5e">More...</a><br /></td></tr>
+<tr class="separator:ab195308737b1bc101436b69c5c6ede5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92eac4246bb64174edd7d8f7512b61bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcl_1_1_texture_mapping.html#a92eac4246bb64174edd7d8f7512b61bb">removeOccludedPoints</a> (const <a class="el" href="structpcl_1_1_texture_mesh.html">pcl::TextureMesh</a> &amp;tex_mesh, <a class="el" href="structpcl_1_1_texture_mesh.html">pcl::TextureMesh</a> &amp;cleaned_mesh, const double octree_voxel_size)</td></tr>
 <tr class="memdesc:a92eac4246bb64174edd7d8f7512b61bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove occluded points from a textureMesh.  <a href="classpcl_1_1_texture_mapping.html#a92eac4246bb64174edd7d8f7512b61bb">More...</a><br /></td></tr>
 <tr class="separator:a92eac4246bb64174edd7d8f7512b61bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +208,7 @@ class pcl::TextureMapping&lt; PointInT &gt;</h3>
 <p>The texture mapping algorithm. </p>
 <dl class="section author"><dt>Author</dt><dd>Khai Tran, Raphael Favier </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00099">99</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00100">100</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aed7a8d09243541dad4d2c8f88f801cb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed7a8d09243541dad4d2c8f88f801cb9">&#9670;&nbsp;</a></span>Camera</h2>
@@ -224,7 +224,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00114">114</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00115">115</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00104">104</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00105">105</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00110">110</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00111">111</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +278,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00112">112</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00113">113</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00111">111</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00112">112</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +314,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00106">106</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00107">107</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +332,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00108">108</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00109">109</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00107">107</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00108">108</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +368,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00103">103</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00104">104</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ template&lt;typename PointInT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00115">115</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00116">116</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ template&lt;typename PointInT &gt; </div>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00118">118</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00119">119</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ template&lt;typename PointInT &gt; </div>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00124">124</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00125">125</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -513,9 +513,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l01052">1052</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l01038">1038</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00746">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00747">pcl::PointXY::y</a>.</p>
+<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00833">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00834">pcl::PointXY::y</a>.</p>
 
 </div>
 </div>
@@ -546,7 +546,7 @@ template&lt;typename PointInT &gt; </div>
 
 <p>Class get name method. </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00417">417</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00418">418</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
 </div>
 </div>
@@ -603,9 +603,9 @@ template&lt;typename PointInT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the point is not visible by the camera </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00197">197</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00198">198</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00073">pcl::texture_mapping::Camera::center_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00072">pcl::texture_mapping::Camera::center_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00069">pcl::texture_mapping::Camera::focal_length</a>, <a class="el" href="texture__mapping_8h_source.html#l00071">pcl::texture_mapping::Camera::focal_length_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00070">pcl::texture_mapping::Camera::focal_length_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00074">pcl::texture_mapping::Camera::height</a>, and <a class="el" href="texture__mapping_8h_source.html#l00075">pcl::texture_mapping::Camera::width</a>.</p>
+<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00074">pcl::texture_mapping::Camera::center_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00073">pcl::texture_mapping::Camera::center_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00070">pcl::texture_mapping::Camera::focal_length</a>, <a class="el" href="texture__mapping_8h_source.html#l00072">pcl::texture_mapping::Camera::focal_length_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00071">pcl::texture_mapping::Camera::focal_length_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00075">pcl::texture_mapping::Camera::height</a>, and <a class="el" href="texture__mapping_8h_source.html#l00076">pcl::texture_mapping::Camera::width</a>.</p>
 
 </div>
 </div>
@@ -662,9 +662,9 @@ template&lt;typename PointInT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the point is not visible by the camera </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l01008">1008</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00994">994</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00073">pcl::texture_mapping::Camera::center_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00072">pcl::texture_mapping::Camera::center_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00069">pcl::texture_mapping::Camera::focal_length</a>, <a class="el" href="texture__mapping_8h_source.html#l00071">pcl::texture_mapping::Camera::focal_length_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00070">pcl::texture_mapping::Camera::focal_length_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00074">pcl::texture_mapping::Camera::height</a>, <a class="el" href="texture__mapping_8h_source.html#l00075">pcl::texture_mapping::Camera::width</a>, <a class="el" href="point__types_8hpp_source.html#l00746">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00747">pcl::PointXY::y</a>.</p>
+<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00074">pcl::texture_mapping::Camera::center_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00073">pcl::texture_mapping::Camera::center_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00070">pcl::texture_mapping::Camera::focal_length</a>, <a class="el" href="texture__mapping_8h_source.html#l00072">pcl::texture_mapping::Camera::focal_length_h</a>, <a class="el" href="texture__mapping_8h_source.html#l00071">pcl::texture_mapping::Camera::focal_length_w</a>, <a class="el" href="texture__mapping_8h_source.html#l00075">pcl::texture_mapping::Camera::height</a>, <a class="el" href="texture__mapping_8h_source.html#l00076">pcl::texture_mapping::Camera::width</a>, <a class="el" href="point__types_8hpp_source.html#l00833">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00834">pcl::PointXY::y</a>.</p>
 
 </div>
 </div>
@@ -734,9 +734,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00959">959</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00945">945</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00746">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00747">pcl::PointXY::y</a>.</p>
+<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00833">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00834">pcl::PointXY::y</a>.</p>
 
 </div>
 </div>
@@ -806,9 +806,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00992">992</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00978">978</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00746">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00747">pcl::PointXY::y</a>.</p>
+<p class="reference">References <a class="el" href="point__types_8hpp_source.html#l00833">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00834">pcl::PointXY::y</a>.</p>
 
 </div>
 </div>
@@ -892,7 +892,7 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l01078">1078</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l01064">1064</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
 </div>
 </div>
@@ -942,7 +942,7 @@ template&lt;typename PointInT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the point is occluded. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00367">367</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00361">361</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
 </div>
 </div>
@@ -983,9 +983,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00287">287</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00283">283</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="texture__mapping_8h_source.html#l00068">pcl::texture_mapping::Camera::pose</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00096">pcl::TextureMesh::tex_materials</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, <a class="el" href="texture__mapping_8h_source.html#l00076">pcl::texture_mapping::Camera::texture_file</a>, and <a class="el" href="transforms_8hpp_source.html#l00221">pcl::transformPointCloud()</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>, <a class="el" href="texture__mapping_8h_source.html#l00069">pcl::texture_mapping::Camera::pose</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00096">pcl::TextureMesh::tex_materials</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, <a class="el" href="texture__mapping_8h_source.html#l00077">pcl::texture_mapping::Camera::texture_file</a>, and <a class="el" href="transforms_8hpp_source.html#l00221">pcl::transformPointCloud()</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1073,7 @@ template&lt;typename PointInT &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00145">145</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00029">pcl::PCLPointCloud2::data</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00022">pcl::PCLPointCloud2::fields</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00019">pcl::PCLPointCloud2::height</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00096">pcl::TextureMesh::tex_materials</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, and <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00020">pcl::PCLPointCloud2::width</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00030">pcl::PCLPointCloud2::data</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00023">pcl::PCLPointCloud2::fields</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00020">pcl::PCLPointCloud2::height</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00096">pcl::TextureMesh::tex_materials</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, and <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00021">pcl::PCLPointCloud2::width</a>.</p>
 
 </div>
 </div>
@@ -1103,9 +1103,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00201">201</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00199">199</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00029">pcl::PCLPointCloud2::data</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00022">pcl::PCLPointCloud2::fields</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00019">pcl::PCLPointCloud2::height</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00096">pcl::TextureMesh::tex_materials</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, and <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00020">pcl::PCLPointCloud2::width</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00030">pcl::PCLPointCloud2::data</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00023">pcl::PCLPointCloud2::fields</a>, <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00020">pcl::PCLPointCloud2::height</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00096">pcl::TextureMesh::tex_materials</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, and <a class="el" href="_p_c_l_point_cloud2_8h_source.html#l00021">pcl::PCLPointCloud2::width</a>.</p>
 
 </div>
 </div>
@@ -1153,9 +1153,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00470">470</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00464">464</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>, and <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>, and <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>.</p>
 
 </div>
 </div>
@@ -1203,14 +1203,14 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00526">526</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00517">517</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, and <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, and <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>.</p>
 
 </div>
 </div>
-<a id="a9b7b447112268bd059e798397b991ad5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b7b447112268bd059e798397b991ad5">&#9670;&nbsp;</a></span>removeOccludedPoints() <span class="overload">[3/3]</span></h2>
+<a id="ab195308737b1bc101436b69c5c6ede5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab195308737b1bc101436b69c5c6ede5e">&#9670;&nbsp;</a></span>removeOccludedPoints() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1238,13 +1238,13 @@ template&lt;typename PointInT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>visible_indices</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcl.html#a8bfe09b8680e7129dd0fd6177c1a2ce6">pcl::Indices</a> &amp;&#160;</td>
           <td class="paramname"><em>occluded_indices</em>&#160;</td>
         </tr>
         <tr>
@@ -1267,9 +1267,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00406">406</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00400">400</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="octree__pointcloud_8hpp_source.html#l00078">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::addPointsFromInputCloud()</a>, <a class="el" href="octree__pointcloud_8hpp_source.html#l00333">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::defineBoundingBox()</a>, <a class="el" href="octree__search_8hpp_source.html#l00631">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;::getIntersectedVoxelIndices()</a>, and <a class="el" href="octree__pointcloud_8h_source.html#l00117">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::setInputCloud()</a>.</p>
+<p class="reference">References <a class="el" href="octree__pointcloud_8hpp_source.html#l00079">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::addPointsFromInputCloud()</a>, <a class="el" href="octree__pointcloud_8hpp_source.html#l00333">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::defineBoundingBox()</a>, <a class="el" href="octree__search_8hpp_source.html#l00631">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;::getIntersectedVoxelIndices()</a>, and <a class="el" href="octree__pointcloud_8h_source.html#l00117">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::setInputCloud()</a>.</p>
 
 </div>
 </div>
@@ -1307,9 +1307,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00132">132</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00133">133</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00339">pcl::TextureMapping&lt; PointInT &gt;::f_</a>.</p>
+<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00340">pcl::TextureMapping&lt; PointInT &gt;::f_</a>.</p>
 
 </div>
 </div>
@@ -1347,9 +1347,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00154">154</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00155">155</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00345">pcl::TextureMapping&lt; PointInT &gt;::tex_files_</a>.</p>
+<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00346">pcl::TextureMapping&lt; PointInT &gt;::tex_files_</a>.</p>
 
 </div>
 </div>
@@ -1387,9 +1387,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00163">163</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00164">164</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00348">pcl::TextureMapping&lt; PointInT &gt;::tex_material_</a>.</p>
+<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00349">pcl::TextureMapping&lt; PointInT &gt;::tex_material_</a>.</p>
 
 </div>
 </div>
@@ -1445,9 +1445,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00143">143</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00144">144</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00342">pcl::TextureMapping&lt; PointInT &gt;::vector_field_</a>.</p>
+<p class="reference">References <a class="el" href="texture__mapping_8h_source.html#l00343">pcl::TextureMapping&lt; PointInT &gt;::vector_field_</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1509,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00627">627</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00618">618</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="octree__pointcloud_8hpp_source.html#l00078">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::addPointsFromInputCloud()</a>, <a class="el" href="octree__pointcloud_8hpp_source.html#l00333">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::defineBoundingBox()</a>, <a class="el" href="common_2include_2pcl_2common_2distances_8h_source.html#l00201">pcl::euclideanDistance()</a>, <a class="el" href="octree__search_8hpp_source.html#l00631">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;::getIntersectedVoxelIndices()</a>, <a class="el" href="point__types_8hpp_source.html#l00456">pcl::_PointXYZI::intensity</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, and <a class="el" href="octree__pointcloud_8h_source.html#l00117">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::setInputCloud()</a>.</p>
+<p class="reference">References <a class="el" href="octree__pointcloud_8hpp_source.html#l00079">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::addPointsFromInputCloud()</a>, <a class="el" href="octree__pointcloud_8hpp_source.html#l00333">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::defineBoundingBox()</a>, <a class="el" href="common_2include_2pcl_2common_2distances_8h_source.html#l00204">pcl::euclideanDistance()</a>, <a class="el" href="octree__search_8hpp_source.html#l00631">pcl::octree::OctreePointCloudSearch&lt; PointT, LeafContainerT, BranchContainerT &gt;::getIntersectedVoxelIndices()</a>, <a class="el" href="point__types_8hpp_source.html#l00502">pcl::_PointXYZI::intensity</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00395">pcl::PointCloud&lt; PointT &gt;::points</a>, and <a class="el" href="octree__pointcloud_8h_source.html#l00117">pcl::octree::OctreePointCloud&lt; PointT, LeafContainerT, BranchContainerT, OctreeT &gt;::setInputCloud()</a>.</p>
 
 </div>
 </div>
@@ -1573,9 +1573,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00706">706</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00692">692</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, and <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, and <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>.</p>
 
 </div>
 </div>
@@ -1638,9 +1638,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00541">541</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00532">532</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, and <a class="el" href="transforms_8hpp_source.html#l00221">pcl::transformPointCloud()</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, and <a class="el" href="transforms_8hpp_source.html#l00221">pcl::transformPointCloud()</a>.</p>
 
 </div>
 </div>
@@ -1682,9 +1682,9 @@ template&lt;typename PointInT &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00718">718</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8hpp_source.html#l00704">704</a> of file <a class="el" href="texture__mapping_8hpp_source.html">texture_mapping.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00168">pcl::fromPCLPointCloud2()</a>, <a class="el" href="texture__mapping_8h_source.html#l00086">pcl::texture_mapping::UvIndex::idx_cloud</a>, <a class="el" href="texture__mapping_8h_source.html#l00087">pcl::texture_mapping::UvIndex::idx_face</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00411">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="kdtree__flann_8hpp_source.html#l00171">pcl::KdTreeFLANN&lt; PointT, Dist &gt;::radiusSearch()</a>, <a class="el" href="kdtree__flann_8hpp_source.html#l00094">pcl::KdTreeFLANN&lt; PointT, Dist &gt;::setInputCloud()</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, <a class="el" href="transforms_8hpp_source.html#l00221">pcl::transformPointCloud()</a>, <a class="el" href="point__types_8hpp_source.html#l00746">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00747">pcl::PointXY::y</a>.</p>
+<p class="reference">References <a class="el" href="_texture_mesh_8h_source.html#l00090">pcl::TextureMesh::cloud</a>, <a class="el" href="conversions_8h_source.html#l00166">pcl::fromPCLPointCloud2()</a>, <a class="el" href="texture__mapping_8h_source.html#l00087">pcl::texture_mapping::UvIndex::idx_cloud</a>, <a class="el" href="texture__mapping_8h_source.html#l00088">pcl::texture_mapping::UvIndex::idx_face</a>, <a class="el" href="common_2include_2pcl_2point__cloud_8h_source.html#l00395">pcl::PointCloud&lt; PointT &gt;::points</a>, <a class="el" href="kdtree__flann_8hpp_source.html#l00367">pcl::KdTreeFLANN&lt; PointT, Dist &gt;::radiusSearch()</a>, <a class="el" href="kdtree__flann_8hpp_source.html#l00102">pcl::KdTreeFLANN&lt; PointT, Dist &gt;::setInputCloud()</a>, <a class="el" href="_texture_mesh_8h_source.html#l00095">pcl::TextureMesh::tex_coordinates</a>, <a class="el" href="_texture_mesh_8h_source.html#l00094">pcl::TextureMesh::tex_polygons</a>, <a class="el" href="transforms_8hpp_source.html#l00221">pcl::transformPointCloud()</a>, <a class="el" href="point__types_8hpp_source.html#l00833">pcl::PointXY::x</a>, and <a class="el" href="point__types_8hpp_source.html#l00834">pcl::PointXY::y</a>.</p>
 
 </div>
 </div>
@@ -1713,9 +1713,9 @@ template&lt;typename PointInT &gt; </div>
 
 <p>mesh scale control. </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00339">339</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00340">340</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00132">pcl::TextureMapping&lt; PointInT &gt;::setF()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00133">pcl::TextureMapping&lt; PointInT &gt;::setF()</a>.</p>
 
 </div>
 </div>
@@ -1743,9 +1743,9 @@ template&lt;typename PointInT &gt; </div>
 
 <p>list of texture files </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00345">345</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00346">346</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00154">pcl::TextureMapping&lt; PointInT &gt;::setTextureFiles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00155">pcl::TextureMapping&lt; PointInT &gt;::setTextureFiles()</a>.</p>
 
 </div>
 </div>
@@ -1773,9 +1773,9 @@ template&lt;typename PointInT &gt; </div>
 
 <p>list of texture materials </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00348">348</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00349">349</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00163">pcl::TextureMapping&lt; PointInT &gt;::setTextureMaterials()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00164">pcl::TextureMapping&lt; PointInT &gt;::setTextureMaterials()</a>.</p>
 
 </div>
 </div>
@@ -1803,9 +1803,9 @@ template&lt;typename PointInT &gt; </div>
 
 <p>vector field </p>
 
-<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00342">342</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="texture__mapping_8h_source.html#l00343">343</a> of file <a class="el" href="texture__mapping_8h_source.html">texture_mapping.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00143">pcl::TextureMapping&lt; PointInT &gt;::setVectorField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="texture__mapping_8h_source.html#l00144">pcl::TextureMapping&lt; PointInT &gt;::setVectorField()</a>.</p>
 
 </div>
 </div>
@@ -1819,7 +1819,7 @@ template&lt;typename PointInT &gt; </div>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:13:06</p>
+<p>Pages generated on Sun Jul 18 2021 17:42:20</p>
 </div> <!-- #footer -->
 </body>
 </html>

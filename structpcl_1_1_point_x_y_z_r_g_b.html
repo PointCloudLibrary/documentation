@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -121,19 +121,19 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>A point structure representing Euclidean xyz coordinates, and the <a class="el" href="structpcl_1_1_r_g_b.html" title="A structure representing RGB color information.">RGB</a> color. </p>
 <p>Due to historical reasons (PCL was first developed as a ROS package), the <a class="el" href="structpcl_1_1_r_g_b.html" title="A structure representing RGB color information.">RGB</a> information is packed into an integer and casted to a float. This is something we wish to remove in the near future, but in the meantime, the following code snippet should help you pack and unpack <a class="el" href="structpcl_1_1_r_g_b.html" title="A structure representing RGB color information.">RGB</a> colors in your <a class="el" href="structpcl_1_1_point_x_y_z_r_g_b.html" title="A point structure representing Euclidean xyz coordinates, and the RGB color.">PointXYZRGB</a> structure:</p>
 <div class="fragment"><div class="line"><span class="comment">// pack r/g/b into rgb</span></div>
-<div class="line"><a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> r = 255, g = 0, b = 0;    <span class="comment">// Example: Red color</span></div>
-<div class="line"><a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> rgb = ((<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)r &lt;&lt; 16 | (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)g &lt;&lt; 8 | (<a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a>)b);</div>
+<div class="line">std::uint8_t r = 255, g = 0, b = 0;    <span class="comment">// Example: Red color</span></div>
+<div class="line">std::uint32_t rgb = ((std::uint32_t)r &lt;&lt; 16 | (std::uint32_t)g &lt;&lt; 8 | (std::uint32_t)b);</div>
 <div class="line">p.rgb = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">float</span>*<span class="keyword">&gt;</span>(&amp;rgb);</div>
 </div><!-- fragment --><p>To unpack the data into separate values, use:</p>
 <div class="fragment"><div class="line"><a class="code" href="structpcl_1_1_point_x_y_z_r_g_b.html#ab8cae6380d0d2c30c63ac92053aa2e82">PointXYZRGB</a> p;</div>
 <div class="line"><span class="comment">// unpack rgb into r/g/b</span></div>
-<div class="line"><a class="code" href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">std::uint32_t</a> rgb = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(&amp;p.rgb);</div>
-<div class="line"><a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> r = (rgb &gt;&gt; 16) &amp; 0x0000ff;</div>
-<div class="line"><a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> g = (rgb &gt;&gt; 8)  &amp; 0x0000ff;</div>
-<div class="line"><a class="code" href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">std::uint8_t</a> b = (rgb)       &amp; 0x0000ff;</div>
+<div class="line">std::uint32_t rgb = *<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(&amp;p.rgb);</div>
+<div class="line">std::uint8_t r = (rgb &gt;&gt; 16) &amp; 0x0000ff;</div>
+<div class="line">std::uint8_t g = (rgb &gt;&gt; 8)  &amp; 0x0000ff;</div>
+<div class="line">std::uint8_t b = (rgb)       &amp; 0x0000ff;</div>
 </div><!-- fragment --><p>Alternatively, from 1.1.0 onwards, you can use p.r, p.g, and p.b directly. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00628">628</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00674">674</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1678cfbe6e832aa61ec0de773cab15ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1678cfbe6e832aa61ec0de773cab15ae">&#9670;&nbsp;</a></span>PointXYZRGB() <span class="overload">[1/5]</span></h2>
@@ -159,7 +159,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00630">630</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00676">676</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00636">636</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00682">682</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00638">638</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00684">684</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00641">641</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00687">687</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00644">644</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__types_8hpp_source.html#l00690">690</a> of file <a class="el" href="point__types_8hpp_source.html">point_types.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,15 +381,13 @@ Additional Inherited Members</h2></td></tr>
 <li>pcl/impl/<a class="el" href="point__types_8hpp_source.html">point_types.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="anamespacepcl_html_a7c55bf09e463d214a43d2bd7ceab7753"><div class="ttname"><a href="namespacepcl.html#a7c55bf09e463d214a43d2bd7ceab7753">pcl::uint32_t</a></div><div class="ttdeci">std::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00058">types.h:58</a></div></div>
-<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html_ab8cae6380d0d2c30c63ac92053aa2e82"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html#ab8cae6380d0d2c30c63ac92053aa2e82">pcl::PointXYZRGB::PointXYZRGB</a></div><div class="ttdeci">PointXYZRGB()</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00636">point_types.hpp:636</a></div></div>
-<div class="ttc" id="anamespacepcl_html_aea8ace9e1a2351f301fd4b89b2940811"><div class="ttname"><a href="namespacepcl.html#aea8ace9e1a2351f301fd4b89b2940811">pcl::uint8_t</a></div><div class="ttdeci">std::uint8_t uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
+<div class="ttc" id="astructpcl_1_1_point_x_y_z_r_g_b_html_ab8cae6380d0d2c30c63ac92053aa2e82"><div class="ttname"><a href="structpcl_1_1_point_x_y_z_r_g_b.html#ab8cae6380d0d2c30c63ac92053aa2e82">pcl::PointXYZRGB::PointXYZRGB</a></div><div class="ttdeci">PointXYZRGB()</div><div class="ttdef"><b>Definition:</b> <a href="point__types_8hpp_source.html#l00682">point_types.hpp:682</a></div></div>
 <hr>
 <div id="footer">
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:12:37</p>
+<p>Pages generated on Sun Jul 18 2021 17:41:48</p>
 </div> <!-- #footer -->
 </body>
 </html>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Point Cloud Library (PCL)
-   &#160;<span id="projectnumber">1.11.0-dev</span>
+   &#160;<span id="projectnumber">1.12.0-dev</span>
    </div>
   </td>
  </tr>
@@ -142,10 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adfd3fb40e2bed845ed44ff6677989352 inherit pub_methods_classpcl_1_1_grabber"><td class="memTemplItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grabber.html#adfd3fb40e2bed845ed44ff6677989352">registerCallback</a> (const std::function&lt; T &gt; &amp;callback)</td></tr>
 <tr class="memdesc:adfd3fb40e2bed845ed44ff6677989352 inherit pub_methods_classpcl_1_1_grabber"><td class="mdescLeft">&#160;</td><td class="mdescRight">registers a callback function/method to a signal with the corresponding signature  <a href="classpcl_1_1_grabber.html#adfd3fb40e2bed845ed44ff6677989352">More...</a><br /></td></tr>
 <tr class="separator:adfd3fb40e2bed845ed44ff6677989352 inherit pub_methods_classpcl_1_1_grabber"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7198e475611bea46df3253e69a8cc2e inherit pub_methods_classpcl_1_1_grabber"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename &gt; class FunctionT&gt; </td></tr>
-<tr class="memitem:ac7198e475611bea46df3253e69a8cc2e inherit pub_methods_classpcl_1_1_grabber"><td class="memTemplItemLeft" align="right" valign="top">boost::signals2::connection&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grabber.html#ac7198e475611bea46df3253e69a8cc2e">registerCallback</a> (const FunctionT&lt; T &gt; &amp;callback)</td></tr>
-<tr class="memdesc:ac7198e475611bea46df3253e69a8cc2e inherit pub_methods_classpcl_1_1_grabber"><td class="mdescLeft">&#160;</td><td class="mdescRight">registers a callback function/method to a signal with the corresponding signature  <a href="classpcl_1_1_grabber.html#ac7198e475611bea46df3253e69a8cc2e">More...</a><br /></td></tr>
-<tr class="separator:ac7198e475611bea46df3253e69a8cc2e inherit pub_methods_classpcl_1_1_grabber"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284e861d90db5460c3ae170d2b5fc8a2 inherit pub_methods_classpcl_1_1_grabber"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a284e861d90db5460c3ae170d2b5fc8a2 inherit pub_methods_classpcl_1_1_grabber"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcl_1_1_grabber.html#a284e861d90db5460c3ae170d2b5fc8a2">providesCallback</a> () const noexcept</td></tr>
 <tr class="memdesc:a284e861d90db5460c3ae170d2b5fc8a2 inherit pub_methods_classpcl_1_1_grabber"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicates whether a signal with given parameter-type exists or not  <a href="classpcl_1_1_grabber.html#a284e861d90db5460c3ae170d2b5fc8a2">More...</a><br /></td></tr>
@@ -163,13 +159,13 @@ Protected Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aa35cea81022e7749e6a1a6f840610320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of pixel.  <a href="classpcl_1_1_dinast_grabber.html#aa35cea81022e7749e6a1a6f840610320">More...</a><br /></td></tr>
 <tr class="separator:aa35cea81022e7749e6a1a6f840610320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3daef269820e2c2b9268a4903d350b03"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classpcl_1_1_dinast_grabber.html#a3daef269820e2c2b9268a4903d350b03ae61364b64718259a58998dc9990c8eee">CMD_READ_START</a> =0xC7, 
-<a class="el" href="classpcl_1_1_dinast_grabber.html#a3daef269820e2c2b9268a4903d350b03afe90ed04304d23becb83b5a363e51cdd">CMD_READ_STOP</a> =0xC8, 
-<a class="el" href="classpcl_1_1_dinast_grabber.html#a3daef269820e2c2b9268a4903d350b03a33810469db9a408a869ab8e5bfb006bd">CMD_GET_VERSION</a> =0xDC, 
-<a class="el" href="classpcl_1_1_dinast_grabber.html#a3daef269820e2c2b9268a4903d350b03a0f307471fee131063360b58842606784">CMD_SEND_DATA</a> =0xDE
+<tr class="memitem:aa980e3038a7cb2e2821bc395662a7141"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classpcl_1_1_dinast_grabber.html#aa980e3038a7cb2e2821bc395662a7141ae61364b64718259a58998dc9990c8eee">CMD_READ_START</a> =0xC7, 
+<a class="el" href="classpcl_1_1_dinast_grabber.html#aa980e3038a7cb2e2821bc395662a7141afe90ed04304d23becb83b5a363e51cdd">CMD_READ_STOP</a> =0xC8, 
+<a class="el" href="classpcl_1_1_dinast_grabber.html#aa980e3038a7cb2e2821bc395662a7141a33810469db9a408a869ab8e5bfb006bd">CMD_GET_VERSION</a> =0xDC, 
+<a class="el" href="classpcl_1_1_dinast_grabber.html#aa980e3038a7cb2e2821bc395662a7141a0f307471fee131063360b58842606784">CMD_SEND_DATA</a> =0xDE
  }</td></tr>
-<tr class="memdesc:a3daef269820e2c2b9268a4903d350b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device command values.  <a href="classpcl_1_1_dinast_grabber.html#a3daef269820e2c2b9268a4903d350b03">More...</a><br /></td></tr>
-<tr class="separator:a3daef269820e2c2b9268a4903d350b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:aa980e3038a7cb2e2821bc395662a7141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device command values.  <a href="classpcl_1_1_dinast_grabber.html#aa980e3038a7cb2e2821bc395662a7141">More...</a><br /></td></tr>
+<tr class="separator:aa980e3038a7cb2e2821bc395662a7141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -284,8 +280,8 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dinast__grabber_8h_source.html#l00059">59</a> of file <a class="el" href="dinast__grabber_8h_source.html">dinast_grabber.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a3daef269820e2c2b9268a4903d350b03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3daef269820e2c2b9268a4903d350b03">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aa980e3038a7cb2e2821bc395662a7141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa980e3038a7cb2e2821bc395662a7141">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,10 +302,10 @@ Protected Attributes</h2></td></tr>
 
 <p>Device command values. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3daef269820e2c2b9268a4903d350b03ae61364b64718259a58998dc9990c8eee"></a>CMD_READ_START&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3daef269820e2c2b9268a4903d350b03afe90ed04304d23becb83b5a363e51cdd"></a>CMD_READ_STOP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3daef269820e2c2b9268a4903d350b03a33810469db9a408a869ab8e5bfb006bd"></a>CMD_GET_VERSION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3daef269820e2c2b9268a4903d350b03a0f307471fee131063360b58842606784"></a>CMD_SEND_DATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa980e3038a7cb2e2821bc395662a7141ae61364b64718259a58998dc9990c8eee"></a>CMD_READ_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa980e3038a7cb2e2821bc395662a7141afe90ed04304d23becb83b5a363e51cdd"></a>CMD_READ_STOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa980e3038a7cb2e2821bc395662a7141a33810469db9a408a869ab8e5bfb006bd"></a>CMD_GET_VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa980e3038a7cb2e2821bc395662a7141a0f307471fee131063360b58842606784"></a>CMD_SEND_DATA&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="dinast__grabber_8h_source.html#l00203">203</a> of file <a class="el" href="dinast__grabber_8h_source.html">dinast_grabber.h</a>.</p>
@@ -1307,7 +1303,7 @@ Protected Attributes</h2></td></tr>
 <p>
 Except where otherwise noted, the PointClouds.org web pages are licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>. 
 </p>
-<p>Pages generated on Tue Jun 2 2020 14:11:47</p>
+<p>Pages generated on Sun Jul 18 2021 17:40:53</p>
 </div> <!-- #footer -->
 </body>
 </html>

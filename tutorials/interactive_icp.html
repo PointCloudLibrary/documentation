@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Interactive Iterative Closest Point &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Interactive Iterative Closest Point &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -415,7 +415,7 @@ editor, and place the following code inside it:</p>
 
 <span class="kt">void</span>
 <span class="nf">keyboardEventOccurred</span> <span class="p">(</span><span class="k">const</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">KeyboardEvent</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">,</span>
-                       <span class="kt">void</span><span class="o">*</span> <span class="n">nothing</span><span class="p">)</span>
+                       <span class="kt">void</span><span class="o">*</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">event</span><span class="p">.</span><span class="n">getKeySym</span> <span class="p">()</span> <span class="o">==</span> <span class="s">&quot;space&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">event</span><span class="p">.</span><span class="n">keyDown</span> <span class="p">())</span>
     <span class="n">next_iteration</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
@@ -628,7 +628,7 @@ The bool will help us know when the user asks for the next iteration of ICP</p>
 readable way.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span>
 <span class="nf">keyboardEventOccurred</span> <span class="p">(</span><span class="k">const</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">KeyboardEvent</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">,</span>
-                       <span class="kt">void</span><span class="o">*</span> <span class="n">nothing</span><span class="p">)</span>
+                       <span class="kt">void</span><span class="o">*</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">event</span><span class="p">.</span><span class="n">getKeySym</span> <span class="p">()</span> <span class="o">==</span> <span class="s">&quot;space&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">event</span><span class="p">.</span><span class="n">keyDown</span> <span class="p">())</span>
     <span class="n">next_iteration</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>

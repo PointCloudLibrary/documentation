@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fast triangulation of unordered point clouds &mdash; Point Cloud Library 1.11.0-dev documentation</title>
+  <title>Fast triangulation of unordered point clouds &mdash; Point Cloud Library 1.12.0-dev documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.11.0-dev
+                1.12.0-dev
               </div>
             
           
@@ -157,7 +157,7 @@
 <p>This tutorial explains how to run a greedy surface triangulation algorithm on a
 PointCloud with normals, to obtain a triangle mesh based on projections of the
 local neighborhoods. An example of the method’s output can be seen here:</p>
-<iframe title="Surface Triangulation and Point Cloud Classification" width="480" height="390" src="http://www.youtube.com/embed/VALTnZCyWc0?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe title="Surface Triangulation and Point Cloud Classification" width="480" height="390" src="https://www.youtube.com/embed/VALTnZCyWc0?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <div class="section" id="background-algorithm-and-parameters">
 <h1>Background: algorithm and parameters</h1>
 <p>The method works by maintaining a list of points from which the mesh can be
@@ -274,12 +274,12 @@ editor, and place the following code inside it:</p>
 62
 63</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/kdtree/kdtree_flann.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;pcl/search/kdtree.h&gt; // for KdTree</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/features/normal_3d.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;pcl/surface/gp3.h&gt;</span><span class="cp"></span>
 
 <span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="nf">main</span> <span class="p">()</span>
 <span class="p">{</span>
   <span class="c1">// Load input file into a PointCloud&lt;T&gt; with an appropriate type</span>
   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
@@ -425,7 +425,7 @@ from PCL.</p>
  9
 10
 11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.5</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
 
 <span class="nb">project</span><span class="p">(</span><span class="s">greedy_projection</span><span class="p">)</span>
 
