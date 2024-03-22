@@ -1,3 +1,4 @@
 <map id="pcl::SampleConsensusModelStick&lt; PointT &gt;" name="pcl::SampleConsensusModelStick&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="5,6,197,53"/>
+<area shape="rect" id="node1" title="SampleConsensusModelStick defines a model for 3D stick segmentation." alt="" coords="5,95,213,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="5,5,213,47"/>
 </map>

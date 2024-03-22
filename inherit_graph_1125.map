@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1_s_i_f_t_keypoint_field_selector.html" title="pcl::SIFTKeypointFieldSelector\l\&lt; PointInT \&gt;" alt="" coords="5,5,208,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_stop_watch.html" title="Simple stopwatch." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_scope_time.html" title="Class to measure the time spent in a scope." alt="" coords="172,5,293,32"/>
 </map>

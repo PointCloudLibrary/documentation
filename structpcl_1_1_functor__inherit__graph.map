@@ -1,4 +1,5 @@
 <map id="pcl::Functor&lt; _Scalar, NX, NY &gt;" name="pcl::Functor&lt; _Scalar, NX, NY &gt;">
-<area shape="rect" id="node3" href="$structpcl_1_1_functor.html" title="pcl::Functor\&lt; double \&gt;" alt="" coords="5,120,157,149"/>
-<area shape="rect" id="node5" href="$structpcl_1_1_functor.html" title="pcl::Functor\&lt; float \&gt;" alt="" coords="181,120,320,149"/>
+<area shape="rect" id="node1" title="Base functor all the models that need non linear optimization must define their own one and implement..." alt="" coords="103,5,265,47"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_functor.html" title=" " alt="" coords="5,109,176,136"/>
+<area shape="rect" id="node3" href="$structpcl_1_1_functor.html" title=" " alt="" coords="201,109,357,136"/>
 </map>

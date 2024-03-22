@@ -1,4 +1,6 @@
 <map id="pcl::RegionGrowingRGB&lt; PointT, NormalT &gt;" name="pcl::RegionGrowingRGB&lt; PointT, NormalT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_region_growing.html" title="Implements the well known Region Growing algorithm used for segmentation. " alt="" coords="17,83,159,130"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="node1" title="Implements the well known Region Growing algorithm used for segmentation based on color of points." alt="" coords="11,276,187,317"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_region_growing.html" title=" " alt="" coords="11,185,187,227"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_region_growing.html" title="Implements the well known Region Growing algorithm used for segmentation." alt="" coords="115,81,272,123"/>
 </map>

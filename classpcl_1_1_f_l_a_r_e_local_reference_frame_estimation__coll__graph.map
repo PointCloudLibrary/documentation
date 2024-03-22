@@ -1,0 +1,11 @@
+<map id="pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;" name="pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;">
+<area shape="rect" id="node1" title="FLARELocalReferenceFrameEstimation implements the Fast LocAl Reference framE algorithm for local refe..." alt="" coords="2160,59,2441,115"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1888,59,2111,115"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1501,33,1671,74"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="809,35,997,61"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="1047,82,1217,123"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="497,35,673,61"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,43,96,69"/>
+<area shape="rect" id="node7" title=" " alt="" coords="225,43,392,69"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1468,98,1704,139"/>
+</map>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_static_range_coder.html" title="StaticRangeCoder compression class " alt="" coords="5,5,160,35"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_s_v_m.html" title="Base class for SVM SVM (Support Vector Machines)." alt="" coords="5,31,84,57"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_s_v_m_classify.html" title="SVM (Support Vector Machines) classification of a dataset." alt="" coords="132,5,261,32"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_s_v_m_train.html" title="SVM (Support Vector Machines) training class for the SVM machine learning." alt="" coords="142,56,251,83"/>
 </map>

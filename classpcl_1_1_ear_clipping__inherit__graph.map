@@ -1,3 +1,4 @@
 <map id="pcl::EarClipping" name="pcl::EarClipping">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="5,5,149,35"/>
+<area shape="rect" id="node1" title="The ear clipping triangulation algorithm." alt="" coords="21,80,144,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms." alt="" coords="5,5,160,32"/>
 </map>

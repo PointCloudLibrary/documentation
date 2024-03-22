@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1registration_1_1_transformation_validation.html" title="TransformationValidation represents the base class for methods that validate the correctness of a tra..." alt="" coords="5,5,189,86"/>
+<area shape="rect" id="node1" href="$classpcl_1_1registration_1_1_warp_point_rigid.html" title=" " alt="" coords="5,45,219,101"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_warp_point_rigid3_d.html" title="WarpPointRigid3D enables 3D (1D rotation + 2D translation) transformations for points." alt="" coords="267,5,497,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_warp_point_rigid6_d.html" title="WarpPointRigid3D enables 6D (3D rotation + 3D translation) transformations for points." alt="" coords="267,85,497,141"/>
 </map>

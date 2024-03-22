@@ -1,3 +1,4 @@
 <map id="pcl::Region3D&lt; PointT &gt;" name="pcl::Region3D&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_planar_region.html" title="PlanarRegion represents a set of points that lie in a plane. " alt="" coords="21,83,155,130"/>
+<area shape="rect" id="node1" title="Region3D represents summary statistics of a 3D collection of points." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_planar_region.html" title="PlanarRegion represents a set of points that lie in a plane." alt="" coords="23,80,170,121"/>
 </map>

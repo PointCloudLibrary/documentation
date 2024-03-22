@@ -1,3 +1,4 @@
 <map id="pcl::cuda::SampleConsensusModelPlane&lt; Storage &gt;" name="pcl::cuda::SampleConsensusModelPlane&lt; Storage &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1cuda_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="5,6,197,53"/>
+<area shape="rect" id="node1" title="SampleConsensusModelPlane defines a model for 3D plane segmentation." alt="" coords="5,95,212,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1cuda_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="5,5,212,47"/>
 </map>

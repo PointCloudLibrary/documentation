@@ -1,3 +1,4 @@
 <map id="pcl::PLYReader" name="pcl::PLYReader">
-<area shape="rect" id="node2" href="$classpcl_1_1_file_reader.html" title="Point Cloud Data (FILE) file format reader interface. " alt="" coords="8,5,117,35"/>
+<area shape="rect" id="node1" title="Point Cloud Data (PLY) file format reader." alt="" coords="6,80,123,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_file_reader.html" title="Point Cloud Data (FILE) file format reader interface." alt="" coords="5,5,124,32"/>
 </map>

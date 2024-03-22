@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1visualization_1_1_p_c_l_histogram_visualizer.html" title="PCL histogram visualizer main class. " alt="" coords="5,5,179,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Base handler class for PointCloud geometry." alt="" coords="5,85,221,141"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_custom_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Custom handler class for PointCloud geometry." alt="" coords="293,5,524,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_surface_normal_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Surface normal handler class for PointCloud geometry." alt="" coords="269,85,548,141"/>
+<area shape="rect" id="node4" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_x_y_z_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="XYZ handler class for PointCloud geometry." alt="" coords="301,165,517,221"/>
 </map>

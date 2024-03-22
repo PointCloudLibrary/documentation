@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1visualization_1_1_float_image_utils.html" title="Provide some gerneral functionalities regarding 2d float arrays, e.g., for visualization purposes ..." alt="" coords="5,5,128,51"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,200,39"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_p_c_l_image_canvas_source2_d.html" title="PCLImageCanvasSource2D represents our own custom version of vtkImageCanvasSource2D,..." alt="" coords="248,5,453,47"/>
 </map>

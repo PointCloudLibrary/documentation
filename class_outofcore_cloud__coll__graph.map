@@ -1,6 +1,7 @@
 <map id="OutofcoreCloud" name="OutofcoreCloud">
-<area shape="rect" id="node2" href="$class_object.html" title="Object" alt="" coords="64,216,123,245"/>
-<area shape="rect" id="node4" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkActor\lCollection \&gt;" alt="" coords="5,102,181,149"/>
-<area shape="rect" id="node6" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; T \&gt;" alt="" coords="20,5,167,35"/>
-<area shape="rect" id="node8" href="$class_l_r_u_cache.html" title="LRUCache\&lt; KeyT, CacheItemT \&gt;" alt="" coords="147,216,368,245"/>
+<area shape="rect" id="node1" title=" " alt="" coords="130,288,253,315"/>
+<area shape="rect" id="node2" href="$class_object.html" title=" " alt="" coords="73,199,137,225"/>
+<area shape="rect" id="node3" href="$classvtk_smart_pointer.html" title=" " alt="" coords="5,95,204,136"/>
+<area shape="rect" id="node4" href="$classvtk_smart_pointer.html" title=" " alt="" coords="21,5,188,32"/>
+<area shape="rect" id="node5" href="$class_l_r_u_cache.html" title=" " alt="" coords="161,199,397,225"/>
 </map>

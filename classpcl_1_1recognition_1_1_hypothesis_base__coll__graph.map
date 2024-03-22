@@ -1,9 +1,12 @@
 <map id="pcl::recognition::HypothesisBase" name="pcl::recognition::HypothesisBase">
-<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_model_library_1_1_model.html" title="Stores some information about the model. " alt="" coords="175,462,367,509"/>
-<area shape="rect" id="node4" href="$classpcl_1_1recognition_1_1_o_r_r_octree.html" title="That&#39;s a very specialized and simple octree class. " alt="" coords="60,356,247,385"/>
-<area shape="rect" id="node6" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node.html" title="pcl::recognition::ORROctree\l::Node" alt="" coords="5,233,192,279"/>
-<area shape="rect" id="node9" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node_1_1_data.html" title="pcl::recognition::ORROctree\l::Node::Data" alt="" coords="5,102,192,149"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="289,347,428,394"/>
-<area shape="rect" id="node13" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="305,111,420,140"/>
-<area shape="rect" id="node20" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="385,241,527,271"/>
+<area shape="rect" id="node1" title=" " alt="" coords="169,511,403,537"/>
+<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_model_library_1_1_model.html" title="Stores some information about the model." alt="" coords="179,407,393,448"/>
+<area shape="rect" id="node3" href="$classpcl_1_1recognition_1_1_o_r_r_octree.html" title="That&#39;s a very specialized and simple octree class." alt="" coords="85,310,287,337"/>
+<area shape="rect" id="node4" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node.html" title=" " alt="" coords="5,199,207,240"/>
+<area shape="rect" id="node5" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node_1_1_data.html" title=" " alt="" coords="5,95,207,136"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="324,303,477,344"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="319,206,509,233"/>
+<area shape="rect" id="node8" title=" " alt="" coords="349,5,423,32"/>
+<area shape="rect" id="node9" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="439,102,559,129"/>
+<area shape="rect" id="node10" title=" " alt="" coords="462,5,537,32"/>
 </map>

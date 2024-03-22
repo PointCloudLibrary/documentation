@@ -1,0 +1,5 @@
+<map id="pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation" name="pcl::GeneralizedIterativeClosestPoint6D::MyPointRepresentation">
+<area shape="rect" id="node1" title="Custom point representation to perform kdtree searches in more than 3 (i.e." alt="" coords="5,200,287,241"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="55,109,237,151"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="55,5,237,47"/>
+</map>

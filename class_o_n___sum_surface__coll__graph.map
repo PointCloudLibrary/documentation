@@ -1,9 +1,10 @@
 <map id="ON_SumSurface" name="ON_SumSurface">
-<area shape="rect" id="node2" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="5,231,99,260"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="45,88,152,117"/>
-<area shape="rect" id="node8" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="123,231,205,260"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="56,5,141,35"/>
-<area shape="rect" id="node11" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="229,231,355,260"/>
-<area shape="rect" id="node14" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="245,88,339,117"/>
-<area shape="rect" id="node17" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="523,231,624,260"/>
+<area shape="rect" id="node1" title=" " alt="" coords="175,324,302,351"/>
+<area shape="rect" id="node2" href="$class_o_n___surface.html" title=" " alt="" coords="5,211,104,238"/>
+<area shape="rect" id="node3" href="$class_o_n___geometry.html" title=" " alt="" coords="57,83,172,109"/>
+<area shape="rect" id="node5" href="$class_o_n___curve.html" title=" " alt="" coords="129,211,215,238"/>
+<area shape="rect" id="node4" href="$class_o_n___object.html" title=" " alt="" coords="69,5,160,32"/>
+<area shape="rect" id="node6" href="$class_o_n___bounding_box.html" title=" " alt="" coords="239,211,374,238"/>
+<area shape="rect" id="node7" href="$class_o_n__3d_point.html" title=" " alt="" coords="257,83,356,109"/>
+<area shape="rect" id="node8" href="$class_o_n__3d_vector.html" title=" " alt="" coords="556,211,663,238"/>
 </map>

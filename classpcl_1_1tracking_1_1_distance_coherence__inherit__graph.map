@@ -1,3 +1,4 @@
 <map id="pcl::tracking::DistanceCoherence&lt; PointInT &gt;" name="pcl::tracking::DistanceCoherence&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_coherence.html" title="PointCoherence is a base class to compute coherence between the two points. " alt="" coords="16,6,211,53"/>
+<area shape="rect" id="node1" title="DistanceCoherence computes coherence between two points from the distance between them." alt="" coords="5,95,241,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_coherence.html" title="PointCoherence is a base class to compute coherence between the two points." alt="" coords="17,5,229,47"/>
 </map>

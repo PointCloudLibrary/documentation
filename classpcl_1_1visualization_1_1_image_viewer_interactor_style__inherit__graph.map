@@ -1,2 +1,4 @@
 <map id="pcl::visualization::ImageViewerInteractorStyle" name="pcl::visualization::ImageViewerInteractorStyle">
+<area shape="rect" id="node1" title="An image viewer interactor style, tailored for ImageViewer." alt="" coords="5,80,217,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="21,5,201,32"/>
 </map>

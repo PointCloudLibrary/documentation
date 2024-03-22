@@ -1,50 +1,234 @@
 <map id="pcl::PCLBase&lt; PointT &gt;" name="pcl::PCLBase&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title="Feature\&lt; PointT, PointFeature \&gt;" alt="" coords="408,17,619,47"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_keypoint.html" title="Keypoint\&lt; PointT, PointT \&gt;" alt="" coords="423,79,604,108"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_approximate_progressive_morphological_filter.html" title="Implements the Progressive Morphological Filter for segmentation of ground points. " alt="" coords="417,131,609,178"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_conditional_euclidean_clustering.html" title="ConditionalEuclideanClustering performs segmentation based on Euclidean distance and a user&#45;defined c..." alt="" coords="429,201,597,247"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_euclidean_cluster_extraction.html" title="EuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclidean sen..." alt="" coords="411,270,616,317"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_extract_polygonal_prism_data.html" title="ExtractPolygonalPrismData uses a set of point indices that represent a planar model, and together with a given height, generates a 3D polygonal prism. " alt="" coords="424,339,603,386"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="444,409,583,439"/>
-<area shape="rect" id="node29" href="$classpcl_1_1_grab_cut.html" title="Implementation of the GrabCut segmentation in &quot;GrabCut — Interactive Foreground Extraction using Ite..." alt="" coords="435,463,592,492"/>
-<area shape="rect" id="node31" href="$classpcl_1_1_labeled_euclidean_cluster_extraction.html" title="LabeledEuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclid..." alt="" coords="419,515,608,562"/>
-<area shape="rect" id="node33" href="$classpcl_1_1_moment_of_inertia_estimation.html" title="Implements the method for extracting features based on moment of inertia. " alt="" coords="411,585,616,631"/>
-<area shape="rect" id="node35" href="$classpcl_1_1_morphology.html" title="pcl::Morphology\&lt; PointT \&gt;" alt="" coords="425,655,601,684"/>
-<area shape="rect" id="node37" href="$classpcl_1_1_organized_connected_component_segmentation.html" title="OrganizedConnectedComponentSegmentation allows connected components to be found within organized poin..." alt="" coords="396,707,631,754"/>
-<area shape="rect" id="node39" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="431,777,596,823"/>
-<area shape="rect" id="node41" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title="OrganizedMultiPlaneSegmentation finds all planes present in the input cloud, and outputs a vector of ..." alt="" coords="431,846,596,893"/>
-<area shape="rect" id="node43" href="$classpcl_1_1_p_c_a.html" title="Principal Component analysis (PCA) class. " alt="" coords="445,916,581,945"/>
-<area shape="rect" id="node45" href="$classpcl_1_1_progressive_morphological_filter.html" title="Implements the Progressive Morphological Filter for segmentation of ground points. " alt="" coords="416,969,611,1015"/>
-<area shape="rect" id="node47" href="$classpcl_1_1_region_growing.html" title="Implements the well known Region Growing algorithm used for segmentation. " alt="" coords="445,1038,581,1085"/>
-<area shape="rect" id="node49" href="$classpcl_1_1registration_1_1_e_l_c_h.html" title="ELCH (Explicit Loop Closing Heuristic) class " alt="" coords="453,1107,573,1154"/>
-<area shape="rect" id="node51" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models..." alt="" coords="436,1177,591,1223"/>
-<area shape="rect" id="node53" href="$classpcl_1_1_segment_differences.html" title="SegmentDifferences obtains the difference between two spatially aligned point clouds and returns the ..." alt="" coords="431,1246,596,1293"/>
-<area shape="rect" id="node55" href="$classpcl_1_1_statistical_multiscale_interest_region_extraction.html" title="Class for extracting interest regions from unstructured point clouds, based on a multi scale statisti..." alt="" coords="431,1316,596,1380"/>
-<area shape="rect" id="node57" href="$classpcl_1_1_supervoxel_clustering.html" title="Implements a supervoxel algorithm based on voxel structure, normals, and rgb values. " alt="" coords="428,1403,599,1450"/>
-<area shape="rect" id="node59" href="$classpcl_1_1_surfel_smoothing.html" title="pcl::SurfelSmoothing\l\&lt; PointT \&gt;" alt="" coords="443,1473,584,1519"/>
-<area shape="rect" id="node61" href="$classpcl_1_1_registration.html" title="Registration\&lt; PointT,\l PointT \&gt;" alt="" coords="440,1542,587,1589"/>
-<area shape="rect" id="node63" href="$classpcl_1_1_registration.html" title="Registration\&lt; PointT,\l PointT, Scalar \&gt;" alt="" coords="440,1611,587,1658"/>
-<area shape="rect" id="node65" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="415,1681,612,1711"/>
-<area shape="rect" id="node67" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="425,1735,601,1764"/>
-<area shape="rect" id="node69" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGB \&gt;" alt="" coords="444,1787,583,1834"/>
-<area shape="rect" id="node71" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointIn \&gt;" alt="" coords="429,1857,597,1887"/>
-<area shape="rect" id="node73" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointNT \&gt;" alt="" coords="427,1911,600,1940"/>
-<area shape="rect" id="node75" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lpcl::PCLPointCloud2 \&gt;" alt="" coords="436,1963,591,2010"/>
-<area shape="rect" id="node77" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointModelT \&gt;" alt="" coords="413,2033,613,2063"/>
-<area shape="rect" id="node79" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointTarget \&gt;" alt="" coords="416,2087,611,2116"/>
-<area shape="rect" id="node81" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGBA \&gt;" alt="" coords="444,2139,583,2186"/>
-<area shape="rect" id="node83" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; NormalT \&gt;" alt="" coords="425,2209,601,2239"/>
-<area shape="rect" id="node85" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="403,2263,624,2292"/>
-<area shape="rect" id="node87" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZ \&gt;" alt="" coords="444,2315,583,2362"/>
-<area shape="rect" id="node89" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGBL \&gt;" alt="" coords="444,2385,583,2431"/>
-<area shape="rect" id="node91" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointFeature \&gt;" alt="" coords="413,2455,613,2484"/>
-<area shape="rect" id="node93" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointRGBT \&gt;" alt="" coords="416,2508,611,2537"/>
-<area shape="rect" id="node95" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointXYZT \&gt;" alt="" coords="419,2561,608,2591"/>
-<area shape="rect" id="node97" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointXYZRGB \&gt;" alt="" coords="408,2615,619,2644"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointT, PointNT, PointFeature \&gt;" alt="" coords="684,5,905,51"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_smoothed_surfaces_keypoint.html" title="Based on the paper: Xinju Li and Igor Guskov Multi&#45;scale features for approximate alignment of point&#45;..." alt="" coords="691,74,899,121"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_approximate_voxel_grid.html" title="ApproximateVoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the..." alt="" coords="707,297,883,343"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_bilateral_filter.html" title="A bilateral filter implementation for point cloud data. " alt="" coords="733,366,856,413"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_conditional_removal.html" title="ConditionalRemoval filters data that satisfies certain conditions. " alt="" coords="713,435,876,482"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_convolution.html" title="A 2D convolution class. " alt="" coords="705,505,884,535"/>
+<area shape="rect" id="node1" title="PCL base class." alt="" coords="5,6319,181,6346"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1378,1367,1599,1408"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1378,1432,1599,1473"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_filter.html" title=" " alt="" coords="866,4925,1034,4951"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title=" " alt="" coords="823,5927,1077,5983"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_region_growing.html" title=" " alt="" coords="862,6008,1038,6049"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_registration.html" title=" " alt="" coords="1419,132,1558,173"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_registration.html" title=" " alt="" coords="1405,844,1573,885"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_approximate_progressive_morphological_filter.html" title="Implements the Progressive Morphological Filter for segmentation of ground points." alt="" coords="371,6028,589,6069"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_conditional_euclidean_clustering.html" title="ConditionalEuclideanClustering performs segmentation based on Euclidean distance and a user&#45;defined c..." alt="" coords="387,6093,573,6135"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_euclidean_cluster_extraction.html" title="EuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclidean sen..." alt="" coords="368,6159,592,6200"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_extract_polygonal_prism_data.html" title="ExtractPolygonalPrismData uses a set of point indices that represent a planar model,..." alt="" coords="382,6224,578,6265"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="403,5422,557,5449"/>
+<area shape="rect" id="node56" href="$classpcl_1_1_grab_cut.html" title="Implementation of the GrabCut segmentation in &quot;GrabCut — Interactive Foreground Extraction using Iter..." alt="" coords="393,6290,567,6317"/>
+<area shape="rect" id="node57" href="$classpcl_1_1_labeled_euclidean_cluster_extraction.html" title="LabeledEuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclid..." alt="" coords="375,6341,585,6383"/>
+<area shape="rect" id="node58" href="$classpcl_1_1_min_cut_segmentation.html" title="This class implements the segmentation algorithm based on minimal cut of the graph." alt="" coords="387,6407,573,6448"/>
+<area shape="rect" id="node59" href="$classpcl_1_1_moment_of_inertia_estimation.html" title="Implements the method for extracting features based on moment of inertia." alt="" coords="365,6472,595,6513"/>
+<area shape="rect" id="node60" href="$classpcl_1_1_morphology.html" title=" " alt="" coords="381,6538,579,6565"/>
+<area shape="rect" id="node61" href="$classpcl_1_1_organized_connected_component_segmentation.html" title="OrganizedConnectedComponentSegmentation allows connected components to be found within organized poin..." alt="" coords="351,6589,609,6631"/>
+<area shape="rect" id="node62" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="391,6655,569,6696"/>
+<area shape="rect" id="node66" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title="OrganizedMultiPlaneSegmentation finds all planes present in the input cloud, and outputs a vector of ..." alt="" coords="388,5831,572,5887"/>
+<area shape="rect" id="node67" href="$classpcl_1_1_p_c_a.html" title="Principal Component analysis (PCA) class." alt="" coords="407,6721,553,6747"/>
+<area shape="rect" id="node68" href="$classpcl_1_1_progressive_morphological_filter.html" title="Implements the Progressive Morphological Filter for segmentation of ground points." alt="" coords="371,6772,589,6813"/>
+<area shape="rect" id="node69" href="$classpcl_1_1_region_growing.html" title="Implements the well known Region Growing algorithm used for segmentation." alt="" coords="401,5963,559,6004"/>
+<area shape="rect" id="node70" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models,..." alt="" coords="397,6837,563,6879"/>
+<area shape="rect" id="node72" href="$classpcl_1_1_segment_differences.html" title="SegmentDifferences obtains the difference between two spatially aligned point clouds and returns the ..." alt="" coords="389,6903,571,6944"/>
+<area shape="rect" id="node73" href="$classpcl_1_1_statistical_multiscale_interest_region_extraction.html" title="Class for extracting interest regions from unstructured point clouds, based on a multi scale statisti..." alt="" coords="389,6969,571,7025"/>
+<area shape="rect" id="node74" href="$classpcl_1_1_supervoxel_clustering.html" title="Implements a supervoxel algorithm based on voxel structure, normals, and rgb values." alt="" coords="387,7049,573,7091"/>
+<area shape="rect" id="node75" href="$classpcl_1_1_surfel_smoothing.html" title=" " alt="" coords="401,7115,559,7156"/>
+<area shape="rect" id="node76" href="$classpcl_1_1registration_1_1_e_l_c_h.html" title="ELCH (Explicit Loop Closing Heuristic) class" alt="" coords="414,7180,546,7221"/>
+<area shape="rect" id="node77" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="374,421,586,447"/>
+<area shape="rect" id="node105" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="386,3466,574,3493"/>
+<area shape="rect" id="node222" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="390,7246,570,7273"/>
+<area shape="rect" id="node224" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="372,7297,588,7323"/>
+<area shape="rect" id="node228" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="371,7355,589,7382"/>
+<area shape="rect" id="node230" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="849,929,1051,955"/>
+<area shape="rect" id="node231" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="369,7410,591,7437"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_range_image_border_extractor.html" title="Extract obstacle borders from range images, meaning positions where there is a transition from foregr..." alt="" coords="1870,1374,2103,1401"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_narf_descriptor.html" title="Computes NARF feature descriptors for points in a range image See B." alt="" coords="1915,1431,2059,1458"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_normal_refinement.html" title="Normal vector refinement class" alt="" coords="1403,4868,1575,4909"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_region_growing_r_g_b.html" title="Implements the well known Region Growing algorithm used for segmentation based on color of points." alt="" coords="1401,6157,1577,6199"/>
+<area shape="rect" id="node18" href="$classpcl_1_1_convolution.html" title=" " alt="" coords="1383,6106,1594,6133"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_convolution.html" title=" " alt="" coords="1375,6055,1603,6082"/>
+<area shape="rect" id="node20" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="1416,4737,1561,4779"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="1381,4555,1596,4582"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="1416,4803,1561,4844"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_approximate_voxel_grid.html" title="ApproximateVoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the..." alt="" coords="853,5251,1047,5292"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_bilateral_filter.html" title="A bilateral filter implementation for point cloud data." alt="" coords="881,5447,1019,5488"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_conditional_removal.html" title="ConditionalRemoval filters data that satisfies certain conditions." alt="" coords="859,5316,1041,5357"/>
+<area shape="rect" id="node28" href="$classpcl_1_1_convolution.html" title="A 2D convolution class." alt="" coords="851,5826,1049,5853"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_fast_bilateral_filter.html" title="Implementation of a fast bilateral filter for smoothing depth information in organized point clouds B..." alt="" coords="869,5097,1031,5139"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="886,5381,1014,5423"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_median_filter.html" title="Implementation of the median filter." alt="" coords="879,5564,1021,5605"/>
+<area shape="rect" id="node50" href="$classpcl_1_1_project_inliers.html" title="ProjectInliers uses a model and a set of inlier indices from a PointCloud to project them into a sepa..." alt="" coords="883,5629,1017,5671"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_sampling_surface_normal.html" title="SamplingSurfaceNormal divides the input space into grids until each grid contains a maximum of N poin..." alt="" coords="847,5695,1053,5736"/>
+<area shape="rect" id="node52" href="$classpcl_1_1_uniform_sampling.html" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="869,5760,1031,5801"/>
+<area shape="rect" id="node53" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="859,4697,1041,4723"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_voxel_grid_covariance.html" title=" " alt="" coords="1895,5013,2079,5055"/>
+<area shape="rect" id="node24" href="$classpcl_1_1_voxel_grid_label.html" title=" " alt="" coords="1913,5079,2060,5106"/>
+<area shape="rect" id="node30" href="$classpcl_1_1_fast_bilateral_filter_o_m_p.html" title="Implementation of a fast bilateral filter for smoothing depth information in organized point clouds B..." alt="" coords="1407,4933,1570,4975"/>
+<area shape="rect" id="node32" href="$classpcl_1_1_pass_through.html" title=" " alt="" coords="1879,5130,2094,5157"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_covariance_sampling.html" title="Point Cloud sampling based on the 6D covariances." alt="" coords="1397,5181,1580,5223"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_crop_box.html" title="CropBox is a filter that allows the user to filter all the data inside of a given box." alt="" coords="1401,5247,1576,5274"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_crop_hull.html" title="Filter points that lie inside or outside a 3D closed surface or 2D closed polygon,..." alt="" coords="1401,5298,1577,5325"/>
+<area shape="rect" id="node36" href="$classpcl_1_1_extract_indices.html" title="ExtractIndices extracts a set of indices from a point cloud." alt="" coords="1418,5349,1559,5391"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_farthest_point_sampling.html" title="FarthestPointSampling applies farthest point sampling using euclidean distance, starting with a rando..." alt="" coords="1391,5415,1586,5456"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_frustum_culling.html" title="FrustumCulling filters points inside a frustum given by pose and field of view of the camera." alt="" coords="1415,5480,1562,5521"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_grid_minimum.html" title="GridMinimum assembles a local 2D grid over a given PointCloud, and downsamples the data." alt="" coords="1384,5546,1593,5573"/>
+<area shape="rect" id="node40" href="$classpcl_1_1_local_maximum.html" title="LocalMaximum downsamples the cloud, by eliminating points that are locally maximal." alt="" coords="1409,5597,1569,5639"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_model_outlier_removal.html" title="ModelOutlierRemoval filters points in a cloud based on the distance between model and point." alt="" coords="1393,5663,1584,5704"/>
+<area shape="rect" id="node42" href="$classpcl_1_1_normal_space_sampling.html" title="NormalSpaceSampling samples the input point cloud in the space of normal directions computed at every..." alt="" coords="1390,5728,1587,5769"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_pass_through.html" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type." alt="" coords="1387,5130,1590,5157"/>
+<area shape="rect" id="node44" href="$classpcl_1_1_radius_outlier_removal.html" title="RadiusOutlierRemoval filters points in a cloud based on the number of neighbors they have." alt="" coords="1391,5793,1586,5835"/>
+<area shape="rect" id="node45" href="$classpcl_1_1_random_sample.html" title="RandomSample applies a random sampling with uniform probability." alt="" coords="1407,5859,1570,5900"/>
+<area shape="rect" id="node46" href="$classpcl_1_1_shadow_points.html" title="ShadowPoints removes the ghost points appearing on edge discontinuties" alt="" coords="1413,5924,1564,5965"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_statistical_outlier_removal.html" title="StatisticalOutlierRemoval uses point neighborhood statistics to filter outlier data." alt="" coords="1381,5989,1597,6031"/>
+<area shape="rect" id="node48" href="$classpcl_1_1experimental_1_1advanced_1_1_functor_filter.html" title="Filter point clouds and indices based on a function object passed in the ctor." alt="" coords="1389,4999,1588,5055"/>
+<area shape="rect" id="node54" href="$classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel structure containing the mean and covariance of the data." alt="" coords="1397,4672,1581,4713"/>
+<area shape="rect" id="node55" href="$classpcl_1_1_voxel_grid_occlusion_estimation.html" title="VoxelGrid to estimate occluded space in the scene." alt="" coords="1367,4607,1611,4648"/>
+<area shape="rect" id="node63" href="$classpcl_1_1_organized_edge_from_normals.html" title=" " alt="" coords="833,6621,1067,6663"/>
+<area shape="rect" id="node65" href="$classpcl_1_1_organized_edge_from_r_g_b.html" title=" " alt="" coords="846,6687,1054,6728"/>
+<area shape="rect" id="node64" href="$classpcl_1_1_organized_edge_from_r_g_b_normals.html" title=" " alt="" coords="1357,6661,1620,6703"/>
+<area shape="rect" id="node71" href="$classpcl_1_1_s_a_c_segmentation_from_normals.html" title="SACSegmentationFromNormals represents the PCL nodelet segmentation class for Sample Consensus methods..." alt="" coords="847,6837,1053,6879"/>
+<area shape="rect" id="node78" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1391,1301,1586,1343"/>
+<area shape="rect" id="node79" href="$classpcl_1_1_registration.html" title=" " alt="" coords="1395,406,1583,462"/>
+<area shape="rect" id="node93" href="$classpcl_1_1registration_1_1_correspondence_estimation_base.html" title=" " alt="" coords="1374,197,1603,268"/>
+<area shape="rect" id="node98" href="$classpcl_1_1_multiscale_feature_persistence.html" title="Generic class for extracting the persistent features from an input point cloud It can be given any Fe..." alt="" coords="830,355,1070,396"/>
+<area shape="rect" id="node99" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="856,578,1044,634"/>
+<area shape="rect" id="node104" href="$classpcl_1_1registration_1_1_correspondence_estimation_base.html" title="Abstract CorrespondenceEstimationBase class." alt="" coords="835,260,1065,331"/>
+<area shape="rect" id="node80" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="2451,747,2649,803"/>
+<area shape="rect" id="node87" href="$classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html" title=" " alt="" coords="2451,388,2649,459"/>
+<area shape="rect" id="node89" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm." alt="" coords="1887,611,2086,667"/>
+<area shape="rect" id="node91" href="$classpcl_1_1_normal_distributions_transform.html" title="A 3D Normal Distribution Transform registration implementation for point cloud data." alt="" coords="1895,531,2078,587"/>
+<area shape="rect" id="node92" href="$classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html" title="FPCSInitialAlignment computes corresponding four point congruent sets as described in: &quot;4&#45;points cong..." alt="" coords="1887,436,2086,507"/>
+<area shape="rect" id="node81" href="$classpcl_1_1_generalized_iterative_closest_point.html" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="2757,827,2955,883"/>
+<area shape="rect" id="node84" href="$classpcl_1_1_iterative_closest_point_non_linear.html" title="IterativeClosestPointNonLinear is an ICP variant that uses Levenberg&#45;Marquardt optimization backend." alt="" coords="2763,667,2949,723"/>
+<area shape="rect" id="node85" href="$classpcl_1_1_iterative_closest_point_with_normals.html" title="IterativeClosestPointWithNormals is a special case of IterativeClosestPoint, that uses a transformati..." alt="" coords="2755,747,2957,803"/>
+<area shape="rect" id="node86" href="$classpcl_1_1_joint_iterative_closest_point.html" title="JointIterativeClosestPoint extends ICP to multiple frames which share the same transform." alt="" coords="2740,907,2972,963"/>
+<area shape="rect" id="node82" href="$classpcl_1_1_generalized_iterative_closest_point.html" title=" " alt="" coords="3273,667,3491,723"/>
+<area shape="rect" id="node83" href="$classpcl_1_1_generalized_iterative_closest_point6_d.html" title="GeneralizedIterativeClosestPoint6D integrates L*a*b* color space information into the Generalized Ite..." alt="" coords="3574,675,3757,716"/>
+<area shape="rect" id="node88" href="$classpcl_1_1registration_1_1_k_f_p_c_s_initial_alignment.html" title="KFPCSInitialAlignment computes corresponding four point congruent sets based on keypoints as describe..." alt="" coords="2757,388,2955,459"/>
+<area shape="rect" id="node90" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="2429,610,2671,666"/>
+<area shape="rect" id="node94" href="$classpcl_1_1registration_1_1_correspondence_estimation.html" title="CorrespondenceEstimation represents the base class for determining correspondences between target and..." alt="" coords="1887,5,2086,76"/>
+<area shape="rect" id="node95" href="$classpcl_1_1registration_1_1_correspondence_estimation_back_projection.html" title="CorrespondenceEstimationBackprojection computes correspondences as points in the target cloud which h..." alt="" coords="1872,100,2101,171"/>
+<area shape="rect" id="node96" href="$classpcl_1_1registration_1_1_correspondence_estimation_normal_shooting.html" title="CorrespondenceEstimationNormalShooting computes correspondences as points in the target cloud which h..." alt="" coords="1859,195,2115,265"/>
+<area shape="rect" id="node97" href="$classpcl_1_1registration_1_1_correspondence_estimation_organized_projection.html" title="CorrespondenceEstimationOrganizedProjection computes correspondences by projecting the source point c..." alt="" coords="1855,289,2119,360"/>
+<area shape="rect" id="node100" href="$classpcl_1_1_normal_distributions_transform2_d.html" title="NormalDistributionsTransform2D provides an implementation of the Normal Distributions Transform algor..." alt="" coords="1388,713,1589,769"/>
+<area shape="rect" id="node101" href="$classpcl_1_1_p_p_f_registration.html" title="Class that registers two point clouds based on their sets of PPFSignatures." alt="" coords="1383,487,1594,528"/>
+<area shape="rect" id="node102" href="$classpcl_1_1_sample_consensus_initial_alignment.html" title="SampleConsensusInitialAlignment is an implementation of the initial alignment algorithm described in ..." alt="" coords="1386,553,1591,609"/>
+<area shape="rect" id="node103" href="$classpcl_1_1_sample_consensus_prerejective.html" title="Pose estimation and alignment class using a prerejective RANSAC routine." alt="" coords="1365,633,1612,689"/>
+<area shape="rect" id="node106" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1403,3588,1574,3629"/>
+<area shape="rect" id="node113" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1400,3444,1577,3485"/>
+<area shape="rect" id="node115" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1370,3517,1607,3559"/>
+<area shape="rect" id="node117" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1403,3059,1574,3100"/>
+<area shape="rect" id="node121" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="1399,4015,1578,4056"/>
+<area shape="rect" id="node123" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="1397,4199,1581,4240"/>
+<area shape="rect" id="node125" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="1399,4489,1578,4531"/>
+<area shape="rect" id="node139" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="1405,4081,1572,4123"/>
+<area shape="rect" id="node141" href="$classpcl_1_1tracking_1_1_tracker.html" title=" " alt="" coords="1385,1105,1593,1147"/>
+<area shape="rect" id="node143" href="$classpcl_1_1_cloud_surface_processing.html" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="847,1228,1053,1269"/>
+<area shape="rect" id="node146" href="$classpcl_1_1_color_gradient_d_o_t_modality.html" title=" " alt="" coords="838,2155,1062,2196"/>
+<area shape="rect" id="node147" href="$classpcl_1_1_color_gradient_modality.html" title="Modality based on max&#45;RGB gradients." alt="" coords="852,980,1048,1021"/>
+<area shape="rect" id="node149" href="$classpcl_1_1_color_modality.html" title=" " alt="" coords="880,2220,1020,2261"/>
+<area shape="rect" id="node150" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="865,2285,1035,2327"/>
+<area shape="rect" id="node201" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="847,4147,1053,4174"/>
+<area shape="rect" id="node202" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class." alt="" coords="873,3835,1027,3876"/>
+<area shape="rect" id="node215" href="$classpcl_1_1_surface_normal_modality.html" title="Modality based on surface normals." alt="" coords="849,1045,1051,1087"/>
+<area shape="rect" id="node217" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="872,1111,1028,1152"/>
+<area shape="rect" id="node107" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1875,3283,2098,3339"/>
+<area shape="rect" id="node110" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title=" " alt="" coords="2433,3615,2667,3671"/>
+<area shape="rect" id="node112" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="1863,3591,2110,3632"/>
+<area shape="rect" id="node108" href="$classpcl_1_1_b_o_a_r_d_local_reference_frame_estimation.html" title="BOARDLocalReferenceFrameEstimation implements the BOrder Aware Repeatable Directions algorithm for lo..." alt="" coords="2447,3283,2653,3339"/>
+<area shape="rect" id="node109" href="$classpcl_1_1_f_l_a_r_e_local_reference_frame_estimation.html" title="FLARELocalReferenceFrameEstimation implements the Fast LocAl Reference framE algorithm for local refe..." alt="" coords="2409,3363,2691,3419"/>
+<area shape="rect" id="node111" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation_o_m_p.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="2743,3615,2969,3671"/>
+<area shape="rect" id="node114" href="$classpcl_1_1_e_s_f_estimation.html" title="ESFEstimation estimates the ensemble of shape functions descriptors for a given point cloud dataset c..." alt="" coords="1898,3444,2075,3485"/>
+<area shape="rect" id="node116" href="$classpcl_1_1_unique_shape_context.html" title="UniqueShapeContext implements the Unique Shape Context Descriptor described here:" alt="" coords="1893,3510,2080,3566"/>
+<area shape="rect" id="node118" href="$classpcl_1_1_g_a_s_d_estimation.html" title="GASDEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given poin..." alt="" coords="1898,3071,2075,3112"/>
+<area shape="rect" id="node119" href="$classpcl_1_1_g_a_s_d_estimation.html" title=" " alt="" coords="2432,3035,2668,3076"/>
+<area shape="rect" id="node120" href="$classpcl_1_1_g_a_s_d_color_estimation.html" title="GASDColorEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given..." alt="" coords="2761,3035,2951,3076"/>
+<area shape="rect" id="node122" href="$classpcl_1_1_brisk_keypoint2_d.html" title="Detects BRISK interest points based on the original code and paper reference by." alt="" coords="1903,4007,2070,4063"/>
+<area shape="rect" id="node124" href="$classpcl_1_1_narf_keypoint.html" title="NARF (Normal Aligned Radial Feature) keypoints." alt="" coords="1919,4205,2054,4231"/>
+<area shape="rect" id="node126" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="Detects 2D AGAST corner points." alt="" coords="1890,4306,2083,4362"/>
+<area shape="rect" id="node131" href="$classpcl_1_1_harris_keypoint2_d.html" title="HarrisKeypoint2D detects Harris corners family points." alt="" coords="1903,4693,2070,4749"/>
+<area shape="rect" id="node132" href="$classpcl_1_1_harris_keypoint3_d.html" title="HarrisKeypoint3D uses the idea of 2D Harris keypoints, but instead of using image gradients,..." alt="" coords="1903,4773,2070,4829"/>
+<area shape="rect" id="node133" href="$classpcl_1_1_harris_keypoint6_d.html" title="Keypoint detector for detecting corners in 3D (XYZ), 2D (intensity) AND mixed versions of these." alt="" coords="1903,4853,2070,4909"/>
+<area shape="rect" id="node134" href="$classpcl_1_1_i_s_s_keypoint3_d.html" title="ISSKeypoint3D detects the Intrinsic Shape Signatures keypoints for a given point cloud." alt="" coords="1903,4933,2070,4989"/>
+<area shape="rect" id="node135" href="$classpcl_1_1_s_i_f_t_keypoint.html" title="SIFTKeypoint detects the Scale Invariant Feature Transform keypoints for a given point cloud dataset ..." alt="" coords="1903,4387,2070,4428"/>
+<area shape="rect" id="node136" href="$classpcl_1_1_s_u_s_a_n_keypoint.html" title="SUSANKeypoint implements a RGB&#45;D extension of the SUSAN detector including normal directions variatio..." alt="" coords="1901,4453,2072,4509"/>
+<area shape="rect" id="node137" href="$classpcl_1_1_trajkovic_keypoint2_d.html" title="TrajkovicKeypoint2D implements Trajkovic and Hedley corner detector on organized point cloud using in..." alt="" coords="1896,4533,2077,4589"/>
+<area shape="rect" id="node138" href="$classpcl_1_1_trajkovic_keypoint3_d.html" title="TrajkovicKeypoint3D implements Trajkovic and Hedley corner detector on point cloud using geometric in..." alt="" coords="1896,4613,2077,4669"/>
+<area shape="rect" id="node127" href="$classpcl_1_1_agast_keypoint2_d_base.html" title=" " alt="" coords="2418,4309,2682,4380"/>
+<area shape="rect" id="node129" href="$classpcl_1_1_agast_keypoint2_d_base.html" title=" " alt="" coords="2418,4173,2682,4244"/>
+<area shape="rect" id="node128" href="$classpcl_1_1_agast_keypoint2_d.html" title="Detects 2D AGAST corner points." alt="" coords="2767,4324,2945,4365"/>
+<area shape="rect" id="node130" href="$classpcl_1_1_agast_keypoint2_d_3_01pcl_1_1_point_x_y_z_00_01pcl_1_1_point_u_v_01_4.html" title="Detects 2D AGAST corner points." alt="" coords="2775,4181,2937,4237"/>
+<area shape="rect" id="node140" href="$classpcl_1_1_smoothed_surfaces_keypoint.html" title="Based on the paper: Xinju Li and Igor Guskov Multi&#45;scale features for approximate alignment of point&#45;..." alt="" coords="1873,4088,2101,4129"/>
+<area shape="rect" id="node142" href="$classpcl_1_1tracking_1_1_pyramidal_k_l_t_tracker.html" title="Pyramidal Kanade Lucas Tomasi tracker." alt="" coords="1899,1106,2075,1162"/>
+<area shape="rect" id="node144" href="$classpcl_1_1_bilateral_upsampling.html" title="Bilateral filtering implementation, based on the following paper:" alt="" coords="1397,1236,1580,1277"/>
+<area shape="rect" id="node145" href="$classpcl_1_1_moving_least_squares.html" title="MovingLeastSquares represent an implementation of the MLS (Moving Least Squares) algorithm for data s..." alt="" coords="1397,1171,1581,1212"/>
+<area shape="rect" id="node148" href="$classpcl_1_1_color_gradient_modality.html" title=" " alt="" coords="1391,909,1587,951"/>
+<area shape="rect" id="node151" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,1774,2080,1830"/>
+<area shape="rect" id="node153" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,1854,2080,1910"/>
+<area shape="rect" id="node155" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,2065,2080,2121"/>
+<area shape="rect" id="node157" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,2326,2080,2382"/>
+<area shape="rect" id="node161" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,3137,2080,3193"/>
+<area shape="rect" id="node163" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1865,3217,2108,3259"/>
+<area shape="rect" id="node165" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,3363,2080,3419"/>
+<area shape="rect" id="node167" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1893,1985,2080,2041"/>
+<area shape="rect" id="node169" href="$classpcl_1_1_integral_image_normal_estimation.html" title=" " alt="" coords="1869,1482,2104,1538"/>
+<area shape="rect" id="node170" href="$classpcl_1_1_normal_estimation.html" title=" " alt="" coords="1903,1628,2070,1669"/>
+<area shape="rect" id="node171" href="$classpcl_1_1_difference_of_normals_estimation.html" title="A Difference of Normals (DoN) scale filter implementation for point cloud data." alt="" coords="1395,3275,1582,3331"/>
+<area shape="rect" id="node172" href="$classpcl_1_1_feature_from_labels.html" title=" " alt="" coords="1373,2025,1605,2067"/>
+<area shape="rect" id="node174" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1371,2437,1607,2479"/>
+<area shape="rect" id="node192" href="$classpcl_1_1_integral_image_normal_estimation.html" title="Surface normal estimation on organized data using integral images." alt="" coords="1395,1681,1583,1737"/>
+<area shape="rect" id="node193" href="$classpcl_1_1_intensity_spin_estimation.html" title="IntensitySpinEstimation estimates the intensity&#45;domain spin image descriptors for a given point cloud..." alt="" coords="1387,1497,1591,1539"/>
+<area shape="rect" id="node194" href="$classpcl_1_1_linear_least_squares_normal_estimation.html" title="Surface normal estimation on dense data using a least&#45;squares estimation based on a first&#45;order Taylo..." alt="" coords="1365,1615,1612,1656"/>
+<area shape="rect" id="node195" href="$classpcl_1_1_moment_invariants_estimation.html" title="MomentInvariantsEstimation estimates the 3 moment invariants (j1, j2, j3) at each 3D point." alt="" coords="1369,1761,1608,1803"/>
+<area shape="rect" id="node196" href="$classpcl_1_1_normal_estimation.html" title="NormalEstimation estimates local surface properties (surface normals and curvatures)at each 3D point." alt="" coords="1400,1908,1577,1949"/>
+<area shape="rect" id="node198" href="$classpcl_1_1_r_i_f_t_estimation.html" title="RIFTEstimation estimates the Rotation Invariant Feature Transform descriptors for a given point cloud..." alt="" coords="1405,1827,1572,1883"/>
+<area shape="rect" id="node199" href="$classpcl_1_1_r_o_p_s_estimation.html" title="This class implements the method for extracting RoPS features presented in the article &quot;Rotational Pr..." alt="" coords="1400,2503,1577,2544"/>
+<area shape="rect" id="node200" href="$classpcl_1_1_spin_image_estimation.html" title="Estimates spin&#45;image descriptors in the given input points." alt="" coords="1371,2568,1607,2609"/>
+<area shape="rect" id="node152" href="$classpcl_1_1_p_f_h_r_g_b_estimation.html" title="Similar to the Point Feature Histogram descriptor, but also takes color into account." alt="" coords="2463,1773,2637,1829"/>
+<area shape="rect" id="node154" href="$classpcl_1_1_f_p_f_h_estimation.html" title="FPFHEstimation estimates the Fast Point Feature Histogram (FPFH) descriptor for a given point cloud d..." alt="" coords="2473,1906,2627,1962"/>
+<area shape="rect" id="node156" href="$classpcl_1_1_shape_context3_d_estimation.html" title="ShapeContext3DEstimation implements the 3D shape context descriptor as described in:" alt="" coords="2432,2069,2668,2111"/>
+<area shape="rect" id="node158" href="$classpcl_1_1_c_v_f_h_estimation.html" title="CVFHEstimation estimates the Clustered Viewpoint Feature Histogram (CVFH) descriptor for a given poin..." alt="" coords="2473,2463,2627,2519"/>
+<area shape="rect" id="node159" href="$classpcl_1_1_o_u_r_c_v_f_h_estimation.html" title="OURCVFHEstimation estimates the Oriented, Unique and Repetable Clustered Viewpoint Feature Histogram ..." alt="" coords="2432,2317,2668,2359"/>
+<area shape="rect" id="node160" href="$classpcl_1_1_v_f_h_estimation.html" title="VFHEstimation estimates the Viewpoint Feature Histogram (VFH) descriptor for a given point cloud data..." alt="" coords="2473,2383,2627,2439"/>
+<area shape="rect" id="node162" href="$classpcl_1_1_c_r_h_estimation.html" title="CRHEstimation estimates the Camera Roll Histogram (CRH) descriptor for a given point cloud dataset co..." alt="" coords="2473,3123,2627,3179"/>
+<area shape="rect" id="node164" href="$classpcl_1_1_normal_based_signature_estimation.html" title="Normal&#45;based feature signature estimation class." alt="" coords="2445,3203,2655,3259"/>
+<area shape="rect" id="node166" href="$classpcl_1_1_principal_curvatures_estimation.html" title="PrincipalCurvaturesEstimation estimates the directions (eigenvectors) and magnitudes (eigenvalues) of..." alt="" coords="2462,3443,2638,3499"/>
+<area shape="rect" id="node168" href="$classpcl_1_1_p_f_h_estimation.html" title="PFHEstimation estimates the Point Feature Histogram (PFH) descriptor for a given point cloud dataset ..." alt="" coords="2473,1986,2627,2042"/>
+<area shape="rect" id="node173" href="$classpcl_1_1_g_f_p_f_h_estimation.html" title="GFPFHEstimation estimates the Global Fast Point Feature Histogram (GFPFH) descriptor for a given poin..." alt="" coords="1905,1694,2068,1750"/>
+<area shape="rect" id="node175" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title=" " alt="" coords="2427,2145,2673,2201"/>
+<area shape="rect" id="node179" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title=" " alt="" coords="2423,2235,2677,2291"/>
+<area shape="rect" id="node183" href="$classpcl_1_1_boundary_estimation.html" title="BoundaryEstimation estimates whether a set of points is lying on surface boundaries using an angle cr..." alt="" coords="1869,2407,2105,2448"/>
+<area shape="rect" id="node184" href="$classpcl_1_1_c_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud." alt="" coords="1910,2473,2063,2529"/>
+<area shape="rect" id="node185" href="$classpcl_1_1_g_r_s_d_estimation.html" title="GRSDEstimation estimates the Global Radius&#45;based Surface Descriptor (GRSD) for a given point cloud da..." alt="" coords="1909,2553,2065,2609"/>
+<area shape="rect" id="node186" href="$classpcl_1_1_intensity_gradient_estimation.html" title="IntensityGradientEstimation estimates the intensity gradient for a point cloud that contains position..." alt="" coords="1871,2633,2103,2689"/>
+<area shape="rect" id="node187" href="$classpcl_1_1_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud." alt="" coords="1910,2713,2063,2769"/>
+<area shape="rect" id="node188" href="$classpcl_1_1_p_p_f_r_g_b_estimation.html" title=" " alt="" coords="1901,2793,2072,2849"/>
+<area shape="rect" id="node189" href="$classpcl_1_1_p_p_f_r_g_b_region_estimation.html" title=" " alt="" coords="1869,2873,2105,2915"/>
+<area shape="rect" id="node190" href="$classpcl_1_1_r_s_d_estimation.html" title="RSDEstimation estimates the Radius&#45;based Surface Descriptor (minimal and maximal radius of the local ..." alt="" coords="1910,2939,2063,2995"/>
+<area shape="rect" id="node191" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="1880,2195,2093,2251"/>
+<area shape="rect" id="node176" href="$classpcl_1_1_s_h_o_t_estimation.html" title=" " alt="" coords="3275,2113,3489,2184"/>
+<area shape="rect" id="node178" href="$classpcl_1_1_s_h_o_t_estimation.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="2771,2154,2941,2210"/>
+<area shape="rect" id="node177" href="$classpcl_1_1_s_h_o_t_estimation_o_m_p.html" title="SHOTEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given..." alt="" coords="3559,2121,3772,2177"/>
+<area shape="rect" id="node180" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title=" " alt="" coords="3255,2263,3509,2319"/>
+<area shape="rect" id="node182" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title="SHOTColorEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a giv..." alt="" coords="2743,2297,2969,2353"/>
+<area shape="rect" id="node181" href="$classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html" title="SHOTColorEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a ..." alt="" coords="3571,2263,3759,2319"/>
+<area shape="rect" id="node197" href="$classpcl_1_1_normal_estimation_o_m_p.html" title="NormalEstimationOMP estimates local surface properties at each 3D point, such as surface normals and ..." alt="" coords="1888,1563,2085,1604"/>
+<area shape="rect" id="node203" href="$classpcl_1_1_surface_reconstruction.html" title=" " alt="" coords="1889,3941,2084,3983"/>
+<area shape="rect" id="node209" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class." alt="" coords="1405,3803,1572,3844"/>
+<area shape="rect" id="node214" href="$classpcl_1_1_surface_reconstruction.html" title="SurfaceReconstruction represents a base surface reconstruction class." alt="" coords="1391,3868,1586,3909"/>
+<area shape="rect" id="node204" href="$classpcl_1_1_grid_projection.html" title="Grid projection surface reconstruction method." alt="" coords="2479,3876,2621,3917"/>
+<area shape="rect" id="node205" href="$classpcl_1_1_marching_cubes.html" title="The marching cubes surface reconstruction algorithm." alt="" coords="2475,3941,2625,3983"/>
+<area shape="rect" id="node208" href="$classpcl_1_1_poisson.html" title="The Poisson surface reconstruction algorithm." alt="" coords="2460,4007,2640,4034"/>
+<area shape="rect" id="node206" href="$classpcl_1_1_marching_cubes_hoppe.html" title="The marching cubes surface reconstruction algorithm, using a signed distance function based on the di..." alt="" coords="2761,3909,2951,3951"/>
+<area shape="rect" id="node207" href="$classpcl_1_1_marching_cubes_r_b_f.html" title="The marching cubes surface reconstruction algorithm, using a signed distance function based on radial..." alt="" coords="2769,3975,2943,4016"/>
+<area shape="rect" id="node210" href="$classpcl_1_1_concave_hull.html" title="ConcaveHull (alpha shapes) using libqhull library." alt="" coords="1879,3839,2094,3866"/>
+<area shape="rect" id="node211" href="$classpcl_1_1_convex_hull.html" title="ConvexHull using libqhull library." alt="" coords="1883,3890,2090,3917"/>
+<area shape="rect" id="node212" href="$classpcl_1_1_greedy_projection_triangulation.html" title="GreedyProjectionTriangulation is an implementation of a greedy triangulation algorithm for 3D points ..." alt="" coords="1864,3773,2109,3815"/>
+<area shape="rect" id="node213" href="$classpcl_1_1_organized_fast_mesh.html" title="Simple triangulation/surface reconstruction for organized point clouds." alt="" coords="1899,3708,2075,3749"/>
+<area shape="rect" id="node216" href="$classpcl_1_1_surface_normal_modality.html" title=" " alt="" coords="1387,975,1590,1016"/>
+<area shape="rect" id="node218" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="1388,1040,1589,1081"/>
+<area shape="rect" id="node219" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_tracker.html" title="KLDAdaptiveParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the..." alt="" coords="1889,959,2084,1015"/>
+<area shape="rect" id="node221" href="$classpcl_1_1tracking_1_1_particle_filter_o_m_p_tracker.html" title="ParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within the measure..." alt="" coords="1871,1040,2102,1081"/>
+<area shape="rect" id="node220" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="2453,959,2647,1015"/>
+<area shape="rect" id="node223" href="$classpcl_1_1filters_1_1_convolution3_d.html" title="Convolution3D handles the non organized case where width and height are unknown or if you are only in..." alt="" coords="836,7221,1064,7263"/>
+<area shape="rect" id="node225" href="$classpcl_1_1_correspondence_grouping.html" title="Abstract base class for Correspondence Grouping algorithms." alt="" coords="839,7287,1061,7328"/>
+<area shape="rect" id="node226" href="$classpcl_1_1_geometric_consistency_grouping.html" title="Class implementing a 3D correspondence grouping enforcing geometric consistency among feature corresp..." alt="" coords="1391,7239,1587,7295"/>
+<area shape="rect" id="node227" href="$classpcl_1_1_hough3_d_grouping.html" title="Class implementing a 3D correspondence grouping algorithm that can deal with multiple instances of a ..." alt="" coords="1369,7319,1608,7375"/>
+<area shape="rect" id="node229" href="$classpcl_1_1_pyramid_feature_histogram.html" title="Class that compares two sets of features by using a multiscale representation of the features inside ..." alt="" coords="840,7352,1060,7393"/>
+<area shape="rect" id="node232" href="$classpcl_1_1_seeded_hue_segmentation.html" title="SeededHueSegmentation." alt="" coords="843,7418,1057,7445"/>
 </map>

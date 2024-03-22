@@ -1,7 +1,7 @@
 <map id="pcl::SampleConsensusModelParallelPlane&lt; PointT &gt;" name="pcl::SampleConsensusModelParallelPlane&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation. " alt="" coords="61,510,253,557"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="61,411,253,458"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="71,315,244,344"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="node1" title="SampleConsensusModelParallelPlane defines a model for 3D plane segmentation using additional angular ..." alt="" coords="5,383,213,424"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation." alt="" coords="5,292,213,333"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="5,201,213,243"/>
+<area shape="rect" id="node4" title=" " alt="" coords="64,5,155,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="215,103,382,130"/>
 </map>

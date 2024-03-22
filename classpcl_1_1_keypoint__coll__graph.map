@@ -1,6 +1,7 @@
-<map id="pcl::Keypoint&lt; PointInT, PointOutT &gt;" name="pcl::Keypoint&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<map id="pcl::Keypoint&lt; ImageType &gt;" name="pcl::Keypoint&lt; ImageType &gt;">
+<area shape="rect" id="node1" title="Keypoint represents the base class for key points." alt="" coords="5,352,212,379"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="145,276,333,303"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="206,185,382,212"/>
+<area shape="rect" id="node4" title=" " alt="" coords="95,5,186,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="211,95,377,121"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="pcl::cuda::OrganizedRadiusSearch&lt; CloudPtr &gt;" name="pcl::cuda::OrganizedRadiusSearch&lt; CloudPtr &gt;">
-<area shape="rect" id="node2" href="$structpcl_1_1cuda_1_1_point_x_y_z_r_g_b.html" title="Default point xyz&#45;rgb structure. " alt="" coords="12,101,180,131"/>
-<area shape="rect" id="node4" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars. " alt="" coords="40,5,152,35"/>
+<area shape="rect" id="node1" title="Kernel to compute a radius neighborhood given a organized point cloud (aka range image cloud)" alt="" coords="5,184,204,225"/>
+<area shape="rect" id="node2" href="$structpcl_1_1cuda_1_1_point_x_y_z_r_g_b.html" title="Default point xyz&#45;rgb structure." alt="" coords="17,95,192,121"/>
+<area shape="rect" id="node3" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars." alt="" coords="47,5,163,32"/>
 </map>

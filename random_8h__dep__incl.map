@@ -1,0 +1,14 @@
+<map id="pcl/common/random.h" name="pcl/common/random.h">
+<area shape="rect" id="node1" title="CloudGenerator class generates a point cloud using some random number generator." alt="" coords="255,5,423,32"/>
+<area shape="rect" id="node2" href="$generate_8h_source.html" title=" " alt="" coords="30,87,206,114"/>
+<area shape="rect" id="node4" href="$random_8hpp_source.html" title=" " alt="" coords="231,87,448,114"/>
+<area shape="rect" id="node5" href="$ransac__based_2model__library_8h_source.html" title=" " alt="" coords="472,80,644,121"/>
+<area shape="rect" id="node3" href="$generate_8hpp_source.html" title=" " alt="" coords="5,184,231,211"/>
+<area shape="rect" id="node6" href="$model__library_8h_source.html" title=" " alt="" coords="271,177,434,218"/>
+<area shape="rect" id="node7" href="$ransac__based_2hypothesis_8h_source.html" title=" " alt="" coords="458,177,623,218"/>
+<area shape="rect" id="node9" href="$ransac__based_2obj__rec__ransac_8h_source.html" title=" " alt="" coords="570,273,751,315"/>
+<area shape="rect" id="node11" href="$ransac__based_2rigid__transform__space_8h_source.html" title=" " alt="" coords="699,169,871,225"/>
+<area shape="rect" id="node8" href="$hypothesis_8h_source.html" title=" " alt="" coords="341,281,546,307"/>
+<area shape="rect" id="node10" href="$obj__rec__ransac_8h_source.html" title=" " alt="" coords="589,363,732,404"/>
+<area shape="rect" id="node12" href="$rigid__transform__space_8h_source.html" title=" " alt="" coords="776,273,927,315"/>
+</map>

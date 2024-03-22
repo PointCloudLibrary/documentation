@@ -1,5 +1,8 @@
 <map id="pcl::PassThrough&lt; PointT &gt;" name="pcl::PassThrough&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="40,161,157,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="29,83,168,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
+<area shape="rect" id="node1" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type." alt="" coords="60,427,263,453"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="97,336,225,377"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="85,260,238,287"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,184,181,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="52,5,143,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="146,95,313,121"/>
 </map>

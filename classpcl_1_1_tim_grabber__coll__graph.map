@@ -1,0 +1,9 @@
+<map id="pcl::TimGrabber" name="pcl::TimGrabber">
+<area shape="rect" id="node1" title=" " alt="" coords="14,380,141,407"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="5,283,107,310"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="131,276,285,317"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="113,187,303,213"/>
+<area shape="rect" id="node5" title=" " alt="" coords="165,5,240,32"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="256,96,376,123"/>
+<area shape="rect" id="node7" title=" " alt="" coords="279,5,353,32"/>
+</map>

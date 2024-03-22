@@ -1,7 +1,8 @@
 <map id="pcl::device::VFHEstimationImpl" name="pcl::device::VFHEstimationImpl">
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; int \&gt;" alt="" coords="553,5,700,51"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="7,133,169,163"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="223,87,401,116"/>
-<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; NormalType \&gt;" alt="" coords="553,74,700,121"/>
-<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="553,143,700,190"/>
+<area shape="rect" id="node1" title=" " alt="" coords="861,78,1088,105"/>
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="595,5,756,47"/>
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class" alt="" coords="5,113,185,139"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class" alt="" coords="235,78,433,105"/>
+<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="595,71,756,112"/>
+<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="595,136,756,177"/>
 </map>

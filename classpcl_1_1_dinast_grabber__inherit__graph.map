@@ -1,3 +1,4 @@
 <map id="pcl::DinastGrabber" name="pcl::DinastGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="24,5,117,35"/>
+<area shape="rect" id="node1" title="Grabber for DINAST devices (i.e., IPA&#45;1002, IPA&#45;1110, IPA&#45;2001)" alt="" coords="5,80,148,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="26,5,127,32"/>
 </map>

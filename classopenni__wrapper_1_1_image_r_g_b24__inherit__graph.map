@@ -1,3 +1,4 @@
 <map id="openni_wrapper::ImageRGB24" name="openni_wrapper::ImageRGB24">
-<area shape="rect" id="node2" href="$classopenni__wrapper_1_1_image.html" title="Image class containing just a reference to image meta data. " alt="" coords="27,5,184,35"/>
+<area shape="rect" id="node1" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying RGB24 image." alt="" coords="5,80,224,107"/>
+<area shape="rect" id="node2" href="$classopenni__wrapper_1_1_image.html" title="Image class containing just a reference to image meta data." alt="" coords="27,5,202,32"/>
 </map>

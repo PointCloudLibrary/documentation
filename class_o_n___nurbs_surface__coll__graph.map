@@ -1,5 +1,6 @@
 <map id="ON_NurbsSurface" name="ON_NurbsSurface">
-<area shape="rect" id="node2" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="23,160,116,189"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="16,83,123,112"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="27,5,112,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,141,256"/>
+<area shape="rect" id="node2" href="$class_o_n___surface.html" title=" " alt="" coords="24,155,123,181"/>
+<area shape="rect" id="node3" href="$class_o_n___geometry.html" title=" " alt="" coords="16,80,131,107"/>
+<area shape="rect" id="node4" href="$class_o_n___object.html" title=" " alt="" coords="28,5,119,32"/>
 </map>

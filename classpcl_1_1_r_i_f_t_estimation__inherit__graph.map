@@ -1,5 +1,6 @@
 <map id="pcl::RIFTEstimation&lt; PointInT, GradientT, PointOutT &gt;" name="pcl::RIFTEstimation&lt; PointInT, GradientT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="16,182,171,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="node1" title="RIFTEstimation estimates the Rotation Invariant Feature Transform descriptors for a given point cloud..." alt="" coords="16,261,183,317"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="14,171,185,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,95,193,121"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="11,5,187,32"/>
 </map>
