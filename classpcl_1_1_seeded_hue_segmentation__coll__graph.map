@@ -1,6 +1,10 @@
 <map id="pcl::SeededHueSegmentation" name="pcl::SeededHueSegmentation">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointXYZRGB \&gt;" alt="" coords="5,129,216,159"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="28,15,193,44"/>
-<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointXYZRGB \&gt;" alt="" coords="240,121,373,167"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="240,6,373,53"/>
+<area shape="rect" id="node1" title="SeededHueSegmentation." alt="" coords="1229,101,1444,128"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="921,63,1144,89"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="576,47,752,73"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,97,96,124"/>
+<area shape="rect" id="node5" title=" " alt="" coords="284,47,451,73"/>
+<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="961,123,1105,165"/>
+<area shape="rect" id="node7" title=" " alt="" coords="264,149,471,176"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="592,211,736,253"/>
 </map>

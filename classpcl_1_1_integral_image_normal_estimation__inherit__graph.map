@@ -1,6 +1,7 @@
 <map id="pcl::IntegralImageNormalEstimation&lt; PointInT, PointOutT &gt;" name="pcl::IntegralImageNormalEstimation&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node9" href="$classpcl_1_1_integral_image_normal_estimation.html" title="pcl::IntegralImageNormal\lEstimation\&lt; pcl::PointXYZRGBA,\l pcl::pcl::Normal \&gt;" alt="" coords="5,427,224,491"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="37,182,192,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="27,101,203,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="32,5,197,35"/>
+<area shape="rect" id="node1" title="Surface normal estimation on organized data using integral images." alt="" coords="29,261,217,317"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_integral_image_normal_estimation.html" title=" " alt="" coords="5,395,240,451"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="37,171,208,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="29,95,217,121"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="35,5,211,32"/>
 </map>

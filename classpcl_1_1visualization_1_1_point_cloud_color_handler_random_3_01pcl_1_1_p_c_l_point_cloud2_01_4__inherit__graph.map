@@ -1,3 +1,4 @@
 <map id="pcl::visualization::PointCloudColorHandlerRandom&lt; pcl::PCLPointCloud2 &gt;" name="pcl::visualization::PointCloudColorHandlerRandom&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Base Handler class for PointCloud colors. " alt="" coords="29,5,200,69"/>
+<area shape="rect" id="node1" title="Handler for random PointCloud colors (i.e., R, G, B will be randomly chosen)" alt="" coords="5,109,244,165"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Base Handler class for PointCloud colors." alt="" coords="32,5,217,61"/>
 </map>

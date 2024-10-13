@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_fern_trainer.html" title="Trainer for a Fern. " alt="" coords="5,5,195,69"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_file_reader.html" title="Point Cloud Data (FILE) file format reader interface." alt="" coords="5,81,124,108"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_a_s_c_i_i_reader.html" title="Ascii Point Cloud Reader." alt="" coords="172,5,301,32"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_o_b_j_reader.html" title=" " alt="" coords="177,56,296,83"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_d_reader.html" title="Point Cloud Data (PCD) file format reader." alt="" coords="175,107,298,133"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_l_y_reader.html" title="Point Cloud Data (PLY) file format reader." alt="" coords="178,157,295,184"/>
 </map>

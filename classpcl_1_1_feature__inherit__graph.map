@@ -1,50 +1,75 @@
 <map id="pcl::Feature&lt; PointInT, PointOutT &gt;" name="pcl::Feature&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1_difference_of_normals_estimation.html" title="A Difference of Normals (DoN) scale filter implementation for point cloud data. " alt="" coords="936,788,1107,852"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_e_s_f_estimation.html" title="ESFEstimation estimates the ensemble of shape functions descriptors for a given point cloud dataset c..." alt="" coords="940,875,1103,922"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_feature_from_labels.html" title="pcl::FeatureFromLabels\l\&lt; PointInT, PointOutT \&gt;" alt="" coords="940,945,1103,991"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointOutT \&gt;" alt="" coords="936,1014,1107,1061"/>
-<area shape="rect" id="node59" href="$classpcl_1_1_integral_image_normal_estimation.html" title="Surface normal estimation on organized data using integral images. " alt="" coords="937,1361,1105,1425"/>
-<area shape="rect" id="node63" href="$classpcl_1_1_intensity_spin_estimation.html" title="IntensitySpinEstimation estimates the intensity&#45;domain spin image descriptors for a given point cloud..." alt="" coords="929,1537,1113,1583"/>
-<area shape="rect" id="node65" href="$classpcl_1_1_linear_least_squares_normal_estimation.html" title="Surface normal estimation on dense data using a least&#45;squares estimation based on a first&#45;order Taylo..." alt="" coords="909,1606,1133,1653"/>
-<area shape="rect" id="node67" href="$classpcl_1_1_moment_invariants_estimation.html" title="MomentInvariantsEstimation estimates the 3 moment invariants (j1, j2, j3) at each 3D point..." alt="" coords="915,1675,1128,1722"/>
-<area shape="rect" id="node69" href="$classpcl_1_1_normal_estimation.html" title="NormalEstimation estimates local surface properties (surface normals and curvatures)at each 3D point..." alt="" coords="940,1745,1103,1791"/>
-<area shape="rect" id="node73" href="$classpcl_1_1_r_i_f_t_estimation.html" title="RIFTEstimation estimates the Rotation Invariant Feature Transform descriptors for a given point cloud..." alt="" coords="940,1814,1103,1861"/>
-<area shape="rect" id="node75" href="$classpcl_1_1_r_o_p_s_estimation.html" title="This class implements the method for extracting RoPS features presented in the article &quot;Rotational Pr..." alt="" coords="940,1883,1103,1930"/>
-<area shape="rect" id="node77" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="909,1953,1133,1999"/>
-<area shape="rect" id="node81" href="$classpcl_1_1_spin_image_estimation.html" title="Estimates spin&#45;image descriptors in the given input points. " alt="" coords="936,2022,1107,2069"/>
-<area shape="rect" id="node83" href="$classpcl_1_1_unique_shape_context.html" title="UniqueShapeContext implements the Unique Shape Context Descriptor described here: ..." alt="" coords="936,2091,1107,2138"/>
-<area shape="rect" id="node85" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointT,\l PointFeature \&gt;" alt="" coords="949,1291,1093,1338"/>
-<area shape="rect" id="node88" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; pcl::\lPointXYZRGBA, pcl::pcl\l::Normal \&gt;" alt="" coords="939,1449,1104,1513"/>
-<area shape="rect" id="node91" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointSource,\l PointFeature \&gt;" alt="" coords="932,2161,1111,2207"/>
-<area shape="rect" id="node93" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l BorderDescription \&gt;" alt="" coords="920,2230,1123,2277"/>
-<area shape="rect" id="node97" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l Narf36 \&gt;" alt="" coords="920,2299,1123,2346"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,1684,472,1713"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,1684,171,1713"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_g_f_p_f_h_estimation.html" title="GFPFHEstimation estimates the Global Fast Point Feature Histogram (GFPFH) descriptor for a given poin..." alt="" coords="1357,5,1512,69"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_b_o_a_r_d_local_reference_frame_estimation.html" title="BOARDLocalReferenceFrameEstimation implements the BOrder Aware Repeatable Directions algorithm for lo..." alt="" coords="1341,93,1528,157"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_boundary_estimation.html" title="BoundaryEstimation estimates whether a set of points is lying on surface boundaries using an angle cr..." alt="" coords="1325,181,1544,227"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_c_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud. " alt="" coords="1363,251,1507,315"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_c_r_h_estimation.html" title="CRHEstimation estimates the Camera Roll Histogram (CRH) descriptor for a given point cloud dataset co..." alt="" coords="1364,339,1505,403"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_c_v_f_h_estimation.html" title="CVFHEstimation estimates the Clustered Viewpoint Feature Histogram (CVFH) descriptor for a given poin..." alt="" coords="1361,427,1508,491"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_f_p_f_h_estimation.html" title="FPFHEstimation estimates the Fast Point Feature Histogram (FPFH) descriptor for a given point cloud d..." alt="" coords="1363,515,1507,579"/>
-<area shape="rect" id="node31" href="$classpcl_1_1_g_r_s_d_estimation.html" title="GRSDEstimation estimates the Global Radius&#45;based Surface Descriptor (GRSD) for a given point cloud da..." alt="" coords="1361,603,1508,667"/>
-<area shape="rect" id="node33" href="$classpcl_1_1_intensity_gradient_estimation.html" title="IntensityGradientEstimation estimates the intensity gradient for a point cloud that contains position..." alt="" coords="1325,690,1544,737"/>
-<area shape="rect" id="node35" href="$classpcl_1_1_o_u_r_c_v_f_h_estimation.html" title="OURCVFHEstimation estimates the Oriented, Unique and Repetable Clustered Viewpoint Feature Histogram ..." alt="" coords="1325,759,1544,806"/>
-<area shape="rect" id="node37" href="$classpcl_1_1_p_f_h_estimation.html" title="PFHEstimation estimates the Point Feature Histogram (PFH) descriptor for a given point cloud dataset ..." alt="" coords="1364,829,1505,893"/>
-<area shape="rect" id="node39" href="$classpcl_1_1_p_f_h_r_g_b_estimation.html" title="pcl::PFHRGBEstimation\l\&lt; PointInT, PointNT,\l PointOutT \&gt;" alt="" coords="1352,917,1517,981"/>
-<area shape="rect" id="node41" href="$classpcl_1_1_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud. " alt="" coords="1364,1005,1505,1069"/>
-<area shape="rect" id="node43" href="$classpcl_1_1_p_p_f_r_g_b_estimation.html" title="pcl::PPFRGBEstimation\l\&lt; PointInT, PointNT,\l PointOutT \&gt;" alt="" coords="1353,1093,1516,1157"/>
-<area shape="rect" id="node45" href="$classpcl_1_1_p_p_f_r_g_b_region_estimation.html" title="pcl::PPFRGBRegionEstimation\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="1325,1181,1544,1227"/>
-<area shape="rect" id="node47" href="$classpcl_1_1_principal_curvatures_estimation.html" title="PrincipalCurvaturesEstimation estimates the directions (eigenvectors) and magnitudes (eigenvalues) of..." alt="" coords="1355,1251,1515,1315"/>
-<area shape="rect" id="node49" href="$classpcl_1_1_r_s_d_estimation.html" title="RSDEstimation estimates the Radius&#45;based Surface Descriptor (minimal and maximal radius of the local ..." alt="" coords="1364,1339,1505,1403"/>
-<area shape="rect" id="node51" href="$classpcl_1_1_shape_context3_d_estimation.html" title="ShapeContext3DEstimation implements the 3D shape context descriptor as described in: ..." alt="" coords="1325,1426,1544,1473"/>
-<area shape="rect" id="node53" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="1325,1495,1544,1542"/>
-<area shape="rect" id="node55" href="$classpcl_1_1_v_f_h_estimation.html" title="VFHEstimation estimates the Viewpoint Feature Histogram (VFH) descriptor for a given point cloud data..." alt="" coords="1364,1565,1505,1629"/>
-<area shape="rect" id="node57" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointT, PointNT, PointFeature \&gt;" alt="" coords="1324,1653,1545,1699"/>
-<area shape="rect" id="node29" href="$classpcl_1_1_f_p_f_h_estimation_o_m_p.html" title="FPFHEstimationOMP estimates the Fast Point Feature Histogram (FPFH) descriptor for a given point clou..." alt="" coords="1597,523,1816,570"/>
-<area shape="rect" id="node61" href="$classpcl_1_1_integral_image_normal_estimation.html" title="pcl::IntegralImageNormal\lEstimation\&lt; pcl::PointXYZRGBA,\l pcl::pcl::Normal \&gt;" alt="" coords="1325,1723,1544,1787"/>
-<area shape="rect" id="node71" href="$classpcl_1_1_normal_estimation_o_m_p.html" title="NormalEstimationOMP estimates local surface properties at each 3D point, such as surface normals and ..." alt="" coords="1344,1810,1525,1857"/>
-<area shape="rect" id="node79" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation_o_m_p.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="1329,1944,1540,2008"/>
-<area shape="rect" id="node95" href="$classpcl_1_1_range_image_border_extractor.html" title="Extract obstacle borders from range images, meaning positions where there is a transition from foregr..." alt="" coords="1329,2239,1540,2268"/>
-<area shape="rect" id="node99" href="$classpcl_1_1_narf_descriptor.html" title="Computes NARF feature descriptors for points in a range image See B. " alt="" coords="1369,2308,1500,2337"/>
+<area shape="rect" id="node1" title="Feature represents the base feature class." alt="" coords="555,1987,725,2029"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,608,1703,664"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,1533,1703,1589"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,181,1703,237"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,268,1703,324"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,379,1703,435"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1489,462,1731,503"/>
+<area shape="rect" id="node18" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,528,1703,584"/>
+<area shape="rect" id="node20" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1517,101,1703,157"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_g_a_s_d_estimation.html" title=" " alt="" coords="2023,1821,2259,1862"/>
+<area shape="rect" id="node24" href="$classpcl_1_1_integral_image_normal_estimation.html" title=" " alt="" coords="1493,1928,1727,1984"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_normal_estimation.html" title=" " alt="" coords="1527,2009,1693,2050"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_difference_of_normals_estimation.html" title="A Difference of Normals (DoN) scale filter implementation for point cloud data." alt="" coords="1035,2112,1222,2168"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_feature_from_labels.html" title=" " alt="" coords="1013,2193,1245,2234"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1011,937,1247,978"/>
+<area shape="rect" id="node50" href="$classpcl_1_1_integral_image_normal_estimation.html" title="Surface normal estimation on organized data using integral images." alt="" coords="1035,1915,1223,1971"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_intensity_spin_estimation.html" title="IntensitySpinEstimation estimates the intensity&#45;domain spin image descriptors for a given point cloud..." alt="" coords="1027,2258,1231,2299"/>
+<area shape="rect" id="node52" href="$classpcl_1_1_linear_least_squares_normal_estimation.html" title="Surface normal estimation on dense data using a least&#45;squares estimation based on a first&#45;order Taylo..." alt="" coords="1005,2323,1252,2365"/>
+<area shape="rect" id="node53" href="$classpcl_1_1_moment_invariants_estimation.html" title="MomentInvariantsEstimation estimates the 3 moment invariants (j1, j2, j3) at each 3D point." alt="" coords="1009,2389,1248,2430"/>
+<area shape="rect" id="node54" href="$classpcl_1_1_normal_estimation.html" title="NormalEstimation estimates local surface properties (surface normals and curvatures)at each 3D point." alt="" coords="1040,2046,1217,2087"/>
+<area shape="rect" id="node56" href="$classpcl_1_1_r_i_f_t_estimation.html" title="RIFTEstimation estimates the Rotation Invariant Feature Transform descriptors for a given point cloud..." alt="" coords="1045,2455,1212,2511"/>
+<area shape="rect" id="node57" href="$classpcl_1_1_r_o_p_s_estimation.html" title="This class implements the method for extracting RoPS features presented in the article &quot;Rotational Pr..." alt="" coords="1040,2535,1217,2577"/>
+<area shape="rect" id="node58" href="$classpcl_1_1_spin_image_estimation.html" title="Estimates spin&#45;image descriptors in the given input points." alt="" coords="1011,2601,1247,2642"/>
+<area shape="rect" id="node59" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1043,1681,1214,1722"/>
+<area shape="rect" id="node63" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1040,2666,1217,2707"/>
+<area shape="rect" id="node65" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1010,2731,1247,2773"/>
+<area shape="rect" id="node67" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1031,2797,1226,2838"/>
+<area shape="rect" id="node68" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1018,2862,1239,2903"/>
+<area shape="rect" id="node70" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1018,2927,1239,2969"/>
+<area shape="rect" id="node72" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1043,1798,1214,1839"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="317,1995,505,2021"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,1995,181,2021"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_f_h_r_g_b_estimation.html" title="Similar to the Point Feature Histogram descriptor, but also takes color into account." alt="" coords="2054,619,2227,675"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_f_p_f_h_estimation.html" title="FPFHEstimation estimates the Fast Point Feature Histogram (FPFH) descriptor for a given point cloud d..." alt="" coords="2064,1473,2217,1529"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_shape_context3_d_estimation.html" title="ShapeContext3DEstimation implements the 3D shape context descriptor as described in:" alt="" coords="2023,86,2259,127"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_c_v_f_h_estimation.html" title="CVFHEstimation estimates the Clustered Viewpoint Feature Histogram (CVFH) descriptor for a given poin..." alt="" coords="2063,232,2218,288"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_o_u_r_c_v_f_h_estimation.html" title="OURCVFHEstimation estimates the Oriented, Unique and Repetable Clustered Viewpoint Feature Histogram ..." alt="" coords="2023,313,2259,354"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_v_f_h_estimation.html" title="VFHEstimation estimates the Viewpoint Feature Histogram (VFH) descriptor for a given point cloud data..." alt="" coords="2064,152,2217,208"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_c_r_h_estimation.html" title="CRHEstimation estimates the Camera Roll Histogram (CRH) descriptor for a given point cloud dataset co..." alt="" coords="2064,379,2217,435"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_normal_based_signature_estimation.html" title="Normal&#45;based feature signature estimation class." alt="" coords="2035,459,2246,515"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_principal_curvatures_estimation.html" title="PrincipalCurvaturesEstimation estimates the directions (eigenvectors) and magnitudes (eigenvalues) of..." alt="" coords="2053,539,2229,595"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_p_f_h_estimation.html" title="PFHEstimation estimates the Point Feature Histogram (PFH) descriptor for a given point cloud dataset ..." alt="" coords="2064,5,2217,61"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_g_a_s_d_color_estimation.html" title="GASDColorEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given..." alt="" coords="2349,1821,2539,1862"/>
+<area shape="rect" id="node28" href="$classpcl_1_1_g_f_p_f_h_estimation.html" title="GFPFHEstimation estimates the Global Fast Point Feature Histogram (GFPFH) descriptor for a given poin..." alt="" coords="1529,2185,1691,2241"/>
+<area shape="rect" id="node30" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title=" " alt="" coords="2017,1116,2264,1172"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title=" " alt="" coords="2013,959,2268,1015"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_boundary_estimation.html" title="BoundaryEstimation estimates whether a set of points is lying on surface boundaries using an angle cr..." alt="" coords="1492,819,1728,861"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_c_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud." alt="" coords="1533,885,1687,941"/>
+<area shape="rect" id="node40" href="$classpcl_1_1_g_r_s_d_estimation.html" title="GRSDEstimation estimates the Global Radius&#45;based Surface Descriptor (GRSD) for a given point cloud da..." alt="" coords="1532,965,1688,1021"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_intensity_gradient_estimation.html" title="IntensityGradientEstimation estimates the intensity gradient for a point cloud that contains position..." alt="" coords="1494,1205,1726,1261"/>
+<area shape="rect" id="node42" href="$classpcl_1_1_p_p_f_estimation.html" title="Class that calculates the &quot;surflet&quot; features for each pair in the given pointcloud." alt="" coords="1533,1125,1687,1181"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_p_p_f_r_g_b_estimation.html" title=" " alt="" coords="1525,1285,1695,1341"/>
+<area shape="rect" id="node44" href="$classpcl_1_1_p_p_f_r_g_b_region_estimation.html" title=" " alt="" coords="1492,1417,1728,1458"/>
+<area shape="rect" id="node45" href="$classpcl_1_1_r_s_d_estimation.html" title="RSDEstimation estimates the Radius&#45;based Surface Descriptor (minimal and maximal radius of the local ..." alt="" coords="1533,688,1687,744"/>
+<area shape="rect" id="node46" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="1503,1045,1717,1101"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1499,1613,1721,1669"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_s_h_o_t_estimation.html" title=" " alt="" coords="2761,1095,2976,1166"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_s_h_o_t_estimation.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="2359,1149,2529,1205"/>
+<area shape="rect" id="node32" href="$classpcl_1_1_s_h_o_t_estimation_o_m_p.html" title="SHOTEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given..." alt="" coords="3045,1103,3259,1159"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title=" " alt="" coords="2741,989,2996,1045"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title="SHOTColorEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a giv..." alt="" coords="2331,1008,2557,1064"/>
+<area shape="rect" id="node36" href="$classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html" title="SHOTColorEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a ..." alt="" coords="3058,989,3246,1045"/>
+<area shape="rect" id="node48" href="$classpcl_1_1_b_o_a_r_d_local_reference_frame_estimation.html" title="BOARDLocalReferenceFrameEstimation implements the BOrder Aware Repeatable Directions algorithm for lo..." alt="" coords="2038,1561,2243,1617"/>
+<area shape="rect" id="node49" href="$classpcl_1_1_f_l_a_r_e_local_reference_frame_estimation.html" title="FLARELocalReferenceFrameEstimation implements the Fast LocAl Reference framE algorithm for local refe..." alt="" coords="2000,1641,2281,1697"/>
+<area shape="rect" id="node55" href="$classpcl_1_1_normal_estimation_o_m_p.html" title="NormalEstimationOMP estimates local surface properties at each 3D point, such as surface normals and ..." alt="" coords="1511,2074,1709,2115"/>
+<area shape="rect" id="node60" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title=" " alt="" coords="2023,1727,2258,1783"/>
+<area shape="rect" id="node62" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="1487,1745,1733,1786"/>
+<area shape="rect" id="node61" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation_o_m_p.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="2331,1727,2557,1783"/>
+<area shape="rect" id="node64" href="$classpcl_1_1_e_s_f_estimation.html" title="ESFEstimation estimates the ensemble of shape functions descriptors for a given point cloud dataset c..." alt="" coords="1521,2662,1699,2703"/>
+<area shape="rect" id="node66" href="$classpcl_1_1_unique_shape_context.html" title="UniqueShapeContext implements the Unique Shape Context Descriptor described here:" alt="" coords="1517,2728,1703,2784"/>
+<area shape="rect" id="node69" href="$classpcl_1_1_range_image_border_extractor.html" title="Extract obstacle borders from range images, meaning positions where there is a transition from foregr..." alt="" coords="1493,2869,1727,2896"/>
+<area shape="rect" id="node71" href="$classpcl_1_1_narf_descriptor.html" title="Computes NARF feature descriptors for points in a range image See B." alt="" coords="1538,2935,1682,2961"/>
+<area shape="rect" id="node73" href="$classpcl_1_1_g_a_s_d_estimation.html" title="GASDEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given poin..." alt="" coords="1521,1862,1699,1903"/>
 </map>

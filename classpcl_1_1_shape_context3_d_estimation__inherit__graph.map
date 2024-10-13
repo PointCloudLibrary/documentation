@@ -1,6 +1,8 @@
 <map id="pcl::ShapeContext3DEstimation&lt; PointInT, PointNT, PointOutT &gt;" name="pcl::ShapeContext3DEstimation&lt; PointInT, PointNT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="5,281,224,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="37,182,192,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="27,101,203,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="32,5,197,35"/>
+<area shape="rect" id="node1" title="ShapeContext3DEstimation implements the 3D shape context descriptor as described in:" alt="" coords="1464,13,1700,54"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1228,5,1415,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="555,13,725,54"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="775,42,1011,83"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="317,20,505,47"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,20,181,47"/>
 </map>

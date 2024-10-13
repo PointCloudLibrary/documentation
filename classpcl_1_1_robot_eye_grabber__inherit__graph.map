@@ -1,3 +1,4 @@
 <map id="pcl::RobotEyeGrabber" name="pcl::RobotEyeGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="33,5,127,35"/>
+<area shape="rect" id="node1" title="Grabber for the Ocular Robotics RobotEye sensor." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="36,5,137,32"/>
 </map>

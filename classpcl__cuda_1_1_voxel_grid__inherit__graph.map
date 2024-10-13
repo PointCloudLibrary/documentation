@@ -1,3 +1,5 @@
 <map id="pcl_cuda::VoxelGrid&lt; CloudT &gt;" name="pcl_cuda::VoxelGrid&lt; CloudT &gt;">
-<area shape="rect" id="node2" href="$classpcl__cuda_1_1_filter.html" title="Removes points with x, y, or z equal to NaN. " alt="" coords="8,83,184,112"/>
+<area shape="rect" id="node1" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="28,155,177,196"/>
+<area shape="rect" id="node2" href="$classpcl__cuda_1_1_filter.html" title="Removes points with x, y, or z equal to NaN." alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="7,5,198,32"/>
 </map>

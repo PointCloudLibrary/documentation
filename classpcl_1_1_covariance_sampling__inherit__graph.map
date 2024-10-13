@@ -1,5 +1,6 @@
 <map id="pcl::CovarianceSampling&lt; PointT, PointNT &gt;" name="pcl::CovarianceSampling&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="29,161,147,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,83,157,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="node1" title="Point Cloud sampling based on the 6D covariances." alt="" coords="5,244,188,285"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="33,155,161,196"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="20,80,173,107"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="9,5,185,32"/>
 </map>

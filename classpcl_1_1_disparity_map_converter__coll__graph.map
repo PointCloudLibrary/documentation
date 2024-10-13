@@ -1,5 +1,8 @@
 <map id="pcl::DisparityMapConverter&lt; PointT &gt;" name="pcl::DisparityMapConverter&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::RGB \&gt;" alt="" coords="68,315,207,362"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="node1" title="Compute point cloud from the disparity map." alt="" coords="5,380,205,421"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="29,276,182,317"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="10,187,201,213"/>
+<area shape="rect" id="node4" title=" " alt="" coords="61,5,136,32"/>
+<area shape="rect" id="node5" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="153,96,273,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="176,5,251,32"/>
 </map>

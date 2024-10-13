@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1octree_1_1_iterator_state.html" title="pcl::octree::IteratorState" alt="" coords="5,5,168,35"/>
+<area shape="rect" id="node1" href="$classpcl_1_1octree_1_1_octree_base.html" title=" " alt="" coords="5,115,232,171"/>
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title=" " alt="" coords="280,5,585,91"/>
+<area shape="rect" id="node4" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title=" " alt="" coords="297,115,569,171"/>
+<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class" alt="" coords="319,195,547,251"/>
+<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_octree_point_cloud_point_vector.html" title="Octree pointcloud point vector class" alt="" coords="642,13,883,83"/>
+<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_point_cloud_search.html" title="Octree pointcloud search class" alt="" coords="633,115,892,171"/>
+<area shape="rect" id="node7" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title=" " alt="" coords="639,202,886,243"/>
 </map>

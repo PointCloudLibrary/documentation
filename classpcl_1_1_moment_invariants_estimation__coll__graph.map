@@ -1,7 +1,8 @@
 <map id="pcl::MomentInvariantsEstimation&lt; PointInT, PointOutT &gt;" name="pcl::MomentInvariantsEstimation&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="121,235,276,282"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="node1" title="MomentInvariantsEstimation estimates the 3 moment invariants (j1, j2, j3) at each 3D point." alt="" coords="5,440,244,481"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="39,349,210,391"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="128,273,316,300"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="143,184,319,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="98,5,189,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="213,95,380,121"/>
 </map>

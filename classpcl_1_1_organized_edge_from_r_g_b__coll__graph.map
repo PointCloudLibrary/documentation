@@ -1,4 +1,7 @@
 <map id="pcl::OrganizedEdgeFromRGB&lt; PointT, PointLT &gt;" name="pcl::OrganizedEdgeFromRGB&lt; PointT, PointLT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="20,83,185,130"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="20,5,185,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,351,213,392"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="20,260,199,301"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="21,184,197,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="64,5,155,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="158,95,325,121"/>
 </map>

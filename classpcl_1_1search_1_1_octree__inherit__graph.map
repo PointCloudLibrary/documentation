@@ -1,3 +1,5 @@
 <map id="pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;" name="pcl::search::Octree&lt; PointT, LeafTWrap, BranchTWrap, OctreeT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="25,6,159,53"/>
+<area shape="rect" id="node1" title="search::Octree is a wrapper class which implements nearest neighbor search operations based on the pc..." alt="" coords="5,96,192,152"/>
+<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_octree.html" title=" " alt="" coords="27,215,170,256"/>
+<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="27,5,171,47"/>
 </map>

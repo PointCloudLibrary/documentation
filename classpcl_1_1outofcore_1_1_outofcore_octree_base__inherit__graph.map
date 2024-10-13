@@ -1,3 +1,4 @@
 <map id="pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, PointT &gt;" name="pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title="pcl::outofcore::Outofcore\lOctreeBase\&lt; ContainerT,\l pcl::PointXYZRGB \&gt;" alt="" coords="5,152,176,216"/>
+<area shape="rect" id="node1" title="This code defines the octree used for point storage at Urban Robotics." alt="" coords="5,13,192,69"/>
+<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title=" " alt="" coords="493,5,741,76"/>
 </map>

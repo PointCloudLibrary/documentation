@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using PCL on windows with VCPKG and CMake &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          </a>
+              <div class="version">
+                1.14.1-dev
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Using PCL on windows with VCPKG and CMake</a><ul>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#pcl-s-dependencies">PCL’s dependencies</a></li>
+<li><a class="reference internal" href="#install-pcl-for-usage">Install PCL for usage</a></li>
+<li><a class="reference internal" href="#using-dependencies-installed-with-vcpkg-in-cmake-projects">Using dependencies installed with VCPKG in CMake projects</a></li>
+<li><a class="reference internal" href="#find-pcl-using-cmake">Find PCL using CMake</a></li>
+<li><a class="reference internal" href="#install-pcl-dependencies-for-contributions">Install PCL dependencies for contributions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Using PCL on windows with VCPKG and CMake</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-pcl-on-windows-with-vcpkg-and-cmake">
+<span id="pcl-vcpkg-windows"></span><h1><a class="toc-backref" href="#id4">Using PCL on windows with VCPKG and CMake</a></h1>
+<p>This tutorial explains how to acquire Point Cloud Library on
+Microsoft Windows platforms using <a class="reference external" href="https://github.com/microsoft/vcpkg">VCPKG</a>.</p>
+<p>For additional information how to use VCPKG, please see their <a class="reference external" href="https://github.com/microsoft/vcpkg/blob/master/docs/README.md">documentation</a>.</p>
+<p>Last updated: 22. December 2021</p>
+<img alt="Microsoft Windows logo" class="align-right" src="_images/windows_logo.png" />
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#using-pcl-on-windows-with-vcpkg-and-cmake" id="id4">Using PCL on windows with VCPKG and CMake</a></p>
+<ul>
+<li><p><a class="reference internal" href="#requirements" id="id5">Requirements</a></p></li>
+<li><p><a class="reference internal" href="#pcl-s-dependencies" id="id6">PCL’s dependencies</a></p></li>
+<li><p><a class="reference internal" href="#install-pcl-for-usage" id="id7">Install PCL for usage</a></p></li>
+<li><p><a class="reference internal" href="#using-dependencies-installed-with-vcpkg-in-cmake-projects" id="id8">Using dependencies installed with VCPKG in CMake projects</a></p></li>
+<li><p><a class="reference internal" href="#find-pcl-using-cmake" id="id9">Find PCL using CMake</a></p></li>
+<li><p><a class="reference internal" href="#install-pcl-dependencies-for-contributions" id="id10">Install PCL dependencies for contributions</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="requirements">
+<h2><a class="toc-backref" href="#id5">Requirements</a></h2>
+<p>Download VCPKG sources to eg. <em>c:\vcpkg</em> preferably by cloning their repository.</p>
+<p>Navigate to <em>c:\vcpkg</em> in <strong>powershell</strong> and run</p>
+<blockquote>
+<div><p>.\bootstrap-vcpkg.bat</p>
+</div></blockquote>
+<p>This will download vcpkg.exe.</p>
+</section>
+<section id="pcl-s-dependencies">
+<h2><a class="toc-backref" href="#id6">PCL’s dependencies</a></h2>
+<p>PCL’s required dependencies available on VCPKG are:</p>
+<ul class="simple">
+<li><p>Boost</p></li>
+<li><p>FLANN</p></li>
+<li><p>Eigen3</p></li>
+</ul>
+<p>PCL’s optional dependencies available on VCPKG are:</p>
+<ul class="simple">
+<li><p>VTK - for visualization module</p>
+<ul>
+<li><p>Feature OpenGL - required</p></li>
+<li><p>Feature Qt - optional for QVTK, used in apps</p></li>
+</ul>
+</li>
+<li><p>GLEW - for simulation module</p></li>
+<li><p>Qhull - for convex/concave in surface module</p></li>
+<li><p>Qt - for apps that use Qt for GUI</p></li>
+<li><p>Google Test - for unit tests</p></li>
+<li><p>Google Benchmark - for benchmarks</p></li>
+<li><p>OpenNI2</p></li>
+<li><p>Realsense2</p></li>
+<li><p>PNG - for a single openni app</p></li>
+<li><p>Pcap - for Velodyne HDL driver</p></li>
+</ul>
+<p>PCL’s optional dependencies not on VCPKG</p>
+<ul class="simple">
+<li><p>CUDA - only a port that verify its installed (version 10.1).</p></li>
+<li><p>GLUT</p></li>
+<li><p>OpenNI</p></li>
+<li><p>Ensenso</p></li>
+<li><p>davidSDK</p></li>
+<li><p>DSSDK</p></li>
+<li><p>RSSDK</p></li>
+</ul>
+</section>
+<section id="install-pcl-for-usage">
+<h2><a class="toc-backref" href="#id7">Install PCL for usage</a></h2>
+<p>Running the following command in powershell in the VCPKG directory,
+will install PCL with default options as well as default triplet type (ie. x86).</p>
+<blockquote>
+<div><p>./vcpkg install pcl</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This will build executables 2 times in release mode, as default host triplet is x64-windows
+on most modern PC systems, but vcpkg install x86 by default. So to fix it you can set
+host-triplet same as default triplet.</p>
+<blockquote>
+<div><p>./vcpkg install pcl –host-triplet x86-windows</p>
+</div></blockquote>
+<p>Or, you can use same custom triplet for both –triplet and –host-triplet</p>
+<blockquote>
+<div><p>./vcpkg install pcl –triplet &lt;same_custom_triplet_type&gt; –host-triplet &lt;same_custom_triplet_type&gt;</p>
+</div></blockquote>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there are new features or bugfixes that are not yet part of a release,
+you can try to use <cite>–head</cite>, which downloads the master of PCL.</p>
+</div>
+<p>You can see the available PCL version and options in VCPKG <a class="reference external" href="https://github.com/microsoft/vcpkg/blob/master/ports/pcl/vcpkg.json">here</a>.</p>
+<p>To enable specific features, you need to write:</p>
+<blockquote>
+<div><p>./vcpkg install pcl[qt,vtk]</p>
+</div></blockquote>
+<p>And all features:</p>
+<blockquote>
+<div><p>./vcpkg install pcl[*]</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to use anything from the PCL visualization module (like the <cite>PCLVisualizer</cite>  for example), you need to explicitly request this from vcpkg by <cite>./vcpkg install pcl[visualization]</cite> or <cite>./vcpkg install pcl[*]</cite> (it is disabled by default).</p>
+</div>
+<p>If you want to install with a different triplet type, the easiest way is:</p>
+<blockquote>
+<div><p>./vcpkg install pcl –triplet triplet_type</p>
+</div></blockquote>
+<p>ie.</p>
+<blockquote>
+<div><p>./vcpkg install pcl –triplet x64-windows</p>
+</div></blockquote>
+<p>This will acquire all the dependencies, build them and place the binaries
+in vcpkg/installed/triplet_type/bin for release and vcpkg/installed/triplet_type/debug/bin for debug.</p>
+</section>
+<section id="using-dependencies-installed-with-vcpkg-in-cmake-projects">
+<h2><a class="toc-backref" href="#id8">Using dependencies installed with VCPKG in CMake projects</a></h2>
+<p>Use <a class="reference external" href="https://cmake.org/download">CMake</a> to configure projects and remember to pass <strong>vcpkg\scripts\buildsystems\vcpkg.cmake</strong> as toolchain file
+to enable CMake to find all the dependencies installed with VCPKG.</p>
+<p>See example below using the cmake window:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><figure class="align-default" id="id2">
+<img alt="_images/cmake_configure_1.png" src="_images/cmake_configure_1.png" />
+<figcaption>
+<p><span class="caption-text">Fig 1. Cmake configuration</span></p>
+</figcaption>
+</figure>
+</td>
+<td><figure class="align-default" id="id3">
+<img alt="_images/cmake_configure_2.png" src="_images/cmake_configure_2.png" />
+<figcaption>
+<p><span class="caption-text">Fig 2. Cmake configuration with vcpkg tool chain</span></p>
+</figcaption>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="find-pcl-using-cmake">
+<h2><a class="toc-backref" href="#id9">Find PCL using CMake</a></h2>
+<p>To use PCL in CMake project, take a look at Kunal Tyagi’s minimal example <a class="reference external" href="https://github.com/kunaltyagi/pcl-cmake-minimum">in this repository</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may get errors when your program is linked if you use specific point types that are not used so often (so for example <cite>pcl::PointXYZ</cite> and <cite>pcl::PointXYZI</cite> are usually not affected). Of course, the first thing you should check is whether you correctly link to all PCL libraries (<cite>target_link_libraries(&lt;my_executable&gt; ${PCL_LIBRARIES})</cite> in CMake). The next thing you can try is adding <cite>#define PCL_NO_PRECOMPILE</cite> before including any PCL headers. The background is that on Windows, PCL is always compiled with <cite>PCL_ONLY_CORE_POINT_TYPES</cite> enabled, otherwise some PCL modules (e.g. pcl_features) would fail to build due to limitations of the Windows linker. The effect is that the templated classes are only instantiated for some commonly used point types, not for all. For further explanations, see the <a class="reference internal" href="adding_custom_ptype.html#adding-custom-ptype"><span class="std std-ref">Adding your own custom PointT type</span></a> tutorial.</p>
+</div>
+</section>
+<section id="install-pcl-dependencies-for-contributions">
+<h2><a class="toc-backref" href="#id10">Install PCL dependencies for contributions</a></h2>
+<p>If you want to contribute to PCL, the easiest way to get dependencies
+using vcpkg is to run the install command from our <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/blob/master/.dev/docker/windows/Dockerfile">docker file</a></p>
+<blockquote>
+<div><p>./vcpkg install dependencies_here –triplet triplet_type</p>
+</div></blockquote>
+<p>Remember to omit the <em>–clean-after-build</em>, as this removes the source code of the dependencies and limit debugging capabilities for those.</p>
+<p>To build PCL, you would have to get the <a class="reference external" href="https://github.com/PointCloudLibrary/pcl">source</a>, preferably clone it using git.</p>
+<p>Use <a class="reference external" href="https://cmake.org/download">CMake</a> to configure PCL.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

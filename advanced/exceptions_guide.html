@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exceptions in PCL</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Exceptions in PCL</a><ul>
@@ -92,106 +49,69 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Exceptions in PCL</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="exceptions-in-pcl">
+             
+  <section id="exceptions-in-pcl">
 <span id="exceptions-guide"></span><h1>Exceptions in PCL</h1>
 <p>There have been a multitude of discussions in the past regarding exceptions in
 PCL (see <a class="reference external" href="http://www.pcl-developers.org/to-throw-or-not-to-throw-td4828759.html">http://www.pcl-developers.org/to-throw-or-not-to-throw-td4828759.html</a>
 for an example). Herein, we discuss the major points with respect to writing
 and using exceptions.</p>
-<div class="section" id="adding-a-new-exception">
+<section id="adding-a-new-exception">
 <h2>Adding a new Exception</h2>
-<p>Any new exception should inherit from the <a href="#id1"><span class="problematic" id="id2">:pcl:`PCLException &lt;pcl::PCLException&gt;`</span></a> class in
+<p>Any new exception should inherit from the <a class="reference external" href="https://pointclouds.org/documentation/classpcl_1_1_p_c_l_exception.html">PCLException</a> class in
 <code class="docutils literal notranslate"><span class="pre">pcl/exceptions.h</span></code></p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/** \class MyException</span>
 <span class="cm">  * \brief An exception that is thrown when I want it.</span>
-<span class="cm">  */</span>
+<span class="cm">  */</span><span class="w"></span>
 
-<span class="k">class</span> <span class="nc">PCL_EXPORTS</span> <span class="nl">MyException</span> <span class="p">:</span> <span class="k">public</span> <span class="n">PCLException</span>
-<span class="p">{</span>
-  <span class="k">public</span><span class="o">:</span>
-    <span class="n">MyException</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">error_description</span><span class="p">,</span>
-                 <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">file_name</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
-                 <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">function_name</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
-                 <span class="kt">unsigned</span> <span class="n">line_number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-      <span class="o">:</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PCLException</span> <span class="p">(</span><span class="n">error_description</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">function_name</span><span class="p">,</span> <span class="n">line_number</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
-<span class="p">};</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">PCL_EXPORTS</span><span class="w"> </span><span class="n">MyException</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">PCLException</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">MyException</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">error_description</span><span class="p">,</span><span class="w"></span>
+<span class="w">                 </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">file_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"></span>
+<span class="w">                 </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">function_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span><span class="w"></span>
+<span class="w">                 </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">line_number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="o">:</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PCLException</span><span class="w"> </span><span class="p">(</span><span class="n">error_description</span><span class="p">,</span><span class="w"> </span><span class="n">file_name</span><span class="p">,</span><span class="w"> </span><span class="n">function_name</span><span class="p">,</span><span class="w"> </span><span class="n">line_number</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="using-exceptions">
+</section>
+<section id="using-exceptions">
 <h2>Using Exceptions</h2>
 <p>For ease of use we provide this macro</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#define PCL_THROW_EXCEPTION (ExceptionName, message)</span>
-<span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">ostringstream</span> <span class="n">s</span><span class="p">;</span>
-  <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">message</span><span class="p">;</span>
-  <span class="k">throw</span> <span class="nf">ExceptionName</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">str</span> <span class="p">(),</span> <span class="n">__FILE__</span><span class="p">,</span> <span class="n">BOOST_CURRENT_FUNCTION</span><span class="p">,</span> <span class="n">__LINE__</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">ostringstream</span><span class="w"> </span><span class="n">s</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">message</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">throw</span><span class="w"> </span><span class="n">ExceptionName</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">str</span><span class="w"> </span><span class="p">(),</span><span class="w"> </span><span class="n">__FILE__</span><span class="p">,</span><span class="w"> </span><span class="n">BOOST_CURRENT_FUNCTION</span><span class="p">,</span><span class="w"> </span><span class="n">__LINE__</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Then in your code, add:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">my_requirements</span> <span class="o">!=</span> <span class="n">the_parameters_used_</span><span class="p">)</span>
-  <span class="n">PCL_THROW_EXCEPTION</span> <span class="p">(</span><span class="n">MyException</span><span class="p">,</span> <span class="s">&quot;my requirements are not met &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">the_parameters_used</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">my_requirements</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">the_parameters_used_</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">PCL_THROW_EXCEPTION</span><span class="w"> </span><span class="p">(</span><span class="n">MyException</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;my requirements are not met &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">the_parameters_used</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This will set the file name and the line number thanks to the macro definition.
@@ -203,29 +123,29 @@ exception, please add this to the the function documentation:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/** Function that does cool stuff</span>
 <span class="cm">  * \param nb number of points</span>
 <span class="cm">  * \throws MyException</span>
-<span class="cm">  */</span>
-<span class="kt">void</span>
-<span class="nf">myFunction</span> <span class="p">(</span><span class="kt">int</span> <span class="n">nb</span><span class="p">);</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="kt">void</span><span class="w"></span>
+<span class="nf">myFunction</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">nb</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This will be parsed by Doxygen and made available in the generated API
 documentation so the person that would use your function knows that they have
 to deal with an exception called <code class="docutils literal notranslate"><span class="pre">MyException</span></code>.</p>
-</div>
-<div class="section" id="exceptions-handling">
+</section>
+<section id="exceptions-handling">
 <h2>Exceptions handling</h2>
 <p>To properly handle exceptions you need to use the <code class="docutils literal notranslate"><span class="pre">try</span></code>… <code class="docutils literal notranslate"><span class="pre">catch</span></code> block.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Here we call myFunction which can throw MyException</span>
-<span class="k">try</span>
-<span class="p">{</span>
-  <span class="n">myObject</span><span class="p">.</span><span class="n">myFunction</span> <span class="p">(</span><span class="n">some_number</span><span class="p">);</span>
-  <span class="c1">// You can put more exceptions throwing instruction within same try block</span>
-<span class="p">}</span>
+<span class="k">try</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">myObject</span><span class="p">.</span><span class="n">myFunction</span><span class="w"> </span><span class="p">(</span><span class="n">some_number</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// You can put more exceptions throwing instruction within same try block</span>
+<span class="p">}</span><span class="w"></span>
 <span class="c1">// We catch only MyException to be very specific</span>
-<span class="k">catch</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">MyException</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="c1">// Code to deal with the exception maybe changing myObject.the_parameters_used_</span>
-<span class="p">}</span>
+<span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">MyException</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Code to deal with the exception maybe changing myObject.the_parameters_used_</span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="c1">// Here we catch any exception</span>
 <span class="cp">#if 0</span><span class="c"></span>
@@ -242,51 +162,39 @@ rule that can be applied but here are some of the most used guidelines:</p>
 <div><ul class="simple">
 <li><p>exit with some error if the exception is critical</p></li>
 <li><p>modify the parameters for the function that threw the exception and recall it again</p></li>
-<li><p>throw an exception with a meaningful message saying that you encountred an exception</p></li>
+<li><p>throw an exception with a meaningful message saying that you encountered an exception</p></li>
 <li><p>continue (really bad)</p></li>
 </ul>
 </div></blockquote>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

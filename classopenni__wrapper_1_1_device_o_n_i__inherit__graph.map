@@ -1,3 +1,4 @@
 <map id="openni_wrapper::DeviceONI" name="openni_wrapper::DeviceONI">
-<area shape="rect" id="node2" href="$classopenni__wrapper_1_1_open_n_i_device.html" title="Class representing an astract device for OpenNI devices: Primesense PSDK, Microsoft Kinect..." alt="" coords="5,5,211,35"/>
+<area shape="rect" id="node1" title="Concrete implementation of the interface OpenNIDevice for a virtual device playing back an ONI file." alt="" coords="17,80,220,107"/>
+<area shape="rect" id="node2" href="$classopenni__wrapper_1_1_open_n_i_device.html" title="Class representing an astract device for OpenNI devices: Primesense PSDK, Microsoft Kinect,..." alt="" coords="5,5,232,32"/>
 </map>

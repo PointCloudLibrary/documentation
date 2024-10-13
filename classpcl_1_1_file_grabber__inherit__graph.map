@@ -1,4 +1,5 @@
 <map id="pcl::FileGrabber&lt; PointT &gt;" name="pcl::FileGrabber&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_image_grabber.html" title="pcl::ImageGrabber\&lt;\l PointT \&gt;" alt="" coords="5,83,141,130"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_p_c_d_grabber.html" title="pcl::PCDGrabber\&lt; PointT \&gt;" alt="" coords="165,92,349,121"/>
+<area shape="rect" id="node1" title="FileGrabber provides a container&#45;style interface for grabbers which operate on fixed&#45;size input." alt="" coords="85,5,279,32"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_image_grabber.html" title=" " alt="" coords="5,80,159,121"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_d_grabber.html" title=" " alt="" coords="183,87,381,114"/>
 </map>

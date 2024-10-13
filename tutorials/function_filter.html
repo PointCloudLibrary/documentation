@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Removing outliers using a custom non-destructive condition &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          </a>
+              <div class="version">
+                1.14.1-dev
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Removing outliers using a custom non-destructive condition</a></li>
+<li><a class="reference internal" href="#the-code">The code</a></li>
+<li><a class="reference internal" href="#the-explanation">The explanation</a></li>
+<li><a class="reference internal" href="#compiling-and-running-the-program">Compiling and running the program</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Removing outliers using a custom non-destructive condition</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="removing-outliers-using-a-custom-non-destructive-condition">
+<span id="function-filter"></span><h1>Removing outliers using a custom non-destructive condition</h1>
+<p>This document demonstrates how to use the FunctionFilter class to remove points from a PointCloud that do not satisfy a custom criteria. This is a cleaner
+and faster approach compared to ConditionalRemoval filter or a <a class="reference external" href="https://cpp-optimizations.netlify.app/pcl_filter/">custom Condition class</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Advanced users can use the FunctorFilter class that can provide a small but measurable speedup when used with a <a class="reference external" href="https://en.cppreference.com/w/cpp/language/lambda">lambda</a>.</p>
+</div>
+</section>
+<section id="the-code">
+<h1>The code</h1>
+<p>First, create a file, let’s say, sphere_removal.cpp in you favorite editor, and place the following inside it:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/common/generate.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/filters/experimental/functor_filter.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kt">int</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="p">{</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">  </span><span class="k">using</span><span class="w"> </span><span class="n">XYZCloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">XYZCloud</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">filtered_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">XYZCloud</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="w">  </span><span class="c1">// Create a random generator to fill in the cloud</span>
+<span class="linenos">15</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">CloudGenerator</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">UniformGenerator</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&gt;</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">      </span><span class="n">generator</span><span class="p">{{</span><span class="mf">-2.0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1234</span><span class="p">}};</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">  </span><span class="n">generator</span><span class="p">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Cloud before filtering: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pt</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">21</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;    &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="w">  </span><span class="c1">// Setup a condition to reject points inside a filter</span>
+<span class="linenos">24</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span><span class="w"> </span><span class="n">center</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">25</span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">experimental</span><span class="o">::</span><span class="n">FilterFunction</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="w"> </span><span class="n">filter</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">28</span><span class="w">  </span><span class="n">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">const</span><span class="w"> </span><span class="n">XYZCloud</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">index_t</span><span class="w"> </span><span class="n">idx</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">29</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">((</span><span class="n">cloud</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">getVector3fMap</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">center</span><span class="p">).</span><span class="n">norm</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">30</span><span class="w">  </span><span class="p">};</span><span class="w"></span>
+<span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">  </span><span class="c1">// build the filter</span>
+<span class="linenos">33</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">experimental</span><span class="o">::</span><span class="n">FunctionFilter</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="w"> </span><span class="n">func_filter</span><span class="p">(</span><span class="n">filter</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">34</span><span class="w">  </span><span class="n">func_filter</span><span class="p">.</span><span class="n">setInputCloud</span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">35</span>
+<span class="linenos">36</span><span class="w">  </span><span class="c1">// apply filter</span>
+<span class="linenos">37</span><span class="w">  </span><span class="n">func_filter</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span><span class="o">*</span><span class="n">filtered_cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">38</span>
+<span class="linenos">39</span><span class="w">  </span><span class="c1">// display pointcloud after filtering</span>
+<span class="linenos">40</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Cloud after filtering: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">41</span><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pt</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">filtered_cloud</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">42</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;    &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">43</span>
+<span class="linenos">44</span><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">45</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="the-explanation">
+<h1>The explanation</h1>
+<p>Now, let’s break down the code piece by piece.</p>
+<p>In the following lines, we define the PointCloud structures, fill in the input cloud, and display its content to screen.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="k">using</span><span class="w"> </span><span class="n">XYZCloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">XYZCloud</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">filtered_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">XYZCloud</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Create a random generator to fill in the cloud</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">CloudGenerator</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">common</span><span class="o">::</span><span class="n">UniformGenerator</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">generator</span><span class="p">{{</span><span class="mf">-2.0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1234</span><span class="p">}};</span><span class="w"></span>
+<span class="w">  </span><span class="n">generator</span><span class="p">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Cloud before filtering: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pt</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;    &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Then, we create the condition which a given point must satisfy so that it remains in our PointCloud. To do this we create a <cite>std::function</cite> which accepts a PointCloud by const reference and an index, and returns true only if the point lies inside a sphere. This is then used to build the filter</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Setup a condition to reject points inside a filter</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3f</span><span class="w"> </span><span class="n">center</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">};</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">experimental</span><span class="o">::</span><span class="n">FilterFunction</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="w"> </span><span class="n">filter</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="o">=</span><span class="p">](</span><span class="k">const</span><span class="w"> </span><span class="n">XYZCloud</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">index_t</span><span class="w"> </span><span class="n">idx</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">((</span><span class="n">cloud</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">getVector3fMap</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">center</span><span class="p">).</span><span class="n">norm</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">};</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// build the filter</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">experimental</span><span class="o">::</span><span class="n">FunctionFilter</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="w"> </span><span class="n">func_filter</span><span class="p">(</span><span class="n">filter</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">func_filter</span><span class="p">.</span><span class="n">setInputCloud</span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This last bit of code just applies the filter to our original PointCloud, and removes all of the points that do not satisfy the conditions we specified. Then it outputs all of the points remaining in the PointCloud.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// apply filter</span>
+<span class="w">  </span><span class="n">func_filter</span><span class="p">.</span><span class="n">filter</span><span class="p">(</span><span class="o">*</span><span class="n">filtered_cloud</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// display pointcloud after filtering</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Cloud after filtering: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pt</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">filtered_cloud</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cerr</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;    &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">pt</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="compiling-and-running-the-program">
+<h1>Compiling and running the program</h1>
+<p>Add the following lines to your CMakeLists.txt file:</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.5</span><span class="w"> </span><span class="s">FATAL_ERROR</span><span class="p">)</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="nb">project</span><span class="p">(</span><span class="s">function_filter</span><span class="p">)</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span><span class="w"> </span><span class="s">1.11.1.99</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
+<span class="linenos">6</span>
+<span class="linenos">7</span><span class="nb">add_executable</span> <span class="p">(</span><span class="s">sphere_removal</span><span class="w"> </span><span class="s">sphere_removal.cpp</span><span class="p">)</span>
+<span class="linenos">8</span><span class="nb">target_link_libraries</span> <span class="p">(</span><span class="s">sphere_removal</span><span class="w"> </span><span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos">9</span><span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After you have compiled the executable, you can run it. Simply do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./sphere_removal
+</pre></div>
+</div>
+<p>You will see something similar to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cloud</span> <span class="n">before</span> <span class="n">filtering</span><span class="p">:</span>
+    <span class="o">-</span><span class="mf">1.23392</span> <span class="mf">1.81505</span> <span class="o">-</span><span class="mf">0.968005</span>
+    <span class="o">-</span><span class="mf">0.00934529</span> <span class="mf">1.36497</span> <span class="mf">0.158734</span>
+    <span class="mf">0.488435</span> <span class="mf">1.96851</span> <span class="o">-</span><span class="mf">0.0534078</span>
+    <span class="mf">1.27135</span> <span class="mf">1.16404</span> <span class="o">-</span><span class="mf">1.00462</span>
+    <span class="o">-</span><span class="mf">0.249089</span> <span class="o">-</span><span class="mf">0.0815883</span> <span class="mf">1.13229</span>
+    <span class="mf">0.448447</span> <span class="mf">1.48914</span> <span class="mf">1.78378</span>
+    <span class="mf">1.14143</span> <span class="mf">1.77363</span> <span class="mf">1.68965</span>
+    <span class="mf">1.08544</span> <span class="o">-</span><span class="mf">1.01664</span> <span class="o">-</span><span class="mf">1.13041</span>
+    <span class="mf">1.1199</span> <span class="mf">0.9951</span> <span class="o">-</span><span class="mf">1.13308</span>
+    <span class="mf">1.44268</span> <span class="o">-</span><span class="mf">1.44434</span> <span class="o">-</span><span class="mf">0.391739</span>
+<span class="n">Cloud</span> <span class="n">after</span> <span class="n">filtering</span><span class="p">:</span>
+    <span class="o">-</span><span class="mf">1.23392</span> <span class="mf">1.81505</span> <span class="o">-</span><span class="mf">0.968005</span>
+    <span class="o">-</span><span class="mf">0.00934529</span> <span class="mf">1.36497</span> <span class="mf">0.158734</span>
+    <span class="mf">0.488435</span> <span class="mf">1.96851</span> <span class="o">-</span><span class="mf">0.0534078</span>
+    <span class="mf">1.27135</span> <span class="mf">1.16404</span> <span class="o">-</span><span class="mf">1.00462</span>
+    <span class="mf">1.14143</span> <span class="mf">1.77363</span> <span class="mf">1.68965</span>
+    <span class="mf">1.08544</span> <span class="o">-</span><span class="mf">1.01664</span> <span class="o">-</span><span class="mf">1.13041</span>
+    <span class="mf">1.1199</span> <span class="mf">0.9951</span> <span class="o">-</span><span class="mf">1.13308</span>
+    <span class="mf">1.44268</span> <span class="o">-</span><span class="mf">1.44434</span> <span class="o">-</span><span class="mf">0.391739</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

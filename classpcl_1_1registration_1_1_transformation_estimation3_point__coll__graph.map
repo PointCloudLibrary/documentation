@@ -1,3 +1,5 @@
 <map id="pcl::registration::TransformationEstimation3Point&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimation3Point&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="17,6,201,87"/>
+<area shape="rect" id="node1" title="TransformationEstimation3Points represents the class for transformation estimation based on:" alt="" coords="5,273,236,344"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title=" " alt="" coords="21,153,220,224"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="21,5,220,76"/>
 </map>

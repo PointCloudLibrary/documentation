@@ -1,3 +1,4 @@
 <map id="pcl::PairwiseGraphRegistration&lt; GraphT, PointT &gt;" name="pcl::PairwiseGraphRegistration&lt; GraphT, PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_graph_registration.html" title="GraphRegistration class is the base class for graph&#45;based registration methods " alt="" coords="31,6,183,53"/>
+<area shape="rect" id="node1" title="PairwiseGraphRegistration class aligns the clouds two by two" alt="" coords="5,95,227,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_graph_registration.html" title="GraphRegistration class is the base class for graph&#45;based registration methods" alt="" coords="33,5,199,47"/>
 </map>

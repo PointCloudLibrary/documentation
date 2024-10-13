@@ -1,4 +1,5 @@
 <map id="svm_model" name="svm_model">
-<area shape="rect" id="node2" href="$structsvm__node.html" title="svm_node" alt="" coords="5,5,88,35"/>
-<area shape="rect" id="node4" href="$structsvm__parameter.html" title="svm_parameter" alt="" coords="112,5,224,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="66,109,165,136"/>
+<area shape="rect" id="node2" href="$structsvm__node.html" title=" " alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node3" href="$structsvm__parameter.html" title=" " alt="" coords="119,5,245,32"/>
 </map>

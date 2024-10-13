@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>The PCD (Point Cloud Data) file format &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The PCD (Point Cloud Data) file format &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">The PCD (<strong>P</strong>oint <strong>C</strong>loud <strong>D</strong>ata) file format</a></li>
@@ -93,73 +50,36 @@
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>The PCD (<strong>P</strong>oint <strong>C</strong>loud <strong>D</strong>ata) file format</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="the-pcd-point-cloud-data-file-format">
+             
+  <section id="the-pcd-point-cloud-data-file-format">
 <span id="pcd-file-format"></span><h1>The PCD (<strong>P</strong>oint <strong>C</strong>loud <strong>D</strong>ata) file format</h1>
 <p>This document describes the PCD (Point Cloud Data) file format, and the way it
 is used inside Point Cloud Library (PCL).</p>
 <img alt="PCD file format icon" class="align-right" src="_images/PCD_icon.png" />
-</div>
-<div class="section" id="why-a-new-file-format">
+</section>
+<section id="why-a-new-file-format">
 <h1>Why a new file format?</h1>
 <p>The PCD file format is not meant to reinvent the wheel, but rather to
 complement existing file formats that for one reason or another did not/do not
@@ -169,18 +89,18 @@ graphics and computational geometry communities in particular, have created
 numerous formats to describe arbitrary polygons and point clouds acquired using
 laser scanners. Some of these formats include:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://en.wikipedia.org/wiki/PLY_(file_format)">PLY</a> - a polygon file format, developed at Stanford University by Turk et al</p></li>
-<li><p><a class="reference external" href="http://en.wikipedia.org/wiki/STL_(file_format)">STL</a> - a file format native to the stereolithography CAD software created by 3D Systems</p></li>
-<li><p><a class="reference external" href="http://en.wikipedia.org/wiki/Wavefront_.obj_file">OBJ</a> - a geometry definition file format first developed by Wavefront Technologies</p></li>
-<li><p><a class="reference external" href="http://en.wikipedia.org/wiki/X3D">X3D</a> - the ISO standard XML-based file format for representing 3D computer graphics data</p></li>
-<li><p><a class="reference external" href="http://en.wikipedia.org/wiki/Category:Graphics_file_formats">and many others</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/PLY_(file_format)">PLY</a> - a polygon file format, developed at Stanford University by Turk et al</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/STL_(file_format)">STL</a> - a file format native to the stereolithography CAD software created by 3D Systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Wavefront_.obj_file">OBJ</a> - a geometry definition file format first developed by Wavefront Technologies</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/X3D">X3D</a> - the ISO standard XML-based file format for representing 3D computer graphics data</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Graphics_file_formats">and many others</a></p></li>
 </ul>
 <p>All the above file formats suffer from several shortcomings, as explained in
 the next sections – which is natural, as they were created for a different
 purpose and at different times, before today’s sensing technologies and
 algorithms had been invented.</p>
-</div>
-<div class="section" id="pcd-versions">
+</section>
+<section id="pcd-versions">
 <h1>PCD versions</h1>
 <p>PCD file formats might have different revision numbers, prior to the release of
 Point Cloud Library (PCL) version 1.0. These are numbered with PCD_Vx (e.g.,
@@ -188,8 +108,8 @@ PCD_V5, PCD_V6, PCD_V7, etc) and represent version numbers 0.x for the PCD
 file.</p>
 <p>The official entry point for the PCD file format in PCL however should be
 version <strong>0.7 (PCD_V7)</strong>.</p>
-</div>
-<div class="section" id="file-format-header">
+</section>
+<section id="file-format-header">
 <h1>File format header</h1>
 <p>Each PCD file contains a header that identifies and declares certain properties
 of the point cloud data stored in the file. The header of a PCD must be encoded
@@ -290,7 +210,7 @@ future versions.</p>
 </div>
 </li>
 <li><p><strong>DATA</strong> - specifies the data type that the point cloud data is stored in. As
-of version 0.7, two data types are supported: <em>ascii</em> and <em>binary</em>. See the
+of version 0.7, three data types are supported: <em>ascii</em>, <em>binary</em>, and <em>binary_compressed</em>. See the
 next section for more details.</p></li>
 </ul>
 <div class="admonition note">
@@ -314,10 +234,10 @@ considered part of the point cloud data, and will be interpreted as such.</p>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="data-storage-types">
+</section>
+<section id="data-storage-types">
 <h1>Data storage types</h1>
-<p>As of version 0.7, the <strong>.PCD</strong> file format uses two different modes for storing data:</p>
+<p>As of version 0.7, the <strong>.PCD</strong> file format uses three different modes for storing data:</p>
 <ul>
 <li><p>in <strong>ASCII</strong> form, with each point on a new line:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">p_1</span>
@@ -339,6 +259,7 @@ considered part of the point cloud data, and will be interpreted as such.</p>
 <li><p>in <strong>binary</strong> form, where the data is a complete memory copy of the
 <cite>pcl::PointCloud.points</cite> array/vector. On Linux systems, we use <cite>mmap</cite>/<cite>munmap</cite>
 operations for the fastest possible read/write access to the data.</p></li>
+<li><p>in <strong>binary_compressed</strong> form. The body (everything after the header) starts with a 32 bit unsigned binary number which specifies the size in bytes of the data in <em>compressed</em> form. Next is another 32 bit unsigned binary number which specifies the size in bytes of the data in <em>uncompressed</em> form. Then follows the compressed data. The compression and decompression is done using Marc Lehmann’s LZF algorithm. It is mediocre in terms of size reduction, but very fast. For typical point clouds, the compressed data has 30 to 60 percent of the original size. Before compressing, the data is reordered to improve compression, from the standard array-of-structures layout to a structure-of-arrays layout. So for example a cloud with three points and fields x, y, z would be reordered from xyzxyzxyz to xxxyyyzzz.</p></li>
 </ul>
 <p>Storing point cloud data in both a simple ascii form with each point on a line,
 space or tab separated, without any other characters on it, as well as in a
@@ -346,8 +267,8 @@ binary dump format, allows us to have the best of both worlds: simplicity and
 speed, depending on the underlying application. The ascii format allows users
 to open up point cloud files and plot them using standard software tools like
 <cite>gnuplot</cite> or manipulate them using tools like <cite>sed</cite>, <cite>awk</cite>, etc.</p>
-</div>
-<div class="section" id="advantages-over-other-file-formats">
+</section>
+<section id="advantages-over-other-file-formats">
 <h1>Advantages over other file formats</h1>
 <p>Having PCD as (yet another) file format can be seen as PCL suffering from the <cite>not invented here</cite> syndrome. In reality, this is not the case, as none of the above mentioned file formats offers the flexibility and speed of PCD files. Some of the clearly stated advantages include:</p>
 <ul class="simple">
@@ -373,13 +294,13 @@ type and inducing additional delays through conversion functions.</p>
 <cite>pcl_io</cite> library should offer the possibility to save and load data in all
 the other aforementioned file formats too.</p>
 </div>
-</div>
-<div class="section" id="example">
+</section>
+<section id="example">
 <h1>Example</h1>
 <p>A snippet of a PCD file is attached below. It is left to the reader to
 interpret the data and see what it means. :) Have fun!:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># .PCD v.7 - Point Cloud Data file format</span>
-<span class="n">VERSION</span> <span class="o">.</span><span class="mi">7</span>
+<span class="n">VERSION</span> <span class="mf">.7</span>
 <span class="n">FIELDS</span> <span class="n">x</span> <span class="n">y</span> <span class="n">z</span> <span class="n">rgb</span>
 <span class="n">SIZE</span> <span class="mi">4</span> <span class="mi">4</span> <span class="mi">4</span> <span class="mi">4</span>
 <span class="n">TYPE</span> <span class="n">F</span> <span class="n">F</span> <span class="n">F</span> <span class="n">F</span>
@@ -604,46 +525,34 @@ interpret the data and see what it means. :) Have fun!:</p>
 <span class="o">-</span><span class="mf">0.18369</span> <span class="o">-</span><span class="mf">0.23729</span> <span class="mi">0</span> <span class="mf">4.808e+06</span>
 </pre></div>
 </div>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

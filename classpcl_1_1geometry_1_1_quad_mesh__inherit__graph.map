@@ -1,4 +1,5 @@
 <map id="pcl::geometry::QuadMesh&lt; MeshTraitsT &gt;" name="pcl::geometry::QuadMesh&lt; MeshTraitsT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="pcl::geometry::MeshBase\l\&lt; QuadMesh\&lt; MeshTraitsT\l \&gt;, MeshTraitsT, QuadMeshTag \&gt;" alt="" coords="5,152,224,216"/>
-<area shape="rect" id="node4" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="Base class for the half&#45;edge mesh. " alt="" coords="29,5,200,69"/>
+<area shape="rect" id="node1" title="Half&#45;edge mesh that can only store quads." alt="" coords="30,244,218,285"/>
+<area shape="rect" id="node2" href="$classpcl_1_1geometry_1_1_mesh_base.html" title=" " alt="" coords="5,139,243,195"/>
+<area shape="rect" id="node3" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="Base class for the half&#45;edge mesh." alt="" coords="31,5,217,61"/>
 </map>

@@ -1,7 +1,11 @@
-<map id="pcl::GeneralizedIterativeClosestPoint&lt; PointSource, PointTarget &gt;" name="pcl::GeneralizedIterativeClosestPoint&lt; PointSource, PointTarget &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_iterative_closest_point.html" title="pcl::IterativeClosestPoint\l\&lt; PointSource, PointTarget \&gt;" alt="" coords="1205,23,1397,70"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="571,5,747,69"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm..." alt="" coords="797,57,981,121"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,23,519,52"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,23,171,52"/>
+<map id="pcl::GeneralizedIterativeClosestPoint&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::GeneralizedIterativeClosestPoint&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="node1" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="1933,5,2132,61"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_generalized_iterative_closest_point.html" title=" " alt="" coords="2415,5,2633,61"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="1685,5,1884,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_registration.html" title=" " alt="" coords="1020,5,1208,61"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm." alt="" coords="1257,37,1456,93"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="341,20,553,47"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="603,37,791,93"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,20,181,47"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_generalized_iterative_closest_point6_d.html" title="GeneralizedIterativeClosestPoint6D integrates L*a*b* color space information into the Generalized Ite..." alt="" coords="2683,13,2865,54"/>
 </map>

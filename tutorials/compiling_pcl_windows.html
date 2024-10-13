@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Compiling PCL from source on Windows &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compiling PCL from source on Windows &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Compiling PCL from source on Windows</a></li>
@@ -94,67 +51,30 @@
 <li><a class="reference internal" href="#using-pcl">Using PCL</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Compiling PCL from source on Windows</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="compiling-pcl-from-source-on-windows">
+             
+  <section id="compiling-pcl-from-source-on-windows">
 <span id="compiling-pcl-windows"></span><h1>Compiling PCL from source on Windows</h1>
 <p>This tutorial explains how to build the Point Cloud Library <strong>from source</strong> on
 Microsoft Windows platforms. In this tutorial, we assume that you have built and installed
@@ -172,8 +92,8 @@ out of source. The <a class="reference internal" href="compiling_pcl_dependencie
 and the compilation of all the required dependencies.</p>
 </div>
 <img alt="Microsoft Windows logo" class="align-right" src="_images/windows_logo.png" />
-</div>
-<div class="section" id="requirements">
+</section>
+<section id="requirements">
 <h1>Requirements</h1>
 <p>we assume that you have built and installed all the required dependencies, or that you have installed
 them using the dependencies installers provided on the <a class="reference external" href="http://www.pointclouds.org/downloads/windows.html">downloads page</a>.
@@ -216,8 +136,8 @@ Installing them to the default locations will make configuring PCL easier.</p>
 build system (<a class="reference external" href="http://www.cmake.org/">http://www.cmake.org/</a>), at least version <strong>3.5.0</strong>. A Git client
 for Windows is also required to download the PCL source code.</p>
 </div>
-</div>
-<div class="section" id="downloading-pcl-source-code">
+</section>
+<section id="downloading-pcl-source-code">
 <h1>Downloading PCL source code</h1>
 <p>To build the current official release, download the source archive from
 <a class="reference external" href="http://pointclouds.org/downloads/">http://pointclouds.org/downloads/</a> and extract it somewhere on your disk, say C:\PCL\PCL-1.5.1-Source.
@@ -233,8 +153,8 @@ git clone <a class="reference external" href="https://github.com/PointCloudLibra
 </div></blockquote>
 <p>You could also use Github for Windows (<a class="reference external" href="https://windows.github.com/">https://windows.github.com/</a>), but that is potentially more
 troublesome than setting up git on windows.</p>
-</div>
-<div class="section" id="configuring-pcl">
+</section>
+<section id="configuring-pcl">
 <h1>Configuring PCL</h1>
 <p>On Windows, we recommend to build <strong>shared</strong> PCL libraries with <strong>static</strong> dependencies. In this tutorial, we will use
 static dependencies when possible to build shared PCL. You can easily switch to using shared dependencies. Then, you need
@@ -264,7 +184,7 @@ will not get built.</p>
 <p>Before solving the VTK issue, let’s organize the CMake variables in groups by checking the <cite>Grouped</cite> checkbox in the top right of
 CMake window. Let’s check also the <cite>Advanced</cite> checkbox to show some advanced CMake variables. Now, if we want to look for a specific
 variable value, we can either browse the CMake variables to look for it, or we can use the <cite>Search:</cite> field to type the variable name.</p>
-<img alt="CMake groupped and advanced variables" class="align-center" src="_images/cmake_grouped_advanced.png" />
+<img alt="CMake grouped and advanced variables" class="align-center" src="_images/cmake_grouped_advanced.png" />
 <p>Let’s check whether CMake did actually find the needed third party dependencies or not :</p>
 <ul>
 <li><p><strong>Boost</strong> :</p>
@@ -360,8 +280,8 @@ with <cite>static</cite> suffix.</p>
 </ul>
 <p>Once PCL configuration is ok, hit the <cite>Generate</cite> button. CMake will then generate Visual Studio project files (vcproj files)
 and the main solution file (PCL.sln) in C:\PCL directory.</p>
-</div>
-<div class="section" id="building-pcl">
+</section>
+<section id="building-pcl">
 <h1>Building PCL</h1>
 <p>Open that generated solution file (PCL.sln) to finally build the PCL libraries. This is how your solution will look like.</p>
 <img alt="PCL solution with project folders" class="align-center" src="_images/pcl_solution_with_projects_folder.png" />
@@ -371,8 +291,8 @@ and the main solution file (PCL.sln) in C:\PCL directory.</p>
 <p class="admonition-title">Note</p>
 <p>Make sure to build the “ALL_BUILD” project in both <strong>debug</strong> and <strong>release</strong> mode.</p>
 </div>
-</div>
-<div class="section" id="installing-pcl">
+</section>
+<section id="installing-pcl">
 <h1>Installing PCL</h1>
 <p>To install the built libraries and executables, you need to build the “INSTALL” project in the solution explorer.
 This utility project will copy PCL headers, libraries and executable to the directory defined by the <strong>CMAKE_INSTALL_PREFIX</strong>
@@ -387,8 +307,8 @@ CMake variable.</p>
 <p>It is highly recommended to add the bin folder in PCL installation tree (e.g. C:\Program Files\PCL\bin)
 to your <strong>PATH</strong> environment variable.</p>
 </div>
-</div>
-<div class="section" id="advanced-topics">
+</section>
+<section id="advanced-topics">
 <h1>Advanced topics</h1>
 <ul>
 <li><p><strong>Building PCL Tests</strong> :</p>
@@ -424,52 +344,44 @@ and choose <cite>Build</cite>. Then, you can build the <cite>INSTALL</cite> proj
 </div></blockquote>
 </li>
 </ul>
-</div>
-<div class="section" id="using-pcl">
+</section>
+<section id="using-pcl">
 <h1>Using PCL</h1>
 <p>We finally managed to compile the Point Cloud Library (PCL) as binaries for
 Windows. You can start using them in your project by following the
 <a class="reference internal" href="using_pcl_pcl_config.html#using-pcl-pcl-config"><span class="std std-ref">Using PCL in your own project</span></a> tutorial.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may get errors when your program is linked if you use specific point types that are not used so often (so for example <cite>pcl::PointXYZ</cite> and <cite>pcl::PointXYZI</cite> are usually not affected). Of course, the first thing you should check is whether you correctly link to all PCL libraries (<cite>target_link_libraries(&lt;my_executable&gt; ${PCL_LIBRARIES})</cite> in CMake). The next thing you can try is adding <cite>#define PCL_NO_PRECOMPILE</cite> before including any PCL headers. The background is that on Windows, PCL is always compiled with <cite>PCL_ONLY_CORE_POINT_TYPES</cite> enabled, otherwise some PCL modules (e.g. pcl_features) would fail to build due to limitations of the Windows linker. The effect is that the templated classes are only instantiated for some commonly used point types, not for all. For further explanations, see the <a class="reference internal" href="adding_custom_ptype.html#adding-custom-ptype"><span class="std std-ref">Adding your own custom PointT type</span></a> tutorial.</p>
 </div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

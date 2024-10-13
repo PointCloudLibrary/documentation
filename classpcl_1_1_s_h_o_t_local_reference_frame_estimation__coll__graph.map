@@ -1,7 +1,9 @@
 <map id="pcl::SHOTLocalReferenceFrameEstimation&lt; PointInT, PointOutT &gt;" name="pcl::SHOTLocalReferenceFrameEstimation&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="121,235,276,282"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="node1" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="39,544,285,585"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title=" " alt="" coords="77,453,247,495"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="47,273,235,300"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="178,349,349,391"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="50,184,226,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="107,5,198,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="69,95,236,121"/>
 </map>

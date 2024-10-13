@@ -1,3 +1,4 @@
 <map id="pcl::cuda::RandomSampleConsensus&lt; Storage &gt;" name="pcl::cuda::RandomSampleConsensus&lt; Storage &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1cuda_1_1_sample_consensus.html" title="pcl::cuda::SampleConsensus\l\&lt; Storage \&gt;" alt="" coords="31,6,223,53"/>
+<area shape="rect" id="node1" title="RandomSampleConsensus represents an implementation of the RANSAC (RAndom SAmple Consensus) algorithm,..." alt="" coords="5,95,267,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1cuda_1_1_sample_consensus.html" title=" " alt="" coords="33,5,239,47"/>
 </map>

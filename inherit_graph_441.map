@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1cuda_1_1_disparity_clamped_smoothing.html" title="pcl::cuda::DisparityClamped\lSmoothing" alt="" coords="5,5,192,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1cuda_1_1_sample_consensus.html" title=" " alt="" coords="5,39,212,80"/>
+<area shape="rect" id="node2" href="$classpcl_1_1cuda_1_1_multi_random_sample_consensus.html" title="RandomSampleConsensus represents an implementation of the RANSAC (RAndom SAmple Consensus) algorithm,..." alt="" coords="279,5,503,47"/>
+<area shape="rect" id="node3" href="$classpcl_1_1cuda_1_1_random_sample_consensus.html" title="RandomSampleConsensus represents an implementation of the RANSAC (RAndom SAmple Consensus) algorithm,..." alt="" coords="260,71,521,112"/>
 </map>

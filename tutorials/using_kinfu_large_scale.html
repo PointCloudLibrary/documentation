@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Using Kinfu Large Scale to generate a textured mesh &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Kinfu Large Scale to generate a textured mesh &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Using Kinfu Large Scale to generate a textured mesh</a></li>
@@ -94,76 +51,39 @@
 <li><a class="reference internal" href="#conclusion">Conclusion</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Using Kinfu Large Scale to generate a textured mesh</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="using-kinfu-large-scale-to-generate-a-textured-mesh">
+             
+  <section id="using-kinfu-large-scale-to-generate-a-textured-mesh">
 <span id="using-kinfu-large-scale"></span><h1>Using Kinfu Large Scale to generate a textured mesh</h1>
 <p>This tutorial demonstrates how to use KinFu Large Scale to produce a mesh (in meters) from a room, and apply texture information in post-processing for a more appealing visual result. The first part of this tutorial shows how to obtain the TSDF cloud from KinFu Large Scale. The second part shows how to convert the TSDF cloud into a uniform mesh. The third part shows how to texture the obtained mesh using the RGB images and poses we obtained from KinFu Large Scale.</p>
-</div>
-<div class="section" id="part-1-running-pcl-kinfu-largescale-to-obtain-a-tsdf-cloud">
+</section>
+<section id="part-1-running-pcl-kinfu-largescale-to-obtain-a-tsdf-cloud">
 <h1>Part 1: Running pcl_kinfu_largeScale to obtain a TSDF cloud</h1>
 <p><em>TSDF Cloud</em></p>
 <p>This section describes the TSDF Cloud, which is the expected output of KinFu Large Scale. A TSDF cloud looks like the one in the following video.</p>
 <blockquote>
-<div><iframe width="420" height="315" src="http://www.youtube.com/embed/AjjSZufyprU" frameborder="0" allowfullscreen></iframe></div></blockquote>
+<div><iframe width="420" height="315" src="https://www.youtube.com/embed/AjjSZufyprU" frameborder="0" allowfullscreen></iframe></div></blockquote>
 <p>You may be wondering: <em>“What is the difference between a TSDF cloud and a normal point cloud?”</em> Well, a TSDF cloud <em>is</em> a point cloud. However, the TSDF cloud makes use of how the data is stored within GPU at KinFu runtime.</p>
 <blockquote>
 <div><a class="reference internal image-reference" href="_images/11.jpg"><img alt="_images/11.jpg" class="align-center" src="_images/11.jpg" style="width: 696pt; height: 326pt;" /></a>
@@ -194,10 +114,10 @@
 <p>What the exit routine will do is to get all the information regarding our model, comprise it in a point cloud and save it to disk as <em>world.pcd</em> The PCD file is saved in the same directory from where we run KinFu Large Scale.</p>
 <p>Since we used the <em>-et</em> option, you will also find a folder called KinFuSnapshots, which contains all the RGB images and its corresponding poses for this scan. The following video demonstrates the scanning process and the generated output:</p>
 <blockquote>
-<div><iframe width="420" height="315" src="http://www.youtube.com/embed/rF1N-EEIJao" frameborder="0" allowfullscreen></iframe></div></blockquote>
+<div><iframe width="420" height="315" src="https://www.youtube.com/embed/rF1N-EEIJao" frameborder="0" allowfullscreen></iframe></div></blockquote>
 <p>The next part of this tutorial will demonstrate how to get a mesh from the TSDF cloud.</p>
-</div>
-<div class="section" id="part-2-running-pcl-kinfu-largescale-mesh-output-to-convert-the-tsdf-cloud-into-a-mesh">
+</section>
+<section id="part-2-running-pcl-kinfu-largescale-mesh-output-to-convert-the-tsdf-cloud-into-a-mesh">
 <h1>Part 2: Running pcl_kinfu_largeScale_mesh_output to convert the TSDF cloud into a mesh</h1>
 <p>This section describes how to convert the TSDF Cloud, which is the expected output of KinFu Large Scale, into a mesh. For this purpose we will use the meshing application in KinFu Large Scale. The input for this application is the world model as a PCD file. The output is a set of meshes, since the world model is processed as a set of cubes.</p>
 <p>The reason why we load the world model in cubes is because we have the limitation of memory in the GPU. A point of improvement for the meshing application could be to return the complete mesh instead of a set of meshes. Contributions welcome!</p>
@@ -209,10 +129,10 @@
 </div>
 <p>where <em>world.pcd</em> is the world model we obtained from KinFu Large Scale. The following video shows the process of creating, merging, and simplifying the meshes into a single mesh which we will use for texturing.</p>
 <blockquote>
-<div><iframe width="420" height="315" src="http://www.youtube.com/embed/XMJ-ikSZAOE" frameborder="0" allowfullscreen></iframe></div></blockquote>
+<div><iframe width="420" height="315" src="https://www.youtube.com/embed/XMJ-ikSZAOE" frameborder="0" allowfullscreen></iframe></div></blockquote>
 <p>The next part of this tutorial will demonstrate how to generate the texture for the mesh we have just created.</p>
-</div>
-<div class="section" id="part-3-running-pcl-kinfu-largescale-texture-output-to-generate-the-texture">
+</section>
+<section id="part-3-running-pcl-kinfu-largescale-texture-output-to-generate-the-texture">
 <h1>Part 3: Running pcl_kinfu_largeScale_texture_output to generate the texture</h1>
 <p>This section describes how to generate the textures for the mesh we created in the previous step. The input for this application is the merged mesh, as well as the RGB captures and poses we saved during the scanning in part 1. The RGB captures and poses should be in the KinFuSnapshots folder. We select the most representative snapshots for the sake of time. Each snapshot must have its corresponding camera pose in a text file in the same folder.</p>
 <p>The generated PLY mesh must be in the same folder as the snapshots and camera poses. The output will be generated as an OBJ file with its corresponding MTL file. The former contains data about the mesh, whereas the latter contains information about the texture. Unfortunately at this point some of the generated textures may seen patched, this is based on how the RGB camera in the Kinect adapts to light. A potential area of improvement could be to equalize the color tones in the images. Contributions welcome!</p>
@@ -222,14 +142,14 @@
 </div>
 <p>The following video shows the process in detail. It also shows the final output for this tutorial.</p>
 <blockquote>
-<div><iframe width="420" height="315" src="http://www.youtube.com/embed/7S7Jj-4cKHs" frameborder="0" allowfullscreen></iframe></div></blockquote>
-</div>
-<div class="section" id="output">
+<div><iframe width="420" height="315" src="https://www.youtube.com/embed/7S7Jj-4cKHs" frameborder="0" allowfullscreen></iframe></div></blockquote>
+</section>
+<section id="output">
 <h1>Output</h1>
 <p>The viewer below displays a sample of the output obtained after the entire pipeline. The mesh was decimated, and the faces were removed so that only the points remained. So, the output mesh was converted from mesh (.ply) to point cloud (.pcd) to show it in this tutorial. The vertex count is ~900k points.</p>
 <iframe src="http://pointclouds.org/assets/viewer/pcl_viewer.html?load=https://raw.github.com/PointCloudLibrary/data/master/tutorials/kinfu_large_scale/Tutorial_Cloud_Couch_bin_compressed.pcd&scale=0.004&psize=1" align="center" width="600" height="400" marginwidth="0" marginheight="0" frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen style="max-width: 100%;"></iframe><p>To further demonstrate the capabilities of KinFu Large Scale, we made another example with a room.</p>
-<iframe src="http://pointclouds.org/assets/viewer/pcl_viewer.html?load=https://raw.github.com/PointCloudLibrary/data/master/tutorials/kinfu_large_scale/using_kinfu_large_scale_output.pcd&scale=0.004&psize=1" align="center" width="600" height="400" marginwidth="0" marginheight="0" frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen style="max-width: 100%;"></iframe></div>
-<div class="section" id="general-recommendations">
+<iframe src="http://pointclouds.org/assets/viewer/pcl_viewer.html?load=https://raw.github.com/PointCloudLibrary/data/master/tutorials/kinfu_large_scale/using_kinfu_large_scale_output.pcd&scale=0.004&psize=1" align="center" width="600" height="400" marginwidth="0" marginheight="0" frameborder='no' allowfullscreen mozallowfullscreen webkitallowfullscreen style="max-width: 100%;"></iframe></section>
+<section id="general-recommendations">
 <h1>General Recommendations</h1>
 <p>There is a set of recommendations that we want to mention regarding the use of KinFu Large Scale. These recommendations are listed below:</p>
 <blockquote>
@@ -239,8 +159,8 @@
 <li><p><strong>Scan smoothly:</strong> Since there are more things happening per frame, KinFu Large Scale may not respond as fast as the original KinFu. Data is exchanged between GPU and CPU especially at the time of shifting. Performing smooth movements, in particular at the time of shifting, decreases the risk of losing the camera pose tracking. Be patient and you will get good results.</p></li>
 </ol>
 </div></blockquote>
-</div>
-<div class="section" id="related-executables">
+</section>
+<section id="related-executables">
 <h1>Related Executables</h1>
 <p>There are three executables related to this tutorial:</p>
 <blockquote>
@@ -251,50 +171,38 @@
 <li><p><strong>pcl_kinfu_largeScale_texture_output:</strong> After the meshes are generated and merged into one, this application is in charge of using the RGB screenshots and their corresponding camera poses taken during the scan to perform UV mapping in order to reconstruct the texture of the model.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="conclusion">
+</section>
+<section id="conclusion">
 <h1>Conclusion</h1>
 <p>In this tutorial we have shown the pipeline from scanning to final texturing using KinFu Large Scale. The - <em>experimental</em> - code is available in the master branch of PCL.</p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 <map id="pcl::PPFRGBRegionEstimation&lt; PointInT, PointNT, PointOutT &gt;" name="pcl::PPFRGBRegionEstimation&lt; PointInT, PointNT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="5,281,224,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="37,182,192,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="27,101,203,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="32,5,197,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,352,241,393"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="5,261,241,303"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="38,171,209,212"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="29,95,217,121"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="35,5,211,32"/>
 </map>

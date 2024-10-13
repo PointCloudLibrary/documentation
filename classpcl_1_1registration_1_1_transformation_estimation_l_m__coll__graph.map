@@ -1,6 +1,11 @@
 <map id="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;" name="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="pcl::registration::\lTransformationEstimation\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;" alt="" coords="565,5,749,86"/>
-<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="165,5,349,86"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="587,109,728,139"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="200,109,315,139"/>
+<area shape="rect" id="node1" title="TransformationEstimationLM implements Levenberg Marquardt&#45;based estimation of the transformation alig..." alt="" coords="965,93,1175,164"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title=" " alt="" coords="625,5,824,76"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="181,5,379,76"/>
+<area shape="rect" id="node4" href="$classpcl_1_1registration_1_1_warp_point_rigid.html" title=" " alt="" coords="616,101,833,157"/>
+<area shape="rect" id="node5" href="$classpcl_1_1registration_1_1_warp_point_rigid.html" title="Base warp point class." alt="" coords="173,101,387,157"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="629,197,820,223"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,211,80,238"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="220,258,340,285"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,277,80,303"/>
 </map>

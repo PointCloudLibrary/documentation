@@ -1,3 +1,6 @@
 <map id="pcl::search::OrganizedNeighbor&lt; PointT &gt;" name="pcl::search::OrganizedNeighbor&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="41,6,175,53"/>
+<area shape="rect" id="node1" title="OrganizedNeighbor is a class for optimized nearest neighbor search in organized projectable point clo..." alt="" coords="5,275,231,316"/>
+<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="46,184,190,225"/>
+<area shape="rect" id="node3" title=" " alt="" coords="73,5,163,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="167,95,373,121"/>
 </map>

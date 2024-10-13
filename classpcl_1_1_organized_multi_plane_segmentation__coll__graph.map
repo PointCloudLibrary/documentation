@@ -1,3 +1,6 @@
 <map id="pcl::OrganizedMultiPlaneSegmentation&lt; PointT, PointNT, PointLT &gt;" name="pcl::OrganizedMultiPlaneSegmentation&lt; PointT, PointNT, PointLT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="node1" title="OrganizedMultiPlaneSegmentation finds all planes present in the input cloud, and outputs a vector of ..." alt="" coords="5,275,189,331"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="124,199,300,225"/>
+<area shape="rect" id="node3" title=" " alt="" coords="167,5,257,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="282,95,449,121"/>
 </map>

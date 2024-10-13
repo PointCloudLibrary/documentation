@@ -1,5 +1,6 @@
 <map id="pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;::FlannIndexCreator" name="pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;::FlannIndexCreator">
-<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_flann_search_1_1_kd_tree_index_creator.html" title="Creates a FLANN KdTreeSingleIndex from the given input data. " alt="" coords="232,5,397,69"/>
-<area shape="rect" id="node5" href="$classpcl_1_1search_1_1_flann_search_1_1_kd_tree_multi_index_creator.html" title="Creates a FLANN KdTreeIndex of multiple randomized trees from the given input data, suitable for feature matching. " alt="" coords="221,93,408,157"/>
-<area shape="rect" id="node7" href="$classpcl_1_1search_1_1_flann_search_1_1_k_means_index_creator.html" title="Creates a FLANN KdTreeSingleIndex from the given input data. " alt="" coords="232,181,397,245"/>
+<area shape="rect" id="node1" title="Helper class that creates a FLANN index from a given FLANN matrix." alt="" coords="5,85,185,141"/>
+<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_flann_search_1_1_k_means_index_creator.html" title="Creates a FLANN KdTreeSingleIndex from the given input data." alt="" coords="246,5,427,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_flann_search_1_1_kd_tree_index_creator.html" title="Creates a FLANN KdTreeSingleIndex from the given input data." alt="" coords="247,85,427,141"/>
+<area shape="rect" id="node4" href="$classpcl_1_1search_1_1_flann_search_1_1_kd_tree_multi_index_creator.html" title="Creates a FLANN KdTreeIndex of multiple randomized trees from the given input data,..." alt="" coords="233,165,440,221"/>
 </map>

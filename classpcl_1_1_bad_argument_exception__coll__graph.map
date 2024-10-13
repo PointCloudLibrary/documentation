@@ -1,3 +1,5 @@
 <map id="pcl::BadArgumentException" name="pcl::BadArgumentException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="32,83,163,112"/>
+<area shape="rect" id="node1" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="5,155,208,181"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="38,80,175,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="37,5,176,32"/>
 </map>

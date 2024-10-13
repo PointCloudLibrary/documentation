@@ -1,0 +1,5 @@
+<map id="pcl::poisson::PoissonBadArgumentException" name="pcl::poisson::PoissonBadArgumentException">
+<area shape="rect" id="node1" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="25,155,207,196"/>
+<area shape="rect" id="node2" href="$classpcl_1_1poisson_1_1_poisson_exception.html" title="A base class for all poisson exceptions which inherits from std::runtime_error." alt="" coords="5,80,227,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,5,185,32"/>
+</map>

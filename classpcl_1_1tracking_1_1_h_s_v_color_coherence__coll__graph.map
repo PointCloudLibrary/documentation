@@ -1,3 +1,4 @@
 <map id="pcl::tracking::HSVColorCoherence&lt; PointInT &gt;" name="pcl::tracking::HSVColorCoherence&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_coherence.html" title="PointCoherence is a base class to compute coherence between the two points. " alt="" coords="19,6,213,53"/>
+<area shape="rect" id="node1" title="HSVColorCoherence computes coherence between the two points from the color difference between them." alt="" coords="5,95,245,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_coherence.html" title="PointCoherence is a base class to compute coherence between the two points." alt="" coords="19,5,231,47"/>
 </map>

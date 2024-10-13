@@ -1,5 +1,6 @@
 <map id="pcl::GridMinimum&lt; PointT &gt;" name="pcl::GridMinimum&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="40,161,157,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="29,83,168,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
+<area shape="rect" id="node1" title="GridMinimum assembles a local 2D grid over a given PointCloud, and downsamples the data." alt="" coords="5,244,215,271"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="46,155,174,196"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="33,80,187,107"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="22,5,198,32"/>
 </map>

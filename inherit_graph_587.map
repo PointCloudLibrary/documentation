@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_fast_bilateral_filter_1_1_array3_d.html" title="pcl::FastBilateralFilter\l\&lt; PointT \&gt;::Array3D" alt="" coords="5,5,155,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_feature_handler.html" title=" " alt="" coords="5,5,288,105"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_multi_channel2_d_comparison_feature_handler.html" title="Feature utility class that handles the creation and evaluation of RGBD comparison features." alt="" coords="336,27,567,83"/>
 </map>

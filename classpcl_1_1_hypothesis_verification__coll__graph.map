@@ -1,9 +1,13 @@
 <map id="pcl::HypothesisVerification&lt; ModelT, SceneT &gt;" name="pcl::HypothesisVerification&lt; ModelT, SceneT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; SceneT \&gt;" alt="" coords="692,132,871,161"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="176,20,291,49"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="425,97,567,127"/>
-<area shape="rect" id="node15" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; SceneT \&gt;" alt="" coords="713,210,849,257"/>
-<area shape="rect" id="node17" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; SceneT \&gt;" alt="" coords="429,210,563,257"/>
-<area shape="rect" id="node19" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="167,247,300,294"/>
-<area shape="rect" id="node21" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="428,279,564,326"/>
+<area shape="rect" id="node1" title="Abstract class for hypotheses verification methods." alt="" coords="1567,66,1761,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="1137,44,1333,71"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="817,44,1008,71"/>
+<area shape="rect" id="node4" title=" " alt="" coords="330,16,405,43"/>
+<area shape="rect" id="node5" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="588,63,708,89"/>
+<area shape="rect" id="node6" title=" " alt="" coords="330,81,405,108"/>
+<area shape="rect" id="node7" href="$classpcl_1_1search_1_1_kd_tree.html" title=" " alt="" coords="1163,95,1307,137"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="576,130,720,171"/>
+<area shape="rect" id="node11" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="841,150,985,191"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,167,96,193"/>
+<area shape="rect" id="node10" title=" " alt="" coords="264,197,471,224"/>
 </map>

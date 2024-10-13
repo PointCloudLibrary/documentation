@@ -1,3 +1,8 @@
 <map id="pcl::tracking::NearestPairPointCloudCoherence&lt; PointInT &gt;" name="pcl::tracking::NearestPairPointCloudCoherence&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_cloud_coherence.html" title="PointCloudCoherence is a base class to compute coherence between the two PointClouds. " alt="" coords="33,6,199,53"/>
+<area shape="rect" id="node1" title="NearestPairPointCloudCoherence computes coherence between two pointclouds using the nearest point pai..." alt="" coords="5,392,249,433"/>
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_cloud_coherence.html" title="PointCloudCoherence is a base class to compute coherence between the two PointClouds." alt="" coords="16,288,196,329"/>
+<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="221,288,365,329"/>
+<area shape="rect" id="node4" title=" " alt="" coords="307,5,398,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="249,95,456,121"/>
+<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="374,184,518,225"/>
 </map>

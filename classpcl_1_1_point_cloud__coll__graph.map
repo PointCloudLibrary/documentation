@@ -1,3 +1,6 @@
-<map id="pcl::PointCloud&lt; T &gt;" name="pcl::PointCloud&lt; T &gt;">
-<area shape="rect" id="node2" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
+<map id="pcl::PointCloud&lt; PointT &gt;" name="pcl::PointCloud&lt; PointT &gt;">
+<area shape="rect" id="node1" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="5,187,196,213"/>
+<area shape="rect" id="node2" title=" " alt="" coords="57,5,131,32"/>
+<area shape="rect" id="node3" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="149,96,269,123"/>
+<area shape="rect" id="node4" title=" " alt="" coords="171,5,246,32"/>
 </map>

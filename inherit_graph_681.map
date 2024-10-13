@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1_grab_cut_1_1_n_links.html" title="pcl::GrabCut\&lt; PointT\l \&gt;::NLinks" alt="" coords="5,5,152,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_graph_registration.html" title="GraphRegistration class is the base class for graph&#45;based registration methods" alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_pairwise_graph_registration.html" title="PairwiseGraphRegistration class aligns the clouds two by two" alt="" coords="220,5,441,47"/>
 </map>

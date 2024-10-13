@@ -1,3 +1,5 @@
 <map id="pcl::outofcore::OutofcoreOctreeDiskContainer&lt; PointT &gt;" name="pcl::outofcore::OutofcoreOctreeDiskContainer&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_node_container.html" title="pcl::outofcore::Outofcore\lAbstractNodeContainer\&lt;\l PointT \&gt;" alt="" coords="25,5,191,69"/>
+<area shape="rect" id="node1" title="Class responsible for serialization and deserialization of out of core point data." alt="" coords="5,229,233,271"/>
+<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_node_container.html" title=" " alt="" coords="27,124,211,180"/>
+<area shape="rect" id="node3" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_node_container.html" title=" " alt="" coords="27,5,211,61"/>
 </map>
