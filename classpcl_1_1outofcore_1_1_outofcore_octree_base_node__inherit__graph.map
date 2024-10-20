@@ -1,3 +1,4 @@
 <map id="pcl::outofcore::OutofcoreOctreeBaseNode&lt; ContainerT, PointT &gt;" name="pcl::outofcore::OutofcoreOctreeBaseNode&lt; ContainerT, PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="27,5,187,35"/>
+<area shape="rect" id="node1" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree,..." alt="" coords="5,80,227,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="29,5,203,32"/>
 </map>

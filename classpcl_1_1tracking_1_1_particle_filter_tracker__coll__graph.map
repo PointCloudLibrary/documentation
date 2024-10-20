@@ -1,11 +1,26 @@
 <map id="pcl::tracking::ParticleFilterTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::ParticleFilterTracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="5,270,149,317"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="33,101,209,131"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; PointInT \&gt;" alt="" coords="115,207,264,236"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="139,5,304,35"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="233,101,372,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_pass_through.html" title="pcl::PassThrough\&lt; PointInT \&gt;" alt="" coords="115,456,312,485"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_filter_indices.html" title="pcl::FilterIndices\l\&lt; PointInT \&gt;" alt="" coords="131,342,248,389"/>
-<area shape="rect" id="node18" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="288,198,405,245"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_pass_through.html" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type..." alt="" coords="272,351,459,380"/>
+<area shape="rect" id="node1" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="3571,146,3772,187"/>
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="2522,171,2678,213"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="2080,151,2268,177"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="1443,129,1619,156"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="2097,93,2251,120"/>
+<area shape="rect" id="node5" title=" " alt="" coords="645,200,736,227"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1115,85,1282,112"/>
+<area shape="rect" id="node7" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="2102,205,2246,246"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1095,261,1302,288"/>
+<area shape="rect" id="node9" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="1459,194,1603,235"/>
+<area shape="rect" id="node11" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class" alt="" coords="1417,392,1645,448"/>
+<area shape="rect" id="node10" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title=" " alt="" coords="2868,383,3115,425"/>
+<area shape="rect" id="node18" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title=" " alt="" coords="2007,441,2341,527"/>
+<area shape="rect" id="node12" href="$classpcl_1_1octree_1_1_octree_base.html" title=" " alt="" coords="1085,455,1312,511"/>
+<area shape="rect" id="node13" href="$classpcl_1_1octree_1_1_octree_base.html" title="Octree class." alt="" coords="553,462,828,503"/>
+<area shape="rect" id="node14" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class" alt="" coords="246,497,411,524"/>
+<area shape="rect" id="node19" href="$classpcl_1_1octree_1_1_octree2_buf_base.html" title="Octree double buffer class" alt="" coords="553,527,828,569"/>
+<area shape="rect" id="node15" href="$classpcl_1_1octree_1_1_octree_branch_node.html" title="Abstract octree branch class" alt="" coords="235,429,422,470"/>
+<area shape="rect" id="node16" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="5,503,180,529"/>
+<area shape="rect" id="node20" href="$classpcl_1_1octree_1_1_buffered_branch_node.html" title=" " alt="" coords="229,553,428,594"/>
+<area shape="rect" id="node17" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title="Octree pointcloud change detector class" alt="" coords="2468,445,2732,501"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_pass_through.html" title=" " alt="" coords="3251,128,3465,155"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="2536,86,2664,127"/>
+<area shape="rect" id="node24" href="$classpcl_1_1_pass_through.html" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type." alt="" coords="2890,77,3093,104"/>
 </map>

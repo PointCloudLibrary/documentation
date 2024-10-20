@@ -1,3 +1,5 @@
 <map id="pcl::registration::TransformationEstimationDualQuaternion&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimationDualQuaternion&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="12,6,196,87"/>
+<area shape="rect" id="node1" title="TransformationEstimationDualQuaternion implements dual quaternion based estimation of the transformat..." alt="" coords="5,273,225,344"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title=" " alt="" coords="16,153,215,224"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="16,5,215,76"/>
 </map>

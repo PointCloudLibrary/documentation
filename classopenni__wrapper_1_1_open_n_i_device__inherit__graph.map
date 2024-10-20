@@ -1,6 +1,7 @@
 <map id="openni_wrapper::OpenNIDevice" name="openni_wrapper::OpenNIDevice">
-<area shape="rect" id="node3" href="$classopenni__wrapper_1_1_device_kinect.html" title="Concrete implementation of the interface OpenNIDevice for a MS Kinect device. " alt="" coords="279,5,476,35"/>
-<area shape="rect" id="node5" href="$classopenni__wrapper_1_1_device_o_n_i.html" title="Concrete implementation of the interface OpenNIDevice for a virtual device playing back an ONI file..." alt="" coords="284,59,471,88"/>
-<area shape="rect" id="node7" href="$classopenni__wrapper_1_1_device_primesense.html" title="Concrete implementation of the interface OpenNIDevice for a Primesense device. " alt="" coords="263,112,492,141"/>
-<area shape="rect" id="node9" href="$classopenni__wrapper_1_1_device_xtion_pro.html" title="Concrete implementation of the interface OpenNIDevice for a Asus Xtion Pro device. " alt="" coords="272,165,483,195"/>
+<area shape="rect" id="node1" title="Class representing an astract device for OpenNI devices: Primesense PSDK, Microsoft Kinect,..." alt="" coords="5,81,232,108"/>
+<area shape="rect" id="node2" href="$classopenni__wrapper_1_1_device_kinect.html" title="Concrete implementation of the interface OpenNIDevice for a MS Kinect device." alt="" coords="297,5,517,32"/>
+<area shape="rect" id="node3" href="$classopenni__wrapper_1_1_device_o_n_i.html" title="Concrete implementation of the interface OpenNIDevice for a virtual device playing back an ONI file." alt="" coords="306,56,509,83"/>
+<area shape="rect" id="node4" href="$classopenni__wrapper_1_1_device_primesense.html" title="Concrete implementation of the interface OpenNIDevice for a Primesense device." alt="" coords="280,107,535,133"/>
+<area shape="rect" id="node5" href="$classopenni__wrapper_1_1_device_xtion_pro.html" title="Concrete implementation of the interface OpenNIDevice for a Asus Xtion Pro device." alt="" coords="290,157,525,184"/>
 </map>

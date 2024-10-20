@@ -1,5 +1,6 @@
 <map id="pcl::gpu::Octree" name="pcl::gpu::Octree">
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="5,182,152,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="16,5,179,35"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="95,85,273,115"/>
+<area shape="rect" id="node1" title="Octree implementation on GPU." alt="" coords="39,275,163,301"/>
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="20,171,181,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class" alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class" alt="" coords="116,81,315,108"/>
 </map>

@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>PCL Visualization overview &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCL Visualization overview &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">PCL Visualization overview</a></li>
@@ -91,67 +48,30 @@
 <li><a class="reference internal" href="#range-image-visualizer">Range Image Visualizer</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>PCL Visualization overview</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="pcl-visualization-overview">
+             
+  <section id="pcl-visualization-overview">
 <span id="visualization"></span><h1>PCL Visualization overview</h1>
 <p>The <strong>pcl_visualization</strong> library was built for the purpose of being able to
 quickly prototype and visualize the results of algorithms operating on 3D point
@@ -201,42 +121,30 @@ accompanying the library.</p>
 <p class="admonition-title">Note</p>
 <p>Due to historical reasons, PCL 1.x stores RGB data as a packed float (to
 preserve backward compatibility). To learn more about this, please see the
-<a class="reference external" href="http://docs.pointclouds.org/trunk/structpcl_1_1_point_x_y_z_r_g_b.html">PointXYZRGB</a>.</p>
+<a class="reference external" href="https://pointclouds.org/documentation/structpcl_1_1_point_x_y_z_r_g_b.html">PointXYZRGB</a>.</p>
 </div>
-</div>
-<div class="section" id="simple-cloud-visualization">
+</section>
+<section id="simple-cloud-visualization">
 <h1>Simple Cloud Visualization</h1>
 <p>If you just want to visualize something in your app with a few lines of code,
 use a snippet like the following one:</p>
-<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="cp">#include</span> <span class="cpf">&lt;pcl_visualization/cloud_viewer.h&gt;</span><span class="cp"></span>
- <span class="c1">//...</span>
- <span class="kt">void</span>
- <span class="nf">foo</span> <span class="p">()</span>
- <span class="p">{</span>
-   <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span> <span class="n">cloud</span><span class="p">;</span>
-   <span class="c1">//... populate cloud</span>
-   <span class="n">pcl_visualization</span><span class="o">::</span><span class="n">CloudViewer</span> <span class="n">viewer</span><span class="p">(</span><span class="s">&quot;Simple Cloud Viewer&quot;</span><span class="p">);</span>
-   <span class="n">viewer</span><span class="p">.</span><span class="n">showCloud</span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-   <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">viewer</span><span class="p">.</span><span class="n">wasStopped</span><span class="p">())</span>
-   <span class="p">{</span>
-   <span class="p">}</span>
- <span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w"> </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl_visualization/cloud_viewer.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 2</span><span class="w"> </span><span class="c1">//...</span>
+<span class="linenos"> 3</span><span class="w"> </span><span class="kt">void</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w"> </span><span class="nf">foo</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="w">   </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGB</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cloud</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="w">   </span><span class="c1">//... populate cloud</span>
+<span class="linenos"> 8</span><span class="w">   </span><span class="n">pcl_visualization</span><span class="o">::</span><span class="n">CloudViewer</span><span class="w"> </span><span class="n">viewer</span><span class="p">(</span><span class="s">&quot;Simple Cloud Viewer&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">   </span><span class="n">viewer</span><span class="p">.</span><span class="n">showCloud</span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">   </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">viewer</span><span class="p">.</span><span class="n">wasStopped</span><span class="p">())</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">   </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">13</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 </pre></div>
-</td></tr></table></div>
 </div>
-<div class="section" id="pcd-viewer">
+</section>
+<section id="pcd-viewer">
 <h1>PCD Viewer</h1>
 <p>A quick way for visualizing PCD (Point Cloud Data) files is by using
 <strong>pcl_viewer</strong>. As of 0.2.7, pcl_viewer’s help screen looks like:</p>
@@ -244,8 +152,8 @@ use a snippet like the following one:</p>
   <span class="n">where</span> <span class="n">options</span> <span class="n">are</span><span class="p">:</span>
                      <span class="o">-</span><span class="n">bc</span> <span class="n">r</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">b</span>                <span class="o">=</span> <span class="n">background</span> <span class="n">color</span>
                      <span class="o">-</span><span class="n">fc</span> <span class="n">r</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">b</span>                <span class="o">=</span> <span class="n">foreground</span> <span class="n">color</span>
-                     <span class="o">-</span><span class="n">ps</span> <span class="n">X</span>                    <span class="o">=</span> <span class="n">point</span> <span class="n">size</span> <span class="p">(</span><span class="mf">1.</span><span class="o">.</span><span class="mi">64</span><span class="p">)</span>
-                     <span class="o">-</span><span class="n">opaque</span> <span class="n">X</span>                <span class="o">=</span> <span class="n">rendered</span> <span class="n">point</span> <span class="n">cloud</span> <span class="n">opacity</span> <span class="p">(</span><span class="mf">0.</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
+                     <span class="o">-</span><span class="n">ps</span> <span class="n">X</span>                    <span class="o">=</span> <span class="n">point</span> <span class="n">size</span> <span class="p">(</span><span class="mf">1..64</span><span class="p">)</span>
+                     <span class="o">-</span><span class="n">opaque</span> <span class="n">X</span>                <span class="o">=</span> <span class="n">rendered</span> <span class="n">point</span> <span class="n">cloud</span> <span class="n">opacity</span> <span class="p">(</span><span class="mf">0..1</span><span class="p">)</span>
                      <span class="o">-</span><span class="n">ax</span> <span class="n">n</span>                    <span class="o">=</span> <span class="n">enable</span> <span class="n">on</span><span class="o">-</span><span class="n">screen</span> <span class="n">display</span> <span class="n">of</span> <span class="n">XYZ</span> <span class="n">axes</span> <span class="ow">and</span> <span class="n">scale</span> <span class="n">them</span> <span class="n">to</span> <span class="n">n</span>
                      <span class="o">-</span><span class="n">ax_pos</span> <span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span>            <span class="o">=</span> <span class="k">if</span> <span class="n">axes</span> <span class="n">are</span> <span class="n">enabled</span><span class="p">,</span> <span class="nb">set</span> <span class="n">their</span> <span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span> <span class="n">position</span> <span class="ow">in</span> <span class="n">space</span> <span class="p">(</span><span class="n">default</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 
@@ -265,8 +173,8 @@ use a snippet like the following one:</p>
 <span class="p">(</span><span class="n">Note</span><span class="p">:</span> <span class="k">for</span> <span class="n">multiple</span> <span class="o">.</span><span class="n">pcd</span> <span class="n">files</span><span class="p">,</span> <span class="n">provide</span> <span class="n">multiple</span> <span class="o">-</span><span class="p">{</span><span class="n">fc</span><span class="p">,</span><span class="n">ps</span><span class="p">}</span> <span class="n">parameters</span><span class="p">;</span> <span class="n">they</span> <span class="n">will</span> <span class="n">be</span> <span class="n">automatically</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">the</span> <span class="n">right</span> <span class="n">file</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="usage-examples">
+</section>
+<section id="usage-examples">
 <h1>Usage examples</h1>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pcl_viewer -multiview <span class="m">1</span> data/partial_cup_model.pcd data/partial_cup_model.pcd data/partial_cup_model.pcd
 </pre></div>
@@ -296,8 +204,8 @@ following information on the console:</p>
     <span class="n">ALT</span> <span class="o">+</span> <span class="n">f</span><span class="p">,</span> <span class="n">F</span>   <span class="p">:</span> <span class="n">switch</span> <span class="n">between</span> <span class="n">maximized</span> <span class="n">window</span> <span class="n">mode</span> <span class="ow">and</span> <span class="n">original</span> <span class="n">size</span>
 
           <span class="n">l</span><span class="p">,</span> <span class="n">L</span>           <span class="p">:</span> <span class="nb">list</span> <span class="nb">all</span> <span class="n">available</span> <span class="n">geometric</span> <span class="ow">and</span> <span class="n">color</span> <span class="n">handlers</span> <span class="k">for</span> <span class="n">the</span> <span class="n">current</span> <span class="n">actor</span> <span class="nb">map</span>
-    <span class="n">ALT</span> <span class="o">+</span> <span class="mf">0.</span><span class="o">.</span><span class="mi">9</span> <span class="p">[</span><span class="o">+</span> <span class="n">CTRL</span><span class="p">]</span>  <span class="p">:</span> <span class="n">switch</span> <span class="n">between</span> <span class="n">different</span> <span class="n">geometric</span> <span class="n">handlers</span> <span class="p">(</span><span class="n">where</span> <span class="n">available</span><span class="p">)</span>
-          <span class="mf">0.</span><span class="o">.</span><span class="mi">9</span> <span class="p">[</span><span class="o">+</span> <span class="n">CTRL</span><span class="p">]</span>  <span class="p">:</span> <span class="n">switch</span> <span class="n">between</span> <span class="n">different</span> <span class="n">color</span> <span class="n">handlers</span> <span class="p">(</span><span class="n">where</span> <span class="n">available</span><span class="p">)</span>
+    <span class="n">ALT</span> <span class="o">+</span> <span class="mf">0..9</span> <span class="p">[</span><span class="o">+</span> <span class="n">CTRL</span><span class="p">]</span>  <span class="p">:</span> <span class="n">switch</span> <span class="n">between</span> <span class="n">different</span> <span class="n">geometric</span> <span class="n">handlers</span> <span class="p">(</span><span class="n">where</span> <span class="n">available</span><span class="p">)</span>
+          <span class="mf">0..9</span> <span class="p">[</span><span class="o">+</span> <span class="n">CTRL</span><span class="p">]</span>  <span class="p">:</span> <span class="n">switch</span> <span class="n">between</span> <span class="n">different</span> <span class="n">color</span> <span class="n">handlers</span> <span class="p">(</span><span class="n">where</span> <span class="n">available</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Pressing <code class="docutils literal notranslate"><span class="pre">l</span></code> will show the current list of available geometry/color handlers
@@ -330,8 +238,8 @@ downloaded and are available. The results shown in the following picture were
 obtained after pressing <code class="docutils literal notranslate"><span class="pre">u</span></code> and <code class="docutils literal notranslate"><span class="pre">g</span></code> to enable the lookup table and on-grid
 display.</p>
 <img alt="_images/ex5.jpg" src="_images/ex5.jpg" />
-</div>
-<div class="section" id="range-image-visualizer">
+</section>
+<section id="range-image-visualizer">
 <h1>Range Image Visualizer</h1>
 <p>A quick way for visualizing range images is by using the binary of the tutorial
 for range_image_visualization:</p>
@@ -340,46 +248,34 @@ for range_image_visualization:</p>
 </div>
 <p>The above will load the <code class="docutils literal notranslate"><span class="pre">office_scene.pcd</span></code> point cloud file, create a range
 image from it and visualize both, the point cloud and the range image.</p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

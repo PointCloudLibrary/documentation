@@ -1,3 +1,4 @@
 <map id="pcl::registration::CorrespondenceRejectorVarTrimmed" name="pcl::registration::CorrespondenceRejectorVarTrimmed">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="41,6,207,53"/>
+<area shape="rect" id="node1" title="CorrespondenceRejectoVarTrimmed implements a simple correspondence rejection method by considering as..." alt="" coords="5,95,264,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="44,5,225,47"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="ON_Point" name="ON_Point">
-<area shape="rect" id="node7" href="$class_o_n___annotation_text_dot.html" title="ON_AnnotationTextDot" alt="" coords="5,237,163,267"/>
-<area shape="rect" id="node9" href="$class_o_n___brep_vertex.html" title="ON_BrepVertex" alt="" coords="187,237,301,267"/>
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="111,83,217,112"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="121,5,207,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="135,155,217,181"/>
+<area shape="rect" id="node4" href="$class_o_n___annotation_text_dot.html" title=" " alt="" coords="5,229,176,256"/>
+<area shape="rect" id="node5" href="$class_o_n___brep_vertex.html" title=" " alt="" coords="201,229,322,256"/>
+<area shape="rect" id="node2" href="$class_o_n___geometry.html" title=" " alt="" coords="119,80,233,107"/>
+<area shape="rect" id="node3" href="$class_o_n___object.html" title=" " alt="" coords="131,5,221,32"/>
 </map>

@@ -1,8 +1,9 @@
 <map id="pcl::device::FacetStream" name="pcl::device::FacetStream">
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; int \&gt;" alt="" coords="535,21,681,67"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="15,31,177,60"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="247,41,425,71"/>
-<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; int \&gt;" alt="" coords="525,90,691,137"/>
-<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="5,104,187,133"/>
-<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="237,145,435,175"/>
+<area shape="rect" id="node1" title=" " alt="" coords="891,57,1072,84"/>
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="579,17,741,58"/>
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class" alt="" coords="15,21,195,48"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class" alt="" coords="263,33,461,60"/>
+<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="571,82,749,123"/>
+<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class" alt="" coords="5,88,204,115"/>
+<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class" alt="" coords="253,136,471,163"/>
 </map>

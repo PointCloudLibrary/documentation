@@ -1,5 +1,8 @@
 <map id="vtkVertexBufferObjectMapper" name="vtkVertexBufferObjectMapper">
-<area shape="rect" id="node4" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkShader\lProgram2 \&gt;" alt="" coords="112,102,299,149"/>
-<area shape="rect" id="node6" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; T \&gt;" alt="" coords="132,5,279,35"/>
-<area shape="rect" id="node8" href="$classvtk_vertex_buffer_object.html" title="vtkVertexBufferObject" alt="" coords="323,111,472,140"/>
+<area shape="rect" id="node1" title=" " alt="" coords="119,243,333,269"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,97,129"/>
+<area shape="rect" id="node3" href="$classvtk_smart_pointer.html" title=" " alt="" coords="121,95,331,136"/>
+<area shape="rect" id="node4" href="$classvtk_smart_pointer.html" title=" " alt="" coords="143,5,309,32"/>
+<area shape="rect" id="node5" href="$classvtk_vertex_buffer_object.html" title=" " alt="" coords="355,102,521,129"/>
+<area shape="rect" id="node6" title=" " alt="" coords="395,5,481,32"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="pcl::face_detection::PoseClassRegressionVarianceStatsEstimator&lt; LabelDataType, NodeType, DataSet, ExampleIndex &gt;" name="pcl::face_detection::PoseClassRegressionVarianceStatsEstimator&lt; LabelDataType, NodeType, DataSet, ExampleIndex &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_stats_estimator.html" title="Class interface for gathering statistics for decision tree learning. " alt="" coords="31,5,225,69"/>
+<area shape="rect" id="node1" title="Statistics estimator for regression trees which optimizes information gain and pose parameters error." alt="" coords="5,109,272,180"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_stats_estimator.html" title="Class interface for gathering statistics for decision tree learning." alt="" coords="34,5,243,61"/>
 </map>

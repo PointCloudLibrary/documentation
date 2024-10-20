@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Using CCache to speed up compilation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,84 +38,37 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Using CCache to speed up compilation</a></li>
 <li><a class="reference internal" href="#using-colorgcc-to-colorize-output">Using colorgcc to colorize output</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Using CCache to speed up compilation</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="using-ccache-to-speed-up-compilation">
+             
+  <section id="using-ccache-to-speed-up-compilation">
 <span id="c-cache"></span><h1>Using CCache to speed up compilation</h1>
 <p><a class="reference external" href="http://ccache.samba.org/">CCache</a> is nothing more than a cache for your
 compiler. ccache is usually very easy to install. Here’s an example for Ubuntu
@@ -166,8 +86,8 @@ This directory contains symlinks to ccache, and ccache is smart enough to
 look at the name of the calling executable to determine which real executable
 to run. I.e. there is a symlink from ‘/usr/lib/ccache/g++’ to just ‘ccache’,
 but it actually runs the equivalent of ‘ccache g++’.</p>
-</div>
-<div class="section" id="using-colorgcc-to-colorize-output">
+</section>
+<section id="using-colorgcc-to-colorize-output">
 <h1>Using colorgcc to colorize output</h1>
 <p><a class="reference external" href="https://github.com/johannes/colorgcc">colorgcc</a> is a colorizer for the output
 of GCC, and allows you to better interpret the compiler warnings/errors.</p>
@@ -177,13 +97,13 @@ of GCC, and allows you to better interpret the compiler warnings/errors.</p>
 </pre></div>
 </div>
 <p>To enable colorgcc, perform the following steps:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>cp /etc/colorgcc/colorgccrc $HOME/.colorgccrc
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cp /etc/colorgcc/colorgccrc <span class="nv">$HOME</span>/.colorgccrc
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>edit the $HOME/.colorgccrc file, search for the following lines:</p></li>
 </ul>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>g++: /usr/bin/g++
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>g++: /usr/bin/g++
 gcc: /usr/bin/gcc
 c++: /usr/bin/g++
 cc:  /usr/bin/gcc
@@ -193,7 +113,7 @@ gcj: /usr/bin/gcj
 </pre></div>
 </div>
 <p>and replace them with:</p>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>g++: ccache /usr/bin/g++
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>g++: ccache /usr/bin/g++
 gcc: ccache /usr/bin/gcc
 c++: ccache /usr/bin/g++
 cc:  ccache /usr/bin/gcc
@@ -205,7 +125,7 @@ gcj: ccache /usr/bin/gcj
 <ul class="simple">
 <li><p>create a $HOME/bin or $HOME/sbin directory, and create the following softlinks in it</p></li>
 </ul>
-<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span>ln -s /usr/bin/colorgcc c++
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ln -s /usr/bin/colorgcc c++
 ln -s /usr/bin/colorgcc cc
 ln -s /usr/bin/colorgcc g++
 ln -s /usr/bin/colorgcc gcc
@@ -222,46 +142,34 @@ ln -s /usr/bin/colorgcc gcc
 <p>depending on where you stored the <code class="docutils literal notranslate"><span class="pre">colorgcc</span></code> softlinks, so that when
 cc/gcc/g++/c++ is invoked the freshly created softlinks get activated first and
 not the global /usr/bin/{cc,gcc,g++,c++}.</p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

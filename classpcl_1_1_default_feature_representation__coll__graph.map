@@ -1,4 +1,5 @@
 <map id="pcl::DefaultFeatureRepresentation&lt; PointDefault &gt;" name="pcl::DefaultFeatureRepresentation&lt; PointDefault &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointDefault \&gt;" alt="" coords="33,121,199,167"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="33,6,199,53"/>
+<area shape="rect" id="node1" title="DefaulFeatureRepresentation extends PointRepresentation and is intended to be used when defining the ..." alt="" coords="5,200,251,241"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="37,109,219,151"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="37,5,219,47"/>
 </map>

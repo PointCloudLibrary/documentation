@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1_s_h_o_t1344.html" title="A point structure representing the generic Signature of Histograms of OrienTations (SHOT) &#45; shape+col..." alt="" coords="5,5,117,35"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class." alt="" coords="5,42,156,69"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_gray_stereo_matching.html" title="Stereo Matching abstract class for Grayscale images." alt="" coords="204,42,387,69"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_adaptive_cost_s_o_stereo_matching.html" title="Adaptive Cost 2&#45;pass Scanline Optimization Stereo Matching class." alt="" coords="450,5,646,47"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_block_based_stereo_matching.html" title="Block based (or fixed window) Stereo Matching class." alt="" coords="435,71,661,98"/>
 </map>

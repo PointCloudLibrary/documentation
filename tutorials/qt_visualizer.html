@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Create a PCL visualizer in Qt with cmake &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a PCL visualizer in Qt with cmake &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Create a PCL visualizer in Qt with cmake</a><ul>
@@ -100,67 +57,30 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Create a PCL visualizer in Qt with cmake</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="create-a-pcl-visualizer-in-qt-with-cmake">
+             
+  <section id="create-a-pcl-visualizer-in-qt-with-cmake">
 <span id="qt-visualizer"></span><h1><a class="toc-backref" href="#id1">Create a PCL visualizer in Qt with cmake</a></h1>
 <p>In this tutorial we will learn how to create a PCL + Qt project, we will use Cmake rather than Qmake.The program we are going to
 write is a simple PCL visualizer which allow to change a randomly generated point cloud color.</p>
@@ -189,7 +109,7 @@ write is a simple PCL visualizer which allow to change a randomly generated poin
 </li>
 </ul>
 </div>
-<div class="section" id="the-project">
+<section id="the-project">
 <h2><a class="toc-backref" href="#id2">The project</a></h2>
 <p>For this project Qt is of course mandatory, make sure it is installed and PCL deals with it.
 <a class="reference external" href="http://qt-project.org/doc/qt-4.8/qmake-manual.html">qmake</a> is a tool that helps simplify the build process for development project across different platforms,
@@ -212,8 +132,8 @@ Create the folder tree and download the sources files from <a class="reference e
 <p class="admonition-title">Note</p>
 <p>File paths should not contain any special character or the compilation might fail with a <code class="docutils literal notranslate"><span class="pre">moc:</span> <span class="pre">Cannot</span> <span class="pre">open</span> <span class="pre">options</span> <span class="pre">file</span> <span class="pre">specified</span> <span class="pre">with</span> <span class="pre">&#64;</span></code> error message.</p>
 </div>
-</div>
-<div class="section" id="qt-configuration">
+</section>
+<section id="qt-configuration">
 <h2><a class="toc-backref" href="#id3">Qt configuration</a></h2>
 <dl class="simple">
 <dt>First we will take a look at how Qt is configured to build this project. Simply open <code class="docutils literal notranslate"><span class="pre">pcl_visualizer.pro</span></code> with Qt (or double click on the file)</dt><dd><p>and go to the <strong>Projects</strong> tab</p>
@@ -224,14 +144,14 @@ Create the folder tree and download the sources files from <a class="reference e
 Use relative paths like this is better than absolute paths; this project should work wherever it has been put.</p>
 <p>We specify in the general section that we want to build in the folder <code class="docutils literal notranslate"><span class="pre">../build</span></code> (this is a relative path from the <code class="docutils literal notranslate"><span class="pre">.pro</span></code> file).</p>
 <p>The first step of the building is to call <code class="docutils literal notranslate"><span class="pre">cmake</span></code> (from the <code class="docutils literal notranslate"><span class="pre">build</span></code> folder) with argument <code class="docutils literal notranslate"><span class="pre">../src</span></code>; this is gonna create all files in the
-<code class="docutils literal notranslate"><span class="pre">build</span></code> folder without modifying anything in the <code class="docutils literal notranslate"><span class="pre">src</span></code> foler; thus keeping it clean.</p>
+<code class="docutils literal notranslate"><span class="pre">build</span></code> folder without modifying anything in the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder; thus keeping it clean.</p>
 <p>Then we just have to compile our program; the argument <code class="docutils literal notranslate"><span class="pre">-j2</span></code> allow to specify how many thread of your CPU you want to use for compilation. The more thread you use
 the faster the compilation will be (especially on big projects); but if you take all threads from the CPU your OS will likely be unresponsive during
 the compilation process.
 See <a class="reference external" href="http://www.pointclouds.org/documentation/advanced/compiler_optimizations.php#compiler-optimizations">compiler optimizations</a> for more information.</p>
 <p>If you don’t want to use Qt Creator but Eclipse instead; see <a class="reference external" href="http://www.pointclouds.org/documentation/tutorials/using_pcl_with_eclipse.php#using-pcl-with-eclipse">using PCL with Eclipse</a>.</p>
-</div>
-<div class="section" id="user-interface-ui">
+</section>
+<section id="user-interface-ui">
 <h2><a class="toc-backref" href="#id4">User interface (UI)</a></h2>
 <p>The point of using Qt for your projects is that you can easily build cross-platform UIs. The UI is held in the <code class="docutils literal notranslate"><span class="pre">.ui</span></code> file
 You can open it with a text editor or with Qt Creator, in this example the UI is very simple and it consists of :</p>
@@ -248,24 +168,24 @@ You can open it with a text editor or with Qt Creator, in this example the UI is
 <p>If you click on Edit <a class="reference external" href="http://qt-project.org/doc/qt-4.8/signalsandslots.html">Signals/Slots</a> at the top of the Qt window you will see the relationships
 between some of the UI objects. In our example the sliderMoved(int) signal is connected to the display(int) slot; this means that everytime we move the slider
 the digital display is updated accordingly to the slider value.</p>
-</div>
-<div class="section" id="the-code">
+</section>
+<section id="the-code">
 <h2><a class="toc-backref" href="#id5">The code</a></h2>
 <p>Now, let’s break down the code piece by piece.</p>
-<div class="section" id="main-cpp">
+<section id="main-cpp">
 <h3><a class="toc-backref" href="#id6">main.cpp</a></h3>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;pclviewer.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;QApplication&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;QMainWindow&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pclviewer.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;QApplication&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;QMainWindow&gt;</span><span class="cp"></span>
 
-<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-  <span class="n">QApplication</span> <span class="n">a</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
-  <span class="n">PCLViewer</span> <span class="n">w</span><span class="p">;</span>
-  <span class="n">w</span><span class="p">.</span><span class="n">show</span> <span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">QApplication</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">PCLViewer</span><span class="w"> </span><span class="n">w</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">w</span><span class="p">.</span><span class="n">show</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
 
-  <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">exec</span> <span class="p">();</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">exec</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -274,101 +194,105 @@ the digital display is updated accordingly to the slider value.</p>
 <div class="line">A <code class="docutils literal notranslate"><span class="pre">PCLViewer</span></code> object called <cite>w</cite> is instantiated and it’s method <code class="docutils literal notranslate"><span class="pre">show()</span></code> is called.</div>
 <div class="line">Finally we return the state of our program exit through the QApplication <cite>a</cite>.</div>
 </div>
-</div>
-<div class="section" id="pclviewer-h">
+</section>
+<section id="pclviewer-h">
 <h3><a class="toc-backref" href="#id7">pclviewer.h</a></h3>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 
 <span class="c1">// Qt</span>
-<span class="cp">#include</span> <span class="cpf">&lt;QMainWindow&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;QMainWindow&gt;</span><span class="cp"></span>
 
 <span class="c1">// Point Cloud Library</span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/point_cloud.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/point_cloud.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
 
-<span class="c1">// Visualization Toolkit (VTK)</span>
-<span class="cp">#include</span> <span class="cpf">&lt;vtkRenderWindow.h&gt;</span><span class="cp"></span>
-
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span> <span class="n">PointT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="n">PointCloudT</span><span class="p">;</span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="w"> </span><span class="n">PointT</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This file is the header for the class PCLViewer; we include <code class="docutils literal notranslate"><span class="pre">QMainWindow</span></code> because this class contains UI elements, we include the PCL headers we will
 be using and the VTK header for the <code class="docutils literal notranslate"><span class="pre">qvtkWidget</span></code>. We also define typedefs of the point types and point clouds, this improves readabily.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">Ui</span>
-<span class="p">{</span>
-  <span class="k">class</span> <span class="nc">PCLViewer</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span><span class="w"> </span><span class="nn">Ui</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">class</span><span class="w"> </span><span class="nc">PCLViewer</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>We declare the namespace <code class="docutils literal notranslate"><span class="pre">Ui</span></code> and the class PCLViewer inside it.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PCLViewer</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QMainWindow</span>
-<span class="p">{</span>
-  <span class="n">Q_OBJECT</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">PCLViewer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">QMainWindow</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">Q_OBJECT</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This is the definition of the PCLViewer class; the macro <code class="docutils literal notranslate"><span class="pre">Q_OBJECT</span></code> tells the compiler that this object contains UI elements;
 this imply that this file will be processed through <a class="reference external" href="http://qt-project.org/doc/qt-4.8/moc.html">the Meta-Object Compiler (moc)</a>.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="o">:</span>
-  <span class="k">explicit</span> <span class="n">PCLViewer</span> <span class="p">(</span><span class="n">QWidget</span> <span class="o">*</span><span class="n">parent</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
-  <span class="o">~</span><span class="n">PCLViewer</span> <span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="k">explicit</span><span class="w"> </span><span class="n">PCLViewer</span><span class="w"> </span><span class="p">(</span><span class="n">QWidget</span><span class="w"> </span><span class="o">*</span><span class="n">parent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="o">~</span><span class="n">PCLViewer</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The constructor and destructor of the PCLViewer class.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="nl">Q_SLOTS</span><span class="p">:</span>
-  <span class="kt">void</span>
-  <span class="n">randomButtonPressed</span> <span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span><span class="w"> </span><span class="n">Q_SLOTS</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="n">randomButtonPressed</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
 
-  <span class="kt">void</span>
-  <span class="nf">RGBsliderReleased</span> <span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="nf">RGBsliderReleased</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
 
-  <span class="kt">void</span>
-  <span class="nf">pSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="nf">pSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">void</span>
-  <span class="nf">redSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="nf">redSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">void</span>
-  <span class="nf">greenSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="nf">greenSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">void</span>
-  <span class="nf">blueSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="nf">blueSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>These are the public slots; these functions will be linked with UI elements actions.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">protected</span><span class="o">:</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">viewer</span><span class="p">;</span>
-  <span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">cloud</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">protected</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"></span>
+<span class="w">  </span><span class="n">refreshView</span><span class="p">();</span><span class="w"></span>
 
-  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">red</span><span class="p">;</span>
-  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">green</span><span class="p">;</span>
-  <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">blue</span><span class="p">;</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">viewer</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">cloud</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">green</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">blue</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
 <div class="line">A boost shared pointer to a PCLVisualier and a pointer to a point cloud are defined here.</div>
 <div class="line">The integers <code class="docutils literal notranslate"><span class="pre">red</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code>, <code class="docutils literal notranslate"><span class="pre">blue</span></code> will help us store the value of the sliders.</div>
 </div>
-</div>
-<div class="section" id="pclviewer-cpp">
+</section>
+<section id="pclviewer-cpp">
 <h3><a class="toc-backref" href="#id8">pclviewer.cpp</a></h3>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;pclviewer.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;ui_pclviewer.h&quot;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;pclviewer.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ui_pclviewer.h&quot;</span><span class="cp"></span>
 
-<span class="n">PCLViewer</span><span class="o">::</span><span class="n">PCLViewer</span> <span class="p">(</span><span class="n">QWidget</span> <span class="o">*</span><span class="n">parent</span><span class="p">)</span> <span class="o">:</span>
-  <span class="n">QMainWindow</span> <span class="p">(</span><span class="n">parent</span><span class="p">),</span>
-  <span class="n">ui</span> <span class="p">(</span><span class="k">new</span> <span class="n">Ui</span><span class="o">::</span><span class="n">PCLViewer</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">ui</span><span class="o">-&gt;</span><span class="n">setupUi</span> <span class="p">(</span><span class="k">this</span><span class="p">);</span>
-  <span class="k">this</span><span class="o">-&gt;</span><span class="n">setWindowTitle</span> <span class="p">(</span><span class="s">&quot;PCL viewer&quot;</span><span class="p">);</span>
+<span class="cp">#if VTK_MAJOR_VERSION &gt; 8</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vtkGenericOpenGLRenderWindow.h&gt;</span><span class="cp"></span>
+<span class="cp">#endif</span>
 
-  <span class="c1">// Setup the cloud pointer</span>
-  <span class="n">cloud</span><span class="p">.</span><span class="n">reset</span> <span class="p">(</span><span class="k">new</span> <span class="n">PointCloudT</span><span class="p">);</span>
-  <span class="c1">// The number of points in the cloud</span>
-  <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">resize</span> <span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="n">PCLViewer</span><span class="o">::</span><span class="n">PCLViewer</span><span class="w"> </span><span class="p">(</span><span class="n">QWidget</span><span class="w"> </span><span class="o">*</span><span class="n">parent</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">QMainWindow</span><span class="w"> </span><span class="p">(</span><span class="n">parent</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">ui</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Ui</span><span class="o">::</span><span class="n">PCLViewer</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">setupUi</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">setWindowTitle</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;PCL viewer&quot;</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Setup the cloud pointer</span>
+<span class="w">  </span><span class="n">cloud</span><span class="p">.</span><span class="n">reset</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// The number of points in the cloud</span>
+<span class="w">  </span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">resize</span><span class="w"> </span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>We include the class header and the header for the UI object; note that this file is generated by the moc and it’s path depend on
@@ -376,33 +300,51 @@ where you call cmake !</p>
 <p>After that is the constructor implementation; we setup the ui and the window title name.
 | Then we initialize the cloud pointer member of the class at a newly allocated point cloud pointer.
 | The cloud is resized to be able to hold 200 points.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// The default color</span>
-  <span class="n">red</span>   <span class="o">=</span> <span class="mi">128</span><span class="p">;</span>
-  <span class="n">green</span> <span class="o">=</span> <span class="mi">128</span><span class="p">;</span>
-  <span class="n">blue</span>  <span class="o">=</span> <span class="mi">128</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">ui</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">Ui</span><span class="o">::</span><span class="n">PCLViewer</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">setupUi</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">setWindowTitle</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;PCL viewer&quot;</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// Fill the cloud with some points</span>
-  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">.</span><span class="n">size</span> <span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">x</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">z</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Setup the cloud pointer</span>
+<span class="w">  </span><span class="n">cloud</span><span class="p">.</span><span class="n">reset</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// The number of points in the cloud</span>
+<span class="w">  </span><span class="n">cloud</span><span class="o">-&gt;</span><span class="n">resize</span><span class="w"> </span><span class="p">(</span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
 
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">r</span> <span class="o">=</span> <span class="n">red</span><span class="p">;</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">g</span> <span class="o">=</span> <span class="n">green</span><span class="p">;</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">b</span> <span class="o">=</span> <span class="n">blue</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c1">// The default color</span>
+<span class="w">  </span><span class="n">red</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">green</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">blue</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">128</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// Fill the cloud with some points</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">point</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">RAND_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">RAND_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">RAND_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">green</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
 <div class="line"><code class="docutils literal notranslate"><span class="pre">red</span></code> <code class="docutils literal notranslate"><span class="pre">green</span></code> and <code class="docutils literal notranslate"><span class="pre">blue</span></code> protected members are initialized to their default values.</div>
 <div class="line">The cloud is filled with random points (in a cube) and accordingly to <code class="docutils literal notranslate"><span class="pre">red</span></code> <code class="docutils literal notranslate"><span class="pre">green</span></code> and <code class="docutils literal notranslate"><span class="pre">blue</span></code> colors.</div>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Set up the QVTK window</span>
-  <span class="n">viewer</span><span class="p">.</span><span class="n">reset</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="s">&quot;viewer&quot;</span><span class="p">,</span> <span class="nb">false</span><span class="p">));</span>
-  <span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">SetRenderWindow</span> <span class="p">(</span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">getRenderWindow</span> <span class="p">());</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setupInteractor</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">GetInteractor</span> <span class="p">(),</span> <span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">GetRenderWindow</span> <span class="p">());</span>
-  <span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">update</span> <span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Set up the QVTK window  </span>
+<span class="cp">#if VTK_MAJOR_VERSION &gt; 8</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">renderer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkRenderer</span><span class="o">&gt;::</span><span class="n">New</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">renderWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkGenericOpenGLRenderWindow</span><span class="o">&gt;::</span><span class="n">New</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">renderWindow</span><span class="o">-&gt;</span><span class="n">AddRenderer</span><span class="p">(</span><span class="n">renderer</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="p">(</span><span class="n">renderer</span><span class="p">,</span><span class="w"> </span><span class="n">renderWindow</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;viewer&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">setRenderWindow</span><span class="p">(</span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">getRenderWindow</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setupInteractor</span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">interactor</span><span class="p">(),</span><span class="w"> </span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">renderWindow</span><span class="p">());</span><span class="w"></span>
+<span class="cp">#else</span>
+<span class="w">  </span><span class="n">viewer</span><span class="p">.</span><span class="n">reset</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="p">(</span><span class="s">&quot;viewer&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">SetRenderWindow</span><span class="p">(</span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">getRenderWindow</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setupInteractor</span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">GetInteractor</span><span class="p">(),</span><span class="w"> </span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">GetRenderWindow</span><span class="p">());</span><span class="w"></span>
+<span class="cp">#endif</span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -410,21 +352,19 @@ where you call cmake !</p>
 <div class="line">We don’t want an interactor to be created because our <code class="docutils literal notranslate"><span class="pre">qvtkWidget</span></code> is already an interactor and it’s the one we want to use.</div>
 <div class="line">So the next step is to configure our newly created PCL Visualiser interactor to use the <code class="docutils literal notranslate"><span class="pre">qvtkWidget</span></code>.</div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">update()</span></code> method of the <code class="docutils literal notranslate"><span class="pre">qvtkWidget</span></code> should be called each time you modify the PCL visualizer; if you don’t call it you don’t know if the
-visualizer will be updated before the user try to pan/spin/zoom.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Connect &quot;random&quot; button and the function</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">pushButton_random</span><span class="p">,</span>  <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">clicked</span> <span class="p">()),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">randomButtonPressed</span> <span class="p">()));</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Connect &quot;random&quot; button and the function</span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">pushButton_random</span><span class="p">,</span><span class="w">  </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">clicked</span><span class="w"> </span><span class="p">()),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">randomButtonPressed</span><span class="w"> </span><span class="p">()));</span><span class="w"></span>
 
-  <span class="c1">// Connect R,G,B sliders and their functions</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_R</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">valueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">redSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)));</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_G</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">valueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">greenSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)));</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_B</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">valueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">blueSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)));</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_R</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">sliderReleased</span> <span class="p">()),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">RGBsliderReleased</span> <span class="p">()));</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_G</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">sliderReleased</span> <span class="p">()),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">RGBsliderReleased</span> <span class="p">()));</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_B</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">sliderReleased</span> <span class="p">()),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">RGBsliderReleased</span> <span class="p">()));</span>
+<span class="w">  </span><span class="c1">// Connect R,G,B sliders and their functions</span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_R</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">valueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">redSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)));</span><span class="w"></span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_G</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">valueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">greenSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)));</span><span class="w"></span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_B</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">valueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">blueSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)));</span><span class="w"></span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_R</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">sliderReleased</span><span class="w"> </span><span class="p">()),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">RGBsliderReleased</span><span class="w"> </span><span class="p">()));</span><span class="w"></span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_G</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">sliderReleased</span><span class="w"> </span><span class="p">()),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">RGBsliderReleased</span><span class="w"> </span><span class="p">()));</span><span class="w"></span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_B</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">sliderReleased</span><span class="w"> </span><span class="p">()),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">RGBsliderReleased</span><span class="w"> </span><span class="p">()));</span><span class="w"></span>
 
-  <span class="c1">// Connect point size slider</span>
-  <span class="n">connect</span> <span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_p</span><span class="p">,</span> <span class="n">SIGNAL</span> <span class="p">(</span><span class="n">valueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)),</span> <span class="k">this</span><span class="p">,</span> <span class="n">SLOT</span> <span class="p">(</span><span class="n">pSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span><span class="p">)));</span>
+<span class="w">  </span><span class="c1">// Connect point size slider</span>
+<span class="w">  </span><span class="n">connect</span><span class="w"> </span><span class="p">(</span><span class="n">ui</span><span class="o">-&gt;</span><span class="n">horizontalSlider_p</span><span class="p">,</span><span class="w"> </span><span class="n">SIGNAL</span><span class="w"> </span><span class="p">(</span><span class="n">valueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)),</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="w"> </span><span class="p">(</span><span class="n">pSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)));</span><span class="w"></span>
 </pre></div>
 </div>
 <dl>
@@ -463,34 +403,34 @@ visualizer will be updated before the user try to pan/spin/zoom.</p>
 </ul>
 </dd>
 </dl>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">,</span> <span class="s">&quot;cloud&quot;</span><span class="p">);</span>
-  <span class="n">pSliderValueChanged</span> <span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">resetCamera</span> <span class="p">();</span>
-  <span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">update</span> <span class="p">();</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cloud&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">resetCamera</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span>
+<span class="w">  </span><span class="n">refreshView</span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
 <div class="line">This is the last part of our constructor; we add the point cloud to the visualizer, call the method <code class="docutils literal notranslate"><span class="pre">pSliderValueChanged</span></code> to change the point size to 2.</div>
 </div>
-<p>We finally reset the camera within the PCL Visualizer not avoid the user having to zoom out and update the qvtkwidget to be
+<p>We finally reset the camera within the PCL Visualizer not avoid the user having to zoom out and refresh the view to be
 sure the modifications will be displayed.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span>
-<span class="n">PCLViewer</span><span class="o">::</span><span class="n">randomButtonPressed</span> <span class="p">()</span>
-<span class="p">{</span>
-  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Random button was pressed</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"></span>
+<span class="nf">PCLViewer::randomButtonPressed</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Random button was pressed</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// Set the new color</span>
-  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">r</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">));</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">g</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">));</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">b</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span><span class="p">(</span><span class="mi">1024</span> <span class="o">*</span> <span class="n">rand</span> <span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">RAND_MAX</span> <span class="o">+</span> <span class="mf">1.0f</span><span class="p">));</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c1">// Set the new color</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">point</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">RAND_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">RAND_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="w"> </span><span class="o">*</span><span class="p">(</span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rand</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">RAND_MAX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">updatePointCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">,</span> <span class="s">&quot;cloud&quot;</span><span class="p">);</span>
-  <span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">update</span> <span class="p">();</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">updatePointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cloud&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">refreshView</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -498,19 +438,19 @@ sure the modifications will be displayed.</p>
 <div class="line">The <code class="docutils literal notranslate"><span class="pre">for</span></code> loop iterates through the point cloud and changes point cloud color to a random number (between 0 and 255).</div>
 <div class="line">The point cloud is then updated and so the <code class="docutils literal notranslate"><span class="pre">qtvtkwidget</span></code> is.</div>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span>
-<span class="n">PCLViewer</span><span class="o">::</span><span class="n">RGBsliderReleased</span> <span class="p">()</span>
-<span class="p">{</span>
-  <span class="c1">// Set the new color</span>
-  <span class="k">for</span> <span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">size</span> <span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">r</span> <span class="o">=</span> <span class="n">red</span><span class="p">;</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">g</span> <span class="o">=</span> <span class="n">green</span><span class="p">;</span>
-    <span class="n">cloud</span><span class="o">-&gt;</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">b</span> <span class="o">=</span> <span class="n">blue</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">updatePointCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">,</span> <span class="s">&quot;cloud&quot;</span><span class="p">);</span>
-  <span class="n">ui</span><span class="o">-&gt;</span><span class="n">qvtkWidget</span><span class="o">-&gt;</span><span class="n">update</span> <span class="p">();</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"></span>
+<span class="nf">PCLViewer::RGBsliderReleased</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Set the new color</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">point</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">red</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">green</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">point</span><span class="p">.</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blue</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">updatePointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cloud&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">refreshView</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -518,26 +458,26 @@ sure the modifications will be displayed.</p>
 <div class="line">The <code class="docutils literal notranslate"><span class="pre">for</span></code> loop iterates through the point cloud and changes point cloud color to <code class="docutils literal notranslate"><span class="pre">red</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code> and <code class="docutils literal notranslate"><span class="pre">blue</span></code> member values.</div>
 <div class="line">The point cloud is then updated and so the <code class="docutils literal notranslate"><span class="pre">qtvtkwidget</span></code> is.</div>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span>
-<span class="n">PCLViewer</span><span class="o">::</span><span class="n">redSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">red</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
-  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;redSliderValueChanged: [%d|%d|%d]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"></span>
+<span class="nf">PCLViewer::redSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">red</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;redSliderValueChanged: [%d|%d|%d]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">red</span><span class="p">,</span><span class="w"> </span><span class="n">green</span><span class="p">,</span><span class="w"> </span><span class="n">blue</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span>
-<span class="n">PCLViewer</span><span class="o">::</span><span class="n">greenSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">green</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
-  <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;greenSliderValueChanged: [%d|%d|%d]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"></span>
+<span class="nf">PCLViewer::greenSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">green</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">printf</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;greenSliderValueChanged: [%d|%d|%d]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">red</span><span class="p">,</span><span class="w"> </span><span class="n">green</span><span class="p">,</span><span class="w"> </span><span class="n">blue</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="kt">void</span>
-<span class="n">PCLViewer</span><span class="o">::</span><span class="n">blueSliderValueChanged</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">blue</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;blueSliderValueChanged: [%d|%d|%d]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">);</span>
-<span class="p">}</span>
+<span class="kt">void</span><span class="w"></span>
+<span class="nf">PCLViewer::blueSliderValueChanged</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">blue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;blueSliderValueChanged: [%d|%d|%d]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">red</span><span class="p">,</span><span class="w"> </span><span class="n">green</span><span class="p">,</span><span class="w"> </span><span class="n">blue</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="line-block">
@@ -545,16 +485,16 @@ sure the modifications will be displayed.</p>
 <div class="line">These functions just changes the member value accordingly to the slider value.</div>
 <div class="line">Here the point cloud is not updated; so until you release the slider you won’t see any change in the visualizer.</div>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">PCLViewer</span><span class="o">::~</span><span class="n">PCLViewer</span> <span class="p">()</span>
-<span class="p">{</span>
-  <span class="k">delete</span> <span class="n">ui</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">PCLViewer</span><span class="o">::~</span><span class="n">PCLViewer</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">delete</span><span class="w"> </span><span class="n">ui</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The destructor.</p>
-</div>
-</div>
-<div class="section" id="compiling-and-running">
+</section>
+</section>
+<section id="compiling-and-running">
 <h2><a class="toc-backref" href="#id9">Compiling and running</a></h2>
 <dl class="simple">
 <dt>There are two options here :</dt><dd><ul class="simple">
@@ -572,54 +512,42 @@ sure the modifications will be displayed.</p>
 <div class="line">When using the slider for the point size; the size of the point is updated without having to release the slider.</div>
 </div>
 <a class="reference internal image-reference" href="_images/pcl_visualizer.gif"><img alt="_images/pcl_visualizer.gif" src="_images/pcl_visualizer.gif" style="height: 527px;" /></a>
-</div>
-<div class="section" id="more-on-qt-and-pcl">
+</section>
+<section id="more-on-qt-and-pcl">
 <h2><a class="toc-backref" href="#id10">More on Qt and PCL</a></h2>
 <p>If you want to know more about Qt and PCL go take a look at <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/tree/master/apps">PCL apps</a> like
 <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/tree/master/apps/src/pcd_video_player">PCD video player</a>
 or <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/tree/master/apps/src/manual_registration">manual registration</a>.</p>
-<p>Re-use the <a class="reference download internal" download="" href="_downloads/daf58b19cc683a46376795dd158af9f1/CMakeLists.txt"><code class="xref download docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code></a> from this tutorial if you want to compile the application outside of PCL.</p>
-</div>
-</div>
+<p>Re-use the <a class="reference download internal" download="" href="_downloads/d6b25e634ae71329c8324baf8f1821a8/CMakeLists.txt"><code class="xref download docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code></a> from this tutorial if you want to compile the application outside of PCL.</p>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,7 +1,10 @@
 <map id="pcl::filters::GaussianKernelRGB&lt; PointInT, PointOutT &gt;" name="pcl::filters::GaussianKernelRGB&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1filters_1_1_gaussian_kernel.html" title="Gaussian kernel implementation interface Use this as implementation reference. " alt="" coords="68,510,247,557"/>
-<area shape="rect" id="node4" href="$classpcl_1_1filters_1_1_convolving_kernel.html" title="Class ConvolvingKernel base class for all convolving kernels. " alt="" coords="59,411,256,458"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointInT \&gt;" alt="" coords="65,315,249,344"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="node1" title="Gaussian kernel implementation interface with RGB channel handling Use this as implementation referen..." alt="" coords="12,547,217,588"/>
+<area shape="rect" id="node2" href="$classpcl_1_1filters_1_1_gaussian_kernel.html" title="Gaussian kernel implementation interface Use this as implementation reference." alt="" coords="17,456,212,497"/>
+<area shape="rect" id="node3" href="$classpcl_1_1filters_1_1_convolving_kernel.html" title="Class ConvolvingKernel base class for all convolving kernels." alt="" coords="5,365,224,407"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="13,276,216,303"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="19,187,210,213"/>
+<area shape="rect" id="node6" title=" " alt="" coords="71,5,145,32"/>
+<area shape="rect" id="node7" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="163,96,283,123"/>
+<area shape="rect" id="node8" title=" " alt="" coords="185,5,260,32"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::visualization::PointCloudColorHandlerHSVField&lt; PointT &gt;" name="pcl::visualization::PointCloudColorHandlerHSVField&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler.html" title="Base Handler class for PointCloud colors. " alt="" coords="33,5,204,69"/>
+<area shape="rect" id="node1" title="HSV handler class for colors." alt="" coords="5,200,248,256"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler.html" title="Base Handler class for PointCloud colors." alt="" coords="34,95,219,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="81,5,172,32"/>
 </map>

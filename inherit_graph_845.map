@@ -1,6 +1,78 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGBA \&gt;" alt="" coords="7,62,145,109"/>
-<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; pcl::\lPointXYZRGBA, pcl::pcl\l::Normal \&gt;" alt="" coords="231,5,396,69"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title="pcl::OrganizedMultiPlane\lSegmentation\&lt; pcl::PointXYZRGBA,\l pcl::pcl::Normal, pcl::pcl\l::Label \&gt;" alt="" coords="195,93,432,174"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_integral_image_normal_estimation.html" title="pcl::IntegralImageNormal\lEstimation\&lt; pcl::PointXYZRGBA,\l pcl::pcl::Normal \&gt;" alt="" coords="480,5,699,69"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,901,181,927"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title=" " alt="" coords="248,5,469,47"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title=" " alt="" coords="248,71,469,112"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_filter.html" title=" " alt="" coords="275,137,443,163"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title=" " alt="" coords="231,187,486,243"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_region_growing.html" title=" " alt="" coords="271,268,447,309"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_registration.html" title=" " alt="" coords="289,333,428,375"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_registration.html" title=" " alt="" coords="275,399,443,440"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_approximate_progressive_morphological_filter.html" title="Implements the Progressive Morphological Filter for segmentation of ground points." alt="" coords="249,464,468,505"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_conditional_euclidean_clustering.html" title="ConditionalEuclideanClustering performs segmentation based on Euclidean distance and a user&#45;defined c..." alt="" coords="265,529,452,571"/>
+<area shape="rect" id="node15" href="$classpcl_1_1_euclidean_cluster_extraction.html" title="EuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclidean sen..." alt="" coords="247,595,471,636"/>
+<area shape="rect" id="node16" href="$classpcl_1_1_extract_polygonal_prism_data.html" title="ExtractPolygonalPrismData uses a set of point indices that represent a planar model,..." alt="" coords="261,660,457,701"/>
+<area shape="rect" id="node17" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="282,726,435,753"/>
+<area shape="rect" id="node56" href="$classpcl_1_1_grab_cut.html" title="Implementation of the GrabCut segmentation in &quot;GrabCut — Interactive Foreground Extraction using Iter..." alt="" coords="272,777,445,803"/>
+<area shape="rect" id="node57" href="$classpcl_1_1_labeled_euclidean_cluster_extraction.html" title="LabeledEuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclid..." alt="" coords="254,828,463,869"/>
+<area shape="rect" id="node58" href="$classpcl_1_1_min_cut_segmentation.html" title="This class implements the segmentation algorithm based on minimal cut of the graph." alt="" coords="265,893,452,935"/>
+<area shape="rect" id="node59" href="$classpcl_1_1_moment_of_inertia_estimation.html" title="Implements the method for extracting features based on moment of inertia." alt="" coords="243,959,474,1000"/>
+<area shape="rect" id="node60" href="$classpcl_1_1_morphology.html" title=" " alt="" coords="260,1025,457,1051"/>
+<area shape="rect" id="node61" href="$classpcl_1_1_organized_connected_component_segmentation.html" title="OrganizedConnectedComponentSegmentation allows connected components to be found within organized poin..." alt="" coords="229,1076,488,1117"/>
+<area shape="rect" id="node62" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="269,1141,448,1183"/>
+<area shape="rect" id="node66" href="$classpcl_1_1_organized_multi_plane_segmentation.html" title="OrganizedMultiPlaneSegmentation finds all planes present in the input cloud, and outputs a vector of ..." alt="" coords="267,1207,451,1263"/>
+<area shape="rect" id="node67" href="$classpcl_1_1_p_c_a.html" title="Principal Component analysis (PCA) class." alt="" coords="285,1287,432,1314"/>
+<area shape="rect" id="node68" href="$classpcl_1_1_progressive_morphological_filter.html" title="Implements the Progressive Morphological Filter for segmentation of ground points." alt="" coords="250,1339,467,1380"/>
+<area shape="rect" id="node69" href="$classpcl_1_1_region_growing.html" title="Implements the well known Region Growing algorithm used for segmentation." alt="" coords="280,1404,437,1445"/>
+<area shape="rect" id="node70" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models,..." alt="" coords="275,1469,442,1511"/>
+<area shape="rect" id="node72" href="$classpcl_1_1_segment_differences.html" title="SegmentDifferences obtains the difference between two spatially aligned point clouds and returns the ..." alt="" coords="268,1535,449,1576"/>
+<area shape="rect" id="node73" href="$classpcl_1_1_statistical_multiscale_interest_region_extraction.html" title="Class for extracting interest regions from unstructured point clouds, based on a multi scale statisti..." alt="" coords="267,1601,450,1657"/>
+<area shape="rect" id="node74" href="$classpcl_1_1_supervoxel_clustering.html" title="Implements a supervoxel algorithm based on voxel structure, normals, and rgb values." alt="" coords="265,1681,452,1723"/>
+<area shape="rect" id="node75" href="$classpcl_1_1_surfel_smoothing.html" title=" " alt="" coords="280,1747,437,1788"/>
+<area shape="rect" id="node76" href="$classpcl_1_1registration_1_1_e_l_c_h.html" title="ELCH (Explicit Loop Closing Heuristic) class" alt="" coords="293,1812,425,1853"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_range_image_border_extractor.html" title="Extract obstacle borders from range images, meaning positions where there is a transition from foregr..." alt="" coords="537,13,770,39"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_narf_descriptor.html" title="Computes NARF feature descriptors for points in a range image See B." alt="" coords="581,78,725,105"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_normal_refinement.html" title="Normal vector refinement class" alt="" coords="567,129,739,171"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_region_growing_r_g_b.html" title="Implements the well known Region Growing algorithm used for segmentation based on color of points." alt="" coords="565,195,741,236"/>
+<area shape="rect" id="node18" href="$classpcl_1_1_convolution.html" title=" " alt="" coords="548,261,759,287"/>
+<area shape="rect" id="node19" href="$classpcl_1_1_convolution.html" title=" " alt="" coords="539,311,767,338"/>
+<area shape="rect" id="node20" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="581,363,726,404"/>
+<area shape="rect" id="node21" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="546,429,761,455"/>
+<area shape="rect" id="node23" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="581,480,726,521"/>
+<area shape="rect" id="node25" href="$classpcl_1_1_approximate_voxel_grid.html" title="ApproximateVoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the..." alt="" coords="556,545,751,587"/>
+<area shape="rect" id="node26" href="$classpcl_1_1_bilateral_filter.html" title="A bilateral filter implementation for point cloud data." alt="" coords="585,611,722,652"/>
+<area shape="rect" id="node27" href="$classpcl_1_1_conditional_removal.html" title="ConditionalRemoval filters data that satisfies certain conditions." alt="" coords="563,676,744,717"/>
+<area shape="rect" id="node28" href="$classpcl_1_1_convolution.html" title="A 2D convolution class." alt="" coords="554,742,753,769"/>
+<area shape="rect" id="node29" href="$classpcl_1_1_fast_bilateral_filter.html" title="Implementation of a fast bilateral filter for smoothing depth information in organized point clouds B..." alt="" coords="572,793,735,835"/>
+<area shape="rect" id="node31" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="589,859,717,900"/>
+<area shape="rect" id="node50" href="$classpcl_1_1_median_filter.html" title="Implementation of the median filter." alt="" coords="583,924,724,965"/>
+<area shape="rect" id="node51" href="$classpcl_1_1_project_inliers.html" title="ProjectInliers uses a model and a set of inlier indices from a PointCloud to project them into a sepa..." alt="" coords="586,989,721,1031"/>
+<area shape="rect" id="node52" href="$classpcl_1_1_sampling_surface_normal.html" title="SamplingSurfaceNormal divides the input space into grids until each grid contains a maximum of N poin..." alt="" coords="550,1055,757,1096"/>
+<area shape="rect" id="node53" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="562,1373,745,1399"/>
+<area shape="rect" id="node22" href="$classpcl_1_1_voxel_grid_covariance.html" title=" " alt="" coords="858,143,1042,184"/>
+<area shape="rect" id="node24" href="$classpcl_1_1_voxel_grid_label.html" title=" " alt="" coords="877,209,1023,235"/>
+<area shape="rect" id="node30" href="$classpcl_1_1_fast_bilateral_filter_o_m_p.html" title="Implementation of a fast bilateral filter for smoothing depth information in organized point clouds B..." alt="" coords="869,260,1031,301"/>
+<area shape="rect" id="node32" href="$classpcl_1_1_pass_through.html" title=" " alt="" coords="843,326,1057,353"/>
+<area shape="rect" id="node33" href="$classpcl_1_1_covariance_sampling.html" title="Point Cloud sampling based on the 6D covariances." alt="" coords="859,377,1041,419"/>
+<area shape="rect" id="node34" href="$classpcl_1_1_crop_box.html" title="CropBox is a filter that allows the user to filter all the data inside of a given box." alt="" coords="863,443,1037,470"/>
+<area shape="rect" id="node35" href="$classpcl_1_1_crop_hull.html" title="Filter points that lie inside or outside a 3D closed surface or 2D closed polygon,..." alt="" coords="862,494,1038,521"/>
+<area shape="rect" id="node36" href="$classpcl_1_1_extract_indices.html" title="ExtractIndices extracts a set of indices from a point cloud." alt="" coords="879,545,1021,587"/>
+<area shape="rect" id="node37" href="$classpcl_1_1_farthest_point_sampling.html" title="FarthestPointSampling applies farthest point sampling using euclidean distance, starting with a rando..." alt="" coords="853,611,1047,652"/>
+<area shape="rect" id="node38" href="$classpcl_1_1_frustum_culling.html" title="FrustumCulling filters points inside a frustum given by pose and field of view of the camera." alt="" coords="877,676,1023,717"/>
+<area shape="rect" id="node39" href="$classpcl_1_1_grid_minimum.html" title="GridMinimum assembles a local 2D grid over a given PointCloud, and downsamples the data." alt="" coords="845,742,1055,769"/>
+<area shape="rect" id="node40" href="$classpcl_1_1_local_maximum.html" title="LocalMaximum downsamples the cloud, by eliminating points that are locally maximal." alt="" coords="870,793,1030,835"/>
+<area shape="rect" id="node41" href="$classpcl_1_1_model_outlier_removal.html" title="ModelOutlierRemoval filters points in a cloud based on the distance between model and point." alt="" coords="855,859,1045,900"/>
+<area shape="rect" id="node42" href="$classpcl_1_1_normal_space_sampling.html" title="NormalSpaceSampling samples the input point cloud in the space of normal directions computed at every..." alt="" coords="851,924,1049,965"/>
+<area shape="rect" id="node43" href="$classpcl_1_1_pass_through.html" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type." alt="" coords="849,990,1051,1017"/>
+<area shape="rect" id="node44" href="$classpcl_1_1_radius_outlier_removal.html" title="RadiusOutlierRemoval filters points in a cloud based on the number of neighbors they have." alt="" coords="853,1041,1047,1083"/>
+<area shape="rect" id="node45" href="$classpcl_1_1_random_sample.html" title="RandomSample applies a random sampling with uniform probability." alt="" coords="869,1107,1031,1148"/>
+<area shape="rect" id="node46" href="$classpcl_1_1_shadow_points.html" title="ShadowPoints removes the ghost points appearing on edge discontinuties" alt="" coords="875,1172,1025,1213"/>
+<area shape="rect" id="node47" href="$classpcl_1_1_statistical_outlier_removal.html" title="StatisticalOutlierRemoval uses point neighborhood statistics to filter outlier data." alt="" coords="842,1237,1058,1279"/>
+<area shape="rect" id="node48" href="$classpcl_1_1_uniform_sampling.html" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="869,1303,1031,1344"/>
+<area shape="rect" id="node49" href="$classpcl_1_1experimental_1_1advanced_1_1_functor_filter.html" title="Filter point clouds and indices based on a function object passed in the ctor." alt="" coords="851,1369,1049,1425"/>
+<area shape="rect" id="node54" href="$classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel structure containing the mean and covariance of the data." alt="" coords="858,1449,1042,1491"/>
+<area shape="rect" id="node55" href="$classpcl_1_1_voxel_grid_occlusion_estimation.html" title="VoxelGrid to estimate occluded space in the scene." alt="" coords="828,1515,1072,1556"/>
+<area shape="rect" id="node63" href="$classpcl_1_1_organized_edge_from_normals.html" title=" " alt="" coords="536,1424,771,1465"/>
+<area shape="rect" id="node65" href="$classpcl_1_1_organized_edge_from_r_g_b.html" title=" " alt="" coords="549,1489,757,1531"/>
+<area shape="rect" id="node64" href="$classpcl_1_1_organized_edge_from_r_g_b_normals.html" title=" " alt="" coords="819,1580,1081,1621"/>
+<area shape="rect" id="node71" href="$classpcl_1_1_s_a_c_segmentation_from_normals.html" title="SACSegmentationFromNormals represents the PCL nodelet segmentation class for Sample Consensus methods..." alt="" coords="550,1555,757,1596"/>
 </map>

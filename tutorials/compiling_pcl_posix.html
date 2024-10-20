@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Compiling PCL from source on POSIX compliant systems &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compiling PCL from source on POSIX compliant systems &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Compiling PCL from source on POSIX compliant systems</a><ul>
@@ -100,67 +57,30 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Compiling PCL from source on POSIX compliant systems</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="compiling-pcl-from-source-on-posix-compliant-systems">
+             
+  <section id="compiling-pcl-from-source-on-posix-compliant-systems">
 <span id="compiling-pcl-posix"></span><h1><a class="toc-backref" href="#id2">Compiling PCL from source on POSIX compliant systems</a></h1>
 <p>Though not a dependency per se, don’t forget that you also need the <a class="reference external" href="http://www.cmake.org/download/">CMake build system</a>, at least version 3.5.0.
 Additional help on how to use the CMake build system is available <a class="reference external" href="http://www.pointclouds.org/documentation/tutorials/building_pcl.php#building-pcl">here</a>.</p>
@@ -189,16 +109,16 @@ For instructions on how to download and compile PCL in Windows (which uses a sli
 </li>
 </ul>
 </div>
-<div class="section" id="stable">
+<section id="stable">
 <h2><a class="toc-backref" href="#id3">Stable</a></h2>
 <p>For systems for which we do not offer precompiled binaries, you need to compile Point Cloud Library (PCL) from source. Here are the steps that you need to take:
 Go to <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/releases">Github</a> and download the version number of your choice.
-Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version number):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="n">xvfj</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mf">2.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+Uncompress the tar-gzip archive, e.g. (replace 1.7.2 with the correct version number):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="n">xvf</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7.2</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
 <p>Change the directory to the pcl-pcl-1.7.2 (replace 1.7.2 with the correct version number) directory, and create a build directory in there:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">mkdir</span> <span class="n">build</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">build</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7.2</span> <span class="o">&amp;&amp;</span> <span class="n">mkdir</span> <span class="n">build</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">build</span>
 </pre></div>
 </div>
 <p>Run the CMake build system using the default options:</p>
@@ -226,15 +146,15 @@ Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version nu
 </pre></div>
 </div>
 <p>Here’s everything again, in case you want to copy &amp; paste it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7</span><span class="o">.</span><span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">mkdir</span> <span class="n">build</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">build</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">pcl</span><span class="o">-</span><span class="n">pcl</span><span class="o">-</span><span class="mf">1.7.2</span> <span class="o">&amp;&amp;</span> <span class="n">mkdir</span> <span class="n">build</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">build</span>
 <span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_BUILD_TYPE</span><span class="o">=</span><span class="n">Release</span> <span class="o">..</span>
 <span class="n">make</span> <span class="o">-</span><span class="n">j2</span>
 <span class="n">sudo</span> <span class="n">make</span> <span class="o">-</span><span class="n">j2</span> <span class="n">install</span>
 </pre></div>
 </div>
 <p>Again, for a detailed tutorial on how to compile and install PCL and its dependencies in Microsoft Windows, please visit <a class="reference external" href="http://www.pointclouds.org/documentation/tutorials/index.php">our tutorials page</a>. Additional information for developers is available at the <a class="reference external" href="https://github.com/PointCloudLibrary/pcl/wiki">Github PCL Wiki</a>.</p>
-</div>
-<div class="section" id="experimental">
+</section>
+<section id="experimental">
 <h2><a class="toc-backref" href="#id4">Experimental</a></h2>
 <p>If you are eager to try out a certain feature of PCL that is currently under development (or you plan on developing and contributing to PCL), we recommend you try checking out our source repository, as shown below. If you’re just interested in browsing our source code, you can do so by visiting <a class="reference external" href="https://github.com/PointCloudLibrary/pcl">https://github.com/PointCloudLibrary/pcl</a>.</p>
 <p>Clone the repository:</p>
@@ -248,14 +168,17 @@ Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version nu
 <span class="n">sudo</span> <span class="n">make</span> <span class="o">-</span><span class="n">j2</span> <span class="n">install</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="dependencies">
+</section>
+<section id="dependencies">
 <h2><a class="toc-backref" href="#id5">Dependencies</a></h2>
 <p>Because PCL is split into a list of code libraries, the list of dependencies differs based on what you need to compile. The difference between mandatory and optional dependencies, is that a mandatory dependency is required in order for that particular PCL library to compile and function, while an optional dependency disables certain functionality within a PCL library but compiles the rest of the library that does not require the dependency.</p>
-<div class="section" id="mandatory">
+<section id="mandatory">
 <h3><a class="toc-backref" href="#id6">Mandatory</a></h3>
 <p>The following code libraries are <strong>required</strong> for the compilation and usage of the PCL libraries shown below:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>pcl_* denotes all PCL libraries, meaning that the particular dependency is a strict requirement for the usage of anything in PCL.</p>
+</div>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 51%" />
@@ -274,35 +197,31 @@ Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version nu
 <tr class="row-even"><td><img alt="_images/boost_logo.png" src="_images/boost_logo.png" />
 </td>
 <td><p>Boost</p></td>
-<td><div class="line-block">
-<div class="line">1.40 (without OpenNI)</div>
-<div class="line">1.47 (with OpenNI)</div>
-</div>
-</td>
+<td><p>1.65</p></td>
 <td><p>pcl_*</p></td>
 </tr>
 <tr class="row-odd"><td><img alt="_images/eigen_logo.png" src="_images/eigen_logo.png" />
 </td>
 <td><p>Eigen</p></td>
-<td><p>3.0</p></td>
+<td><p>3.3</p></td>
 <td><p>pcl_*</p></td>
 </tr>
 <tr class="row-even"><td><img alt="_images/flann_logo.png" src="_images/flann_logo.png" />
 </td>
 <td><p>FLANN</p></td>
-<td><p>1.7.1</p></td>
+<td><p>1.9.1</p></td>
 <td><p>pcl_*</p></td>
 </tr>
 <tr class="row-odd"><td><img alt="_images/vtk_logo.png" src="_images/vtk_logo.png" />
 </td>
 <td><p>VTK</p></td>
-<td><p>5.6</p></td>
+<td><p>6.2</p></td>
 <td><p>pcl_visualization</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="optional">
+</section>
+<section id="optional">
 <h3><a class="toc-backref" href="#id7">Optional</a></h3>
 <p>The following code libraries enable certain additional features for the PCL libraries shown below, and are thus <strong>optional</strong>:</p>
 <table class="docutils align-default">
@@ -335,61 +254,49 @@ Uncompress the tar-bzip archive, e.g. (replace 1.7.2 with the correct version nu
 <tr class="row-even"><td><img alt="_images/cuda_logo.png" src="_images/cuda_logo.png" />
 </td>
 <td><p>CUDA</p></td>
-<td><p>4.0</p></td>
+<td><p>9.2</p></td>
 <td><p>pcl_*</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="section" id="troubleshooting">
+</section>
+</section>
+<section id="troubleshooting">
 <h2><a class="toc-backref" href="#id8">Troubleshooting</a></h2>
 <p>In certain situations, the instructions above might fail, either due to custom versions of certain library dependencies installed, or different operating systems than the ones we usually develop on, etc. This section here contains links to discussions held in our community regarding such cases. Please read it before posting new questions on the mailing list, and also <strong>use the search features provided by our forums</strong> - there’s no point in starting a new thread if an older one that discusses the same issue already exists.</p>
-<div class="section" id="macos-x">
+<section id="macos-x">
 <h3><a class="toc-backref" href="#id9">MacOS X</a></h3>
 <p><a class="reference external" href="http://www.pcl-users.org/libGL-issue-when-running-visualization-apps-on-OSX-td3574302.html#a3574775">libGL issue when running visualization apps on OSX</a></p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

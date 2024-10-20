@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Filter Benchmarking &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filter Benchmarking &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Filter Benchmarking</a></li>
@@ -93,76 +50,39 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Filter Benchmarking</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="filter-benchmarking">
+             
+  <section id="filter-benchmarking">
 <span id="filterbenchmarking"></span><h1>Filter Benchmarking</h1>
 <p>This document introduces benchmarking concepts for filtering algorithms. By
 <em>benchmarking</em> here we refer to the possibility of testing different
 parameters for each filter algorithm on a specific point cloud in an <strong>easy manner</strong>. The goal is to find the best parameters of a certain filter that best describe the original point cloud without removing useful data.</p>
-</div>
-<div class="section" id="benchmarking-filter-algorithms">
+</section>
+<section id="benchmarking-filter-algorithms">
 <h1>Benchmarking Filter Algorithms</h1>
 <p>To get rid of noisy data in a scan of a 3D scene or object, many filters could be applied to obtain the <em>cleanest</em> representation possible of the object or scene. These filters need to be tuned according to the characteristics of the raw data. A filter evaluation class can be implemented, similar to the <strong>FeatureEvaluationFramework</strong> to find these parameters.</p>
-<div class="section" id="functionality">
+<section id="functionality">
 <h2>1. Functionality</h2>
 <p>The <strong>FilterEvaluationFramework</strong> object could be initialized by the following functions:</p>
 <blockquote>
@@ -173,8 +93,8 @@ parameters for each filter algorithm on a specific point cloud in an <strong>eas
 <li><p>setThreshold: <em>A single or a range of threshold values for the evaluation metric</em>;</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="filter-types-and-parameters">
+</section>
+<section id="filter-types-and-parameters">
 <h2>2. Filter Types and Parameters</h2>
 <p>Provide test classes for all the existing filters implemented in PCL.</p>
 <blockquote>
@@ -186,8 +106,8 @@ parameters for each filter algorithm on a specific point cloud in an <strong>eas
 </ul>
 </div></blockquote>
 <p>Users should be able to add their custom filter implementations to the framework.</p>
-</div>
-<div class="section" id="evaluation">
+</section>
+<section id="evaluation">
 <h2>3. Evaluation</h2>
 <p>This benchmark should be able to evaluate the filter’s performance with the specified parameters. The Evaluation metrics should answer the following questions:</p>
 <blockquote>
@@ -197,47 +117,35 @@ parameters for each filter algorithm on a specific point cloud in an <strong>eas
 <li><p>Computation Time?</p></li>
 </ul>
 </div></blockquote>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

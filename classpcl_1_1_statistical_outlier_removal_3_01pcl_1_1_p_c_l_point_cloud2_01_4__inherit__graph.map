@@ -1,4 +1,6 @@
 <map id="pcl::StatisticalOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;" name="pcl::StatisticalOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class. " alt="" coords="19,102,187,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="33,6,172,53"/>
+<area shape="rect" id="node1" title="StatisticalOutlierRemoval uses point neighborhood statistics to filter outlier data." alt="" coords="5,273,221,315"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="23,184,204,225"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class." alt="" coords="23,95,204,136"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title=" " alt="" coords="40,5,187,47"/>
 </map>

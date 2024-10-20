@@ -1,3 +1,4 @@
 <map id="pcl::LineIterator" name="pcl::LineIterator">
-<area shape="rect" id="node2" href="$classpcl_1_1_organized_index_iterator.html" title="base class for iterators on 2&#45;dimensional maps like images/organized clouds etc. " alt="" coords="5,5,184,35"/>
+<area shape="rect" id="node1" title="Organized Index Iterator for iterating over the &quot;pixels&quot; for a given line using the Bresenham algorit..." alt="" coords="43,80,167,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_organized_index_iterator.html" title="base class for iterators on 2&#45;dimensional maps like images/organized clouds etc." alt="" coords="5,5,204,32"/>
 </map>

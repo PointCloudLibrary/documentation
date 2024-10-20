@@ -1,4 +1,5 @@
 <map id="pcl::SampleConsensusModelCircle2D&lt; PointT &gt;" name="pcl::SampleConsensusModelCircle2D&lt; PointT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1_sample_consensus_model_circle2_d.html" title="pcl::SampleConsensusModel\lCircle2D\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="5,219,211,266"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="12,6,204,53"/>
+<area shape="rect" id="node1" title="SampleConsensusModelCircle2D defines a model for 2D circle segmentation on the X&#45;Y plane." alt="" coords="12,96,220,137"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_model_circle2_d.html" title=" " alt="" coords="5,200,227,241"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="12,5,220,47"/>
 </map>

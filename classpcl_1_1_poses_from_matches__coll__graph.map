@@ -1,3 +1,4 @@
 <map id="pcl::PosesFromMatches" name="pcl::PosesFromMatches">
-<area shape="rect" id="node2" href="$structpcl_1_1_poses_from_matches_1_1_parameters.html" title="Parameters used in this class. " alt="" coords="5,6,168,53"/>
+<area shape="rect" id="node1" title="calculate 3D transformation based on point correspondences" alt="" coords="5,109,180,136"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_poses_from_matches_1_1_parameters.html" title="Parameters used in this class." alt="" coords="5,5,180,47"/>
 </map>

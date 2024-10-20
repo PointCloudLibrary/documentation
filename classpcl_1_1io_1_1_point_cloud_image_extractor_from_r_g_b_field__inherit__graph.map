@@ -1,3 +1,4 @@
 <map id="pcl::io::PointCloudImageExtractorFromRGBField&lt; PointT &gt;" name="pcl::io::PointCloudImageExtractorFromRGBField&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds. " alt="" coords="5,6,171,53"/>
+<area shape="rect" id="node1" title="Image Extractor which uses the data present in the &quot;rgb&quot; or &quot;rgba&quot; fields to produce a color image wi..." alt="" coords="5,95,185,151"/>
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds." alt="" coords="5,5,185,47"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1octree_1_1_point_coding.html" title="PointCoding class " alt="" coords="5,5,168,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_organized_index_iterator.html" title="base class for iterators on 2&#45;dimensional maps like images/organized clouds etc." alt="" coords="5,5,204,32"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_line_iterator.html" title="Organized Index Iterator for iterating over the &quot;pixels&quot; for a given line using the Bresenham algorit..." alt="" coords="252,5,376,32"/>
 </map>

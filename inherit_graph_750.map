@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1io_1_1_t_a_r_header.html" title="A TAR file&#39;s header, as described on http://en.wikipedia.org/wiki/Tar_%28file_format%29. " alt="" coords="7,5,140,35"/>
+<area shape="rect" id="node1" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds." alt="" coords="5,133,185,174"/>
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_label_field.html" title="Image Extractor which uses the data present in the &quot;label&quot; field to produce either monochrome or RGB ..." alt="" coords="240,5,420,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_normal_field.html" title="Image Extractor which uses the data present in the &quot;normal&quot; field." alt="" coords="233,85,427,141"/>
+<area shape="rect" id="node4" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_r_g_b_field.html" title="Image Extractor which uses the data present in the &quot;rgb&quot; or &quot;rgba&quot; fields to produce a color image wi..." alt="" coords="240,165,420,221"/>
+<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_with_scaling.html" title="Image Extractor extension which provides functionality to apply scaling to the values extracted from ..." alt="" coords="240,245,420,301"/>
+<area shape="rect" id="node6" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_curvature_field.html" title="Image Extractor which uses the data present in the &quot;curvature&quot; field to produce a curvature map (as a..." alt="" coords="483,165,692,221"/>
+<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_intensity_field.html" title="Image Extractor which uses the data present in the &quot;intensity&quot; field to produce a monochrome intensit..." alt="" coords="486,245,689,301"/>
+<area shape="rect" id="node8" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_z_field.html" title="Image Extractor which uses the data present in the &quot;z&quot; field to produce a depth map (as a monochrome ..." alt="" coords="475,326,700,367"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::registration::DefaultConvergenceCriteria&lt; Scalar &gt;" name="pcl::registration::DefaultConvergenceCriteria&lt; Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_convergence_criteria.html" title="ConvergenceCriteria represents an abstract base class for different convergence criteria used in regi..." alt="" coords="25,6,167,53"/>
+<area shape="rect" id="node1" title="DefaultConvergenceCriteria represents an instantiation of ConvergenceCriteria, and implements the fol..." alt="" coords="5,96,208,152"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_default_convergence_criteria.html" title=" " alt="" coords="5,215,208,271"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_convergence_criteria.html" title="ConvergenceCriteria represents an abstract base class for different convergence criteria used in regi..." alt="" coords="29,5,184,47"/>
 </map>

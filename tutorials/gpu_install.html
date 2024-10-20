@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Configuring your PC to use your Nvidia GPU with PCL &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuring your PC to use your Nvidia GPU with PCL &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,161 +38,95 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Configuring your PC to use your Nvidia GPU with PCL</a></li>
-<li><a class="reference internal" href="#the-explanation">The explanation</a></li>
-<li><a class="reference internal" href="#tested-hardware">Tested Hardware</a></li>
+<li><a class="reference internal" href="#checking-cuda-version">Checking CUDA Version</a></li>
+<li><a class="reference internal" href="#checking-c-version">Checking C++ Version</a></li>
+<li><a class="reference internal" href="#installing-gcc">Installing GCC</a></li>
+<li><a class="reference internal" href="#installing-eigen">Installing Eigen</a></li>
+<li><a class="reference internal" href="#building-pcl">Building PCL</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Configuring your PC to use your Nvidia GPU with PCL</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="configuring-your-pc-to-use-your-nvidia-gpu-with-pcl">
+             
+  <section id="configuring-your-pc-to-use-your-nvidia-gpu-with-pcl">
 <span id="gpu-install"></span><h1>Configuring your PC to use your Nvidia GPU with PCL</h1>
-<p>In this tutorial we will learn how to check if your PC is
-suitable for use with the GPU methods provided within PCL.
-This tutorial has been tested on Ubuntu 11.04 and 12.04, let
-us know on the user mailing list if you have tested this on other
-distributions.</p>
-</div>
-<div class="section" id="the-explanation">
-<h1>The explanation</h1>
-<p>In order to run the code you’ll need a decent Nvidia GPU with Fermi or Kepler architecture you can check this by:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ lspci | grep nVidia
+<p>In this tutorial you will learn how to configure your system to make it compatible to run the GPU methods provided by PCL.
+This tutorial is for Ubuntu, other Linux distributions can follow a similar process to set it up.</p>
+<p>Windows is currently  <strong>not</strong> officially supported for the GPU methods.</p>
+</section>
+<section id="checking-cuda-version">
+<h1>Checking CUDA Version</h1>
+<p>In order to run the code you will need a system with an Nvidia GPU, having CUDA Toolkit v9.2+ installed.
+We will not be covering CUDA toolkit installation in this tutorial as there already exists many great tutorials for the same.</p>
+<p>You can check your CUDA toolkit version using the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ nvcc --version | grep &quot;release&quot; | awk &#39;{print $6}&#39; | cut -c2-
 </pre></div>
 </div>
-<p>This should indicate which GPU you have on your system, if you don’t have an Nvidia GPU, we’re sorry, but you
-won’t be able to use PCL GPU.
-The output of this you can compare with <a class="reference external" href="http://www.nvidia.co.uk/object/cuda-parallel-computing-uk.html">this link</a>
-on the Nvidia website, your card should mention compute capability of 2.x (Fermi) or 3.x (Kepler) or higher.
-If you want to run with a GUI, you can also run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ nvidia-settings
+</section>
+<section id="checking-c-version">
+<h1>Checking C++ Version</h1>
+<p>The GPU methods in PCL require a min version of GCC 7 or Clang 6 onwards (min version unknown).
+This will not be a problem if you are running Ubuntu 18.04 or later. However on Ubuntu 16.04, you will need to install GCC 7 or Clang 6 (lower versions not tested) manually because the versions available by default are: GCC 5 and Clang 3.8</p>
+<p>You can check your GCC and Clang version using the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ gcc -dumpversion
+
+$ clang --version
 </pre></div>
 </div>
-<p>From either CLI or from your system settings menu. This should mention the same information.</p>
-<p>First you need to test if your CPU is 32 or 64 bit, if it is 64-bit, it is preferred to work in this mode.
-For this you can run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ lscpu | grep op-mode
+</section>
+<section id="installing-gcc">
+<h1>Installing GCC</h1>
+<p>To install GCC 7 run the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+$ sudo apt update &amp;&amp; apt install g++-7 -y
 </pre></div>
 </div>
-<p>As a next step you will need a up to date version of the Cuda Toolkit. You can get this
-<a class="reference external" href="http://developer.nvidia.com/cuda/cuda-downloads">here</a>, at the time of writing the
-latest version was 4.2 and the beta release of version 5 was available as well.</p>
-<p>First you will need to install the latest video drivers, download the correct one from the site
-and run the install file, after this, download the toolkit and install it.
-At the moment of writing this was version 295.41, please choose the most up to date one:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ wget http://developer.download.nvidia.com/compute/cuda/4_2/rel/drivers/devdriver_4.2_linux_64_295.41.run
+<p>Set it as the default version:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+$ sudo update-alternatives --config gcc
 </pre></div>
 </div>
-<p>Make the driver executable:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x devdriver_4.2_linux_64_295.41.run
+</section>
+<section id="installing-eigen">
+<h1>Installing Eigen</h1>
+<p>You will also need Eigen v3.3.7+, since the previous versions are incompatible with the latest CUDA versions.
+If you are on Ubuntu 20 or newer, then there is no issue since Eigen 3.3.7 is shipped by default.
+On older versions Eigen v3.3.7 will need to be installed manually:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ wget -qO- https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.gz | tar xz
+$ sudo apt install -y libblas-dev
+$ cd eigen-3.3.7 &amp;&amp; mkdir build &amp;&amp; cd build
+$ cmake ..
+$ sudo make install
+$ cd ../.. &amp;&amp; rm -rf eigen-3.3.7/ &amp;&amp; rm -f eigen-3.3.7.tar.gz
 </pre></div>
 </div>
-<p>Run the driver:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo ./devdriver_4.2_linux_64_295.41.run
-</pre></div>
-</div>
-<p>You need to run this script without your X-server running. You can shut your X-server down as follows:
-Go to a terminal by pressing Ctrl-Alt-F1 and typing:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo service gdm stop
-</pre></div>
-</div>
-<p>Once you have installed you GPU device driver you will also need to install the CUDA Toolkit:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ wget http://developer.download.nvidia.com/compute/cuda/4_2/rel/toolkit/cudatoolkit_4.2.9_linux_64_ubuntu11.04.run
-$ chmod +x cudatoolkit_4.2.9_linux_64_ubuntu11.04.run
-$ sudo ./cudatoolkit_4.2.9_linux_64_ubuntu11.04.run
-</pre></div>
-</div>
-<p>You can get the SDK, but for PCL this is not needed, this provides you with general CUDA examples
-and some scripts to test the performance of your CPU as well as your hardware specifications.</p>
-<p>CUDA only compiles with gcc 4.4 and lower, so if your default installed gcc is 4.5 or higher you’ll need to install gcc 4.4:</p>
-<blockquote>
-<div><p>$ sudo apt-get install gcc-4.4</p>
-</div></blockquote>
-<p>Now you need to force your gcc to use this version, you can remove the older version, the other option is to create a symlink in your home folder and include that in the beginning of your path:</p>
-<blockquote>
-<div><p>$ cd
-$ mkdir bin</p>
-</div></blockquote>
-<p>Add ‘export PATH=$HOME/bin:$PATH as the last line to your ~/.bashrc file.
-Now create the symlinks in your bin folder:</p>
-<blockquote>
-<div><p>$ cd ~/bin
-$ ln -s &lt;your_gcc_installation&gt; c++
-$ ln -s &lt;your_gcc_installation&gt; cc
-$ ln -s &lt;your_gcc_installation&gt; g++
-$ ln -s &lt;your_gcc_installation&gt; gcc</p>
-</div></blockquote>
-<p>If you use colorgcc these links all need to point to /usr/bin/colorgcc.</p>
+</section>
+<section id="building-pcl">
+<h1>Building PCL</h1>
 <p>Now you can get the latest git master (or another one) of PCL and configure your
 installation to use the CUDA functions.</p>
 <p>Go to your PCL root folder and do:</p>
@@ -248,85 +149,34 @@ the makefiles have been generated successfully and can be executed by doing:</p>
 </pre></div>
 </div>
 <p>Now your installation is finished!</p>
-</div>
-<div class="section" id="tested-hardware">
-<h1>Tested Hardware</h1>
-<p>Please report us the hardware you have tested the following methods with.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 64%" />
-<col style="width: 15%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Method</p></th>
-<th class="head"><p>Hardware</p></th>
-<th class="head"><p>Reported FPS</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Kinfu</p></td>
-<td><p>GTX680, Intel Xeon CPU E5620 &#64; 2.40Ghz x 8, 24Gb RAM</p></td>
-<td><p>20-27</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>GTX480, Intel Xeon CPU W3550 &#64; 3.07GHz × 4, 7.8Gb RAM</p></td>
-<td><p>40</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>C2070, Intel Xeon CPU E5620 &#64; 2.40Ghz x 8, 24Gb RAM</p></td>
-<td><p>29</p></td>
-</tr>
-<tr class="row-odd"><td><p>People Pose Detection</p></td>
-<td><p>GTX680, Intel Xeon CPU E5620 &#64; 2.40Ghz x 8, 24Gb RAM</p></td>
-<td><p>20-23</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>C2070, Intel Xeon CPU E5620 &#64; 2.40Ghz x 8, 24Gb RAM</p></td>
-<td><p>10-20</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

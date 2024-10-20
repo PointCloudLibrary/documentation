@@ -1,6 +1,7 @@
 <map id="pcl::poisson::OctNode&lt; NodeData, Real &gt;::ConstNeighborKey5" name="pcl::poisson::OctNode&lt; NodeData, Real &gt;::ConstNeighborKey5">
-<area shape="rect" id="node2" href="$classpcl_1_1poisson_1_1_oct_node_1_1_const_neighbors5.html" title="pcl::poisson::OctNode\l\&lt; NodeData, Real \&gt;::ConstNeighbors5" alt="" coords="60,331,308,378"/>
-<area shape="rect" id="node4" href="$classpcl_1_1poisson_1_1_oct_node.html" title="pcl::poisson::OctNode\l\&lt; NodeData, Real \&gt;" alt="" coords="108,217,260,263"/>
-<area shape="rect" id="node7" href="$classpcl_1_1poisson_1_1_allocator.html" title="pcl::poisson::Allocator\l\&lt; pcl::poisson::OctNode \&gt;" alt="" coords="8,102,184,149"/>
-<area shape="rect" id="node9" href="$classpcl_1_1poisson_1_1_allocator.html" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="5,5,187,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,407,296,448"/>
+<area shape="rect" id="node2" href="$classpcl_1_1poisson_1_1_oct_node_1_1_const_neighbors5.html" title=" " alt="" coords="14,303,287,344"/>
+<area shape="rect" id="node3" href="$classpcl_1_1poisson_1_1_oct_node.html" title=" " alt="" coords="69,199,232,240"/>
+<area shape="rect" id="node4" href="$classpcl_1_1poisson_1_1_allocator.html" title=" " alt="" coords="54,95,247,136"/>
+<area shape="rect" id="node5" href="$classpcl_1_1poisson_1_1_allocator.html" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="49,5,252,32"/>
 </map>
