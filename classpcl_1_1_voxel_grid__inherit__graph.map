@@ -1,11 +1,12 @@
 <map id="pcl::VoxelGrid&lt; PointT &gt;" name="pcl::VoxelGrid&lt; PointT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel strucure containing the mean and covariance of the data. " alt="" coords="800,5,971,51"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_voxel_grid_occlusion_estimation.html" title="VoxelGrid to estimate occluded space in the scene. " alt="" coords="773,74,997,121"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="819,143,952,190"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; PointTarget \&gt;" alt="" coords="788,213,983,243"/>
-<area shape="rect" id="node18" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; pcl\l::PointXYZRGBL \&gt;" alt="" coords="819,266,952,313"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="221,152,360,181"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,152,171,181"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_voxel_grid_covariance.html" title="pcl::VoxelGridCovariance\l\&lt; PointTarget \&gt;" alt="" coords="1141,145,1312,191"/>
-<area shape="rect" id="node20" href="$classpcl_1_1_voxel_grid_label.html" title="pcl::VoxelGridLabel" alt="" coords="1160,275,1293,304"/>
+<area shape="rect" id="node1" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="433,143,616,170"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel structure containing the mean and covariance of the data." alt="" coords="850,5,1034,47"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_voxel_grid_occlusion_estimation.html" title="VoxelGrid to estimate occluded space in the scene." alt="" coords="820,71,1064,112"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="869,136,1015,177"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="835,202,1049,229"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="869,253,1015,295"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="231,143,384,170"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,143,181,170"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_voxel_grid_covariance.html" title=" " alt="" coords="1220,137,1404,179"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_voxel_grid_label.html" title=" " alt="" coords="1239,261,1385,287"/>
 </map>

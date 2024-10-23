@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_organized_neighbor_search_1_1radius_search_loopkup_entry.html" title="radiusSearchLoopkupEntry entry for radius search lookup vector " alt="" coords="5,5,253,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_node_container.html" title=" " alt="" coords="5,5,189,61"/>
+<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_octree_ram_container.html" title="Storage container class which the outofcore octree base is templated against." alt="" coords="237,13,467,54"/>
 </map>

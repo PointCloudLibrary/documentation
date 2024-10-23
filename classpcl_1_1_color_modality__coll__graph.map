@@ -1,5 +1,8 @@
 <map id="pcl::ColorModality&lt; PointInT &gt;" name="pcl::ColorModality&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_quantizable_modality.html" title="Interface for a quantizable modality. " alt="" coords="5,101,171,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="195,101,371,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="200,5,365,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="43,349,183,391"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_quantizable_modality.html" title="Interface for a quantizable modality." alt="" coords="5,273,189,300"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="214,273,402,300"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="220,184,396,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="263,5,353,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="357,95,523,121"/>
 </map>

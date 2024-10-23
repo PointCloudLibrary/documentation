@@ -1,5 +1,6 @@
 <map id="pcl::device::MultiTreeLiveProc" name="pcl::device::MultiTreeLiveProc">
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; char4 \&gt;" alt="" coords="21,182,187,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="33,5,215,35"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="120,85,317,115"/>
+<area shape="rect" id="node1" title="Processor using multiple trees." alt="" coords="5,275,220,301"/>
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="23,171,202,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class" alt="" coords="8,5,207,32"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class" alt="" coords="129,81,347,108"/>
 </map>

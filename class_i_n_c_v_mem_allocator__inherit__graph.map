@@ -1,4 +1,5 @@
 <map id="INCVMemAllocator" name="INCVMemAllocator">
-<area shape="rect" id="node3" href="$class_n_c_v_mem_native_allocator.html" title="NCVMemNativeAllocator. " alt="" coords="5,83,173,112"/>
-<area shape="rect" id="node5" href="$class_n_c_v_mem_stack_allocator.html" title="NCVMemStackAllocator. " alt="" coords="197,83,363,112"/>
+<area shape="rect" id="node1" title="INCVMemAllocator (Interface)" alt="" coords="127,5,273,32"/>
+<area shape="rect" id="node2" href="$class_n_c_v_mem_native_allocator.html" title="NCVMemNativeAllocator." alt="" coords="5,80,189,107"/>
+<area shape="rect" id="node3" href="$class_n_c_v_mem_stack_allocator.html" title="NCVMemStackAllocator." alt="" coords="214,80,391,107"/>
 </map>

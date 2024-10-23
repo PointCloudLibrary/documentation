@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$classpcl_1_1_scaled_multi_channel2_d_comparison_feature_handler_c_code_generator.html" title="pcl::ScaledMultiChannel2\lDComparisonFeatureHandlerCCode\lGenerator\&lt; DATA_TYPE, NUM_OF\l_CHANNELS, SCALE_CHANNEL, INVERT_SCALE \&gt;" alt="" coords="255,5,601,86"/>
+<area shape="rect" id="node1" href="$classpcl_1_1search_1_1_flann_search_1_1_flann_index_creator.html" title="Helper class that creates a FLANN index from a given FLANN matrix." alt="" coords="5,85,185,141"/>
+<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_flann_search_1_1_k_means_index_creator.html" title="Creates a FLANN KdTreeSingleIndex from the given input data." alt="" coords="246,5,427,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1search_1_1_flann_search_1_1_kd_tree_index_creator.html" title="Creates a FLANN KdTreeSingleIndex from the given input data." alt="" coords="247,85,427,141"/>
+<area shape="rect" id="node4" href="$classpcl_1_1search_1_1_flann_search_1_1_kd_tree_multi_index_creator.html" title="Creates a FLANN KdTreeIndex of multiple randomized trees from the given input data,..." alt="" coords="233,165,440,221"/>
 </map>

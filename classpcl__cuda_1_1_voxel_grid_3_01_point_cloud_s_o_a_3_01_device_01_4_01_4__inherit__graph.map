@@ -1,4 +1,7 @@
 <map id="pcl_cuda::VoxelGrid&lt; PointCloudSOA&lt; Device &gt; &gt;" name="pcl_cuda::VoxelGrid&lt; PointCloudSOA&lt; Device &gt; &gt;">
-<area shape="rect" id="node2" href="$classpcl__cuda_1_1_filter.html" title="pcl_cuda::Filter\&lt; PointCloud\lSOA\&lt; Device \&gt; \&gt;" alt="" coords="89,201,276,247"/>
-<area shape="rect" id="node6" href="$classpcl__cuda_1_1_filter.html" title="Removes points with x, y, or z equal to NaN. " alt="" coords="251,95,427,124"/>
+<area shape="rect" id="node1" title=" " alt="" coords="29,276,253,317"/>
+<area shape="rect" id="node2" href="$classpcl__cuda_1_1_filter.html" title=" " alt="" coords="38,185,243,227"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,81,233,123"/>
+<area shape="rect" id="node4" href="$classpcl__cuda_1_1_filter.html" title="Removes points with x, y, or z equal to NaN." alt="" coords="258,89,453,115"/>
+<area shape="rect" id="node5" title=" " alt="" coords="260,5,451,32"/>
 </map>

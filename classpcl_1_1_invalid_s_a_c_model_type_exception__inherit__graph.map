@@ -1,3 +1,5 @@
 <map id="pcl::InvalidSACModelTypeException" name="pcl::InvalidSACModelTypeException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="28,83,159,112"/>
+<area shape="rect" id="node1" title="An exception that is thrown when a sample consensus model doesn&#39;t have the correct number of samples ..." alt="" coords="5,155,196,196"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="32,80,169,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="31,5,170,32"/>
 </map>

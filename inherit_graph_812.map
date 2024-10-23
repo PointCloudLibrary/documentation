@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1octree_1_1_color_coding.html" title="pcl::octree::ColorCoding\l\&lt; pcl::PointXYZRGB \&gt;" alt="" coords="5,5,168,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1octree_1_1_octree2_buf_base.html" title="Octree double buffer class" alt="" coords="5,53,280,94"/>
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title=" " alt="" coords="328,31,663,116"/>
+<area shape="rect" id="node3" href="$classpcl_1_1io_1_1_octree_point_cloud_compression.html" title="Octree pointcloud compression class" alt="" coords="737,5,948,61"/>
+<area shape="rect" id="node4" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title="Octree pointcloud change detector class" alt="" coords="711,85,975,141"/>
 </map>

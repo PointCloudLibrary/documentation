@@ -1,6 +1,9 @@
 <map id="pcl::BOARDLocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT &gt;" name="pcl::BOARDLocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title="pcl::FeatureFromNormals\l\&lt; PointInT, PointNT, PointOutT \&gt;" alt="" coords="5,281,224,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="37,182,192,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="27,101,203,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="32,5,197,35"/>
+<area shape="rect" id="node1" title="BOARDLocalReferenceFrameEstimation implements the BOrder Aware Repeatable Directions algorithm for lo..." alt="" coords="1668,31,1873,87"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="1396,31,1619,87"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1009,5,1179,47"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="317,29,505,55"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="555,51,725,92"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,29,181,55"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="976,71,1212,112"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::IOException" name="pcl::IOException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="5,83,136,112"/>
+<area shape="rect" id="node1" title="An exception that is thrown during an IO error (typical read/write errors)" alt="" coords="11,155,138,181"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="6,80,143,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,144,32"/>
 </map>

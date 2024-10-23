@@ -1,3 +1,6 @@
 <map id="pcl::registration::CorrespondenceRejectorPoly&lt; SourceT, TargetT &gt;" name="pcl::registration::CorrespondenceRejectorPoly&lt; SourceT, TargetT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="19,6,184,53"/>
+<area shape="rect" id="node1" title="CorrespondenceRejectorPoly implements a correspondence rejection method that exploits low&#45;level and p..." alt="" coords="5,289,215,345"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="115,199,297,240"/>
+<area shape="rect" id="node3" title=" " alt="" coords="105,95,377,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="43,5,134,32"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="pcl::octree::OctreeContainerEmpty" name="pcl::octree::OctreeContainerEmpty">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_container_base.html" title="Octree container class that can serve as a base to construct own leaf node container classes..." alt="" coords="5,5,221,35"/>
+<area shape="rect" id="node1" title="Octree container class that does not store any information." alt="" coords="21,80,225,121"/>
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_container_base.html" title="Octree container class that can serve as a base to construct own leaf node container classes." alt="" coords="5,5,241,32"/>
 </map>

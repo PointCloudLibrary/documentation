@@ -1,3 +1,4 @@
 <map id="pcl::registration::CorrespondenceRejectionOrganizedBoundary" name="pcl::registration::CorrespondenceRejectionOrganizedBoundary">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="37,6,203,53"/>
+<area shape="rect" id="node1" title="The CorrespondenceRejectionOrganizedBoundary class implements a simple correspondence rejection measu..." alt="" coords="5,95,260,151"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="42,5,223,47"/>
 </map>

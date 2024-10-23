@@ -1,5 +1,7 @@
 <map id="pcl::io::LZFBayer8ImageReader" name="pcl::io::LZFBayer8ImageReader">
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_l_z_f_r_g_b24_image_reader.html" title="PCL&#45;LZF 24&#45;bit RGB image format reader. " alt="" coords="64,197,272,227"/>
-<area shape="rect" id="node4" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader. " alt="" coords="85,117,251,147"/>
-<area shape="rect" id="node6" href="$structpcl_1_1io_1_1_camera_parameters.html" title="Basic camera parameters placeholder. " alt="" coords="5,5,184,35"/>
+<area shape="rect" id="node1" title="PCL&#45;LZF 8&#45;bit Bayer image format reader." alt="" coords="8,261,235,288"/>
+<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_l_z_f_r_g_b24_image_reader.html" title="PCL&#45;LZF 24&#45;bit RGB image format reader." alt="" coords="9,185,233,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader." alt="" coords="31,109,211,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node5" href="$structpcl_1_1io_1_1_camera_parameters.html" title="Basic camera parameters placeholder." alt="" coords="104,5,299,32"/>
 </map>

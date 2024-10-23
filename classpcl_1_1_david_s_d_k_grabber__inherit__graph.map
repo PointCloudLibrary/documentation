@@ -1,3 +1,4 @@
 <map id="pcl::DavidSDKGrabber" name="pcl::DavidSDKGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="36,5,129,35"/>
+<area shape="rect" id="node1" title="Grabber for davidSDK structured light compliant devices." alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="38,5,139,32"/>
 </map>

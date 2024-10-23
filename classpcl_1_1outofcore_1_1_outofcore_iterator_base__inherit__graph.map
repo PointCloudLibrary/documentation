@@ -1,4 +1,6 @@
 <map id="pcl::outofcore::OutofcoreIteratorBase&lt; PointT, ContainerT &gt;" name="pcl::outofcore::OutofcoreIteratorBase&lt; PointT, ContainerT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1outofcore_1_1_outofcore_breadth_first_iterator.html" title="pcl::outofcore::Outofcore\lBreadthFirstIterator\&lt; PointT,\l ContainerT \&gt;" alt="" coords="593,5,780,69"/>
-<area shape="rect" id="node7" href="$classpcl_1_1outofcore_1_1_outofcore_depth_first_iterator.html" title="pcl::outofcore::Outofcore\lDepthFirstIterator\&lt; PointT,\l ContainerT \&gt;" alt="" coords="597,93,776,157"/>
+<area shape="rect" id="node1" title="Abstract octree iterator class." alt="" coords="5,53,257,94"/>
+<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_iterator_base.html" title=" " alt="" coords="483,38,708,109"/>
+<area shape="rect" id="node3" href="$classpcl_1_1outofcore_1_1_outofcore_breadth_first_iterator.html" title=" " alt="" coords="757,5,967,61"/>
+<area shape="rect" id="node4" href="$classpcl_1_1outofcore_1_1_outofcore_depth_first_iterator.html" title=" " alt="" coords="763,85,961,141"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="pcl::StopWatch" name="pcl::StopWatch">
-<area shape="rect" id="node3" href="$classpcl_1_1_scope_time.html" title="Class to measure the time spent in a scope. " alt="" coords="5,83,117,112"/>
+<area shape="rect" id="node1" title="Simple stopwatch." alt="" coords="7,5,125,32"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_scope_time.html" title="Class to measure the time spent in a scope." alt="" coords="5,80,127,107"/>
 </map>

@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_normal_01_4.html" title="pcl::common::IntensityField\lAccessor\&lt; pcl::PointNormal \&gt;" alt="" coords="7,5,204,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_comparison_base.html" title="The (abstract) base class for the comparison object." alt="" coords="5,104,164,145"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_field_comparison.html" title="The field&#45;based specialization of the comparison object." alt="" coords="247,5,406,47"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_packed_h_s_i_comparison.html" title="A packed HSI specialization of the comparison object." alt="" coords="229,71,424,112"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_packed_r_g_b_comparison.html" title="A packed rgb specialization of the comparison object." alt="" coords="227,136,427,177"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_tf_quadratic_x_y_z_comparison.html" title="A comparison whether the (x,y,z) components of a given point satisfy (p&#39;Ap + 2v&#39;p + c [OP] 0)." alt="" coords="212,201,441,243"/>
 </map>

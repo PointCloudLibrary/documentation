@@ -1,3 +1,5 @@
 <map id="pcl::UnorganizedPointCloudException" name="pcl::UnorganizedPointCloudException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="32,83,163,112"/>
+<area shape="rect" id="node1" title="An exception that is thrown when an organized point cloud is needed but not provided." alt="" coords="5,155,207,196"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="37,80,175,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="37,5,175,32"/>
 </map>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compiling PCL from source using Docker &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Point Cloud Library
+          </a>
+              <div class="version">
+                1.14.1-dev
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Compiling PCL from source using Docker</a><ul>
+<li><a class="reference internal" href="#advantages-disadvantages">Advantages - Disadvantages</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#downloading-pcl-source-code">Downloading  PCL source code</a></li>
+<li><a class="reference internal" href="#docker-container-configuration">Docker container configuration</a></li>
+<li><a class="reference internal" href="#building-pcl">Building PCL</a></li>
+<li><a class="reference internal" href="#installing-pcl">Installing PCL</a></li>
+<li><a class="reference internal" href="#next-steps">Next steps</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Point Cloud Library</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Compiling PCL from source using Docker</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="compiling-pcl-from-source-using-docker">
+<span id="compiling-pcl-docker"></span><h1>Compiling PCL from source using Docker</h1>
+<p>This tutorial explains how to build the Point Cloud Library <strong>from source</strong> using docker.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The walkthrough was done using Ubuntu as hosting OS of docker. The reason is that docker
+can be much easier set up in linux OSs compared to Windows. Other possible alternatives
+in case your main host is Windows could be WSL and or using virtual machine where some
+linux OS is installed.</p>
+</div>
+<section id="advantages-disadvantages">
+<h2>Advantages - Disadvantages</h2>
+<p>Selecting to use docker to build PCL from source offers the following benefits:
+* Docker container provides some sort of isolated development environment. For someone familiar
+to python it is quite similar concept to virtual environment.
+* There is no need to install pcl dependencies standalone.
+* Installing, updating and maintaining different compilers (clang, g++) or version of other related
+programs is easier in docker container.
+* Once setting up docker the setup is pretty stable and there is no need to spend time for
+troubleshooting issues. Therefore the focus can be only in programming.</p>
+<p>Only disadvantage that i would think is the need to have a basic knowledge of linux OS and
+commands since it is much easier to setup docker in linux OSs compared to Windows.</p>
+</section>
+<section id="requirements">
+<h2>Requirements</h2>
+<p>Open a terminal in Ubuntu and run the corresponding commands from each
+installation section</p>
+<ul>
+<li><p>Curl installation</p>
+<p>Check if curl is already installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl --version
+</pre></div>
+</div>
+<p>If it is not already installed, run in terminal the relative command for your OS::
+<a class="reference external" href="https://www.tecmint.com/install-curl-in-linux">https://www.tecmint.com/install-curl-in-linux</a></p>
+</li>
+<li><p>Git installation</p>
+<p>Check if git is already installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git --version
+</pre></div>
+</div>
+<p>If it is not already installed, run in terminal the relative command for your OS::
+<a class="reference external" href="https://git-scm.com/download/linux">https://git-scm.com/download/linux</a></p>
+</li>
+<li><p>Docker installation</p>
+<p>Check if docker is already installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker --version
+</pre></div>
+</div>
+<p>If it is not already installed, follow the instructions from
+<a class="reference external" href="https://github.com/docker/docker-install">https://github.com/docker/docker-install</a> and run in terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sh get-docker.sh
+</pre></div>
+</div>
+<p>Other useful commands are:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker ps
+$ service docker status
+</pre></div>
+</div>
+<p>The first one shows the running containers while the latter shows the docker status.
+If everything is fine it will be active (running).
+You can start/stop docker if needed by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ service docker start/stop
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It might be required to add sudo in docker commands if permissions are not set properly.
+See part <strong>run docker commands without sudo</strong> on how to set them correctly so the sudo command is not required.</p>
+</div>
+</section>
+<section id="downloading-pcl-source-code">
+<h2>Downloading  PCL source code</h2>
+<p>Download the pcl source code in Ubuntu:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/PointCloudLibrary/pcl.git
+</pre></div>
+</div>
+</section>
+<section id="docker-container-configuration">
+<h2>Docker container configuration</h2>
+<ul>
+<li><p>To run docker commands without sudo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
+$ newgrp docker
+</pre></div>
+</div>
+<p>Verify you can run docker without sudo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run hello-world
+</pre></div>
+</div>
+</li>
+<li><p>Pull the docker image by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker pull pointcloudlibrary/env:20.04
+</pre></div>
+</div>
+<p>The docker image above will have OS Ubuntu 20.04.
+Other possible available images can be found under ‘<a class="reference external" href="https://hub.docker.com/r/pointcloudlibrary/env/tags">https://hub.docker.com/r/pointcloudlibrary/env/tags</a>’</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is also possible to use the Dockerfile under .dev folder to set up your docker
+image. The method of pulling the official docker image is considered more
+stable option though.</p>
+</div>
+<ul>
+<li><p>Run the container:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --user $(id -u):$(id -g) -v $PWD/pcl:/home --rm -it pointcloudlibrary/env:20.04 bash
+</pre></div>
+</div>
+<p>where $PWD:/pcl:/home represents the pcl source code in Ubuntu while home represents the pcl source
+code inside the docker container. Option –rm tells docker to remove the container when it exits
+automatically. By default, when the container exits, its file system persists on the host system.
+The -it option is used when dealing with the interactive processes like bash and tells Docker to
+keep the standard input attached to the terminal.</p>
+<p>Using volumes, actions performed on a file in Ubuntu such as creating new files are directly mapped
+to the selected path location inside docker container.</p>
+<p>To exit the container simply run in terminal exit.</p>
+</li>
+</ul>
+</section>
+<section id="building-pcl">
+<h2>Building PCL</h2>
+<p>After running the container, we need to navigate to pcl source code and create a build folder in that directory.</p>
+<blockquote>
+<div><p>$ cd home &amp;&amp; mkdir build &amp;&amp; cd build</p>
+</div></blockquote>
+<p>In case you prefer to use a specific compiler like clang instead of gcc run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ export CC=/usr/bin/clang
+$ export CXX=/usr/bin/clang++
+</pre></div>
+</div>
+<p>Last step is the cmake configuration which is done by running this inside the build folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cmake ..
+</pre></div>
+</div>
+<p>Other cmake variables can be passed in this step for example cmake -DCMAKE_BUILD_TYPE=Release ..
+which will change the build target to “Release”. More details about cmake variables can be found
+in <a class="reference internal" href="building_pcl.html#building-pcl"><span class="std std-ref">Customizing the PCL build process</span></a>.</p>
+<p>Finally compile everything by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make -j2
+</pre></div>
+</div>
+</section>
+<section id="installing-pcl">
+<h2>Installing PCL</h2>
+<p>Install the result on docker:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make -j2 install
+</pre></div>
+</div>
+<p>To get root access for just install command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker exec -it &lt;container_name&gt;
+</pre></div>
+</div>
+</section>
+<section id="next-steps">
+<h2>Next steps</h2>
+<p>All the steps mentioned in this tutorial should be performed at least once and
+after that just running the container command and building or installing is
+enough. Periodically though it is recommended to pull the latest image to have
+possible updates that are incorporated in the meantime.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

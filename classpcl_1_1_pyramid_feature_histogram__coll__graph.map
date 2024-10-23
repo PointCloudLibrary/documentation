@@ -1,4 +1,7 @@
 <map id="pcl::PyramidFeatureHistogram&lt; PointFeature &gt;" name="pcl::PyramidFeatureHistogram&lt; PointFeature &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointFeature \&gt;" alt="" coords="5,101,205,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="23,5,188,35"/>
+<area shape="rect" id="node1" title="Class that compares two sets of features by using a multiscale representation of the features inside ..." alt="" coords="5,349,225,391"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="7,273,224,300"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="27,184,203,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="70,5,161,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="164,95,331,121"/>
 </map>

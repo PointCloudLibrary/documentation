@@ -1,14 +1,16 @@
 <map id="pcl::PCLException" name="pcl::PCLException">
-<area shape="rect" id="node5" href="$classpcl_1_1_bad_argument_exception.html" title="An exception that is thrown when the argments number or type is wrong/unhandled. " alt="" coords="379,5,563,35"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_compute_failed_exception.html" title="pcl::ComputeFailedException" alt="" coords="375,59,567,88"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_init_failed_exception.html" title="An exception thrown when init can not be performed should be used in all the PCLBase class inheritant..." alt="" coords="392,112,549,141"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_invalid_conversion_exception.html" title="An exception that is thrown when a PCLPointCloud2 message cannot be converted into a PCL type..." alt="" coords="367,165,575,195"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_invalid_s_a_c_model_type_exception.html" title="An exception that is thrown when a sample consensus model doesn&#39;t have the correct number of samples ..." alt="" coords="383,218,559,265"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_i_o_exception.html" title="An exception that is thrown during an IO error (typical read/write errors) " alt="" coords="412,288,529,317"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_is_not_dense_exception.html" title="An exception that is thrown when a PointCloud is not dense but is attemped to be used as dense..." alt="" coords="384,341,557,371"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_kernel_width_too_small_exception.html" title="An exception that is thrown when the kernel size is too small. " alt="" coords="384,394,557,441"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_not_enough_points_exception.html" title="An exception that is thrown when the number of correspondants is not equal to the minimum required..." alt="" coords="368,464,573,493"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_solver_didnt_converge_exception.html" title="An exception that is thrown when the non linear solver didn&#39;t converge. " alt="" coords="385,517,556,563"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_unhandled_point_type_exception.html" title="pcl::UnhandledPointTypeException" alt="" coords="357,587,584,616"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_unorganized_point_cloud_exception.html" title="An exception that is thrown when an organized point cloud is needed but not provided. " alt="" coords="379,639,563,686"/>
+<area shape="rect" id="node1" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="192,296,329,323"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_bad_argument_exception.html" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="399,5,602,32"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_compute_failed_exception.html" title=" " alt="" coords="395,56,606,83"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_i_o_exception.html" title="An exception that is thrown during an IO error (typical read/write errors)" alt="" coords="437,107,564,133"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_init_failed_exception.html" title="An exception thrown when init can not be performed should be used in all the PCLBase class inheritant..." alt="" coords="415,157,587,184"/>
+<area shape="rect" id="node7" href="$classpcl_1_1_invalid_conversion_exception.html" title="An exception that is thrown when a PCLPointCloud2 message cannot be converted into a PCL type." alt="" coords="385,208,616,235"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_invalid_s_a_c_model_type_exception.html" title="An exception that is thrown when a sample consensus model doesn&#39;t have the correct number of samples ..." alt="" coords="405,259,596,301"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_is_not_dense_exception.html" title="An exception that is thrown when a PointCloud is not dense but is attempted to be used as dense." alt="" coords="407,325,595,352"/>
+<area shape="rect" id="node10" href="$classpcl_1_1_kernel_width_too_small_exception.html" title="An exception that is thrown when the kernel size is too small." alt="" coords="407,377,594,418"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_not_enough_points_exception.html" title="An exception that is thrown when the number of correspondents is not equal to the minimum required." alt="" coords="389,443,613,469"/>
+<area shape="rect" id="node12" href="$classpcl_1_1_solver_didnt_converge_exception.html" title="An exception that is thrown when the non linear solver didn&#39;t converge." alt="" coords="407,494,594,535"/>
+<area shape="rect" id="node13" href="$classpcl_1_1_unhandled_point_type_exception.html" title=" " alt="" coords="377,560,624,587"/>
+<area shape="rect" id="node14" href="$classpcl_1_1_unorganized_point_cloud_exception.html" title="An exception that is thrown when an organized point cloud is needed but not provided." alt="" coords="400,611,601,653"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,296,144,323"/>
 </map>

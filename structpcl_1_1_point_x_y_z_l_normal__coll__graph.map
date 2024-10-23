@@ -1,3 +1,5 @@
 <map id="pcl::PointXYZLNormal" name="pcl::PointXYZLNormal">
-<area shape="rect" id="node2" href="$structpcl_1_1___point_x_y_z_l_normal.html" title="pcl::_PointXYZLNormal" alt="" coords="5,101,163,131"/>
+<area shape="rect" id="node1" title="A point structure representing Euclidean xyz coordinates, a label, together with normal coordinates a..." alt="" coords="9,171,172,197"/>
+<area shape="rect" id="node2" href="$structpcl_1_1___point_x_y_z_l_normal.html" title=" " alt="" coords="5,95,176,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="53,5,128,32"/>
 </map>

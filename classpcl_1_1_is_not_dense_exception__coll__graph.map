@@ -1,3 +1,5 @@
 <map id="pcl::IsNotDenseException" name="pcl::IsNotDenseException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="27,83,157,112"/>
+<area shape="rect" id="node1" title="An exception that is thrown when a PointCloud is not dense but is attempted to be used as dense." alt="" coords="5,155,193,181"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="31,80,168,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="30,5,169,32"/>
 </map>

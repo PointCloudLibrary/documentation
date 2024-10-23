@@ -1,2 +1,4 @@
 <map id="pcl::geometry::OuterHalfEdgeAroundFaceCirculator&lt; MeshT &gt;" name="pcl::geometry::OuterHalfEdgeAroundFaceCirculator&lt; MeshT &gt;">
+<area shape="rect" id="node1" title="Circulates clockwise around a face and returns an index to the outer half&#45;edge (the target)." alt="" coords="328,27,520,83"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,280,105"/>
 </map>

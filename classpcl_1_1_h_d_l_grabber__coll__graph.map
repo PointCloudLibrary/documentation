@@ -1,3 +1,13 @@
 <map id="pcl::HDLGrabber" name="pcl::HDLGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="19,5,112,35"/>
+<area shape="rect" id="node1" title="Grabber for the Velodyne High&#45;Definition&#45;Laser (HDL)" alt="" coords="1195,169,1323,196"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="835,6,937,33"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="809,58,963,99"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="391,130,581,157"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="809,123,963,164"/>
+<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="809,188,963,230"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,114,80,141"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="173,161,293,188"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,180,80,206"/>
+<area shape="rect" id="node8" title=" " alt="" coords="849,254,923,281"/>
+<area shape="rect" id="node10" href="$structpcl_1_1_h_d_l_grabber_1_1_h_d_l_laser_correction.html" title=" " alt="" coords="787,306,985,347"/>
 </map>

@@ -1,5 +1,28 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepFace \&gt;" alt="" coords="5,13,227,43"/>
-<area shape="rect" id="node3" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepFace \&gt;" alt="" coords="276,5,425,51"/>
-<area shape="rect" id="node5" href="$class_o_n___brep_face_array.html" title="ON_BrepFaceArray" alt="" coords="475,13,611,43"/>
+<area shape="rect" id="node1" href="$class_o_n___class_array.html" title=" " alt="" coords="5,569,163,595"/>
+<area shape="rect" id="node2" href="$class_o_n___object_array.html" title=" " alt="" coords="212,5,373,47"/>
+<area shape="rect" id="node3" href="$class_o_n___object_array.html" title=" " alt="" coords="212,71,373,112"/>
+<area shape="rect" id="node4" href="$class_o_n___object_array.html" title=" " alt="" coords="212,136,373,177"/>
+<area shape="rect" id="node5" href="$class_o_n___object_array.html" title=" " alt="" coords="212,201,373,243"/>
+<area shape="rect" id="node6" href="$class_o_n___object_array.html" title=" " alt="" coords="211,267,374,308"/>
+<area shape="rect" id="node7" href="$class_o_n___object_array.html" title=" " alt="" coords="212,332,373,373"/>
+<area shape="rect" id="node9" href="$class_o_n___object_array.html" title=" " alt="" coords="212,397,373,439"/>
+<area shape="rect" id="node10" href="$class_o_n___object_array.html" title=" " alt="" coords="212,463,373,504"/>
+<area shape="rect" id="node11" href="$class_o_n___object_array.html" title=" " alt="" coords="212,528,373,569"/>
+<area shape="rect" id="node13" href="$class_o_n___object_array.html" title=" " alt="" coords="212,593,373,635"/>
+<area shape="rect" id="node15" href="$class_o_n___object_array.html" title=" " alt="" coords="212,659,373,700"/>
+<area shape="rect" id="node16" href="$class_o_n___object_array.html" title=" " alt="" coords="212,724,373,765"/>
+<area shape="rect" id="node17" href="$class_o_n___object_array.html" title=" " alt="" coords="212,789,373,831"/>
+<area shape="rect" id="node19" href="$class_o_n___object_array.html" title=" " alt="" coords="212,855,373,896"/>
+<area shape="rect" id="node21" href="$class_o_n___object_array.html" title=" " alt="" coords="212,920,373,961"/>
+<area shape="rect" id="node23" href="$class_o_n___object_array.html" title=" " alt="" coords="212,985,373,1027"/>
+<area shape="rect" id="node24" href="$class_o_n___object_array.html" title=" " alt="" coords="212,1051,373,1092"/>
+<area shape="rect" id="node26" href="$class_o_n___object_array.html" title=" " alt="" coords="211,1117,375,1143"/>
+<area shape="rect" id="node8" href="$class_o_n___brep_trim_array.html" title=" " alt="" coords="437,339,579,366"/>
+<area shape="rect" id="node12" href="$class_o_n___brep_face_side_array.html" title=" " alt="" coords="423,535,593,562"/>
+<area shape="rect" id="node14" href="$class_o_n___brep_edge_array.html" title=" " alt="" coords="435,601,581,627"/>
+<area shape="rect" id="node18" href="$class_o_n___brep_loop_array.html" title=" " alt="" coords="435,797,581,823"/>
+<area shape="rect" id="node20" href="$class_o_n___brep_region_array.html" title=" " alt="" coords="429,862,587,889"/>
+<area shape="rect" id="node22" href="$class_o_n___brep_face_array.html" title=" " alt="" coords="437,927,579,954"/>
+<area shape="rect" id="node25" href="$class_o_n___brep_vertex_array.html" title=" " alt="" coords="430,1058,586,1085"/>
 </map>

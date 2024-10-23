@@ -1,3 +1,5 @@
 <map id="pcl::SolverDidntConvergeException" name="pcl::SolverDidntConvergeException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="25,83,156,112"/>
+<area shape="rect" id="node1" title="An exception that is thrown when the non linear solver didn&#39;t converge." alt="" coords="5,155,192,196"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="30,80,167,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,5,168,32"/>
 </map>

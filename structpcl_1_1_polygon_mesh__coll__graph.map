@@ -1,4 +1,8 @@
 <map id="pcl::PolygonMesh" name="pcl::PolygonMesh">
-<area shape="rect" id="node2" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,121,120,151"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_point_cloud2.html" title="pcl::PCLPointCloud2" alt="" coords="108,253,252,283"/>
+<area shape="rect" id="node1" title=" " alt="" coords="95,288,231,315"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="131,95,251,121"/>
+<area shape="rect" id="node5" href="$structpcl_1_1_p_c_l_point_cloud2.html" title=" " alt="" coords="26,199,177,225"/>
+<area shape="rect" id="node3" title=" " alt="" coords="104,5,179,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="203,5,277,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,95,72,121"/>
 </map>

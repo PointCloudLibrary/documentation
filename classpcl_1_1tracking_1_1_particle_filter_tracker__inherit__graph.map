@@ -1,8 +1,9 @@
 <map id="pcl::tracking::ParticleFilterTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::ParticleFilterTracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node9" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_tracker.html" title="KLDAdaptiveParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the..." alt="" coords="976,5,1155,69"/>
-<area shape="rect" id="node13" href="$classpcl_1_1tracking_1_1_particle_filter_o_m_p_tracker.html" title="ParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within the measure..." alt="" coords="957,93,1173,139"/>
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="524,77,668,123"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,85,472,115"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,85,171,115"/>
-<area shape="rect" id="node11" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="1224,5,1403,69"/>
+<area shape="rect" id="node1" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="760,70,961,111"/>
+<area shape="rect" id="node5" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_tracker.html" title="KLDAdaptiveParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the..." alt="" coords="1029,5,1223,61"/>
+<area shape="rect" id="node7" href="$classpcl_1_1tracking_1_1_particle_filter_o_m_p_tracker.html" title="ParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within the measure..." alt="" coords="1011,86,1241,127"/>
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="555,70,711,111"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="317,77,505,104"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,77,181,104"/>
+<area shape="rect" id="node6" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="1291,5,1485,61"/>
 </map>

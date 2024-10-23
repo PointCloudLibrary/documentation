@@ -1,3 +1,4 @@
 <map id="pcl::MeshSubdivisionVTK" name="pcl::MeshSubdivisionVTK">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="19,5,163,35"/>
+<area shape="rect" id="node1" title="PCL mesh smoothing based on the vtkLinearSubdivisionFilter, vtkLoopSubdivisionFilter,..." alt="" coords="5,80,191,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms." alt="" coords="21,5,175,32"/>
 </map>

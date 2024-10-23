@@ -1,3 +1,4 @@
 <map id="pcl::OpenNIGrabber" name="pcl::OpenNIGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="28,5,121,35"/>
+<area shape="rect" id="node1" title="Grabber for OpenNI devices (i.e., Primesense PSDK, Microsoft Kinect, Asus XTion Pro/Live)" alt="" coords="5,80,155,107"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="29,5,131,32"/>
 </map>

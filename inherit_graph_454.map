@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1cuda_1_1_open_n_i_r_g_b.html" title="Simple structure holding RGB data. " alt="" coords="5,5,163,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,96,120"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_decision_forest.html" title=" " alt="" coords="173,5,333,61"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_decision_forest.html" title="Class representing a decision forest." alt="" coords="180,86,325,127"/>
+<area shape="rect" id="node4" href="$structpcl_1_1poisson_1_1_b_spline_elements.html" title=" " alt="" coords="144,151,361,193"/>
 </map>

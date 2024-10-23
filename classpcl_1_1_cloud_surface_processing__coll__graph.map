@@ -1,4 +1,7 @@
 <map id="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;" name="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="12,101,188,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="17,5,183,35"/>
+<area shape="rect" id="node1" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="5,349,211,391"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="14,273,202,300"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="20,184,196,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="63,5,153,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="157,95,323,121"/>
 </map>

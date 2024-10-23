@@ -1,5 +1,6 @@
 <map id="ON_Polyline" name="ON_Polyline">
-<area shape="rect" id="node2" href="$class_o_n__3d_point_array.html" title="ON_3dPointArray" alt="" coords="20,200,143,229"/>
-<area shape="rect" id="node4" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_3dPoint \&gt;" alt="" coords="5,102,157,149"/>
-<area shape="rect" id="node6" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="5,5,157,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="38,261,139,288"/>
+<area shape="rect" id="node2" href="$class_o_n__3d_point_array.html" title=" " alt="" coords="22,185,155,212"/>
+<area shape="rect" id="node3" href="$class_o_n___simple_array.html" title=" " alt="" coords="7,95,171,136"/>
+<area shape="rect" id="node4" href="$class_o_n___simple_array.html" title=" " alt="" coords="5,5,172,32"/>
 </map>

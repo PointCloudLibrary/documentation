@@ -1,5 +1,6 @@
 <map id="ON_ClippingRegion" name="ON_ClippingRegion">
-<area shape="rect" id="node2" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="5,145,88,174"/>
-<area shape="rect" id="node4" href="$class_o_n___plane_equation.html" title="ON_PlaneEquation" alt="" coords="112,145,245,174"/>
-<area shape="rect" id="node6" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="128,34,229,63"/>
+<area shape="rect" id="node1" title=" " alt="" coords="35,220,182,247"/>
+<area shape="rect" id="node2" href="$class_o_n___xform.html" title=" " alt="" coords="5,129,95,156"/>
+<area shape="rect" id="node3" href="$class_o_n___plane_equation.html" title=" " alt="" coords="119,129,261,156"/>
+<area shape="rect" id="node4" href="$class_o_n__3d_vector.html" title=" " alt="" coords="137,29,243,55"/>
 </map>

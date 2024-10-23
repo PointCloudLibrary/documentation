@@ -1,5 +1,7 @@
 <map id="pcl::gpu::SeededHueSegmentation" name="pcl::gpu::SeededHueSegmentation">
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="44,182,191,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="55,5,217,35"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="133,85,312,115"/>
+<area shape="rect" id="node1" title=" " alt="" coords="52,275,299,301"/>
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="20,171,181,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class" alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class" alt="" coords="116,81,315,108"/>
+<area shape="rect" id="node5" title=" " alt="" coords="206,178,297,205"/>
 </map>

@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Customizing the PCL build process &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customizing the PCL build process &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Customizing the PCL build process</a></li>
@@ -98,82 +55,45 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Customizing the PCL build process</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="customizing-the-pcl-build-process">
+             
+  <section id="customizing-the-pcl-build-process">
 <span id="building-pcl"></span><h1>Customizing the PCL build process</h1>
 <p>This tutorial explains how to modify the PCL cmake options and tweak your
 building process to better fit the needs of your project and/or your system’s
 requirements.</p>
-</div>
-<div class="section" id="audience">
+</section>
+<section id="audience">
 <h1>Audience</h1>
 <p>This tutorial targets users with a basic knowledge of CMake, C++ compilers,
 linkers, flags and make.</p>
-</div>
-<div class="section" id="prerequisites">
+</section>
+<section id="prerequisites">
 <h1>Prerequisites</h1>
 <p>We assume you have checked out the last available revision of PCL.</p>
-</div>
-<div class="section" id="pcl-basic-settings">
+</section>
+<section id="pcl-basic-settings">
 <h1>PCL basic settings</h1>
 <p>Let’s say PCL is placed under /PATH/TO/PCL, which we will refer to as PCL_ROOT:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd $PCL_ROOT
@@ -205,12 +125,12 @@ directory with the default options.</p>
 <span class="n">CMAKE_BUILD_TYPE</span>
 <span class="n">CMAKE_INSTALL_PREFIX</span>             <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span>
 <span class="n">PCL_SHARED_LIBS</span>                  <span class="n">ON</span>
-<span class="n">PCL_VERSION</span>                      <span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">PCL_VERSION</span>                      <span class="mf">1.0.0</span>
 <span class="n">VTK_DIR</span>                          <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">vtk</span><span class="o">-</span><span class="mf">5.6</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="the-explanation">
+</section>
+<section id="the-explanation">
 <h1>The explanation</h1>
 <ul class="simple">
 <li><p><cite>BUILD_common</cite>: option to enable/disable building of common library</p></li>
@@ -235,8 +155,8 @@ directory with the default options.</p>
 </ul>
 <p>The above are called <cite>cmake</cite> cached variables. At this level we only looked at
 the basic ones.</p>
-</div>
-<div class="section" id="tweaking-basic-settings">
+</section>
+<section id="tweaking-basic-settings">
 <h1>Tweaking basic settings</h1>
 <p>Depending on your project/system, you might want to enable/disable certain
 options. For example, you can prevent the building of:</p>
@@ -257,8 +177,8 @@ YYY then XXX will be built but won’t appear in the cache.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cmake --help-variable CMAKE_BUILD_TYPE
 </pre></div>
 </div>
-</div>
-<div class="section" id="tweaking-advanced-settings">
+</section>
+<section id="tweaking-advanced-settings">
 <h1>Tweaking advanced settings</h1>
 <p>Now we are done with all the basic stuff. To turn on advanced cache
 options hit <cite>t</cite> while in ccmake.
@@ -268,7 +188,7 @@ installed in unusual locations and thus cmake hangs with
 you have all the dependencies installed. In this section we will
 discuss each dependency entry so that you can configure/build or
 update/build PCL according to your system.</p>
-<div class="section" id="building-unit-tests">
+<section id="building-unit-tests">
 <h2>Building unit tests</h2>
 <p>If you want to contribute to PCL, or are modifying the code, you need
 to turn on building of unit tests. This is accomplished by setting the <cite>BUILD_global_tests</cite>
@@ -281,8 +201,8 @@ error message.</p>
 usually as simple as downloading the source, extracting it, and pointing the <cite>GTEST_SRC_DIR</cite> and <cite>GTEST_INCLUDE_DIR</cite>
 options to the applicable source locations. On Ubuntu, you can simply run <cite>apt-get install libgtest-dev</cite>.</p>
 <p>These steps enable the <cite>tests</cite> make target, so you can use <cite>make tests</cite> to run tests.</p>
-</div>
-<div class="section" id="general-remarks">
+</section>
+<section id="general-remarks">
 <h2>General remarks</h2>
 <p>Under ${PCL_ROOT}/cmake/Modules there is a list of FindXXX.cmake files
 used to locate dependencies and set their related variables. They have
@@ -299,7 +219,6 @@ configuration.</p>
 <li><p><strong>CMINPACK_ROOT</strong>: for cminpack with value <cite>C:/Program Files/CMINPACK 1.1.13</cite> for instance</p></li>
 <li><p><strong>QHULL_ROOT</strong>: for qhull with value <cite>C:/Program Files/qhull 6.2.0.1373</cite> for instance</p></li>
 <li><p><strong>FLANN_ROOT</strong>: for flann with value <cite>C:/Program Files/flann 1.6.8</cite> for instance</p></li>
-<li><p><strong>EIGEN_ROOT</strong>: for eigen with value <cite>C:/Program Files/Eigen 3.0.0</cite> for instance</p></li>
 </ul>
 <p>To ensure that all the dependencies were correctly found, beside the
 message you get from CMake, you can check or edit each dependency specific
@@ -310,8 +229,8 @@ release libraries version instead of debug while you will end up with much
 more verbose output and slower execution. This said, Windows MSVC users
 and Apple iCode ones can build debug/release from the same project, thus
 it will be safer and more coherent to fill them accordingly.</p>
-</div>
-<div class="section" id="detailed-description">
+</section>
+<section id="detailed-description">
 <h2>Detailed description</h2>
 <p>Below, each dependency variable is listed, its meaning is explained
 then a sample value is given for reference.</p>
@@ -320,9 +239,9 @@ then a sample value is given for reference.</p>
 </ul>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 45%" />
-<col style="width: 30%" />
+<col style="width: 26%" />
+<col style="width: 43%" />
+<col style="width: 31%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>cache variable</p></th>
@@ -331,17 +250,17 @@ then a sample value is given for reference.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Boost_DATE_TIME_LIBRARY</p></td>
-<td><p>full path to boost_date-time.[so,lib,a]</p></td>
-<td><p>/usr/local/lib/libboost_date_time.so</p></td>
+<tr class="row-even"><td><p>Boost_SERIALIZATION_LIBRARY</p></td>
+<td><p>full path to boost_serialization.[so,lib,a]</p></td>
+<td><p>/usr/local/lib/libboost_serialization.so</p></td>
 </tr>
-<tr class="row-odd"><td><p>Boost_DATE_TIME_LIBRARY_DEBUG</p></td>
-<td><p>full path to boost_date-time.[so,lib,a] (debug version)</p></td>
-<td><p>/usr/local/lib/libboost_date_time-gd.so</p></td>
+<tr class="row-odd"><td><p>Boost_SERIALIZATION_LIBRARY_DEBUG</p></td>
+<td><p>full path to boost_serialization.[so,lib,a] (debug version)</p></td>
+<td><p>/usr/local/lib/libboost_serialization-gd.so</p></td>
 </tr>
-<tr class="row-even"><td><p>Boost_DATE_TIME_LIBRARY_RELEASE</p></td>
-<td><p>full path to boost_date-time.[so,lib,a] (release version)</p></td>
-<td><p>/usr/local/lib/libboost_date_time.so</p></td>
+<tr class="row-even"><td><p>Boost_SERIALIZATION_LIBRARY_RELEASE</p></td>
+<td><p>full path to boost_serialization.[so,lib,a] (release version)</p></td>
+<td><p>/usr/local/lib/libboost_serialization.so</p></td>
 </tr>
 <tr class="row-odd"><td><p>Boost_FILESYSTEM_LIBRARY</p></td>
 <td><p>full path to boost_filesystem.[so,lib,a]</p></td>
@@ -442,9 +361,9 @@ then a sample value is given for reference.</p>
 </ul>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 42%" />
-<col style="width: 35%" />
+<col style="width: 24%" />
+<col style="width: 39%" />
+<col style="width: 37%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>cache variable</p></th>
@@ -453,53 +372,41 @@ then a sample value is given for reference.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>EIGEN_INCLUDE_DIR</p></td>
-<td><p>path to eigen headers directory</p></td>
-<td><p>/usr/local/include/eigen3</p></td>
+<tr class="row-even"><td><p>Eigen3_DIR</p></td>
+<td><p>path to eigen cmake directory</p></td>
+<td><p>/usr/local/share/eigen3/cmake</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

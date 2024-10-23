@@ -1,4 +1,5 @@
 <map id="pcl::SACSegmentationFromNormals&lt; PointT, PointNT &gt;" name="pcl::SACSegmentationFromNormals&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models..." alt="" coords="23,83,177,130"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="17,5,183,35"/>
+<area shape="rect" id="node1" title="SACSegmentationFromNormals represents the PCL nodelet segmentation class for Sample Consensus methods..." alt="" coords="5,169,212,211"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models,..." alt="" coords="25,80,192,121"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="21,5,197,32"/>
 </map>

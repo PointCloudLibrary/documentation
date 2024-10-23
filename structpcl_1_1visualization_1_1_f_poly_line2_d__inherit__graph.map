@@ -1,3 +1,4 @@
 <map id="pcl::visualization::FPolyLine2D" name="pcl::visualization::FPolyLine2D">
-<area shape="rect" id="node2" href="$structpcl_1_1visualization_1_1_figure2_d.html" title="Abstract class for storing figure information. " alt="" coords="5,6,123,53"/>
+<area shape="rect" id="node1" title="Class for PolyLine." alt="" coords="5,95,137,136"/>
+<area shape="rect" id="node2" href="$structpcl_1_1visualization_1_1_figure2_d.html" title="Abstract class for storing figure information." alt="" coords="5,5,137,47"/>
 </map>

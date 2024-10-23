@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vertical SSE for PCL2.0</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Vertical SSE for PCL2.0</a><ul>
@@ -100,14 +57,14 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#benchmarks-random-data">Benchmarks (random data)</a><ul>
-<li><a class="reference internal" href="#id5">Dot product</a><ul>
+<li><a class="reference internal" href="#id1">Dot product</a><ul>
 <li><a class="reference internal" href="#dense">Dense</a></li>
-<li><a class="reference internal" href="#id6">Indexed</a></li>
+<li><a class="reference internal" href="#id2">Indexed</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id7">Centroid</a><ul>
-<li><a class="reference internal" href="#id8">Dense</a></li>
-<li><a class="reference internal" href="#id9">Indexed</a></li>
+<li><a class="reference internal" href="#id3">Centroid</a><ul>
+<li><a class="reference internal" href="#id4">Dense</a></li>
+<li><a class="reference internal" href="#id5">Indexed</a></li>
 </ul>
 </li>
 </ul>
@@ -125,77 +82,40 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Vertical SSE for PCL2.0</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="vertical-sse-for-pcl2-0">
+             
+  <section id="vertical-sse-for-pcl2-0">
 <span id="vertical-sse"></span><h1>Vertical SSE for PCL2.0</h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>All code is available from
 <a class="reference external" href="https://kforge.ros.org/projects/mihelich/services/pcl_simd/">https://kforge.ros.org/projects/mihelich/services/pcl_simd/</a>.</p>
 </div>
-<div class="section" id="representing-point-data">
+<section id="representing-point-data">
 <h2>Representing point data</h2>
 <p>In PCL currently, points are stored with their fields interleaved. For the
-simplest <a href="#id1"><span class="problematic" id="id2">:pcl:`PointXYZ &lt;pcl::PointXYZ&gt;`</span></a> type, this looks like:</p>
+simplest <a class="reference external" href="https://pointclouds.org/documentation/structpcl_1_1_point_x_y_z.html">PointXYZ</a> type, this looks like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">XYZ_XYZ_XYZ_XYZ_</span> <span class="o">...</span>
 </pre></div>
 </div>
@@ -216,16 +136,15 @@ used:</p>
 <p>This layout fits traditional vertical SSE processing better. Most arithmetic
 SSE instructions are binary operations on corresponding elements of two SSE
 registers.</p>
-</div>
-<div class="section" id="why-does-pcl-use-aos">
+</section>
+<section id="why-does-pcl-use-aos">
 <h2>Why does PCL use AoS?</h2>
 <p>PCL’s use of AoS, normally non-optimal, does have its logic. In PCL, frequently
 we wish to process only some (indexed / valid) subset of a point cloud. Besides
 dense processing of all points, we then have two other cases.</p>
-<div class="section" id="indexed-subsets">
+<section id="indexed-subsets">
 <h3>Indexed subsets</h3>
-<p>PCL operators routinely provide a <a href="#id3"><span class="problematic" id="id4">:pcl:`setIndices()
-&lt;pcl::PCLBase::setIndices&gt;`</span></a> method, ordering them to use only certain points
+<p>PCL operators routinely provide a <a class="reference external" href="https://pointclouds.org/documentation/classpcl_1_1_p_c_l_base.html#ab219359de6eb34c9d51e2e976dd1a0d1">setIndices()</a> method, ordering them to use only certain points
 identified by index. With the AoS representation, each individual point can be
 used in an SSE register via a simple aligned load. Indexed access therefore
 does not much complicate an SSE-optimized implementation.</p>
@@ -233,8 +152,8 @@ does not much complicate an SSE-optimized implementation.</p>
 and indexed access breaks the adjacency requirement. Instead of an aligned
 load, the implementation must “gather” the data for the next four indexed
 points (spread out in memory).</p>
-</div>
-<div class="section" id="organized-point-clouds">
+</section>
+<section id="organized-point-clouds">
 <h3>Organized point clouds</h3>
 <p>PCL permits point clouds with missing data. For imager-based 3D sensors, this
 allows point clouds to retain their 2D structure, making it trivial to identify
@@ -246,9 +165,9 @@ point, check if <code class="docutils literal notranslate"><span class="pre">X</
 a time, we have to check if any of the four points are invalid. If so, it
 becomes very tricky to use SSE at all without destroying our result. Masking
 tricks are possible, but imply some overhead over the simple dense code.</p>
-</div>
-</div>
-<div class="section" id="horizontal-or-vertical">
+</section>
+</section>
+<section id="horizontal-or-vertical">
 <h2>Horizontal or vertical?</h2>
 <p>Both representations have pros and cons.</p>
 <p><strong>Horizontal</strong></p>
@@ -286,31 +205,31 @@ instead of 1</p></li>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="data-structures">
+</section>
+<section id="data-structures">
 <h2>Data structures</h2>
 <p>For benchmarking, we define two very simple point cloud representations:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Array-of-Structures</span>
-<span class="k">struct</span> <span class="n">AOS</span>
-<span class="p">{</span>
-  <span class="kt">float</span> <span class="n">x</span><span class="p">;</span>
-  <span class="kt">float</span> <span class="n">y</span><span class="p">;</span>
-  <span class="kt">float</span> <span class="n">z</span><span class="p">;</span>
-  <span class="kt">float</span> <span class="n">h</span><span class="p">;</span>
-<span class="p">};</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">AOS</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">h</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 
 <span class="c1">// Structure-of-Arrays</span>
-<span class="k">struct</span> <span class="n">SOA</span>
-<span class="p">{</span>
-  <span class="kt">float</span><span class="o">*</span> <span class="n">x</span><span class="p">;</span>
-  <span class="kt">float</span><span class="o">*</span> <span class="n">y</span><span class="p">;</span>
-  <span class="kt">float</span><span class="o">*</span> <span class="n">z</span><span class="p">;</span>
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">;</span>
-<span class="p">};</span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">SOA</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="computations-considered">
+</section>
+<section id="computations-considered">
 <h2>Computations considered</h2>
 <p>We benchmark two basic operations:</p>
 <ul class="simple">
@@ -324,191 +243,191 @@ instead of 1</p></li>
 <li><p>SSE instruction set</p></li>
 </ul>
 <p>Representative examples are listed below.</p>
-<div class="section" id="dot-product">
+<section id="dot-product">
 <h3>Dot product</h3>
 <p>Vertical (SoA), SSE2-optimized:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">dotSSE2</span> <span class="p">(</span><span class="k">const</span> <span class="n">SOA</span><span class="o">&amp;</span> <span class="n">vectors</span><span class="p">,</span> <span class="k">const</span> <span class="n">AOS</span><span class="o">&amp;</span> <span class="n">vector</span><span class="p">,</span>
-              <span class="kt">float</span><span class="o">*</span> <span class="n">result</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">size</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">dotSSE2</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SOA</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vectors</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOS</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vector</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="p">.</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
 
-  <span class="c1">// Broadcast X, Y, Z of constant vector into 3 SSE registers</span>
-  <span class="kr">__m128</span> <span class="n">vX</span>  <span class="o">=</span> <span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">vY</span>  <span class="o">=</span> <span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">vZ</span>  <span class="o">=</span> <span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">z</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Broadcast X, Y, Z of constant vector into 3 SSE registers</span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vX</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vY</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vZ</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span> <span class="o">-</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">// Load data for next 4 points</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-    <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-    <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Load data for next 4 points</span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Compute X*X&#39;+Y*Y&#39;+Z*Z&#39; for each point</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_mul_ps</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">vX</span><span class="p">);</span>
-    <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_mul_ps</span> <span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">vY</span><span class="p">);</span>
-    <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_mul_ps</span> <span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">vZ</span><span class="p">);</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_add_ps</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_add_ps</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Compute X*X&#39;+Y*Y&#39;+Z*Z&#39; for each point</span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_mul_ps</span><span class="w"> </span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">vX</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_mul_ps</span><span class="w"> </span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">vY</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_mul_ps</span><span class="w"> </span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="w"> </span><span class="n">vZ</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="w"> </span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="w"> </span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Store results</span>
-    <span class="n">_mm_store_ps</span><span class="p">(</span><span class="n">result</span> <span class="o">+</span> <span class="n">i</span><span class="p">,</span> <span class="n">X</span><span class="p">);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Store results</span>
+<span class="w">    </span><span class="n">_mm_store_ps</span><span class="p">(</span><span class="n">result</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c1">// Handle any leftovers at the end</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">z</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="c1">// Handle any leftovers at the end</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Horizontal (AoS), SSE4.1-optimized (with horizontal DPPS instruction):</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">dotSSE4_1</span> <span class="p">(</span><span class="k">const</span> <span class="n">AOS</span><span class="o">*</span> <span class="n">vectors</span><span class="p">,</span> <span class="k">const</span> <span class="n">AOS</span><span class="o">&amp;</span> <span class="n">vector</span><span class="p">,</span>
-                <span class="kt">float</span><span class="o">*</span> <span class="n">result</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">size</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="c1">// Load constant vector into an SSE register</span>
-  <span class="kr">__m128</span> <span class="n">vec</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">((</span><span class="k">const</span> <span class="kt">float</span><span class="o">*</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">vector</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">XYZH</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">dotSSE4_1</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOS</span><span class="o">*</span><span class="w"> </span><span class="n">vectors</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOS</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vector</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Load constant vector into an SSE register</span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">((</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vector</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">XYZH</span><span class="p">;</span><span class="w"></span>
 
-  <span class="c1">// Set mask to ignore the padding elements</span>
-  <span class="k">const</span> <span class="kt">int</span> <span class="n">mask</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">// Load next point</span>
-    <span class="n">XYZH</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">((</span><span class="k">const</span> <span class="kt">float</span><span class="o">*</span><span class="p">)(</span><span class="n">vectors</span> <span class="o">+</span> <span class="n">i</span><span class="p">));</span>
+<span class="w">  </span><span class="c1">// Set mask to ignore the padding elements</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Load next point</span>
+<span class="w">    </span><span class="n">XYZH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">((</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="p">)(</span><span class="n">vectors</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">));</span><span class="w"></span>
 
-    <span class="c1">// Dot product from SSE4.1</span>
-    <span class="n">XYZH</span> <span class="o">=</span> <span class="n">_mm_dp_ps</span> <span class="p">(</span><span class="n">XYZH</span><span class="p">,</span> <span class="n">vec</span><span class="p">,</span> <span class="n">mask</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Dot product from SSE4.1</span>
+<span class="w">    </span><span class="n">XYZH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_dp_ps</span><span class="w"> </span><span class="p">(</span><span class="n">XYZH</span><span class="p">,</span><span class="w"> </span><span class="n">vec</span><span class="p">,</span><span class="w"> </span><span class="n">mask</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Store single result (the bottom register element)</span>
-    <span class="n">_mm_store_ss</span> <span class="p">(</span><span class="o">&amp;</span><span class="p">(</span><span class="n">result</span> <span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">XYZH</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">    </span><span class="c1">// Store single result (the bottom register element)</span>
+<span class="w">    </span><span class="n">_mm_store_ss</span><span class="w"> </span><span class="p">(</span><span class="o">&amp;</span><span class="p">(</span><span class="n">result</span><span class="w"> </span><span class="p">[</span><span class="n">i</span><span class="p">]),</span><span class="w"> </span><span class="n">XYZH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="centroid">
+</section>
+<section id="centroid">
 <h3>Centroid</h3>
 <p>Vertical (SoA), SSE2-optimized:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">centroidSSE2</span> <span class="p">(</span><span class="k">const</span> <span class="n">SOA</span><span class="o">&amp;</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">AOS</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kr">__m128</span> <span class="n">X_sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
-  <span class="kr">__m128</span> <span class="n">Y_sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
-  <span class="kr">__m128</span> <span class="n">Z_sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
-  <span class="kr">__m128</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">centroidSSE2</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SOA</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vectors</span><span class="p">,</span><span class="w"> </span><span class="n">AOS</span><span class="o">&amp;</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Y_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Z_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span> <span class="o">-</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">// Load next 4 points</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-    <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-    <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Load next 4 points</span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Accumulate 4 sums in each dimension</span>
-    <span class="n">X_sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">X_sum</span><span class="p">,</span> <span class="n">X</span><span class="p">);</span>
-    <span class="n">Y_sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Y_sum</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
-    <span class="n">Z_sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Z_sum</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Accumulate 4 sums in each dimension</span>
+<span class="w">    </span><span class="n">X_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">X_sum</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Y_sum</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Z_sum</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c1">// Horizontal adds (HADD from SSE3 could help slightly)</span>
-  <span class="kt">float</span><span class="o">*</span> <span class="n">pX</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">X_sum</span><span class="p">);</span>
-  <span class="kt">float</span><span class="o">*</span> <span class="n">pY</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Y_sum</span><span class="p">);</span>
-  <span class="kt">float</span><span class="o">*</span> <span class="n">pZ</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Z_sum</span><span class="p">);</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">pX</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pX</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pX</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">pX</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">pY</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pY</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pY</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">pY</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+<span class="w">  </span><span class="c1">// Horizontal adds (HADD from SSE3 could help slightly)</span>
+<span class="w">  </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">X_sum</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Y_sum</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Z_sum</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w"></span>
 
-  <span class="c1">// Leftover points</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">x</span> <span class="o">+=</span> <span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">y</span> <span class="o">+=</span> <span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">z</span> <span class="o">+=</span> <span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c1">// Leftover points</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c1">// Average</span>
-  <span class="kt">float</span> <span class="n">inv_size</span> <span class="o">=</span> <span class="mf">1.0f</span> <span class="o">/</span> <span class="n">size</span><span class="p">;</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">x</span> <span class="o">*=</span> <span class="n">inv_size</span><span class="p">;</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">y</span> <span class="o">*=</span> <span class="n">inv_size</span><span class="p">;</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">z</span> <span class="o">*=</span> <span class="n">inv_size</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="c1">// Average</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">inv_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_size</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_size</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_size</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Horizontal (AoS), SSE2-optimized:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">centroidSSE2</span> <span class="p">(</span><span class="k">const</span> <span class="n">AOS</span><span class="o">*</span> <span class="n">vectors</span><span class="p">,</span> <span class="n">AOS</span><span class="o">&amp;</span> <span class="n">result</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kr">__m128</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">centroidSSE2</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOS</span><span class="o">*</span><span class="w"> </span><span class="n">vectors</span><span class="p">,</span><span class="w"> </span><span class="n">AOS</span><span class="o">&amp;</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
 
-  <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="kr">__m128</span> <span class="n">XYZH</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">((</span><span class="k">const</span> <span class="kt">float</span><span class="o">*</span><span class="p">)(</span><span class="n">vectors</span> <span class="o">+</span> <span class="n">i</span><span class="p">));</span>
-    <span class="n">sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">sum</span><span class="p">,</span> <span class="n">XYZH</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="n">_mm_store_ps</span><span class="p">((</span><span class="kt">float</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">result</span><span class="p">,</span> <span class="n">sum</span><span class="p">);</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">XYZH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">((</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="p">)(</span><span class="n">vectors</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">sum</span><span class="p">,</span><span class="w"> </span><span class="n">XYZH</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">_mm_store_ps</span><span class="p">((</span><span class="kt">float</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">float</span> <span class="n">inv_size</span> <span class="o">=</span> <span class="mf">1.0f</span> <span class="o">/</span> <span class="n">size</span><span class="p">;</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">x</span> <span class="o">*=</span> <span class="n">inv_size</span><span class="p">;</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">y</span> <span class="o">*=</span> <span class="n">inv_size</span><span class="p">;</span>
-  <span class="n">result</span><span class="p">.</span><span class="n">z</span> <span class="o">*=</span> <span class="n">inv_size</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">inv_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_size</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_size</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_size</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="indexed">
+</section>
+<section id="indexed">
 <h3>Indexed</h3>
 <p>When using point indices, the vertical implementation can no longer use aligned
 loads. Instead it’s best to use the <code class="docutils literal notranslate"><span class="pre">_mm_set_ps</span></code> intrinsic to gather the next
 four points.</p>
 <p>Vertical (SoA) dot product, SSE2-optimized:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">dotIndexedSSE2</span> <span class="p">(</span><span class="k">const</span> <span class="n">SOA</span><span class="o">&amp;</span> <span class="n">vectors</span><span class="p">,</span> <span class="k">const</span> <span class="n">AOS</span><span class="o">&amp;</span> <span class="n">vector</span><span class="p">,</span>
-                     <span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">indices</span><span class="p">,</span> <span class="kt">float</span><span class="o">*</span> <span class="n">result</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">size</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">vector</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">dotIndexedSSE2</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SOA</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vectors</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOS</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vector</span><span class="p">,</span><span class="w"></span>
+<span class="w">                     </span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">indices</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vector</span><span class="p">.</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kr">__m128</span> <span class="n">vX</span>  <span class="o">=</span> <span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">vY</span>  <span class="o">=</span> <span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">vZ</span>  <span class="o">=</span> <span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">z</span><span class="p">);</span>
-  <span class="kr">__m128</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">;</span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vX</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vY</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">vZ</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps1</span><span class="p">(</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span> <span class="o">-</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i0</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">0</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">i3</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">];</span>
+<span class="w">  </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">0</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">];</span><span class="w"></span>
 
-    <span class="c1">// Gather next four indexed points</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span>
-    <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span>
-    <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span> <span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span>
+<span class="w">    </span><span class="c1">// Gather next four indexed points</span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span><span class="w"></span>
 
-    <span class="c1">// Computation</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_mul_ps</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">vX</span><span class="p">);</span>
-    <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_mul_ps</span> <span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">vY</span><span class="p">);</span>
-    <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_mul_ps</span> <span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">vZ</span><span class="p">);</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_add_ps</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
-    <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_add_ps</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Computation</span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_mul_ps</span><span class="w"> </span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">vX</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_mul_ps</span><span class="w"> </span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">vY</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_mul_ps</span><span class="w"> </span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="w"> </span><span class="n">vZ</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="w"> </span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="w"> </span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">// Store result</span>
-    <span class="n">_mm_store_ps</span><span class="p">(</span><span class="n">result</span> <span class="o">+</span> <span class="n">i</span><span class="p">,</span> <span class="n">X</span><span class="p">);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Store result</span>
+<span class="w">    </span><span class="n">_mm_store_ps</span><span class="p">(</span><span class="n">result</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">*</span><span class="n">z</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">vectors</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">*</span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="benchmarks-random-data">
+</section>
+</section>
+<section id="benchmarks-random-data">
 <h2>Benchmarks (random data)</h2>
 <p>The test point cloud is randomly generated, 640x480, dense. Each operation is
 repeated 1000 times.</p>
@@ -517,15 +436,15 @@ would change execution time by affecting caching and prefetching, but I’d
 expect such effects to be similar for horizontal and vertical code.</p>
 <p>“Scalar” code uses no vector instructions, otherwise the instruction set is
 listed. A trailing u# means the code was unrolled by factor #.</p>
-<div class="section" id="id5">
+<section id="id1">
 <h3>Dot product</h3>
-<div class="section" id="dense">
+<section id="dense">
 <h4>Dense</h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Horizontal</span> <span class="p">(</span><span class="n">AOS</span><span class="p">)</span>
   <span class="n">Scalar</span><span class="p">:</span>   <span class="mf">0.621674</span> <span class="n">seconds</span>
   <span class="n">SSE2</span><span class="p">:</span>     <span class="mf">0.756300</span> <span class="n">seconds</span>
-  <span class="n">SSE4</span><span class="o">.</span><span class="mi">1</span><span class="p">:</span>   <span class="mf">0.532441</span> <span class="n">seconds</span>
-  <span class="n">SSE4</span><span class="o">.</span><span class="mi">1</span><span class="n">u4</span><span class="p">:</span> <span class="mf">0.476841</span> <span class="n">seconds</span>
+  <span class="n">SSE4</span><span class="mf">.1</span><span class="p">:</span>   <span class="mf">0.532441</span> <span class="n">seconds</span>
+  <span class="n">SSE4</span><span class="mf">.1</span><span class="n">u4</span><span class="p">:</span> <span class="mf">0.476841</span> <span class="n">seconds</span>
 <span class="n">Vertical</span> <span class="p">(</span><span class="n">SOA</span><span class="p">)</span>
   <span class="n">Scalar</span><span class="p">:</span>   <span class="mf">0.519625</span> <span class="n">seconds</span>
   <span class="n">SSE2</span><span class="p">:</span>     <span class="mf">0.215499</span> <span class="n">seconds</span>
@@ -540,13 +459,13 @@ the DPPS instruction; it takes 11 cycles before the result can be stored.
 Unrolling helps hide the latency by providing more computation to do during
 that time. I don’t know why the results from my office i7 (shown above) are so
 different.</p>
-</div>
-<div class="section" id="id6">
+</section>
+<section id="id2">
 <h4>Indexed</h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Horizontal</span> <span class="p">(</span><span class="n">AOS</span><span class="p">)</span>
   <span class="n">Scalar</span><span class="p">:</span>   <span class="mf">0.271768</span> <span class="n">seconds</span>
   <span class="n">SSE2</span><span class="p">:</span>     <span class="mf">0.276114</span> <span class="n">seconds</span>
-  <span class="n">SSE4</span><span class="o">.</span><span class="mi">1</span><span class="p">:</span>   <span class="mf">0.259613</span> <span class="n">seconds</span>
+  <span class="n">SSE4</span><span class="mf">.1</span><span class="p">:</span>   <span class="mf">0.259613</span> <span class="n">seconds</span>
 <span class="n">Vertical</span> <span class="p">(</span><span class="n">SOA</span><span class="p">)</span>
   <span class="n">Scalar</span><span class="p">:</span>   <span class="mf">0.193394</span> <span class="n">seconds</span>
   <span class="n">SSE2</span><span class="p">:</span>     <span class="mf">0.177262</span> <span class="n">seconds</span>
@@ -554,13 +473,13 @@ different.</p>
 </div>
 <p>SSE optimization actually gives meager benefits in both the horizontal and
 vertical cases. However vertical SSE2 is still the winner.</p>
-</div>
-</div>
-<div class="section" id="id7">
+</section>
+</section>
+<section id="id3">
 <h3>Centroid</h3>
 <p>The story for centroid is similar; vertical SSE2 is fastest, significantly so
 for dense data.</p>
-<div class="section" id="id8">
+<section id="id4">
 <h4>Dense</h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Horizontal</span> <span class="p">(</span><span class="n">AOS</span><span class="p">)</span>
   <span class="n">Scalar</span><span class="p">:</span>  <span class="mf">0.628597</span> <span class="n">seconds</span>
@@ -572,8 +491,8 @@ for dense data.</p>
   <span class="n">SSE2</span><span class="p">:</span>    <span class="mf">0.149806</span> <span class="n">seconds</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id9">
+</section>
+<section id="id5">
 <h4>Indexed</h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Horizontal</span> <span class="p">(</span><span class="n">AOS</span><span class="p">)</span>
   <span class="n">Scalar</span><span class="p">:</span>  <span class="mf">0.256237</span> <span class="n">seconds</span>
@@ -583,21 +502,21 @@ for dense data.</p>
   <span class="n">SSE2</span><span class="p">:</span>    <span class="mf">0.166639</span> <span class="n">seconds</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="vertical-sse-for-organized-point-clouds">
+</section>
+</section>
+</section>
+<section id="vertical-sse-for-organized-point-clouds">
 <h2>Vertical SSE for organized point clouds</h2>
 <p>We still need a way to effectively use vertical SSE for organized point clouds
 (containing NaNs). A promising approach is to compute a <em>run-length encoding</em>
 (RLE) of the valid points as a preprocessing step. The data structure is very
 simple:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">RlePair</span>
-<span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">good</span><span class="p">;</span>
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">skip</span><span class="p">;</span>
-<span class="p">};</span>
-<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">RlePair</span><span class="o">&gt;</span> <span class="n">RLE</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">RlePair</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">good</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">skip</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">RlePair</span><span class="o">&gt;</span><span class="w"> </span><span class="n">RLE</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The RLE counts the length of alternating runs of valid and invalid points. Once
@@ -608,8 +527,8 @@ each one for NaNs. In fact, operations become <code class="docutils literal notr
 (and invalid) runs should be lengthy on average. A long run of valid points can
 be split into &lt;4 beginning points, &lt;4 final points, and a run of aligned, valid
 point data which can be safely processed with vertical SSE.</p>
-</div>
-<div class="section" id="abstracting-point-iteration">
+</section>
+<section id="abstracting-point-iteration">
 <h2>Abstracting point iteration</h2>
 <p>We are still left with three distinct cases for processing point clouds,
 requiring different methods of iterating over point data:</p>
@@ -632,162 +551,162 @@ four near-identical implementations:</p>
 </ul>
 <p>I think it’s unnecessary to distinguish between “dense indexed” and “organized
 indexed”, if we require that indices point to valid data.</p>
-<div class="section" id="writing-algorithms-as-computational-kernels">
+<section id="writing-algorithms-as-computational-kernels">
 <h3>Writing algorithms as computational kernels</h3>
 <p>As an experiment, I rewrote the vertical centroid as a <em>kernel</em> class. This
 implements only the computation, without worrying about the memory layout of
 the whole cloud:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">CentroidKernel</span>
-<span class="p">{</span>
-  <span class="c1">// State</span>
-  <span class="kt">float</span> <span class="n">x_sum</span><span class="p">,</span> <span class="n">y_sum</span><span class="p">,</span> <span class="n">z_sum</span><span class="p">;</span>
-  <span class="kr">__m128</span> <span class="n">X_sum</span><span class="p">,</span> <span class="n">Y_sum</span><span class="p">,</span> <span class="n">Z_sum</span><span class="p">;</span>
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">count</span><span class="p">;</span>
-  <span class="n">AOS</span> <span class="n">result</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">CentroidKernel</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// State</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">x_sum</span><span class="p">,</span><span class="w"> </span><span class="n">y_sum</span><span class="p">,</span><span class="w"> </span><span class="n">z_sum</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X_sum</span><span class="p">,</span><span class="w"> </span><span class="n">Y_sum</span><span class="p">,</span><span class="w"> </span><span class="n">Z_sum</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">AOS</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"></span>
 
-  <span class="kt">void</span> <span class="nf">init</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="c1">// Initialization</span>
-    <span class="n">x_sum</span> <span class="o">=</span> <span class="n">y_sum</span> <span class="o">=</span> <span class="n">z_sum</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span>
-    <span class="n">X_sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
-    <span class="n">Y_sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
-    <span class="n">Z_sum</span> <span class="o">=</span> <span class="n">_mm_setzero_ps</span><span class="p">();</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Initialization</span>
+<span class="w">    </span><span class="n">x_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">z_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">X_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_setzero_ps</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c1">// Scalar operator</span>
-  <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">operator</span><span class="p">()</span> <span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">,</span> <span class="kt">float</span> <span class="n">z</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">x_sum</span> <span class="o">+=</span> <span class="n">x</span><span class="p">;</span>
-    <span class="n">y_sum</span> <span class="o">+=</span> <span class="n">y</span><span class="p">;</span>
-    <span class="n">z_sum</span> <span class="o">+=</span> <span class="n">z</span><span class="p">;</span>
-    <span class="o">++</span><span class="n">count</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c1">// Scalar operator</span>
+<span class="w">  </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">operator</span><span class="p">()</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">x_sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">y_sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">z_sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="o">++</span><span class="n">count</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="c1">// SIMD operator</span>
-  <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">operator</span><span class="p">()</span> <span class="p">(</span><span class="kr">__m128</span> <span class="n">X</span><span class="p">,</span> <span class="kr">__m128</span> <span class="n">Y</span><span class="p">,</span> <span class="kr">__m128</span> <span class="n">Z</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">X_sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">X_sum</span><span class="p">,</span> <span class="n">X</span><span class="p">);</span>
-    <span class="n">Y_sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Y_sum</span><span class="p">,</span> <span class="n">Y</span><span class="p">);</span>
-    <span class="n">Z_sum</span> <span class="o">=</span> <span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Z_sum</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
-    <span class="n">count</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="c1">// SIMD operator</span>
+<span class="w">  </span><span class="kr">inline</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">operator</span><span class="p">()</span><span class="w"> </span><span class="p">(</span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Z</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">X_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">X_sum</span><span class="p">,</span><span class="w"> </span><span class="n">X</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Y_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Y_sum</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">Z_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_add_ps</span><span class="p">(</span><span class="n">Z_sum</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">count</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="kt">void</span> <span class="nf">reduce</span><span class="p">()</span>
-  <span class="p">{</span>
-    <span class="kt">float</span><span class="o">*</span> <span class="n">pX</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">X_sum</span><span class="p">);</span>
-    <span class="kt">float</span><span class="o">*</span> <span class="n">pY</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Y_sum</span><span class="p">);</span>
-    <span class="kt">float</span><span class="o">*</span> <span class="n">pZ</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Z_sum</span><span class="p">);</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">pX</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pX</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pX</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">pX</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">x_sum</span><span class="p">;</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">pY</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pY</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pY</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">pY</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">y_sum</span><span class="p">;</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">pZ</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">z_sum</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">reduce</span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">X_sum</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Y_sum</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Z_sum</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pX</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x_sum</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pY</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y_sum</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">pZ</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">z_sum</span><span class="p">;</span><span class="w"></span>
 
-    <span class="kt">float</span> <span class="n">inv_count</span> <span class="o">=</span> <span class="mf">1.0f</span> <span class="o">/</span> <span class="n">count</span><span class="p">;</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">x</span> <span class="o">*=</span> <span class="n">inv_count</span><span class="p">;</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">y</span> <span class="o">*=</span> <span class="n">inv_count</span><span class="p">;</span>
-    <span class="n">result</span><span class="p">.</span><span class="n">z</span> <span class="o">*=</span> <span class="n">inv_count</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">};</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">inv_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_count</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_count</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">inv_count</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="kernel-applicators">
+</section>
+<section id="kernel-applicators">
 <h3>Kernel applicators</h3>
 <p>We can then define <em>applicator</em> functions that apply a kernel to a particular
 case of point cloud. The dense version simply uses aligned loads:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Kernel</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="n">applyDense</span> <span class="p">(</span><span class="n">Kernel</span><span class="o">&amp;</span> <span class="n">kernel</span><span class="p">,</span> <span class="k">const</span> <span class="n">SOA</span><span class="o">&amp;</span> <span class="n">pts</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">kernel</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Kernel</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">applyDense</span><span class="w"> </span><span class="p">(</span><span class="n">Kernel</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kernel</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">SOA</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pts</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">kernel</span><span class="p">.</span><span class="n">init</span><span class="p">();</span><span class="w"></span>
 
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">pts</span><span class="p">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="kr">__m128</span> <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-    <span class="kr">__m128</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-    <span class="kr">__m128</span> <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">z</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">size</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
 
-    <span class="n">kernel</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">pts</span><span class="p">.</span><span class="n">size</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="n">kernel</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">size</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="n">kernel</span><span class="p">.</span><span class="n">reduce</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="n">kernel</span><span class="p">.</span><span class="n">reduce</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The indexed version performs the necessary data gathering:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Kernel</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="n">applySparse</span> <span class="p">(</span><span class="n">Kernel</span><span class="o">&amp;</span> <span class="n">kernel</span><span class="p">,</span> <span class="k">const</span> <span class="n">SOA</span><span class="o">&amp;</span> <span class="n">pts</span><span class="p">,</span>
-                  <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">indices</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">kernel</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Kernel</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">applySparse</span><span class="w"> </span><span class="p">(</span><span class="n">Kernel</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kernel</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">SOA</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pts</span><span class="p">,</span><span class="w"></span>
+<span class="w">                  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">indices</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">kernel</span><span class="p">.</span><span class="n">init</span><span class="p">();</span><span class="w"></span>
 
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">indices</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i0</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">0</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">i1</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">i2</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">i3</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">];</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">indices</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">0</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">i3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">];</span><span class="w"></span>
 
-    <span class="c1">// Gather next four indexed points</span>
-    <span class="kr">__m128</span> <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span>
-    <span class="kr">__m128</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span>
-    <span class="kr">__m128</span> <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span>
+<span class="w">    </span><span class="c1">// Gather next four indexed points</span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_set_ps</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i3</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i2</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i1</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i0</span><span class="p">]);</span><span class="w"></span>
 
-    <span class="n">kernel</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">indices</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">idx</span><span class="p">]);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="n">kernel</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">indices</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="w">    </span><span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">idx</span><span class="p">]);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="n">kernel</span><span class="p">.</span><span class="n">reduce</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="n">kernel</span><span class="p">.</span><span class="n">reduce</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The organized version is most complicated, and uses the RLE to vectorize as
 much of the computation as possible:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Kernel</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="n">applyOrganized</span> <span class="p">(</span><span class="n">Kernel</span><span class="o">&amp;</span> <span class="n">kernel</span><span class="p">,</span> <span class="k">const</span> <span class="n">SOA</span><span class="o">&amp;</span> <span class="n">pts</span><span class="p">,</span> <span class="k">const</span> <span class="n">RLE</span><span class="o">&amp;</span> <span class="n">rle</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">kernel</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">Kernel</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">applyOrganized</span><span class="w"> </span><span class="p">(</span><span class="n">Kernel</span><span class="o">&amp;</span><span class="w"> </span><span class="n">kernel</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">SOA</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pts</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">RLE</span><span class="o">&amp;</span><span class="w"> </span><span class="n">rle</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">kernel</span><span class="p">.</span><span class="n">init</span><span class="p">();</span><span class="w"></span>
 
-  <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span> <span class="p">(</span><span class="n">RLE</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">rle_it</span> <span class="o">=</span> <span class="n">rle</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">rle_it</span> <span class="o">!=</span> <span class="n">rle</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">rle_it</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">// Process current stretch of good pixels</span>
-    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">good</span> <span class="o">=</span> <span class="n">rle_it</span><span class="o">-&gt;</span><span class="n">good</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">skip</span> <span class="o">=</span> <span class="n">rle_it</span><span class="o">-&gt;</span><span class="n">skip</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">good_end</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">good</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">RLE</span><span class="o">::</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">rle_it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rle</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">rle_it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">rle</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">rle_it</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Process current stretch of good pixels</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">good</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rle_it</span><span class="o">-&gt;</span><span class="n">good</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">skip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rle_it</span><span class="o">-&gt;</span><span class="n">skip</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">good_end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">good</span><span class="p">;</span><span class="w"></span>
 
-    <span class="c1">// Any unaligned points at start</span>
-    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">unaligned_end</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="o">~</span><span class="mi">3</span><span class="p">,</span> <span class="n">good_end</span> <span class="p">);</span>
-    <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">unaligned_end</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-      <span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-    <span class="c1">// Aligned SIMD point data</span>
-    <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">&lt;=</span> <span class="n">good_end</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="kr">__m128</span> <span class="n">X</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-      <span class="kr">__m128</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
-      <span class="kr">__m128</span> <span class="n">Z</span> <span class="o">=</span> <span class="n">_mm_load_ps</span> <span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">z</span> <span class="o">+</span> <span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// Any unaligned points at start</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span><span class="w"> </span><span class="n">unaligned_end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="o">~</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">good_end</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">unaligned_end</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Aligned SIMD point data</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">good_end</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="kr">__m128</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="kr">__m128</span><span class="w"> </span><span class="n">Z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_mm_load_ps</span><span class="w"> </span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w"></span>
 
-      <span class="n">kernel</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="c1">// &lt;4 remaining points</span>
-    <span class="k">for</span> <span class="p">(</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">good_end</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
-      <span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">kernel</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="n">Z</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// &lt;4 remaining points</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">good_end</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">kernel</span><span class="p">(</span><span class="n">pts</span><span class="p">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">pts</span><span class="p">.</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span><span class="w"></span>
 
-    <span class="c1">// Skip the following stretch of NaNs</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="n">skip</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="c1">// Skip the following stretch of NaNs</span>
+<span class="w">    </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">skip</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="n">kernel</span><span class="p">.</span><span class="n">reduce</span><span class="p">();</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="n">kernel</span><span class="p">.</span><span class="n">reduce</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The kernel + applicator combinations for the dense and indexed cases were added
@@ -798,15 +717,15 @@ would be to combine the scalar and SSE <code class="docutils literal notranslate
 could possibly be achieved by using <code class="docutils literal notranslate"><span class="pre">Eigen::Array</span></code> as an SSE backend (similar
 to how <code class="docutils literal notranslate"><span class="pre">Eigen::Matrix</span></code> maps are currently used), something like:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// N can be 1 or 4</span>
-<span class="k">template</span> <span class="o">&lt;</span><span class="kt">int</span> <span class="n">N</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="k">operator</span><span class="p">()</span> <span class="p">(</span><span class="k">const</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&amp;</span> <span class="n">x</span><span class="p">,</span>
-                 <span class="k">const</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&amp;</span> <span class="n">y</span><span class="p">,</span>
-                 <span class="k">const</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&amp;</span> <span class="n">z</span><span class="p">);</span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="p">()</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<span class="w">                 </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"></span>
+<span class="w">                 </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">z</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="benchmarks-real-point-clouds">
+</section>
+</section>
+<section id="benchmarks-real-point-clouds">
 <h2>Benchmarks (real point clouds)</h2>
 <p>Finally, we compare <code class="docutils literal notranslate"><span class="pre">CentroidKernel</span></code> + applicator to
 <code class="docutils literal notranslate"><span class="pre">pcl::compute3DCentroid()</span></code> for several real organized (and one dense) point
@@ -850,8 +769,8 @@ the larger number of NaNs has an effect?</p>
 <span class="n">Kernel</span><span class="p">:</span> <span class="mf">0.242546</span> <span class="n">seconds</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="conclusions">
+</section>
+<section id="conclusions">
 <h2>Conclusions</h2>
 <p>For the simple operations considered here, vertical SSE is a huge win. In the
 best case, this suggests that much of PCL could get at least a 3x speedup by
@@ -867,53 +786,41 @@ allowing 8 floating point operations at a time instead of 4. The vertical SSE
 techniques shown here trivially extend to AVX, and future instruction sets will
 likely expand SSE registers even further. The upcoming AVX2 extensions add
 dedicated <em>gather</em> instructions, which should improve performance with indices.</p>
-</div>
-<div class="section" id="remaining-questions">
+</section>
+<section id="remaining-questions">
 <h2>Remaining questions</h2>
 <p>Are there PCL algorithms that aren’t easily implementable in the proposed
 kernel style?</p>
 <p>How to handle nearest neighbor searches? These may be hard to vectorize.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

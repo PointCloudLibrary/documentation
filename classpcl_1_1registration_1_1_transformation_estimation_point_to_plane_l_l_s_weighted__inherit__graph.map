@@ -1,3 +1,5 @@
 <map id="pcl::registration::TransformationEstimationPointToPlaneLLSWeighted&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimationPointToPlaneLLSWeighted&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="31,6,215,87"/>
+<area shape="rect" id="node1" title="TransformationEstimationPointToPlaneLLSWeighted implements a Linear Least Squares (LLS) approximation..." alt="" coords="5,273,256,344"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title=" " alt="" coords="31,153,230,224"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="31,5,230,76"/>
 </map>

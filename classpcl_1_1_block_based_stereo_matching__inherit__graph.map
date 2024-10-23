@@ -1,4 +1,5 @@
 <map id="pcl::BlockBasedStereoMatching" name="pcl::BlockBasedStereoMatching">
-<area shape="rect" id="node2" href="$classpcl_1_1_gray_stereo_matching.html" title="Stereo Matching abstract class for Grayscale images. " alt="" coords="27,83,192,112"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class. " alt="" coords="40,5,179,35"/>
+<area shape="rect" id="node1" title="Block based (or fixed window) Stereo Matching class." alt="" coords="5,155,232,181"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_gray_stereo_matching.html" title="Stereo Matching abstract class for Grayscale images." alt="" coords="27,80,210,107"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class." alt="" coords="43,5,194,32"/>
 </map>

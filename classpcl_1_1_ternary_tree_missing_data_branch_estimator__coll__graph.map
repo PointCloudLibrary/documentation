@@ -1,3 +1,4 @@
 <map id="pcl::TernaryTreeMissingDataBranchEstimator" name="pcl::TernaryTreeMissingDataBranchEstimator">
-<area shape="rect" id="node2" href="$classpcl_1_1_branch_estimator.html" title="Interface for branch estimators. " alt="" coords="28,5,172,35"/>
+<area shape="rect" id="node1" title="Branch estimator for ternary trees where one branch is used for missing data (indicated by flag !..." alt="" coords="5,80,211,121"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_branch_estimator.html" title="Interface for branch estimators." alt="" coords="29,5,187,32"/>
 </map>

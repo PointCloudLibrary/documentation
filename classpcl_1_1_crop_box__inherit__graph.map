@@ -1,5 +1,6 @@
 <map id="pcl::CropBox&lt; PointT &gt;" name="pcl::CropBox&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="29,161,147,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,83,157,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="node1" title="CropBox is a filter that allows the user to filter all the data inside of a given box." alt="" coords="6,244,181,271"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="29,155,157,196"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="17,80,170,107"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,5,181,32"/>
 </map>

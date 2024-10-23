@@ -1,4 +1,7 @@
 <map id="pcl::ProjectInliers&lt; pcl::PCLPointCloud2 &gt;" name="pcl::ProjectInliers&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class. " alt="" coords="5,102,173,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="20,6,159,53"/>
+<area shape="rect" id="node1" title="ProjectInliers uses a model and a set of inlier indices from a PointCloud to project them into a sepa..." alt="" coords="5,365,187,407"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class." alt="" coords="111,275,292,316"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title=" " alt="" coords="128,184,275,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="89,5,180,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="205,95,371,121"/>
 </map>

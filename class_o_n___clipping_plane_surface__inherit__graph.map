@@ -1,6 +1,7 @@
 <map id="ON_ClippingPlaneSurface" name="ON_ClippingPlaneSurface">
-<area shape="rect" id="node2" href="$class_o_n___plane_surface.html" title="ON_PlaneSurface" alt="" coords="29,237,155,267"/>
-<area shape="rect" id="node4" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="45,160,139,189"/>
-<area shape="rect" id="node6" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="39,83,145,112"/>
-<area shape="rect" id="node8" href="$class_o_n___object.html" title="ON_Object" alt="" coords="49,5,135,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,304,192,331"/>
+<area shape="rect" id="node2" href="$class_o_n___plane_surface.html" title=" " alt="" coords="31,229,166,256"/>
+<area shape="rect" id="node3" href="$class_o_n___surface.html" title=" " alt="" coords="49,155,148,181"/>
+<area shape="rect" id="node4" href="$class_o_n___geometry.html" title=" " alt="" coords="41,80,156,107"/>
+<area shape="rect" id="node5" href="$class_o_n___object.html" title=" " alt="" coords="53,5,144,32"/>
 </map>

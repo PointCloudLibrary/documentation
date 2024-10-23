@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1_uniform_sampling_1_1_leaf.html" title="Simple structure to hold an nD centroid and the number of points in a leaf. " alt="" coords="5,5,152,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1visualization_1_1_image_viewer.html" title="ImageViewer is a class for 2D image visualization." alt="" coords="5,5,137,47"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_range_image_visualizer.html" title="Range image visualizer class." alt="" coords="185,5,361,47"/>
 </map>

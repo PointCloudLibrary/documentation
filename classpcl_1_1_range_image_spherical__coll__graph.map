@@ -1,8 +1,11 @@
 <map id="pcl::RangeImageSpherical" name="pcl::RangeImageSpherical">
-<area shape="rect" id="node2" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="211,429,331,459"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="49,315,228,362"/>
-<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
-<area shape="rect" id="node17" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float..." alt="" coords="288,324,429,353"/>
-<area shape="rect" id="node19" href="$structpcl_1_1___point_with_range.html" title="pcl::_PointWithRange" alt="" coords="303,219,452,248"/>
+<area shape="rect" id="node1" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="107,456,298,483"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="137,380,268,407"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="5,276,203,317"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="9,187,199,213"/>
+<area shape="rect" id="node5" title=" " alt="" coords="61,5,136,32"/>
+<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="152,96,272,123"/>
+<area shape="rect" id="node7" title=" " alt="" coords="175,5,249,32"/>
+<area shape="rect" id="node8" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float." alt="" coords="227,283,381,310"/>
+<area shape="rect" id="node9" href="$structpcl_1_1___point_with_range.html" title=" " alt="" coords="224,187,384,213"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="pcl::visualization::PointCloudColorHandlerGenericField&lt; PointT &gt;" name="pcl::visualization::PointCloudColorHandlerGenericField&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler.html" title="Base Handler class for PointCloud colors. " alt="" coords="27,5,197,69"/>
+<area shape="rect" id="node1" title="Generic field handler class for colors." alt="" coords="5,109,240,165"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler.html" title="Base Handler class for PointCloud colors." alt="" coords="30,5,215,61"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="pcl::people::PersonCluster&lt; PointT &gt;" name="pcl::people::PersonCluster&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$structpcl_1_1_point_indices.html" title="pcl::PointIndices" alt="" coords="35,197,152,227"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="36,101,151,131"/>
+<area shape="rect" id="node1" title="PersonCluster represents a class for representing information about a cluster containing a person." alt="" coords="5,273,196,315"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_point_indices.html" title=" " alt="" coords="37,184,165,211"/>
+<area shape="rect" id="node3" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="41,95,161,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="14,5,89,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="113,5,187,32"/>
 </map>

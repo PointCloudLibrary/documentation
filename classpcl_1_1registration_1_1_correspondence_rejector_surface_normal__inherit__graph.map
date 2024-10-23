@@ -1,3 +1,4 @@
 <map id="pcl::registration::CorrespondenceRejectorSurfaceNormal" name="pcl::registration::CorrespondenceRejectorSurfaceNormal">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="28,6,193,53"/>
+<area shape="rect" id="node1" title="CorrespondenceRejectorSurfaceNormal implements a simple correspondence rejection method based on the ..." alt="" coords="5,95,236,151"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="30,5,211,47"/>
 </map>

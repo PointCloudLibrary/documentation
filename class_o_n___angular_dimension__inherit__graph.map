@@ -1,5 +1,6 @@
 <map id="ON_AngularDimension" name="ON_AngularDimension">
-<area shape="rect" id="node2" href="$class_o_n___annotation.html" title="ON_Annotation" alt="" coords="28,160,137,189"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="29,83,136,112"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="40,5,125,35"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,175,256"/>
+<area shape="rect" id="node2" href="$class_o_n___annotation.html" title=" " alt="" coords="30,155,150,181"/>
+<area shape="rect" id="node3" href="$class_o_n___geometry.html" title=" " alt="" coords="33,80,147,107"/>
+<area shape="rect" id="node4" href="$class_o_n___object.html" title=" " alt="" coords="45,5,135,32"/>
 </map>

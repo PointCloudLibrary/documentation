@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Compiling PCL and its dependencies from MacPorts and source on Mac OS X &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compiling PCL and its dependencies from MacPorts and source on Mac OS X &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Compiling PCL and its dependencies from MacPorts and source on Mac OS X</a></li>
@@ -113,74 +70,37 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Compiling PCL and its dependencies from MacPorts and source on Mac OS X</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="compiling-pcl-and-its-dependencies-from-macports-and-source-on-mac-os-x">
+             
+  <section id="compiling-pcl-and-its-dependencies-from-macports-and-source-on-mac-os-x">
 <span id="compiling-pcl-macosx"></span><h1>Compiling PCL and its dependencies from MacPorts and source on Mac OS X</h1>
 <p>This tutorial explains how to build the Point Cloud Library
 <strong>from MacPorts and source</strong> on Mac OS X platforms, and tries to guide you
 through the download and building <em>of all the required dependencies</em>.</p>
 <img alt="Mac OS X logo" class="align-right" src="_images/macosx_logo.png" />
-</div>
-<div class="section" id="prerequisites">
+</section>
+<section id="prerequisites">
 <span id="macosx-prerequisites"></span><h1>Prerequisites</h1>
 <p>Before getting started download and install the following prerequisites for
 Mac OS X:</p>
@@ -198,13 +118,13 @@ Aqua based open-source software on the Mac OS X operating system.</p>
 </dl>
 </li>
 </ul>
-</div>
-<div class="section" id="pcl-dependencies">
+</section>
+<section id="pcl-dependencies">
 <span id="macosx-dependencies"></span><h1>PCL Dependencies</h1>
 <p>In order to compile every component of the PCL library we need to download and
 compile a series of 3rd party library dependencies.  We’ll cover the building,
 compiling and installing of everything in the following sections:</p>
-<div class="section" id="required">
+<section id="required">
 <h2>Required</h2>
 <p>The following libraries are <strong>Required</strong> to build PCL.</p>
 <ul>
@@ -241,8 +161,8 @@ Used in <cite>visualization</cite> for 3D point cloud rendering and visualizatio
 </dl>
 </li>
 </ul>
-</div>
-<div class="section" id="optional">
+</section>
+<section id="optional">
 <h2>Optional</h2>
 <p>The following libraries are <strong>Optional</strong> and provide extended functionality
 within PCL, ie Kinect support.</p>
@@ -269,8 +189,8 @@ devices.</p>
 </dl>
 </li>
 </ul>
-</div>
-<div class="section" id="advanced-developers">
+</section>
+<section id="advanced-developers">
 <h2>Advanced (Developers)</h2>
 <p>The following libraries are <strong>Advanced</strong> and provide additional functionality
 for PCL developers:</p>
@@ -294,38 +214,38 @@ documentation.</p>
 </dl>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="building-compiling-and-installing-pcl-dependencies">
+</section>
+</section>
+<section id="building-compiling-and-installing-pcl-dependencies">
 <span id="macosx-building-prerequisites"></span><h1>Building, Compiling and Installing PCL Dependencies</h1>
 <p>By now you should have downloaded and installed the latest versions of XCode and
 MacPorts under the <a class="reference internal" href="#macosx-prerequisites"><span class="std std-ref">Prerequisites</span></a> section.  We’ll be installing most
 dependencies available via MacPorts and the rest will be built from source.</p>
-<div class="section" id="install-cmake">
+<section id="install-cmake">
 <h2>Install CMake</h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install cmake
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-boost">
+</section>
+<section id="install-boost">
 <h2>Install Boost</h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install boost
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-eigen">
+</section>
+<section id="install-eigen">
 <h2>Install Eigen</h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install eigen3
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-flann">
+</section>
+<section id="install-flann">
 <h2>Install FLANN</h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install flann
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-vtk">
+</section>
+<section id="install-vtk">
 <h2>Install VTK</h2>
 <p>To install via MacPorts:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install vtk5 +qt4_mac
@@ -362,20 +282,20 @@ not require visualisation, you may omit this step.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make &amp;&amp; make install
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-qhull">
+</section>
+<section id="install-qhull">
 <h2>Install Qhull</h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install qhull
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-libusb">
+</section>
+<section id="install-libusb">
 <h2>Install libusb</h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install libusb-devel +universal
 </pre></div>
 </div>
-</div>
-<div class="section" id="install-patched-openni-and-sensor">
+</section>
+<section id="install-patched-openni-and-sensor">
 <h2>Install Patched OpenNI and Sensor</h2>
 <p>Download the patched versions of OpenNI and Sensor from the PCL downloads page
 <a class="reference external" href="http://pointclouds.org/downloads/macosx.html">http://pointclouds.org/downloads/macosx.html</a></p>
@@ -403,9 +323,9 @@ $ chmod -R a+x Bin Lib
 $ sudo ./install
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="building-pcl">
+</section>
+</section>
+<section id="building-pcl">
 <span id="macosx-building-pcl"></span><h1>Building PCL</h1>
 <p>At this point you should have everything needed installed to build PCL with
 almost no additional configuration.</p>
@@ -424,18 +344,18 @@ $ sudo make install
 </div>
 <p>The customization of the build process is out of the scope of this tutorial and
 is covered in greater detail in the <a class="reference internal" href="building_pcl.html#building-pcl"><span class="std std-ref">Customizing the PCL build process</span></a> tutorial.</p>
-</div>
-<div class="section" id="using-pcl">
+</section>
+<section id="using-pcl">
 <h1>Using PCL</h1>
 <p>We finally managed to compile the Point Cloud Library (PCL) for Mac OS X. You
 can start using them in your project by following the <a class="reference internal" href="using_pcl_pcl_config.html#using-pcl-pcl-config"><span class="std std-ref">Using PCL in your own project</span></a> tutorial.</p>
-</div>
-<div class="section" id="macosx-advanced">
+</section>
+<section id="macosx-advanced">
 <span id="id1"></span><h1>Advanced (Developers)</h1>
-<div class="section" id="testing-googletest">
+<section id="testing-googletest">
 <h2>Testing (googletest)</h2>
-</div>
-<div class="section" id="api-documentation-doxygen">
+</section>
+<section id="api-documentation-doxygen">
 <h2>API Documentation (Doxygen)</h2>
 <p>Install Doxygen via MacPorts:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo port install doxygen
@@ -447,8 +367,8 @@ can start using them in your project by following the <a class="reference intern
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make doc
 </pre></div>
 </div>
-</div>
-<div class="section" id="tutorials-sphinx">
+</section>
+<section id="tutorials-sphinx">
 <h2>Tutorials (Sphinx)</h2>
 <p>In addition to the API documentation there is also tutorial documentation built
 using Sphinx.  The easiest way to get this installed is using pythons
@@ -475,47 +395,35 @@ $ python setup.py install
 <p>Sphinx can be installed via MacPorts but is a bit of a pain getting all the
 PYTHON_PATH’s in order</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

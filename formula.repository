@@ -1,83 +1,83 @@
-\_form#0:$output = input1 \cup input2$
-\_form#1:$ output = input1 \cap input2 $
-\_form#2:$ c, \mathbf{R}, $
-\_form#3:$ \mathbf{t} $
-\_form#4:\begin{align*} \frac{1}{n} \sum_{i=1}^n \vert\vert y_i - (c\mathbf{R}x_i + \mathbf{t}) \vert\vert_2^2 \end{align*}
-\_form#5:$ \Sigma_{\mathbf{x}\mathbf{y}} \in \mathbb{R}^{d \times d} $
-\_form#6:$ \mathbf{x} $
-\_form#7:$ \mathbf{y} $
-\_form#8:$d$
-\_form#9:$O(d^3)$
-\_form#10:$O(dm)$
-\_form#11:$d \times m$
-\_form#12:$ \mathbf{x} = \left( x_1, \hdots, x_n \right) $
-\_form#13:$ \mathbf{y} = \left( y_1, \hdots, y_n \right) $
-\_form#14:$ c=1 $
-\_form#15:\begin{align*} T = \begin{bmatrix} c\mathbf{R} & \mathbf{t} \\ \mathbf{0} & 1 \end{bmatrix} \end{align*}
-\_form#16:$\frac{\lambda_0}{\lambda_0 + \lambda_1 + \lambda_2}$
-\_form#17:$\lambda_0 < \lambda_1 < \lambda_2$
-\_form#18:$\pi / 2.0$
-\_form#19:\[ \lambda_0 / (\lambda_0 + \lambda_1 + \lambda_2) \]
-\_form#20:$ \mu \pm \sigma \cdot std\_mul $
-\_form#21:\[ \mu \pm \sigma \cdot std\_mul \]
-\_form#22:$ \mu $
-\_form#23:$ \sigma $
-\_form#24:$ x $
-\_form#25:$ \vec{p} $
-\_form#26:$ p $
-\_form#27:$ \delta \vec{p} $
-\_form#28:$ \alpha_0 $
-\_form#29:$ \alpha_max $
-\_form#30:$ \alpha_min $
-\_form#31:$ f(x + \alpha p) $
-\_form#32:$ score $
-\_form#33:$ f'(x + \alpha p) $
-\_form#34:$ \vec{g} $
-\_form#35:$ f''(x + \alpha p) $
-\_form#36:$ H $
-\_form#37:$ X $
-\_form#38:$ T(\vec{p},\vec{x}) $
-\_form#39:$ I $
-\_form#40:$ \psi(\alpha_k) \leq 0 $
-\_form#41:$ \phi'(\alpha_k) \geq 0 $
-\_form#42:$ \alpha_l $
-\_form#43:$ f_l $
-\_form#44:$ \psi(\alpha_l) $
-\_form#45:$ \phi(\alpha_l) $
-\_form#46:$ g_l $
-\_form#47:$ \psi'(\alpha_l) $
-\_form#48:$ \phi'(\alpha_l) $
-\_form#49:$ \alpha_u $
-\_form#50:$ f_u $
-\_form#51:$ \psi(\alpha_u) $
-\_form#52:$ \phi(\alpha_u) $
-\_form#53:$ g_u $
-\_form#54:$ \psi'(\alpha_u) $
-\_form#55:$ \phi'(\alpha_u) $
-\_form#56:$ \alpha_t $
-\_form#57:$ f_t $
-\_form#58:$ \psi(\alpha_t) $
-\_form#59:$ \phi(\alpha_t) $
-\_form#60:$ g_t $
-\_form#61:$ \psi'(\alpha_t) $
-\_form#62:$ \phi'(\alpha_t) $
-\_form#63:$ \psi(\alpha_k) $
-\_form#64:$ f_k $
-\_form#65:$ g_k $
-\_form#66:$ \phi(\alpha_k) $
-\_form#67:$ \psi(\alpha) $
-\_form#68:$ \alpha $
-\_form#69:$ \phi(\alpha) $
-\_form#70:$ \phi(0) $
-\_form#71:$ \phi'(0) $
-\_form#72:$ \psi'(\alpha) $
-\_form#73:$ \phi'(\alpha) $
-\_form#74:$ J_E $
-\_form#75:$ H_E $
-\_form#76:\[ MAD = \sigma * median_i (| Xi - median_j(Xj) |) \]
-\_form#77:$\in [0 100]$
-\_form#78:$\in [0 \infty]$
-\_form#79:\[ \tilde{S}_p = \frac{1}{k_p} \sum_{q_d \in \Omega} {S_{q_d} f(||p_d - q_d|| g(||\tilde{I}_p-\tilde{I}_q||}) \]
-\_form#80:$\sigma_{color}$
-\_form#81:$\sigma_{depth}$
-\_form#82:$ std::exp(1- alpha ( w - w_{min}) / (w_max - w_min)) $
+\_form#0=138x11:$output = input1 \cup input2$
+\_form#1=138x11:$ output = input1 \cap input2 $
+\_form#2=25x13:$ c, \mathbf{R}, $
+\_form#3=6x9:$ \mathbf{t} $
+\_form#4=134x35:\begin{align*} \frac{1}{n} \sum_{i=1}^n \vert\vert y_i - (c\mathbf{R}x_i + \mathbf{t}) \vert\vert_2^2 \end{align*}
+\_form#5=64x15:$ \Sigma_{\mathbf{x}\mathbf{y}} \in \mathbb{R}^{d \times d} $
+\_form#6=9x6:$ \mathbf{x} $
+\_form#7=9x9:$ \mathbf{y} $
+\_form#8=6x10:$d$
+\_form#9=31x15:$O(d^3)$
+\_form#10=36x14:$O(dm)$
+\_form#11=33x10:$d \times m$
+\_form#12=89x14:$ \mathbf{x} = \left( x_1, \hdots, x_n \right) $
+\_form#13=86x14:$ \mathbf{y} = \left( y_1, \hdots, y_n \right) $
+\_form#14=28x9:$ c=1 $
+\_form#15=71x31:\begin{align*} T = \begin{bmatrix} c\mathbf{R} & \mathbf{t} \\ \mathbf{0} & 1 \end{bmatrix} \end{align*}
+\_form#16=50x19:$\frac{\lambda_0}{\lambda_0 + \lambda_1 + \lambda_2}$
+\_form#17=71x13:$\lambda_0 < \lambda_1 < \lambda_2$
+\_form#18=31x14:$\pi / 2.0$
+\_form#19=96x14:\[ \lambda_0 / (\lambda_0 + \lambda_1 + \lambda_2) \]
+\_form#20=84x13:$ \mu \pm \sigma \cdot std\_mul $
+\_form#21=84x13:\[ \mu \pm \sigma \cdot std\_mul \]
+\_form#22=9x9:$ \mu $
+\_form#23=8x6:$ \sigma $
+\_form#24=8x6:$ x $
+\_form#25=10x13:$ \vec{p} $
+\_form#26=8x9:$ p $
+\_form#27=14x13:$ \delta \vec{p} $
+\_form#28=13x9:$ \alpha_0 $
+\_form#29=31x9:$ \alpha_max $
+\_form#30=29x11:$ \alpha_min $
+\_form#31=53x14:$ f(x + \alpha p) $
+\_form#32=29x6:$ score $
+\_form#33=56x14:$ f'(x + \alpha p) $
+\_form#34=9x13:$ \vec{g} $
+\_form#35=59x14:$ f''(x + \alpha p) $
+\_form#36=11x10:$ H $
+\_form#37=13x10:$ X $
+\_form#38=38x14:$ T(\vec{p},\vec{x}) $
+\_form#39=8x10:$ I $
+\_form#40=56x14:$ \psi(\alpha_k) \leq 0 $
+\_form#41=58x14:$ \phi'(\alpha_k) \geq 0 $
+\_form#42=11x9:$ \alpha_l $
+\_form#43=9x13:$ f_l $
+\_form#44=30x14:$ \psi(\alpha_l) $
+\_form#45=28x14:$ \phi(\alpha_l) $
+\_form#46=10x9:$ g_l $
+\_form#47=34x14:$ \psi'(\alpha_l) $
+\_form#48=31x14:$ \phi'(\alpha_l) $
+\_form#49=14x9:$ \alpha_u $
+\_form#50=11x13:$ f_u $
+\_form#51=33x14:$ \psi(\alpha_u) $
+\_form#52=31x14:$ \phi(\alpha_u) $
+\_form#53=13x9:$ g_u $
+\_form#54=36x14:$ \psi'(\alpha_u) $
+\_form#55=34x14:$ \phi'(\alpha_u) $
+\_form#56=11x9:$ \alpha_t $
+\_form#57=10x13:$ f_t $
+\_form#58=31x14:$ \psi(\alpha_t) $
+\_form#59=29x14:$ \phi(\alpha_t) $
+\_form#60=11x9:$ g_t $
+\_form#61=34x14:$ \psi'(\alpha_t) $
+\_form#62=33x14:$ \phi'(\alpha_t) $
+\_form#63=33x14:$ \psi(\alpha_k) $
+\_form#64=11x13:$ f_k $
+\_form#65=13x9:$ g_k $
+\_form#66=30x14:$ \phi(\alpha_k) $
+\_form#67=26x14:$ \psi(\alpha) $
+\_form#68=8x6:$ \alpha $
+\_form#69=24x14:$ \phi(\alpha) $
+\_form#70=23x14:$ \phi(0) $
+\_form#71=26x14:$ \phi'(0) $
+\_form#72=30x14:$ \psi'(\alpha) $
+\_form#73=28x14:$ \phi'(\alpha) $
+\_form#74=15x13:$ J_E $
+\_form#75=18x13:$ H_E $
+\_form#76=236x14:\[ MAD = \sigma * median_i (| Xi - median_j(Xj) |) \]
+\_form#77=43x14:$\in [0 100]$
+\_form#78=36x14:$\in [0 \infty]$
+\_form#79=223x35:\[ \tilde{S}_p = \frac{1}{k_p} \sum_{q_d \in \Omega} {S_{q_d} f(||p_d - q_d|| g(||\tilde{I}_p-\tilde{I}_q||}) \]
+\_form#80=29x9:$\sigma_{color}$
+\_form#81=31x10:$\sigma_{depth}$
+\_form#82=266x14:$ std::exp(1- alpha ( w - w_{min}) / (w_max - w_min)) $

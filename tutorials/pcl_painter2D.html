@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>PCLPainter2D &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCLPainter2D &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">PCLPainter2D</a><ul>
@@ -96,85 +53,48 @@
 </li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>PCLPainter2D</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="pclpainter2d">
+             
+  <section id="pclpainter2d">
 <span id="pcl-painter2d"></span><h1>PCLPainter2D</h1>
 <p>PCLPainter2D class provides a very simple interface (just like PCLPlotter) to draw 2D figures in a canvas or a view. One can add figures by simple <em>add*()</em> methods and in the end, show the canvas by simple <em>display*()</em> methods.</p>
-<div class="section" id="basic-structure">
+<section id="basic-structure">
 <h2>Basic structure</h2>
 <p>Following is the usual way of using PCLPainter2D class.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//1. declare a Painter2D class</span>
-<span class="n">PCLPainter2D</span> <span class="n">painter</span><span class="p">;</span>
+<span class="n">PCLPainter2D</span><span class="w"> </span><span class="n">painter</span><span class="p">;</span><span class="w"></span>
 
 <span class="c1">//2. add figures to the canvas by simple add*() methods. Use transform*() functions if required.</span>
-<span class="n">painter</span><span class="p">.</span><span class="n">addCircle</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
-<span class="n">painter</span><span class="p">.</span><span class="n">addLine</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+<span class="n">painter</span><span class="p">.</span><span class="n">addCircle</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
+<span class="n">painter</span><span class="p">.</span><span class="n">addLine</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
 
 <span class="c1">//3. call a display*() (display (), spin (), spinOnce ()) method for the display of the canvas</span>
-<span class="n">painter</span><span class="p">.</span><span class="n">display</span> <span class="p">();</span>
+<span class="n">painter</span><span class="p">.</span><span class="n">display</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="discussions">
+</section>
+<section id="discussions">
 <h2>Discussions</h2>
 <p>I am keeping this discussion here so that the design decision gets highlighted and is not lost in an unnoticed blog. Users who just want to learn this class can safely go ahead to the next section showing a complete example.</p>
 <p>So, Lets see how 2D drawing works in VTK! The VTK user needs to first:</p>
@@ -185,183 +105,115 @@
 <a class="reference internal image-reference" href="images/pcl_painter2D_contextItem.png"><img alt="images/pcl_painter2D_contextItem.png" class="align-center" src="images/pcl_painter2D_contextItem.png" style="width: 350px;" /></a>
 <p>It would be really nice to have a vtkContextItem class which cuts off the overhead of subclassing and allows user to draw directly from the function calls. Unfortunately, we don’t have any (out of vtkChart, vtkPlot, vtkAxis,…, etc.) vtkContextItem class with that kind of behavior.</p>
 <p>Thus, it maybe wise to have a class like Painter2D which can avoid subclassing in PCL and its rendering could be further optimized in the future.</p>
-</div>
-</div>
-<div class="section" id="a-complete-example">
+</section>
+</section>
+<section id="a-complete-example">
 <h1>A complete example</h1>
 <p>Following is a complete example depcting many usage of the Plotter. Copy it into a file named <code class="docutils literal notranslate"><span class="pre">pcl_painter2D_demo.cpp</span></code>.</p>
-<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/* \author Kripasindhu Sarkar */</span>
-
-<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/pcl_painter2D.h&gt;</span><span class="cp"></span>
-<span class="c1">//----------------------------------------------------------------------------</span>
-
-<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span> <span class="p">[])</span>
-<span class="p">{</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLPainter2D</span> <span class="o">*</span><span class="n">painter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLPainter2D</span><span class="p">();</span>
-  
-  <span class="kt">int</span> <span class="n">winw</span> <span class="o">=</span> <span class="mi">800</span><span class="p">,</span> <span class="n">winh</span> <span class="o">=</span> <span class="mi">600</span><span class="p">;</span>
-  <span class="n">painter</span><span class="o">-&gt;</span><span class="n">setWindowSize</span> <span class="p">(</span><span class="n">winw</span><span class="p">,</span> <span class="n">winh</span><span class="p">);</span>
-  <span class="kt">int</span> <span class="n">xpos</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">winw</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">R</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">inc</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">noc</span> <span class="o">=</span> <span class="n">winw</span><span class="o">/</span><span class="n">R</span><span class="p">;</span>
-  
-  <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//draw noc no of circles</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">noc</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> 
-        <span class="n">painter</span><span class="o">-&gt;</span><span class="n">setBrushColor</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
-      <span class="k">else</span>
-        <span class="n">painter</span><span class="o">-&gt;</span><span class="n">setBrushColor</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">200</span><span class="p">);</span>
-      
-      <span class="kt">int</span> <span class="n">rad</span> <span class="o">=</span> <span class="n">r</span> <span class="o">-</span> <span class="n">i</span><span class="o">*</span><span class="n">R</span><span class="p">;</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">rad</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="n">rad</span> <span class="o">=</span> <span class="n">winw</span> <span class="o">+</span> <span class="n">rad</span><span class="p">;}</span>
-      
-      <span class="n">painter</span><span class="o">-&gt;</span><span class="n">addCircle</span> <span class="p">(</span><span class="n">winw</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">winh</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">rad</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="n">r</span> <span class="o">-=</span> <span class="n">inc</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;</span> <span class="n">winw</span><span class="o">-</span><span class="n">R</span><span class="p">)</span> <span class="n">r</span> <span class="o">=</span> <span class="n">winw</span> <span class="o">+</span> <span class="n">R</span><span class="p">;</span>
-
-    <span class="n">painter</span><span class="o">-&gt;</span><span class="n">setBrushColor</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
-    <span class="n">painter</span><span class="o">-&gt;</span><span class="n">addRect</span> <span class="p">((</span><span class="n">xpos</span> <span class="o">+=</span> <span class="n">inc</span><span class="p">)</span> <span class="o">%</span> <span class="n">winw</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
-
-    <span class="c1">//display</span>
-    <span class="n">painter</span><span class="o">-&gt;</span><span class="n">spinOnce</span> <span class="p">();</span>
-    <span class="n">painter</span><span class="o">-&gt;</span><span class="n">clearFigures</span> <span class="p">();</span>
-  <span class="p">}</span>
-
-
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* \author Kripasindhu Sarkar */</span><span class="w"></span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+<span class="linenos"> 6</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/visualization/pcl_painter2D.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 7</span><span class="c1">//----------------------------------------------------------------------------</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="linenos">10</span><span class="p">{</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLPainter2D</span><span class="w"> </span><span class="o">*</span><span class="n">painter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLPainter2D</span><span class="p">();</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">  </span>
+<span class="linenos">13</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">winw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">800</span><span class="p">,</span><span class="w"> </span><span class="n">winh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">600</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">  </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">setWindowSize</span><span class="w"> </span><span class="p">(</span><span class="n">winw</span><span class="p">,</span><span class="w"> </span><span class="n">winh</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">winw</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">R</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">18</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">inc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">19</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">noc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">winw</span><span class="o">/</span><span class="n">R</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">  </span>
+<span class="linenos">21</span><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">22</span><span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">23</span><span class="w">    </span><span class="c1">//draw noc no of circles</span>
+<span class="linenos">24</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">noc</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">25</span><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">26</span><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span>
+<span class="linenos">27</span><span class="w">        </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">setBrushColor</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">28</span><span class="w">      </span><span class="k">else</span><span class="w"></span>
+<span class="linenos">29</span><span class="w">        </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">setBrushColor</span><span class="w"> </span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">200</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">30</span><span class="w">      </span>
+<span class="linenos">31</span><span class="w">      </span><span class="kt">int</span><span class="w"> </span><span class="n">rad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="n">R</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">32</span><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rad</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">rad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">winw</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">rad</span><span class="p">;}</span><span class="w"></span>
+<span class="linenos">33</span><span class="w">      </span>
+<span class="linenos">34</span><span class="w">      </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">addCircle</span><span class="w"> </span><span class="p">(</span><span class="n">winw</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">winh</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">rad</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">35</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">36</span><span class="w">    </span>
+<span class="linenos">37</span><span class="w">    </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">inc</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">38</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">r</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">winw</span><span class="o">-</span><span class="n">R</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">winw</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">R</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="w">    </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">setBrushColor</span><span class="w"> </span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">41</span><span class="w">    </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">addRect</span><span class="w"> </span><span class="p">((</span><span class="n">xpos</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">inc</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">winw</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">42</span>
+<span class="linenos">43</span><span class="w">    </span><span class="c1">//display</span>
+<span class="linenos">44</span><span class="w">    </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">spinOnce</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos">45</span><span class="w">    </span><span class="n">painter</span><span class="o">-&gt;</span><span class="n">clearFigures</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos">46</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">47</span>
+<span class="linenos">48</span>
+<span class="linenos">49</span><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">50</span><span class="p">}</span><span class="w"></span>
 </pre></div>
-</td></tr></table></div>
-<div class="section" id="compiling-and-running-the-program">
+</div>
+<section id="compiling-and-running-the-program">
 <h2>Compiling and running the program</h2>
 <p>Add the following lines to your <cite>CMakeLists.txt</cite> file:</p>
-<div class="highlight-cmake notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.6</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
-<span class="nb">project</span><span class="p">(</span><span class="s">pcl_painter2D_demo</span><span class="p">)</span>
-<span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span> <span class="s">1.7</span><span class="p">)</span>
-<span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">add_executable</span><span class="p">(</span><span class="s">pcl_painter2D_demo</span> <span class="s">pcl_painter2D_demo.cpp</span><span class="p">)</span>
-<span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">pcl_painter2D_demo</span> <span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.5</span><span class="w"> </span><span class="s">FATAL_ERROR</span><span class="p">)</span>
+<span class="linenos">2</span><span class="nb">project</span><span class="p">(</span><span class="s">pcl_painter2D_demo</span><span class="p">)</span>
+<span class="linenos">3</span><span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span><span class="w"> </span><span class="s">1.7</span><span class="p">)</span>
+<span class="linenos">4</span><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos">5</span><span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos">6</span><span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos">7</span><span class="nb">add_executable</span><span class="p">(</span><span class="s">pcl_painter2D_demo</span><span class="w"> </span><span class="s">pcl_painter2D_demo.cpp</span><span class="p">)</span>
+<span class="linenos">8</span><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">pcl_painter2D_demo</span><span class="w"> </span><span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <p>Compile and run the code by the following commands</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cmake .
 $ make
 $ ./pcl_painter2D_demo
 </pre></div>
 </div>
-</div>
-<div class="section" id="video">
+</section>
+<section id="video">
 <h2>Video</h2>
 <p>The following video shows the the output of the demo.</p>
-<iframe width="420" height="315" src="http://www.youtube.com/embed/0kPwTds7HSk" frameborder="0" allowfullscreen></iframe></div>
-</div>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/0kPwTds7HSk" frameborder="0" allowfullscreen></iframe></section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,7 +1,8 @@
 <map id="pcl::MeshConstruction&lt; PointInT &gt;" name="pcl::MeshConstruction&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class. " alt="" coords="125,235,272,282"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="node1" title="MeshConstruction represents a base surface reconstruction class." alt="" coords="5,440,172,481"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class." alt="" coords="11,349,166,391"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="92,273,280,300"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="107,184,283,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="62,5,153,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="177,95,344,121"/>
 </map>

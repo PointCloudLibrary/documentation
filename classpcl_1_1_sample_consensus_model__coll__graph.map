@@ -1,5 +1,5 @@
 <map id="pcl::SampleConsensusModel&lt; PointT &gt;" name="pcl::SampleConsensusModel&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="71,315,244,344"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="node1" title="SampleConsensusModel represents the base model class." alt="" coords="5,201,213,243"/>
+<area shape="rect" id="node2" title=" " alt="" coords="64,5,155,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="215,103,382,130"/>
 </map>

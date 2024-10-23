@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>PCL Walkthrough &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCL Walkthrough &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">PCL Walkthrough</a></li>
@@ -103,74 +60,37 @@
 <li><a class="reference internal" href="#binaries">Binaries</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>PCL Walkthrough</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="pcl-walkthrough">
+             
+  <section id="pcl-walkthrough">
 <span id="walkthrough"></span><h1>PCL Walkthrough</h1>
 <p>This tutorials will walk you through the components of your PCL installation, providing short descriptions of the modules, indicating where they are located and also listing the interaction between different components.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="overview">
+</section>
+<section id="overview">
 <span id="top"></span><h1>Overview</h1>
 <p>PCL is split in a number of modular libraries. The most important set of released PCL modules is shown below:</p>
 <table class="docutils align-default">
@@ -228,15 +148,15 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="filters">
+</section>
+<section id="filters">
 <span id="id1"></span><h1>Filters</h1>
 <p><strong>Background</strong></p>
 <blockquote>
 <div><p>An example of noise removal is presented in the figure below. Due to measurement errors, certain datasets present a large number of shadow points. This complicates the estimation of local point cloud 3D features. Some of these outliers can be filtered by performing a statistical analysis on each point’s neighborhood, and trimming those that do not meet a certain criteria. The sparse outlier removal implementation in PCL is based on the computation of the distribution of point to neighbor distances in the input dataset. For each point, the mean distance from it to all its neighbors is computed. By assuming that the resulting distribution is Gaussian with a mean and a standard deviation, all points whose mean distances are outside an interval defined by the global distances mean and standard deviation can be considered as outliers and trimmed from the dataset.</p>
 </div></blockquote>
 <img alt="_images/statistical_removal_2.jpg" src="_images/statistical_removal_2.jpg" />
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__filters.html">http://docs.pointclouds.org/trunk/group__filters.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__filters.html">https://pointclouds.org/documentation/group__filters.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#filtering-tutorial">http://pointclouds.org/documentation/tutorials/#filtering-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -279,12 +199,12 @@
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="features">
+</section>
+<section id="features">
 <span id="id2"></span><h1>Features</h1>
 <p><strong>Background</strong></p>
 <blockquote>
-<div><p>A theoretical primer explaining how features work in PCL can be found in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/how_features_work.php">3D Features tutorial</a>.</p>
+<div><p>A theoretical primer explaining how features work in PCL can be found in the <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/how_features_work.html">3D Features tutorial</a>.</p>
 <p>The <em>features</em> library contains data structures and mechanisms for 3D feature estimation from point cloud data. 3D features are representations at certain 3D points, or positions, in space, which describe geometrical patterns based on the information available around the point. The data space selected around the query point is usually referred to as the <em>k-neighborhood</em>.</p>
 <p>The following figure shows a simple example of a selected query point, and its selected k-neighborhood.</p>
 <img alt="_images/features_normal.jpg" src="_images/features_normal.jpg" />
@@ -294,7 +214,7 @@
 <div class="line"><br /></div>
 </div>
 </div></blockquote>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__features.html">http://docs.pointclouds.org/trunk/group__features.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__features.html">https://pointclouds.org/documentation/group__features.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#features-tutorial">http://pointclouds.org/documentation/tutorials/#features-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -339,19 +259,19 @@
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="keypoints">
+</section>
+<section id="keypoints">
 <span id="id3"></span><h1>Keypoints</h1>
 <p><strong>Background</strong></p>
 <blockquote>
-<div><p>The <em>keypoints</em> library contains implementations of two point cloud keypoint detection algorithms. Keypoints (also referred to as <a class="reference external" href="http://en.wikipedia.org/wiki/Interest_point_detection">interest points</a>) are points in an image or point cloud that are stable, distinctive, and can be identified using a well-defined detection criterion. Typically, the number of interest points in a point cloud will be much smaller than the total number of points in the cloud, and when used in combination with local feature descriptors at each keypoint, the keypoints and descriptors can be used to form a compact—yet descriptive—representation of the original data.</p>
+<div><p>The <em>keypoints</em> library contains implementations of two point cloud keypoint detection algorithms. Keypoints (also referred to as <a class="reference external" href="https://en.wikipedia.org/wiki/Interest_point_detection">interest points</a>) are points in an image or point cloud that are stable, distinctive, and can be identified using a well-defined detection criterion. Typically, the number of interest points in a point cloud will be much smaller than the total number of points in the cloud, and when used in combination with local feature descriptors at each keypoint, the keypoints and descriptors can be used to form a compact—yet descriptive—representation of the original data.</p>
 <p>The figure below shows the output of NARF keypoints extraction from a range image:</p>
 <img alt="_images/narf_keypoint_extraction.png" src="_images/narf_keypoint_extraction.png" />
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__keypoints.html">http://docs.pointclouds.org/trunk/group__keypoints.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__keypoints.html">https://pointclouds.org/documentation/group__keypoints.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#keypoints-tutorial">http://pointclouds.org/documentation/tutorials/#keypoints-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -398,8 +318,8 @@
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="registration">
+</section>
+<section id="registration">
 <span id="id4"></span><h1>Registration</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -414,7 +334,7 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__registration.html">http://docs.pointclouds.org/trunk/group__registration.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__registration.html">https://pointclouds.org/documentation/group__registration.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#registration-tutorial">http://pointclouds.org/documentation/tutorials/#registration-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -458,22 +378,22 @@
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="kd-tree">
+</section>
+<section id="kd-tree">
 <span id="kdtree"></span><h1>Kd-tree</h1>
 <p><strong>Background</strong></p>
 <blockquote>
-<div><p>A theoretical primer explaining how Kd-trees work can be found in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/kdtree_search.php#kdtree-search">Kd-tree tutorial</a>.</p>
-<p>The <em>kdtree</em> library provides the kd-tree data-structure, using <a class="reference external" href="http://www.cs.ubc.ca/~mariusm/index.php/FLANN/FLANN">FLANN</a>, that allows for fast <a class="reference external" href="http://en.wikipedia.org/wiki/Nearest_neighbor_search">nearest neighbor searches</a>.</p>
-<p>A <a class="reference external" href="http://en.wikipedia.org/wiki/Kd-tree">Kd-tree</a> (k-dimensional tree) is a space-partitioning data structure that stores a set of k-dimensional points in a tree structure that enables efficient range searches and nearest neighbor searches. Nearest neighbor searches are a core operation when working with point cloud data and can be used to find correspondences between groups of points or feature descriptors or to define the local neighborhood around a point or points.</p>
+<div><p>A theoretical primer explaining how Kd-trees work can be found in the <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/kdtree_search.html">Kd-tree tutorial</a>.</p>
+<p>The <em>kdtree</em> library provides the kd-tree data-structure, using <a class="reference external" href="http://www.cs.ubc.ca/research/flann/">FLANN</a>, that allows for fast <a class="reference external" href="https://en.wikipedia.org/wiki/Nearest_neighbor_search">nearest neighbor searches</a>.</p>
+<p>A <a class="reference external" href="https://en.wikipedia.org/wiki/Kd-tree">Kd-tree</a> (k-dimensional tree) is a space-partitioning data structure that stores a set of k-dimensional points in a tree structure that enables efficient range searches and nearest neighbor searches. Nearest neighbor searches are a core operation when working with point cloud data and can be used to find correspondences between groups of points or feature descriptors or to define the local neighborhood around a point or points.</p>
 <img alt="_images/3dtree.png" src="_images/3dtree.png" />
 <img alt="_images/kdtree_mug.jpg" src="_images/kdtree_mug.jpg" />
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__kdtree.html">http://docs.pointclouds.org/trunk/group__kdtree.html</a></p>
-<p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#kdtree-tutorial">http://pointclouds.org/documentation/tutorials/#kdtree-tutorial</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__kdtree.html">https://pointclouds.org/documentation/group__kdtree.html</a></p>
+<p><strong>Tutorials:</strong> <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/kdtree_search.html">https://pcl.readthedocs.io/projects/tutorials/en/master/kdtree_search.html</a></p>
 <p><strong>Interacts with:</strong> <a class="reference internal" href="#common">Common</a></p>
 <p><strong>Location:</strong></p>
 <blockquote>
@@ -508,20 +428,20 @@
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="octree">
+</section>
+<section id="octree">
 <span id="id6"></span><h1>Octree</h1>
 <p><strong>Background</strong></p>
 <blockquote>
 <div><p>The <em>octree</em> library provides efficient methods for creating a hierarchical tree data structure from point cloud data. This enables spatial partitioning, downsampling and search operations on the point data set. Each octree node has either eight children or no children. The root node describes a cubic bounding box which encapsulates all points. At every tree level, this space becomes subdivided by a factor of 2 which results in an increased voxel resolution.</p>
-<p>The <em>octree</em> implementation provides efficient nearest neighbor search routines, such as “Neighbors within Voxel Search”, “K Nearest Neighbor Search” and “Neighbors within Radius Search”. It automatically adjusts its dimension to the point data set. A set of leaf node classes provide additional functionality, such as spacial “occupancy” and “point density per voxel” checks. Functions for serialization and deserialization enable to efficiently encode the octree structure into a binary format. Furthermore, a memory pool implementation reduces expensive memory allocation and deallocation operations in scenarios where octrees needs to be created at high rate.</p>
+<p>The <em>octree</em> implementation provides efficient nearest neighbor search routines, such as “Neighbors within Voxel Search”, “K Nearest Neighbor Search” and “Neighbors within Radius Search”. It automatically adjusts its dimension to the point data set. A set of leaf node classes provide additional functionality, such as spatial “occupancy” and “point density per voxel” checks. Functions for serialization and deserialization enable to efficiently encode the octree structure into a binary format. Furthermore, a memory pool implementation reduces expensive memory allocation and deallocation operations in scenarios where octrees needs to be created at high rate.</p>
 <p>The following figure illustrates the voxel bounding boxes of an octree nodes at lowest tree level. The octree voxels are surrounding every 3D point from the Stanford bunny’s surface. The red dots represent the point data. This image is created with the <a class="reference internal" href="#octree-viewer">octree_viewer</a>.</p>
 <img alt="_images/octree_bunny.jpg" src="_images/octree_bunny.jpg" />
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__octree.html">http://docs.pointclouds.org/trunk/group__octree.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__octree.html">https://pointclouds.org/documentation/group__octree.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#octree-tutorial">http://pointclouds.org/documentation/tutorials/#octree-tutorial</a></p>
 <p><strong>Interacts with:</strong> <a class="reference internal" href="#common">Common</a></p>
 <p><strong>Location:</strong></p>
@@ -557,13 +477,13 @@
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="segmentation">
+</section>
+<section id="segmentation">
 <span id="id7"></span><h1>Segmentation</h1>
 <p><strong>Background</strong></p>
 <blockquote>
 <div><p>The <em>segmentation</em> library contains algorithms for segmenting a point cloud into distinct clusters. These algorithms are best suited for processing a point cloud that is composed of a number of spatially isolated regions. In such cases, clustering is often used to break the cloud down into its constituent parts, which can then be processed independently.</p>
-<p>A theoretical primer explaining how clustering methods work can be found in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/cluster_extraction.php#cluster-extraction">cluster extraction tutorial</a>.
+<p>A theoretical primer explaining how clustering methods work can be found in the <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/cluster_extraction.html">cluster extraction tutorial</a>.
 The two figures illustrate the results of plane model segmentation (left) and cylinder model segmentation (right).</p>
 <img alt="_images/plane_model_seg.jpg" src="_images/plane_model_seg.jpg" />
 <img alt="_images/cylinder_model_seg.jpg" src="_images/cylinder_model_seg.jpg" />
@@ -571,7 +491,7 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__segmentation.html">http://docs.pointclouds.org/trunk/group__segmentation.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__segmentation.html">https://pointclouds.org/documentation/group__segmentation.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#segmentation-tutorial">http://pointclouds.org/documentation/tutorials/#segmentation-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -616,20 +536,20 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="sample-consensus">
+</section>
+<section id="sample-consensus">
 <span id="id8"></span><h1>Sample Consensus</h1>
 <p><strong>Background</strong></p>
 <blockquote>
-<div><p>The <em>sample_consensus</em> library holds SAmple Consensus (SAC) methods like RANSAC and models like planes and cylinders. These can combined freely in order to detect specific models and their parameters in point clouds.</p>
-<p>A theoretical primer explaining how sample consensus algorithms work can be found in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/random_sample_consensus.php#random-sample-consensus">Random Sample Consensus tutorial</a></p>
+<div><p>The <em>sample_consensus</em> library holds SAmple Consensus (SAC) methods like RANSAC and models like planes and cylinders. These can be combined freely in order to detect specific models and their parameters in point clouds.</p>
+<p>A theoretical primer explaining how sample consensus algorithms work can be found in the <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/random_sample_consensus.html">Random Sample Consensus tutorial</a></p>
 <p>Some of the models implemented in this library include: lines, planes, cylinders, and spheres. Plane fitting is often applied to the task of detecting common indoor surfaces, such as walls, floors, and table tops. Other models can be used to detect and segment objects with common geometric structures (e.g., fitting a cylinder model to a mug).</p>
 <img alt="_images/sample_consensus_planes_cylinders.jpg" src="_images/sample_consensus_planes_cylinders.jpg" />
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__sample__consensus.html">http://docs.pointclouds.org/trunk/group__sample__consensus.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__sample__consensus.html">https://pointclouds.org/documentation/group__sample__consensus.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#sample-consensus">http://pointclouds.org/documentation/tutorials/#sample-consensus</a></p>
 <p><strong>Interacts with:</strong> <a class="reference internal" href="#common">Common</a></p>
 <p><strong>Location:</strong></p>
@@ -665,8 +585,8 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="surface">
+</section>
+<section id="surface">
 <span id="id9"></span><h1>Surface</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -681,7 +601,7 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__surface.html">http://docs.pointclouds.org/trunk/group__surface.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__surface.html">https://pointclouds.org/documentation/group__surface.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#surface-tutorial">http://pointclouds.org/documentation/tutorials/#surface-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -725,8 +645,8 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="range-image">
+</section>
+<section id="range-image">
 <span id="id10"></span><h1>Range Image</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -772,8 +692,8 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="i-o">
+</section>
+<section id="i-o">
 <span id="id11"></span><h1>I/O</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -781,16 +701,16 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 <div><p>The <em>io</em> library contains classes and functions for reading and writing point cloud data (PCD) files, as well as capturing point clouds from a variety of sensing devices. An introduction to some of these capabilities can be found in the following tutorials:</p>
 </div></blockquote>
 <ul class="simple">
-<li><p><a class="reference external" href="http://pointclouds.org/documentation/tutorials/pcd_file_format.php#pcd-file-format">The PCD (Point Cloud Data) file format</a></p></li>
-<li><p><a class="reference external" href="http://pointclouds.org/documentation/tutorials/reading_pcd.php#reading-pcd">Reading PointCloud data from PCD files</a></p></li>
-<li><p><a class="reference external" href="http://pointclouds.org/documentation/tutorials/writing_pcd.php#writing-pcd">Writing PointCloud data to PCD files</a></p></li>
-<li><p><a class="reference external" href="http://pointclouds.org/documentation/tutorials/openni_grabber.php#openni-grabber">The OpenNI Grabber Framework in PCL</a></p></li>
+<li><p><a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/pcd_file_format.html">The PCD (Point Cloud Data) file format</a></p></li>
+<li><p><a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/reading_pcd.html">Reading PointCloud data from PCD files</a></p></li>
+<li><p><a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/writing_pcd.html">Writing PointCloud data to PCD files</a></p></li>
+<li><p><a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/openni_grabber.html">The OpenNI Grabber Framework in PCL</a></p></li>
 </ul>
 </div></blockquote>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__io.html">http://docs.pointclouds.org/trunk/group__io.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__io.html">https://pointclouds.org/documentation/group__io.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#i-o">http://pointclouds.org/documentation/tutorials/#i-o</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -833,8 +753,8 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="visualization">
+</section>
+<section id="visualization">
 <span id="id12"></span><h1>Visualization</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -859,7 +779,7 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Documentation:</strong> <a class="reference external" href="http://docs.pointclouds.org/trunk/group__visualization.html">http://docs.pointclouds.org/trunk/group__visualization.html</a></p>
+<p><strong>Documentation:</strong> <a class="reference external" href="https://pointclouds.org/documentation/group__visualization.html">https://pointclouds.org/documentation/group__visualization.html</a></p>
 <p><strong>Tutorials:</strong> <a class="reference external" href="http://pointclouds.org/documentation/tutorials/#visualization-tutorial">http://pointclouds.org/documentation/tutorials/#visualization-tutorial</a></p>
 <p><strong>Interacts with:</strong></p>
 <blockquote>
@@ -904,8 +824,8 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="common">
+</section>
+<section id="common">
 <span id="id13"></span><h1>Common</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -944,8 +864,8 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="search">
+</section>
+<section id="search">
 <span id="id14"></span><h1>Search</h1>
 <p><strong>Background</strong></p>
 <blockquote>
@@ -1003,13 +923,13 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </dd>
 </dl>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
-<div class="section" id="binaries">
+</section>
+<section id="binaries">
 <span id="id15"></span><h1>Binaries</h1>
 <p>This section provides a quick reference for some of the common tools in PCL.</p>
 <blockquote>
 <div><ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcl_viewer</span></code>: a quick way for visualizing PCD (Point Cloud Data) files. More information about PCD files can be found in the <a class="reference external" href="http://pointclouds.org/documentation/tutorials/pcd_file_format.php">PCD file format tutorial</a>.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_viewer</span></code>: a quick way for visualizing PCD (Point Cloud Data) files. More information about PCD files can be found in the <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/pcd_file_format.html">PCD file format tutorial</a>.</p>
 <blockquote>
 <div><p><strong>Syntax is: pcl_viewer &lt;file_name 1..N&gt;.&lt;pcd or vtk&gt; &lt;options&gt;</strong>, where options are:</p>
 <blockquote>
@@ -1043,40 +963,40 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </div>
 <blockquote>
 <div><ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcd_convert_NaN_nan</span></code>: converts “NaN” values to “nan” values. <em>(Note: Starting with PCL version 1.0.1 the string representation for NaN is “nan”.)</em></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_pcd_convert_NaN_nan</span></code>: converts “NaN” values to “nan” values. <em>(Note: Starting with PCL version 1.0.1 the string representation for NaN is “nan”.)</em></p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">pcd_convert_NaN_nan</span> <span class="pre">input.pcd</span> <span class="pre">output.pcd</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_pcd_convert_NaN_nan</span> <span class="pre">input.pcd</span> <span class="pre">output.pcd</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">convert_pcd_ascii_binary</span></code>: converts PCD (Point Cloud Data) files from ASCII to binary and viceversa.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_convert_pcd_ascii_binary</span></code>: converts PCD (Point Cloud Data) files from ASCII to binary and vice-versa.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">convert_pcd_ascii_binary</span> <span class="pre">&lt;file_in.pcd&gt;</span> <span class="pre">&lt;file_out.pcd&gt;</span> <span class="pre">0/1/2</span> <span class="pre">(ascii/binary/binary_compressed)</span> <span class="pre">[precision</span> <span class="pre">(ASCII)]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_convert_pcd_ascii_binary</span> <span class="pre">&lt;file_in.pcd&gt;</span> <span class="pre">&lt;file_out.pcd&gt;</span> <span class="pre">0/1/2</span> <span class="pre">(ascii/binary/binary_compressed)</span> <span class="pre">[precision</span> <span class="pre">(ASCII)]</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">concatenate_points_pcd</span></code>: concatenates the points of two or more PCD (Point Cloud Data) files into a single PCD file.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_concatenate_points_pcd</span></code>: concatenates the points of two or more PCD (Point Cloud Data) files into a single PCD file.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">concatenate_points_pcd</span> <span class="pre">&lt;filename</span> <span class="pre">1..N.pcd&gt;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_concatenate_points_pcd</span> <span class="pre">&lt;filename</span> <span class="pre">1..N.pcd&gt;</span></code></p>
 <p><em>(Note: the resulting PCD file will be ``output.pcd``)</em></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcd2vtk</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://www.vtk.org/VTK/img/file-formats.pdf">VTK format</a>.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2vtk</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://www.vtk.org/VTK/img/file-formats.pdf">VTK format</a>.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">pcd2vtk</span> <span class="pre">input.pcd</span> <span class="pre">output.vtk</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2vtk</span> <span class="pre">input.pcd</span> <span class="pre">output.vtk</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pcd2ply</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="http://en.wikipedia.org/wiki/PLY_%28file_format%29">PLY format</a>.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2ply</span></code>: converts PCD (Point Cloud Data) files to the <a class="reference external" href="https://en.wikipedia.org/wiki/PLY_%28file_format%29">PLY format</a>.</p>
 <blockquote>
 <div><p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">pcd2ply</span> <span class="pre">input.pcd</span> <span class="pre">output.ply</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">pcl_pcd2ply</span> <span class="pre">input.pcd</span> <span class="pre">output.ply</span></code></p>
 </div></blockquote>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mesh2pcd</span></code>: convert a CAD model to a PCD (Point Cloud Data) file, using ray tracing operations.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_mesh2pcd</span></code>: convert a CAD model to a PCD (Point Cloud Data) file, using ray tracing operations.</p>
 <blockquote>
-<div><p><strong>Syntax is: mesh2pcd input.{ply,obj} output.pcd &lt;options&gt;</strong>, where options are:</p>
+<div><p><strong>Syntax is: pcl_mesh2pcd input.{ply,obj} output.pcd &lt;options&gt;</strong>, where options are:</p>
 <blockquote>
 <div><p>-level X      = tessellated sphere level (default: 2)</p>
 <p>-resolution X = the sphere resolution in angle increments (default: 100 deg)</p>
@@ -1086,57 +1006,45 @@ The two figures illustrate the results of plane model segmentation (left) and cy
 </li>
 </ul>
 <ul id="octree-viewer">
-<li><p><code class="docutils literal notranslate"><span class="pre">octree_viewer</span></code>: allows the visualization of <a class="reference internal" href="#octree">octrees</a></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">pcl_octree_viewer</span></code>: allows the visualization of <a class="reference internal" href="#octree">octrees</a></p>
 <blockquote>
 <div><p><strong>Syntax is: octree_viewer &lt;file_name.pcd&gt; &lt;octree resolution&gt;</strong></p>
 <p><strong>Usage example:</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">Example:</span> <span class="pre">./octree_viewer</span> <span class="pre">../../test/bunny.pcd</span> <span class="pre">0.02</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Example:</span> <span class="pre">./pcl_octree_viewer</span> <span class="pre">../../test/bunny.pcd</span> <span class="pre">0.02</span></code></p>
 <img alt="_images/octree_bunny2.png" src="_images/octree_bunny2.png" />
 </div></blockquote>
 </li>
 </ul>
 </div></blockquote>
 <p><a class="reference internal" href="#top">Top</a></p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

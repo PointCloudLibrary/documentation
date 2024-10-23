@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1kinfu_l_s_1_1_screenshot_manager.html" title="Screenshot Manager saves a screenshot with the corresponding camera pose from Kinfu. " alt="" coords="5,5,171,51"/>
+<area shape="rect" id="node1" href="$classpcl_1_1_l_c_c_p_segmentation.html" title="A simple segmentation algorithm partitioning a supervoxel graph into groups of locally convex connect..." alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_c_p_c_segmentation.html" title="A segmentation algorithm partitioning a supervoxel graph." alt="" coords="227,5,393,47"/>
 </map>

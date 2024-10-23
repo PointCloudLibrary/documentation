@@ -1,6 +1,7 @@
 <map id="ON_BinaryArchive" name="ON_BinaryArchive">
-<area shape="rect" id="node3" href="$class_o_n___binary_archive_buffer.html" title="ON_BinaryArchiveBuffer" alt="" coords="193,5,359,35"/>
-<area shape="rect" id="node5" href="$class_o_n___binary_file.html" title="ON_BinaryFile" alt="" coords="223,59,329,88"/>
-<area shape="rect" id="node7" href="$class_o_n___read3dm_buffer_archive.html" title="ON_Read3dmBufferArchive" alt="" coords="184,112,368,141"/>
-<area shape="rect" id="node9" href="$class_o_n___write3dm_buffer_archive.html" title="ON_Write3dmBufferArchive" alt="" coords="184,165,368,195"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,145,108"/>
+<area shape="rect" id="node2" href="$class_o_n___binary_archive_buffer.html" title=" " alt="" coords="205,5,383,32"/>
+<area shape="rect" id="node3" href="$class_o_n___binary_file.html" title=" " alt="" coords="237,56,351,83"/>
+<area shape="rect" id="node4" href="$class_o_n___read3dm_buffer_archive.html" title=" " alt="" coords="195,107,393,133"/>
+<area shape="rect" id="node5" href="$class_o_n___write3dm_buffer_archive.html" title=" " alt="" coords="193,157,395,184"/>
 </map>

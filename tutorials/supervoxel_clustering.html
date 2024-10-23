@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Clustering of Pointclouds into Supervoxels - Theoretical primer &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clustering of Pointclouds into Supervoxels - Theoretical primer &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Clustering of Pointclouds into Supervoxels - Theoretical primer</a></li>
@@ -90,96 +47,69 @@
 <li><a class="reference internal" href="#compiling-and-running-the-program">Compiling and running the program</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Clustering of Pointclouds into Supervoxels - Theoretical primer</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="clustering-of-pointclouds-into-supervoxels-theoretical-primer">
+             
+  <section id="clustering-of-pointclouds-into-supervoxels-theoretical-primer">
 <span id="supervoxel-clustering"></span><h1>Clustering of Pointclouds into Supervoxels - Theoretical primer</h1>
 <p>In this tutorial, we show how to divide a pointcloud into a number of supervoxel clusters using <code class="docutils literal notranslate"><span class="pre">pcl::SupervoxelClustering</span></code>, and then how to use and visualize the adjacency information and supervoxels themselves.</p>
-<div class="figure align-center" id="id7">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/supervoxel_clustering_example.jpg"><img alt="_images/supervoxel_clustering_example.jpg" src="_images/supervoxel_clustering_example.jpg" style="width: 513.0px; height: 587.25px;" /></a>
-<p class="caption"><span class="caption-text"><strong>An example of supervoxels and adjacency graph generated for a cloud</strong></span></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><strong>An example of supervoxels and adjacency graph generated for a cloud</strong></span></p>
+</figcaption>
+</figure>
 <p>Segmentation algorithms aim to group pixels in images into perceptually meaningful regions which conform to object boundaries. Graph-based approaches, such as Markov Random Field (MRF) and Conditional Random Field (CRF), have become popular, as they merge relational low-level context within the image with object level class knowledge. The cost of solving pixel-level graphs led to the development of mid-level inference schemes which do not use pixels directly, but rather use groupings of pixels, known as superpixels, as the base level for nodes. Superpixels are formed by over-segmenting the image into small regions based on local low-level features, reducing the number of nodes which must be considered for inference.</p>
 <p>Due to their strong impact on the quality of the eventual segmentation, it is important that superpixels have certain characteristics. Of these, avoiding violating object boundaries is the most vital, as failing to do so will decrease the accuracy of classifiers used later - since they will be forced to consider pixels which belong to more than one class. Additionally, even if the classifier does manage a correct output, the final pixel level segmentation will necessarily contain errors. Another useful quality is regular distribution over the area being segmented, as this will produce a simpler graph for later steps.</p>
 <p>Voxel Cloud Connectivity Segmentation (VCCS) is a recent “superpixel” method which generates volumetric over-segmentations of 3D point cloud data, known as supervoxels. Supervoxels adhere to object boundaries better than state-of-the-art 2D methods, while remaining efficient enough to use in online applications. VCCS uses a region growing variant of k-means clustering for generating its labeling of points directly within a voxel octree structure. Supervoxels have two important properties; they are evenly distributed across the 3D space, and they cannot cross boundaries unless the underlying voxels are spatial connected. The former is accomplished by seeding supervoxels directly in the cloud, rather than the projected plane, while the latter uses an octree structure which maintains adjacency information of leaves. Supervoxels maintain adjacency relations in voxelized 3D space; specifically, 26-adjacency- that is neighboring voxels are those that share a face, edge, or vertex, as seen below.</p>
-<div class="figure align-center" id="id8">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/supervoxel_clustering_adjacency.jpg"><img alt="_images/supervoxel_clustering_adjacency.jpg" src="_images/supervoxel_clustering_adjacency.jpg" style="width: 439.0px; height: 272.5px;" /></a>
-<p class="caption"><span class="caption-text"><strong>From right to left, 6 (faces), 18 (faces,edges), and 26 (faces, edges, vertices) adjacency</strong></span></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><strong>From right to left, 6 (faces), 18 (faces,edges), and 26 (faces, edges, vertices) adjacency</strong></span></p>
+</figcaption>
+</figure>
 <p>The adjacency graph of supervoxels (and the underlying voxels) is maintained efficiently within the octree by specifying that neighbors are voxels within R_voxel of one another, where R_voxel specifies the octree leaf resolution. This adjacency graph is used extensively for both the region growing used to generate the supervoxels, as well as determining adjacency of the resulting supervoxels themselves.</p>
 <p>VCCS is a region growing method which incrementally expand supervoxels from a set of seed points distributed evenly in space on a grid with resolution R_seed. To maintain efficiency, VCCS does not search globally, but rather only considers points within R_seed of the seed center. Additionally, seeds which are isolated are filtered out by establishing a small search radius R_search around each seed and removing seeds which do not have sufficient neighbor voxels connected to them.</p>
-<div class="figure align-center" id="id9">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/supervoxel_clustering_parameters.jpg"><img alt="_images/supervoxel_clustering_parameters.jpg" src="_images/supervoxel_clustering_parameters.jpg" style="width: 560.0px; height: 381.5px;" /></a>
-<p class="caption"><span class="caption-text"><strong>The various sizing parameters which affect supervoxel clustering. R_seed and R_voxel must both be set by the user.</strong></span></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><strong>The various sizing parameters which affect supervoxel clustering. R_seed and R_voxel must both be set by the user.</strong></span></p>
+</figcaption>
+</figure>
 <p>Expansion from the seed points is governed by a distance measure calculated in a feature space consisting of spatial extent, color, and normals. The spatial distance D_s is normalized by the seeding resolution, color distance D_c is the euclidean distance in normalized RGB space, and normal distance D_n measures the angle between surface normal vectors.</p>
-<div class="figure align-center" id="id10">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/supervoxel_clustering_distance_eqn.png"><img alt="_images/supervoxel_clustering_distance_eqn.png" src="_images/supervoxel_clustering_distance_eqn.png" style="width: 382.2px; height: 109.89999999999999px;" /></a>
-<p class="caption"><span class="caption-text"><strong>Weighting equation used in supervoxel clustering. w_c, w_s, and w_n, the color, spatial, and normal weights, respectively, are user controlled parameters.</strong></span></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><strong>Weighting equation used in supervoxel clustering. w_c, w_s, and w_n, the color, spatial, and normal weights, respectively, are user controlled parameters.</strong></span></p>
+</figcaption>
+</figure>
 <p>Supervoxels are grown iteratively, using a local k-means clustering which considers connectivity and flow. The general process is as follows. Beginning at the voxel nearest the cluster center, we flow outward to adjacent voxels and compute the distance from each of these to the supervoxel center using the distance equation above. If the distance is the smallest this voxel has seen, its label is set, and using the adjacency graph, we add its neighbors which are further from the center to our search queue for this label. We then proceed to the next supervoxel, so that each level outwards from the center is considered at the same time for all supervoxels (a 2d version of this is seen in the figure below). We proceed iteratively outwards until we have reached the edge of the search volume for each supervoxel (or have no more neighbors to check).</p>
-<div class="figure align-center" id="id11">
+<figure class="align-center" id="id5">
 <img alt="_images/supervoxel_clustering_search_order.jpg" src="_images/supervoxel_clustering_search_order.jpg" />
-<p class="caption"><span class="caption-text"><strong>Search order in the adjacency octree for supervoxel cluster expansion. Dotted edges in the adjacency graph are not searched, since they have already been considered earlier in the queue.</strong></span></p>
-</div>
+<figcaption>
+<p><span class="caption-text"><strong>Search order in the adjacency octree for supervoxel cluster expansion. Dotted edges in the adjacency graph are not searched, since they have already been considered earlier in the queue.</strong></span></p>
+</figcaption>
+</figure>
 <p>Alright, let’s get to the code… but if you want further details on how supervoxels work (and if you use them in an academic work) please reference the following publication:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@InProceedings</span><span class="p">{</span><span class="n">Papon13CVPR</span><span class="p">,</span>
   <span class="n">author</span><span class="o">=</span><span class="p">{</span><span class="n">Jeremie</span> <span class="n">Papon</span> <span class="ow">and</span> <span class="n">Alexey</span> <span class="n">Abramov</span> <span class="ow">and</span> <span class="n">Markus</span> <span class="n">Schoeler</span> <span class="ow">and</span> <span class="n">Florentin</span> <span class="n">W</span>\<span class="s2">&quot;</span><span class="si">{o}</span><span class="s2">rg</span><span class="se">\&quot;</span><span class="si">{o}</span><span class="s2">tter},</span>
@@ -192,367 +122,201 @@
 </pre></div>
 </div>
 <p>Oh, and for a more complicated example which uses Supervoxels, see <code class="docutils literal notranslate"><span class="pre">pcl/examples/segmentation/supervoxel_clustering.cpp</span></code>.</p>
-</div>
-<div class="section" id="the-code">
+</section>
+<section id="the-code">
 <h1>The code</h1>
 <p>First, grab a pcd file made from a kinect or similar device - here we shall use <code class="docutils literal notranslate"><span class="pre">milk_cartoon_all_small_clorox.pcd</span></code> which is available in the pcl git
 <a class="reference external" href="https://github.com/PointCloudLibrary/data/blob/master/tutorials/correspondence_grouping/milk_cartoon_all_small_clorox.pcd?raw=true">here</a>).
-Next, copy and paste the following code into your editor and save it as <code class="docutils literal notranslate"><span class="pre">supervoxel_clustering.cpp</span></code> (or download the source file <a class="reference download internal" download="" href="_downloads/1e7c2300101fcc40d562b9fbc00bcbd0/supervoxel_clustering.cpp"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>).</p>
-<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/console/parse.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/point_cloud.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/segmentation/supervoxel_clustering.h&gt;</span><span class="cp"></span>
-
-<span class="c1">//VTK include needed for drawing graph lines</span>
-<span class="cp">#include</span> <span class="cpf">&lt;vtkPolyLine.h&gt;</span><span class="cp"></span>
-
-<span class="c1">// Types</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span> <span class="n">PointT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="n">PointCloudT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span> <span class="n">PointNT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNT</span><span class="o">&gt;</span> <span class="n">PointNCloudT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZL</span> <span class="n">PointLT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointLT</span><span class="o">&gt;</span> <span class="n">PointLCloudT</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">addSupervoxelConnectionsToViewer</span> <span class="p">(</span><span class="n">PointT</span> <span class="o">&amp;</span><span class="n">supervoxel_center</span><span class="p">,</span>
-                                       <span class="n">PointCloudT</span> <span class="o">&amp;</span><span class="n">adjacent_supervoxel_centers</span><span class="p">,</span>
-                                       <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">supervoxel_name</span><span class="p">,</span>
-                                       <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span> <span class="o">&amp;</span> <span class="n">viewer</span><span class="p">);</span>
-
-
-<span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_error</span> <span class="p">(</span><span class="s">&quot;Syntax is: %s &lt;pcd-file&gt; </span><span class="se">\n</span><span class="s"> &quot;</span>
-                                <span class="s">&quot;--NT Dsables the single cloud transform </span><span class="se">\n</span><span class="s">&quot;</span>
-                                <span class="s">&quot;-v &lt;voxel resolution&gt;</span><span class="se">\n</span><span class="s">-s &lt;seed resolution&gt;</span><span class="se">\n</span><span class="s">&quot;</span>
-                                <span class="s">&quot;-c &lt;color weight&gt; </span><span class="se">\n</span><span class="s">-z &lt;spatial weight&gt; </span><span class="se">\n</span><span class="s">&quot;</span>
-                                <span class="s">&quot;-n &lt;normal_weight&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-  <span class="p">}</span>
-
-
-  <span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">PointCloudT</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span> <span class="p">(</span><span class="s">&quot;Loading point cloud...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="o">*</span><span class="n">cloud</span><span class="p">))</span>
-  <span class="p">{</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_error</span> <span class="p">(</span><span class="s">&quot;Error loading cloud file!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-  <span class="p">}</span>
-
-
-  <span class="kt">bool</span> <span class="n">disable_transform</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;--NT&quot;</span><span class="p">);</span>
-
-  <span class="kt">float</span> <span class="n">voxel_resolution</span> <span class="o">=</span> <span class="mf">0.008f</span><span class="p">;</span>
-  <span class="kt">bool</span> <span class="n">voxel_res_specified</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-v&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">voxel_res_specified</span><span class="p">)</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-v&quot;</span><span class="p">,</span> <span class="n">voxel_resolution</span><span class="p">);</span>
-
-  <span class="kt">float</span> <span class="n">seed_resolution</span> <span class="o">=</span> <span class="mf">0.1f</span><span class="p">;</span>
-  <span class="kt">bool</span> <span class="n">seed_res_specified</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-s&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">seed_res_specified</span><span class="p">)</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-s&quot;</span><span class="p">,</span> <span class="n">seed_resolution</span><span class="p">);</span>
-
-  <span class="kt">float</span> <span class="n">color_importance</span> <span class="o">=</span> <span class="mf">0.2f</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-c&quot;</span><span class="p">))</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-c&quot;</span><span class="p">,</span> <span class="n">color_importance</span><span class="p">);</span>
-
-  <span class="kt">float</span> <span class="n">spatial_importance</span> <span class="o">=</span> <span class="mf">0.4f</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-z&quot;</span><span class="p">))</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-z&quot;</span><span class="p">,</span> <span class="n">spatial_importance</span><span class="p">);</span>
-
-  <span class="kt">float</span> <span class="n">normal_importance</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-n&quot;</span><span class="p">))</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-n&quot;</span><span class="p">,</span> <span class="n">normal_importance</span><span class="p">);</span>
-
-  <span class="c1">//////////////////////////////  //////////////////////////////</span>
-  <span class="c1">////// This is how to use supervoxels</span>
-  <span class="c1">//////////////////////////////  //////////////////////////////</span>
-
-  <span class="n">pcl</span><span class="o">::</span><span class="n">SupervoxelClustering</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="n">super</span> <span class="p">(</span><span class="n">voxel_resolution</span><span class="p">,</span> <span class="n">seed_resolution</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">disable_transform</span><span class="p">)</span>
-    <span class="n">super</span><span class="p">.</span><span class="n">setUseSingleCameraTransform</span> <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setColorImportance</span> <span class="p">(</span><span class="n">color_importance</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setSpatialImportance</span> <span class="p">(</span><span class="n">spatial_importance</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setNormalImportance</span> <span class="p">(</span><span class="n">normal_importance</span><span class="p">);</span>
-
-  <span class="n">std</span><span class="o">::</span><span class="n">map</span> <span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="o">&gt;</span> <span class="n">supervoxel_clusters</span><span class="p">;</span>
-
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span> <span class="p">(</span><span class="s">&quot;Extracting supervoxels!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">extract</span> <span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_info</span> <span class="p">(</span><span class="s">&quot;Found %d supervoxels</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
-
-  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">viewer</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="s">&quot;3D Viewer&quot;</span><span class="p">));</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setBackgroundColor</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-
-  <span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">voxel_centroid_cloud</span> <span class="o">=</span> <span class="n">super</span><span class="p">.</span><span class="n">getVoxelCentroidCloud</span> <span class="p">();</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">voxel_centroid_cloud</span><span class="p">,</span> <span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span> <span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.95</span><span class="p">,</span> <span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span>
-
-  <span class="n">PointLCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">labeled_voxel_cloud</span> <span class="o">=</span> <span class="n">super</span><span class="p">.</span><span class="n">getLabeledVoxelCloud</span> <span class="p">();</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">labeled_voxel_cloud</span><span class="p">,</span> <span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span> <span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span>
-
-  <span class="n">PointNCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">sv_normal_cloud</span> <span class="o">=</span> <span class="n">super</span><span class="p">.</span><span class="n">makeSupervoxelNormalCloud</span> <span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span>
-  <span class="c1">//We have this disabled so graph is easy to see, uncomment to see supervoxel normals</span>
-  <span class="c1">//viewer-&gt;addPointCloudNormals&lt;PointNormal&gt; (sv_normal_cloud,1,0.05f, &quot;supervoxel_normals&quot;);</span>
-
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span> <span class="p">(</span><span class="s">&quot;Getting supervoxel adjacency</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">multimap</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="o">&gt;</span> <span class="n">supervoxel_adjacency</span><span class="p">;</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">getSupervoxelAdjacency</span> <span class="p">(</span><span class="n">supervoxel_adjacency</span><span class="p">);</span>
-  <span class="c1">//To make a graph of the supervoxel adjacency, we need to iterate through the supervoxel adjacency multimap</span>
-  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">label_itr</span> <span class="o">=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cbegin</span> <span class="p">();</span> <span class="n">label_itr</span> <span class="o">!=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cend</span> <span class="p">();</span> <span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//First get the label</span>
-    <span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span> <span class="n">supervoxel_label</span> <span class="o">=</span> <span class="n">label_itr</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span>
-    <span class="c1">//Now get the supervoxel corresponding to the label</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">supervoxel</span> <span class="o">=</span> <span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span>
-
-    <span class="c1">//Now we need to iterate through the adjacent supervoxels and make a point cloud of them</span>
-    <span class="n">PointCloudT</span> <span class="n">adjacent_supervoxel_centers</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">adjacent_itr</span> <span class="o">=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">first</span><span class="p">;</span> <span class="n">adjacent_itr</span><span class="o">!=</span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">second</span><span class="p">;</span> <span class="o">++</span><span class="n">adjacent_itr</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">neighbor_supervoxel</span> <span class="o">=</span> <span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span> <span class="p">(</span><span class="n">adjacent_itr</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span>
-      <span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">neighbor_supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="c1">//Now we make a name for this polygon</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
-    <span class="n">ss</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;supervoxel_&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">supervoxel_label</span><span class="p">;</span>
-    <span class="c1">//This function is shown below, but is beyond the scope of this tutorial - basically it just generates a &quot;star&quot; polygon mesh from the points given</span>
-    <span class="n">addSupervoxelConnectionsToViewer</span> <span class="p">(</span><span class="n">supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">,</span> <span class="n">adjacent_supervoxel_centers</span><span class="p">,</span> <span class="n">ss</span><span class="p">.</span><span class="n">str</span> <span class="p">(),</span> <span class="n">viewer</span><span class="p">);</span>
-    <span class="c1">//Move iterator forward to next label</span>
-    <span class="n">label_itr</span> <span class="o">=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">upper_bound</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span>
-  <span class="p">}</span>
-
-  <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">wasStopped</span> <span class="p">())</span>
-  <span class="p">{</span>
-    <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">spinOnce</span> <span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span>
-<span class="nf">addSupervoxelConnectionsToViewer</span> <span class="p">(</span><span class="n">PointT</span> <span class="o">&amp;</span><span class="n">supervoxel_center</span><span class="p">,</span>
-                                  <span class="n">PointCloudT</span> <span class="o">&amp;</span><span class="n">adjacent_supervoxel_centers</span><span class="p">,</span>
-                                  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">supervoxel_name</span><span class="p">,</span>
-                                  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span> <span class="o">&amp;</span> <span class="n">viewer</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPoints</span><span class="o">&gt;</span> <span class="n">points</span> <span class="o">=</span> <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPoints</span><span class="o">&gt;::</span><span class="n">New</span> <span class="p">();</span>
-  <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkCellArray</span><span class="o">&gt;</span> <span class="n">cells</span> <span class="o">=</span> <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkCellArray</span><span class="o">&gt;::</span><span class="n">New</span> <span class="p">();</span>
-  <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyLine</span><span class="o">&gt;</span> <span class="n">polyLine</span> <span class="o">=</span> <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyLine</span><span class="o">&gt;::</span><span class="n">New</span> <span class="p">();</span>
-
-  <span class="c1">//Iterate through all adjacent points, and add a center point to adjacent point pair</span>
-  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">adjacent_itr</span> <span class="o">=</span> <span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">begin</span> <span class="p">();</span> <span class="n">adjacent_itr</span> <span class="o">!=</span> <span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">end</span> <span class="p">();</span> <span class="o">++</span><span class="n">adjacent_itr</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">points</span><span class="o">-&gt;</span><span class="n">InsertNextPoint</span> <span class="p">(</span><span class="n">supervoxel_center</span><span class="p">.</span><span class="n">data</span><span class="p">);</span>
-    <span class="n">points</span><span class="o">-&gt;</span><span class="n">InsertNextPoint</span> <span class="p">(</span><span class="n">adjacent_itr</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="c1">// Create a polydata to store everything in</span>
-  <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyData</span><span class="o">&gt;</span> <span class="n">polyData</span> <span class="o">=</span> <span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyData</span><span class="o">&gt;::</span><span class="n">New</span> <span class="p">();</span>
-  <span class="c1">// Add the points to the dataset</span>
-  <span class="n">polyData</span><span class="o">-&gt;</span><span class="n">SetPoints</span> <span class="p">(</span><span class="n">points</span><span class="p">);</span>
-  <span class="n">polyLine</span><span class="o">-&gt;</span><span class="n">GetPointIds</span>  <span class="p">()</span><span class="o">-&gt;</span><span class="n">SetNumberOfIds</span><span class="p">(</span><span class="n">points</span><span class="o">-&gt;</span><span class="n">GetNumberOfPoints</span> <span class="p">());</span>
-  <span class="k">for</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">points</span><span class="o">-&gt;</span><span class="n">GetNumberOfPoints</span> <span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="n">polyLine</span><span class="o">-&gt;</span><span class="n">GetPointIds</span> <span class="p">()</span><span class="o">-&gt;</span><span class="n">SetId</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
-  <span class="n">cells</span><span class="o">-&gt;</span><span class="n">InsertNextCell</span> <span class="p">(</span><span class="n">polyLine</span><span class="p">);</span>
-  <span class="c1">// Add the lines to the dataset</span>
-  <span class="n">polyData</span><span class="o">-&gt;</span><span class="n">SetLines</span> <span class="p">(</span><span class="n">cells</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addModelFromPolyData</span> <span class="p">(</span><span class="n">polyData</span><span class="p">,</span><span class="n">supervoxel_name</span><span class="p">);</span>
-<span class="p">}</span>
+Next, copy and paste the following code into your editor and save it as <code class="docutils literal notranslate"><span class="pre">supervoxel_clustering.cpp</span></code> (or download the source file <a class="reference download internal" download="" href="_downloads/5dcfd937b2f0e4061fa236fa6e47f6ce/supervoxel_clustering.cpp"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>).</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/console/parse.h&gt;</span><span class="cp"></span>
+<span class="linenos">  2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/point_cloud.h&gt;</span><span class="cp"></span>
+<span class="linenos">  3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+<span class="linenos">  4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
+<span class="linenos">  5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/visualization/pcl_visualizer.h&gt;</span><span class="cp"></span>
+<span class="linenos">  6</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/segmentation/supervoxel_clustering.h&gt;</span><span class="cp"></span>
+<span class="linenos">  7</span>
+<span class="linenos">  8</span><span class="c1">//VTK include needed for drawing graph lines</span>
+<span class="linenos">  9</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vtkPolyLine.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 10</span>
+<span class="linenos"> 11</span><span class="c1">// Types</span>
+<span class="linenos"> 12</span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="w"> </span><span class="n">PointT</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 13</span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 14</span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="w"> </span><span class="n">PointNT</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 15</span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointNCloudT</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 16</span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZL</span><span class="w"> </span><span class="n">PointLT</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 17</span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointLT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointLCloudT</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 18</span>
+<span class="linenos"> 19</span><span class="kt">void</span><span class="w"> </span><span class="nf">addSupervoxelConnectionsToViewer</span><span class="w"> </span><span class="p">(</span><span class="n">PointT</span><span class="w"> </span><span class="o">&amp;</span><span class="n">supervoxel_center</span><span class="p">,</span><span class="w"></span>
+<span class="linenos"> 20</span><span class="w">                                       </span><span class="n">PointCloudT</span><span class="w"> </span><span class="o">&amp;</span><span class="n">adjacent_supervoxel_centers</span><span class="p">,</span><span class="w"></span>
+<span class="linenos"> 21</span><span class="w">                                       </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">supervoxel_name</span><span class="p">,</span><span class="w"></span>
+<span class="linenos"> 22</span><span class="w">                                       </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">viewer</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 23</span>
+<span class="linenos"> 24</span>
+<span class="linenos"> 25</span><span class="kt">int</span><span class="w"></span>
+<span class="linenos"> 26</span><span class="nf">main</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"></span>
+<span class="linenos"> 27</span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 28</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="linenos"> 29</span><span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 30</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_error</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Syntax is: %s &lt;pcd-file&gt; </span><span class="se">\n</span><span class="s"> &quot;</span><span class="w"></span>
+<span class="linenos"> 31</span><span class="w">                                </span><span class="s">&quot;--NT Dsables the single cloud transform </span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="linenos"> 32</span><span class="w">                                </span><span class="s">&quot;-v &lt;voxel resolution&gt;</span><span class="se">\n</span><span class="s">-s &lt;seed resolution&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="linenos"> 33</span><span class="w">                                </span><span class="s">&quot;-c &lt;color weight&gt; </span><span class="se">\n</span><span class="s">-z &lt;spatial weight&gt; </span><span class="se">\n</span><span class="s">&quot;</span><span class="w"></span>
+<span class="linenos"> 34</span><span class="w">                                </span><span class="s">&quot;-n &lt;normal_weight&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="w"></span>
+<span class="linenos"> 35</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 36</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos"> 37</span>
+<span class="linenos"> 38</span>
+<span class="linenos"> 39</span><span class="w">  </span><span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">cloud</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 40</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Loading point cloud...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 41</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">))</span><span class="w"></span>
+<span class="linenos"> 42</span><span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 43</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_error</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Error loading cloud file!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 44</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 45</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos"> 46</span>
+<span class="linenos"> 47</span>
+<span class="linenos"> 48</span><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">disable_transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;--NT&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 49</span>
+<span class="linenos"> 50</span><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">voxel_resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.008f</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 51</span><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">voxel_res_specified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-v&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 52</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">voxel_res_specified</span><span class="p">)</span><span class="w"></span>
+<span class="linenos"> 53</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-v&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">voxel_resolution</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 54</span>
+<span class="linenos"> 55</span><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">seed_resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1f</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 56</span><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">seed_res_specified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-s&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 57</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">seed_res_specified</span><span class="p">)</span><span class="w"></span>
+<span class="linenos"> 58</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">seed_resolution</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 59</span>
+<span class="linenos"> 60</span><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">color_importance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.2f</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 61</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-c&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="linenos"> 62</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-c&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">color_importance</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 63</span>
+<span class="linenos"> 64</span><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">spatial_importance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.4f</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 65</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-z&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="linenos"> 66</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-z&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">spatial_importance</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 67</span>
+<span class="linenos"> 68</span><span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">normal_importance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 69</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-n&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="linenos"> 70</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">normal_importance</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 71</span>
+<span class="linenos"> 72</span><span class="w">  </span><span class="c1">//////////////////////////////  //////////////////////////////</span>
+<span class="linenos"> 73</span><span class="w">  </span><span class="c1">////// This is how to use supervoxels</span>
+<span class="linenos"> 74</span><span class="w">  </span><span class="c1">//////////////////////////////  //////////////////////////////</span>
+<span class="linenos"> 75</span>
+<span class="linenos"> 76</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">SupervoxelClustering</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">super</span><span class="w"> </span><span class="p">(</span><span class="n">voxel_resolution</span><span class="p">,</span><span class="w"> </span><span class="n">seed_resolution</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 77</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">disable_transform</span><span class="p">)</span><span class="w"></span>
+<span class="linenos"> 78</span><span class="w">    </span><span class="n">super</span><span class="p">.</span><span class="n">setUseSingleCameraTransform</span><span class="w"> </span><span class="p">(</span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 79</span><span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 80</span><span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setColorImportance</span><span class="w"> </span><span class="p">(</span><span class="n">color_importance</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 81</span><span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setSpatialImportance</span><span class="w"> </span><span class="p">(</span><span class="n">spatial_importance</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 82</span><span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setNormalImportance</span><span class="w"> </span><span class="p">(</span><span class="n">normal_importance</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 83</span>
+<span class="linenos"> 84</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="w"> </span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 85</span>
+<span class="linenos"> 86</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Extracting supervoxels!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 87</span><span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">extract</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 88</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_info</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Found %d supervoxels</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">size</span><span class="w"> </span><span class="p">());</span><span class="w"></span>
+<span class="linenos"> 89</span>
+<span class="linenos"> 90</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">viewer</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;3D Viewer&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="linenos"> 91</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setBackgroundColor</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 92</span>
+<span class="linenos"> 93</span><span class="w">  </span><span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">voxel_centroid_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">super</span><span class="p">.</span><span class="n">getVoxelCentroidCloud</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos"> 94</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">voxel_centroid_cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 95</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 96</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.95</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 97</span>
+<span class="linenos"> 98</span><span class="w">  </span><span class="n">PointLCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">labeled_voxel_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">super</span><span class="p">.</span><span class="n">getLabeledVoxelCloud</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos"> 99</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">labeled_voxel_cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">100</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">101</span>
+<span class="linenos">102</span><span class="w">  </span><span class="n">PointNCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">sv_normal_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">super</span><span class="p">.</span><span class="n">makeSupervoxelNormalCloud</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">103</span><span class="w">  </span><span class="c1">//We have this disabled so graph is easy to see, uncomment to see supervoxel normals</span>
+<span class="linenos">104</span><span class="w">  </span><span class="c1">//viewer-&gt;addPointCloudNormals&lt;PointNormal&gt; (sv_normal_cloud,1,0.05f, &quot;supervoxel_normals&quot;);</span>
+<span class="linenos">105</span>
+<span class="linenos">106</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Getting supervoxel adjacency</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">107</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">multimap</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">108</span><span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">getSupervoxelAdjacency</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_adjacency</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">109</span><span class="w">  </span><span class="c1">//To make a graph of the supervoxel adjacency, we need to iterate through the supervoxel adjacency multimap</span>
+<span class="linenos">110</span><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">label_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cbegin</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="n">label_itr</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cend</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<span class="linenos">111</span><span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">112</span><span class="w">    </span><span class="c1">//First get the label</span>
+<span class="linenos">113</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">supervoxel_label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">label_itr</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">114</span><span class="w">    </span><span class="c1">//Now get the supervoxel corresponding to the label</span>
+<span class="linenos">115</span><span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">supervoxel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">116</span>
+<span class="linenos">117</span><span class="w">    </span><span class="c1">//Now we need to iterate through the adjacent supervoxels and make a point cloud of them</span>
+<span class="linenos">118</span><span class="w">    </span><span class="n">PointCloudT</span><span class="w"> </span><span class="n">adjacent_supervoxel_centers</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">119</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">adjacent_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">first</span><span class="p">;</span><span class="w"> </span><span class="n">adjacent_itr</span><span class="o">!=</span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">second</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">adjacent_itr</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">120</span><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">121</span><span class="w">      </span><span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">neighbor_supervoxel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span><span class="w"> </span><span class="p">(</span><span class="n">adjacent_itr</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">122</span><span class="w">      </span><span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">push_back</span><span class="w"> </span><span class="p">(</span><span class="n">neighbor_supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">123</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">124</span><span class="w">    </span><span class="c1">//Now we make a name for this polygon</span>
+<span class="linenos">125</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">stringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">126</span><span class="w">    </span><span class="n">ss</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;supervoxel_&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">supervoxel_label</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">127</span><span class="w">    </span><span class="c1">//This function is shown below, but is beyond the scope of this tutorial - basically it just generates a &quot;star&quot; polygon mesh from the points given</span>
+<span class="linenos">128</span><span class="w">    </span><span class="n">addSupervoxelConnectionsToViewer</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">,</span><span class="w"> </span><span class="n">adjacent_supervoxel_centers</span><span class="p">,</span><span class="w"> </span><span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="w"> </span><span class="p">(),</span><span class="w"> </span><span class="n">viewer</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">129</span><span class="w">    </span><span class="c1">//Move iterator forward to next label</span>
+<span class="linenos">130</span><span class="w">    </span><span class="n">label_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">upper_bound</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">131</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">132</span>
+<span class="linenos">133</span><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">wasStopped</span><span class="w"> </span><span class="p">())</span><span class="w"></span>
+<span class="linenos">134</span><span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">135</span><span class="w">    </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">spinOnce</span><span class="w"> </span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">136</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">137</span><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">138</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">139</span>
+<span class="linenos">140</span><span class="kt">void</span><span class="w"></span>
+<span class="linenos">141</span><span class="nf">addSupervoxelConnectionsToViewer</span><span class="w"> </span><span class="p">(</span><span class="n">PointT</span><span class="w"> </span><span class="o">&amp;</span><span class="n">supervoxel_center</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">142</span><span class="w">                                  </span><span class="n">PointCloudT</span><span class="w"> </span><span class="o">&amp;</span><span class="n">adjacent_supervoxel_centers</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">143</span><span class="w">                                  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">supervoxel_name</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">144</span><span class="w">                                  </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">viewer</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">145</span><span class="p">{</span><span class="w"></span>
+<span class="linenos">146</span><span class="w">  </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPoints</span><span class="o">&gt;</span><span class="w"> </span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPoints</span><span class="o">&gt;::</span><span class="n">New</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos">147</span><span class="w">  </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkCellArray</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkCellArray</span><span class="o">&gt;::</span><span class="n">New</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos">148</span><span class="w">  </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyLine</span><span class="o">&gt;</span><span class="w"> </span><span class="n">polyLine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyLine</span><span class="o">&gt;::</span><span class="n">New</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos">149</span>
+<span class="linenos">150</span><span class="w">  </span><span class="c1">//Iterate through all adjacent points, and add a center point to adjacent point pair</span>
+<span class="linenos">151</span><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">adjacent_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">begin</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="n">adjacent_itr</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">end</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">adjacent_itr</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">152</span><span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">153</span><span class="w">    </span><span class="n">points</span><span class="o">-&gt;</span><span class="n">InsertNextPoint</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_center</span><span class="p">.</span><span class="n">data</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">154</span><span class="w">    </span><span class="n">points</span><span class="o">-&gt;</span><span class="n">InsertNextPoint</span><span class="w"> </span><span class="p">(</span><span class="n">adjacent_itr</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">155</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">156</span><span class="w">  </span><span class="c1">// Create a polydata to store everything in</span>
+<span class="linenos">157</span><span class="w">  </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyData</span><span class="o">&gt;</span><span class="w"> </span><span class="n">polyData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vtkSmartPointer</span><span class="o">&lt;</span><span class="n">vtkPolyData</span><span class="o">&gt;::</span><span class="n">New</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="linenos">158</span><span class="w">  </span><span class="c1">// Add the points to the dataset</span>
+<span class="linenos">159</span><span class="w">  </span><span class="n">polyData</span><span class="o">-&gt;</span><span class="n">SetPoints</span><span class="w"> </span><span class="p">(</span><span class="n">points</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">160</span><span class="w">  </span><span class="n">polyLine</span><span class="o">-&gt;</span><span class="n">GetPointIds</span><span class="w">  </span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetNumberOfIds</span><span class="p">(</span><span class="n">points</span><span class="o">-&gt;</span><span class="n">GetNumberOfPoints</span><span class="w"> </span><span class="p">());</span><span class="w"></span>
+<span class="linenos">161</span><span class="w">  </span><span class="k">for</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">points</span><span class="o">-&gt;</span><span class="n">GetNumberOfPoints</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">162</span><span class="w">    </span><span class="n">polyLine</span><span class="o">-&gt;</span><span class="n">GetPointIds</span><span class="w"> </span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetId</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">163</span><span class="w">  </span><span class="n">cells</span><span class="o">-&gt;</span><span class="n">InsertNextCell</span><span class="w"> </span><span class="p">(</span><span class="n">polyLine</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">164</span><span class="w">  </span><span class="c1">// Add the lines to the dataset</span>
+<span class="linenos">165</span><span class="w">  </span><span class="n">polyData</span><span class="o">-&gt;</span><span class="n">SetLines</span><span class="w"> </span><span class="p">(</span><span class="n">cells</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">166</span><span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addModelFromPolyData</span><span class="w"> </span><span class="p">(</span><span class="n">polyData</span><span class="p">,</span><span class="n">supervoxel_name</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">167</span><span class="p">}</span><span class="w"></span>
 </pre></div>
-</td></tr></table></div>
 </div>
-<div class="section" id="the-explanation">
+</section>
+<section id="the-explanation">
 <h1>The explanation</h1>
 <p>We start by defining convenience types in order not to clutter the code.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span> <span class="n">PointT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="n">PointCloudT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span> <span class="n">PointNT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNT</span><span class="o">&gt;</span> <span class="n">PointNCloudT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZL</span> <span class="n">PointLT</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointLT</span><span class="o">&gt;</span> <span class="n">PointLCloudT</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZRGBA</span><span class="w"> </span><span class="n">PointT</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="w"> </span><span class="n">PointNT</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointNT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointNCloudT</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZL</span><span class="w"> </span><span class="n">PointLT</span><span class="p">;</span><span class="w"></span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">PointLT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">PointLCloudT</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Then we load the input cloud based on the input argument</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">PointCloudT</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span> <span class="p">(</span><span class="s">&quot;Loading point cloud...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="o">*</span><span class="n">cloud</span><span class="p">))</span>
-  <span class="p">{</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_error</span> <span class="p">(</span><span class="s">&quot;Error loading cloud file!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-  <span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="nf">cloud</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PointCloudT</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Loading point cloud...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_error</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Error loading cloud file!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Next we check the input arguments and set default values. You can play with the various parameters to see how they affect the supervoxels, but briefly:</p>
@@ -564,186 +328,163 @@ Next, copy and paste the following code into your editor and save it as <code cl
 <li><p><code class="docutils literal notranslate"><span class="pre">-z</span></code> Sets the weight for spatial term - higher values will result in supervoxels with very regular shapes (lower will result in supervoxels which follow normals and/or colors, but are not very regular)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-n</span></code> Sets the weight for normal - how much surface normals will influence the shape of the supervoxels</p></li>
 </ul>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="kt">bool</span> <span class="n">disable_transform</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;--NT&quot;</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">disable_transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;--NT&quot;</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">float</span> <span class="n">voxel_resolution</span> <span class="o">=</span> <span class="mf">0.008f</span><span class="p">;</span>
-  <span class="kt">bool</span> <span class="n">voxel_res_specified</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-v&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">voxel_res_specified</span><span class="p">)</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-v&quot;</span><span class="p">,</span> <span class="n">voxel_resolution</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">voxel_resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.008f</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">voxel_res_specified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-v&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">voxel_res_specified</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-v&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">voxel_resolution</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">float</span> <span class="n">seed_resolution</span> <span class="o">=</span> <span class="mf">0.1f</span><span class="p">;</span>
-  <span class="kt">bool</span> <span class="n">seed_res_specified</span> <span class="o">=</span> <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-s&quot;</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">seed_res_specified</span><span class="p">)</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-s&quot;</span><span class="p">,</span> <span class="n">seed_resolution</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">seed_resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1f</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">seed_res_specified</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-s&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">seed_res_specified</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">seed_resolution</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">float</span> <span class="n">color_importance</span> <span class="o">=</span> <span class="mf">0.2f</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-c&quot;</span><span class="p">))</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-c&quot;</span><span class="p">,</span> <span class="n">color_importance</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">color_importance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.2f</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-c&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-c&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">color_importance</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">float</span> <span class="n">spatial_importance</span> <span class="o">=</span> <span class="mf">0.4f</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-z&quot;</span><span class="p">))</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-z&quot;</span><span class="p">,</span> <span class="n">spatial_importance</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">spatial_importance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.4f</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-z&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-z&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">spatial_importance</span><span class="p">);</span><span class="w"></span>
 
-  <span class="kt">float</span> <span class="n">normal_importance</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="p">;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-n&quot;</span><span class="p">))</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span> <span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="s">&quot;-n&quot;</span><span class="p">,</span> <span class="n">normal_importance</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">normal_importance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">find_switch</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-n&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">parse</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">normal_importance</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>We are now ready to setup the supervoxel clustering. We use the class <a href="#id1"><span class="problematic" id="id2">:pcl:`SupervoxelClustering &lt;pcl::SupervoxelClustering&gt;`</span></a>, which implements the clustering process and give it the parameters.</p>
+<p>We are now ready to setup the supervoxel clustering. We use the class <a class="reference external" href="https://pointclouds.org/documentation/classpcl_1_1_supervoxel_clustering.html">SupervoxelClustering</a>, which implements the clustering process and give it the parameters.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>By default, the algorithm will use a special transform compressing the depth in Z if your input cloud is organized (eg, from an RGBD sensor like the Kinect). You MUST set use_transform to false if you are using an organized cloud which doesn’t have the camera at (0,0,0) and depth in positive Z. The transform is specifically designed to help improve Kinect data by increasing voxel bin size as distance from the camera increases. If your cloud is unorganized, this transform will not be used by default, but can be enabled by using setUseSingleCameraTransform(true).</p>
 </div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">SupervoxelClustering</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span> <span class="n">super</span> <span class="p">(</span><span class="n">voxel_resolution</span><span class="p">,</span> <span class="n">seed_resolution</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">disable_transform</span><span class="p">)</span>
-    <span class="n">super</span><span class="p">.</span><span class="n">setUseSingleCameraTransform</span> <span class="p">(</span><span class="nb">false</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setColorImportance</span> <span class="p">(</span><span class="n">color_importance</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setSpatialImportance</span> <span class="p">(</span><span class="n">spatial_importance</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">setNormalImportance</span> <span class="p">(</span><span class="n">normal_importance</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">SupervoxelClustering</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">super</span><span class="w"> </span><span class="p">(</span><span class="n">voxel_resolution</span><span class="p">,</span><span class="w"> </span><span class="n">seed_resolution</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">disable_transform</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">super</span><span class="p">.</span><span class="n">setUseSingleCameraTransform</span><span class="w"> </span><span class="p">(</span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setColorImportance</span><span class="w"> </span><span class="p">(</span><span class="n">color_importance</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setSpatialImportance</span><span class="w"> </span><span class="p">(</span><span class="n">spatial_importance</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">setNormalImportance</span><span class="w"> </span><span class="p">(</span><span class="n">normal_importance</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Then we initialize the data structure which will be used to extract the supervoxels, and run the algorithm. The data structure is a map from labels to shared pointers of <a href="#id3"><span class="problematic" id="id4">:pcl:`Supervoxel &lt;pcl::Supervoxel&gt;`</span></a> templated on the input point type. Supervoxels have the following fields:</p>
+<p>Then we initialize the data structure which will be used to extract the supervoxels, and run the algorithm. The data structure is a map from labels to shared pointers of <a class="reference external" href="https://pointclouds.org/documentation/classpcl_1_1_supervoxel.html">Supervoxel</a> templated on the input point type. Supervoxels have the following fields:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">normal_</span></code> The normal calculated for the voxels contained in the supervoxel</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">centroid_</span></code> The centroid of the supervoxel - average voxel</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">voxels_</span></code> A Pointcloud of the voxels in the supervoxel</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">normals_</span></code> A Pointcloud of the normals for the points in the supervoxel</p></li>
 </ul>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">std</span><span class="o">::</span><span class="n">map</span> <span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="o">&gt;</span> <span class="n">supervoxel_clusters</span><span class="p">;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="w"> </span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">;</span><span class="w"></span>
 
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span> <span class="p">(</span><span class="s">&quot;Extracting supervoxels!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">extract</span> <span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_info</span> <span class="p">(</span><span class="s">&quot;Found %d supervoxels</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">size</span> <span class="p">());</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Extracting supervoxels!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">extract</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_info</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Found %d supervoxels</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">size</span><span class="w"> </span><span class="p">());</span><span class="w"></span>
 </pre></div>
 </div>
-<p>We then load a viewer and use some of the getter functions of <a href="#id5"><span class="problematic" id="id6">:pcl:`SupervoxelClustering &lt;pcl::SupervoxelClustering&gt;`</span></a> to pull out clouds to display. <code class="docutils literal notranslate"><span class="pre">voxel_centroid_cloud</span></code> contains the voxel centroids coming out of the octree (basically the downsampled original cloud), and <code class="docutils literal notranslate"><span class="pre">colored_voxel_cloud</span></code> are the voxels colored according to their supervoxel labels (random colors). <code class="docutils literal notranslate"><span class="pre">sv_normal_cloud</span></code> contains a cloud of the supervoxel normals, but we don’t display it here so that the graph is visible.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">viewer</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span> <span class="p">(</span><span class="s">&quot;3D Viewer&quot;</span><span class="p">));</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setBackgroundColor</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<p>We then load a viewer and use some of the getter functions of <a class="reference external" href="https://pointclouds.org/documentation/classpcl_1_1_supervoxel_clustering.html">SupervoxelClustering</a> to pull out clouds to display. <code class="docutils literal notranslate"><span class="pre">voxel_centroid_cloud</span></code> contains the voxel centroids coming out of the octree (basically the downsampled original cloud), and <code class="docutils literal notranslate"><span class="pre">colored_voxel_cloud</span></code> are the voxels colored according to their supervoxel labels (random colors). <code class="docutils literal notranslate"><span class="pre">sv_normal_cloud</span></code> contains a cloud of the supervoxel normals, but we don’t display it here so that the graph is visible.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="nf">viewer</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCLVisualizer</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;3D Viewer&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setBackgroundColor</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
 
-  <span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">voxel_centroid_cloud</span> <span class="o">=</span> <span class="n">super</span><span class="p">.</span><span class="n">getVoxelCentroidCloud</span> <span class="p">();</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">voxel_centroid_cloud</span><span class="p">,</span> <span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span> <span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.95</span><span class="p">,</span> <span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">PointCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">voxel_centroid_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">super</span><span class="p">.</span><span class="n">getVoxelCentroidCloud</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">voxel_centroid_cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_POINT_SIZE</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.95</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;voxel centroids&quot;</span><span class="p">);</span><span class="w"></span>
 
-  <span class="n">PointLCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">labeled_voxel_cloud</span> <span class="o">=</span> <span class="n">super</span><span class="p">.</span><span class="n">getLabeledVoxelCloud</span> <span class="p">();</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span> <span class="p">(</span><span class="n">labeled_voxel_cloud</span><span class="p">,</span> <span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span>
-  <span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span> <span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span> <span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">PointLCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">labeled_voxel_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">super</span><span class="p">.</span><span class="n">getLabeledVoxelCloud</span><span class="w"> </span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">addPointCloud</span><span class="w"> </span><span class="p">(</span><span class="n">labeled_voxel_cloud</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">viewer</span><span class="o">-&gt;</span><span class="n">setPointCloudRenderingProperties</span><span class="w"> </span><span class="p">(</span><span class="n">pcl</span><span class="o">::</span><span class="n">visualization</span><span class="o">::</span><span class="n">PCL_VISUALIZER_OPACITY</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;labeled voxels&quot;</span><span class="p">);</span><span class="w"></span>
 
-  <span class="n">PointNCloudT</span><span class="o">::</span><span class="n">Ptr</span> <span class="n">sv_normal_cloud</span> <span class="o">=</span> <span class="n">super</span><span class="p">.</span><span class="n">makeSupervoxelNormalCloud</span> <span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span>
-  <span class="c1">//We have this disabled so graph is easy to see, uncomment to see supervoxel normals</span>
-  <span class="c1">//viewer-&gt;addPointCloudNormals&lt;PointNormal&gt; (sv_normal_cloud,1,0.05f, &quot;supervoxel_normals&quot;);</span>
+<span class="w">  </span><span class="n">PointNCloudT</span><span class="o">::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">sv_normal_cloud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">super</span><span class="p">.</span><span class="n">makeSupervoxelNormalCloud</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_clusters</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//We have this disabled so graph is easy to see, uncomment to see supervoxel normals</span>
+<span class="w">  </span><span class="c1">//viewer-&gt;addPointCloudNormals&lt;PointNormal&gt; (sv_normal_cloud,1,0.05f, &quot;supervoxel_normals&quot;);</span>
 </pre></div>
 </div>
 <p>Finally, we extract the supervoxel adjacency list (in the form of a multimap of label adjacencies).</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span> <span class="p">(</span><span class="s">&quot;Getting supervoxel adjacency</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">multimap</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="o">&gt;</span> <span class="n">supervoxel_adjacency</span><span class="p">;</span>
-  <span class="n">super</span><span class="p">.</span><span class="n">getSupervoxelAdjacency</span> <span class="p">(</span><span class="n">supervoxel_adjacency</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">print_highlight</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Getting supervoxel adjacency</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">multimap</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">super</span><span class="p">.</span><span class="n">getSupervoxelAdjacency</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_adjacency</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Then we iterate through the multimap, creating a point cloud of the centroids of each supervoxel’s neighbors.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">label_itr</span> <span class="o">=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cbegin</span> <span class="p">();</span> <span class="n">label_itr</span> <span class="o">!=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cend</span> <span class="p">();</span> <span class="p">)</span>
-  <span class="p">{</span>
-    <span class="c1">//First get the label</span>
-    <span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span> <span class="n">supervoxel_label</span> <span class="o">=</span> <span class="n">label_itr</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span>
-    <span class="c1">//Now get the supervoxel corresponding to the label</span>
-    <span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">supervoxel</span> <span class="o">=</span> <span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">label_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cbegin</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="n">label_itr</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">cend</span><span class="w"> </span><span class="p">();</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//First get the label</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">supervoxel_label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">label_itr</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//Now get the supervoxel corresponding to the label</span>
+<span class="w">    </span><span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">supervoxel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span><span class="w"></span>
 
-    <span class="c1">//Now we need to iterate through the adjacent supervoxels and make a point cloud of them</span>
-    <span class="n">PointCloudT</span> <span class="n">adjacent_supervoxel_centers</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="n">adjacent_itr</span> <span class="o">=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">first</span><span class="p">;</span> <span class="n">adjacent_itr</span><span class="o">!=</span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">second</span><span class="p">;</span> <span class="o">++</span><span class="n">adjacent_itr</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">neighbor_supervoxel</span> <span class="o">=</span> <span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span> <span class="p">(</span><span class="n">adjacent_itr</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span>
-      <span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">push_back</span> <span class="p">(</span><span class="n">neighbor_supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="c1">//Now we need to iterate through the adjacent supervoxels and make a point cloud of them</span>
+<span class="w">    </span><span class="n">PointCloudT</span><span class="w"> </span><span class="n">adjacent_supervoxel_centers</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">adjacent_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">first</span><span class="p">;</span><span class="w"> </span><span class="n">adjacent_itr</span><span class="o">!=</span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">equal_range</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">).</span><span class="n">second</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">adjacent_itr</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">pcl</span><span class="o">::</span><span class="n">Supervoxel</span><span class="o">&lt;</span><span class="n">PointT</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">neighbor_supervoxel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_clusters</span><span class="p">.</span><span class="n">at</span><span class="w"> </span><span class="p">(</span><span class="n">adjacent_itr</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="n">adjacent_supervoxel_centers</span><span class="p">.</span><span class="n">push_back</span><span class="w"> </span><span class="p">(</span><span class="n">neighbor_supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Then we create a string label for the supervoxel graph we will draw and call <code class="docutils literal notranslate"><span class="pre">addSupervoxelConnectionsToViewer</span></code>, a drawing helper function implemented later in the tutorial code. The details of <code class="docutils literal notranslate"><span class="pre">addSupervoxelConnectionsToViewer</span></code> are beyond the scope of this tutorial, but all it does is draw a star polygon mesh of the supervoxel centroid to all of its neighbors centroids. We need to do this like this because adding individual lines using the <code class="docutils literal notranslate"><span class="pre">addLine</span></code> functionality of <code class="docutils literal notranslate"><span class="pre">pcl_visualizer</span></code> is too slow for large numbers of lines.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>    <span class="c1">//Now we make a name for this polygon</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">ss</span><span class="p">;</span>
-    <span class="n">ss</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;supervoxel_&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">supervoxel_label</span><span class="p">;</span>
-    <span class="c1">//This function is shown below, but is beyond the scope of this tutorial - basically it just generates a &quot;star&quot; polygon mesh from the points given</span>
-    <span class="n">addSupervoxelConnectionsToViewer</span> <span class="p">(</span><span class="n">supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">,</span> <span class="n">adjacent_supervoxel_centers</span><span class="p">,</span> <span class="n">ss</span><span class="p">.</span><span class="n">str</span> <span class="p">(),</span> <span class="n">viewer</span><span class="p">);</span>
-    <span class="c1">//Move iterator forward to next label</span>
-    <span class="n">label_itr</span> <span class="o">=</span> <span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">upper_bound</span> <span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="c1">//Now we make a name for this polygon</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">stringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ss</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;supervoxel_&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">supervoxel_label</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//This function is shown below, but is beyond the scope of this tutorial - basically it just generates a &quot;star&quot; polygon mesh from the points given</span>
+<span class="w">    </span><span class="n">addSupervoxelConnectionsToViewer</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel</span><span class="o">-&gt;</span><span class="n">centroid_</span><span class="p">,</span><span class="w"> </span><span class="n">adjacent_supervoxel_centers</span><span class="p">,</span><span class="w"> </span><span class="n">ss</span><span class="p">.</span><span class="n">str</span><span class="w"> </span><span class="p">(),</span><span class="w"> </span><span class="n">viewer</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="c1">//Move iterator forward to next label</span>
+<span class="w">    </span><span class="n">label_itr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">supervoxel_adjacency</span><span class="p">.</span><span class="n">upper_bound</span><span class="w"> </span><span class="p">(</span><span class="n">supervoxel_label</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>This results in a supervoxel graph that looks like this for seed size of 0.1m (top) and 0.05m (middle). The bottom is the original cloud, given for reference.:</p>
 <img alt="_images/supervoxel_clustering_results.jpg" class="align-center" src="_images/supervoxel_clustering_results.jpg" />
-</div>
-<div class="section" id="compiling-and-running-the-program">
+</section>
+<section id="compiling-and-running-the-program">
 <h1>Compiling and running the program</h1>
-<p>Create a <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file with the following content (or download it <a class="reference download internal" download="" href="_downloads/5c94edf58a37ae44fc76b8e92af93e3a/CMakeLists.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>):</p>
-<div class="highlight-cmake notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
-
-<span class="nb">project</span><span class="p">(</span><span class="s">supervoxel_clustering</span><span class="p">)</span>
-
-<span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span> <span class="s">1.8</span> <span class="s">REQUIRED</span><span class="p">)</span>
-
-<span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
-
-<span class="nb">add_executable</span> <span class="p">(</span><span class="s">supervoxel_clustering</span> <span class="s">supervoxel_clustering.cpp</span><span class="p">)</span>
-<span class="nb">target_link_libraries</span> <span class="p">(</span><span class="s">supervoxel_clustering</span> <span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<p>Create a <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file with the following content (or download it <a class="reference download internal" download="" href="_downloads/6fa7d213a5141569cba95305921a2aaf/CMakeLists.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>):</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.5</span><span class="w"> </span><span class="s">FATAL_ERROR</span><span class="p">)</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="nb">project</span><span class="p">(</span><span class="s">supervoxel_clustering</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span><span class="w"> </span><span class="s">1.8</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos"> 8</span><span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="nb">add_executable</span> <span class="p">(</span><span class="s">supervoxel_clustering</span><span class="w"> </span><span class="s">supervoxel_clustering.cpp</span><span class="p">)</span>
+<span class="linenos">12</span><span class="nb">target_link_libraries</span> <span class="p">(</span><span class="s">supervoxel_clustering</span><span class="w"> </span><span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <p>After you have made the executable, you can run it like so, assuming the pcd file is in the same folder as the executable:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./supervoxel_clustering milk_cartoon_all_small_clorox.pcd --NT
 </pre></div>
 </div>
 <p>Don’t be afraid to play around with the parameters (especially the seed size, -s) to see what happens. The pcd file name should always be the first parameter!</p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

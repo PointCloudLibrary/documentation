@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_3dPoint \&gt;" alt="" coords="5,5,157,51"/>
-<area shape="rect" id="node3" href="$class_o_n__3d_point_array.html" title="ON_3dPointArray" alt="" coords="207,13,329,43"/>
-<area shape="rect" id="node5" href="$class_o_n___polyline.html" title="ON_Polyline" alt="" coords="380,13,473,43"/>
+<area shape="rect" id="node1" href="$class_o_n___simple_array.html" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" id="node2" href="$class_o_n___uuid_pair_list.html" title=" " alt="" coords="217,13,344,39"/>
 </map>

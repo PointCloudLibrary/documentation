@@ -1,5 +1,6 @@
 <map id="pcl::ROPSEstimation&lt; PointInT, PointOutT &gt;" name="pcl::ROPSEstimation&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="16,182,171,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="node1" title="This class implements the method for extracting RoPS features presented in the article &quot;Rotational Pr..." alt="" coords="11,261,188,303"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="14,171,185,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,95,193,121"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="11,5,187,32"/>
 </map>

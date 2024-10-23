@@ -1,69 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Fast triangulation of unordered point clouds &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fast triangulation of unordered point clouds &mdash; Point Cloud Library 1.14.1-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Point Cloud Library
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                1.11.0-dev
+                1.14.1-dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -71,17 +38,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Fast triangulation of unordered point clouds</a></li>
@@ -92,73 +49,36 @@
 <li><a class="reference internal" href="#saving-and-viewing-the-result">Saving and viewing the result</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Fast triangulation of unordered point clouds</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="fast-triangulation-of-unordered-point-clouds">
+             
+  <section id="fast-triangulation-of-unordered-point-clouds">
 <span id="greedy-triangulation"></span><h1>Fast triangulation of unordered point clouds</h1>
 <p>This tutorial explains how to run a greedy surface triangulation algorithm on a
 PointCloud with normals, to obtain a triangle mesh based on projections of the
 local neighborhoods. An example of the method’s output can be seen here:</p>
-<iframe title="Surface Triangulation and Point Cloud Classification" width="480" height="390" src="http://www.youtube.com/embed/VALTnZCyWc0?rel=0" frameborder="0" allowfullscreen></iframe></div>
-<div class="section" id="background-algorithm-and-parameters">
+<iframe title="Surface Triangulation and Point Cloud Classification" width="480" height="390" src="https://www.youtube.com/embed/VALTnZCyWc0?rel=0" frameborder="0" allowfullscreen></iframe></section>
+<section id="background-algorithm-and-parameters">
 <h1>Background: algorithm and parameters</h1>
 <p>The method works by maintaining a list of points from which the mesh can be
 grown (“fringe” points) and extending it until all possible points are
@@ -205,246 +125,173 @@ references for more details:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="the-code">
+</section>
+<section id="the-code">
 <h1>The code</h1>
 <p>First, create a file, let’s say, <code class="docutils literal notranslate"><span class="pre">greedy_projection.cpp</span></code> in your favorite
 editor, and place the following code inside it:</p>
-<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/kdtree/kdtree_flann.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/features/normal_3d.h&gt;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;pcl/surface/gp3.h&gt;</span><span class="cp"></span>
-
-<span class="kt">int</span>
-<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="c1">// Load input file into a PointCloud&lt;T&gt; with an appropriate type</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span> <span class="n">cloud_blob</span><span class="p">;</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span> <span class="p">(</span><span class="s">&quot;bun0.pcd&quot;</span><span class="p">,</span> <span class="n">cloud_blob</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">fromPCLPointCloud2</span> <span class="p">(</span><span class="n">cloud_blob</span><span class="p">,</span> <span class="o">*</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="c1">//* the data should be available in cloud</span>
-
-  <span class="c1">// Normal estimation*</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">NormalEstimation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span> <span class="n">n</span><span class="p">;</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">normals</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">tree</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">tree</span><span class="o">-&gt;</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">setKSearch</span> <span class="p">(</span><span class="mi">20</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="o">*</span><span class="n">normals</span><span class="p">);</span>
-  <span class="c1">//* normals should not contain the point normals + surface curvatures</span>
-
-  <span class="c1">// Concatenate the XYZ and normal fields*</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud_with_normals</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">concatenateFields</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">normals</span><span class="p">,</span> <span class="o">*</span><span class="n">cloud_with_normals</span><span class="p">);</span>
-  <span class="c1">//* cloud_with_normals = cloud + normals</span>
-
-  <span class="c1">// Create search tree*</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">tree2</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">tree2</span><span class="o">-&gt;</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span>
-
-  <span class="c1">// Initialize objects</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">GreedyProjectionTriangulation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span> <span class="n">gp3</span><span class="p">;</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PolygonMesh</span> <span class="n">triangles</span><span class="p">;</span>
-
-  <span class="c1">// Set the maximum distance between connected points (maximum edge length)</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setSearchRadius</span> <span class="p">(</span><span class="mf">0.025</span><span class="p">);</span>
-
-  <span class="c1">// Set typical values for the parameters</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMu</span> <span class="p">(</span><span class="mf">2.5</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumNearestNeighbors</span> <span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumSurfaceAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// 45 degrees</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMinimumAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">18</span><span class="p">);</span> <span class="c1">// 10 degrees</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumAngle</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// 120 degrees</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setNormalConsistency</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
-
-  <span class="c1">// Get result</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree2</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">reconstruct</span> <span class="p">(</span><span class="n">triangles</span><span class="p">);</span>
-
-  <span class="c1">// Additional vertex information</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">parts</span> <span class="o">=</span> <span class="n">gp3</span><span class="p">.</span><span class="n">getPartIDs</span><span class="p">();</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">states</span> <span class="o">=</span> <span class="n">gp3</span><span class="p">.</span><span class="n">getPointStates</span><span class="p">();</span>
-
-  <span class="c1">// Finish</span>
-  <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/point_types.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/io/pcd_io.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/search/kdtree.h&gt;</span><span class="c1"> // for KdTree</span><span class="cp"></span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/features/normal_3d.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pcl/surface/gp3.h&gt;</span><span class="cp"></span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kt">int</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="p">{</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">  </span><span class="c1">// Load input file into a PointCloud&lt;T&gt; with an appropriate type</span>
+<span class="linenos">11</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">cloud</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span><span class="w"> </span><span class="n">cloud_blob</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;bun0.pcd&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cloud_blob</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">fromPCLPointCloud2</span><span class="w"> </span><span class="p">(</span><span class="n">cloud_blob</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">  </span><span class="c1">//* the data should be available in cloud</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="w">  </span><span class="c1">// Normal estimation*</span>
+<span class="linenos">18</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">NormalEstimation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">19</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">normals</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">21</span><span class="w">  </span><span class="n">tree</span><span class="o">-&gt;</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">22</span><span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">23</span><span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">setSearchMethod</span><span class="w"> </span><span class="p">(</span><span class="n">tree</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">24</span><span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">setKSearch</span><span class="w"> </span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">25</span><span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">compute</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">normals</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">26</span><span class="w">  </span><span class="c1">//* normals should not contain the point normals + surface curvatures</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="w">  </span><span class="c1">// Concatenate the XYZ and normal fields*</span>
+<span class="linenos">29</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">cloud_with_normals</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">30</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">concatenateFields</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">normals</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">cloud_with_normals</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">31</span><span class="w">  </span><span class="c1">//* cloud_with_normals = cloud + normals</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">  </span><span class="c1">// Create search tree*</span>
+<span class="linenos">34</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">tree2</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">35</span><span class="w">  </span><span class="n">tree2</span><span class="o">-&gt;</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">  </span><span class="c1">// Initialize objects</span>
+<span class="linenos">38</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">GreedyProjectionTriangulation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="w"> </span><span class="n">gp3</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">39</span><span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PolygonMesh</span><span class="w"> </span><span class="n">triangles</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">40</span>
+<span class="linenos">41</span><span class="w">  </span><span class="c1">// Set the maximum distance between connected points (maximum edge length)</span>
+<span class="linenos">42</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setSearchRadius</span><span class="w"> </span><span class="p">(</span><span class="mf">0.025</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">43</span>
+<span class="linenos">44</span><span class="w">  </span><span class="c1">// Set typical values for the parameters</span>
+<span class="linenos">45</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMu</span><span class="w"> </span><span class="p">(</span><span class="mf">2.5</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">46</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumNearestNeighbors</span><span class="w"> </span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">47</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumSurfaceAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span><span class="w"> </span><span class="c1">// 45 degrees</span>
+<span class="linenos">48</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMinimumAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">18</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10 degrees</span>
+<span class="linenos">49</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumAngle</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// 120 degrees</span>
+<span class="linenos">50</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setNormalConsistency</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">51</span>
+<span class="linenos">52</span><span class="w">  </span><span class="c1">// Get result</span>
+<span class="linenos">53</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">54</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setSearchMethod</span><span class="w"> </span><span class="p">(</span><span class="n">tree2</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">55</span><span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">reconstruct</span><span class="w"> </span><span class="p">(</span><span class="n">triangles</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">56</span>
+<span class="linenos">57</span><span class="w">  </span><span class="c1">// Additional vertex information</span>
+<span class="linenos">58</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gp3</span><span class="p">.</span><span class="n">getPartIDs</span><span class="p">();</span><span class="w"></span>
+<span class="linenos">59</span><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">states</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gp3</span><span class="p">.</span><span class="n">getPointStates</span><span class="p">();</span><span class="w"></span>
+<span class="linenos">60</span>
+<span class="linenos">61</span><span class="w">  </span><span class="c1">// Finish</span>
+<span class="linenos">62</span><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">63</span><span class="p">}</span><span class="w"></span>
 </pre></div>
-</td></tr></table></div>
-<p>The input file you can find at pcl/test/bun0.pcd</p>
 </div>
-<div class="section" id="the-explanation">
+<p>The input file you can find at pcl/test/bun0.pcd</p>
+</section>
+<section id="the-explanation">
 <h1>The explanation</h1>
 <p>Now, let’s break down the code piece by piece.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Load input file into a PointCloud&lt;T&gt; with an appropriate type</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span> <span class="n">cloud_blob</span><span class="p">;</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span> <span class="p">(</span><span class="s">&quot;bun0.pcd&quot;</span><span class="p">,</span> <span class="n">cloud_blob</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">fromPCLPointCloud2</span> <span class="p">(</span><span class="n">cloud_blob</span><span class="p">,</span> <span class="o">*</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="c1">//* the data should be available in cloud</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Load input file into a PointCloud&lt;T&gt; with an appropriate type</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">cloud</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PCLPointCloud2</span><span class="w"> </span><span class="n">cloud_blob</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">io</span><span class="o">::</span><span class="n">loadPCDFile</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;bun0.pcd&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">cloud_blob</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">fromPCLPointCloud2</span><span class="w"> </span><span class="p">(</span><span class="n">cloud_blob</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//* the data should be available in cloud</span>
 </pre></div>
 </div>
 <p>as the example PCD has only XYZ coordinates, we load it into a
 PointCloud&lt;PointXYZ&gt;.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Normal estimation*</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">NormalEstimation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span> <span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span> <span class="n">n</span><span class="p">;</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">normals</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">tree</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">tree</span><span class="o">-&gt;</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">setKSearch</span> <span class="p">(</span><span class="mi">20</span><span class="p">);</span>
-  <span class="n">n</span><span class="p">.</span><span class="n">compute</span> <span class="p">(</span><span class="o">*</span><span class="n">normals</span><span class="p">);</span>
-  <span class="c1">//* normals should not contain the point normals + surface curvatures</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Normal estimation*</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">NormalEstimation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="p">,</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">normals</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">Normal</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointXYZ</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">tree</span><span class="o">-&gt;</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">setSearchMethod</span><span class="w"> </span><span class="p">(</span><span class="n">tree</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">setKSearch</span><span class="w"> </span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">n</span><span class="p">.</span><span class="n">compute</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">normals</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//* normals should not contain the point normals + surface curvatures</span>
 </pre></div>
 </div>
 <p>the method requires normals, so they are estimated using the standard method
 from PCL.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Concatenate the XYZ and normal fields*</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">cloud_with_normals</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">concatenateFields</span> <span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span> <span class="o">*</span><span class="n">normals</span><span class="p">,</span> <span class="o">*</span><span class="n">cloud_with_normals</span><span class="p">);</span>
-  <span class="c1">//* cloud_with_normals = cloud + normals</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Concatenate the XYZ and normal fields*</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">cloud_with_normals</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">PointCloud</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">concatenateFields</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">cloud</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">normals</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">cloud_with_normals</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//* cloud_with_normals = cloud + normals</span>
 </pre></div>
 </div>
 <p>Since coordinates and normals need to be in the same PointCloud, we create a PointNormal type point cloud.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Create search tree*</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span> <span class="n">tree2</span> <span class="p">(</span><span class="k">new</span> <span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span>
-  <span class="n">tree2</span><span class="o">-&gt;</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Create search tree*</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;::</span><span class="n">Ptr</span><span class="w"> </span><span class="n">tree2</span><span class="w"> </span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">pcl</span><span class="o">::</span><span class="n">search</span><span class="o">::</span><span class="n">KdTree</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">tree2</span><span class="o">-&gt;</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// Initialize objects</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">GreedyProjectionTriangulation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span> <span class="n">gp3</span><span class="p">;</span>
-  <span class="n">pcl</span><span class="o">::</span><span class="n">PolygonMesh</span> <span class="n">triangles</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Initialize objects</span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">GreedyProjectionTriangulation</span><span class="o">&lt;</span><span class="n">pcl</span><span class="o">::</span><span class="n">PointNormal</span><span class="o">&gt;</span><span class="w"> </span><span class="n">gp3</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="n">pcl</span><span class="o">::</span><span class="n">PolygonMesh</span><span class="w"> </span><span class="n">triangles</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The above lines deal with the initialization of the required objects.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Set the maximum distance between connected points (maximum edge length)</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setSearchRadius</span> <span class="p">(</span><span class="mf">0.025</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Set the maximum distance between connected points (maximum edge length)</span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setSearchRadius</span><span class="w"> </span><span class="p">(</span><span class="mf">0.025</span><span class="p">);</span><span class="w"></span>
 
-  <span class="c1">// Set typical values for the parameters</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMu</span> <span class="p">(</span><span class="mf">2.5</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumNearestNeighbors</span> <span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumSurfaceAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span> <span class="c1">// 45 degrees</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMinimumAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">18</span><span class="p">);</span> <span class="c1">// 10 degrees</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumAngle</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// 120 degrees</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setNormalConsistency</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Set typical values for the parameters</span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMu</span><span class="w"> </span><span class="p">(</span><span class="mf">2.5</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumNearestNeighbors</span><span class="w"> </span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumSurfaceAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span><span class="w"> </span><span class="c1">// 45 degrees</span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMinimumAngle</span><span class="p">(</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">18</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10 degrees</span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setMaximumAngle</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">M_PI</span><span class="o">/</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="c1">// 120 degrees</span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setNormalConsistency</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The above lines set the parameters, as explained above.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Get result</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setInputCloud</span> <span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">setSearchMethod</span> <span class="p">(</span><span class="n">tree2</span><span class="p">);</span>
-  <span class="n">gp3</span><span class="p">.</span><span class="n">reconstruct</span> <span class="p">(</span><span class="n">triangles</span><span class="p">);</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Get result</span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setInputCloud</span><span class="w"> </span><span class="p">(</span><span class="n">cloud_with_normals</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">setSearchMethod</span><span class="w"> </span><span class="p">(</span><span class="n">tree2</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">gp3</span><span class="p">.</span><span class="n">reconstruct</span><span class="w"> </span><span class="p">(</span><span class="n">triangles</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
 <p>The lines above set the input objects and perform the actual triangulation.</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>  <span class="c1">// Additional vertex information</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">parts</span> <span class="o">=</span> <span class="n">gp3</span><span class="p">.</span><span class="n">getPartIDs</span><span class="p">();</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">states</span> <span class="o">=</span> <span class="n">gp3</span><span class="p">.</span><span class="n">getPointStates</span><span class="p">();</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="c1">// Additional vertex information</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gp3</span><span class="p">.</span><span class="n">getPartIDs</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">states</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gp3</span><span class="p">.</span><span class="n">getPointStates</span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
 <p>for each point, the ID of the containing connected component and its “state”
 (i.e. gp3.FREE, gp3.BOUNDARY or gp3.COMPLETED) can be retrieved.</p>
-</div>
-<div class="section" id="compiling-and-running-the-program">
+</section>
+<section id="compiling-and-running-the-program">
 <h1>Compiling and running the program</h1>
 <p>Add the following lines to your CMakeLists.txt file:</p>
-<div class="highlight-cmake notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">2.8</span> <span class="s">FATAL_ERROR</span><span class="p">)</span>
-
-<span class="nb">project</span><span class="p">(</span><span class="s">greedy_projection</span><span class="p">)</span>
-
-<span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span> <span class="s">1.2</span> <span class="s">REQUIRED</span><span class="p">)</span>
-
-<span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
-
-<span class="nb">add_executable</span> <span class="p">(</span><span class="s">greedy_projection</span> <span class="s">greedy_projection.cpp</span><span class="p">)</span>
-<span class="nb">target_link_libraries</span> <span class="p">(</span><span class="s">greedy_projection</span> <span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.5</span><span class="w"> </span><span class="s">FATAL_ERROR</span><span class="p">)</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="nb">project</span><span class="p">(</span><span class="s">greedy_projection</span><span class="p">)</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="nb">find_package</span><span class="p">(</span><span class="s">PCL</span><span class="w"> </span><span class="s">1.2</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_INCLUDE_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos"> 8</span><span class="nb">link_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_LIBRARY_DIRS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos"> 9</span><span class="nb">add_definitions</span><span class="p">(</span><span class="o">${</span><span class="nv">PCL_DEFINITIONS</span><span class="o">}</span><span class="p">)</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="nb">add_executable</span> <span class="p">(</span><span class="s">greedy_projection</span><span class="w"> </span><span class="s">greedy_projection.cpp</span><span class="p">)</span>
+<span class="linenos">12</span><span class="nb">target_link_libraries</span> <span class="p">(</span><span class="s">greedy_projection</span><span class="w"> </span><span class="o">${</span><span class="nv">PCL_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 <p>After you have made the executable, you can run it. Simply do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./greedy_projection
 </pre></div>
 </div>
-</div>
-<div class="section" id="saving-and-viewing-the-result">
+</section>
+<section id="saving-and-viewing-the-result">
 <h1>Saving and viewing the result</h1>
 <p>You can view the smoothed cloud for example by saving into a VTK file by:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;pcl/io/vtk_io.h&gt;</span>
@@ -452,46 +299,34 @@ from PCL.</p>
 <span class="n">saveVTKFile</span> <span class="p">(</span><span class="s2">&quot;mesh.vtk&quot;</span><span class="p">,</span> <span class="n">triangles</span><span class="p">);</span>
 </pre></div>
 </div>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

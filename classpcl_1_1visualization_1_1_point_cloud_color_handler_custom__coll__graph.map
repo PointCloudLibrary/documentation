@@ -1,3 +1,5 @@
 <map id="pcl::visualization::PointCloudColorHandlerCustom&lt; PointT &gt;" name="pcl::visualization::PointCloudColorHandlerCustom&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler.html" title="Base Handler class for PointCloud colors. " alt="" coords="28,5,199,69"/>
+<area shape="rect" id="node1" title="Handler for predefined user colors." alt="" coords="5,200,240,256"/>
+<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler.html" title="Base Handler class for PointCloud colors." alt="" coords="30,95,215,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,5,168,32"/>
 </map>

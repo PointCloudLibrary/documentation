@@ -1,3 +1,4 @@
 <map id="pcl::segmentation::grabcut::Gaussian" name="pcl::segmentation::grabcut::Gaussian">
-<area shape="rect" id="node2" href="$structpcl_1_1segmentation_1_1grabcut_1_1_color.html" title="Structure to save RGB colors into floats. " alt="" coords="5,6,139,53"/>
+<area shape="rect" id="node1" title="Gaussian structure." alt="" coords="5,109,152,151"/>
+<area shape="rect" id="node2" href="$structpcl_1_1segmentation_1_1grabcut_1_1_color.html" title="Structure to save RGB colors into floats." alt="" coords="5,5,152,47"/>
 </map>

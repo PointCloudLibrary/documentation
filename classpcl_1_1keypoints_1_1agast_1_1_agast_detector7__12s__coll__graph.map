@@ -1,3 +1,4 @@
 <map id="pcl::keypoints::agast::AgastDetector7_12s" name="pcl::keypoints::agast::AgastDetector7_12s">
-<area shape="rect" id="node2" href="$classpcl_1_1keypoints_1_1agast_1_1_abstract_agast_detector.html" title="Abstract detector class for AGAST corner point detectors. " alt="" coords="5,6,168,53"/>
+<area shape="rect" id="node1" title="Detector class for AGAST corner point detector (7_12s)." alt="" coords="13,95,175,136"/>
+<area shape="rect" id="node2" href="$classpcl_1_1keypoints_1_1agast_1_1_abstract_agast_detector.html" title="Abstract detector class for AGAST corner point detectors." alt="" coords="5,5,183,47"/>
 </map>

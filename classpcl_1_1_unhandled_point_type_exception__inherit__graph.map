@@ -1,3 +1,5 @@
 <map id="pcl::UnhandledPointTypeException" name="pcl::UnhandledPointTypeException">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error. " alt="" coords="53,83,184,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,252,181"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="60,80,197,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="59,5,198,32"/>
 </map>

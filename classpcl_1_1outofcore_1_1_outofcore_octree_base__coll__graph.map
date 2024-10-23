@@ -1,5 +1,10 @@
 <map id="pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, PointT &gt;" name="pcl::outofcore::OutofcoreOctreeBase&lt; ContainerT, PointT &gt;">
-<area shape="rect" id="node10" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title="pcl::outofcore::Outofcore\lOctreeBase\&lt; ContainerT,\l pcl::PointXYZRGB \&gt;" alt="" coords="576,65,747,129"/>
-<area shape="rect" id="node4" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree, with accessors to its data via the pcl::outofcore::OutofcoreOctreeDiskContainer class or pcl::outofcore::OutofcoreOctreeRamContainer class, whichever it is templated against. " alt="" coords="864,96,1067,160"/>
-<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="581,209,741,239"/>
+<area shape="rect" id="node1" title="This code defines the octree used for point storage at Urban Robotics." alt="" coords="856,165,1043,221"/>
+<area shape="rect" id="node5" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title=" " alt="" coords="1344,158,1592,229"/>
+<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree,..." alt="" coords="1787,92,2008,148"/>
+<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="1381,5,1555,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1431,56,1505,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="619,101,832,142"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,139,96,165"/>
+<area shape="rect" id="node8" title=" " alt="" coords="381,162,595,203"/>
 </map>

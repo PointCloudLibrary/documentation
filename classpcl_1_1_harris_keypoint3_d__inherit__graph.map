@@ -1,5 +1,7 @@
 <map id="pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;" name="pcl::HarrisKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="12,182,175,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="node1" title="HarrisKeypoint3D uses the idea of 2D Harris keypoints, but instead of using image gradients,..." alt="" coords="21,351,188,407"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="15,260,194,301"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,95,193,121"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="121,171,328,197"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="11,5,187,32"/>
 </map>

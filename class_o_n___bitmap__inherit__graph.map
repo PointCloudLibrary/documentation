@@ -1,6 +1,7 @@
 <map id="ON_Bitmap" name="ON_Bitmap">
-<area shape="rect" id="node5" href="$class_o_n___embedded_bitmap.html" title="ON_EmbeddedBitmap" alt="" coords="5,160,157,189"/>
-<area shape="rect" id="node7" href="$class_o_n___windows_bitmap.html" title="ON_WindowsBitmap" alt="" coords="181,160,325,189"/>
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="124,5,209,35"/>
-<area shape="rect" id="node9" href="$class_o_n___windows_bitmap_ex.html" title="ON_WindowsBitmapEx" alt="" coords="173,237,333,267"/>
+<area shape="rect" id="node1" title=" " alt="" coords="132,80,228,107"/>
+<area shape="rect" id="node3" href="$class_o_n___embedded_bitmap.html" title=" " alt="" coords="5,155,171,181"/>
+<area shape="rect" id="node4" href="$class_o_n___windows_bitmap.html" title=" " alt="" coords="195,155,349,181"/>
+<area shape="rect" id="node2" href="$class_o_n___object.html" title=" " alt="" coords="135,5,225,32"/>
+<area shape="rect" id="node5" href="$class_o_n___windows_bitmap_ex.html" title=" " alt="" coords="187,229,357,256"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="pcl::CustomPointRepresentation&lt; PointDefault &gt;" name="pcl::CustomPointRepresentation&lt; PointDefault &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointDefault \&gt;" alt="" coords="28,121,193,167"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="28,6,193,53"/>
+<area shape="rect" id="node1" title="CustomPointRepresentation extends PointRepresentation to allow for sub&#45;part selection on the point." alt="" coords="5,200,236,241"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="30,109,211,151"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="30,5,211,47"/>
 </map>

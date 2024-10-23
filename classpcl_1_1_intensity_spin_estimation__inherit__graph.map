@@ -1,5 +1,6 @@
 <map id="pcl::IntensitySpinEstimation&lt; PointInT, PointOutT &gt;" name="pcl::IntensitySpinEstimation&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="20,182,175,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="9,101,185,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="15,5,180,35"/>
+<area shape="rect" id="node1" title="IntensitySpinEstimation estimates the intensity&#45;domain spin image descriptors for a given point cloud..." alt="" coords="5,261,209,303"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="22,171,193,212"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="13,95,201,121"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="19,5,195,32"/>
 </map>

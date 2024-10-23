@@ -1,5 +1,5 @@
 <map id="pcl::SampleConsensusModelCylinder&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelCylinder&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1_sample_consensus_model_cylinder.html" title="pcl::SampleConsensusModel\lCylinder\&lt; pcl::PointXYZRGB,\l PointNT \&gt;" alt="" coords="647,31,841,95"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="19,5,211,51"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="5,74,224,121"/>
+<area shape="rect" id="node1" title="SampleConsensusModelCylinder defines a model for 3D cylinder segmentation." alt="" coords="293,39,501,80"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="21,5,229,47"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="5,71,245,112"/>
 </map>

@@ -1,6 +1,7 @@
 <map id="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::LocationInfo" name="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::LocationInfo">
-<area shape="rect" id="node2" href="$structpcl_1_1_point_x_y_z_r_g_b.html" title="A point structure representing Euclidean xyz coordinates, and the RGB color. " alt="" coords="12,85,143,115"/>
-<area shape="rect" id="node4" href="$structpcl_1_1___point_x_y_z_r_g_b.html" title="pcl::_PointXYZRGB" alt="" coords="5,5,144,35"/>
-<area shape="rect" id="node6" href="$structpcl_1_1_normal.html" title="A point structure representing normal coordinates and the surface curvature estimate. " alt="" coords="171,85,259,115"/>
-<area shape="rect" id="node8" href="$structpcl_1_1___normal.html" title="pcl::_Normal" alt="" coords="168,5,264,35"/>
+<area shape="rect" id="node1" title="This structure stores the information about the keypoint." alt="" coords="33,185,267,241"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_point_x_y_z_r_g_b.html" title="A point structure representing Euclidean xyz coordinates, and the RGB color." alt="" coords="11,81,147,108"/>
+<area shape="rect" id="node3" href="$structpcl_1_1___point_x_y_z_r_g_b.html" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node4" href="$structpcl_1_1_normal.html" title="A point structure representing normal coordinates and the surface curvature estimate." alt="" coords="175,81,272,108"/>
+<area shape="rect" id="node5" href="$structpcl_1_1___normal.html" title=" " alt="" coords="173,5,277,32"/>
 </map>

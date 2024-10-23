@@ -1,7 +1,8 @@
 <map id="pcl::tracking::KLDAdaptiveParticleFilterTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::KLDAdaptiveParticleFilterTracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node11" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="9,493,188,557"/>
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="5,281,192,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="27,182,171,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="11,101,187,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
+<area shape="rect" id="node1" title="KLDAdaptiveParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the..." alt="" coords="9,352,203,408"/>
+<area shape="rect" id="node6" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="9,457,203,513"/>
+<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="5,261,207,303"/>
+<area shape="rect" id="node3" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="28,171,184,212"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="12,95,200,121"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="18,5,194,32"/>
 </map>

@@ -1,3 +1,6 @@
 <map id="pcl::KdTreeFLANN&lt; PointT, Dist &gt;" name="pcl::KdTreeFLANN&lt; PointT, Dist &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="24,5,173,35"/>
+<area shape="rect" id="node1" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures." alt="" coords="5,263,204,304"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations." alt="" coords="23,187,187,213"/>
+<area shape="rect" id="node3" title=" " alt="" coords="59,5,150,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="251,96,457,123"/>
 </map>

@@ -1,4 +1,10 @@
 <map id="pcl::PlaneRefinementComparator&lt; PointT, PointNT, PointLT &gt;" name="pcl::PlaneRefinementComparator&lt; PointT, PointNT, PointLT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="7,83,217,130"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function. " alt="" coords="24,5,200,35"/>
+<area shape="rect" id="node1" title="PlaneRefinementComparator is a Comparator that operates on plane coefficients, for use in planar segm..." alt="" coords="1155,143,1392,185"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="763,83,995,125"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function." alt="" coords="307,41,504,68"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,129,96,156"/>
+<area shape="rect" id="node5" title=" " alt="" coords="318,93,493,134"/>
+<area shape="rect" id="node6" title=" " alt="" coords="546,147,721,189"/>
+<area shape="rect" id="node7" title=" " alt="" coords="528,209,739,250"/>
+<area shape="rect" id="node8" title=" " alt="" coords="791,275,966,317"/>
 </map>

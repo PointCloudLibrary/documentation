@@ -1,4 +1,10 @@
 <map id="pcl::tracking::Tracker&lt; PointInT, StateT &gt;" name="pcl::tracking::Tracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="node1" title="Tracker represents the base tracker class." alt="" coords="1179,94,1335,135"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="888,63,1076,89"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="576,47,752,73"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,97,96,124"/>
+<area shape="rect" id="node5" title=" " alt="" coords="284,47,451,73"/>
+<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="910,123,1054,165"/>
+<area shape="rect" id="node7" title=" " alt="" coords="264,149,471,176"/>
+<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="592,211,736,253"/>
 </map>

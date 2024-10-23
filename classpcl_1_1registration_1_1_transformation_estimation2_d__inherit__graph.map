@@ -1,3 +1,5 @@
 <map id="pcl::registration::TransformationEstimation2D&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimation2D&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="7,6,191,87"/>
+<area shape="rect" id="node1" title="TransformationEstimation2D implements a simple 2D rigid transformation estimation (x,..." alt="" coords="5,273,213,344"/>
+<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title=" " alt="" coords="10,153,209,224"/>
+<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="10,5,209,76"/>
 </map>

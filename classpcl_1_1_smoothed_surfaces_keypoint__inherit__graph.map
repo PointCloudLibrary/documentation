@@ -1,6 +1,7 @@
 <map id="pcl::SmoothedSurfacesKeypoint&lt; PointT, PointNT &gt;" name="pcl::SmoothedSurfacesKeypoint&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointT,\l PointT \&gt;" alt="" coords="33,297,185,343"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="47,5,212,35"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="125,101,301,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="128,182,291,229"/>
+<area shape="rect" id="node1" title="Based on the paper: Xinju Li and Igor Guskov Multi&#45;scale features for approximate alignment of point&#45;..." alt="" coords="5,351,233,392"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="36,260,203,301"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="20,95,208,121"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="136,171,343,197"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="26,5,202,32"/>
 </map>

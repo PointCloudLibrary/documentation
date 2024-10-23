@@ -1,7 +1,8 @@
 <map id="pcl::QuantizableModality" name="pcl::QuantizableModality">
-<area shape="rect" id="node3" href="$classpcl_1_1_color_gradient_modality.html" title="pcl::ColorGradientModality\l\&lt; PointRGBT \&gt;" alt="" coords="553,11,729,57"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_color_gradient_modality.html" title="Modality based on max&#45;RGB gradients. " alt="" coords="225,45,401,92"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_color_modality.html" title="pcl::ColorModality\l\&lt; PointInT \&gt;" alt="" coords="251,115,376,161"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_surface_normal_modality.html" title="Modality based on surface normals. " alt="" coords="223,184,404,231"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_surface_normal_modality.html" title="pcl::SurfaceNormalModality\l\&lt; PointXYZT \&gt;" alt="" coords="551,217,732,264"/>
+<area shape="rect" id="node1" title="Interface for a quantizable modality." alt="" coords="5,122,189,148"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_color_gradient_modality.html" title=" " alt="" coords="594,8,790,49"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_surface_normal_modality.html" title=" " alt="" coords="591,134,793,176"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_color_gradient_modality.html" title="Modality based on max&#45;RGB gradients." alt="" coords="242,49,438,90"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_color_modality.html" title=" " alt="" coords="270,180,410,221"/>
+<area shape="rect" id="node6" href="$classpcl_1_1_surface_normal_modality.html" title="Modality based on surface normals." alt="" coords="239,114,441,156"/>
 </map>

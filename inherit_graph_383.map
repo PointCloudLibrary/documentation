@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1common_1_1_intensity_field_accessor_3_01pcl_1_1_point_x_y_z_l_01_4.html" title="pcl::common::IntensityField\lAccessor\&lt; pcl::PointXYZL \&gt;" alt="" coords="5,5,195,51"/>
+<area shape="rect" id="node1" href="$structpcl_1_1_correspondence.html" title="Correspondence represents a match between two entities (e.g., points, descriptors,..." alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_point_correspondence3_d.html" title="Representation of a (possible) correspondence between two 3D points in two different coordinate frame..." alt="" coords="208,5,413,32"/>
+<area shape="rect" id="node3" href="$structpcl_1_1_point_correspondence6_d.html" title="Representation of a (possible) correspondence between two points (e.g." alt="" coords="461,5,667,32"/>
 </map>

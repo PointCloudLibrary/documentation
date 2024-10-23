@@ -1,4 +1,5 @@
 <map id="pcl::MultiChannel2DComparisonFeature&lt; PointT &gt;" name="pcl::MultiChannel2DComparisonFeature&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$structpcl_1_1_point_x_y_z_r_g_b.html" title="A point structure representing Euclidean xyz coordinates, and the RGB color. " alt="" coords="45,85,176,115"/>
-<area shape="rect" id="node4" href="$structpcl_1_1___point_x_y_z_r_g_b.html" title="pcl::_PointXYZRGB" alt="" coords="41,5,180,35"/>
+<area shape="rect" id="node1" title="Feature for comparing two sample points in 2D multi&#45;channel data." alt="" coords="5,185,236,227"/>
+<area shape="rect" id="node2" href="$structpcl_1_1_point_x_y_z_r_g_b.html" title="A point structure representing Euclidean xyz coordinates, and the RGB color." alt="" coords="53,81,189,108"/>
+<area shape="rect" id="node3" href="$structpcl_1_1___point_x_y_z_r_g_b.html" title=" " alt="" coords="49,5,192,32"/>
 </map>

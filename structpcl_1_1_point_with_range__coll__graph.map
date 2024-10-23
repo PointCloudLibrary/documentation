@@ -1,3 +1,4 @@
 <map id="pcl::PointWithRange" name="pcl::PointWithRange">
-<area shape="rect" id="node2" href="$structpcl_1_1___point_with_range.html" title="pcl::_PointWithRange" alt="" coords="5,5,155,35"/>
+<area shape="rect" id="node1" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float." alt="" coords="9,80,162,107"/>
+<area shape="rect" id="node2" href="$structpcl_1_1___point_with_range.html" title=" " alt="" coords="5,5,165,32"/>
 </map>

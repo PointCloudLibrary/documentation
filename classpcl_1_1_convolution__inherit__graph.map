@@ -1,5 +1,7 @@
 <map id="pcl::Convolution&lt; PointT &gt;" name="pcl::Convolution&lt; PointT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1_convolution.html" title="pcl::Convolution\&lt; PointInT \&gt;" alt="" coords="5,261,195,291"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="31,85,169,115"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="17,5,183,35"/>
+<area shape="rect" id="node1" title="A 2D convolution class." alt="" coords="133,157,331,184"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_convolution.html" title=" " alt="" coords="5,247,216,273"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_convolution.html" title=" " alt="" coords="241,247,469,273"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="155,81,309,108"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="144,5,320,32"/>
 </map>

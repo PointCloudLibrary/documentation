@@ -1,2 +1,6 @@
 <map id="pcl::io::DepthImage" name="pcl::io::DepthImage">
+<area shape="rect" id="node1" title="This class provides methods to fill a depth or disparity image." alt="" coords="125,199,274,225"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,223,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="69,5,159,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="247,95,322,121"/>
 </map>

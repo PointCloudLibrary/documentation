@@ -1,0 +1,7 @@
+<map id="pcl::poisson::PoissonException" name="pcl::poisson::PoissonException">
+<area shape="rect" id="node1" title="A base class for all poisson exceptions which inherits from std::runtime_error." alt="" coords="192,78,413,105"/>
+<area shape="rect" id="node3" href="$classpcl_1_1poisson_1_1_poisson_bad_argument_exception.html" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="465,5,648,47"/>
+<area shape="rect" id="node4" href="$classpcl_1_1poisson_1_1_poisson_bad_init_exception.html" title="An exception that is thrown when initialization fails." alt="" coords="465,71,648,112"/>
+<area shape="rect" id="node5" href="$classpcl_1_1poisson_1_1_poisson_open_m_p_exception.html" title="An exception that is thrown when something goes wrong inside an openMP for loop." alt="" coords="461,136,652,177"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,78,144,105"/>
+</map>

@@ -1,15 +1,12 @@
 <map id="ON_Material" name="ON_Material">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="9,121,95,151"/>
-<area shape="rect" id="node19" href="$class_o_n___texture.html" title="ON_Texture" alt="" coords="323,276,416,305"/>
-<area shape="rect" id="node4" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_UuidIndex \&gt;" alt="" coords="843,17,995,63"/>
-<area shape="rect" id="node6" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="293,32,445,61"/>
-<area shape="rect" id="node31" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="296,191,443,220"/>
-<area shape="rect" id="node10" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="5,391,99,420"/>
-<area shape="rect" id="node12" href="$class_o_n___color.html" title="ON_Color" alt="" coords="12,644,92,673"/>
-<area shape="rect" id="node15" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_Texture \&gt;" alt="" coords="1020,259,1169,306"/>
-<area shape="rect" id="node17" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Texture \&gt;" alt="" coords="609,268,817,297"/>
-<area shape="rect" id="node23" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="11,204,93,233"/>
-<area shape="rect" id="node26" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="7,299,97,328"/>
-<area shape="rect" id="node29" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="11,483,93,512"/>
-<area shape="rect" id="node34" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="639,199,788,228"/>
+<area shape="rect" id="node1" title=" " alt="" coords="904,183,1007,209"/>
+<area shape="rect" id="node2" href="$class_o_n___object.html" title=" " alt="" coords="591,5,682,32"/>
+<area shape="rect" id="node3" href="$class_o_n___simple_array.html" title=" " alt="" coords="555,57,719,98"/>
+<area shape="rect" id="node4" href="$class_o_n___simple_array.html" title=" " alt="" coords="212,64,379,91"/>
+<area shape="rect" id="node5" href="$class_o_n__w_string.html" title=" " alt="" coords="587,123,686,149"/>
+<area shape="rect" id="node6" href="$class_o_n___color.html" title=" " alt="" coords="595,228,678,255"/>
+<area shape="rect" id="node7" href="$class_o_n___object_array.html" title=" " alt="" coords="556,279,717,321"/>
+<area shape="rect" id="node8" href="$class_o_n___class_array.html" title=" " alt="" coords="5,291,163,317"/>
+<area shape="rect" id="node9" href="$class_o_n___object_array.html" title=" " alt="" coords="213,316,377,343"/>
+<area shape="rect" id="node10" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="595,347,678,373"/>
 </map>

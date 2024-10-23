@@ -1,4 +1,8 @@
 <map id="pcl::CorrespondenceGrouping&lt; PointModelT, PointSceneT &gt;" name="pcl::CorrespondenceGrouping&lt; PointModelT, PointSceneT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointModelT \&gt;" alt="" coords="7,101,207,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="24,5,189,35"/>
+<area shape="rect" id="node1" title="Abstract base class for Correspondence Grouping algorithms." alt="" coords="56,361,277,403"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="59,285,275,312"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="79,196,255,223"/>
+<area shape="rect" id="node4" title=" " alt="" coords="109,5,200,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="149,95,315,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="227,145,499,172"/>
 </map>

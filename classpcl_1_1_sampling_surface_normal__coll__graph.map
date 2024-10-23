@@ -1,4 +1,7 @@
 <map id="pcl::SamplingSurfaceNormal&lt; PointT &gt;" name="pcl::SamplingSurfaceNormal&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="29,83,168,112"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
+<area shape="rect" id="node1" title="SamplingSurfaceNormal divides the input space into grids until each grid contains a maximum of N poin..." alt="" coords="58,336,265,377"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="85,260,238,287"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,184,181,211"/>
+<area shape="rect" id="node4" title=" " alt="" coords="52,5,143,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="146,95,313,121"/>
 </map>

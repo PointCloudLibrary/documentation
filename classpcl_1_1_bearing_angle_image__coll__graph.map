@@ -1,7 +1,10 @@
 <map id="pcl::BearingAngleImage" name="pcl::BearingAngleImage">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZRGBA \&gt;" alt="" coords="19,315,248,344"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
-<area shape="rect" id="node15" href="$structpcl_1_1_point_x_y_z_r_g_b_a.html" title="A point structure representing Euclidean xyz coordinates, and the RGBA color. " alt="" coords="293,315,435,344"/>
-<area shape="rect" id="node17" href="$structpcl_1_1___point_x_y_z_r_g_b_a.html" title="pcl::_PointXYZRGBA" alt="" coords="303,219,449,248"/>
+<area shape="rect" id="node1" title="class BearingAngleImage is used as an interface to generate Bearing Angle(BA) image." alt="" coords="149,365,326,392"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="5,276,251,303"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="33,187,223,213"/>
+<area shape="rect" id="node4" title=" " alt="" coords="85,5,160,32"/>
+<area shape="rect" id="node5" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="176,96,296,123"/>
+<area shape="rect" id="node6" title=" " alt="" coords="199,5,273,32"/>
+<area shape="rect" id="node7" href="$structpcl_1_1_point_x_y_z_r_g_b_a.html" title="A point structure representing Euclidean xyz coordinates, and the RGBA color." alt="" coords="275,276,421,303"/>
+<area shape="rect" id="node8" href="$structpcl_1_1___point_x_y_z_r_g_b_a.html" title=" " alt="" coords="272,187,424,213"/>
 </map>

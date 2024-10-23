@@ -1,4 +1,5 @@
 <map id="pcl::SVM" name="pcl::SVM">
-<area shape="rect" id="node3" href="$classpcl_1_1_s_v_m_classify.html" title="SVM (Support Vector Machines) classification of a dataset. " alt="" coords="5,83,128,112"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_s_v_m_train.html" title="SVM (Support Vector Machines) training class for the SVM machine learning. " alt="" coords="152,83,256,112"/>
+<area shape="rect" id="node1" title="Base class for SVM SVM (Support Vector Machines)." alt="" coords="103,5,181,32"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_s_v_m_classify.html" title="SVM (Support Vector Machines) classification of a dataset." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_s_v_m_train.html" title="SVM (Support Vector Machines) training class for the SVM machine learning." alt="" coords="159,80,269,107"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="pcl::SampleConsensusModelEllipse3D&lt; PointT &gt;" name="pcl::SampleConsensusModelEllipse3D&lt; PointT &gt;">
+<area shape="rect" id="node1" title="SampleConsensusModelEllipse3D defines a model for 3D ellipse segmentation." alt="" coords="15,96,223,137"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_model_ellipse3_d.html" title=" " alt="" coords="5,200,232,241"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="15,5,223,47"/>
+</map>

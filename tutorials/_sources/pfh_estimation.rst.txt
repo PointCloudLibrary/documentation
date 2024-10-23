@@ -116,7 +116,7 @@ Estimating PFH features
 -----------------------
 
 Point Feature Histograms are implemented in PCL as part of the `pcl_features
-<http://docs.pointclouds.org/trunk/a02944.html>`_ library. 
+<https://pointclouds.org/documentation/group__features.html>`_ library. 
 
 The default PFH implementation uses 5 binning subdivisions (e.g., each of the
 four feature values will use this many bins from its value interval), and does
@@ -163,7 +163,7 @@ points in the input dataset.
      // Compute the features
      pfh.compute (*pfhs);
 
-     // pfhs->points.size () should have the same size as the input cloud->points.size ()*
+     // pfhs->size () should have the same size as the input cloud->size ()*
    }
 
 The actual **compute** call from the **PFHEstimation** class does nothing internally but::
@@ -203,9 +203,9 @@ resultant histogram as an array of float values.
 
   .. code-block:: cpp
 
-     for (int i = 0; i < normals->points.size(); i++)
+     for (int i = 0; i < normals->size(); i++)
      {
-       if (!pcl::isFinite<pcl::Normal>(normals->points[i]))
+       if (!pcl::isFinite<pcl::Normal>((*normals)[i]))
        {
          PCL_WARN("normals[%d] is not finite\n", i);
        }

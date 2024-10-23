@@ -1,4 +1,5 @@
 <map id="pcl::RandomizedMEstimatorSampleConsensus&lt; PointT &gt;" name="pcl::RandomizedMEstimatorSampleConsensus&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="24,102,181,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="8,5,197,35"/>
+<area shape="rect" id="node1" title="RandomizedMEstimatorSampleConsensus represents an implementation of the RMSAC (Randomized M&#45;estimator..." alt="" coords="5,185,217,227"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus.html" title=" " alt="" coords="27,95,195,136"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class." alt="" coords="8,5,215,32"/>
 </map>

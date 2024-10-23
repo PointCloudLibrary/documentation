@@ -1,3 +1,4 @@
 <map id="pcl::octree::OctreeLeafNode&lt; ContainerT &gt;" name="pcl::octree::OctreeLeafNode&lt; ContainerT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="19,5,179,35"/>
+<area shape="rect" id="node1" title="Abstract octree leaf class" alt="" coords="5,80,208,121"/>
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="19,5,194,32"/>
 </map>

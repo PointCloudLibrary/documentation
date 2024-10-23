@@ -1,4 +1,5 @@
 <map id="pcl::visualization::PCLVisualizer" name="pcl::visualization::PCLVisualizer">
-<area shape="rect" id="node2" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; vtkRender\lWindowInteractor \&gt;" alt="" coords="5,102,192,149"/>
-<area shape="rect" id="node4" href="$classvtk_smart_pointer.html" title="vtkSmartPointer\&lt; T \&gt;" alt="" coords="25,5,172,35"/>
+<area shape="rect" id="node1" title="PCL Visualizer main class." alt="" coords="45,199,177,240"/>
+<area shape="rect" id="node2" href="$classvtk_smart_pointer.html" title=" " alt="" coords="5,95,216,136"/>
+<area shape="rect" id="node3" href="$classvtk_smart_pointer.html" title=" " alt="" coords="27,5,194,32"/>
 </map>

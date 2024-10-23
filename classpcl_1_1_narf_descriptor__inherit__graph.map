@@ -1,7 +1,7 @@
 <map id="pcl::NarfDescriptor" name="pcl::NarfDescriptor">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l Narf36 \&gt;" alt="" coords="40,323,243,370"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="5,155,227,184"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="105,5,271,35"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="173,101,349,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="165,209,320,255"/>
+<area shape="rect" id="node1" title="Computes NARF feature descriptors for points in a range image See B." alt="" coords="44,365,188,392"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title=" " alt="" coords="5,275,227,316"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="28,5,204,32"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="133,95,321,121"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="136,171,307,212"/>
 </map>

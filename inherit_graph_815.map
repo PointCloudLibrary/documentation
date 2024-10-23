@@ -1,5 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1octree_1_1_octree2_buf_base.html" title="Octree double buffer class " alt="" coords="5,22,253,69"/>
-<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="pcl::octree::OctreePoint\lCloud\&lt; PointT, LeafContainer\lT, BranchContainerT, Octree2BufBase\l\&lt; LeafContainerT, BranchContainerT \&gt; \&gt;" alt="" coords="303,5,561,86"/>
-<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title="Octree pointcloud change detector class " alt="" coords="611,13,851,77"/>
+<area shape="rect" id="node1" href="$classpcl_1_1octree_1_1_octree_container_base.html" title="Octree container class that can serve as a base to construct own leaf node container classes." alt="" coords="5,181,241,207"/>
+<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_container_empty.html" title="Octree container class that does not store any information." alt="" coords="293,5,497,47"/>
+<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_octree_container_point_index.html" title="Octree container class that does store a single point index." alt="" coords="293,71,497,112"/>
+<area shape="rect" id="node4" href="$classpcl_1_1octree_1_1_octree_container_point_indices.html" title="Octree container class that does store a vector of point indices." alt="" coords="293,136,497,177"/>
+<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_point_cloud_adjacency_container.html" title="Octree adjacency leaf container class&#45; stores a list of pointers to neighbors, number of points added..." alt="" coords="301,202,490,258"/>
+<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_point_cloud_density_container.html" title="Octree pointcloud density leaf node class" alt="" coords="308,283,483,324"/>
+<area shape="rect" id="node7" href="$classpcl_1_1octree_1_1_octree_point_cloud_voxel_centroid_container.html" title="Octree pointcloud voxel centroid leaf node class" alt="" coords="289,349,501,405"/>
 </map>

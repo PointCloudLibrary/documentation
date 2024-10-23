@@ -1,0 +1,11 @@
+<map id="pcl::GASDColorEstimation&lt; PointInT, PointOutT &gt;" name="pcl::GASDColorEstimation&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="node1" title="GASDColorEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given..." alt="" coords="28,739,219,780"/>
+<area shape="rect" id="node2" href="$classpcl_1_1_g_a_s_d_estimation.html" title=" " alt="" coords="5,648,241,689"/>
+<area shape="rect" id="node3" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="61,349,231,391"/>
+<area shape="rect" id="node9" href="$classpcl_1_1_feature.html" title=" " alt="" coords="143,453,314,495"/>
+<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="229,273,417,300"/>
+<area shape="rect" id="node5" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="235,184,411,211"/>
+<area shape="rect" id="node6" title=" " alt="" coords="162,5,253,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="277,95,444,121"/>
+<area shape="rect" id="node8" href="$classpcl_1_1_g_a_s_d_estimation.html" title="GASDEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given poin..." alt="" coords="140,544,317,585"/>
+</map>

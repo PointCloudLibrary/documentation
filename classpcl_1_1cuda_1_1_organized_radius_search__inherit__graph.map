@@ -1,3 +1,4 @@
 <map id="pcl::cuda::OrganizedRadiusSearch&lt; CloudPtr &gt;" name="pcl::cuda::OrganizedRadiusSearch&lt; CloudPtr &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title="pcl::cuda::OrganizedRadius\lSearch\&lt; CloudConstPtr \&gt;" alt="" coords="5,121,187,167"/>
+<area shape="rect" id="node1" title="Kernel to compute a radius neighborhood given a organized point cloud (aka range image cloud)" alt="" coords="5,5,204,47"/>
+<area shape="rect" id="node2" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title=" " alt="" coords="5,109,204,151"/>
 </map>

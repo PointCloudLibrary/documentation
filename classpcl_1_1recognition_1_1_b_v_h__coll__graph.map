@@ -1,4 +1,5 @@
 <map id="pcl::recognition::BVH&lt; UserData &gt;" name="pcl::recognition::BVH&lt; UserData &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_b_v_h_1_1_node.html" title="pcl::recognition::BVH\l\&lt; UserData \&gt;::Node" alt="" coords="31,121,177,167"/>
-<area shape="rect" id="node5" href="$classpcl_1_1recognition_1_1_b_v_h_1_1_bounded_object.html" title="pcl::recognition::BVH\l\&lt; UserData \&gt;::BoundedObject" alt="" coords="5,6,203,53"/>
+<area shape="rect" id="node1" title="This class is an implementation of bounding volume hierarchies." alt="" coords="36,213,195,255"/>
+<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_b_v_h_1_1_node.html" title=" " alt="" coords="36,109,195,151"/>
+<area shape="rect" id="node3" href="$classpcl_1_1recognition_1_1_b_v_h_1_1_bounded_object.html" title=" " alt="" coords="5,5,225,47"/>
 </map>

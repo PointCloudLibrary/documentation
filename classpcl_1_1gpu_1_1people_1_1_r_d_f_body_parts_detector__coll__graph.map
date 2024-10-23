@@ -1,6 +1,7 @@
 <map id="pcl::gpu::people::RDFBodyPartsDetector" name="pcl::gpu::people::RDFBodyPartsDetector">
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned char \&gt;" alt="" coords="600,14,765,61"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="5,88,187,117"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class " alt="" coords="237,88,435,117"/>
-<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; prob_histogram \&gt;" alt="" coords="600,143,765,190"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1001,78,1195,119"/>
+<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="656,17,835,58"/>
+<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class" alt="" coords="5,87,204,113"/>
+<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="DeviceArray2D class" alt="" coords="253,87,471,113"/>
+<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="656,141,835,182"/>
 </map>
