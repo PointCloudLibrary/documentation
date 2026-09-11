@@ -1,17 +1,34 @@
 <map id="pcl::PCLSurfaceBase&lt; PointInT &gt;" name="pcl::PCLSurfaceBase&lt; PointInT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class. " alt="" coords="812,111,964,158"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_surface_reconstruction.html" title="SurfaceReconstruction represents a base surface reconstruction class. " alt="" coords="799,189,977,235"/>
-<area shape="rect" id="node31" href="$classpcl_1_1_p_c_l_surface_base.html" title="pcl::PCLSurfaceBase\l\&lt; PointNT \&gt;" alt="" coords="815,258,961,305"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,197,472,227"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,197,171,227"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_concave_hull.html" title="ConcaveHull (alpha shapes) using libqhull library. " alt="" coords="1117,5,1312,35"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_convex_hull.html" title="ConvexHull using libqhull library. " alt="" coords="1121,59,1308,88"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_greedy_projection_triangulation.html" title="GreedyProjectionTriangulation is an implementation of a greedy triangulation algorithm for 3D points ..." alt="" coords="1104,111,1325,158"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_organized_fast_mesh.html" title="Simple triangulation/surface reconstruction for organized point clouds. " alt="" coords="1133,181,1296,227"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_surface_reconstruction.html" title="pcl::SurfaceReconstruction\l\&lt; PointNT \&gt;" alt="" coords="1125,253,1304,299"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_grid_projection.html" title="Grid projection surface reconstruction method. " alt="" coords="1396,183,1524,230"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_marching_cubes.html" title="The marching cubes surface reconstruction algorithm. " alt="" coords="1391,253,1529,299"/>
-<area shape="rect" id="node29" href="$classpcl_1_1_poisson.html" title="The Poisson surface reconstruction algorithm. " alt="" coords="1377,323,1543,352"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_marching_cubes_hoppe.html" title="The marching cubes surface reconstruction algorithm, using a signed distance function based on the di..." alt="" coords="1595,218,1771,265"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_marching_cubes_r_b_f.html" title="The marching cubes surface reconstruction algorithm, using a signed distance function based on radial..." alt="" coords="1600,287,1765,334"/>
+<area shape="rect" id="Node000001" title="Pure abstract class." alt="" coords="555,144,709,184"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_surface_reconstruction.html" title=" " alt="" coords="1196,69,1391,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="713,138,733,132,787,117,842,105,936,95,1030,89,1196,85,1196,91,1031,94,936,100,843,111,788,122,734,137,714,143"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class." alt="" coords="857,184,1023,224"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="723,173,857,191,856,196,723,178"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_surface_reconstruction.html" title="SurfaceReconstruction represents a base surface reconstruction class." alt="" coords="843,120,1037,160"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="723,154,842,145,843,150,723,160"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1_p_c_l_surface_base.html" title=" " alt="" coords="863,248,1017,288"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="691,187,734,204,865,245,864,251,732,209,689,192"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="317,151,505,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="519,161,555,161,555,167,519,167"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,151,181,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,161,317,161,317,167,195,167"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_grid_projection.html" title="Grid projection surface reconstruction method." alt="" coords="1485,5,1626,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1389,63,1484,40,1485,45,1390,69"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_marching_cubes.html" title="The marching cubes surface reconstruction algorithm." alt="" coords="1481,69,1630,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="1404,87,1481,87,1481,92,1404,92"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_poisson.html" title="The Poisson surface reconstruction algorithm." alt="" coords="1465,134,1645,159"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="1399,110,1497,131,1496,137,1398,115"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_marching_cubes_hoppe.html" title="The marching cubes surface reconstruction algorithm, using a signed distance function based on the di..." alt="" coords="1695,37,1885,77"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1643,75,1694,68,1695,73,1644,80"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_marching_cubes_r_b_f.html" title="The marching cubes surface reconstruction algorithm, using a signed distance function based on radial..." alt="" coords="1703,101,1877,141"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1644,99,1703,107,1702,112,1643,104"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_concave_hull.html" title="ConcaveHull (alpha shapes) using libqhull library." alt="" coords="1186,142,1401,167"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1037,186,1061,183,1192,165,1193,170,1062,188,1038,191"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_convex_hull.html" title="ConvexHull using libqhull library." alt="" coords="1190,191,1397,217"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1037,201,1190,201,1190,207,1037,207"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_greedy_projection_triangulation.html" title="GreedyProjectionTriangulation is an implementation of a greedy triangulation algorithm for 3D points ..." alt="" coords="1171,241,1416,281"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="1038,217,1171,239,1170,244,1037,222"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_organized_fast_mesh.html" title="Simple triangulation/surface reconstruction for organized point clouds." alt="" coords="1205,305,1381,345"/>
+<area shape="poly" id="edge13_Node000010_Node000014" title=" " alt="" coords="1018,226,1038,234,1105,263,1172,291,1210,303,1208,308,1170,296,1103,268,1036,238,1016,231"/>
+<area shape="poly" id="edge15_Node000015_Node000004" title=" " alt="" coords="1051,126,1146,113,1196,105,1196,110,1147,119,1051,131"/>
 </map>

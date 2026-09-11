@@ -1,4 +1,7 @@
 <map id="pcl::octree::OctreeDepthFirstIterator&lt; OctreeT &gt;" name="pcl::octree::OctreeDepthFirstIterator&lt; OctreeT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1octree_1_1_octree_leaf_node_iterator.html" title="Octree leaf node iterator class. " alt="" coords="667,31,853,78"/>
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_iterator_base.html" title="Abstract octree iterator class " alt="" coords="235,31,405,78"/>
+<area shape="rect" id="Node000001" title="Octree iterator class" alt="" coords="25,93,205,133"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_leaf_node_depth_first_iterator.html" title="Octree leaf node iterator class." alt="" coords="5,181,224,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,147,117,181,112,181,112,147"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_iterator_base.html" title="Abstract octree iterator class" alt="" coords="20,5,209,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,59,117,93,112,93,112,59"/>
 </map>

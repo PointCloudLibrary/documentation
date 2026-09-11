@@ -1,0 +1,5 @@
+<map id="pcl::registration::TransformationEstimationPointToPointRobust&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimationPointToPointRobust&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="Node000001" title="TransformationEstimationPointToPointRobust implements SVD&#45;based estimation of the transformation alig..." alt="" coords="5,123,228,192"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="17,5,216,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,89,119,122,114,122,114,89"/>
+</map>

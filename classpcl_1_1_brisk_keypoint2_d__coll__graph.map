@@ -1,7 +1,17 @@
 <map id="pcl::BriskKeypoint2D&lt; PointInT, PointOutT, IntensityT &gt;" name="pcl::BriskKeypoint2D&lt; PointInT, PointOutT, IntensityT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="117,235,280,282"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="Node000001" title="Detects BRISK interest points based on the original code and paper reference by." alt="" coords="25,437,192,492"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="5,363,212,388"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,402,111,437,106,437,106,402"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="148,288,336,313"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,322,131,365,129,360,207,318"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="223,5,314,31"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="210,32,156,45,103,61,62,82,50,93,46,105,46,302,50,320,60,336,90,361,86,365,56,340,45,322,41,302,41,104,45,90,58,78,101,56,155,39,209,27"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="257,44,245,68,237,94,230,150,231,206,242,288,237,288,226,206,224,150,231,93,240,66,252,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="247,93,413,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="287,41,324,91,319,94,283,44"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="355,191,531,216"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="328,27,361,37,391,52,415,70,430,90,440,113,446,142,447,190,442,191,441,143,434,114,426,92,412,74,389,57,359,42,327,32"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="317,132,288,183,264,242,248,289,243,287,259,240,284,180,313,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="354,126,388,155,430,188,426,193,384,159,351,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="408,224,268,290,265,285,406,219"/>
 </map>

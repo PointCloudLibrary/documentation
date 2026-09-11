@@ -1,4 +1,7 @@
 <map id="pcl::geometry::PolygonMesh&lt; MeshTraitsT &gt;" name="pcl::geometry::PolygonMesh&lt; MeshTraitsT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="pcl::geometry::MeshBase\l\&lt; PolygonMesh\&lt; MeshTraitsT\l \&gt;, MeshTraitsT, PolygonMeshTag \&gt;" alt="" coords="452,8,687,72"/>
-<area shape="rect" id="node4" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="Base class for the half&#45;edge mesh. " alt="" coords="7,8,177,72"/>
+<area shape="rect" id="Node000001" title="General half&#45;edge mesh that can store any polygon with a minimum number of vertices of 3." alt="" coords="785,15,992,55"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1geometry_1_1_mesh_base.html" title=" " alt="" coords="481,7,736,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="750,32,785,32,785,37,750,37"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1geometry_1_1_mesh_base.html" title="Base class for the half&#45;edge mesh." alt="" coords="5,7,192,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,32,481,32,481,37,206,37"/>
 </map>

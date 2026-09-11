@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_glasbey_l_u_t.html" title="Color lookup table consisting of 256 colors structured in a maximally discontinuous manner..." alt="" coords="5,5,125,35"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1filters_1_1_convolving_kernel.html" title="Class ConvolvingKernel base class for all convolving kernels." alt="" coords="5,5,224,45"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1filters_1_1_gaussian_kernel.html" title="Gaussian kernel implementation interface Use this as implementation reference." alt="" coords="272,5,467,45"/>
+<area shape="poly" id="edge510_Node000000_Node000001" title=" " alt="" coords="238,23,272,23,272,28,238,28"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1filters_1_1_gaussian_kernel_r_g_b.html" title="Gaussian kernel implementation interface with RGB channel handling Use this as implementation referen..." alt="" coords="515,5,720,45"/>
+<area shape="poly" id="edge511_Node000001_Node000002" title=" " alt="" coords="481,23,514,23,514,28,481,28"/>
 </map>

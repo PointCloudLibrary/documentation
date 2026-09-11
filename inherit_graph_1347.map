@@ -1,3 +1,29 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$classvtk_vertex_buffer_object.html" title="vtkVertexBufferObject" alt="" coords="135,5,284,35"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,173,129,198"/>
+<area shape="rect" id="Node000001" href="$structpcl_1_1visualization_1_1_p_c_l_context_image_item.html" title="Struct PCLContextImageItem a specification of vtkContextItem, used to add an image to the scene in th..." alt="" coords="177,101,353,141"/>
+<area shape="poly" id="edge902_Node000000_Node000001" title=" " alt="" coords="120,166,202,139,204,144,121,171"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="198,165,333,205"/>
+<area shape="poly" id="edge903_Node000000_Node000002" title=" " alt="" coords="143,183,198,183,198,188,143,188"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1visualization_1_1_p_c_l_painter2_d.html" title="PCL Painter2D main class." alt="" coords="199,229,331,269"/>
+<area shape="poly" id="edge914_Node000000_Node000013" title=" " alt="" coords="121,200,204,227,202,232,120,205"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1visualization_1_1context__items_1_1_circle.html" title=" " alt="" coords="415,5,583,45"/>
+<area shape="poly" id="edge904_Node000002_Node000003" title=" " alt="" coords="343,158,351,151,368,128,375,104,381,80,399,55,418,43,421,48,403,59,386,82,380,106,373,130,355,155,347,162"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1visualization_1_1context__items_1_1_line.html" title=" " alt="" coords="420,69,579,109"/>
+<area shape="poly" id="edge906_Node000002_Node000005" title=" " alt="" coords="338,158,352,151,376,135,400,119,428,107,431,112,403,124,379,139,355,156,340,163"/>
+<area shape="rect" id="Node000006" href="$structpcl_1_1visualization_1_1context__items_1_1_point.html" title=" " alt="" coords="417,133,581,173"/>
+<area shape="poly" id="edge907_Node000002_Node000006" title=" " alt="" coords="346,172,417,162,418,167,347,177"/>
+<area shape="rect" id="Node000007" href="$structpcl_1_1visualization_1_1context__items_1_1_points.html" title=" " alt="" coords="414,197,585,237"/>
+<area shape="poly" id="edge908_Node000002_Node000007" title=" " alt="" coords="347,194,414,203,414,208,346,199"/>
+<area shape="rect" id="Node000010" href="$structpcl_1_1visualization_1_1context__items_1_1_rectangle.html" title=" " alt="" coords="401,261,597,301"/>
+<area shape="poly" id="edge911_Node000002_Node000010" title=" " alt="" coords="340,208,355,215,379,231,403,247,431,259,428,264,400,252,376,236,352,220,338,213"/>
+<area shape="rect" id="Node000012" href="$structpcl_1_1visualization_1_1context__items_1_1_text.html" title=" " alt="" coords="420,325,579,365"/>
+<area shape="poly" id="edge913_Node000002_Node000012" title=" " alt="" coords="347,209,355,215,373,240,380,265,386,288,403,311,421,323,418,328,399,315,381,291,375,266,368,243,351,219,343,213"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1visualization_1_1context__items_1_1_disk.html" title=" " alt="" coords="681,5,841,45"/>
+<area shape="poly" id="edge905_Node000003_Node000004" title=" " alt="" coords="597,23,680,23,680,28,597,28"/>
+<area shape="rect" id="Node000008" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title=" " alt="" coords="669,133,852,173"/>
+<area shape="poly" id="edge909_Node000007_Node000008" title=" " alt="" coords="594,191,678,171,679,176,596,197"/>
+<area shape="rect" id="Node000009" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title=" " alt="" coords="669,197,852,237"/>
+<area shape="poly" id="edge910_Node000007_Node000009" title=" " alt="" coords="599,215,669,215,669,220,599,220"/>
+<area shape="rect" id="Node000011" href="$structpcl_1_1visualization_1_1context__items_1_1_filled_rectangle.html" title=" " alt="" coords="645,261,876,301"/>
+<area shape="poly" id="edge912_Node000010_Node000011" title=" " alt="" coords="611,279,645,279,645,284,611,284"/>
 </map>

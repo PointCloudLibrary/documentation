@@ -1,4 +1,9 @@
 <map id="pcl::outofcore::OutofcoreAbstractNodeContainer&lt; PointT &gt;" name="pcl::outofcore::OutofcoreAbstractNodeContainer&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1outofcore_1_1_outofcore_octree_disk_container.html" title="Class responsible for serialization and deserialization of out of core point data. " alt="" coords="223,5,428,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1outofcore_1_1_outofcore_octree_ram_container.html" title="Storage container class which the outofcore octree base is templated against. " alt="" coords="223,74,428,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,62,189,117"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1outofcore_1_1_outofcore_octree_disk_container.html" title="Class responsible for serialization and deserialization of out of core point data." alt="" coords="359,5,587,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,69,359,42,359,47,203,74"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1outofcore_1_1_outofcore_octree_ram_container.html" title="Storage container class which the outofcore octree base is templated against." alt="" coords="359,69,588,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,87,359,87,359,92,203,92"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_node_container.html" title=" " alt="" coords="381,134,565,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,107,381,141,380,146,202,112"/>
 </map>

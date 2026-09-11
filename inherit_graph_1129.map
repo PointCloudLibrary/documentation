@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1_s_i_f_t_keypoint_field_selector_3_01_point_x_y_z_r_g_b_a_01_4.html" title="pcl::SIFTKeypointFieldSelector\l\&lt; PointXYZRGBA \&gt;" alt="" coords="5,5,208,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1registration_1_1_warp_point_rigid.html" title="Base warp point class." alt="" coords="5,45,219,100"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1registration_1_1_warp_point_rigid3_d.html" title="WarpPointRigid3D enables 3D (1D rotation + 2D translation) transformations for points." alt="" coords="267,5,497,60"/>
+<area shape="poly" id="edge768_Node000000_Node000001" title=" " alt="" coords="232,52,266,47,267,52,233,58"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_warp_point_rigid6_d.html" title="WarpPointRigid3D enables 6D (3D rotation + 3D translation) transformations for points." alt="" coords="267,84,497,139"/>
+<area shape="poly" id="edge769_Node000000_Node000002" title=" " alt="" coords="233,87,267,92,266,97,232,93"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::io::PointCloudImageExtractorFromNormalField&lt; PointT &gt;" name="pcl::io::PointCloudImageExtractorFromNormalField&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds. " alt="" coords="9,6,175,53"/>
+<area shape="rect" id="Node000001" title="Image Extractor which uses the data present in the &quot;normal&quot; field." alt="" coords="5,93,199,148"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds." alt="" coords="12,5,192,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,59,105,93,99,93,99,59"/>
 </map>

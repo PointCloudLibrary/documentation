@@ -1,3 +1,7 @@
 <map id="pcl::outofcore::OutofcoreOctreeBaseMetadata" name="pcl::outofcore::OutofcoreOctreeBaseMetadata">
-<area shape="rect" id="node2" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_metadata.html" title="pcl::outofcore::Outofcore\lAbstractMetadata" alt="" coords="5,6,171,53"/>
+<area shape="rect" id="Node000001" title="Encapsulated class to read JSON metadata into memory, and write the JSON metadata associated with the..." alt="" coords="81,108,264,148"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_metadata.html" title=" " alt="" coords="5,5,188,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,55,161,106,156,110,117,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="213,13,287,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,51,189,109,185,106,231,48"/>
 </map>

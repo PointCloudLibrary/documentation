@@ -1,12 +1,25 @@
 <map id="pcl::visualization::PCLContextItem" name="pcl::visualization::PCLContextItem">
-<area shape="rect" id="node5" href="$structpcl_1_1visualization_1_1context__items_1_1_circle.html" title="pcl::visualization\l::context_items::Circle" alt="" coords="353,5,508,51"/>
-<area shape="rect" id="node9" href="$structpcl_1_1visualization_1_1context__items_1_1_line.html" title="pcl::visualization\l::context_items::Line" alt="" coords="359,74,503,121"/>
-<area shape="rect" id="node11" href="$structpcl_1_1visualization_1_1context__items_1_1_point.html" title="pcl::visualization\l::context_items::Point" alt="" coords="356,143,505,190"/>
-<area shape="rect" id="node13" href="$structpcl_1_1visualization_1_1context__items_1_1_points.html" title="pcl::visualization\l::context_items::Points" alt="" coords="352,213,509,259"/>
-<area shape="rect" id="node19" href="$structpcl_1_1visualization_1_1context__items_1_1_rectangle.html" title="pcl::visualization\l::context_items::Rectangle" alt="" coords="341,282,520,329"/>
-<area shape="rect" id="node23" href="$structpcl_1_1visualization_1_1context__items_1_1_text.html" title="pcl::visualization\l::context_items::Text" alt="" coords="357,351,504,398"/>
-<area shape="rect" id="node7" href="$structpcl_1_1visualization_1_1context__items_1_1_disk.html" title="pcl::visualization\l::context_items::Disk" alt="" coords="600,5,747,51"/>
-<area shape="rect" id="node15" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title="pcl::visualization\l::context_items::Markers" alt="" coords="591,143,756,190"/>
-<area shape="rect" id="node17" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title="pcl::visualization\l::context_items::Polygon" alt="" coords="591,213,756,259"/>
-<area shape="rect" id="node21" href="$structpcl_1_1visualization_1_1context__items_1_1_filled_rectangle.html" title="pcl::visualization\l::context_items::FilledRectangle" alt="" coords="568,282,779,329"/>
+<area shape="rect" id="Node000001" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="177,165,312,205"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1visualization_1_1context__items_1_1_circle.html" title=" " alt="" coords="374,5,542,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,152,304,103,330,77,359,55,381,43,384,48,361,60,334,81,308,106,269,156"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1visualization_1_1context__items_1_1_line.html" title=" " alt="" coords="379,69,537,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="288,156,359,119,390,107,391,112,361,124,291,161"/>
+<area shape="rect" id="Node000006" href="$structpcl_1_1visualization_1_1context__items_1_1_point.html" title=" " alt="" coords="376,133,540,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="325,171,375,163,376,168,326,176"/>
+<area shape="rect" id="Node000007" href="$structpcl_1_1visualization_1_1context__items_1_1_points.html" title=" " alt="" coords="373,197,543,237"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="326,195,373,202,372,207,325,200"/>
+<area shape="rect" id="Node000010" href="$structpcl_1_1visualization_1_1context__items_1_1_rectangle.html" title=" " alt="" coords="360,261,556,301"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="291,210,361,247,391,259,390,264,359,252,288,215"/>
+<area shape="rect" id="Node000012" href="$structpcl_1_1visualization_1_1context__items_1_1_text.html" title=" " alt="" coords="379,325,537,365"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="269,215,308,265,334,290,361,311,384,323,381,328,359,316,330,294,304,268,265,218"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,173,129,198"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,183,177,183,177,188,143,188"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1visualization_1_1context__items_1_1_disk.html" title=" " alt="" coords="639,5,799,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="556,23,639,23,639,28,556,28"/>
+<area shape="rect" id="Node000008" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title=" " alt="" coords="628,133,811,173"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="553,191,637,171,638,176,554,197"/>
+<area shape="rect" id="Node000009" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title=" " alt="" coords="628,197,811,237"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="557,215,628,215,628,220,557,220"/>
+<area shape="rect" id="Node000011" href="$structpcl_1_1visualization_1_1context__items_1_1_filled_rectangle.html" title=" " alt="" coords="604,261,835,301"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="569,279,604,279,604,284,569,284"/>
 </map>

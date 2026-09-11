@@ -1,3 +1,5 @@
 <map id="pcl::ONIGrabber" name="pcl::ONIGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="17,5,111,35"/>
+<area shape="rect" id="Node000001" title="A simple ONI grabber." alt="" coords="5,79,131,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="17,5,119,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,65,79,65,44"/>
 </map>

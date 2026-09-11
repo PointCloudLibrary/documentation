@@ -1,6 +1,11 @@
 <map id="pcl::io::PointCloudImageExtractorWithScaling&lt; PointT &gt;" name="pcl::io::PointCloudImageExtractorWithScaling&lt; PointT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_curvature_field.html" title="Image Extractor which uses the data present in the &quot;curvature&quot; field to produce a curvature map (as a..." alt="" coords="439,5,628,69"/>
-<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_intensity_field.html" title="Image Extractor which uses the data present in the &quot;intensity&quot; field to produce a monochrome intensit..." alt="" coords="443,93,624,157"/>
-<area shape="rect" id="node9" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_z_field.html" title="Image Extractor which uses the data present in the &quot;z&quot; field to produce a depth map (as a monochrome ..." alt="" coords="432,181,635,227"/>
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds. " alt="" coords="5,102,171,149"/>
+<area shape="rect" id="Node000001" title="Image Extractor extension which provides functionality to apply scaling to the values extracted from ..." alt="" coords="233,84,413,139"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_curvature_field.html" title="Image Extractor which uses the data present in the &quot;curvature&quot; field to produce a curvature map (as a..." alt="" coords="469,5,679,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="424,77,485,58,487,63,425,82"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_intensity_field.html" title="Image Extractor which uses the data present in the &quot;intensity&quot; field to produce a monochrome intensit..." alt="" coords="473,84,675,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="427,109,473,109,473,114,427,114"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1io_1_1_point_cloud_image_extractor_from_z_field.html" title="Image Extractor which uses the data present in the &quot;z&quot; field to produce a depth map (as a monochrome ..." alt="" coords="461,163,687,203"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="427,139,462,149,503,161,502,166,461,154,426,144"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1io_1_1_point_cloud_image_extractor.html" title="Base Image Extractor class for organized point clouds." alt="" coords="5,91,185,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,109,233,109,233,114,199,114"/>
 </map>

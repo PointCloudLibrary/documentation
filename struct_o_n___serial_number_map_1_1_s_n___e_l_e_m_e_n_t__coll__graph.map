@@ -1,4 +1,8 @@
 <map id="ON_SerialNumberMap::SN_ELEMENT" name="ON_SerialNumberMap::SN_ELEMENT">
-<area shape="rect" id="node2" href="$struct_o_n___serial_number_map_1_1_m_a_p___v_a_l_u_e.html" title="ON_SerialNumberMap\l::MAP_VALUE" alt="" coords="5,6,157,53"/>
-<area shape="rect" id="node5" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="181,15,264,44"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="38,108,205,148"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="220,119,231,128,223,136,206,139,205,134,221,131,226,128,217,123"/>
+<area shape="rect" id="Node000002" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="5,13,88,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,48,109,106,105,109,61,51"/>
+<area shape="rect" id="Node000003" href="$struct_o_n___serial_number_map_1_1_m_a_p___v_a_l_u_e.html" title=" " alt="" coords="113,5,279,45"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="176,58,137,110,133,106,172,55"/>
 </map>

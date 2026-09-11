@@ -1,3 +1,5 @@
 <map id="openni_wrapper::DeviceXtionPro" name="openni_wrapper::DeviceXtionPro">
-<area shape="rect" id="node2" href="$classopenni__wrapper_1_1_open_n_i_device.html" title="Class representing an astract device for OpenNI devices: Primesense PSDK, Microsoft Kinect..." alt="" coords="8,5,213,35"/>
+<area shape="rect" id="Node000001" title="Concrete implementation of the interface OpenNIDevice for a Asus Xtion Pro device." alt="" coords="5,79,240,104"/>
+<area shape="rect" id="Node000002" href="$classopenni__wrapper_1_1_open_n_i_device.html" title="Class representing an astract device for OpenNI devices: Primesense PSDK, Microsoft Kinect,..." alt="" coords="9,5,236,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,44,125,79,120,79,120,44"/>
 </map>

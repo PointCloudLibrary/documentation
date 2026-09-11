@@ -1,3 +1,7 @@
 <map id="pcl::DecisionForest&lt; NodeType &gt;" name="pcl::DecisionForest&lt; NodeType &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1_decision_forest.html" title="pcl::DecisionForest\l\&lt; pcl::face_detection\l::RFTreeNode \&gt;" alt="" coords="19,235,163,299"/>
+<area shape="rect" id="Node000001" title="Class representing a decision forest." alt="" coords="27,95,173,135"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_decision_forest.html" title=" " alt="" coords="20,212,180,267"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,148,103,212,97,212,97,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,195,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,59,103,95,97,95,97,59"/>
 </map>

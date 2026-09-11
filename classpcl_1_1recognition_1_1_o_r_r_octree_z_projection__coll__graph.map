@@ -1,4 +1,7 @@
 <map id="pcl::recognition::ORROctreeZProjection" name="pcl::recognition::ORROctreeZProjection">
-<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_o_r_r_octree_z_projection_1_1_set.html" title="pcl::recognition::ORROctree\lZProjection::Set" alt="" coords="5,5,192,51"/>
-<area shape="rect" id="node4" href="$classpcl_1_1recognition_1_1_o_r_r_octree_z_projection_1_1_pixel.html" title="pcl::recognition::ORROctree\lZProjection::Pixel" alt="" coords="5,74,192,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="304,37,505,77"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1recognition_1_1_o_r_r_octree_z_projection_1_1_pixel.html" title=" " alt="" coords="5,5,207,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,35,304,44,303,49,220,40"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1recognition_1_1_o_r_r_octree_z_projection_1_1_set.html" title=" " alt="" coords="5,69,207,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,74,303,65,304,71,220,80"/>
 </map>

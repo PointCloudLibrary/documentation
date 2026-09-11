@@ -1,5 +1,13 @@
 <map id="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;::Functor&lt; _Scalar, NX, NY &gt;" name="pcl::registration::TransformationEstimationLM&lt; PointSource, PointTarget, MatScalar &gt;::Functor&lt; _Scalar, NX, NY &gt;">
-<area shape="rect" id="node3" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_functor.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;::Functor\&lt; MatScalar \&gt;" alt="" coords="352,62,584,143"/>
-<area shape="rect" id="node5" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_optimization_functor.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;::OptimizationFunctor" alt="" coords="649,5,871,86"/>
-<area shape="rect" id="node7" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_optimization_functor_with_indices.html" title="pcl::registration::\lTransformationEstimationLM\l\&lt; PointSource, PointTarget,\l MatScalar \&gt;::OptimizationFunctorWith\lIndices" alt="" coords="636,109,884,208"/>
+<area shape="rect" id="Node000001" title="Base functor all the models that need non linear optimization must define their own one and implement..." alt="" coords="5,154,233,238"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_functor.html" title=" " alt="" coords="381,161,639,231"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,193,381,193,381,199,247,199"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_optimization_functor.html" title=" " alt="" coords="704,5,951,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,151,626,117,687,84,715,72,717,77,689,89,629,121,573,156"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1registration_1_1_transformation_estimation_l_m_1_1_optimization_functor_with_indices.html" title=" " alt="" coords="689,99,965,183"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="652,169,689,162,689,168,653,174"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_optimization_functor.html" title=" " alt="" coords="688,207,967,291"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="653,217,688,223,687,228,652,222"/>
+<area shape="rect" id="Node000006" href="$structpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted_1_1_optimization_functor_with_indices.html" title=" " alt="" coords="688,315,967,399"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="576,236,689,300,716,313,714,318,687,305,574,240"/>
 </map>

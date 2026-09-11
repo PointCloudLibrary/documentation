@@ -1,6 +1,11 @@
 <map id="ON_RenderingAttributes" name="ON_RenderingAttributes">
-<area shape="rect" id="node2" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Material\lRef \&gt;" alt="" coords="55,233,252,279"/>
-<area shape="rect" id="node4" href="$class_o_n___material_ref.html" title="ON_MaterialRef" alt="" coords="5,136,120,165"/>
-<area shape="rect" id="node6" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="13,5,96,35"/>
-<area shape="rect" id="node8" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="148,136,295,165"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,328,281,353"/>
+<area shape="rect" id="Node000002" href="$class_o_n___class_array.html" title=" " alt="" coords="85,225,299,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,279,195,328,189,328,189,279"/>
+<area shape="rect" id="Node000003" href="$class_o_n___material_ref.html" title=" " alt="" coords="5,137,131,163"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,169,168,223,165,227,92,173"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="27,5,109,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,44,71,137,65,137,65,44"/>
+<area shape="rect" id="Node000005" href="$class_o_n___class_array.html" title=" " alt="" coords="155,137,312,163"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="225,176,203,226,198,224,220,174"/>
 </map>

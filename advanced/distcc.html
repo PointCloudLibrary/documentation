@@ -1,154 +1,75 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Using DistCC to speed up compilation</title>
-  
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=494f4e94"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="index.html" class="icon icon-home"> Point Cloud Library
           
-
-          
+          <a href="index.html" class="icon icon-home">
+            Point Cloud Library
           </a>
-
-          
-            
-            
-              <div class="version">
-                1.11.0-dev
-              </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Using DistCC to speed up compilation</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Using DistCC to speed up compilation</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Using DistCC to speed up compilation</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="using-distcc-to-speed-up-compilation">
-<span id="distc"></span><h1>Using DistCC to speed up compilation</h1>
+             
+  <section id="using-distcc-to-speed-up-compilation">
+<span id="distc"></span><h1>Using DistCC to speed up compilation<a class="headerlink" href="#using-distcc-to-speed-up-compilation" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="http://distcc.org/">distcc</a> is a program to distribute builds of C, C++,
 Objective C or Objective C++ code across several machines on a network.
 <cite>distcc</cite> should always generate the same results as a local build, is simple to
@@ -205,79 +126,79 @@ to problems. Setting PCL_ENABLE_SSE to false will solve this, like:</p>
 something like this. Please note that this is just an example and that the
 messages might vary depending on your operating system and the way your
 library dependencies were compiled/installed:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>-- The C compiler identification is GNU
--- The CXX compiler identification is GNU
--- Check <span class="k">for</span> working C compiler: /usr/bin/distcc
--- Check <span class="k">for</span> working C compiler: /usr/bin/distcc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - <span class="k">done</span>
--- Check <span class="k">for</span> working CXX compiler: /usr/bin/distcc
--- Check <span class="k">for</span> working CXX compiler: /usr/bin/distcc -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - <span class="k">done</span>
--- Performing Test HAVE_SSE3_EXTENSIONS
--- Performing Test HAVE_SSE3_EXTENSIONS - Success
--- Performing Test HAVE_SSE2_EXTENSIONS
--- Performing Test HAVE_SSE2_EXTENSIONS - Success
--- Performing Test HAVE_SSE_EXTENSIONS
--- Performing Test HAVE_SSE_EXTENSIONS - Success
--- Found SSE3 extensions, using flags: -msse3 -mfpmath<span class="o">=</span>sse
--- Boost version: <span class="m">1</span>.42.0
--- Found the following Boost libraries:
---   system
---   filesystem
---   thread
---   date_time
---   iostreams
--- checking <span class="k">for</span> module <span class="s1">&#39;eigen3&#39;</span>
---   found eigen3, version <span class="m">3</span>.0.0
--- Found Eigen: /usr/include/eigen3
--- Eigen found <span class="o">(</span>include: /usr/include/eigen3<span class="o">)</span>
--- checking <span class="k">for</span> module <span class="s1">&#39;flann&#39;</span>
---   found flann, version <span class="m">1</span>.6.8
--- Found Flann: /usr/lib64/libflann_cpp_s.a
--- FLANN found <span class="o">(</span>include: /usr/include, lib: optimized<span class="p">;</span>/usr/lib64/libflann_cpp_s.a<span class="p">;</span>debug<span class="p">;</span>/usr/lib64/libflann_cpp.so<span class="o">)</span>
--- checking <span class="k">for</span> module <span class="s1">&#39;cminpack&#39;</span>
---   found cminpack, version <span class="m">1</span>.0.90
--- Found CMinpack: /usr/lib64/libcminpack.so
--- CMinPack found <span class="o">(</span>include: /usr/include/cminpack-1, libs: optimized<span class="p">;</span>/usr/lib64/libcminpack.so<span class="p">;</span>debug<span class="p">;</span>/usr/lib64/libcminpack.so<span class="o">)</span>
--- Try OpenMP C <span class="nv">flag</span> <span class="o">=</span> <span class="o">[</span>-fopenmp<span class="o">]</span>
--- Performing Test OpenMP_FLAG_DETECTED
--- Performing Test OpenMP_FLAG_DETECTED - Success
--- Try OpenMP CXX <span class="nv">flag</span> <span class="o">=</span> <span class="o">[</span>-fopenmp<span class="o">]</span>
--- Performing Test OpenMP_FLAG_DETECTED
--- Performing Test OpenMP_FLAG_DETECTED - Success
--- Found OpenMP: -fopenmp
--- Found OpenNI: /usr/lib/libOpenNI.so
--- OpenNI found <span class="o">(</span>include: /usr/include/openni, lib: /usr/lib/libOpenNI.so<span class="o">)</span>
--- ROS_ROOT /opt/ros/diamondback/ros
--- Found ROS<span class="p">;</span> USE_ROS is OFF
--- Found GTest: /usr/lib/libgtest.so
--- Tests will be built
--- Found Qhull: /usr/lib/libqhull.so
--- QHULL found <span class="o">(</span>include: /usr/include/qhull, lib: optimized<span class="p">;</span>/usr/lib/libqhull.so<span class="p">;</span>debug<span class="p">;</span>/usr/lib/libqhull.so<span class="o">)</span>
--- VTK found <span class="o">(</span>include: /usr/include/vtk-5.4<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/lib/openmpi/include<span class="p">;</span>/usr/lib/openmpi/include/openmpi<span class="p">;</span>/usr/include/tcl8.5<span class="p">;</span>/usr/include/python2.6<span class="p">;</span>/usr/include/tcl8.5<span class="p">;</span>/usr/lib/jvm/default-java/include<span class="p">;</span>/usr/lib/jvm/default-java/include<span class="p">;</span>/usr/lib/jvm/default-java/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include/libxml2<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include/freetype2, lib: /usr/lib/vtk-5.4<span class="o">)</span>
--- Found Doxygen: /usr/bin/doxygen
--- Found CPack generators: DEB
--- The following subsystems will be built:
---   common
---   octree
---   io
---   kdtree
---   range_image
---   features
---   sample_consensus
---   keypoints
---   filters
---   registration
---   segmentation
---   surface
---   visualization
---   global_tests
--- The following subsystems will not be built:
--- Configuring <span class="k">done</span>
--- Generating <span class="k">done</span>
--- Build files have been written to: /work/PCL/pcl/trunk/build
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>--<span class="w"> </span>The<span class="w"> </span>C<span class="w"> </span>compiler<span class="w"> </span>identification<span class="w"> </span>is<span class="w"> </span>GNU
+--<span class="w"> </span>The<span class="w"> </span>CXX<span class="w"> </span>compiler<span class="w"> </span>identification<span class="w"> </span>is<span class="w"> </span>GNU
+--<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>working<span class="w"> </span>C<span class="w"> </span>compiler:<span class="w"> </span>/usr/bin/distcc
+--<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>working<span class="w"> </span>C<span class="w"> </span>compiler:<span class="w"> </span>/usr/bin/distcc<span class="w"> </span>--<span class="w"> </span>works
+--<span class="w"> </span>Detecting<span class="w"> </span>C<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info
+--<span class="w"> </span>Detecting<span class="w"> </span>C<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info<span class="w"> </span>-<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>working<span class="w"> </span>CXX<span class="w"> </span>compiler:<span class="w"> </span>/usr/bin/distcc
+--<span class="w"> </span>Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>working<span class="w"> </span>CXX<span class="w"> </span>compiler:<span class="w"> </span>/usr/bin/distcc<span class="w"> </span>--<span class="w"> </span>works
+--<span class="w"> </span>Detecting<span class="w"> </span>CXX<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info
+--<span class="w"> </span>Detecting<span class="w"> </span>CXX<span class="w"> </span>compiler<span class="w"> </span>ABI<span class="w"> </span>info<span class="w"> </span>-<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>HAVE_SSE3_EXTENSIONS
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>HAVE_SSE3_EXTENSIONS<span class="w"> </span>-<span class="w"> </span>Success
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>HAVE_SSE2_EXTENSIONS
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>HAVE_SSE2_EXTENSIONS<span class="w"> </span>-<span class="w"> </span>Success
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>HAVE_SSE_EXTENSIONS
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>HAVE_SSE_EXTENSIONS<span class="w"> </span>-<span class="w"> </span>Success
+--<span class="w"> </span>Found<span class="w"> </span>SSE3<span class="w"> </span>extensions,<span class="w"> </span>using<span class="w"> </span>flags:<span class="w"> </span>-msse3<span class="w"> </span>-mfpmath<span class="o">=</span>sse
+--<span class="w"> </span>Boost<span class="w"> </span>version:<span class="w"> </span><span class="m">1</span>.42.0
+--<span class="w"> </span>Found<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>Boost<span class="w"> </span>libraries:
+--<span class="w">   </span>system
+--<span class="w">   </span>filesystem
+--<span class="w">   </span>thread
+--<span class="w">   </span>date_time
+--<span class="w">   </span>iostreams
+--<span class="w"> </span>checking<span class="w"> </span><span class="k">for</span><span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;eigen3&#39;</span>
+--<span class="w">   </span>found<span class="w"> </span>eigen3,<span class="w"> </span>version<span class="w"> </span><span class="m">3</span>.0.0
+--<span class="w"> </span>Found<span class="w"> </span>Eigen:<span class="w"> </span>/usr/include/eigen3
+--<span class="w"> </span>Eigen<span class="w"> </span>found<span class="w"> </span><span class="o">(</span>include:<span class="w"> </span>/usr/include/eigen3<span class="o">)</span>
+--<span class="w"> </span>checking<span class="w"> </span><span class="k">for</span><span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;flann&#39;</span>
+--<span class="w">   </span>found<span class="w"> </span>flann,<span class="w"> </span>version<span class="w"> </span><span class="m">1</span>.6.8
+--<span class="w"> </span>Found<span class="w"> </span>Flann:<span class="w"> </span>/usr/lib64/libflann_cpp_s.a
+--<span class="w"> </span>FLANN<span class="w"> </span>found<span class="w"> </span><span class="o">(</span>include:<span class="w"> </span>/usr/include,<span class="w"> </span>lib:<span class="w"> </span>optimized<span class="p">;</span>/usr/lib64/libflann_cpp_s.a<span class="p">;</span>debug<span class="p">;</span>/usr/lib64/libflann_cpp.so<span class="o">)</span>
+--<span class="w"> </span>checking<span class="w"> </span><span class="k">for</span><span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;cminpack&#39;</span>
+--<span class="w">   </span>found<span class="w"> </span>cminpack,<span class="w"> </span>version<span class="w"> </span><span class="m">1</span>.0.90
+--<span class="w"> </span>Found<span class="w"> </span>CMinpack:<span class="w"> </span>/usr/lib64/libcminpack.so
+--<span class="w"> </span>CMinPack<span class="w"> </span>found<span class="w"> </span><span class="o">(</span>include:<span class="w"> </span>/usr/include/cminpack-1,<span class="w"> </span>libs:<span class="w"> </span>optimized<span class="p">;</span>/usr/lib64/libcminpack.so<span class="p">;</span>debug<span class="p">;</span>/usr/lib64/libcminpack.so<span class="o">)</span>
+--<span class="w"> </span>Try<span class="w"> </span>OpenMP<span class="w"> </span>C<span class="w"> </span><span class="nv">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>-fopenmp<span class="o">]</span>
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>OpenMP_FLAG_DETECTED
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>OpenMP_FLAG_DETECTED<span class="w"> </span>-<span class="w"> </span>Success
+--<span class="w"> </span>Try<span class="w"> </span>OpenMP<span class="w"> </span>CXX<span class="w"> </span><span class="nv">flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>-fopenmp<span class="o">]</span>
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>OpenMP_FLAG_DETECTED
+--<span class="w"> </span>Performing<span class="w"> </span>Test<span class="w"> </span>OpenMP_FLAG_DETECTED<span class="w"> </span>-<span class="w"> </span>Success
+--<span class="w"> </span>Found<span class="w"> </span>OpenMP:<span class="w"> </span>-fopenmp
+--<span class="w"> </span>Found<span class="w"> </span>OpenNI:<span class="w"> </span>/usr/lib/libOpenNI.so
+--<span class="w"> </span>OpenNI<span class="w"> </span>found<span class="w"> </span><span class="o">(</span>include:<span class="w"> </span>/usr/include/openni,<span class="w"> </span>lib:<span class="w"> </span>/usr/lib/libOpenNI.so<span class="o">)</span>
+--<span class="w"> </span>ROS_ROOT<span class="w"> </span>/opt/ros/diamondback/ros
+--<span class="w"> </span>Found<span class="w"> </span>ROS<span class="p">;</span><span class="w"> </span>USE_ROS<span class="w"> </span>is<span class="w"> </span>OFF
+--<span class="w"> </span>Found<span class="w"> </span>GTest:<span class="w"> </span>/usr/lib/libgtest.so
+--<span class="w"> </span>Tests<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>built
+--<span class="w"> </span>Found<span class="w"> </span>Qhull:<span class="w"> </span>/usr/lib/libqhull.so
+--<span class="w"> </span>QHULL<span class="w"> </span>found<span class="w"> </span><span class="o">(</span>include:<span class="w"> </span>/usr/include/qhull,<span class="w"> </span>lib:<span class="w"> </span>optimized<span class="p">;</span>/usr/lib/libqhull.so<span class="p">;</span>debug<span class="p">;</span>/usr/lib/libqhull.so<span class="o">)</span>
+--<span class="w"> </span>VTK<span class="w"> </span>found<span class="w"> </span><span class="o">(</span>include:<span class="w"> </span>/usr/include/vtk-5.4<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/lib/openmpi/include<span class="p">;</span>/usr/lib/openmpi/include/openmpi<span class="p">;</span>/usr/include/tcl8.5<span class="p">;</span>/usr/include/python2.6<span class="p">;</span>/usr/include/tcl8.5<span class="p">;</span>/usr/lib/jvm/default-java/include<span class="p">;</span>/usr/lib/jvm/default-java/include<span class="p">;</span>/usr/lib/jvm/default-java/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include/libxml2<span class="p">;</span>/usr/include<span class="p">;</span>/usr/include/freetype2,<span class="w"> </span>lib:<span class="w"> </span>/usr/lib/vtk-5.4<span class="o">)</span>
+--<span class="w"> </span>Found<span class="w"> </span>Doxygen:<span class="w"> </span>/usr/bin/doxygen
+--<span class="w"> </span>Found<span class="w"> </span>CPack<span class="w"> </span>generators:<span class="w"> </span>DEB
+--<span class="w"> </span>The<span class="w"> </span>following<span class="w"> </span>subsystems<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>built:
+--<span class="w">   </span>common
+--<span class="w">   </span>octree
+--<span class="w">   </span>io
+--<span class="w">   </span>kdtree
+--<span class="w">   </span>range_image
+--<span class="w">   </span>features
+--<span class="w">   </span>sample_consensus
+--<span class="w">   </span>keypoints
+--<span class="w">   </span>filters
+--<span class="w">   </span>registration
+--<span class="w">   </span>segmentation
+--<span class="w">   </span>surface
+--<span class="w">   </span>visualization
+--<span class="w">   </span>global_tests
+--<span class="w"> </span>The<span class="w"> </span>following<span class="w"> </span>subsystems<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>be<span class="w"> </span>built:
+--<span class="w"> </span>Configuring<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Generating<span class="w"> </span><span class="k">done</span>
+--<span class="w"> </span>Build<span class="w"> </span>files<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>written<span class="w"> </span>to:<span class="w"> </span>/work/PCL/pcl/trunk/build
 </pre></div>
 </div>
 </li>
@@ -322,46 +243,34 @@ the compilation process, where certain libraries or binaries require others to
 be compiled first.</p>
 <img alt="_images/distcc_plot.png" src="_images/distcc_plot.png" />
 <p>For more information on how to configure <cite>distcc</cite> please visit <a class="reference external" href="http://distcc.org">http://distcc.org</a>.</p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

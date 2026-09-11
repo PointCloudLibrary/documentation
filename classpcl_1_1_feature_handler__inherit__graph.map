@@ -1,8 +1,15 @@
 <map id="pcl::FeatureHandler&lt; FeatureType, DataSet, ExampleIndex &gt;" name="pcl::FeatureHandler&lt; FeatureType, DataSet, ExampleIndex &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_feature_handler.html" title="pcl::FeatureHandler\l\&lt; pcl::MultiChannel2DComparison\lFeature\&lt; pcl::PointXY32i \&gt;\l, pcl::MultiChannel2DDataSet\l\&lt; DATA_TYPE, NUM_OF_CHANNELS\l \&gt;, pcl::MultipleData2DExampleIndex \&gt;" alt="" coords="460,35,716,151"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_feature_handler.html" title="pcl::FeatureHandler\l\&lt; pcl::MultiChannel2DComparison\lFeature\&lt; pcl::PointXY32f \&gt;\l, pcl::MultiChannel2DDataSet\l\&lt; DATA_TYPE, NUM_OF_CHANNELS\l \&gt;, pcl::MultipleData2DExampleIndex \&gt;" alt="" coords="460,174,716,290"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_feature_handler.html" title="pcl::FeatureHandler\l\&lt; FT, DataSet, ExampleIndex \&gt;" alt="" coords="484,313,692,359"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_multi_channel2_d_comparison_feature_handler.html" title="Feature utility class that handles the creation and evaluation of RGBD comparison features..." alt="" coords="795,61,1005,125"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_scaled_multi_channel2_d_comparison_feature_handler.html" title="Feature utility class that handles the creation and evaluation of RGBD comparison features..." alt="" coords="769,191,1031,273"/>
-<area shape="rect" id="node13" href="$classpcl_1_1face__detection_1_1_feature_handler_depth_average.html" title="pcl::face_detection\l::FeatureHandlerDepthAverage\l\&lt; FT, DataSet, ExampleIndex \&gt;" alt="" coords="796,304,1004,368"/>
+<area shape="rect" id="Node000001" title="Utility class interface which is used for creating and evaluating features." alt="" coords="5,175,185,230"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature_handler.html" title=" " alt="" coords="495,31,777,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,164,170,141,208,122,280,100,354,86,427,78,495,74,495,80,427,83,355,91,281,105,210,126,173,145,139,169"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_feature_handler.html" title=" " alt="" coords="495,153,777,252"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,200,495,200,495,205,199,205"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_feature_handler.html" title=" " alt="" coords="522,276,750,316"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="200,218,210,220,522,274,521,279,209,225,199,224"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_multi_channel2_d_comparison_feature_handler.html" title="Feature utility class that handles the creation and evaluation of RGBD comparison features." alt="" coords="840,53,1071,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="791,77,840,77,840,83,791,83"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_scaled_multi_channel2_d_comparison_feature_handler.html" title="Feature utility class that handles the creation and evaluation of RGBD comparison features." alt="" coords="827,168,1084,237"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="791,200,826,200,826,205,791,205"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1face__detection_1_1_feature_handler_depth_average.html" title=" " alt="" coords="841,269,1069,323"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="764,293,841,293,841,299,764,299"/>
 </map>

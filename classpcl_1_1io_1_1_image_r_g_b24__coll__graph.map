@@ -1,3 +1,9 @@
 <map id="pcl::io::ImageRGB24" name="pcl::io::ImageRGB24">
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_image.html" title="Image interface class providing an interface to fill a RGB or Grayscale image buffer. " alt="" coords="27,5,128,35"/>
+<area shape="rect" id="Node000001" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying RGB24 image." alt="" coords="37,256,191,281"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1io_1_1_image.html" title="Image interface class providing an interface to fill a RGB or Grayscale image buffer." alt="" coords="59,181,169,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,221,117,256,111,256,111,221"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,93,223,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,133,117,181,111,181,111,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="69,5,159,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,45,117,93,111,93,111,45"/>
 </map>

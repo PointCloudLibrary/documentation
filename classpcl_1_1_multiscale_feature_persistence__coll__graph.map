@@ -1,4 +1,14 @@
 <map id="pcl::MultiscaleFeaturePersistence&lt; PointSource, PointFeature &gt;" name="pcl::MultiscaleFeaturePersistence&lt; PointSource, PointFeature &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="16,101,213,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="32,5,197,35"/>
+<area shape="rect" id="Node000001" title="Generic class for extracting the persistent features from an input point cloud It can be given any Fe..." alt="" coords="5,344,245,384"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="19,269,231,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,308,128,344,123,344,123,308"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,5,221,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="140,39,108,63,93,78,82,94,75,118,73,143,76,168,82,192,101,236,120,268,115,270,96,239,77,194,71,169,68,143,69,117,78,92,89,74,104,59,137,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="93,93,259,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="179,45,179,93,173,93,173,45"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="207,181,383,207"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="236,32,265,53,284,85,295,121,298,155,298,181,293,181,293,155,289,122,279,87,261,56,233,37"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="164,131,140,182,131,230,128,269,123,269,125,229,135,181,159,129"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="199,126,234,155,273,179,270,183,230,160,196,130"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="261,215,150,271,147,267,259,210"/>
 </map>

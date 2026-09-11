@@ -1,3 +1,37 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_t_conv_base2_vec_3_01_ncv8u_00_014_01_4.html" title="TConvBase2Vec\&lt; Ncv8u, 4 \&gt;" alt="" coords="7,5,204,35"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,525,144,551"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_p_c_l_exception.html" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="234,317,371,343"/>
+<area shape="poly" id="edge874_Node000000_Node000001" title=" " alt="" coords="98,514,285,341,289,345,102,518"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1poisson_1_1_poisson_exception.html" title="A base class for all poisson exceptions which inherits from std::runtime_error." alt="" coords="192,700,413,725"/>
+<area shape="poly" id="edge887_Node000000_Node000014" title=" " alt="" coords="105,557,286,698,283,702,102,561"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_bad_argument_exception.html" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="483,5,686,31"/>
+<area shape="poly" id="edge875_Node000001_Node000002" title=" " alt="" coords="308,303,325,247,355,176,375,138,399,102,427,68,460,40,482,28,484,32,463,44,431,72,403,105,379,141,359,178,330,249,313,305"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_compute_failed_exception.html" title=" " alt="" coords="479,55,690,80"/>
+<area shape="poly" id="edge876_Node000001_Node000003" title=" " alt="" coords="311,303,331,256,362,198,405,138,431,112,460,89,482,78,484,83,463,94,435,116,409,142,367,201,336,259,316,305"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_i_o_exception.html" title="An exception that is thrown during an IO error (typical read/write errors)" alt="" coords="521,104,648,129"/>
+<area shape="poly" id="edge877_Node000001_Node000004" title=" " alt="" coords="315,304,337,267,370,221,411,176,460,138,489,125,520,118,521,123,491,131,463,143,415,180,374,225,342,270,319,307"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_init_failed_exception.html" title="An exception thrown when init can not be performed should be used in all the PCLBase class inheritant..." alt="" coords="499,153,671,179"/>
+<area shape="poly" id="edge878_Node000001_Node000005" title=" " alt="" coords="321,305,379,245,418,214,460,188,497,174,499,179,462,192,421,218,382,249,325,308"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_invalid_conversion_exception.html" title="An exception that is thrown when a PCLPointCloud2 message cannot be converted into a PCL type." alt="" coords="469,203,700,228"/>
+<area shape="poly" id="edge879_Node000001_Node000006" title=" " alt="" coords="332,308,390,272,460,238,503,225,505,231,462,243,392,277,334,312"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_invalid_s_a_c_model_type_exception.html" title="An exception that is thrown when a sample consensus model doesn&#39;t have the correct number of samples ..." alt="" coords="489,253,680,293"/>
+<area shape="poly" id="edge880_Node000001_Node000007" title=" " alt="" coords="379,312,489,289,490,295,380,317"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_is_not_dense_exception.html" title="An exception that is thrown when a PointCloud is not dense but is attempted to be used as dense." alt="" coords="491,317,679,343"/>
+<area shape="poly" id="edge881_Node000001_Node000008" title=" " alt="" coords="385,327,490,327,490,333,385,333"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_kernel_width_too_small_exception.html" title="An exception that is thrown when the kernel size is too small." alt="" coords="491,367,678,407"/>
+<area shape="poly" id="edge882_Node000001_Node000009" title=" " alt="" coords="380,343,492,366,491,371,379,348"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_not_enough_points_exception.html" title="An exception that is thrown when the number of correspondents is not equal to the minimum required." alt="" coords="473,432,697,457"/>
+<area shape="poly" id="edge883_Node000001_Node000010" title=" " alt="" coords="334,348,392,383,462,417,505,429,503,435,460,422,390,388,332,352"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_solver_didnt_converge_exception.html" title="An exception that is thrown when the non linear solver didn&#39;t converge." alt="" coords="491,482,678,522"/>
+<area shape="poly" id="edge884_Node000001_Node000011" title=" " alt="" coords="326,351,384,409,421,440,463,466,493,479,491,484,460,471,418,444,380,413,322,355"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_unhandled_point_type_exception.html" title=" " alt="" coords="461,547,708,572"/>
+<area shape="poly" id="edge885_Node000001_Node000012" title=" " alt="" coords="318,354,340,394,372,443,413,491,463,532,489,544,487,549,460,536,410,495,368,446,335,397,313,356"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_unorganized_point_cloud_exception.html" title="An exception that is thrown when an organized point cloud is needed but not provided." alt="" coords="484,597,685,637"/>
+<area shape="poly" id="edge886_Node000001_Node000013" title=" " alt="" coords="315,355,335,403,366,465,409,528,434,556,463,581,485,594,482,599,460,586,431,560,404,531,361,467,330,405,310,357"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1poisson_1_1_poisson_bad_argument_exception.html" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="493,661,676,701"/>
+<area shape="poly" id="edge888_Node000014_Node000015" title=" " alt="" coords="427,696,493,688,493,694,428,701"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1poisson_1_1_poisson_bad_init_exception.html" title="An exception that is thrown when initialization fails." alt="" coords="493,725,676,765"/>
+<area shape="poly" id="edge889_Node000014_Node000016" title=" " alt="" coords="428,724,493,732,493,737,427,729"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1poisson_1_1_poisson_open_m_p_exception.html" title="An exception that is thrown when something goes wrong inside an openMP for loop." alt="" coords="489,789,680,829"/>
+<area shape="poly" id="edge890_Node000014_Node000017" title=" " alt="" coords="346,728,462,774,502,786,500,791,460,779,344,733"/>
 </map>

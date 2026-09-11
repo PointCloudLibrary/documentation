@@ -1,17 +1,45 @@
 <map id="pcl::NarfDescriptor" name="pcl::NarfDescriptor">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l Narf36 \&gt;" alt="" coords="1352,99,1555,146"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="705,177,927,207"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="165,152,331,181"/>
-<area shape="rect" id="node14" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="504,125,680,155"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointWithRange \&gt;" alt="" coords="745,67,887,114"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="181,38,315,85"/>
-<area shape="rect" id="node17" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="525,5,659,51"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="965,35,1120,82"/>
-<area shape="rect" id="node20" href="$structpcl_1_1_narf_descriptor_1_1_parameters.html" title="pcl::NarfDescriptor\l::Parameters" alt="" coords="1388,169,1519,215"/>
-<area shape="rect" id="node22" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="1393,239,1513,268"/>
-<area shape="rect" id="node24" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="953,318,1132,365"/>
-<area shape="rect" id="node26" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="191,427,305,456"/>
-<area shape="rect" id="node33" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="521,355,663,384"/>
-<area shape="rect" id="node37" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float..." alt="" coords="972,233,1113,263"/>
-<area shape="rect" id="node39" href="$structpcl_1_1___point_with_range.html" title="pcl::_PointWithRange" alt="" coords="517,231,667,260"/>
+<area shape="rect" id="Node000001" title="Computes NARF feature descriptors for points in a range image See B." alt="" coords="1989,522,2133,547"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1623,308,1844,348"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1780,353,2041,520,2038,524,1777,358"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="497,285,673,310"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="687,297,1623,322,1622,328,687,303"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,153,96,178"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="70,188,107,235,162,290,194,315,230,335,268,348,307,353,1287,353,1464,348,1622,336,1623,341,1464,353,1287,359,307,359,266,354,227,340,191,319,158,294,103,239,66,191"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="84,183,148,219,186,237,226,251,296,268,368,280,498,292,497,297,367,285,295,273,225,256,184,242,145,224,81,188"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,202,392,227"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="110,176,121,179,231,199,230,205,119,184,109,182"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="1200,136,1371,176"/>
+<area shape="poly" id="edge14_Node000006_Node000004" title=" " alt="" coords="74,141,115,108,171,73,237,44,272,35,307,32,906,32,956,35,1006,43,1102,70,1186,103,1249,134,1247,138,1184,108,1100,75,1005,48,955,40,906,37,307,37,273,40,238,49,174,77,118,113,78,145"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="811,143,999,169"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="102,146,120,143,172,138,225,137,506,121,629,121,786,133,837,141,836,146,785,139,628,127,506,127,225,143,173,143,120,148,103,152"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="497,143,673,169"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="110,162,497,155,497,160,110,167"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="358,230,417,249,534,282,532,287,415,255,356,235"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="405,210,533,204,673,192,839,166,840,171,674,197,533,209,406,215"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="382,196,524,166,525,171,383,202"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="1352,178,1681,305,1679,310,1350,183"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="1013,153,1200,153,1200,159,1013,159"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="687,153,810,153,810,159,687,159"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="1668,522,1799,547"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="1813,532,1989,532,1989,537,1813,537"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="1187,515,1384,555"/>
+<area shape="poly" id="edge16_Node000009_Node000010" title=" " alt="" coords="1398,532,1668,532,1668,537,1398,537"/>
+<area shape="rect" id="Node000011" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="525,538,645,563"/>
+<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="659,558,810,572,905,576,1000,572,1096,562,1186,549,1187,554,1096,568,1000,577,905,581,809,577,659,563"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="809,522,1000,547"/>
+<area shape="poly" id="edge22_Node000014_Node000011" title=" " alt="" coords="659,544,809,537,809,542,659,550"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="271,471,346,497"/>
+<area shape="poly" id="edge20_Node000010_Node000012" title=" " alt="" coords="360,481,697,485,928,494,1163,512,1186,515,1186,520,1162,517,927,500,696,490,360,486"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="360,498,417,515,526,538,524,543,415,520,358,503"/>
+<area shape="poly" id="edge23_Node000014_Node000012" title=" " alt="" coords="359,466,442,445,549,429,608,425,668,426,728,433,786,447,819,462,849,481,893,520,889,524,846,485,816,466,784,452,727,438,668,431,608,430,550,434,443,451,360,471"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="271,551,346,577"/>
+<area shape="poly" id="edge19_Node000011_Node000013" title=" " alt="" coords="360,562,473,560,525,556,525,561,473,565,360,568"/>
+<area shape="poly" id="edge21_Node000010_Node000014" title=" " alt="" coords="1014,532,1186,532,1186,537,1014,537"/>
+<area shape="rect" id="Node000015" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float." alt="" coords="1209,607,1362,633"/>
+<area shape="poly" id="edge24_Node000009_Node000015" title=" " alt="" coords="1366,602,1667,544,1668,550,1367,607"/>
+<area shape="rect" id="Node000016" href="$structpcl_1_1___point_with_range.html" title=" " alt="" coords="825,635,985,661"/>
+<area shape="poly" id="edge25_Node000015_Node000016" title=" " alt="" coords="998,639,1208,623,1209,628,998,644"/>
+<area shape="rect" id="Node000017" href="$structpcl_1_1_narf_descriptor_1_1_parameters.html" title=" " alt="" coords="1661,572,1805,612"/>
+<area shape="poly" id="edge26_Node000001_Node000017" title=" " alt="" coords="1818,577,1965,552,2001,545,2003,550,1966,557,1819,582"/>
 </map>

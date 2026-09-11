@@ -1,4 +1,16 @@
 <map id="pcl::registration::CorrespondenceEstimationBase&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::CorrespondenceEstimationBase&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="11,101,208,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="27,5,192,35"/>
+<area shape="rect" id="Node000001" title="Abstract CorrespondenceEstimationBase class." alt="" coords="150,377,380,447"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="159,303,371,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,342,268,377,262,377,262,342"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="273,5,364,31"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="367,34,388,46,408,61,422,81,428,104,428,317,424,338,414,355,399,370,381,382,378,377,396,366,410,352,419,336,422,316,422,105,417,83,404,65,385,50,364,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,44,331,132,328,187,317,241,299,277,278,304,274,301,294,274,312,239,323,186,326,132,320,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="54,93,220,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="260,28,218,38,178,57,159,75,145,95,141,92,155,72,175,52,216,33,258,23"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="41,198,217,223"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="303,43,258,98,199,159,147,200,144,196,195,155,254,94,299,40"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="97,127,61,150,45,165,31,183,17,208,9,230,10,252,21,277,46,310,78,337,113,359,151,376,148,381,111,364,75,341,42,314,16,280,5,253,4,230,12,206,27,180,41,162,58,146,94,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="174,123,199,141,217,158,231,180,245,214,256,248,266,302,261,303,250,249,240,215,227,183,213,162,195,145,171,128"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="138,133,132,198,127,198,132,132"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="127,237,128,258,136,277,151,291,169,300,167,305,148,295,132,280,123,259,122,237"/>
 </map>

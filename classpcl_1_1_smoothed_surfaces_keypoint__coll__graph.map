@@ -1,8 +1,21 @@
 <map id="pcl::SmoothedSurfacesKeypoint&lt; PointT, PointNT &gt;" name="pcl::SmoothedSurfacesKeypoint&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointT,\l PointT \&gt;" alt="" coords="33,350,185,397"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="28,15,193,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="105,129,281,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="112,235,275,282"/>
-<area shape="rect" id="node11" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="305,121,439,167"/>
-<area shape="rect" id="node13" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="305,6,439,53"/>
+<area shape="rect" id="Node000001" title="Based on the paper: Xinju Li and Igor Guskov Multi&#45;scale features for approximate alignment of point&#45;..." alt="" coords="61,569,289,609"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="91,480,258,520"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,534,177,569,172,569,172,534"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="125,317,313,343"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,357,203,393,181,480,176,479,197,391,208,355"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="213,392,419,417"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="247,349,302,389,298,394,244,353"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="229,5,320,31"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="216,29,150,39,81,56,52,66,28,78,13,91,8,105,8,406,10,421,15,433,34,455,61,471,92,482,90,487,58,476,30,459,10,436,5,422,3,406,3,104,9,88,26,73,50,61,80,50,149,34,215,23"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,39,206,63,192,78,181,94,171,125,167,157,170,189,176,221,196,277,214,316,210,318,191,279,171,222,164,190,162,157,166,124,176,92,188,74,203,59,236,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="191,93,358,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="277,45,277,93,272,93,272,45"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="300,191,476,216"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="334,32,363,53,375,69,384,87,393,126,394,163,392,190,387,190,389,163,387,127,379,89,371,72,359,57,331,37"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="334,25,395,36,457,53,506,75,521,89,527,104,527,332,523,343,513,354,480,371,437,384,390,395,389,389,435,379,478,366,510,349,518,341,521,331,521,105,517,92,503,80,456,58,394,42,333,30"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="260,131,245,155,233,182,225,220,221,258,221,317,215,317,215,258,219,219,228,180,240,153,255,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="299,126,332,155,374,188,371,193,329,159,295,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="363,226,236,319,233,315,360,222"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="289,427,205,482,202,478,286,423"/>
 </map>

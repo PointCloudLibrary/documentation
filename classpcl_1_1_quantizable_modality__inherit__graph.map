@@ -1,7 +1,15 @@
 <map id="pcl::QuantizableModality" name="pcl::QuantizableModality">
-<area shape="rect" id="node3" href="$classpcl_1_1_color_gradient_modality.html" title="pcl::ColorGradientModality\l\&lt; PointRGBT \&gt;" alt="" coords="553,11,729,57"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_color_gradient_modality.html" title="Modality based on max&#45;RGB gradients. " alt="" coords="225,45,401,92"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_color_modality.html" title="pcl::ColorModality\l\&lt; PointInT \&gt;" alt="" coords="251,115,376,161"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_surface_normal_modality.html" title="Modality based on surface normals. " alt="" coords="223,184,404,231"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_surface_normal_modality.html" title="pcl::SurfaceNormalModality\l\&lt; PointXYZT \&gt;" alt="" coords="551,217,732,264"/>
+<area shape="rect" id="Node000001" title="Interface for a quantizable modality." alt="" coords="5,118,189,143"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_color_gradient_modality.html" title=" " alt="" coords="594,11,790,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,107,171,66,203,47,238,32,283,20,330,11,425,3,515,5,594,12,593,18,515,10,425,9,331,16,284,25,240,37,206,52,174,71,123,111"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_surface_normal_modality.html" title=" " alt="" coords="591,135,793,175"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,151,174,191,206,210,239,224,295,236,352,240,409,236,465,228,567,201,645,172,647,177,569,206,466,233,410,242,352,245,294,241,238,229,203,215,171,195,120,155"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_color_gradient_modality.html" title="Modality based on max&#45;RGB gradients." alt="" coords="242,47,438,87"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,112,263,84,264,89,160,117"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_color_modality.html" title=" " alt="" coords="270,175,410,215"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="160,144,271,174,269,179,159,149"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_surface_normal_modality.html" title="Modality based on surface normals." alt="" coords="239,111,441,151"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="203,128,239,128,239,133,203,133"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="451,53,593,38,594,43,452,58"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="455,136,591,145,590,150,455,141"/>
 </map>

@@ -1,7 +1,26 @@
 <map id="pcl::AgastKeypoint2DBase&lt; PointInT, PointOutT, IntensityT &gt;" name="pcl::AgastKeypoint2DBase&lt; PointInT, PointOutT, IntensityT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="67,235,229,282"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="Node000001" title="Detects 2D AGAST corner points." alt="" coords="1821,107,2015,162"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="1513,115,1692,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1706,132,1821,132,1821,137,1706,137"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="849,173,1037,198"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1019,168,1086,157,1202,147,1317,139,1513,133,1513,138,1317,145,1202,152,1087,163,1020,173"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="1087,173,1293,198"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="1051,183,1087,183,1087,188,1051,188"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,141,96,166"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="72,129,118,91,168,60,208,37,251,22,307,17,1604,17,1642,20,1681,26,1755,48,1821,77,1874,105,1871,110,1819,82,1753,53,1680,31,1642,25,1604,23,307,23,252,28,210,42,170,65,122,95,75,133"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="91,133,188,99,247,87,307,81,1191,81,1277,84,1363,93,1513,115,1513,120,1363,98,1277,90,1191,87,307,87,248,92,190,105,93,138"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="110,150,201,151,514,149,650,152,826,164,873,170,872,175,825,169,650,157,514,154,201,156,110,156"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,174,392,199"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="110,164,120,165,225,178,225,183,120,171,109,169"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="497,235,673,261"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="88,170,151,199,226,224,296,237,368,244,497,248,497,254,368,250,296,242,225,229,149,204,86,175"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="72,176,110,220,165,269,197,292,232,310,269,322,307,327,944,327,971,323,990,314,1004,300,1017,282,1043,243,1061,224,1085,208,1118,196,1120,201,1088,213,1065,229,1047,247,1021,285,1008,303,993,318,972,328,945,332,307,332,268,327,230,315,194,296,162,274,106,223,68,179"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="406,184,849,183,849,188,406,189"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="360,201,417,217,498,233,497,239,415,223,358,206"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="687,237,755,229,825,217,904,195,906,201,826,223,756,235,687,243"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="1307,181,1391,176,1477,165,1536,152,1537,157,1478,171,1391,181,1307,186"/>
+<area shape="rect" id="Node000008" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title=" " alt="" coords="1501,200,1704,240"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="1690,194,1821,158,1822,163,1691,199"/>
+<area shape="rect" id="Node000009" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title=" " alt="" coords="1089,223,1291,263"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="1305,234,1501,223,1501,228,1305,239"/>
 </map>

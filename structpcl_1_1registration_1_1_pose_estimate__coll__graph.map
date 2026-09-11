@@ -1,5 +1,16 @@
 <map id="pcl::registration::PoseEstimate&lt; PointT &gt;" name="pcl::registration::PoseEstimate&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="37,315,176,362"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="Node000001" title="PoseEstimate struct" alt="" coords="41,391,223,431"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="55,288,209,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,342,135,391,129,391,129,342"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="17,95,137,121"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="54,131,34,151,17,175,8,200,9,212,13,224,27,244,44,260,85,286,82,290,41,265,23,247,8,227,4,213,3,199,12,172,30,148,50,128"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="73,200,263,225"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="94,131,127,174,154,198,150,202,123,178,90,134"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="156,5,231,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="216,39,251,83,286,142,298,173,303,205,299,237,285,266,269,281,251,293,210,306,208,301,249,288,266,277,281,262,294,235,298,206,293,175,281,144,247,86,212,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,41,94,97,91,93,166,37"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="194,45,177,176,173,200,168,199,172,176,188,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="32,5,107,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="72,45,73,69,77,95,72,95,68,70,67,45"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="145,237,136,250,132,269,132,288,126,288,126,269,131,248,140,234"/>
 </map>

@@ -1,7 +1,14 @@
 <map id="ON_MappingRef" name="ON_MappingRef">
-<area shape="rect" id="node2" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MappingChannel \&gt;" alt="" coords="76,198,228,245"/>
-<area shape="rect" id="node4" href="$class_o_n___mapping_channel.html" title="ON_MappingChannel" alt="" coords="79,101,225,131"/>
-<area shape="rect" id="node6" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="5,5,88,35"/>
-<area shape="rect" id="node8" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="188,5,271,35"/>
-<area shape="rect" id="node10" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="321,101,473,131"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,284,132,309"/>
+<area shape="rect" id="Node000002" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="29,5,111,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,45,71,284,66,284,67,44"/>
+<area shape="rect" id="Node000004" href="$class_o_n___mapping_channel.html" title=" " alt="" coords="87,93,245,119"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="77,43,89,68,106,81,126,91,123,96,103,86,85,71,72,46"/>
+<area shape="rect" id="Node000003" href="$class_o_n___simple_array.html" title=" " alt="" coords="85,181,249,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,233,83,286,79,282,136,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="169,132,170,181,164,181,164,132"/>
+<area shape="rect" id="Node000005" href="$class_o_n___xform.html" title=" " alt="" coords="179,5,268,31"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="213,44,196,71,178,95,174,92,192,68,208,41"/>
+<area shape="rect" id="Node000006" href="$class_o_n___simple_array.html" title=" " alt="" coords="269,93,436,119"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="319,127,206,184,203,179,317,122"/>
 </map>

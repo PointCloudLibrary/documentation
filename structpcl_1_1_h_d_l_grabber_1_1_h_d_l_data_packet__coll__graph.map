@@ -1,4 +1,15 @@
 <map id="pcl::HDLGrabber::HDLDataPacket" name="pcl::HDLGrabber::HDLDataPacket">
-<area shape="rect" id="node2" href="$structpcl_1_1_h_d_l_grabber_1_1_h_d_l_firing_data.html" title="pcl::HDLGrabber::HDLFiringData" alt="" coords="5,120,219,149"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_h_d_l_grabber_1_1_h_d_l_laser_return.html" title="pcl::HDLGrabber::HDLLaser\lReturn" alt="" coords="19,6,205,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="279,299,473,339"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_h_d_l_grabber_1_1_h_d_l_firing_data.html" title=" " alt="" coords="107,211,338,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,243,290,272,334,296,332,301,287,277,245,247"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,5,156,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,39,51,58,24,81,15,93,9,106,9,119,14,132,40,160,72,182,108,197,144,208,143,213,106,202,70,187,37,164,10,135,4,120,4,105,10,90,20,77,48,54,79,35"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1_h_d_l_grabber_1_1_h_d_l_laser_return.html" title=" " alt="" coords="141,93,339,133"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="146,37,217,91,214,95,143,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="238,147,227,211,222,210,232,147"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="252,5,319,31"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="320,37,337,53,348,72,353,93,365,151,373,209,378,298,373,299,367,209,360,152,348,94,343,74,333,56,316,40"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="276,44,252,94,247,92,271,42"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="413,211,488,236"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="435,248,393,300,389,297,431,245"/>
 </map>

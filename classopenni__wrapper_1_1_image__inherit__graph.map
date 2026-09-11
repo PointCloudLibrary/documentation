@@ -1,5 +1,9 @@
 <map id="openni_wrapper::Image" name="openni_wrapper::Image">
-<area shape="rect" id="node3" href="$classopenni__wrapper_1_1_image_bayer_g_r_b_g.html" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying Bayer pattern ima..." alt="" coords="212,5,441,35"/>
-<area shape="rect" id="node5" href="$classopenni__wrapper_1_1_image_r_g_b24.html" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying RGB24 image..." alt="" coords="227,59,427,88"/>
-<area shape="rect" id="node7" href="$classopenni__wrapper_1_1_image_y_u_v422.html" title="Concrete implementation of the interface Image for a YUV 422 image used by Primesense devices..." alt="" coords="224,112,429,141"/>
+<area shape="rect" id="Node000001" title="Image class containing just a reference to image meta data." alt="" coords="5,55,180,80"/>
+<area shape="rect" id="Node000002" href="$classopenni__wrapper_1_1_image_bayer_g_r_b_g.html" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying Bayer pattern ima..." alt="" coords="228,5,479,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,49,285,28,286,33,174,55"/>
+<area shape="rect" id="Node000003" href="$classopenni__wrapper_1_1_image_r_g_b24.html" title="This class provides methods to fill a RGB or Grayscale image buffer from underlying RGB24 image." alt="" coords="244,55,463,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,65,244,65,244,70,194,70"/>
+<area shape="rect" id="Node000004" href="$classopenni__wrapper_1_1_image_y_u_v422.html" title="Concrete implementation of the interface Image for a YUV 422 image used by Primesense devices." alt="" coords="240,104,467,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,80,286,101,285,107,173,85"/>
 </map>

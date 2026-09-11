@@ -1,3 +1,5 @@
 <map id="pcl::EuclideanClusterExtraction&lt; PointT &gt;" name="pcl::EuclideanClusterExtraction&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="25,5,191,35"/>
+<area shape="rect" id="Node000001" title="EuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclidean sen..." alt="" coords="5,79,229,119"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="29,5,205,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,44,120,79,115,79,115,44"/>
 </map>

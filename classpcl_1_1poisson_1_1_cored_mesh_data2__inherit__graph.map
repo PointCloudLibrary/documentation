@@ -1,4 +1,7 @@
 <map id="pcl::poisson::CoredMeshData2" name="pcl::poisson::CoredMeshData2">
-<area shape="rect" id="node3" href="$classpcl_1_1poisson_1_1_cored_file_mesh_data2.html" title="pcl::poisson::CoredFileMesh\lData2" alt="" coords="5,83,192,130"/>
-<area shape="rect" id="node5" href="$classpcl_1_1poisson_1_1_cored_vector_mesh_data2.html" title="pcl::poisson::CoredVector\lMeshData2" alt="" coords="216,83,389,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,325,31"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1poisson_1_1_cored_file_mesh_data2.html" title=" " alt="" coords="5,79,208,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,41,135,81,131,76,187,36"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1poisson_1_1_cored_vector_mesh_data2.html" title=" " alt="" coords="232,79,419,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,36,301,76,297,81,241,41"/>
 </map>

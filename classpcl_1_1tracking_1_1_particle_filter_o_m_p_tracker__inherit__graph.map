@@ -1,6 +1,11 @@
 <map id="pcl::tracking::ParticleFilterOMPTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::ParticleFilterOMPTracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="20,281,207,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="41,182,185,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="25,101,201,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="31,5,196,35"/>
+<area shape="rect" id="Node000001" title="ParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within the measure..." alt="" coords="5,347,236,387"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="20,257,221,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,311,123,347,118,347,118,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="43,168,199,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,222,123,257,118,257,118,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="27,93,215,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,132,123,168,118,168,118,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="33,5,209,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,45,123,93,118,93,118,45"/>
 </map>

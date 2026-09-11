@@ -1,19 +1,44 @@
 <map id="ON_3dmObjectAttributes" name="ON_3dmObjectAttributes">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="1757,5,1843,35"/>
-<area shape="rect" id="node4" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="1753,59,1847,88"/>
-<area shape="rect" id="node6" href="$class_o_n___object_rendering_attributes.html" title="ON_ObjectRenderingAttributes" alt="" coords="1699,169,1901,199"/>
-<area shape="rect" id="node8" href="$class_o_n___rendering_attributes.html" title="ON_RenderingAttributes" alt="" coords="1180,296,1343,325"/>
-<area shape="rect" id="node10" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Material\lRef \&gt;" alt="" coords="657,343,855,390"/>
-<area shape="rect" id="node12" href="$class_o_n___material_ref.html" title="ON_MaterialRef" alt="" coords="303,357,417,387"/>
-<area shape="rect" id="node14" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="7,295,89,324"/>
-<area shape="rect" id="node22" href="$class_o_n___mapping_ref.html" title="ON_MappingRef" alt="" coords="1036,221,1153,251"/>
-<area shape="rect" id="node26" href="$class_o_n___mapping_channel.html" title="ON_MappingChannel" alt="" coords="287,209,433,239"/>
-<area shape="rect" id="node41" href="$class_o_n___display_material_ref.html" title="ON_DisplayMaterialRef" alt="" coords="280,91,440,120"/>
-<area shape="rect" id="node16" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="287,156,433,185"/>
-<area shape="rect" id="node20" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_Mapping\lRef \&gt;" alt="" coords="1368,173,1571,219"/>
-<area shape="rect" id="node31" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="284,21,436,51"/>
-<area shape="rect" id="node24" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_MappingChannel \&gt;" alt="" coords="680,213,832,259"/>
-<area shape="rect" id="node28" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="7,203,89,232"/>
-<area shape="rect" id="node39" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_DisplayMaterialRef \&gt;" alt="" coords="680,61,832,107"/>
-<area shape="rect" id="node36" href="$class_o_n___color.html" title="ON_Color" alt="" coords="1760,264,1840,293"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="2192,131,2376,156"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="1831,5,1921,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1935,12,1986,13,2046,17,2109,28,2169,48,2202,65,2231,87,2273,128,2270,132,2227,91,2199,70,2167,52,2107,34,2045,23,1986,18,1935,18"/>
+<area shape="rect" id="Node000003" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="9,220,91,245"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="58,206,80,161,96,139,117,120,151,98,181,83,210,73,238,68,298,65,374,66,1877,66,2024,67,2088,74,2169,91,2219,109,2260,128,2258,133,2217,114,2167,97,2087,79,2024,72,1877,71,374,71,299,70,239,73,211,78,183,88,153,103,120,124,100,142,84,164,62,208"/>
+<area shape="rect" id="Node000008" href="$class_o_n___material_ref.html" title=" " alt="" coords="517,121,643,147"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="104,215,118,211,337,169,517,140,518,145,338,174,119,217,105,220"/>
+<area shape="rect" id="Node000011" href="$class_o_n___mapping_ref.html" title=" " alt="" coords="1105,248,1232,273"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="105,230,494,233,763,239,1037,249,1105,253,1105,258,1037,254,763,244,494,239,105,235"/>
+<area shape="rect" id="Node000013" href="$class_o_n___mapping_channel.html" title=" " alt="" coords="296,271,455,296"/>
+<area shape="poly" id="edge15_Node000013_Node000003" title=" " alt="" coords="85,249,119,263,164,273,210,279,296,283,295,289,209,284,163,278,118,269,83,254"/>
+<area shape="rect" id="Node000018" href="$class_o_n___display_material_ref.html" title=" " alt="" coords="288,393,463,419"/>
+<area shape="poly" id="edge23_Node000018_Node000003" title=" " alt="" coords="60,258,80,312,97,340,120,362,148,375,190,385,288,398,287,403,189,390,147,380,117,367,93,343,75,315,55,260"/>
+<area shape="rect" id="Node000004" href="$class_o_n__w_string.html" title=" " alt="" coords="1827,107,1925,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1939,120,2192,135,2192,141,1939,126"/>
+<area shape="rect" id="Node000005" href="$class_o_n___object_rendering_attributes.html" title=" " alt="" coords="1765,156,1987,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2000,163,2168,154,2192,152,2192,157,2168,159,2001,168"/>
+<area shape="rect" id="Node000006" href="$class_o_n___rendering_attributes.html" title=" " alt="" coords="1430,128,1609,153"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1623,146,1765,157,1765,163,1622,151"/>
+<area shape="rect" id="Node000007" href="$class_o_n___class_array.html" title=" " alt="" coords="1061,121,1276,161"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1290,138,1430,138,1430,143,1290,143"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="657,132,1061,137,1061,142,657,138"/>
+<area shape="rect" id="Node000009" href="$class_o_n___class_array.html" title=" " alt="" coords="703,169,861,195"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="874,170,1061,149,1061,155,875,175"/>
+<area shape="rect" id="Node000010" href="$class_o_n___class_array.html" title=" " alt="" coords="1411,179,1628,219"/>
+<area shape="poly" id="edge18_Node000010_Node000009" title=" " alt="" coords="875,181,1411,194,1411,199,874,187"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="1641,186,1765,176,1765,181,1642,192"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1246,250,1386,230,1445,217,1446,222,1387,235,1247,256"/>
+<area shape="rect" id="Node000012" href="$class_o_n___simple_array.html" title=" " alt="" coords="700,270,864,310"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="877,280,1105,263,1105,268,878,285"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="469,282,700,286,700,291,469,288"/>
+<area shape="rect" id="Node000014" href="$class_o_n___xform.html" title=" " alt="" coords="5,404,95,429"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="104,430,142,437,184,439,226,432,245,424,262,413,272,403,276,392,275,368,274,342,277,328,286,315,300,303,317,294,319,298,303,307,290,318,282,331,279,343,281,368,281,393,276,406,266,417,247,429,227,437,185,444,142,442,103,435"/>
+<area shape="rect" id="Node000015" href="$class_o_n___simple_array.html" title=" " alt="" coords="292,328,459,353"/>
+<area shape="poly" id="edge17_Node000012_Node000015" title=" " alt="" coords="472,329,673,306,699,302,700,307,674,311,472,335"/>
+<area shape="rect" id="Node000017" href="$class_o_n___simple_array.html" title=" " alt="" coords="697,349,867,389"/>
+<area shape="poly" id="edge24_Node000017_Node000015" title=" " alt="" coords="433,354,487,365,596,372,697,371,697,376,596,377,486,370,432,359"/>
+<area shape="rect" id="Node000016" href="$class_o_n___color.html" title=" " alt="" coords="1835,244,1917,269"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1931,248,2041,230,2105,216,2167,198,2218,177,2260,154,2263,159,2220,181,2169,203,2106,221,2042,236,1932,253"/>
+<area shape="poly" id="edge20_Node000016_Node000016" title=" " alt="" coords="1841,230,1851,221,1876,217,1896,220,1909,226,1912,236,1906,245,1901,242,1907,235,1905,229,1895,225,1876,223,1854,226,1845,234"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="880,348,1016,329,1092,322,1167,319,1877,319,1962,316,2028,304,2091,281,2167,242,2198,222,2227,198,2270,154,2274,158,2231,202,2202,226,2169,247,2093,286,2029,310,1963,321,1877,325,1167,325,1092,327,1016,334,881,353"/>
+<area shape="poly" id="edge22_Node000017_Node000018" title=" " alt="" coords="476,404,572,401,673,391,703,386,704,391,674,397,572,406,476,409"/>
 </map>

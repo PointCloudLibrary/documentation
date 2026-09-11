@@ -1,13 +1,28 @@
 <map id="ON_3dmProperties" name="ON_3dmProperties">
-<area shape="rect" id="node2" href="$class_o_n___windows_bitmap.html" title="ON_WindowsBitmap" alt="" coords="513,248,657,277"/>
-<area shape="rect" id="node4" href="$class_o_n___bitmap.html" title="ON_Bitmap" alt="" coords="540,139,631,168"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="467,5,552,35"/>
-<area shape="rect" id="node8" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="835,5,928,35"/>
-<area shape="rect" id="node18" href="$class_o_n__3dm_notes.html" title="ON_3dmNotes" alt="" coords="735,195,844,224"/>
-<area shape="rect" id="node21" href="$class_o_n__3dm_application.html" title="ON_3dmApplication" alt="" coords="852,195,991,224"/>
-<area shape="rect" id="node24" href="$class_o_n__3dm_revision_history.html" title="ON_3dmRevisionHistory" alt="" coords="1003,248,1168,277"/>
-<area shape="rect" id="node10" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="576,5,659,35"/>
-<area shape="rect" id="node12" href="$struct_o_n___windows_b_i_t_m_a_p_i_n_f_o.html" title="ON_WindowsBITMAPINFO" alt="" coords="265,139,449,168"/>
-<area shape="rect" id="node14" href="$struct_o_n___windows_r_g_b_q_u_a_d.html" title="ON_WindowsRGBQUAD" alt="" coords="272,5,443,35"/>
-<area shape="rect" id="node16" href="$struct_o_n___windows_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html" title="ON_WindowsBITMAPINFOHEADER" alt="" coords="5,5,248,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="240,313,384,339"/>
+<area shape="rect" id="Node000002" href="$class_o_n__3dm_revision_history.html" title=" " alt="" coords="5,176,187,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,213,121,232,136,249,167,270,200,287,265,311,263,316,198,292,164,275,133,253,117,235,105,215"/>
+<area shape="rect" id="Node000003" href="$class_o_n__w_string.html" title=" " alt="" coords="253,5,352,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,29,179,40,154,48,138,57,117,85,105,118,100,151,98,176,93,176,95,150,100,117,112,82,134,53,152,43,178,35,239,23"/>
+<area shape="rect" id="Node000004" href="$class_o_n__3dm_notes.html" title=" " alt="" coords="203,176,319,201"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="276,41,265,56,256,88,254,121,261,175,256,176,249,122,251,87,260,54,272,38"/>
+<area shape="rect" id="Node000006" href="$class_o_n___bitmap.html" title=" " alt="" coords="532,117,628,143"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="335,36,359,53,375,68,392,82,532,115,531,120,390,86,372,72,356,57,332,40"/>
+<area shape="rect" id="Node000012" href="$class_o_n__3dm_application.html" title=" " alt="" coords="349,225,499,251"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="319,41,326,53,378,151,420,224,415,227,374,153,322,56,315,44"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="267,214,276,250,291,284,307,312,302,314,286,286,271,252,262,216"/>
+<area shape="rect" id="Node000005" href="$class_o_n___windows_bitmap.html" title=" " alt="" coords="524,225,679,251"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="565,259,479,292,379,316,378,311,478,287,564,254"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="588,156,602,225,596,226,582,157"/>
+<area shape="rect" id="Node000007" href="$class_o_n___object.html" title=" " alt="" coords="463,5,553,31"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="525,41,575,116,570,119,521,44"/>
+<area shape="rect" id="Node000008" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="577,5,660,31"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="613,45,587,118,582,116,608,43"/>
+<area shape="rect" id="Node000009" href="$struct_o_n___windows_b_i_t_m_a_p_i_n_f_o.html" title=" " alt="" coords="711,117,902,143"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="773,151,625,228,622,223,771,147"/>
+<area shape="rect" id="Node000010" href="$struct_o_n___windows_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html" title=" " alt="" coords="685,5,929,31"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="809,45,809,117,804,117,804,45"/>
+<area shape="rect" id="Node000011" href="$struct_o_n___windows_r_g_b_q_u_a_d.html" title=" " alt="" coords="953,5,1127,31"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="1004,39,832,120,830,115,1002,34"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="399,261,329,315,326,311,396,257"/>
 </map>

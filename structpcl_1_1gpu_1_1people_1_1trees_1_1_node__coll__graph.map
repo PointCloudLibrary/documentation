@@ -1,3 +1,8 @@
 <map id="pcl::gpu::people::trees::Node" name="pcl::gpu::people::trees::Node">
-<area shape="rect" id="node2" href="$structpcl_1_1gpu_1_1people_1_1trees_1_1_attrib_location.html" title="pcl::gpu::people::trees\l::AttribLocation" alt="" coords="100,153,249,199"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,240,172,280"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1gpu_1_1people_1_1trees_1_1_attrib_location.html" title=" " alt="" coords="109,137,276,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,189,110,242,106,238,161,185"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,5,94,31"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="58,45,51,105,51,141,55,177,66,210,80,238,75,241,61,212,50,178,46,142,46,105,53,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,39,176,135,172,139,79,43"/>
 </map>

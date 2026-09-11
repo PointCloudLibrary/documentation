@@ -1,4 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; SHOT1344 \&gt;" alt="" coords="5,5,171,51"/>
-<area shape="rect" id="node3" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t1344_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; SHOT1344 \&gt;" alt="" coords="220,5,425,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="5,23,203,63"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="251,31,381,56"/>
+<area shape="poly" id="edge679_Node000000_Node000001" title=" " alt="" coords="217,41,250,41,250,46,217,46"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="439,5,611,31"/>
+<area shape="poly" id="edge680_Node000001_Node000002" title=" " alt="" coords="394,31,438,26,439,31,395,36"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="429,55,620,80"/>
+<area shape="poly" id="edge681_Node000001_Node000003" title=" " alt="" coords="395,50,429,54,429,59,394,55"/>
 </map>

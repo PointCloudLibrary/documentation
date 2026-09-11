@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1poisson_1_1_cube.html" title="pcl::poisson::Cube" alt="" coords="5,5,136,35"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="5,69,187,109"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_custom_point_representation.html" title="CustomPointRepresentation extends PointRepresentation to allow for sub&#45;part selection on the point." alt="" coords="242,5,473,45"/>
+<area shape="poly" id="edge686_Node000000_Node000001" title=" " alt="" coords="191,63,275,43,276,48,192,69"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_default_feature_representation.html" title="DefaulFeatureRepresentation extends PointRepresentation and is intended to be used when defining the ..." alt="" coords="235,69,480,109"/>
+<area shape="poly" id="edge687_Node000000_Node000002" title=" " alt="" coords="200,87,234,87,234,92,200,92"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_default_point_representation.html" title="DefaultPointRepresentation extends PointRepresentation to define default behavior for common point ty..." alt="" coords="243,133,472,173"/>
+<area shape="poly" id="edge688_Node000000_Node000003" title=" " alt="" coords="192,110,276,131,275,136,191,115"/>
 </map>

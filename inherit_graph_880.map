@@ -1,3 +1,57 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; KeypointT \&gt;" alt="" coords="5,5,200,35"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,357,217,383"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_registration.html" title=" " alt="" coords="291,177,479,232"/>
+<area shape="poly" id="edge649_Node000000_Node000001" title=" " alt="" coords="133,346,189,294,226,267,264,242,290,230,292,235,267,247,229,271,193,299,136,350"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_correspondence_estimation_base.html" title=" " alt="" coords="271,257,500,326"/>
+<area shape="poly" id="edge650_Node000000_Node000002" title=" " alt="" coords="169,351,269,322,271,327,170,356"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_multiscale_feature_persistence.html" title="Generic class for extracting the persistent features from an input point cloud It can be given any Fe..." alt="" coords="265,350,505,390"/>
+<area shape="poly" id="edge651_Node000000_Node000003" title=" " alt="" coords="231,367,265,367,265,373,231,373"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="291,415,479,469"/>
+<area shape="poly" id="edge652_Node000000_Node000004" title=" " alt="" coords="174,384,292,415,290,420,173,389"/>
+<area shape="rect" id="Node000023" href="$classpcl_1_1registration_1_1_correspondence_estimation_base.html" title="Abstract CorrespondenceEstimationBase class." alt="" coords="271,903,500,973"/>
+<area shape="poly" id="edge671_Node000000_Node000023" title=" " alt="" coords="127,394,370,902,365,904,122,396"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="586,5,785,60"/>
+<area shape="poly" id="edge653_Node000004_Node000005" title=" " alt="" coords="489,413,503,400,518,379,528,359,537,318,534,277,526,237,518,196,516,154,525,112,536,91,551,70,567,56,585,46,587,50,570,60,555,73,540,94,530,114,521,155,523,195,531,235,539,277,542,318,533,361,523,382,507,404,493,417"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="565,84,806,139"/>
+<area shape="poly" id="edge654_Node000004_Node000006" title=" " alt="" coords="490,413,503,400,523,369,531,338,531,308,526,277,522,245,522,214,530,182,551,150,565,137,569,141,555,153,535,184,527,214,527,245,532,276,536,307,536,339,528,371,507,404,493,417"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html" title=" " alt="" coords="586,163,785,233"/>
+<area shape="poly" id="edge655_Node000004_Node000007" title=" " alt="" coords="489,412,503,400,518,381,525,362,527,323,529,284,537,263,551,243,584,219,587,224,555,247,541,266,534,285,532,324,530,363,522,384,507,404,493,416"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_iterative_closest_point.html" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm." alt="" coords="586,257,785,312"/>
+<area shape="poly" id="edge656_Node000004_Node000008" title=" " alt="" coords="490,409,504,400,519,381,527,362,534,341,552,321,585,303,587,307,555,325,539,344,532,363,524,384,507,404,493,414"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1_normal_distributions_transform.html" title="A 3D Normal Distribution Transform registration implementation for point cloud data." alt="" coords="594,336,777,391"/>
+<area shape="poly" id="edge664_Node000004_Node000016" title=" " alt="" coords="492,411,593,385,595,390,493,417"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1_normal_distributions_transform2_d.html" title="NormalDistributionsTransform2D provides an implementation of the Normal Distributions Transform algor..." alt="" coords="585,415,786,469"/>
+<area shape="poly" id="edge665_Node000004_Node000017" title=" " alt="" coords="493,439,585,439,585,445,493,445"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1_p_p_f_registration.html" title="Class that registers two point clouds based on their sets of PPFSignatures." alt="" coords="580,494,791,534"/>
+<area shape="poly" id="edge666_Node000004_Node000018" title=" " alt="" coords="494,465,602,491,600,496,492,470"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1_sample_consensus_initial_alignment.html" title="SampleConsensusInitialAlignment is an implementation of the initial alignment algorithm described in ..." alt="" coords="583,559,788,613"/>
+<area shape="poly" id="edge667_Node000004_Node000019" title=" " alt="" coords="437,475,492,510,554,544,586,556,584,561,552,548,489,515,434,479"/>
+<area shape="rect" id="Node000020" href="$classpcl_1_1_sample_consensus_prerejective.html" title="Pose estimation and alignment class using a prerejective RANSAC routine." alt="" coords="562,637,809,692"/>
+<area shape="poly" id="edge668_Node000004_Node000020" title=" " alt="" coords="415,479,474,552,512,590,555,622,578,635,576,640,552,627,509,594,470,556,410,483"/>
+<area shape="rect" id="Node000021" href="$classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html" title="FPCSInitialAlignment computes corresponding four point congruent sets as described in: &quot;4&#45;points cong..." alt="" coords="586,717,785,786"/>
+<area shape="poly" id="edge669_Node000004_Node000021" title=" " alt="" coords="405,481,428,531,461,590,503,649,555,701,587,721,585,726,552,705,499,653,456,593,423,533,400,483"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_generalized_iterative_closest_point.html" title=" " alt="" coords="872,61,1091,116"/>
+<area shape="poly" id="edge657_Node000008_Node000009" title=" " alt="" coords="795,257,816,243,827,229,834,215,839,186,844,156,851,140,863,125,878,114,882,118,867,129,855,143,849,157,844,187,839,217,832,232,819,247,798,262"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_fast_robust_iterative_closest_point.html" title="FastRobustIterativeClosestPoint implements the FRICP variant described in &quot;Fast and Robust Iterative ..." alt="" coords="882,140,1081,195"/>
+<area shape="poly" id="edge659_Node000008_Node000011" title=" " alt="" coords="796,252,816,242,840,223,864,204,887,192,890,197,867,208,843,228,819,247,799,256"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_generalized_iterative_closest_point.html" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="882,219,1081,273"/>
+<area shape="poly" id="edge660_Node000008_Node000012" title=" " alt="" coords="798,267,881,256,882,262,798,273"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_iterative_closest_point_non_linear.html" title="IterativeClosestPointNonLinear is an ICP variant that uses Levenberg&#45;Marquardt optimization backend." alt="" coords="889,297,1074,352"/>
+<area shape="poly" id="edge661_Node000008_Node000013" title=" " alt="" coords="799,297,889,310,888,315,798,303"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_iterative_closest_point_with_normals.html" title="IterativeClosestPointWithNormals is a special case of IterativeClosestPoint, that uses a transformati..." alt="" coords="880,376,1083,431"/>
+<area shape="poly" id="edge662_Node000008_Node000014" title=" " alt="" coords="798,311,819,321,833,331,843,341,867,361,892,373,890,378,864,366,840,345,830,335,816,326,796,316"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_joint_iterative_closest_point.html" title="JointIterativeClosestPoint extends ICP to multiple frames which share the same transform." alt="" coords="865,455,1097,509"/>
+<area shape="poly" id="edge663_Node000008_Node000015" title=" " alt="" coords="798,307,819,321,832,336,839,352,844,382,849,412,855,426,867,440,883,452,880,457,863,444,851,429,844,413,839,383,834,353,828,339,816,325,795,311"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_generalized_iterative_closest_point6_d.html" title="GeneralizedIterativeClosestPoint6D integrates L*a*b* color space information into the Generalized Ite..." alt="" coords="1145,69,1328,109"/>
+<area shape="poly" id="edge658_Node000009_Node000010" title=" " alt="" coords="1105,86,1145,86,1145,91,1105,91"/>
+<area shape="rect" id="Node000022" href="$classpcl_1_1registration_1_1_k_f_p_c_s_initial_alignment.html" title="KFPCSInitialAlignment computes corresponding four point congruent sets based on keypoints as describe..." alt="" coords="882,717,1081,786"/>
+<area shape="poly" id="edge670_Node000021_Node000022" title=" " alt="" coords="798,749,882,749,882,754,798,754"/>
+<area shape="rect" id="Node000024" href="$classpcl_1_1registration_1_1_correspondence_estimation.html" title="CorrespondenceEstimation represents a simple class for determining correspondences between target and..." alt="" coords="586,810,785,879"/>
+<area shape="poly" id="edge672_Node000023_Node000024" title=" " alt="" coords="510,897,585,873,587,878,511,902"/>
+<area shape="rect" id="Node000025" href="$classpcl_1_1registration_1_1_correspondence_estimation_back_projection.html" title="CorrespondenceEstimationBackprojection computes correspondences as points in the target cloud which h..." alt="" coords="571,903,800,973"/>
+<area shape="poly" id="edge673_Node000023_Node000025" title=" " alt="" coords="514,935,570,935,570,941,514,941"/>
+<area shape="rect" id="Node000026" href="$classpcl_1_1registration_1_1_correspondence_estimation_normal_shooting.html" title="CorrespondenceEstimationNormalShooting computes correspondences as points in the target cloud which h..." alt="" coords="557,997,813,1066"/>
+<area shape="poly" id="edge674_Node000023_Node000026" title=" " alt="" coords="511,974,574,994,572,999,509,979"/>
+<area shape="rect" id="Node000027" href="$classpcl_1_1registration_1_1_correspondence_estimation_organized_projection.html" title="CorrespondenceEstimationOrganizedProjection computes correspondences by projecting the source point c..." alt="" coords="553,1090,817,1159"/>
+<area shape="poly" id="edge675_Node000023_Node000027" title=" " alt="" coords="433,981,489,1030,555,1076,578,1088,575,1092,552,1080,485,1034,429,985"/>
 </map>

@@ -1,4 +1,8 @@
 <map id="ON_3dmRenderSettings" name="ON_3dmRenderSettings">
-<area shape="rect" id="node2" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="5,5,99,35"/>
-<area shape="rect" id="node4" href="$class_o_n___color.html" title="ON_Color" alt="" coords="179,5,259,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,137,261,163"/>
+<area shape="rect" id="Node000002" href="$class_o_n___color.html" title=" " alt="" coords="5,5,88,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,44,51,79,56,96,66,112,82,125,102,135,99,140,79,130,62,115,52,99,45,80,42,44"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="103,5,111,10,115,18,106,29,89,33,88,27,104,25,109,18,107,14,100,10"/>
+<area shape="rect" id="Node000003" href="$class_o_n__w_string.html" title=" " alt="" coords="213,5,312,31"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="258,45,244,79,222,115,194,139,190,135,218,112,239,77,253,43"/>
 </map>

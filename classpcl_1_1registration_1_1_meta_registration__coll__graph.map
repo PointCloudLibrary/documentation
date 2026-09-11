@@ -1,0 +1,28 @@
+<map id="pcl::registration::MetaRegistration&lt; PointT, Scalar &gt;" name="pcl::registration::MetaRegistration&lt; PointT, Scalar &gt;">
+<area shape="rect" id="Node000001" title="Meta Registration class." alt="" coords="2127,182,2321,237"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title=" " alt="" coords="1805,189,1973,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1987,207,2126,207,2126,212,1987,212"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="591,487,767,513"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="762,482,1124,410,1359,360,1595,304,1689,281,1780,252,1843,227,1845,232,1782,257,1690,286,1597,309,1360,365,1125,415,763,487"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,302,96,327"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="61,288,85,248,118,208,164,164,203,132,224,121,247,112,275,107,307,105,1503,105,1552,108,1600,114,1695,135,1779,162,1844,187,1842,192,1777,167,1693,140,1599,119,1551,113,1503,111,307,111,275,112,249,117,226,126,206,137,167,168,122,211,89,251,66,291"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="62,340,84,389,101,415,122,437,180,474,244,501,312,517,381,525,449,527,513,524,618,510,618,515,514,529,449,532,381,530,311,522,242,506,177,479,118,441,97,418,79,392,57,342"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,419,392,445"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="65,338,88,375,103,393,121,407,146,419,172,426,226,434,225,439,171,432,144,424,119,412,99,397,83,379,61,341"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1005,178,1239,203"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="66,289,89,263,119,242,181,214,245,192,311,174,379,160,515,143,648,137,774,141,888,150,1059,175,1058,181,888,156,774,146,648,143,515,148,380,165,313,179,247,197,183,219,121,246,93,267,70,292"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="1408,241,1596,295"/>
+<area shape="poly" id="edge16_Node000007_Node000004" title=" " alt="" coords="93,294,119,287,172,281,225,281,567,273,904,268,1408,265,1408,271,904,273,567,278,225,287,172,286,121,292,94,299"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="1016,347,1228,373"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="110,314,1016,353,1016,358,110,320"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="591,374,767,399"/>
+<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="109,307,198,302,312,302,438,310,501,318,563,331,616,349,658,372,656,376,614,354,562,336,501,324,437,315,312,307,198,308,110,312"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="351,447,417,469,506,485,591,494,591,499,505,491,415,475,350,453"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="405,433,576,434,674,431,772,424,854,413,935,399,1069,370,1070,375,936,404,855,419,772,429,675,436,577,440,405,438"/>
+<area shape="poly" id="edge15_Node000009_Node000005" title=" " alt="" coords="405,418,591,395,591,400,406,423"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="1253,191,1805,205,1805,210,1252,196"/>
+<area shape="poly" id="edge17_Node000007_Node000006" title=" " alt="" coords="1188,204,1263,221,1408,249,1407,255,1262,227,1186,209"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="1609,249,1805,219,1805,225,1610,254"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="1188,341,1407,288,1408,293,1189,347"/>
+<area shape="poly" id="edge13_Node000008_Node000009" title=" " alt="" coords="781,378,981,367,1016,364,1016,370,981,372,781,384"/>
+</map>

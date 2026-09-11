@@ -1,9 +1,20 @@
 <map id="ON_Light" name="ON_Light">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,113,112,143"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
-<area shape="rect" id="node6" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="136,113,229,143"/>
-<area shape="rect" id="node8" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="253,113,347,143"/>
-<area shape="rect" id="node11" href="$class_o_n___color.html" title="ON_Color" alt="" coords="464,113,544,143"/>
-<area shape="rect" id="node14" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="663,113,764,143"/>
-<area shape="rect" id="node17" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="885,113,968,143"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="323,260,405,285"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="5,104,120,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,139,122,188,149,213,180,234,216,249,254,259,323,268,323,273,253,264,214,254,177,238,146,217,118,192,76,143"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="17,5,108,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,44,65,104,60,104,60,44"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="144,104,227,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,143,188,190,195,214,209,234,227,245,256,253,323,265,323,270,255,259,225,250,205,238,190,216,182,191,180,143"/>
+<area shape="rect" id="Node000005" href="$class_o_n__w_string.html" title=" " alt="" coords="251,104,349,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="294,143,288,188,290,212,298,235,311,248,327,258,324,262,307,252,294,237,285,214,282,188,289,142"/>
+<area shape="rect" id="Node000006" href="$class_o_n___color.html" title=" " alt="" coords="373,104,456,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="418,143,415,188,410,213,401,237,381,262,377,258,396,235,405,212,410,188,413,143"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="471,104,479,109,483,117,474,128,457,131,456,126,472,123,477,116,475,113,468,109"/>
+<area shape="rect" id="Node000007" href="$class_o_n__3d_vector.html" title=" " alt="" coords="581,104,688,129"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="617,142,567,191,534,216,499,238,451,257,405,268,404,263,450,252,496,234,531,212,563,186,613,138"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="703,105,711,109,715,117,707,127,689,131,688,125,704,122,709,116,707,113,701,110"/>
+<area shape="rect" id="Node000008" href="$class_o_n__3d_point.html" title=" " alt="" coords="820,104,919,129"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="847,140,776,191,731,217,682,239,607,258,531,270,461,274,405,275,405,270,461,269,530,264,606,253,680,233,728,213,773,187,844,136"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="933,105,942,109,945,117,937,127,919,131,918,125,934,123,940,116,938,113,931,110"/>
 </map>

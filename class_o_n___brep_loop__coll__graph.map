@@ -1,9 +1,19 @@
 <map id="ON_BrepLoop" name="ON_BrepLoop">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,219,112,248"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,104,101,133"/>
-<area shape="rect" id="node6" href="$union_o_n___u.html" title="ON_U" alt="" coords="136,219,195,248"/>
-<area shape="rect" id="node8" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="219,219,344,248"/>
-<area shape="rect" id="node11" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="235,104,328,133"/>
-<area shape="rect" id="node14" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="512,219,669,248"/>
-<area shape="rect" id="node16" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="515,104,667,133"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="182,200,293,225"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="5,112,120,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,141,215,197,212,202,97,146"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="17,7,108,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,47,65,112,60,112,60,47"/>
+<area shape="rect" id="Node000004" href="$union_o_n___u.html" title=" " alt="" coords="144,112,203,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="178,150,188,175,200,188,215,198,212,202,196,192,183,177,173,152"/>
+<area shape="rect" id="Node000005" href="$class_o_n___simple_array.html" title=" " alt="" coords="227,112,403,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="299,150,275,178,252,202,248,198,271,174,295,147"/>
+<area shape="rect" id="Node000006" href="$class_o_n___simple_array.html" title=" " alt="" coords="231,7,398,33"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="317,47,317,112,312,112,312,47"/>
+<area shape="rect" id="Node000007" href="$class_o_n___bounding_box.html" title=" " alt="" coords="427,112,562,137"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="448,144,273,202,271,197,446,139"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="577,116,589,125,580,132,563,135,562,130,578,127,583,125,575,121"/>
+<area shape="rect" id="Node000008" href="$class_o_n__3d_point.html" title=" " alt="" coords="445,7,544,33"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="497,47,497,112,492,112,492,47"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="559,9,567,13,571,20,562,29,544,33,544,27,560,25,565,20,563,17,557,14"/>
 </map>

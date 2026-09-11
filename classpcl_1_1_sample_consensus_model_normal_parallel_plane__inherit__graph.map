@@ -1,6 +1,11 @@
 <map id="pcl::SampleConsensusModelNormalParallelPlane&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelNormalParallelPlane&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_normal_plane.html" title="SampleConsensusModelNormalPlane defines a model for 3D plane segmentation using additional surface no..." alt="" coords="513,39,727,86"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation. " alt="" coords="259,5,451,51"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="5,5,197,51"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="245,74,464,121"/>
+<area shape="rect" id="Node000001" title="SampleConsensusModelNormalParallelPlane defines a model for 3D plane segmentation using additional su..." alt="" coords="833,30,1048,85"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus_model_normal_plane.html" title="SampleConsensusModelNormalPlane defines a model for 3D plane segmentation using additional surface no..." alt="" coords="549,37,785,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="799,55,833,55,833,60,799,60"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation." alt="" coords="277,5,485,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,36,550,41,549,47,498,41"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="5,5,213,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="227,23,277,23,277,28,227,28"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="261,69,501,109"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="515,72,549,68,549,73,515,77"/>
 </map>

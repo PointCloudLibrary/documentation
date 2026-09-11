@@ -1,5 +1,13 @@
 <map id="pcl::octree::OctreeIteratorBase&lt; OctreeT &gt;" name="pcl::octree::OctreeIteratorBase&lt; OctreeT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_breadth_first_iterator.html" title="Octree iterator class " alt="" coords="455,5,628,51"/>
-<area shape="rect" id="node7" href="$classpcl_1_1octree_1_1_octree_depth_first_iterator.html" title="Octree iterator class " alt="" coords="459,74,624,121"/>
-<area shape="rect" id="node9" href="$classpcl_1_1octree_1_1_octree_leaf_node_iterator.html" title="Octree leaf node iterator class. " alt="" coords="677,74,864,121"/>
+<area shape="rect" id="Node000001" title="Abstract octree iterator class" alt="" coords="5,101,195,141"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_breadth_first_iterator.html" title="Octree iterator class" alt="" coords="243,69,435,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,104,242,100,243,105,209,109"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1octree_1_1_octree_depth_first_iterator.html" title="Octree iterator class" alt="" coords="249,133,429,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="209,133,249,139,248,144,208,138"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_fixed_depth_iterator.html" title="Octree iterator class" alt="" coords="503,5,693,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="433,63,516,43,517,48,434,69"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1octree_1_1_octree_leaf_node_breadth_first_iterator.html" title="Octree leaf node iterator class." alt="" coords="483,69,713,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="448,87,483,87,483,92,448,92"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1octree_1_1_octree_leaf_node_depth_first_iterator.html" title="Octree leaf node iterator class." alt="" coords="489,133,707,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="442,151,488,151,488,156,442,156"/>
 </map>

@@ -1,10 +1,15 @@
 <map id="pcl_cuda::Filter&lt; CloudT &gt;" name="pcl_cuda::Filter&lt; CloudT &gt;">
-<area shape="rect" id="node5" href="$classpcl__cuda_1_1_pass_through.html" title="PassThrough uses the base Filter class methods to pass through all data that satisfies the user given..." alt="" coords="668,5,825,51"/>
-<area shape="rect" id="node7" href="$classpcl__cuda_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="677,74,816,121"/>
-<area shape="rect" id="node9" href="$classpcl__cuda_1_1_filter.html" title="pcl_cuda::Filter\&lt; PointCloud\lSOA\&lt; Device \&gt; \&gt;" alt="" coords="653,143,840,190"/>
-<area shape="rect" id="node15" href="$classpcl__cuda_1_1_filter.html" title="pcl_cuda::Filter\&lt; PointCloud\lAOS\&lt; Device \&gt; \&gt;" alt="" coords="653,213,840,259"/>
-<area shape="rect" id="node11" href="$classpcl__cuda_1_1_pass_through_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4.html" title="pcl_cuda::PassThrough\l\&lt; PointCloudSOA\&lt; Device \&gt; \&gt;" alt="" coords="891,74,1093,121"/>
-<area shape="rect" id="node13" href="$classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4.html" title="pcl_cuda::VoxelGrid\l\&lt; PointCloudSOA\&lt; Device \&gt; \&gt;" alt="" coords="891,143,1093,190"/>
-<area shape="rect" id="node17" href="$classpcl__cuda_1_1_pass_through_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html" title="pcl_cuda::PassThrough\l\&lt; PointCloudAOS\&lt; Device \&gt; \&gt;" alt="" coords="891,213,1093,259"/>
-<area shape="rect" id="node19" href="$classpcl__cuda_1_1_voxel_grid_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html" title="pcl_cuda::VoxelGrid\l\&lt; PointCloudAOS\&lt; Device \&gt; \&gt;" alt="" coords="891,282,1093,329"/>
+<area shape="rect" id="Node000001" title="Removes points with x, y, or z equal to NaN." alt="" coords="245,77,440,102"/>
+<area shape="rect" id="Node000003" href="$classpcl__cuda_1_1_pass_through.html" title="PassThrough uses the base Filter class methods to pass through all data that satisfies the user given..." alt="" coords="713,5,882,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="431,72,464,67,712,33,713,38,464,72,432,77"/>
+<area shape="rect" id="Node000004" href="$classpcl__cuda_1_1_filter.html" title=" " alt="" coords="695,69,900,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="454,87,695,87,695,92,454,92"/>
+<area shape="rect" id="Node000006" href="$classpcl__cuda_1_1_filter.html" title=" " alt="" coords="695,133,900,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="432,102,464,107,695,138,694,143,464,112,431,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,77,196,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,87,245,87,245,92,210,92"/>
+<area shape="rect" id="Node000005" href="$classpcl__cuda_1_1_pass_through_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html" title=" " alt="" coords="949,69,1173,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="914,87,949,87,949,92,914,92"/>
+<area shape="rect" id="Node000007" href="$classpcl__cuda_1_1_pass_through_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4.html" title=" " alt="" coords="949,133,1173,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="914,151,949,151,949,156,914,156"/>
 </map>

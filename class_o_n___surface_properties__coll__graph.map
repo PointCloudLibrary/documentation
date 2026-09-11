@@ -1,6 +1,12 @@
 <map id="ON_SurfaceProperties" name="ON_SurfaceProperties">
-<area shape="rect" id="node2" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="12,165,105,195"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,85,112,115"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
-<area shape="rect" id="node8" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="129,165,220,195"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="94,243,258,268"/>
+<area shape="rect" id="Node000002" href="$class_o_n___interval.html" title=" " alt="" coords="5,155,104,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,186,161,240,158,245,81,190"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="119,159,131,167,122,175,104,177,104,172,120,170,125,167,116,164"/>
+<area shape="rect" id="Node000003" href="$class_o_n___surface.html" title=" " alt="" coords="249,155,348,180"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="272,190,194,245,191,240,269,186"/>
+<area shape="rect" id="Node000004" href="$class_o_n___geometry.html" title=" " alt="" coords="241,80,356,105"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="301,120,301,154,296,154,296,120"/>
+<area shape="rect" id="Node000005" href="$class_o_n___object.html" title=" " alt="" coords="253,5,344,31"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="301,45,301,80,296,80,296,45"/>
 </map>

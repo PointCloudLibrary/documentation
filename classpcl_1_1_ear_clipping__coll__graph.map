@@ -1,6 +1,20 @@
 <map id="pcl::EarClipping" name="pcl::EarClipping">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="5,324,149,353"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZ \&gt;" alt="" coords="173,315,312,362"/>
-<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="137,104,252,133"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="219,219,360,248"/>
+<area shape="rect" id="Node000001" title="The ear clipping triangulation algorithm." alt="" coords="109,391,232,416"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms." alt="" coords="5,295,160,321"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,329,162,389,158,392,101,332"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="25,200,116,225"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,239,75,264,82,295,76,296,69,264,68,240"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="207,288,361,328"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,339,187,392,183,388,249,335"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="197,95,317,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="234,132,215,151,198,174,190,199,190,212,193,224,204,243,219,260,252,286,249,290,215,263,200,246,188,226,184,213,184,198,194,172,211,148,230,128"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="253,200,443,225"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="274,131,307,174,334,198,330,202,303,178,270,134"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="336,5,411,31"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="394,40,428,85,460,145,470,177,474,209,468,239,451,266,437,276,415,284,362,298,360,292,414,279,434,271,447,262,463,237,468,208,465,178,455,147,424,88,390,43"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="349,41,274,97,271,93,346,37"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="374,45,357,176,353,200,348,199,352,176,368,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="212,5,287,31"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="252,45,253,69,257,95,252,95,248,70,247,45"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="335,238,299,289,295,286,330,235"/>
 </map>

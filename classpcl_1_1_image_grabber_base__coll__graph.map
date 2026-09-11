@@ -1,3 +1,5 @@
 <map id="pcl::ImageGrabberBase" name="pcl::ImageGrabberBase">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="37,5,131,35"/>
+<area shape="rect" id="Node000001" title="Base class for Image file grabber." alt="" coords="5,79,180,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="42,5,143,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
 </map>

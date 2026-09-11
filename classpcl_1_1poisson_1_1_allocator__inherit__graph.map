@@ -1,4 +1,7 @@
 <map id="pcl::poisson::Allocator&lt; T &gt;" name="pcl::poisson::Allocator&lt; T &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1poisson_1_1_allocator.html" title="pcl::poisson::Allocator\l\&lt; pcl::poisson::OctNode \&gt;" alt="" coords="401,5,577,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1poisson_1_1_allocator.html" title="pcl::poisson::Allocator\l\&lt; pcl::poisson::MatrixEntry\l\&lt; T \&gt; \&gt;" alt="" coords="400,75,579,139"/>
+<area shape="rect" id="Node000001" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="5,49,208,74"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1poisson_1_1_allocator.html" title=" " alt="" coords="440,5,633,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,49,440,31,440,36,222,54"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1poisson_1_1_allocator.html" title=" " alt="" coords="437,70,636,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,74,232,83,338,91,437,95,437,100,338,97,232,88,177,79"/>
 </map>
