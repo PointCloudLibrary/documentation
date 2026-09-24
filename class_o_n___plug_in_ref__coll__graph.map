@@ -1,4 +1,7 @@
 <map id="ON_PlugInRef" name="ON_PlugInRef">
-<area shape="rect" id="node2" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="5,5,99,35"/>
-<area shape="rect" id="node4" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="193,5,276,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,240,159,265"/>
+<area shape="rect" id="Node000002" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="5,5,88,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,44,35,80,31,124,35,171,41,194,50,215,61,228,76,238,73,242,58,232,46,217,36,195,30,172,26,124,30,79,37,43"/>
+<area shape="rect" id="Node000003" href="$class_o_n__w_string.html" title=" " alt="" coords="112,5,211,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,45,159,124,150,171,134,217,118,241,113,238,130,215,145,170,153,123,159,45"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::registration::TransformationEstimationSVD&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimationSVD&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="12,6,196,87"/>
+<area shape="rect" id="Node000001" title="TransformationEstimationSVD implements SVD&#45;based estimation of the transformation aligning the given ..." alt="" coords="5,123,223,192"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="15,5,213,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,89,117,122,111,122,111,89"/>
 </map>

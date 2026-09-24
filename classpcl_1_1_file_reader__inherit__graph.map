@@ -1,6 +1,11 @@
 <map id="pcl::FileReader" name="pcl::FileReader">
-<area shape="rect" id="node3" href="$classpcl_1_1_a_s_c_i_i_reader.html" title="Ascii Point Cloud Reader. " alt="" coords="5,83,131,112"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_o_b_j_reader.html" title="pcl::OBJReader" alt="" coords="155,83,269,112"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_p_c_d_reader.html" title="Point Cloud Data (PCD) file format reader. " alt="" coords="293,83,411,112"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_p_l_y_reader.html" title="Point Cloud Data (PLY) file format reader. " alt="" coords="435,83,549,112"/>
+<area shape="rect" id="Node000001" title="Point Cloud Data (FILE) file format reader interface." alt="" coords="231,5,349,31"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_a_s_c_i_i_reader.html" title="Ascii Point Cloud Reader." alt="" coords="5,79,135,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,37,106,81,105,76,241,32"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_o_b_j_reader.html" title=" " alt="" coords="159,79,277,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,43,232,80,228,77,266,39"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_d_reader.html" title="Point Cloud Data (PCD) file format reader." alt="" coords="302,79,425,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="314,38,353,77,350,80,310,42"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_l_y_reader.html" title="Point Cloud Data (PLY) file format reader." alt="" coords="449,79,566,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="339,32,473,76,471,81,337,37"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="pcl::poisson::PoissonException" name="pcl::poisson::PoissonException">
+<area shape="rect" id="Node000001" title="A base class for all poisson exceptions which inherits from std::runtime_error." alt="" coords="5,79,227,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="47,5,185,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,44,119,79,113,79,113,44"/>
+</map>

@@ -1,6 +1,9 @@
-<map id="pcl::UniformSampling&lt; PointInT &gt;" name="pcl::UniformSampling&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="pcl::Keypoint\&lt; PointInT,\l int \&gt;" alt="" coords="36,297,199,343"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="115,182,277,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<map id="pcl::UniformSampling&lt; PointT &gt;" name="pcl::UniformSampling&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="UniformSampling assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="12,240,175,280"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="29,152,157,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,206,96,240,91,240,91,206"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="17,79,170,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,118,96,152,91,152,91,118"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,5,181,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,44,96,79,91,79,91,44"/>
 </map>

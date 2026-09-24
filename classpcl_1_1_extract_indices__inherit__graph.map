@@ -1,5 +1,9 @@
 <map id="pcl::ExtractIndices&lt; PointT &gt;" name="pcl::ExtractIndices&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="29,161,147,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,83,157,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="ExtractIndices extracts a set of indices from a point cloud." alt="" coords="23,240,164,280"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="29,152,157,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,206,96,240,91,240,91,206"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="17,79,170,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,118,96,152,91,152,91,118"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,5,181,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,44,96,79,91,79,91,44"/>
 </map>

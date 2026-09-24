@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1people_1_1_ground_based_people_detection_app.html" title="GroundBasedPeopleDetectionApp performs people detection on RGB&#45;D data having as input the ground plan..." alt="" coords="5,5,208,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1outofcore_1_1_outofcore_abstract_node_container.html" title=" " alt="" coords="5,30,189,85"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1outofcore_1_1_outofcore_octree_disk_container.html" title="Class responsible for serialization and deserialization of out of core point data." alt="" coords="238,5,466,45"/>
+<area shape="poly" id="edge630_Node000000_Node000001" title=" " alt="" coords="203,41,238,37,238,42,203,47"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1outofcore_1_1_outofcore_octree_ram_container.html" title="Storage container class which the outofcore octree base is templated against." alt="" coords="237,69,467,109"/>
+<area shape="poly" id="edge631_Node000000_Node000002" title=" " alt="" coords="203,68,237,72,237,78,203,73"/>
 </map>

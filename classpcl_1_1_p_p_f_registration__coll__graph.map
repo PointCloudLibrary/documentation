@@ -1,10 +1,20 @@
 <map id="pcl::PPFRegistration&lt; PointSource, PointTarget &gt;" name="pcl::PPFRegistration&lt; PointSource, PointTarget &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointSource, PointTarget \&gt;" alt="" coords="1283,87,1467,134"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="601,152,799,181"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="883,79,1059,143"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="285,152,451,181"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="632,30,768,77"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="301,5,435,51"/>
-<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,37,140,83"/>
-<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="300,74,436,121"/>
+<area shape="rect" id="Node000001" title="Class that registers two point clouds based on their sets of PPFSignatures." alt="" coords="197,507,408,547"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="209,403,397,457"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,471,305,506,300,506,300,471"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="197,328,409,353"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,367,305,403,300,403,300,367"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="304,5,395,31"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="290,25,204,32,111,46,70,57,37,70,15,87,10,95,8,105,8,342,13,356,26,368,48,380,75,390,141,406,209,417,208,422,140,411,74,395,46,385,23,373,8,359,3,342,3,104,5,93,12,83,35,66,69,52,110,41,203,27,290,19"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,39,281,63,267,78,256,94,245,126,242,160,246,194,253,227,276,287,298,327,293,329,272,289,248,229,240,195,237,160,240,125,251,92,263,74,277,59,310,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="266,93,433,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="352,45,352,93,347,93,347,45"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="384,216,560,241"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="409,32,438,53,452,72,463,94,474,141,477,184,476,216,471,216,472,185,469,142,458,96,448,75,434,57,406,37"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="502,143,735,168"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="409,24,455,35,501,52,535,73,566,97,610,141,607,144,563,101,532,77,499,57,453,40,407,29"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="340,132,317,193,307,269,305,328,300,328,301,269,312,191,335,130"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="370,127,407,166,460,214,457,218,403,170,367,131"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="444,251,322,330,319,325,441,247"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="615,182,600,224,589,246,574,267,527,312,473,350,419,381,370,405,368,400,417,377,471,346,523,308,570,264,584,244,596,222,610,180"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="pcl::DepthSenseGrabber" name="pcl::DepthSenseGrabber">
+<area shape="rect" id="Node000001" title="Grabber for DepthSense devices (e.g." alt="" coords="5,79,184,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="44,5,145,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,44,97,79,92,79,92,44"/>
+</map>

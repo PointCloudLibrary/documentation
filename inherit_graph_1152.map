@@ -1,3 +1,17 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1texture__mapping_1_1_camera.html" title="Structure to store camera pose and focal length. " alt="" coords="7,5,148,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="5,197,149,237"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1search_1_1_kd_tree.html" title=" " alt="" coords="238,5,382,45"/>
+<area shape="poly" id="edge809_Node000000_Node000001" title=" " alt="" coords="92,184,133,118,162,84,196,55,237,36,239,41,199,60,166,88,137,121,97,186"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1search_1_1_octree.html" title=" " alt="" coords="239,69,381,109"/>
+<area shape="poly" id="edge810_Node000000_Node000002" title=" " alt="" coords="106,186,147,151,196,119,237,103,239,107,199,124,150,155,110,190"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1search_1_1_brute_force.html" title="Implementation of a simple brute force search algorithm." alt="" coords="225,133,395,173"/>
+<area shape="poly" id="edge811_Node000000_Node000003" title=" " alt="" coords="162,191,236,171,237,176,163,197"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1search_1_1_flann_search.html" title="search::FlannSearch is a generic FLANN wrapper class for the new search interface." alt="" coords="213,197,407,237"/>
+<area shape="poly" id="edge812_Node000000_Node000004" title=" " alt="" coords="163,215,213,215,213,220,163,220"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="238,261,382,301"/>
+<area shape="poly" id="edge813_Node000000_Node000005" title=" " alt="" coords="163,238,238,259,237,264,162,243"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1search_1_1_octree.html" title="search::Octree is a wrapper class which implements nearest neighbor search operations based on the pc..." alt="" coords="217,326,403,381"/>
+<area shape="poly" id="edge814_Node000000_Node000006" title=" " alt="" coords="111,245,151,279,199,311,224,323,222,328,196,316,148,283,108,249"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1search_1_1_organized_neighbor.html" title="OrganizedNeighbor is a class for optimized nearest neighbor search in organized projectable point clo..." alt="" coords="197,405,423,445"/>
+<area shape="poly" id="edge815_Node000000_Node000007" title=" " alt="" coords="95,248,135,320,164,358,199,390,222,403,219,407,196,394,160,361,130,323,90,251"/>
 </map>

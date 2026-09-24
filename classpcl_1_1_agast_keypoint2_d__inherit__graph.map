@@ -1,7 +1,14 @@
 <map id="pcl::AgastKeypoint2D&lt; PointInT, PointOutT &gt;" name="pcl::AgastKeypoint2D&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="pcl::AgastKeypoint2DBase\l\&lt; PointInT, PointOutT,\l pcl::common::IntensityFieldAccessor\l\&lt; PointInT \&gt; \&gt;" alt="" coords="1128,6,1371,87"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="523,5,685,51"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="Detects 2D AGAST corner points. " alt="" coords="736,49,915,113"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,13,472,43"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,13,171,43"/>
+<area shape="rect" id="Node000001" title="Detects 2D AGAST corner points." alt="" coords="16,449,193,489"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_agast_keypoint2_d_base.html" title="Detects 2D AGAST corner points." alt="" coords="8,345,201,400"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,414,107,449,102,449,102,414"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="15,256,194,296"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,310,107,345,102,345,102,310"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,93,193,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,132,107,256,101,256,97,132"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="121,168,328,193"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="133,123,206,165,203,170,130,128"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="11,5,187,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="102,45,102,93,97,93,97,45"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="200,204,131,258,127,254,197,200"/>
 </map>

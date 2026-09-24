@@ -1,5 +1,16 @@
 <map id="pcl::ColorModality&lt; PointInT &gt;" name="pcl::ColorModality&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_quantizable_modality.html" title="Interface for a quantizable modality. " alt="" coords="5,101,171,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="195,101,371,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="200,5,365,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="43,344,183,384"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_quantizable_modality.html" title="Interface for a quantizable modality." alt="" coords="5,269,189,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,307,112,343,107,344,100,308"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="214,269,402,295"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,302,160,346,158,341,266,297"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="313,5,404,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="323,39,290,63,276,78,265,94,257,118,256,143,258,168,265,192,284,236,302,268,298,270,279,239,260,194,253,169,250,143,252,117,260,92,272,74,287,59,320,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="275,93,442,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="361,45,361,93,356,93,356,45"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="389,181,565,207"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="418,32,447,53,467,85,477,121,481,155,481,181,475,181,476,155,472,122,462,87,443,56,415,37"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="346,131,323,182,313,230,311,269,305,269,308,229,317,181,341,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="382,126,416,155,455,179,453,183,413,160,378,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="444,215,332,271,330,267,441,210"/>
 </map>

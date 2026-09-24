@@ -1,7 +1,14 @@
 <map id="ON_AnnotationTextDot" name="ON_AnnotationTextDot">
-<area shape="rect" id="node2" href="$class_o_n___point.html" title="ON_Point" alt="" coords="61,187,139,216"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,88,112,117"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
-<area shape="rect" id="node8" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="136,88,229,117"/>
-<area shape="rect" id="node11" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="163,187,256,216"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="127,260,297,285"/>
+<area shape="rect" id="Node000002" href="$class_o_n___point.html" title=" " alt="" coords="85,172,168,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,205,202,258,198,261,146,209"/>
+<area shape="rect" id="Node000003" href="$class_o_n___geometry.html" title=" " alt="" coords="5,82,120,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,117,120,170,116,173,77,120"/>
+<area shape="rect" id="Node000004" href="$class_o_n___object.html" title=" " alt="" coords="17,5,108,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="65,44,65,82,60,82,60,44"/>
+<area shape="rect" id="Node000005" href="$class_o_n__3d_point.html" title=" " alt="" coords="144,82,243,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="179,120,138,173,133,170,174,116"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="258,87,269,95,261,102,243,104,242,99,259,97,264,95,255,91"/>
+<area shape="rect" id="Node000006" href="$class_o_n__w_string.html" title=" " alt="" coords="192,172,291,197"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="236,211,219,260,214,259,230,209"/>
 </map>

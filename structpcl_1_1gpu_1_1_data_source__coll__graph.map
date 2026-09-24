@@ -1,6 +1,25 @@
 <map id="pcl::gpu::DataSource" name="pcl::gpu::DataSource">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::Normal \&gt;" alt="" coords="225,315,364,362"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="145,104,260,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="132,219,273,248"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="5,315,144,362"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1075,197,1231,222"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="757,189,911,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="925,207,1075,207,1075,212,925,212"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="173,145,293,170"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,171,391,188,490,197,589,203,757,207,757,212,589,208,489,203,390,193,296,176"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="391,74,581,99"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="293,138,439,97,440,102,294,143"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="757,81,911,121"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="307,155,497,148,612,139,726,125,760,119,761,124,727,131,613,145,498,153,307,160"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,94,80,119"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="79,124,105,139,139,160,174,179,244,206,318,220,437,230,558,231,667,225,757,216,757,222,668,230,558,236,437,236,317,225,243,211,172,184,137,165,103,144,77,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,117,186,142,184,147,93,123"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="93,102,390,88,390,94,94,107"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="83,86,126,71,173,59,328,36,450,28,573,37,727,61,787,79,785,84,726,67,572,42,450,34,328,41,174,64,127,76,85,91"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,293,80,318"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="70,282,214,168,217,172,73,286"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="537,102,777,187,775,192,535,107"/>
+<area shape="poly" id="edge14_Node000009_Node000006" title=" " alt="" coords="596,81,727,84,757,87,757,92,727,89,595,86"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="751,281,917,306"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="896,275,1103,219,1104,225,897,280"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="441,309,531,334"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="545,315,726,301,750,299,751,304,727,307,545,320"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="908,123,1115,194,1113,199,906,128"/>
 </map>

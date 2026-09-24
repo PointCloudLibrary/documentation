@@ -1,4 +1,7 @@
 <map id="pcl::face_detection::FeatureHandlerDepthAverage&lt; FT, DataSet, ExampleIndex &gt;" name="pcl::face_detection::FeatureHandlerDepthAverage&lt; FT, DataSet, ExampleIndex &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature_handler.html" title="pcl::FeatureHandler\l\&lt; FT, DataSet, ExampleIndex \&gt;" alt="" coords="5,137,213,183"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature_handler.html" title="Utility class interface which is used for creating and evaluating features. " alt="" coords="27,5,192,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,212,233,267"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature_handler.html" title=" " alt="" coords="5,123,233,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,177,122,212,117,212,117,177"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_feature_handler.html" title="Utility class interface which is used for creating and evaluating features." alt="" coords="29,5,209,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,74,122,122,117,122,117,74"/>
 </map>

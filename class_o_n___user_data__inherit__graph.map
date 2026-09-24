@@ -1,7 +1,13 @@
 <map id="ON_UserData" name="ON_UserData">
-<area shape="rect" id="node5" href="$class_o_n___dimension_extra.html" title="ON_DimensionExtra" alt="" coords="5,160,147,189"/>
-<area shape="rect" id="node7" href="$class_o_n___text_extra.html" title="ON_TextExtra" alt="" coords="171,160,277,189"/>
-<area shape="rect" id="node9" href="$class_o_n___unknown_user_data.html" title="ON_UnknownUserData" alt="" coords="301,160,461,189"/>
-<area shape="rect" id="node11" href="$class_o_n___user_string_list.html" title="ON_UserStringList" alt="" coords="485,160,616,189"/>
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="260,5,345,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="265,79,376,104"/>
+<area shape="rect" id="Node000003" href="$class_o_n___dimension_extra.html" title=" " alt="" coords="5,152,159,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,110,121,154,120,149,268,105"/>
+<area shape="rect" id="Node000004" href="$class_o_n___text_extra.html" title=" " alt="" coords="183,152,293,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,115,253,154,250,150,295,111"/>
+<area shape="rect" id="Node000005" href="$class_o_n___unknown_user_data.html" title=" " alt="" coords="318,152,489,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="346,111,392,150,388,154,343,115"/>
+<area shape="rect" id="Node000006" href="$class_o_n___user_string_list.html" title=" " alt="" coords="513,152,653,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="377,105,541,149,540,154,375,110"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="275,5,366,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,44,323,79,318,79,318,44"/>
 </map>

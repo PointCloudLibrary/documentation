@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_multi_channel2_d_data_set.html" title="Holds a set of two&#45;dimensional multi&#45;channel data. " alt="" coords="5,5,275,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_l_c_c_p_segmentation.html" title="A simple segmentation algorithm partitioning a supervoxel graph into groups of locally convex connect..." alt="" coords="5,5,179,45"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_c_p_c_segmentation.html" title="A segmentation algorithm partitioning a supervoxel graph." alt="" coords="227,5,393,45"/>
+<area shape="poly" id="edge583_Node000000_Node000001" title=" " alt="" coords="193,23,226,23,226,28,193,28"/>
 </map>

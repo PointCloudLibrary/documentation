@@ -1,0 +1,13 @@
+<map id="pcl::octree::OctreeFixedDepthIterator&lt; OctreeT &gt;" name="pcl::octree::OctreeFixedDepthIterator&lt; OctreeT &gt;">
+<area shape="rect" id="Node000001" title="Octree iterator class" alt="" coords="95,360,285,400"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_breadth_first_iterator.html" title="Octree iterator class" alt="" coords="94,271,286,311"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,325,193,360,187,360,187,325"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_iterator_base.html" title="Abstract octree iterator class" alt="" coords="95,181,285,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,235,193,271,187,271,187,235"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1octree_1_1_iterator_state.html" title=" " alt="" coords="100,93,280,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,132,193,181,187,181,187,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="118,38,178,91,175,95,114,42"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class" alt="" coords="205,5,370,31"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="266,42,205,95,202,91,262,38"/>
+</map>

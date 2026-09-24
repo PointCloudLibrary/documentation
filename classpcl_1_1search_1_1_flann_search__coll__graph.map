@@ -1,3 +1,17 @@
 <map id="pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;" name="pcl::search::FlannSearch&lt; PointT, FlannDistance &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="27,6,160,53"/>
+<area shape="rect" id="Node000001" title="search::FlannSearch is a generic FLANN wrapper class for the new search interface." alt="" coords="693,107,888,147"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="369,35,513,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="526,69,694,104,693,109,525,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,114,96,139"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="59,100,81,59,98,40,119,24,195,18,342,17,562,20,618,37,672,59,759,104,756,109,670,64,616,42,561,25,342,22,195,24,121,29,102,44,86,62,64,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,105,119,89,184,74,250,63,368,53,368,58,251,68,185,79,121,95,86,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="341,99,541,154"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="110,124,341,124,341,129,110,129"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="320,178,561,203"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="106,140,121,144,222,163,320,176,320,181,222,168,119,149,104,146"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="367,228,514,268"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="71,149,93,173,121,194,183,218,248,234,311,243,367,246,367,252,310,248,247,239,181,224,119,198,90,177,67,153"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="555,124,693,124,693,129,555,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="524,173,692,142,693,147,525,178"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="526,223,561,213,615,198,668,180,749,144,751,149,670,185,617,203,562,219,528,228"/>
 </map>

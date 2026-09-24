@@ -1,3 +1,7 @@
 <map id="pcl::io::LZFImageReader" name="pcl::io::LZFImageReader">
-<area shape="rect" id="node2" href="$structpcl_1_1io_1_1_camera_parameters.html" title="Basic camera parameters placeholder. " alt="" coords="5,5,184,35"/>
+<area shape="rect" id="Node000001" title="PCL&#45;LZF image format reader." alt="" coords="31,108,211,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,40,115,106,110,110,58,43"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1io_1_1_camera_parameters.html" title="Basic camera parameters placeholder." alt="" coords="104,5,299,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,43,153,86,133,109,129,106,149,82,182,40"/>
 </map>

@@ -1,5 +1,9 @@
 <map id="pcl::tracking::PointCoherence&lt; PointInT &gt;" name="pcl::tracking::PointCoherence&lt; PointInT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1tracking_1_1_distance_coherence.html" title="DistanceCoherence computes coherence between two points from the distance between them..." alt="" coords="252,5,468,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1tracking_1_1_h_s_v_color_coherence.html" title="HSVColorCoherence computes coherence between the two points from the color difference between them..." alt="" coords="249,74,471,121"/>
-<area shape="rect" id="node7" href="$classpcl_1_1tracking_1_1_normal_coherence.html" title="NormalCoherence computes coherence between two points from the angle between their normals..." alt="" coords="257,143,463,190"/>
+<area shape="rect" id="Node000001" title="PointCoherence is a base class to compute coherence between the two points." alt="" coords="5,69,217,109"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1tracking_1_1_distance_coherence.html" title="DistanceCoherence computes coherence between two points from the distance between them." alt="" coords="267,5,503,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,64,299,43,300,48,211,69"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1tracking_1_1_h_s_v_color_coherence.html" title="HSVColorCoherence computes coherence between the two points from the color difference between them." alt="" coords="265,69,505,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,87,265,87,265,92,231,92"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1tracking_1_1_normal_coherence.html" title="NormalCoherence computes coherence between two points from the angle between their normals." alt="" coords="272,133,499,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,110,300,131,299,136,210,115"/>
 </map>

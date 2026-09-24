@@ -1,4 +1,7 @@
 <map id="svm_model" name="svm_model">
-<area shape="rect" id="node2" href="$structsvm__node.html" title="svm_node" alt="" coords="5,5,88,35"/>
-<area shape="rect" id="node4" href="$structsvm__parameter.html" title="svm_parameter" alt="" coords="112,5,224,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="84,108,183,133"/>
+<area shape="rect" id="Node000002" href="$structsvm__parameter.html" title=" " alt="" coords="5,5,131,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,41,128,107,124,109,81,44"/>
+<area shape="rect" id="Node000003" href="$structsvm__node.html" title=" " alt="" coords="155,5,245,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,44,164,86,145,109,141,106,159,82,185,41"/>
 </map>

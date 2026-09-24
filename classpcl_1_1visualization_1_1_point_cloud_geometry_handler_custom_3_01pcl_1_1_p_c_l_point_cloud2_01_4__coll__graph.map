@@ -1,3 +1,7 @@
 <map id="pcl::visualization::PointCloudGeometryHandlerCustom&lt; pcl::PCLPointCloud2 &gt;" name="pcl::visualization::PointCloudGeometryHandlerCustom&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Base handler class for PointCloud geometry. " alt="" coords="15,5,209,69"/>
+<area shape="rect" id="Node000001" title="Custom handler class for PointCloud geometry." alt="" coords="5,197,236,252"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1visualization_1_1_point_cloud_geometry_handler_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Base handler class for PointCloud geometry." alt="" coords="13,93,229,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,162,123,197,118,197,118,162"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,5,166,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,45,123,93,118,93,118,45"/>
 </map>

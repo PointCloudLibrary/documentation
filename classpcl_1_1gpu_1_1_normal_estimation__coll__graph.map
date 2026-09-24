@@ -1,8 +1,19 @@
 <map id="pcl::gpu::NormalEstimation" name="pcl::gpu::NormalEstimation">
-<area shape="rect" id="node2" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="120,397,240,427"/>
-<area shape="rect" id="node4" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; int \&gt;" alt="" coords="5,182,152,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class " alt="" coords="95,5,257,35"/>
-<area shape="rect" id="node8" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="87,85,265,115"/>
-<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="203,182,349,229"/>
-<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_octree.html" title="Octree implementation on GPU. " alt="" coords="259,299,373,328"/>
+<area shape="rect" id="Node000001" title="Class for normal estimation." alt="" coords="79,437,277,463"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="113,363,243,388"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,402,181,437,175,437,175,402"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="5,168,167,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,221,54,239,46,259,44,280,50,299,67,320,89,337,137,360,135,365,86,342,63,324,45,301,39,280,41,258,49,237,60,218"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1gpu_1_1_octree.html" title="Octree implementation on GPU." alt="" coords="116,273,240,298"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="115,216,169,271,165,274,112,220"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1gpu_1_1_device_memory.html" title="DeviceMemory class" alt="" coords="113,5,293,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="150,38,118,56,94,81,85,102,81,125,84,167,79,168,76,125,80,101,89,79,115,52,147,34"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class" alt="" coords="104,80,303,105"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="206,45,206,80,201,80,201,45"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="208,168,369,208"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="259,33,291,51,316,79,323,102,321,126,304,169,299,167,316,125,318,102,312,81,288,56,257,38"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="166,114,138,131,102,169,98,166,135,127,163,109"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="225,113,273,166,269,170,221,117"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="287,222,271,281,258,312,239,340,224,354,207,365,204,360,220,350,235,337,253,309,266,279,282,221"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="181,312,181,362,175,362,175,312"/>
 </map>

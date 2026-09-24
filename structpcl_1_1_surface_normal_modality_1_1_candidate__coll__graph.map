@@ -1,4 +1,7 @@
 <map id="pcl::SurfaceNormalModality&lt; PointInT &gt;::Candidate" name="pcl::SurfaceNormalModality&lt; PointInT &gt;::Candidate">
-<area shape="rect" id="node2" href="$structpcl_1_1_normal.html" title="A point structure representing normal coordinates and the surface curvature estimate. " alt="" coords="52,85,140,115"/>
-<area shape="rect" id="node4" href="$structpcl_1_1___normal.html" title="pcl::_Normal" alt="" coords="48,5,144,35"/>
+<area shape="rect" id="Node000001" title="Candidate for a feature (used in feature extraction methods)." alt="" coords="5,168,208,208"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_normal.html" title="A point structure representing normal coordinates and the surface curvature estimate." alt="" coords="58,80,155,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,119,109,168,104,168,104,119"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1___normal.html" title=" " alt="" coords="55,5,159,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,45,109,80,104,80,104,45"/>
 </map>

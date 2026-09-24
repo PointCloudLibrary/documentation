@@ -1,16 +1,44 @@
 <map id="pcl::gpu::DeviceMemory" name="pcl::gpu::DeviceMemory">
-<area shape="rect" id="node3" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; curandState \&gt;" alt="" coords="631,191,777,238"/>
-<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; double \&gt;" alt="" coords="631,346,777,393"/>
-<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; float \&gt;" alt="" coords="631,495,777,542"/>
-<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; float4 \&gt;" alt="" coords="631,102,777,149"/>
-<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; int \&gt;" alt="" coords="631,417,777,463"/>
-<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; Label \&gt;" alt="" coords="631,5,777,51"/>
-<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; NormalType \&gt;" alt="" coords="631,1037,777,1083"/>
-<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::gpu::people::trees\l::Node \&gt;" alt="" coords="623,708,785,772"/>
-<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="631,810,777,857"/>
-<area shape="rect" id="node21" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; pcl::tracking::ParticleXYZRPY \&gt;" alt="" coords="593,957,815,1003"/>
-<area shape="rect" id="node23" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; PointType \&gt;" alt="" coords="631,613,777,659"/>
-<area shape="rect" id="node25" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; uint64_type \&gt;" alt="" coords="631,277,777,323"/>
-<area shape="rect" id="node27" href="$classpcl_1_1gpu_1_1_device_array.html" title="pcl::gpu::DeviceArray\l\&lt; unsigned char \&gt;" alt="" coords="631,882,777,929"/>
-<area shape="rect" id="node29" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class " alt="" coords="223,499,401,528"/>
+<area shape="rect" id="Node000001" title="DeviceMemory class" alt="" coords="5,443,185,468"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="666,206,847,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,429,156,346,191,298,233,254,288,207,335,175,387,152,457,132,501,120,538,112,574,115,615,132,625,142,629,153,632,164,639,174,660,190,683,203,680,208,657,194,635,178,627,166,624,154,620,145,612,137,572,120,538,118,502,125,458,137,389,157,338,180,291,211,237,258,195,301,160,349,111,432"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,361,837,401"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,432,171,396,234,363,294,340,343,328,457,314,537,301,573,301,615,315,624,322,628,330,632,337,639,344,677,362,674,367,636,349,628,340,623,332,620,325,612,319,572,306,538,306,458,320,344,333,295,345,236,368,174,401,124,436"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,504,837,544"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,438,272,429,382,425,441,428,500,434,558,445,614,461,627,470,639,480,687,501,685,506,636,485,624,474,612,466,557,450,499,439,440,433,382,430,273,434,182,444"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,124,837,164"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,429,118,378,146,312,184,242,207,208,233,178,285,128,333,95,386,73,457,53,500,43,535,39,571,43,614,53,649,66,682,84,734,121,731,126,679,89,647,71,613,58,570,48,536,45,501,48,458,58,388,78,336,100,289,132,237,182,211,212,188,245,151,314,123,380,107,430"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,430,837,470"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="137,435,225,402,283,386,346,372,413,364,481,362,549,369,615,388,628,399,639,411,677,428,675,433,636,415,624,403,612,393,548,374,481,367,413,369,347,378,284,391,227,408,138,440"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,9,837,49"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="97,429,107,363,131,275,148,228,171,182,199,139,233,100,282,63,337,37,396,19,457,8,517,3,576,3,676,12,675,17,575,9,518,9,458,13,397,24,339,42,285,68,236,104,203,142,176,185,153,230,136,277,113,364,102,430"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,1005,837,1045"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="102,482,116,595,143,751,161,830,183,901,208,958,222,980,236,995,287,1028,344,1050,405,1063,466,1068,527,1066,585,1061,684,1042,685,1048,586,1066,528,1072,466,1073,404,1068,343,1055,285,1033,233,999,218,983,203,961,178,903,156,832,138,752,111,596,97,483"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,718,837,758"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="112,480,161,557,196,601,236,639,292,678,339,702,391,717,458,732,514,740,571,744,675,743,675,748,571,750,513,746,457,737,389,722,337,707,289,683,233,643,192,604,156,560,107,482"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="637,784,876,824"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="105,481,120,534,146,601,185,672,209,704,236,732,280,764,328,788,380,805,434,817,488,823,540,825,637,820,637,825,540,830,487,828,433,822,379,811,326,793,277,769,233,736,205,707,180,674,142,603,115,536,100,483"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,933,837,973"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="99,482,103,564,110,619,121,679,139,741,163,802,195,859,237,908,285,945,339,970,398,985,460,992,521,992,579,987,680,971,681,976,580,993,521,997,459,997,397,990,338,975,282,949,233,912,191,862,158,804,134,743,116,680,105,620,98,565,94,482"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,604,837,644"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="126,474,183,513,263,561,357,606,407,625,458,638,514,646,571,647,675,637,676,643,571,653,513,652,457,644,406,630,355,611,261,566,180,518,123,479"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,294,837,334"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="115,431,166,378,233,322,291,282,339,254,389,233,457,214,501,203,539,194,575,196,615,215,626,228,629,243,631,257,639,270,657,283,677,293,674,298,654,287,635,274,626,259,624,243,621,230,612,219,573,202,539,200,503,208,458,220,391,238,341,259,294,286,236,326,169,382,119,434"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1gpu_1_1_device_array.html" title=" " alt="" coords="676,852,837,892"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="101,482,111,550,134,642,151,690,174,738,202,783,236,822,284,857,339,882,397,898,457,905,518,907,575,903,676,889,676,894,576,909,518,912,457,911,396,903,337,887,282,862,233,826,198,786,169,741,146,692,128,643,106,551,96,483"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1gpu_1_1_device_array.html" title="DeviceArray class" alt="" coords="235,503,433,528"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="161,469,283,500,282,506,159,474"/>
+<area shape="poly" id="edge15_Node000015_Node000002" title=" " alt="" coords="342,489,357,450,382,403,414,356,456,315,505,285,560,263,614,248,665,238,666,244,616,253,561,268,508,290,459,319,418,359,386,406,362,453,346,491"/>
+<area shape="poly" id="edge16_Node000015_Node000003" title=" " alt="" coords="368,494,409,472,456,452,570,417,675,393,676,398,571,422,458,457,412,477,370,499"/>
+<area shape="poly" id="edge17_Node000015_Node000004" title=" " alt="" coords="447,521,457,521,676,522,676,528,457,526,447,526"/>
+<area shape="poly" id="edge18_Node000015_Node000005" title=" " alt="" coords="336,489,346,432,366,358,382,319,402,281,426,246,456,215,480,197,507,182,564,160,622,147,675,142,676,147,623,153,565,165,509,187,483,201,459,219,430,249,406,284,387,321,371,360,351,433,341,490"/>
+<area shape="poly" id="edge19_Node000015_Node000006" title=" " alt="" coords="430,498,675,460,676,465,431,504"/>
+<area shape="poly" id="edge20_Node000015_Node000007" title=" " alt="" coords="333,489,340,419,358,324,373,272,394,221,421,174,455,131,479,110,505,92,562,64,621,46,675,35,676,40,622,51,564,69,508,97,482,114,459,135,426,177,399,224,378,274,363,325,345,420,339,490"/>
+<area shape="poly" id="edge21_Node000015_Node000008" title=" " alt="" coords="337,542,341,619,356,725,372,782,393,838,422,891,459,937,482,956,508,973,564,997,622,1012,676,1020,675,1025,621,1017,562,1002,505,977,479,960,455,940,418,894,388,840,367,784,351,726,335,620,332,542"/>
+<area shape="poly" id="edge22_Node000015_Node000009" title=" " alt="" coords="363,535,406,569,459,604,501,626,535,641,614,672,712,716,710,721,612,677,533,646,498,631,456,609,403,574,359,540"/>
+<area shape="poly" id="edge23_Node000015_Node000010" title=" " alt="" coords="347,540,364,577,388,622,420,668,459,707,490,721,547,740,684,781,682,786,545,746,488,726,456,711,416,671,383,625,359,580,342,543"/>
+<area shape="poly" id="edge24_Node000015_Node000011" title=" " alt="" coords="340,542,348,605,367,690,383,735,403,779,428,820,459,856,495,878,550,899,676,934,675,939,549,905,493,883,456,860,424,823,398,782,378,737,362,691,342,606,334,542"/>
+<area shape="poly" id="edge25_Node000015_Node000012" title=" " alt="" coords="399,529,678,601,677,606,397,534"/>
+<area shape="poly" id="edge26_Node000015_Node000013" title=" " alt="" coords="350,490,394,438,423,411,456,388,510,362,568,343,624,329,675,320,676,325,625,334,569,348,512,367,459,393,427,415,398,442,354,494"/>
+<area shape="poly" id="edge27_Node000015_Node000014" title=" " alt="" coords="343,541,355,592,377,656,411,722,433,752,459,779,496,800,551,820,677,853,675,858,549,825,493,805,456,783,429,756,407,725,372,658,350,593,337,542"/>
 </map>

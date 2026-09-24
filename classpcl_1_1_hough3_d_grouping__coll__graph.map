@@ -1,5 +1,24 @@
 <map id="pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;" name="pcl::Hough3DGrouping&lt; PointModelT, PointSceneT, PointModelRfT, PointSceneRfT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_correspondence_grouping.html" title="Abstract base class for Correspondence Grouping algorithms. " alt="" coords="15,182,217,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointModelT \&gt;" alt="" coords="16,101,216,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="33,5,199,35"/>
+<area shape="rect" id="Node000001" title="Class implementing a 3D correspondence grouping algorithm that can deal with multiple instances of a ..." alt="" coords="1892,173,2131,227"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_correspondence_grouping.html" title="Abstract base class for Correspondence Grouping algorithms." alt="" coords="1621,180,1843,220"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1856,197,1892,197,1892,203,1856,203"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="1260,187,1476,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1490,197,1621,197,1621,203,1490,203"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,186,96,211"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="62,172,85,138,118,106,193,63,257,41,325,33,411,32,1733,32,1773,36,1812,47,1849,63,1884,84,1943,129,1987,170,1983,174,1940,133,1881,88,1846,68,1810,52,1772,41,1733,37,411,37,325,38,258,46,195,68,122,110,89,141,67,175"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="80,176,119,155,198,122,261,100,327,88,411,84,1369,84,1416,87,1463,94,1554,119,1634,149,1695,178,1692,182,1632,154,1553,124,1462,99,1416,92,1369,89,411,89,327,93,263,105,200,127,121,160,82,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,180,120,176,178,169,224,168,329,171,868,171,1236,179,1290,185,1290,190,1236,184,868,177,329,176,224,174,179,175,120,181,102,185"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="329,186,496,211"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="110,196,329,196,329,201,110,201"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="816,249,992,274"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="110,205,330,235,425,245,520,252,677,257,816,259,816,264,677,263,520,257,424,251,329,240,109,210"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="520,299,792,325"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="66,222,89,255,104,270,121,282,181,307,244,324,309,334,374,338,494,334,590,322,591,327,495,339,374,343,308,339,243,329,179,312,119,286,100,274,85,258,62,225"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1016,350,1236,375"/>
+<area shape="poly" id="edge14_Node000008_Node000004" title=" " alt="" coords="59,224,67,252,79,283,97,314,122,338,182,374,246,403,314,426,383,441,454,451,526,456,667,454,800,439,919,417,1016,393,1086,373,1087,378,1017,398,920,422,801,444,667,459,525,462,454,457,382,446,312,431,244,408,180,379,118,342,93,317,74,286,62,254,54,226"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="510,196,1260,197,1260,203,510,201"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="467,213,520,225,677,246,816,256,816,261,676,251,520,231,466,218"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="1006,254,1117,246,1236,231,1323,210,1325,215,1236,236,1117,251,1006,260"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="806,304,1010,294,1236,275,1441,247,1622,217,1622,223,1442,253,1236,280,1010,299,806,310"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="1211,345,1842,229,1891,220,1892,225,1843,235,1212,350"/>
 </map>

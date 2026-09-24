@@ -1,3 +1,5 @@
 <map id="pcl::SVMModel" name="pcl::SVMModel">
-<area shape="rect" id="node2" href="$structsvm__model.html" title="svm_model" alt="" coords="16,5,104,35"/>
+<area shape="rect" id="Node000001" title="The structure initialize a model created by the SVM (Support Vector Machines) classifier (pcl::SVMTra..." alt="" coords="5,79,124,104"/>
+<area shape="rect" id="Node000002" href="$structsvm__model.html" title=" " alt="" coords="15,5,114,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,67,79,62,79,62,44"/>
 </map>

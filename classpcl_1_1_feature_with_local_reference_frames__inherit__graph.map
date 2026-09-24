@@ -1,8 +1,29 @@
 <map id="pcl::FeatureWithLocalReferenceFrames&lt; PointInT, PointRFT &gt;" name="pcl::FeatureWithLocalReferenceFrames&lt; PointInT, PointRFT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="264,58,440,105"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_unique_shape_context.html" title="UniqueShapeContext implements the Unique Shape Context Descriptor described here: ..." alt="" coords="267,127,437,174"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title="SHOTColorEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a giv..." alt="" coords="488,5,699,69"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_s_h_o_t_estimation.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="513,93,673,157"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html" title="SHOTColorEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a ..." alt="" coords="759,5,935,69"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_s_h_o_t_estimation_o_m_p.html" title="SHOTEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given..." alt="" coords="748,93,945,157"/>
+<area shape="rect" id="Node000001" title="FeatureWithLocalReferenceFrames provides a public interface for descriptor extractor classes which ne..." alt="" coords="5,349,233,389"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title=" " alt="" coords="877,5,1132,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,338,251,274,385,193,463,151,545,112,631,78,717,50,797,35,877,28,877,34,798,40,718,55,632,83,548,117,465,156,388,198,254,279,160,343"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title=" " alt="" coords="881,344,1128,399"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,366,881,368,881,374,247,372"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_s_h_o_t_estimation_base.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="467,200,681,255"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,342,484,252,486,257,199,347"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_unique_shape_context.html" title="UniqueShapeContext implements the Unique Shape Context Descriptor described here:" alt="" coords="481,407,667,461"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="248,384,481,418,480,423,247,390"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_feature_with_local_reference_frames.html" title=" " alt="" coords="455,485,693,540"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="161,394,207,422,258,446,358,476,455,495,454,501,356,481,256,451,204,426,159,399"/>
+<area shape="poly" id="edge12_Node000004_Node000002" title=" " alt="" coords="615,189,662,155,716,125,754,114,786,111,817,108,852,94,864,82,876,69,897,58,900,63,879,73,867,86,855,99,818,113,787,117,755,119,718,130,665,160,619,194"/>
+<area shape="poly" id="edge13_Node000004_Node000003" title=" " alt="" coords="622,261,667,291,718,317,787,335,881,351,881,357,786,340,716,322,664,296,619,265"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title=" " alt="" coords="1316,124,1571,179"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="694,213,717,211,1315,159,1316,165,718,217,694,219"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_s_h_o_t_estimation.html" title=" " alt="" coords="1336,210,1551,279"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="694,227,1336,240,1336,245,694,232"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_s_h_o_t_color_estimation.html" title="SHOTColorEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a giv..." alt="" coords="892,84,1117,139"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="636,191,716,158,805,136,891,121,892,126,806,141,718,163,638,196"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_s_h_o_t_estimation.html" title="SHOTEstimation estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given po..." alt="" coords="919,265,1090,320"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="695,243,920,277,919,282,694,248"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="1131,126,1156,129,1316,142,1316,147,1156,134,1131,131"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_s_h_o_t_color_estimation_o_m_p.html" title="SHOTColorEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a ..." alt="" coords="1349,41,1537,96"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1131,88,1156,85,1349,70,1349,75,1156,90,1131,93"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="1104,296,1195,296,1292,287,1341,277,1342,282,1292,293,1196,301,1104,301"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_s_h_o_t_estimation_o_m_p.html" title="SHOTEstimationOMP estimates the Signature of Histograms of OrienTations (SHOT) descriptor for a given..." alt="" coords="1337,308,1550,363"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1104,307,1156,314,1337,328,1336,333,1156,319,1103,312"/>
 </map>

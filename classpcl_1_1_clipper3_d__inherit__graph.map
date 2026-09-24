@@ -1,4 +1,7 @@
 <map id="pcl::Clipper3D&lt; PointT &gt;" name="pcl::Clipper3D&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_box_clipper3_d.html" title="Implementation of a box clipper in 3D. Actually it allows affine transformations, thus any parallelep..." alt="" coords="5,83,141,130"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_plane_clipper3_d.html" title="Implementation of a plane clipper in 3D. " alt="" coords="165,83,304,130"/>
+<area shape="rect" id="Node000001" title="Base class for 3D clipper objects." alt="" coords="75,5,259,31"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_box_clipper3_d.html" title="Implementation of a box clipper in 3D. Actually it allows affine transformations, thus any parallelep..." alt="" coords="5,79,155,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,42,103,80,99,77,142,38"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_plane_clipper3_d.html" title="Implementation of a plane clipper in 3D." alt="" coords="179,79,328,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,38,234,77,231,80,188,42"/>
 </map>

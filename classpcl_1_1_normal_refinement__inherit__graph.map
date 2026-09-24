@@ -1,6 +1,11 @@
 <map id="pcl::NormalRefinement&lt; NormalT &gt;" name="pcl::NormalRefinement&lt; NormalT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; NormalT \&gt;" alt="" coords="75,197,224,227"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; NormalT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="111,5,276,35"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="205,101,344,131"/>
+<area shape="rect" id="Node000001" title="Normal vector refinement class" alt="" coords="29,243,201,283"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter.html" title=" " alt="" coords="31,168,199,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,207,117,243,112,243,112,207"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,80,181,105"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,118,114,167,109,168,97,119"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="206,80,359,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="249,114,139,170,136,165,247,109"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="195,5,371,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="285,45,285,80,280,80,280,45"/>
 </map>

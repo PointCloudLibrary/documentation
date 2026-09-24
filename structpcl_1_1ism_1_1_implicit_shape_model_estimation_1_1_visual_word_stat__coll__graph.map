@@ -1,4 +1,7 @@
 <map id="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::VisualWordStat" name="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;::VisualWordStat">
-<area shape="rect" id="node2" href="$structpcl_1_1_point_x_y_z.html" title="A point structure representing Euclidean xyz coordinates. " alt="" coords="71,85,172,115"/>
-<area shape="rect" id="node4" href="$structpcl_1_1___point_x_y_z.html" title="pcl::_PointXYZ" alt="" coords="67,5,176,35"/>
+<area shape="rect" id="Node000001" title="Structure for storing the visual word." alt="" coords="5,168,259,223"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_point_x_y_z.html" title="A point structure representing Euclidean xyz coordinates." alt="" coords="78,80,186,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,119,135,168,129,168,129,119"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1___point_x_y_z.html" title=" " alt="" coords="75,5,189,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,45,135,80,129,80,129,45"/>
 </map>

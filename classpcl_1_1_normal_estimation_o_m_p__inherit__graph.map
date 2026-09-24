@@ -1,6 +1,11 @@
 <map id="pcl::NormalEstimationOMP&lt; PointInT, PointOutT &gt;" name="pcl::NormalEstimationOMP&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_normal_estimation.html" title="NormalEstimation estimates local surface properties (surface normals and curvatures)at each 3D point..." alt="" coords="15,281,177,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="19,182,173,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="8,101,184,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="13,5,179,35"/>
+<area shape="rect" id="Node000001" title="NormalEstimationOMP estimates local surface properties at each 3D point, such as surface normals and ..." alt="" coords="5,347,203,387"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_normal_estimation.html" title="NormalEstimation estimates local surface properties (surface normals and curvatures)at each 3D point." alt="" coords="15,257,193,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,311,107,347,101,347,101,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="19,168,189,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,222,107,257,101,257,101,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="10,93,198,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,132,107,168,101,168,101,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="16,5,192,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="107,45,107,93,101,93,101,45"/>
 </map>

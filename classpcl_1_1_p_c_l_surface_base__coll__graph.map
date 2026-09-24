@@ -1,6 +1,15 @@
 <map id="pcl::PCLSurfaceBase&lt; PointInT &gt;" name="pcl::PCLSurfaceBase&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="Node000001" title="Pure abstract class." alt="" coords="5,344,160,384"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="82,269,270,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,305,106,346,103,342,151,301"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="129,5,220,31"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="117,35,90,46,66,61,49,80,43,105,43,283,45,300,51,315,68,343,64,345,46,318,40,301,37,284,37,104,44,78,63,57,88,41,115,30"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,44,151,68,143,94,139,145,147,195,161,238,173,268,168,270,156,240,142,196,134,145,137,93,146,66,158,42"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="153,93,319,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="193,41,230,91,225,94,189,44"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="261,181,437,207"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="234,27,267,37,297,52,321,70,336,90,346,113,352,142,353,181,348,181,347,143,340,114,332,92,318,74,295,57,265,42,233,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,131,207,155,195,182,183,230,179,270,174,269,178,229,189,180,202,153,217,128"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="259,126,294,155,330,179,327,183,290,159,256,130"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="315,215,201,271,198,267,313,210"/>
 </map>

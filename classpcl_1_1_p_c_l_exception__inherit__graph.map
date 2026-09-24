@@ -1,14 +1,29 @@
 <map id="pcl::PCLException" name="pcl::PCLException">
-<area shape="rect" id="node5" href="$classpcl_1_1_bad_argument_exception.html" title="An exception that is thrown when the argments number or type is wrong/unhandled. " alt="" coords="379,5,563,35"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_compute_failed_exception.html" title="pcl::ComputeFailedException" alt="" coords="375,59,567,88"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_init_failed_exception.html" title="An exception thrown when init can not be performed should be used in all the PCLBase class inheritant..." alt="" coords="392,112,549,141"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_invalid_conversion_exception.html" title="An exception that is thrown when a PCLPointCloud2 message cannot be converted into a PCL type..." alt="" coords="367,165,575,195"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_invalid_s_a_c_model_type_exception.html" title="An exception that is thrown when a sample consensus model doesn&#39;t have the correct number of samples ..." alt="" coords="383,218,559,265"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_i_o_exception.html" title="An exception that is thrown during an IO error (typical read/write errors) " alt="" coords="412,288,529,317"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_is_not_dense_exception.html" title="An exception that is thrown when a PointCloud is not dense but is attemped to be used as dense..." alt="" coords="384,341,557,371"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_kernel_width_too_small_exception.html" title="An exception that is thrown when the kernel size is too small. " alt="" coords="384,394,557,441"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_not_enough_points_exception.html" title="An exception that is thrown when the number of correspondants is not equal to the minimum required..." alt="" coords="368,464,573,493"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_solver_didnt_converge_exception.html" title="An exception that is thrown when the non linear solver didn&#39;t converge. " alt="" coords="385,517,556,563"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_unhandled_point_type_exception.html" title="pcl::UnhandledPointTypeException" alt="" coords="357,587,584,616"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_unorganized_point_cloud_exception.html" title="An exception that is thrown when an organized point cloud is needed but not provided. " alt="" coords="379,639,563,686"/>
+<area shape="rect" id="Node000001" title="A base class for all pcl exceptions which inherits from std::runtime_error." alt="" coords="192,289,329,315"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_bad_argument_exception.html" title="An exception that is thrown when the arguments number or type is wrong/unhandled." alt="" coords="399,5,602,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,275,273,225,294,161,327,95,349,65,376,40,398,27,400,31,379,44,353,69,331,98,299,163,279,226,268,276"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_compute_failed_exception.html" title=" " alt="" coords="395,55,606,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,275,280,233,302,183,333,132,353,109,376,89,396,78,398,82,379,94,357,113,337,135,306,185,285,235,271,276"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_i_o_exception.html" title="An exception that is thrown during an IO error (typical read/write errors)" alt="" coords="437,104,564,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="270,275,286,244,310,206,339,169,376,138,405,125,436,117,438,122,407,130,379,143,343,173,314,209,291,246,275,278"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_init_failed_exception.html" title="An exception thrown when init can not be performed should be used in all the PCLBase class inheritant..." alt="" coords="415,153,587,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="277,277,319,231,346,207,376,188,414,174,415,179,379,192,349,211,322,234,281,280"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_invalid_conversion_exception.html" title="An exception that is thrown when a PCLPointCloud2 message cannot be converted into a PCL type." alt="" coords="385,203,616,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="292,280,331,258,376,238,421,225,422,231,378,243,334,263,294,285"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_invalid_s_a_c_model_type_exception.html" title="An exception that is thrown when a sample consensus model doesn&#39;t have the correct number of samples ..." alt="" coords="405,253,596,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="343,289,405,282,406,287,343,295"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_is_not_dense_exception.html" title="An exception that is thrown when a PointCloud is not dense but is attempted to be used as dense." alt="" coords="407,317,595,343"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="344,309,407,316,406,322,343,314"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_kernel_width_too_small_exception.html" title="An exception that is thrown when the kernel size is too small." alt="" coords="407,367,594,407"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="300,318,378,353,416,365,414,370,376,358,297,323"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_not_enough_points_exception.html" title="An exception that is thrown when the number of correspondents is not equal to the minimum required." alt="" coords="389,432,613,457"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="281,324,322,372,349,397,379,417,409,429,407,434,376,422,345,401,318,376,277,328"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_solver_didnt_converge_exception.html" title="An exception that is thrown when the non linear solver didn&#39;t converge." alt="" coords="407,482,594,522"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="275,326,291,359,314,397,343,436,379,468,408,483,406,488,376,472,339,439,309,400,286,361,270,329"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_unhandled_point_type_exception.html" title=" " alt="" coords="377,547,624,572"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="270,328,282,373,303,428,335,485,355,510,379,532,400,544,397,549,376,536,351,514,331,488,298,431,277,374,265,329"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_unorganized_point_cloud_exception.html" title="An exception that is thrown when an organized point cloud is needed but not provided." alt="" coords="400,597,601,637"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="268,328,277,382,297,451,312,487,330,522,352,554,379,583,401,597,398,601,376,587,348,558,325,525,307,489,292,452,272,383,262,329"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,289,144,315"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,299,192,299,192,305,158,305"/>
 </map>

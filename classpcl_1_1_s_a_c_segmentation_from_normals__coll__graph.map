@@ -1,13 +1,31 @@
 <map id="pcl::SACSegmentationFromNormals&lt; PointT, PointNT &gt;" name="pcl::SACSegmentationFromNormals&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models..." alt="" coords="68,851,223,898"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,745,171,775"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="195,737,352,783"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="179,640,368,669"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_sample_consensus_model.html" title="pcl::SampleConsensusModel\&lt; T \&gt;" alt="" coords="161,544,385,573"/>
-<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\&lt; T \&gt;" alt="" coords="88,439,253,468"/>
-<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="104,315,237,362"/>
-<area shape="rect" id="node16" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="277,430,469,477"/>
-<area shape="rect" id="node18" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="287,324,460,353"/>
-<area shape="rect" id="node20" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="221,104,336,133"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="303,219,444,248"/>
+<area shape="rect" id="Node000001" title="SACSegmentationFromNormals represents the PCL nodelet segmentation class for Sample Consensus methods..." alt="" coords="98,685,305,725"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_s_a_c_segmentation.html" title="SACSegmentation represents the Nodelet segmentation class for Sample Consensus methods and models,..." alt="" coords="118,596,285,636"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,650,204,685,199,685,199,650"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,222,181,247"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,252,147,266,165,284,178,305,183,328,183,515,188,558,197,595,192,596,182,559,177,515,177,329,173,307,161,287,144,270,126,257"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="511,5,601,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="497,27,406,37,301,54,206,78,169,93,145,110,124,137,110,169,97,223,92,221,105,167,119,135,141,106,167,89,204,73,300,49,405,32,496,22"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="201,117,367,143"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="497,24,394,34,348,44,318,57,305,70,297,86,288,118,283,116,292,84,301,67,314,52,346,39,393,29,497,19"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_sample_consensus.html" title=" " alt="" coords="425,493,593,533"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="616,24,697,38,783,60,822,73,853,89,875,107,883,128,883,420,874,441,852,459,819,474,778,485,685,502,594,510,593,505,684,496,777,480,817,469,849,455,870,438,877,419,877,129,870,111,850,94,820,78,782,65,695,43,615,30"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_sample_consensus_model.html" title=" " alt="" coords="386,317,633,343"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="556,45,527,255,514,318,509,317,521,254,550,44"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="594,222,777,247"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="616,24,654,34,692,50,727,73,741,89,752,107,757,124,756,141,743,174,722,202,701,224,697,220,718,199,739,171,751,140,751,124,747,109,736,92,723,77,690,54,652,39,614,29"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="593,110,737,150"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="579,39,648,108,645,112,575,42"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="205,215,413,255"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="528,41,484,72,437,110,400,151,363,193,336,217,332,213,359,189,396,147,433,106,480,67,525,36"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="252,152,116,224,114,219,249,147"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="318,148,363,174,396,191,427,213,452,239,475,268,505,315,501,318,470,271,448,243,424,217,393,196,360,178,315,152"/>
+<area shape="poly" id="edge18_Node000011_Node000005" title=" " alt="" coords="293,156,307,214,302,215,288,157"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="440,540,260,598,258,593,438,535"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class." alt="" coords="406,405,613,431"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="512,444,512,493,507,493,507,444"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="512,357,512,405,507,405,507,357"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="653,256,532,320,530,315,650,251"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="674,163,686,221,680,222,669,164"/>
+<area shape="poly" id="edge16_Node000008_Node000011" title=" " alt="" coords="348,260,401,291,467,315,465,320,399,296,345,265"/>
 </map>

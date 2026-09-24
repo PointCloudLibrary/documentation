@@ -1,4 +1,9 @@
 <map id="pcl::outofcore::OutofcoreIteratorBase&lt; PointT, ContainerT &gt;" name="pcl::outofcore::OutofcoreIteratorBase&lt; PointT, ContainerT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1outofcore_1_1_outofcore_breadth_first_iterator.html" title="pcl::outofcore::Outofcore\lBreadthFirstIterator\&lt; PointT,\l ContainerT \&gt;" alt="" coords="593,5,780,69"/>
-<area shape="rect" id="node7" href="$classpcl_1_1outofcore_1_1_outofcore_depth_first_iterator.html" title="pcl::outofcore::Outofcore\lDepthFirstIterator\&lt; PointT,\l ContainerT \&gt;" alt="" coords="597,93,776,157"/>
+<area shape="rect" id="Node000001" title="Abstract octree iterator class." alt="" coords="5,91,257,131"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1outofcore_1_1_outofcore_breadth_first_iterator.html" title=" " alt="" coords="491,5,700,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,86,490,48,491,53,264,92"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1outofcore_1_1_outofcore_depth_first_iterator.html" title=" " alt="" coords="497,84,694,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,109,496,109,496,114,271,114"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1outofcore_1_1_outofcore_iterator_base.html" title=" " alt="" coords="483,163,708,233"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,133,282,158,384,176,483,188,482,193,384,181,281,163,197,138"/>
 </map>

@@ -1,6 +1,11 @@
 <map id="pcl::octree::OctreeNode" name="pcl::octree::OctreeNode">
-<area shape="rect" id="node3" href="$classpcl_1_1octree_1_1_buffered_branch_node.html" title="pcl::octree::BufferedBranch\lNode\&lt; ContainerT \&gt;" alt="" coords="227,5,408,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1octree_1_1_octree_branch_node.html" title="Abstract octree branch class " alt="" coords="232,74,403,121"/>
-<area shape="rect" id="node7" href="$classpcl_1_1octree_1_1_octree_leaf_node.html" title="Abstract octree leaf class " alt="" coords="224,143,411,190"/>
-<area shape="rect" id="node9" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree, with accessors to its data via the pcl::outofcore::OutofcoreOctreeDiskContainer class or pcl::outofcore::OutofcoreOctreeRamContainer class, whichever it is templated against. " alt="" coords="216,213,419,277"/>
+<area shape="rect" id="Node000001" title="Abstract octree node class" alt="" coords="5,109,180,134"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_buffered_branch_node.html" title=" " alt="" coords="239,5,438,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,100,227,55,262,43,264,48,229,60,131,105"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_branch_node.html" title="Abstract octree branch class" alt="" coords="245,69,432,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,106,245,99,245,104,194,111"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1octree_1_1_octree_leaf_node.html" title="Abstract octree leaf class" alt="" coords="237,133,440,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,132,238,138,237,143,193,137"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree,..." alt="" coords="228,198,449,253"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="132,138,229,183,260,195,258,200,227,188,130,143"/>
 </map>

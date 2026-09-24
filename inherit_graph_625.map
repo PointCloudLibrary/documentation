@@ -1,3 +1,42 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1geometry_1_1_quad_mesh_tag.html" title="Tag describing the type of the mesh. " alt="" coords="5,5,200,35"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_file_grabber.html" title="FileGrabber provides a container&#45;style interface for grabbers which operate on fixed&#45;size input." alt="" coords="155,301,349,327"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_image_grabber.html" title=" " alt="" coords="420,118,573,158"/>
+<area shape="poly" id="edge484_Node000000_Node000001" title=" " alt="" coords="333,294,348,286,389,257,426,221,479,157,483,160,430,225,393,261,351,291,335,299"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_p_c_d_grabber.html" title=" " alt="" coords="397,327,596,352"/>
+<area shape="poly" id="edge485_Node000000_Node000013" title=" " alt="" coords="364,323,397,326,397,332,363,328"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="5,376,107,401"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_david_s_d_k_grabber.html" title="Grabber for davidSDK structured light compliant devices." alt="" coords="169,104,335,129"/>
+<area shape="poly" id="edge486_Node000003_Node000004" title=" " alt="" coords="57,361,65,313,82,253,110,192,130,163,153,139,171,127,173,132,156,143,134,167,115,194,87,255,71,315,63,362"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_depth_sense_grabber.html" title="Grabber for DepthSense devices (e.g." alt="" coords="163,153,341,179"/>
+<area shape="poly" id="edge487_Node000003_Node000005" title=" " alt="" coords="60,362,71,323,89,276,116,228,133,207,153,188,172,176,175,181,156,192,137,210,121,231,94,278,76,325,65,363"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_dinast_grabber.html" title="Grabber for DINAST devices (i.e., IPA&#45;1002, IPA&#45;1110, IPA&#45;2001)" alt="" coords="181,203,323,228"/>
+<area shape="poly" id="edge488_Node000003_Node000006" title=" " alt="" coords="65,362,97,299,122,265,153,237,179,224,181,229,156,242,126,269,102,302,69,364"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_ensenso_grabber.html" title="Grabber for IDS&#45;Imaging Ensenso&#39;s devices." alt="" coords="175,252,329,277"/>
+<area shape="poly" id="edge489_Node000003_Node000007" title=" " alt="" coords="72,363,107,323,129,303,153,286,179,275,181,280,156,291,132,308,110,327,76,367"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_h_d_l_grabber.html" title="Grabber for the Velodyne High&#45;Definition&#45;Laser (HDL)" alt="" coords="188,499,316,524"/>
+<area shape="poly" id="edge490_Node000003_Node000008" title=" " alt="" coords="77,411,111,449,156,484,189,497,187,502,153,488,108,453,73,414"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_image_grabber_base.html" title="Base class for Image file grabber." alt="" coords="165,5,339,31"/>
+<area shape="poly" id="edge492_Node000003_Node000002" title=" " alt="" coords="54,362,56,297,68,211,81,164,98,119,122,77,153,40,169,29,172,33,156,44,126,80,103,122,86,166,74,212,61,298,59,362"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_o_n_i_grabber.html" title="A simple ONI grabber." alt="" coords="189,400,315,425"/>
+<area shape="poly" id="edge494_Node000003_Node000010" title=" " alt="" coords="121,394,190,402,189,408,120,399"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_open_n_i_grabber.html" title="Grabber for OpenNI devices (i.e., Primesense PSDK, Microsoft Kinect, Asus XTion Pro/Live)" alt="" coords="177,449,327,475"/>
+<area shape="poly" id="edge495_Node000003_Node000011" title=" " alt="" coords="93,405,156,434,196,447,194,452,154,439,91,410"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_p_c_d_grabber_base.html" title="Base class for PCD file grabber." alt="" coords="172,351,332,376"/>
+<area shape="poly" id="edge496_Node000003_Node000012" title=" " alt="" coords="120,378,171,371,172,376,121,383"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_real_sense2_grabber.html" title="Grabber for Intel Realsense 2 SDK devices (D400 series)" alt="" coords="163,548,341,573"/>
+<area shape="poly" id="edge498_Node000003_Node000014" title=" " alt="" coords="70,413,102,474,127,506,156,533,180,546,178,550,153,538,123,510,98,477,65,415"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_real_sense_grabber.html" title=" " alt="" coords="167,597,337,623"/>
+<area shape="poly" id="edge499_Node000003_Node000015" title=" " alt="" coords="65,414,76,452,95,498,121,544,156,583,177,595,174,599,153,587,117,547,90,500,71,454,60,415"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1_robot_eye_grabber.html" title="Grabber for the Ocular Robotics RobotEye sensor." alt="" coords="171,647,333,672"/>
+<area shape="poly" id="edge500_Node000003_Node000016" title=" " alt="" coords="63,415,71,462,87,522,115,582,134,609,156,633,173,644,171,649,153,637,130,613,110,585,82,523,66,464,57,416"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1_stereo_grabber_base.html" title="Base class for Stereo file grabber." alt="" coords="165,696,339,721"/>
+<area shape="poly" id="edge501_Node000003_Node000017" title=" " alt="" coords="61,415,66,471,80,543,93,581,109,618,130,653,156,683,172,694,169,698,153,687,126,656,104,621,88,583,75,545,60,472,55,415"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1_tim_grabber.html" title=" " alt="" coords="189,55,315,80"/>
+<area shape="poly" id="edge503_Node000003_Node000019" title=" " alt="" coords="55,362,60,305,75,232,87,193,104,155,126,120,153,89,169,78,187,71,189,76,172,83,156,93,130,123,109,158,92,195,80,233,66,306,61,362"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_v_l_p_grabber.html" title="Grabber for the Velodyne LiDAR (VLP), based on the Velodyne High Definition Laser (HDL)" alt="" coords="434,499,559,524"/>
+<area shape="poly" id="edge491_Node000008_Node000009" title=" " alt="" coords="330,509,434,509,434,514,330,514"/>
+<area shape="poly" id="edge493_Node000002_Node000001" title=" " alt="" coords="331,32,350,40,418,77,472,116,469,120,415,82,348,44,329,37"/>
+<area shape="poly" id="edge497_Node000012_Node000013" title=" " alt="" coords="345,352,397,346,397,352,346,357"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1_stereo_grabber.html" title=" " alt="" coords="425,689,568,729"/>
+<area shape="poly" id="edge502_Node000017_Node000018" title=" " alt="" coords="353,706,425,706,425,711,353,711"/>
 </map>

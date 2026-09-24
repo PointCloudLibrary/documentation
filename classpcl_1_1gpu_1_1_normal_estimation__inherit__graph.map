@@ -1,3 +1,5 @@
 <map id="pcl::gpu::NormalEstimation" name="pcl::gpu::NormalEstimation">
-<area shape="rect" id="node2" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="35,5,155,35"/>
+<area shape="rect" id="Node000001" title="Class for normal estimation." alt="" coords="5,79,204,104"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="39,5,170,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,44,107,79,102,79,102,44"/>
 </map>

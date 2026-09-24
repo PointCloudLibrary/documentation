@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_o_n___fixed_size_pool_iterator.html" title="ON_FixedSizePoolIterator" alt="" coords="7,5,180,35"/>
+<area shape="rect" id="Node000000" href="$class_o_n___fixed_size_pool.html" title=" " alt="" coords="5,5,144,31"/>
+<area shape="rect" id="Node000001" href="$class_o_n___simple_fixed_size_pool.html" title=" " alt="" coords="192,5,413,31"/>
+<area shape="poly" id="edge84_Node000000_Node000001" title=" " alt="" coords="158,15,192,15,192,21,158,21"/>
 </map>

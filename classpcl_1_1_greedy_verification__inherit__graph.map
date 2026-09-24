@@ -1,3 +1,5 @@
 <map id="pcl::GreedyVerification&lt; ModelT, SceneT &gt;" name="pcl::GreedyVerification&lt; ModelT, SceneT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_hypothesis_verification.html" title="Abstract class for hypotheses verification methods. " alt="" coords="5,6,184,53"/>
+<area shape="rect" id="Node000001" title="A greedy hypothesis verification method." alt="" coords="18,93,187,133"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_hypothesis_verification.html" title="Abstract class for hypotheses verification methods." alt="" coords="5,5,200,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,59,105,93,100,93,100,59"/>
 </map>

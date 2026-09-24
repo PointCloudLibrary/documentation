@@ -1,4 +1,7 @@
 <map id="pcl::BranchEstimator" name="pcl::BranchEstimator">
-<area shape="rect" id="node3" href="$classpcl_1_1_binary_tree_threshold_based_branch_estimator.html" title="Branch estimator for binary trees where the branch is computed only from the threshold. " alt="" coords="211,5,376,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_ternary_tree_missing_data_branch_estimator.html" title="Branch estimator for ternary trees where one branch is used for missing data (indicated by flag != 0)..." alt="" coords="199,74,388,121"/>
+<area shape="rect" id="Node000001" title="Interface for branch estimators." alt="" coords="5,45,163,70"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_binary_tree_threshold_based_branch_estimator.html" title="Branch estimator for binary trees where the branch is computed only from the threshold." alt="" coords="222,5,405,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,42,221,35,222,41,177,47"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_ternary_tree_missing_data_branch_estimator.html" title="Branch estimator for ternary trees where one branch is used for missing data (indicated by flag !..." alt="" coords="211,69,416,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,68,211,72,210,78,176,73"/>
 </map>

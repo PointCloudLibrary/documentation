@@ -1,3 +1,5 @@
 <map id="pcl::Intensity8u" name="pcl::Intensity8u">
-<area shape="rect" id="node2" href="$structpcl_1_1___intensity8u.html" title="pcl::_Intensity8u" alt="" coords="5,5,123,35"/>
+<area shape="rect" id="Node000001" title="A point structure representing the grayscale intensity in single&#45;channel images." alt="" coords="9,79,131,104"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1___intensity8u.html" title=" " alt="" coords="5,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,67,79,67,44"/>
 </map>

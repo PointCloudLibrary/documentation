@@ -1,3 +1,7 @@
 <map id="ON_BoundingBox" name="ON_BoundingBox">
-<area shape="rect" id="node3" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="21,8,115,37"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,112,140,137"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="155,115,167,124,159,133,141,136,140,131,156,128,161,125,152,120"/>
+<area shape="rect" id="Node000002" href="$class_o_n__3d_point.html" title=" " alt="" coords="23,7,122,33"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="75,47,75,112,70,112,70,47"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="137,9,145,13,149,20,140,29,122,33,122,27,138,25,143,20,141,17,135,14"/>
 </map>

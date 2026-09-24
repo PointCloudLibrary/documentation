@@ -1,4 +1,9 @@
 <map id="ON_3dRay" name="ON_3dRay">
-<area shape="rect" id="node2" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="5,34,99,63"/>
-<area shape="rect" id="node5" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="216,34,317,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,141,211,167"/>
+<area shape="rect" id="Node000002" href="$class_o_n__3d_point.html" title=" " alt="" coords="5,29,104,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,63,155,139,152,143,74,66"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="119,29,127,34,131,42,123,53,105,57,103,52,120,49,125,42,123,38,116,34"/>
+<area shape="rect" id="Node000003" href="$class_o_n__3d_vector.html" title=" " alt="" coords="224,29,331,55"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="257,66,179,143,175,139,254,63"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="346,30,354,34,357,42,349,53,331,57,330,52,346,48,352,42,350,38,343,34"/>
 </map>

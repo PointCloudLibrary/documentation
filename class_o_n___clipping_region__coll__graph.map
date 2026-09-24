@@ -1,5 +1,11 @@
 <map id="ON_ClippingRegion" name="ON_ClippingRegion">
-<area shape="rect" id="node2" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="5,145,88,174"/>
-<area shape="rect" id="node4" href="$class_o_n___plane_equation.html" title="ON_PlaneEquation" alt="" coords="112,145,245,174"/>
-<area shape="rect" id="node6" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="128,34,229,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="35,220,182,245"/>
+<area shape="rect" id="Node000002" href="$class_o_n___xform.html" title=" " alt="" coords="5,130,95,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,167,76,194,97,218,93,222,72,198,57,170"/>
+<area shape="rect" id="Node000003" href="$class_o_n___plane_equation.html" title=" " alt="" coords="119,130,261,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,167,122,221,118,218,168,164"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="276,135,288,143,280,150,262,152,261,147,278,145,283,143,274,140"/>
+<area shape="rect" id="Node000004" href="$class_o_n__3d_vector.html" title=" " alt="" coords="137,29,243,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,68,193,130,187,130,187,68"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="258,30,266,35,270,42,262,52,244,56,243,51,259,48,265,42,263,38,256,35"/>
 </map>

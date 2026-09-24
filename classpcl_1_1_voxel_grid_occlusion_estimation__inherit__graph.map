@@ -1,5 +1,9 @@
 <map id="pcl::VoxelGridOcclusionEstimation&lt; PointT &gt;" name="pcl::VoxelGridOcclusionEstimation&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="35,160,200,189"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="48,83,187,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="35,5,200,35"/>
+<area shape="rect" id="Node000001" title="VoxelGrid to estimate occluded space in the scene." alt="" coords="5,225,249,265"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="36,152,219,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,191,130,225,125,225,125,191"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="51,79,204,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,118,130,152,125,152,125,118"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="39,5,215,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,44,130,79,125,79,125,44"/>
 </map>

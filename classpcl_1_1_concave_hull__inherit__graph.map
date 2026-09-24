@@ -1,6 +1,11 @@
 <map id="pcl::ConcaveHull&lt; PointInT &gt;" name="pcl::ConcaveHull&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class. " alt="" coords="27,281,179,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class. " alt="" coords="29,182,176,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="15,101,191,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="20,5,185,35"/>
+<area shape="rect" id="Node000001" title="ConcaveHull (alpha shapes) using libqhull library." alt="" coords="5,347,220,372"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class." alt="" coords="29,257,196,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,311,115,346,110,346,110,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class." alt="" coords="35,168,190,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,222,115,257,110,257,110,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="19,93,207,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,132,115,168,110,168,110,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="25,5,201,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="115,45,115,93,110,93,110,45"/>
 </map>

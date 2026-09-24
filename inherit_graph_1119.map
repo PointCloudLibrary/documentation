@@ -1,3 +1,45 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1segmentation_1_1grabcut_1_1_gaussian_fitter.html" title="Helper class that fits a single Gaussian to color samples. " alt="" coords="7,5,164,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="5,552,204,621"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1registration_1_1_transformation_estimation_l_m.html" title=" " alt="" coords="278,5,487,75"/>
+<area shape="poly" id="edge743_Node000000_Node000001" title=" " alt="" coords="104,538,111,444,119,386,132,323,151,259,176,197,209,138,250,85,276,65,279,69,254,89,213,141,181,199,156,261,137,325,124,387,116,445,109,538"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title=" " alt="" coords="274,99,491,154"/>
+<area shape="poly" id="edge744_Node000000_Node000002" title=" " alt="" coords="106,538,117,457,141,357,160,305,184,254,214,207,250,165,272,149,275,153,254,169,218,210,189,257,165,307,146,359,123,458,112,539"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title=" " alt="" coords="274,179,491,248"/>
+<area shape="poly" id="edge746_Node000000_Node000004" title=" " alt="" coords="112,538,129,475,156,400,196,324,221,289,250,258,272,242,275,246,254,262,225,293,200,327,161,403,134,477,118,539"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title=" " alt="" coords="272,272,493,341"/>
+<area shape="poly" id="edge747_Node000000_Node000005" title=" " alt="" coords="122,538,143,494,171,444,207,394,250,351,270,338,273,342,254,355,211,398,176,447,148,496,127,540"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1registration_1_1_transformation_estimation2_d.html" title="TransformationEstimation2D implements a simple 2D rigid transformation estimation (x,..." alt="" coords="279,365,487,435"/>
+<area shape="poly" id="edge748_Node000000_Node000006" title=" " alt="" coords="142,540,191,490,251,444,277,430,280,435,253,449,194,494,146,543"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1registration_1_1_transformation_estimation3_point.html" title="TransformationEstimation3Points represents the class for transformation estimation based on:" alt="" coords="267,459,498,528"/>
+<area shape="poly" id="edge749_Node000000_Node000007" title=" " alt="" coords="216,547,278,526,280,531,218,552"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1registration_1_1_transformation_estimation_dual_quaternion.html" title="TransformationEstimationDualQuaternion implements dual quaternion based estimation of the transformat..." alt="" coords="273,552,493,621"/>
+<area shape="poly" id="edge750_Node000000_Node000008" title=" " alt="" coords="218,584,272,584,272,589,218,589"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1registration_1_1_transformation_estimation_l_m.html" title="TransformationEstimationLM implements Levenberg Marquardt&#45;based estimation of the transformation alig..." alt="" coords="278,645,487,715"/>
+<area shape="poly" id="edge751_Node000000_Node000009" title=" " alt="" coords="218,622,280,643,278,648,216,627"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane_l_l_s.html" title="TransformationEstimationPointToPlaneLLS implements a Linear Least Squares (LLS) approximation for min..." alt="" coords="271,739,494,808"/>
+<area shape="poly" id="edge757_Node000000_Node000015" title=" " alt="" coords="146,630,194,679,253,724,275,736,273,741,251,729,191,683,142,634"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane_l_l_s_weighted.html" title="TransformationEstimationPointToPlaneLLSWeighted implements a Linear Least Squares (LLS) approximation..." alt="" coords="257,832,508,901"/>
+<area shape="poly" id="edge758_Node000000_Node000016" title=" " alt="" coords="127,633,148,677,176,727,211,776,254,818,271,830,268,834,250,822,207,779,171,729,143,679,122,635"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_point_robust.html" title="TransformationEstimationPointToPointRobust implements SVD&#45;based estimation of the transformation alig..." alt="" coords="271,925,494,995"/>
+<area shape="poly" id="edge759_Node000000_Node000017" title=" " alt="" coords="118,634,134,696,161,771,200,846,225,881,254,911,273,926,269,930,250,915,221,884,196,849,156,773,129,698,112,635"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d.html" title="TransformationEstimationSVD implements SVD&#45;based estimation of the transformation aligning the given ..." alt="" coords="274,1019,491,1088"/>
+<area shape="poly" id="edge760_Node000000_Node000018" title=" " alt="" coords="112,635,124,715,148,813,166,865,190,916,219,963,254,1005,275,1021,272,1026,250,1009,214,966,185,918,162,867,143,815,118,716,107,636"/>
+<area shape="rect" id="Node000021" href="$classpcl_1_1registration_1_1_transformation_estimation_symmetric_point_to_plane_l_l_s.html" title="TransformationEstimationSymmetricPointToPlaneLLS implements a Linear Least Squares (LLS) approximatio..." alt="" coords="252,1112,513,1181"/>
+<area shape="poly" id="edge763_Node000000_Node000021" title=" " alt="" coords="109,635,115,732,123,791,136,855,154,920,180,984,212,1045,254,1098,267,1110,264,1114,250,1102,208,1047,175,987,149,922,131,856,118,792,110,732,103,636"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1recognition_1_1_trimmed_i_c_p.html" title=" " alt="" coords="594,107,781,147"/>
+<area shape="poly" id="edge745_Node000002_Node000003" title=" " alt="" coords="505,124,594,124,594,129,505,129"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title=" " alt="" coords="563,552,812,621"/>
+<area shape="poly" id="edge752_Node000009_Node000010" title=" " alt="" coords="500,641,573,619,574,624,501,647"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title=" " alt="" coords="563,645,812,715"/>
+<area shape="poly" id="edge753_Node000009_Node000011" title=" " alt="" coords="501,677,562,677,562,683,501,683"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane.html" title="TransformationEstimationPointToPlane uses Levenberg Marquardt optimization to find the transformation..." alt="" coords="563,739,812,808"/>
+<area shape="poly" id="edge755_Node000009_Node000013" title=" " alt="" coords="501,713,574,736,573,741,500,719"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted.html" title=" " alt="" coords="861,645,1091,715"/>
+<area shape="poly" id="edge754_Node000011_Node000012" title=" " alt="" coords="825,677,861,677,861,683,825,683"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1registration_1_1_transformation_estimation_point_to_plane_weighted.html" title="TransformationEstimationPointToPlaneWeighted uses Levenberg Marquardt optimization to find the transf..." alt="" coords="861,739,1091,808"/>
+<area shape="poly" id="edge756_Node000013_Node000014" title=" " alt="" coords="825,771,861,771,861,776,825,776"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1recognition_1_1_trimmed_i_c_p.html" title=" " alt="" coords="589,995,785,1035"/>
+<area shape="poly" id="edge761_Node000018_Node000019" title=" " alt="" coords="505,1035,589,1024,589,1030,506,1040"/>
+<area shape="rect" id="Node000020" href="$classpcl_1_1registration_1_1_transformation_estimation_s_v_d_scale.html" title="TransformationEstimationSVD implements SVD&#45;based estimation of the transformation aligning the given ..." alt="" coords="561,1059,813,1128"/>
+<area shape="poly" id="edge762_Node000018_Node000020" title=" " alt="" coords="505,1067,562,1074,561,1079,505,1072"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::PointXYZRGBNormal" name="pcl::PointXYZRGBNormal">
-<area shape="rect" id="node2" href="$structpcl_1_1___point_x_y_z_r_g_b_normal.html" title="pcl::_PointXYZRGBNormal" alt="" coords="5,5,187,35"/>
+<area shape="rect" id="Node000001" title="A point structure representing Euclidean xyz coordinates, and the RGB color, together with normal coo..." alt="" coords="9,79,193,104"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1___point_x_y_z_r_g_b_normal.html" title=" " alt="" coords="5,5,196,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,44,103,79,98,79,98,44"/>
 </map>

@@ -1,4 +1,22 @@
 <map id="pcl::PlaneRefinementComparator&lt; PointT, PointNT, PointLT &gt;" name="pcl::PlaneRefinementComparator&lt; PointT, PointNT, PointLT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="7,83,217,130"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function. " alt="" coords="24,5,200,35"/>
+<area shape="rect" id="Node000001" title="PlaneRefinementComparator is a Comparator that operates on plane coefficients, for use in planar segm..." alt="" coords="1155,135,1392,175"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="763,76,995,116"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1009,113,1155,134,1154,140,1008,118"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function." alt="" coords="307,43,504,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="518,63,763,84,762,89,517,68"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,129,96,154"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="61,115,83,78,100,60,119,46,144,33,168,26,209,23,253,27,307,28,501,19,653,18,804,30,995,61,1058,76,1120,94,1224,132,1223,137,1119,99,1057,81,994,67,803,36,652,23,501,25,307,33,252,32,209,28,169,31,146,38,121,50,103,64,88,81,65,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="82,119,119,101,214,76,306,62,306,67,215,82,121,107,84,124"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="318,93,493,133"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="109,134,318,118,318,123,110,139"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="528,145,739,185"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="88,157,121,168,228,183,337,187,439,184,528,177,528,182,440,189,337,192,227,188,119,173,87,162"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="546,200,721,240"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="70,164,92,188,121,207,175,226,231,239,289,246,346,249,454,245,546,234,546,240,455,251,346,254,288,251,230,244,173,231,119,212,89,192,66,167"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="791,265,966,305"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="63,166,84,211,101,232,122,250,162,273,205,292,296,319,390,334,485,338,576,335,661,327,798,303,799,308,661,332,576,341,485,344,390,339,295,324,204,297,160,277,118,254,97,236,80,213,58,168"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="507,107,762,98,762,103,507,112"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="752,161,1154,154,1154,159,753,166"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="734,208,994,181,1154,165,1155,170,995,187,735,213"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="980,279,1055,269,1130,248,1164,232,1196,212,1248,173,1251,177,1199,217,1166,237,1132,253,1056,274,981,285"/>
 </map>

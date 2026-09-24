@@ -1,7 +1,13 @@
 <map id="pcl::NarfDescriptor" name="pcl::NarfDescriptor">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l Narf36 \&gt;" alt="" coords="40,323,243,370"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="5,155,227,184"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="105,5,271,35"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="173,101,349,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="165,209,320,255"/>
+<area shape="rect" id="Node000001" title="Computes NARF feature descriptors for points in a range image See B." alt="" coords="81,360,225,385"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature.html" title=" " alt="" coords="43,271,264,311"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,324,156,360,151,360,151,324"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,175,181,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,211,144,269,140,272,105,214"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="205,168,376,208"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="255,218,181,273,177,268,252,214"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="197,93,385,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="293,132,293,168,288,168,288,132"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="203,5,379,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="293,45,293,93,288,93,288,45"/>
 </map>

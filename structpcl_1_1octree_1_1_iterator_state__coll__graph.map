@@ -1,4 +1,7 @@
 <map id="pcl::octree::IteratorState" name="pcl::octree::IteratorState">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class " alt="" coords="5,152,157,181"/>
-<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="181,152,341,181"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="100,93,280,119"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,38,178,91,175,95,114,42"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class" alt="" coords="205,5,370,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,42,205,95,202,91,262,38"/>
 </map>

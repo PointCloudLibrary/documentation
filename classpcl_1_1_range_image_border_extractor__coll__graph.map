@@ -1,19 +1,49 @@
 <map id="pcl::RangeImageBorderExtractor" name="pcl::RangeImageBorderExtractor">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="pcl::Feature\&lt; PointWithRange,\l BorderDescription \&gt;" alt="" coords="1344,89,1547,135"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointWithRange \&gt;" alt="" coords="705,163,927,192"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="165,152,331,181"/>
-<area shape="rect" id="node14" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="504,125,680,155"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointWithRange \&gt;" alt="" coords="745,67,887,114"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="181,38,315,85"/>
-<area shape="rect" id="node17" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="525,5,659,51"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="965,25,1120,71"/>
-<area shape="rect" id="node20" href="$structpcl_1_1_range_image_border_extractor_1_1_local_surface.html" title="Stores some information extracted from the neighborhood of a point. " alt="" coords="1340,158,1551,205"/>
-<area shape="rect" id="node22" href="$structpcl_1_1_range_image_border_extractor_1_1_shadow_border_indices.html" title="Stores the indices of the shadow border corresponding to obstacle borders. " alt="" coords="1340,227,1551,274"/>
-<area shape="rect" id="node24" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="1385,297,1505,327"/>
-<area shape="rect" id="node26" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="953,335,1132,382"/>
-<area shape="rect" id="node28" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="191,437,305,467"/>
-<area shape="rect" id="node35" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="521,365,663,395"/>
-<area shape="rect" id="node39" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float..." alt="" coords="972,264,1113,293"/>
-<area shape="rect" id="node41" href="$structpcl_1_1___point_with_range.html" title="pcl::_PointWithRange" alt="" coords="517,241,667,271"/>
-<area shape="rect" id="node43" href="$structpcl_1_1_range_image_border_extractor_1_1_parameters.html" title="Parameters used in this class. " alt="" coords="1340,350,1551,397"/>
+<area shape="rect" id="Node000001" title="Extract obstacle borders from range images, meaning positions where there is a transition from foregr..." alt="" coords="2089,522,2323,547"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature.html" title=" " alt="" coords="1613,309,1834,349"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1786,352,2066,471,2177,519,2175,524,2064,476,1784,357"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="497,285,673,310"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="687,297,1612,324,1612,329,687,303"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,153,96,178"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="70,188,107,235,162,290,194,315,230,335,268,348,307,353,1287,353,1458,348,1612,337,1613,342,1458,353,1287,359,307,359,266,354,227,340,191,319,158,294,103,239,66,191"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="84,183,148,219,186,237,226,251,296,268,368,280,498,292,497,297,367,285,295,273,225,256,184,242,145,224,81,188"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="225,202,392,227"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="110,176,121,179,231,199,230,205,119,184,109,182"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="1200,136,1371,176"/>
+<area shape="poly" id="edge14_Node000006_Node000004" title=" " alt="" coords="74,141,115,108,171,73,237,44,272,35,307,32,906,32,956,35,1006,43,1102,70,1186,103,1249,134,1247,138,1184,108,1100,75,1005,48,955,40,906,37,307,37,273,40,238,49,174,77,118,113,78,145"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="811,143,999,169"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="102,146,120,143,172,138,225,137,506,121,629,121,786,133,837,141,836,146,785,139,628,127,506,127,225,143,173,143,120,148,103,152"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="497,143,673,169"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="110,162,497,155,497,160,110,167"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="358,230,417,249,534,282,532,287,415,255,356,235"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="405,210,533,204,673,192,839,166,840,171,674,197,533,209,406,215"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="382,196,524,166,525,171,383,202"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="1351,179,1673,307,1671,312,1349,184"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="1013,153,1200,153,1200,159,1013,159"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="687,153,810,153,810,159,687,159"/>
+<area shape="rect" id="Node000009" href="$structpcl_1_1_range_image_border_extractor_1_1_parameters.html" title="Parameters used in this class." alt="" coords="1607,457,1840,497"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="1854,488,2066,512,2120,519,2119,525,2065,517,1853,493"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="1658,522,1789,547"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="1802,532,2089,532,2089,537,1802,537"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="1187,515,1384,555"/>
+<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="1398,532,1658,532,1658,537,1398,537"/>
+<area shape="rect" id="Node000012" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="525,537,645,562"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="659,557,810,572,905,576,1000,572,1096,562,1186,549,1187,554,1096,568,1000,577,905,581,809,577,659,562"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="809,522,1000,547"/>
+<area shape="poly" id="edge23_Node000015_Node000012" title=" " alt="" coords="659,543,809,536,809,542,659,549"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="271,471,346,497"/>
+<area shape="poly" id="edge21_Node000011_Node000013" title=" " alt="" coords="360,481,697,485,928,494,1163,512,1186,515,1186,520,1162,517,927,500,696,490,360,486"/>
+<area shape="poly" id="edge19_Node000012_Node000013" title=" " alt="" coords="360,498,417,515,526,537,525,542,415,520,358,503"/>
+<area shape="poly" id="edge24_Node000015_Node000013" title=" " alt="" coords="359,466,442,445,549,429,608,425,668,426,728,433,786,447,819,462,849,481,893,520,889,524,846,485,816,466,784,452,727,438,668,431,608,430,550,434,443,451,360,471"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="271,551,346,577"/>
+<area shape="poly" id="edge20_Node000012_Node000014" title=" " alt="" coords="360,562,473,560,525,555,525,560,473,565,360,568"/>
+<area shape="poly" id="edge22_Node000011_Node000015" title=" " alt="" coords="1014,532,1186,532,1186,537,1014,537"/>
+<area shape="rect" id="Node000016" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float." alt="" coords="1209,607,1362,633"/>
+<area shape="poly" id="edge25_Node000010_Node000016" title=" " alt="" coords="1364,602,1657,545,1658,550,1365,607"/>
+<area shape="rect" id="Node000017" href="$structpcl_1_1___point_with_range.html" title=" " alt="" coords="825,635,985,661"/>
+<area shape="poly" id="edge26_Node000016_Node000017" title=" " alt="" coords="998,639,1208,623,1209,628,998,644"/>
+<area shape="rect" id="Node000018" href="$structpcl_1_1_range_image_border_extractor_1_1_local_surface.html" title="Stores some information extracted from the neighborhood of a point." alt="" coords="1607,572,1840,612"/>
+<area shape="poly" id="edge27_Node000001_Node000018" title=" " alt="" coords="1853,576,2065,552,2119,545,2120,550,2066,557,1854,582"/>
+<area shape="rect" id="Node000019" href="$structpcl_1_1_range_image_border_extractor_1_1_shadow_border_indices.html" title="Stores the indices of the shadow border corresponding to obstacle borders." alt="" coords="1607,636,1840,676"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="1853,638,1957,620,2065,593,2127,570,2180,545,2182,550,2130,575,2066,599,1959,625,1854,643"/>
 </map>

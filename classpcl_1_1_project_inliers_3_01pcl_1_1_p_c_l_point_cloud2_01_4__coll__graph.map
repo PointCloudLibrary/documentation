@@ -1,4 +1,14 @@
 <map id="pcl::ProjectInliers&lt; pcl::PCLPointCloud2 &gt;" name="pcl::ProjectInliers&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class. " alt="" coords="5,102,173,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="20,6,159,53"/>
+<area shape="rect" id="Node000001" title="ProjectInliers uses a model and a set of inlier indices from a PointCloud to project them into a sepa..." alt="" coords="5,360,187,400"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class." alt="" coords="111,271,292,311"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,322,121,362,117,358,166,317"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title=" " alt="" coords="128,181,275,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,235,204,271,199,271,199,235"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,5,180,31"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="101,40,68,67,58,85,53,105,53,292,56,310,63,328,82,358,77,361,58,330,51,312,48,292,48,104,53,83,64,64,97,36"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,44,141,80,150,118,168,151,188,180,183,183,163,154,146,120,136,81,132,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="205,93,371,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="169,35,268,91,266,95,166,40"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="303,130,307,142,307,167,301,192,289,223,264,251,236,273,232,268,260,247,284,220,296,190,302,166,301,143,298,132"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="265,129,249,144,217,183,213,179,245,141,261,125"/>
 </map>
