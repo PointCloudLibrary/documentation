@@ -1,3 +1,11 @@
 <map id="pcl::LabeledEuclideanClusterExtraction&lt; PointT &gt;" name="pcl::LabeledEuclideanClusterExtraction&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="17,5,183,35"/>
+<area shape="rect" id="Node000001" title="LabeledEuclideanClusterExtraction represents a segmentation class for cluster extraction in an Euclid..." alt="" coords="5,256,215,296"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="109,181,285,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,218,132,258,129,254,173,214"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,5,178,31"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="126,45,106,117,99,161,99,206,108,255,103,256,94,207,94,161,101,116,121,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,44,139,80,148,118,167,152,188,179,184,183,163,155,144,120,134,81,130,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="203,93,369,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="167,35,266,91,264,95,164,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="266,130,211,183,207,179,262,126"/>
 </map>

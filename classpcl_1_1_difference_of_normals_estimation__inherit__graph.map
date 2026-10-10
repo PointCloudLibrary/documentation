@@ -1,5 +1,9 @@
 <map id="pcl::DifferenceOfNormalsEstimation&lt; PointInT, PointNT, PointOutT &gt;" name="pcl::DifferenceOfNormalsEstimation&lt; PointInT, PointNT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="16,182,171,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="Node000001" title="A Difference of Normals (DoN) scale filter implementation for point cloud data." alt="" coords="6,257,193,312"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="14,168,185,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,222,102,257,97,257,97,222"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,93,193,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,132,102,168,97,168,97,132"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="11,5,187,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="102,45,102,93,97,93,97,45"/>
 </map>

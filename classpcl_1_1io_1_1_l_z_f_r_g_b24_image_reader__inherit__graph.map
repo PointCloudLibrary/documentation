@@ -1,5 +1,9 @@
 <map id="pcl::io::LZFRGB24ImageReader" name="pcl::io::LZFRGB24ImageReader">
-<area shape="rect" id="node5" href="$classpcl_1_1io_1_1_l_z_f_bayer8_image_reader.html" title="PCL&#45;LZF 8&#45;bit Bayer image format reader. " alt="" coords="5,160,211,189"/>
-<area shape="rect" id="node7" href="$classpcl_1_1io_1_1_l_z_f_y_u_v422_image_reader.html" title="PCL&#45;LZF 8&#45;bit Bayer image format reader. " alt="" coords="235,160,448,189"/>
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader. " alt="" coords="141,5,307,35"/>
+<area shape="rect" id="Node000001" title="PCL&#45;LZF 24&#45;bit RGB image format reader." alt="" coords="133,79,357,104"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1io_1_1_l_z_f_bayer8_image_reader.html" title="PCL&#45;LZF 8&#45;bit Bayer image format reader." alt="" coords="5,152,232,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,113,141,154,138,149,212,108"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1io_1_1_l_z_f_y_u_v422_image_reader.html" title="PCL&#45;LZF 8&#45;bit Bayer image format reader." alt="" coords="257,152,487,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="279,108,353,149,350,154,276,113"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader." alt="" coords="155,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,44,248,79,243,79,243,44"/>
 </map>

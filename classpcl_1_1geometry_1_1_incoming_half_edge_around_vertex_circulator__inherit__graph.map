@@ -1,2 +1,5 @@
 <map id="pcl::geometry::IncomingHalfEdgeAroundVertexCirculator&lt; MeshT &gt;" name="pcl::geometry::IncomingHalfEdgeAroundVertexCirculator&lt; MeshT &gt;">
+<area shape="rect" id="Node000001" title="Circulates counter&#45;clockwise around a vertex and returns an index to the incoming half&#45;edge (the targ..." alt="" coords="360,27,567,82"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,312,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,52,360,52,360,57,326,57"/>
 </map>

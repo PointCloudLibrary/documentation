@@ -1,48 +1,87 @@
-<map id="pcl::PointCloud&lt; T &gt;" name="pcl::PointCloud&lt; T &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::InterestPoint \&gt;" alt="" coords="420,21,561,67"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; LocalDescriptorT \&gt;" alt="" coords="373,91,608,120"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointSource \&gt;" alt="" coords="388,144,593,173"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="404,197,577,227"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointInT \&gt;" alt="" coords="399,251,583,280"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZ \&gt;" alt="" coords="396,304,585,333"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="421,357,560,403"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZRGBA \&gt;" alt="" coords="411,426,571,473"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; FaceData \&gt;" alt="" coords="395,496,587,525"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZ \&gt;" alt="" coords="421,549,560,595"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; float \&gt;" alt="" coords="411,619,571,648"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::RGB \&gt;" alt="" coords="421,671,560,718"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; RGB \&gt;" alt="" coords="409,741,572,771"/>
-<area shape="rect" id="node29" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::VFHSignature308 \&gt;" alt="" coords="419,794,563,841"/>
-<area shape="rect" id="node31" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointNT \&gt;" alt="" coords="400,864,581,893"/>
-<area shape="rect" id="node33" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::device::prob_histogram \&gt;" alt="" coords="403,917,579,963"/>
-<area shape="rect" id="node35" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::Normal \&gt;" alt="" coords="421,986,560,1033"/>
-<area shape="rect" id="node37" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; HalfEdge\lData \&gt;" alt="" coords="403,1055,579,1102"/>
-<area shape="rect" id="node39" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; SceneT \&gt;" alt="" coords="401,1125,580,1155"/>
-<area shape="rect" id="node41" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointTarget \&gt;" alt="" coords="389,1179,592,1208"/>
-<area shape="rect" id="node43" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointUV \&gt;" alt="" coords="421,1231,560,1278"/>
-<area shape="rect" id="node45" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; unsigned\l short \&gt;" alt="" coords="404,1301,577,1347"/>
-<area shape="rect" id="node47" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGBA \&gt;" alt="" coords="421,1370,560,1417"/>
-<area shape="rect" id="node49" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; unsigned\l char \&gt;" alt="" coords="404,1439,577,1486"/>
-<area shape="rect" id="node51" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZRGBL \&gt;" alt="" coords="412,1509,569,1555"/>
-<area shape="rect" id="node53" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::GradientXY \&gt;" alt="" coords="421,1578,560,1625"/>
-<area shape="rect" id="node55" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; EdgeData \&gt;" alt="" coords="395,1648,587,1677"/>
-<area shape="rect" id="node57" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointNormal \&gt;" alt="" coords="421,1701,560,1747"/>
-<area shape="rect" id="node59" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; NormalT \&gt;" alt="" coords="399,1771,583,1800"/>
-<area shape="rect" id="node61" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::Normal \&gt;" alt="" coords="421,1823,560,1870"/>
-<area shape="rect" id="node63" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="401,1893,580,1939"/>
-<area shape="rect" id="node71" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; VertexData \&gt;" alt="" coords="391,1963,591,1992"/>
-<area shape="rect" id="node73" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; FeatureT \&gt;" alt="" coords="397,2016,584,2045"/>
-<area shape="rect" id="node75" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::InterestPoint \&gt;" alt="" coords="421,2069,560,2115"/>
-<area shape="rect" id="node77" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="421,2138,560,2185"/>
-<area shape="rect" id="node79" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; GlobalDescriptorT \&gt;" alt="" coords="371,2208,611,2237"/>
-<area shape="rect" id="node81" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointRGBT \&gt;" alt="" coords="389,2261,592,2291"/>
-<area shape="rect" id="node83" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZRGBA \&gt;" alt="" coords="376,2315,605,2344"/>
-<area shape="rect" id="node87" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZT \&gt;" alt="" coords="392,2368,589,2397"/>
-<area shape="rect" id="node89" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; KeypointT \&gt;" alt="" coords="393,2421,588,2451"/>
-<area shape="rect" id="node91" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::PointXYZI \&gt;" alt="" coords="421,2474,560,2521"/>
-<area shape="rect" id="node93" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; ModelT \&gt;" alt="" coords="401,2544,580,2573"/>
-<area shape="rect" id="node65" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="681,1901,801,1931"/>
-<area shape="rect" id="node67" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="881,1875,1039,1904"/>
-<area shape="rect" id="node69" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="873,1928,1047,1957"/>
-<area shape="rect" id="node85" href="$classpcl_1_1_bearing_angle_image.html" title="class BearingAngleImage is used as an interface to generate Bearing Angle(BA) image. " alt="" coords="661,2315,821,2344"/>
+<map id="pcl::PointCloud&lt; PointT &gt;" name="pcl::PointCloud&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="5,1086,196,1111"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,20,629,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,1072,111,862,134,544,150,383,169,241,192,134,204,98,218,76,245,54,276,37,309,26,344,20,413,16,475,22,475,27,413,22,344,25,310,32,278,42,248,58,222,79,209,100,197,135,175,242,155,384,139,545,117,862,106,1072"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="429,85,675,110"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,1072,112,872,136,572,152,421,171,287,193,186,205,152,218,131,233,121,253,113,304,101,366,95,429,93,429,98,366,100,305,107,254,118,235,126,222,135,210,155,198,188,176,288,157,422,141,573,118,873,106,1072"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,135,629,175"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,1072,113,882,137,598,154,455,172,329,194,234,206,202,218,182,236,170,262,162,328,151,404,148,475,148,475,154,404,153,329,156,263,167,239,175,222,186,210,204,199,235,178,330,159,455,143,598,119,882,106,1072"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="453,199,651,239"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="99,1072,100,906,104,788,113,659,127,532,148,415,162,364,178,319,197,283,218,255,243,236,270,220,300,209,331,202,394,196,453,199,453,204,394,201,332,207,301,214,273,225,246,240,222,259,201,286,183,322,167,365,154,416,132,532,118,660,110,788,105,906,104,1072"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="441,263,663,289"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="99,1072,102,916,107,806,116,686,131,568,152,459,165,412,180,371,198,337,218,311,234,301,255,292,310,281,375,274,441,272,441,277,375,280,311,286,256,297,236,306,222,315,202,340,185,373,170,414,157,461,136,568,122,687,112,806,107,916,105,1072"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="455,313,649,353"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="100,1072,104,926,120,712,134,602,155,502,183,421,199,389,218,366,235,355,258,346,318,335,387,330,455,328,455,334,387,335,318,340,259,352,237,360,222,370,204,392,187,423,160,504,140,603,125,713,109,926,105,1072"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="446,378,658,403"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="100,1072,106,934,123,736,138,635,158,543,184,468,200,439,218,418,234,408,256,400,313,389,380,385,446,384,446,389,380,390,314,395,258,405,237,412,222,422,205,442,189,470,163,545,143,636,128,737,111,935,105,1072"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="447,427,657,453"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="100,1072,107,943,126,761,141,667,161,582,187,513,202,487,218,467,234,457,257,449,314,439,380,434,447,433,447,439,381,439,314,444,258,454,237,462,222,471,206,490,191,516,166,584,147,668,131,761,113,944,106,1072"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="449,477,655,502"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="101,1072,109,952,130,785,145,699,164,622,189,559,203,535,218,517,235,506,257,498,315,488,382,483,449,483,449,488,382,489,316,493,258,504,237,511,222,521,207,538,193,561,170,623,150,700,135,785,115,953,106,1072"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="423,526,681,551"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="101,1072,112,962,133,809,149,732,168,662,191,605,204,584,218,567,252,551,302,540,361,535,422,533,422,538,361,540,303,546,254,556,222,571,208,587,196,608,173,664,154,733,138,810,117,962,107,1072"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="419,575,685,601"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="102,1072,114,972,137,836,153,768,172,706,193,655,218,622,251,605,300,594,358,588,418,585,419,590,359,593,301,600,253,610,222,626,198,658,177,708,158,769,143,837,120,972,107,1072"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="474,625,630,665"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="103,1072,117,981,141,861,157,800,175,746,195,702,218,673,237,662,263,654,329,644,403,640,474,640,474,645,403,645,329,649,264,659,239,667,222,677,200,705,180,748,162,802,146,862,122,982,108,1072"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,689,629,729"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="99,1072,104,1005,120,915,135,868,156,822,183,780,218,745,247,725,279,711,312,701,346,694,414,690,475,694,475,699,414,695,347,700,313,706,281,716,250,730,222,749,188,783,161,824,140,870,126,916,109,1005,105,1072"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="452,754,652,779"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="101,1072,109,1013,127,937,142,897,162,859,187,824,218,795,236,786,259,778,317,768,385,763,452,762,452,767,385,769,318,774,260,784,238,791,222,799,191,828,167,862,147,899,132,938,114,1014,106,1072"/>
+<area shape="rect" id="Node000020" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,804,629,844"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="105,1072,117,1026,139,970,172,914,194,888,218,867,248,849,280,836,348,818,415,812,475,813,475,818,416,818,349,824,282,841,251,854,222,871,197,892,177,917,144,972,122,1028,110,1073"/>
+<area shape="rect" id="Node000021" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,868,629,908"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="111,1072,127,1041,151,1004,182,967,219,938,282,909,350,892,416,884,475,881,475,887,417,889,351,897,284,914,221,942,185,971,155,1007,132,1043,115,1075"/>
+<area shape="rect" id="Node000022" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="451,933,653,958"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="122,1074,165,1037,191,1018,219,1003,276,981,337,966,450,948,451,953,338,971,278,986,221,1008,194,1023,168,1041,126,1078"/>
+<area shape="rect" id="Node000023" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,983,629,1023"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="147,1079,219,1056,354,1028,475,1009,476,1015,355,1033,221,1061,149,1084"/>
+<area shape="rect" id="Node000024" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,1047,629,1087"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="209,1088,475,1069,475,1075,210,1094"/>
+<area shape="rect" id="Node000025" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,1111,629,1151"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="210,1107,220,1108,475,1124,475,1130,220,1113,209,1112"/>
+<area shape="rect" id="Node000026" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,1175,629,1215"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="144,1114,221,1140,355,1168,475,1184,475,1190,354,1173,219,1145,143,1119"/>
+<area shape="rect" id="Node000027" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="453,1239,651,1265"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="124,1120,166,1159,193,1179,221,1195,279,1216,339,1232,399,1241,453,1247,453,1252,398,1246,338,1237,277,1222,219,1200,190,1183,163,1163,120,1124"/>
+<area shape="rect" id="Node000028" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,1289,629,1329"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="115,1123,131,1156,154,1194,185,1231,221,1260,251,1276,284,1288,351,1304,416,1311,475,1312,475,1318,416,1317,350,1310,282,1293,249,1281,219,1265,181,1234,150,1197,126,1158,110,1125"/>
+<area shape="rect" id="Node000029" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="445,1354,659,1379"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="109,1125,121,1171,143,1228,175,1285,197,1310,222,1331,249,1347,279,1360,343,1375,407,1379,466,1377,466,1382,407,1384,343,1380,278,1365,247,1352,218,1336,193,1314,171,1288,138,1231,116,1173,104,1126"/>
+<area shape="rect" id="Node000030" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="473,1404,631,1444"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="106,1125,113,1184,132,1260,147,1299,166,1337,191,1371,222,1399,250,1416,281,1429,347,1442,413,1444,472,1438,473,1443,413,1449,346,1448,279,1434,248,1421,218,1403,187,1374,162,1340,142,1302,127,1262,108,1185,101,1126"/>
+<area shape="rect" id="Node000031" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="454,1469,650,1494"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="104,1125,107,1196,112,1242,121,1291,136,1340,157,1388,185,1430,222,1466,238,1474,260,1481,319,1488,387,1489,454,1487,454,1492,387,1495,318,1493,259,1486,236,1479,218,1470,181,1434,152,1390,131,1342,116,1292,107,1243,101,1197,98,1126"/>
+<area shape="rect" id="Node000032" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="444,1518,660,1543"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="108,1124,122,1213,146,1330,162,1389,180,1441,200,1483,222,1510,237,1518,258,1525,313,1533,378,1536,444,1535,444,1540,378,1541,313,1539,257,1530,235,1523,218,1514,195,1486,175,1443,157,1390,141,1331,117,1214,103,1125"/>
+<area shape="rect" id="Node000033" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,1568,629,1608"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="107,1124,120,1222,143,1353,159,1420,177,1479,198,1527,222,1558,249,1577,280,1591,313,1600,346,1606,414,1608,475,1602,475,1607,414,1613,346,1611,311,1606,278,1596,247,1582,218,1562,194,1530,172,1481,154,1421,138,1355,115,1222,102,1125"/>
+<area shape="rect" id="Node000034" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="439,1633,665,1658"/>
+<area shape="poly" id="edge33_Node000001_Node000034" title=" " alt="" coords="106,1125,116,1236,137,1390,153,1468,172,1538,195,1594,208,1615,222,1630,236,1638,257,1645,311,1653,374,1654,439,1652,439,1658,374,1660,310,1658,256,1650,234,1643,218,1634,204,1618,190,1596,167,1539,147,1469,132,1391,111,1237,101,1125"/>
+<area shape="rect" id="Node000035" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="441,1682,663,1707"/>
+<area shape="poly" id="edge34_Node000001_Node000035" title=" " alt="" coords="106,1125,114,1244,134,1412,150,1497,169,1574,193,1636,207,1659,222,1675,236,1684,257,1691,311,1699,376,1702,440,1700,441,1706,375,1707,311,1705,256,1696,234,1689,218,1679,203,1662,188,1638,164,1575,144,1498,129,1413,109,1245,101,1125"/>
+<area shape="rect" id="Node000036" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="463,1731,641,1757"/>
+<area shape="poly" id="edge35_Node000001_Node000036" title=" " alt="" coords="105,1125,113,1253,131,1435,146,1528,166,1612,191,1680,206,1705,222,1723,238,1733,261,1740,322,1749,393,1750,463,1748,463,1753,393,1756,322,1754,260,1745,236,1738,218,1727,201,1708,186,1682,161,1613,141,1529,126,1436,107,1254,100,1125"/>
+<area shape="rect" id="Node000037" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="453,1781,651,1821"/>
+<area shape="poly" id="edge36_Node000001_Node000037" title=" " alt="" coords="105,1125,110,1264,126,1466,141,1569,161,1662,188,1737,204,1766,222,1786,250,1806,281,1819,315,1828,350,1832,419,1829,481,1819,482,1824,420,1835,349,1837,314,1833,280,1824,247,1810,218,1790,200,1769,183,1740,156,1664,136,1570,121,1466,104,1265,100,1125"/>
+<area shape="rect" id="Node000038" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="455,1845,649,1885"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="104,1125,107,1277,112,1384,121,1499,136,1613,157,1717,170,1761,185,1800,202,1831,222,1854,237,1863,260,1870,319,1877,387,1877,455,1873,455,1878,387,1882,318,1882,258,1875,235,1868,218,1858,198,1834,180,1802,165,1763,152,1718,131,1614,116,1500,107,1384,102,1277,99,1125"/>
+<area shape="rect" id="Node000039" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="455,1909,649,1949"/>
+<area shape="poly" id="edge38_Node000001_Node000039" title=" " alt="" coords="104,1125,106,1285,111,1398,120,1520,134,1641,155,1751,169,1799,184,1841,202,1875,222,1899,247,1919,275,1933,305,1943,336,1949,400,1952,460,1947,460,1952,400,1957,335,1954,303,1948,273,1938,244,1923,218,1903,197,1878,179,1843,163,1801,150,1753,129,1642,114,1520,106,1398,101,1285,99,1125"/>
+<area shape="rect" id="Node000040" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="449,1974,655,1999"/>
+<area shape="poly" id="edge39_Node000001_Node000040" title=" " alt="" coords="106,1125,119,1308,143,1581,159,1717,178,1837,199,1927,210,1957,222,1974,237,1983,258,1990,315,1997,382,1998,448,1995,449,2000,382,2003,315,2003,257,1995,235,1988,218,1978,206,1960,194,1929,173,1838,154,1718,138,1581,113,1309,101,1125"/>
+<area shape="rect" id="Node000041" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="475,2024,629,2064"/>
+<area shape="poly" id="edge40_Node000001_Node000041" title=" " alt="" coords="106,1125,118,1317,142,1603,158,1747,177,1874,199,1970,210,2001,222,2020,249,2040,279,2054,311,2064,345,2069,413,2069,475,2061,475,2066,413,2074,344,2074,310,2069,277,2059,246,2044,218,2023,205,2004,193,1971,172,1875,153,1748,137,1604,113,1317,101,1125"/>
+<area shape="rect" id="Node000042" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="473,2088,631,2128"/>
+<area shape="poly" id="edge41_Node000001_Node000042" title=" " alt="" coords="106,1125,117,1330,139,1640,155,1797,174,1934,197,2038,209,2072,222,2092,250,2112,281,2126,314,2135,349,2139,419,2136,482,2125,482,2131,420,2142,349,2144,313,2140,279,2131,247,2116,218,2095,204,2074,192,2039,169,1935,150,1797,134,1640,111,1331,100,1125"/>
+<area shape="rect" id="Node000043" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="463,2153,641,2178"/>
+<area shape="poly" id="edge42_Node000001_Node000043" title=" " alt="" coords="106,1125,115,1343,136,1675,152,1843,172,1991,195,2102,208,2138,222,2159,255,2182,292,2196,332,2203,374,2203,453,2193,515,2175,517,2181,454,2198,374,2209,332,2208,291,2201,252,2187,218,2163,203,2141,190,2103,166,1992,147,1843,131,1675,110,1343,100,1125"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_bearing_angle_image.html" title="class BearingAngleImage is used as an interface to generate Bearing Angle(BA) image." alt="" coords="735,85,912,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="688,95,735,95,735,100,688,100"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="758,206,889,231"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="664,216,758,216,758,221,664,221"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="971,181,1143,206"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="902,207,970,200,971,205,903,213"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="961,230,1152,255"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="903,224,962,230,961,236,902,229"/>
 </map>

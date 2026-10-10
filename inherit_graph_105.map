@@ -1,3 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_npp_st_interpolation_state.html" title="Frame interpolation state. " alt="" coords="7,5,167,35"/>
+<area shape="rect" id="Node000000" href="$class_n_c_v_vector.html" title="NCVVector (1D)" alt="" coords="5,120,135,145"/>
+<area shape="rect" id="Node000001" href="$class_n_c_v_vector_alloc.html" title=" " alt="" coords="189,5,426,31"/>
+<area shape="poly" id="edge43_Node000000_Node000001" title=" " alt="" coords="92,108,131,73,181,41,217,28,219,33,184,46,134,77,95,112"/>
+<area shape="rect" id="Node000002" href="$class_n_c_v_vector_alloc.html" title=" " alt="" coords="193,55,422,95"/>
+<area shape="poly" id="edge44_Node000000_Node000002" title=" " alt="" coords="136,114,223,93,225,98,137,119"/>
+<area shape="rect" id="Node000003" href="$class_n_c_v_vector_alloc.html" title=" " alt="" coords="183,120,432,145"/>
+<area shape="poly" id="edge45_Node000000_Node000003" title=" " alt="" coords="148,130,182,130,182,135,148,135"/>
+<area shape="rect" id="Node000004" href="$class_n_c_v_vector_alloc.html" title="NCVVectorAlloc." alt="" coords="227,169,388,195"/>
+<area shape="poly" id="edge46_Node000000_Node000004" title=" " alt="" coords="143,146,183,154,244,167,243,172,182,159,142,151"/>
+<area shape="rect" id="Node000005" href="$class_n_c_v_vector_reuse.html" title="NCVVectorReuse." alt="" coords="223,219,392,244"/>
+<area shape="poly" id="edge47_Node000000_Node000005" title=" " alt="" coords="99,152,138,179,184,204,223,216,222,221,182,208,135,184,96,156"/>
 </map>

@@ -1,7 +1,15 @@
 <map id="ON_TextExtra" name="ON_TextExtra">
-<area shape="rect" id="node2" href="$class_o_n___user_data.html" title="ON_UserData" alt="" coords="164,117,268,147"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,5,91,35"/>
-<area shape="rect" id="node6" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="115,5,197,35"/>
-<area shape="rect" id="node8" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="324,5,407,35"/>
-<area shape="rect" id="node10" href="$class_o_n___color.html" title="ON_Color" alt="" coords="545,117,625,147"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="421,196,531,221"/>
+<area shape="rect" id="Node000002" href="$class_o_n___user_data.html" title=" " alt="" coords="190,108,301,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,136,446,193,444,198,288,141"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="5,5,96,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,36,156,82,213,105,211,110,153,86,77,41"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="359,5,441,31"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="443,36,460,53,476,91,482,132,483,169,480,196,475,196,477,169,477,132,471,93,455,56,439,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,39,327,57,311,71,296,86,264,110,261,106,293,82,308,67,324,52,357,34"/>
+<area shape="rect" id="Node000005" href="$class_o_n___xform.html" title=" " alt="" coords="121,5,210,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="163,44,163,64,169,83,182,96,199,106,196,110,179,100,164,85,157,65,157,44"/>
+<area shape="rect" id="Node000006" href="$class_o_n___color.html" title=" " alt="" coords="601,108,684,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="609,142,500,198,497,193,607,137"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="698,111,707,114,711,121,702,129,684,131,684,126,700,124,705,120,704,119,697,116"/>
 </map>

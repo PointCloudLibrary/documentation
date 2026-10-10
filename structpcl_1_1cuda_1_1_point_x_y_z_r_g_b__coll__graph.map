@@ -1,3 +1,5 @@
 <map id="pcl::cuda::PointXYZRGB" name="pcl::cuda::PointXYZRGB">
-<area shape="rect" id="node2" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars. " alt="" coords="33,5,145,35"/>
+<area shape="rect" id="Node000001" title="Default point xyz&#45;rgb structure." alt="" coords="5,93,180,119"/>
+<area shape="rect" id="Node000002" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars." alt="" coords="35,5,151,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,45,95,93,90,93,90,45"/>
 </map>

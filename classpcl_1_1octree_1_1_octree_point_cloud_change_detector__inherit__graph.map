@@ -1,5 +1,9 @@
 <map id="pcl::octree::OctreePointCloudChangeDetector&lt; PointT, LeafContainerT, BranchContainerT &gt;" name="pcl::octree::OctreePointCloudChangeDetector&lt; PointT, LeafContainerT, BranchContainerT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="pcl::octree::OctreePoint\lCloud\&lt; PointT, LeafContainer\lT, BranchContainerT, Octree2BufBase\l\&lt; LeafContainerT, BranchContainerT \&gt; \&gt;" alt="" coords="663,25,921,106"/>
-<area shape="rect" id="node4" href="$classpcl_1_1octree_1_1_octree2_buf_base.html" title="Octree double buffer class " alt="" coords="125,5,373,51"/>
-<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class " alt="" coords="144,75,355,139"/>
+<area shape="rect" id="Node000001" title="Octree pointcloud change detector class" alt="" coords="607,5,871,60"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title=" " alt="" coords="1007,13,1253,53"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="884,30,1006,30,1006,35,884,35"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class" alt="" coords="329,5,557,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="571,30,607,30,607,35,571,35"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_base.html" title="Octree class." alt="" coords="5,13,280,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,30,329,30,329,35,294,35"/>
 </map>

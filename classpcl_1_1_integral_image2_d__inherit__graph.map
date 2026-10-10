@@ -1,4 +1,7 @@
 <map id="pcl::IntegralImage2D&lt; DataType, Dimension &gt;" name="pcl::IntegralImage2D&lt; DataType, Dimension &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_integral_image2_d.html" title="pcl::IntegralImage2D\l\&lt; float, 1 \&gt;" alt="" coords="5,121,147,167"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_integral_image2_d.html" title="pcl::IntegralImage2D\l\&lt; float, 3 \&gt;" alt="" coords="171,121,312,167"/>
+<area shape="rect" id="Node000001" title="Determines an integral image representation for a given organized data array." alt="" coords="80,5,271,45"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_integral_image2_d.html" title=" " alt="" coords="5,108,164,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,57,104,110,100,106,147,54"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_integral_image2_d.html" title=" " alt="" coords="188,108,347,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,53,224,68,256,106,252,110,220,71,206,57"/>
 </map>

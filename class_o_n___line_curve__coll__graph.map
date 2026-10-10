@@ -1,8 +1,17 @@
 <map id="ON_LineCurve" name="ON_LineCurve">
-<area shape="rect" id="node2" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="24,203,107,232"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,88,112,117"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
-<area shape="rect" id="node8" href="$class_o_n___line.html" title="ON_Line" alt="" coords="141,203,213,232"/>
-<area shape="rect" id="node10" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="136,88,229,117"/>
-<area shape="rect" id="node13" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="237,203,328,232"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="132,275,247,300"/>
+<area shape="rect" id="Node000002" href="$class_o_n___curve.html" title=" " alt="" coords="38,187,125,212"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,219,176,272,173,276,105,223"/>
+<area shape="rect" id="Node000003" href="$class_o_n___geometry.html" title=" " alt="" coords="5,82,120,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="70,121,82,186,77,187,65,122"/>
+<area shape="rect" id="Node000004" href="$class_o_n___object.html" title=" " alt="" coords="17,5,108,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="65,44,65,82,60,82,60,44"/>
+<area shape="rect" id="Node000005" href="$class_o_n___line.html" title=" " alt="" coords="151,187,227,212"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="192,226,192,274,187,274,187,226"/>
+<area shape="rect" id="Node000006" href="$class_o_n__3d_point.html" title=" " alt="" coords="144,82,243,107"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="195,121,192,187,187,186,190,121"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="258,87,269,95,261,102,243,104,242,99,259,97,264,95,255,91"/>
+<area shape="rect" id="Node000007" href="$class_o_n___interval.html" title=" " alt="" coords="252,187,351,212"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="281,224,246,253,210,277,207,272,242,249,277,220"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="366,191,377,199,369,207,351,210,350,205,367,203,372,200,363,195"/>
 </map>

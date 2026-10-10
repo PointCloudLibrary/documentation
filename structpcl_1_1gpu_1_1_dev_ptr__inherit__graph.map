@@ -1,5 +1,9 @@
 <map id="pcl::gpu::DevPtr&lt; T &gt;" name="pcl::gpu::DevPtr&lt; T &gt;">
-<area shape="rect" id="node3" href="$structpcl_1_1gpu_1_1_ptr_step.html" title="pcl::gpu::PtrStep\&lt; T \&gt;" alt="" coords="13,83,165,112"/>
-<area shape="rect" id="node7" href="$structpcl_1_1gpu_1_1_ptr_sz.html" title="pcl::gpu::PtrSz\&lt; T \&gt;" alt="" coords="189,83,331,112"/>
-<area shape="rect" id="node5" href="$structpcl_1_1gpu_1_1_ptr_step_sz.html" title="pcl::gpu::PtrStepSz\&lt; T \&gt;" alt="" coords="5,160,173,189"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,269,31"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1gpu_1_1_ptr_step.html" title=" " alt="" coords="13,79,179,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,41,113,81,109,76,161,37"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1gpu_1_1_ptr_sz.html" title=" " alt="" coords="204,79,356,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,37,267,76,263,81,212,41"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1gpu_1_1_ptr_step_sz.html" title=" " alt="" coords="5,152,187,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,118,99,152,93,152,93,118"/>
 </map>

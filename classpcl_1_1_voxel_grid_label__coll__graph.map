@@ -1,8 +1,21 @@
 <map id="pcl::VoxelGridLabel" name="pcl::VoxelGridLabel">
-<area shape="rect" id="node2" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; pcl\l::PointXYZRGBL \&gt;" alt="" coords="111,313,244,359"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; pcl::PointXYZRGBL \&gt;" alt="" coords="5,216,221,245"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; pcl::\lPointXYZRGBL \&gt;" alt="" coords="44,102,183,149"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="113,5,279,35"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="209,111,348,140"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="245,216,411,245"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="169,508,316,533"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_voxel_grid.html" title=" " alt="" coords="170,419,315,459"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,472,245,508,240,508,240,472"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="121,256,274,281"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,294,240,418,235,419,201,295"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="209,181,385,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="272,217,215,258,212,253,269,213"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="298,256,451,281"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="322,214,364,254,360,258,318,218"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,5,96,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="53,44,58,82,64,100,75,117,103,135,146,152,244,179,243,184,144,157,100,140,71,121,60,103,52,83,47,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="130,93,297,119"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="86,35,192,91,190,95,83,39"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="155,126,111,148,92,164,77,183,73,195,74,206,80,216,90,225,120,241,153,253,151,258,117,246,87,229,76,219,69,207,67,194,72,180,88,160,108,143,153,121"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="236,127,288,179,284,183,232,131"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="311,119,361,142,382,159,400,180,406,201,402,222,385,257,381,255,397,220,400,201,395,183,379,162,358,146,309,124"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="271,331,454,356"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="338,367,269,421,265,416,335,362"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="373,296,367,331,362,330,368,295"/>
 </map>

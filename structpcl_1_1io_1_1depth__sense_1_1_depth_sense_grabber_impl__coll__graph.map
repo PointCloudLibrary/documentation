@@ -1,0 +1,9 @@
+<map id="pcl::io::depth_sense::DepthSenseGrabberImpl" name="pcl::io::depth_sense::DepthSenseGrabberImpl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="96,168,285,208"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_depth_sense_grabber.html" title="Grabber for DepthSense devices (e.g." alt="" coords="5,80,184,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,113,173,166,169,170,114,117"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="44,5,145,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,45,97,80,92,80,92,45"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_event_frequency.html" title="A helper class to measure frequency of a certain event." alt="" coords="209,80,362,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,117,212,170,208,166,262,113"/>
+</map>

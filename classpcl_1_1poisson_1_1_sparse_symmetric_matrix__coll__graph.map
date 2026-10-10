@@ -1,5 +1,9 @@
 <map id="pcl::poisson::SparseSymmetricMatrix&lt; T &gt;" name="pcl::poisson::SparseSymmetricMatrix&lt; T &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1poisson_1_1_sparse_matrix.html" title="pcl::poisson::SparseMatrix\&lt; T \&gt;" alt="" coords="5,248,213,277"/>
-<area shape="rect" id="node4" href="$classpcl_1_1poisson_1_1_allocator.html" title="pcl::poisson::Allocator\l\&lt; pcl::poisson::MatrixEntry\l\&lt; T \&gt; \&gt;" alt="" coords="20,117,199,181"/>
-<area shape="rect" id="node6" href="$classpcl_1_1poisson_1_1_allocator.html" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="19,5,200,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,300,232,340"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1poisson_1_1_sparse_matrix.html" title=" " alt="" coords="5,225,236,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,264,123,300,118,300,118,264"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1poisson_1_1_allocator.html" title=" " alt="" coords="21,108,220,163"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,176,123,225,118,225,118,176"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1poisson_1_1_allocator.html" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="19,5,222,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,45,123,108,118,108,118,45"/>
 </map>

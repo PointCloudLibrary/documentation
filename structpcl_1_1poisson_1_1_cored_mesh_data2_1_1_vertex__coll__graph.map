@@ -1,4 +1,7 @@
 <map id="pcl::poisson::CoredMeshData2::Vertex" name="pcl::poisson::CoredMeshData2::Vertex">
-<area shape="rect" id="node2" href="$structpcl_1_1poisson_1_1_point3_d.html" title="pcl::poisson::Point3D\l\&lt; float \&gt;" alt="" coords="33,121,180,167"/>
-<area shape="rect" id="node4" href="$structpcl_1_1poisson_1_1_point3_d.html" title="pcl::poisson::Point3D\l\&lt; Real \&gt;" alt="" coords="33,6,180,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,225,224,265"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1poisson_1_1_point3_d.html" title=" " alt="" coords="35,108,194,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,162,117,225,112,225,112,162"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1poisson_1_1_point3_d.html" title=" " alt="" coords="35,5,194,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,59,117,108,112,108,112,59"/>
 </map>

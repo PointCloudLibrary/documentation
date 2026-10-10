@@ -1,7 +1,13 @@
 <map id="pcl::visualization::Figure2D" name="pcl::visualization::Figure2D">
-<area shape="rect" id="node3" href="$structpcl_1_1visualization_1_1_f_elliptic_arc2_d.html" title="Class for storing EllipticArc; every ellipse , circle are covered by this. " alt="" coords="175,5,292,51"/>
-<area shape="rect" id="node5" href="$structpcl_1_1visualization_1_1_f_points2_d.html" title="Class for storing Points. " alt="" coords="175,74,292,121"/>
-<area shape="rect" id="node7" href="$structpcl_1_1visualization_1_1_f_polygon2_d.html" title="Class for Polygon. " alt="" coords="175,143,292,190"/>
-<area shape="rect" id="node9" href="$structpcl_1_1visualization_1_1_f_poly_line2_d.html" title="Class for PolyLine. " alt="" coords="175,213,292,259"/>
-<area shape="rect" id="node11" href="$structpcl_1_1visualization_1_1_f_quad2_d.html" title="Class for storing Quads. " alt="" coords="175,282,292,329"/>
+<area shape="rect" id="Node000001" title="Abstract class for storing figure information." alt="" coords="5,133,137,173"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1visualization_1_1_f_elliptic_arc2_d.html" title="Class for storing EllipticArc; every ellipse , circle are covered by this." alt="" coords="185,5,317,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,122,139,88,184,55,204,43,207,48,187,60,143,92,105,126"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1visualization_1_1_f_points2_d.html" title="Class for storing Points." alt="" coords="185,69,317,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,126,194,107,195,112,142,131"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1visualization_1_1_f_poly_line2_d.html" title="Class for PolyLine." alt="" coords="185,133,317,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,151,185,151,185,156,151,156"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1visualization_1_1_f_polygon2_d.html" title="Class for Polygon." alt="" coords="185,197,317,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="142,175,195,195,194,200,140,180"/>
+<area shape="rect" id="Node000006" href="$structpcl_1_1visualization_1_1_f_quad2_d.html" title="Class for storing Quads." alt="" coords="185,261,317,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="105,181,143,214,187,247,207,259,204,264,184,252,139,218,101,185"/>
 </map>

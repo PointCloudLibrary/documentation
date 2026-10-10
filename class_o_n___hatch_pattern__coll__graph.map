@@ -1,12 +1,25 @@
 <map id="ON_HatchPattern" name="ON_HatchPattern">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,440,91,469"/>
-<area shape="rect" id="node4" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_HatchLine \&gt;" alt="" coords="115,440,339,469"/>
-<area shape="rect" id="node6" href="$class_o_n___hatch_line.html" title="ON_HatchLine" alt="" coords="321,344,428,373"/>
-<area shape="rect" id="node8" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; double \&gt;" alt="" coords="624,228,805,257"/>
-<area shape="rect" id="node10" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="499,101,651,131"/>
-<area shape="rect" id="node20" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="304,155,451,184"/>
-<area shape="rect" id="node14" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="191,228,284,257"/>
-<area shape="rect" id="node17" href="$class_o_n__2d_vector.html" title="ON_2dVector" alt="" coords="401,228,503,257"/>
-<area shape="rect" id="node23" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="363,440,456,469"/>
-<area shape="rect" id="node25" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="504,440,587,469"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="192,405,325,431"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="5,303,96,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,333,160,379,222,403,220,408,158,384,77,338"/>
+<area shape="rect" id="Node000003" href="$class_o_n__w_string.html" title=" " alt="" coords="120,303,219,328"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,342,166,362,173,380,186,393,204,403,201,408,183,398,168,383,161,362,161,342"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="307,303,389,328"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,342,334,363,321,383,305,397,287,408,284,403,301,393,317,380,330,361,338,340"/>
+<area shape="rect" id="Node000005" href="$class_o_n___class_array.html" title=" " alt="" coords="414,303,655,328"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="520,341,497,364,469,384,434,398,397,408,326,418,325,413,396,403,432,393,467,379,494,360,516,337"/>
+<area shape="rect" id="Node000006" href="$class_o_n___hatch_line.html" title=" " alt="" coords="373,215,488,240"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="457,247,522,300,519,304,453,251"/>
+<area shape="rect" id="Node000007" href="$class_o_n__2d_point.html" title=" " alt="" coords="159,110,257,135"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="247,139,407,212,405,217,245,144"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="272,111,280,115,284,123,276,133,258,136,257,131,273,128,279,122,277,119,270,116"/>
+<area shape="rect" id="Node000008" href="$class_o_n__2d_vector.html" title=" " alt="" coords="377,110,484,135"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="433,149,433,214,428,214,428,149"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="499,111,507,115,511,123,502,133,485,136,484,131,500,128,505,122,503,119,497,116"/>
+<area shape="rect" id="Node000009" href="$class_o_n___simple_array.html" title=" " alt="" coords="616,110,819,135"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="673,143,464,217,462,212,671,138"/>
+<area shape="rect" id="Node000010" href="$class_o_n___simple_array.html" title=" " alt="" coords="634,5,801,31"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="720,45,720,110,715,110,715,45"/>
+<area shape="rect" id="Node000011" href="$class_o_n___class_array.html" title=" " alt="" coords="512,215,669,240"/>
+<area shape="poly" id="edge12_Node000005_Node000011" title=" " alt="" coords="578,253,545,304,540,301,573,250"/>
 </map>

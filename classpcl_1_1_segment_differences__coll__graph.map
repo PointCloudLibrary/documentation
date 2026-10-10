@@ -1,3 +1,11 @@
 <map id="pcl::SegmentDifferences&lt; PointT &gt;" name="pcl::SegmentDifferences&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="SegmentDifferences obtains the difference between two spatially aligned point clouds and returns the ..." alt="" coords="5,271,187,311"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="95,196,271,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,232,118,273,115,269,159,229"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,5,173,31"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="120,44,95,123,86,172,85,221,94,270,89,271,80,222,81,171,89,121,115,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,45,136,80,144,118,161,161,178,195,173,197,156,163,139,119,131,81,127,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="198,93,365,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="162,35,262,91,259,95,159,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="262,130,196,198,192,194,259,127"/>
 </map>

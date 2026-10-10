@@ -1,12 +1,28 @@
 <map id="ON_InstanceDefinition" name="ON_InstanceDefinition">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="479,5,585,35"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="156,5,241,35"/>
-<area shape="rect" id="node6" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_UUID \&gt;" alt="" coords="456,123,608,170"/>
-<area shape="rect" id="node8" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="157,77,240,107"/>
-<area shape="rect" id="node10" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="123,147,275,176"/>
-<area shape="rect" id="node14" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="152,288,245,317"/>
-<area shape="rect" id="node16" href="$class_o_n___unit_system.html" title="ON_UnitSystem" alt="" coords="473,328,591,357"/>
-<area shape="rect" id="node19" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="469,423,595,452"/>
-<area shape="rect" id="node22" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="152,423,245,452"/>
-<area shape="rect" id="node25" href="$class_o_n___check_sum.html" title="ON_CheckSum" alt="" coords="475,517,589,547"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="777,243,944,268"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="394,5,509,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="522,5,577,3,637,8,699,22,728,33,755,49,779,70,800,95,831,150,850,203,860,242,854,243,845,205,826,152,795,98,775,74,752,54,725,38,697,27,637,13,577,9,523,11"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="43,5,134,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="148,15,394,15,394,21,148,21"/>
+<area shape="rect" id="Node000004" href="$class_o_n___simple_array.html" title=" " alt="" coords="369,118,533,158"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="536,159,816,240,815,245,535,164"/>
+<area shape="rect" id="Node000005" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="47,72,130,97"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="144,74,260,64,335,62,417,65,503,73,590,88,675,113,755,148,786,169,814,195,853,241,848,244,810,198,783,173,752,152,673,118,588,93,502,78,417,70,335,68,261,70,144,79"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="144,92,196,101,370,125,369,130,196,106,143,97"/>
+<area shape="rect" id="Node000006" href="$class_o_n___simple_array.html" title=" " alt="" coords="5,137,172,163"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="186,149,345,146,369,144,369,150,345,151,186,154"/>
+<area shape="rect" id="Node000007" href="$class_o_n__w_string.html" title=" " alt="" coords="39,265,138,291"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="152,273,196,271,777,255,777,260,196,277,152,278"/>
+<area shape="rect" id="Node000010" href="$class_o_n___unit_system.html" title=" " alt="" coords="389,304,514,329"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="152,282,389,307,388,313,151,287"/>
+<area shape="rect" id="Node000008" href="$class_o_n___bounding_box.html" title=" " alt="" coords="384,392,519,417"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="532,392,639,369,697,352,752,330,804,298,844,266,847,270,807,303,755,335,698,357,640,375,533,397"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="416,378,427,369,451,365,472,368,484,374,487,384,481,393,477,390,482,383,480,377,470,373,451,371,429,374,420,382"/>
+<area shape="rect" id="Node000009" href="$class_o_n__3d_point.html" title=" " alt="" coords="39,392,138,417"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="152,402,384,402,384,407,152,407"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="53,378,64,369,89,365,109,368,122,374,125,384,119,393,114,390,120,383,118,377,108,373,89,371,66,374,57,382"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="527,311,635,303,753,286,825,265,826,271,754,291,635,309,528,317"/>
+<area shape="rect" id="Node000011" href="$class_o_n___check_sum.html" title=" " alt="" coords="392,480,511,505"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="524,484,577,476,637,461,697,439,752,408,788,374,817,335,838,297,852,267,857,270,843,299,821,338,792,378,755,412,699,444,638,466,578,481,525,490"/>
+<area shape="poly" id="edge15_Node000011_Node000011" title=" " alt="" coords="416,466,427,457,451,453,472,456,484,462,487,472,481,481,477,478,482,471,480,465,470,461,451,459,429,462,420,470"/>
 </map>

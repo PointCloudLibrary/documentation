@@ -1,0 +1,20 @@
+<map id="pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;" name="pcl::FLARELocalReferenceFrameEstimation&lt; PointInT, PointNT, PointOutT, SignedDistanceT &gt;">
+<area shape="rect" id="Node000001" title="FLARELocalReferenceFrameEstimation implements the Fast LocAl Reference framE algorithm for local refe..." alt="" coords="5,527,287,581"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature_from_normals.html" title=" " alt="" coords="28,437,264,477"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,491,149,527,143,527,143,491"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="145,348,315,388"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,400,166,439,162,435,200,396"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="245,273,433,299"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="314,309,257,350,254,346,311,305"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="242,5,333,31"/>
+<area shape="poly" id="edge11_Node000002_Node000005" title=" " alt="" coords="229,26,188,34,149,48,134,59,121,71,113,87,110,105,110,369,112,388,118,405,134,436,130,438,113,407,107,389,105,369,105,104,108,85,117,68,130,55,147,44,187,29,228,21"/>
+<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="248,39,229,51,212,66,200,84,195,105,195,287,203,319,218,346,213,349,198,321,190,288,190,104,195,82,208,63,225,47,245,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="295,43,340,272,334,274,290,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="325,93,492,119"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="317,37,394,91,391,95,314,41"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="434,183,610,209"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="347,20,387,27,430,41,471,61,505,92,518,115,525,140,526,183,521,183,519,141,513,117,501,95,468,66,428,45,386,33,346,26"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="395,131,367,182,352,232,344,273,338,272,347,231,362,180,391,129"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="432,126,466,155,504,181,501,185,463,159,429,130"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="487,217,364,276,362,271,484,212"/>
+</map>

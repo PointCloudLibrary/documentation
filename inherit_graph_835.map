@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title="pcl::outofcore::Outofcore\lOctreeBase\&lt; ContainerT,\l pcl::PointXYZRGB \&gt;" alt="" coords="5,5,176,69"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1octree_1_1_octree2_buf_base.html" title=" " alt="" coords="5,75,232,129"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title=" " alt="" coords="280,5,615,89"/>
+<area shape="poly" id="edge589_Node000000_Node000001" title=" " alt="" coords="245,78,279,73,280,78,246,84"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title=" " alt="" coords="280,113,615,197"/>
+<area shape="poly" id="edge590_Node000000_Node000002" title=" " alt="" coords="246,120,280,125,279,131,245,125"/>
 </map>

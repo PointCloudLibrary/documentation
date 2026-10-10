@@ -1,4 +1,9 @@
 <map id="pcl::RegionGrowing&lt; PointT, NormalT &gt;" name="pcl::RegionGrowing&lt; PointT, NormalT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1_region_growing_r_g_b.html" title="Implements the well known Region Growing algorithm used for segmentation based on color of points..." alt="" coords="5,179,171,226"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="Implements the well known Region Growing algorithm used for segmentation." alt="" coords="231,37,388,77"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_region_growing_r_g_b.html" title="Implements the well known Region Growing algorithm used for segmentation based on color of points." alt="" coords="595,5,771,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="402,47,594,30,595,35,402,52"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_region_growing.html" title=" " alt="" coords="595,69,771,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="402,64,412,65,595,80,594,86,412,71,401,70"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,45,181,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,55,231,55,231,60,195,60"/>
 </map>

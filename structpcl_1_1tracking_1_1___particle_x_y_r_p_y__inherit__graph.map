@@ -1,3 +1,5 @@
 <map id="pcl::tracking::_ParticleXYRPY" name="pcl::tracking::_ParticleXYRPY">
-<area shape="rect" id="node3" href="$structpcl_1_1tracking_1_1_particle_x_y_r_p_y.html" title="pcl::tracking::ParticleXYRPY" alt="" coords="5,101,195,131"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,5,188,45"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1tracking_1_1_particle_x_y_r_p_y.html" title=" " alt="" coords="5,93,205,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,59,108,93,103,93,103,59"/>
 </map>

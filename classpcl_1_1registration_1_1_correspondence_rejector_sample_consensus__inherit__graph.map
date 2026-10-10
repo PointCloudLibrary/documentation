@@ -1,4 +1,7 @@
 <map id="pcl::registration::CorrespondenceRejectorSampleConsensus&lt; PointT &gt;" name="pcl::registration::CorrespondenceRejectorSampleConsensus&lt; PointT &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1registration_1_1_correspondence_rejector_sample_consensus2_d.html" title="CorrespondenceRejectorSampleConsensus2D implements a pixel&#45;based correspondence rejection using Rando..." alt="" coords="5,213,216,277"/>
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="28,6,193,53"/>
+<area shape="rect" id="Node000001" title="CorrespondenceRejectorSampleConsensus implements a correspondence rejection using Random Sample Conse..." alt="" coords="5,93,236,148"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1registration_1_1_correspondence_rejector_sample_consensus2_d.html" title="CorrespondenceRejectorSampleConsensus2D implements a pixel&#45;based correspondence rejection using Rando..." alt="" coords="5,196,236,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,162,123,196,118,196,118,162"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="30,5,211,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,59,123,93,118,93,118,59"/>
 </map>

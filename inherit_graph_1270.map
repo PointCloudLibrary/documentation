@@ -1,3 +1,15 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_t_conv_base2_vec_3_01_ncv32f_00_011_01_4.html" title="TConvBase2Vec\&lt; Ncv32f, 1 \&gt;" alt="" coords="5,5,208,35"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,77,121,102"/>
+<area shape="rect" id="Node000001" href="$classpcl__cuda_1_1_filter.html" title=" " alt="" coords="169,5,375,45"/>
+<area shape="poly" id="edge860_Node000000_Node000001" title=" " alt="" coords="118,70,205,43,207,48,120,75"/>
+<area shape="rect" id="Node000003" href="$classpcl__cuda_1_1_filter.html" title=" " alt="" coords="169,69,375,109"/>
+<area shape="poly" id="edge862_Node000000_Node000003" title=" " alt="" coords="135,87,169,87,169,92,135,92"/>
+<area shape="rect" id="Node000005" href="$classpcl__cuda_1_1_filter.html" title="Removes points with x, y, or z equal to NaN." alt="" coords="175,137,369,162"/>
+<area shape="poly" id="edge864_Node000000_Node000005" title=" " alt="" coords="119,104,170,119,224,134,223,139,169,124,118,109"/>
+<area shape="rect" id="Node000002" href="$classpcl__cuda_1_1_pass_through_3_01_point_cloud_a_o_s_3_01_device_01_4_01_4.html" title=" " alt="" coords="423,5,647,45"/>
+<area shape="poly" id="edge861_Node000001_Node000002" title=" " alt="" coords="389,23,422,23,422,28,389,28"/>
+<area shape="rect" id="Node000004" href="$classpcl__cuda_1_1_pass_through_3_01_point_cloud_s_o_a_3_01_device_01_4_01_4.html" title=" " alt="" coords="423,69,647,109"/>
+<area shape="poly" id="edge863_Node000003_Node000004" title=" " alt="" coords="389,87,422,87,422,92,389,92"/>
+<area shape="rect" id="Node000006" href="$classpcl__cuda_1_1_pass_through.html" title="PassThrough uses the base Filter class methods to pass through all data that satisfies the user given..." alt="" coords="450,133,619,173"/>
+<area shape="poly" id="edge865_Node000005_Node000006" title=" " alt="" coords="383,148,450,149,450,155,383,154"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::TfQuadraticXYZComparison&lt; PointT &gt;" name="pcl::TfQuadraticXYZComparison&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_comparison_base.html" title="The (abstract) base class for the comparison object. " alt="" coords="37,6,184,53"/>
+<area shape="rect" id="Node000001" title="A comparison whether the (x,y,z) components of a given point satisfy (p&#39;Ap + 2v&#39;p + c [OP] 0)." alt="" coords="5,93,235,133"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_comparison_base.html" title="The (abstract) base class for the comparison object." alt="" coords="41,5,199,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,59,123,93,117,93,117,59"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="pcl::recognition::SimpleOctree&lt; NodeData, NodeDataCreator, Scalar &gt;" name="pcl::recognition::SimpleOctree&lt; NodeData, NodeDataCreator, Scalar &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1recognition_1_1_simple_octree.html" title="pcl::recognition::Simple\lOctree\&lt; RotationSpaceCell,\l RotationSpaceCellCreator,\l float \&gt;" alt="" coords="464,5,651,86"/>
-<area shape="rect" id="node5" href="$classpcl_1_1recognition_1_1_simple_octree.html" title="pcl::recognition::Simple\lOctree\&lt; RotationSpace,\l RotationSpaceCreator,\l float \&gt;" alt="" coords="476,109,639,190"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,276,114"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1recognition_1_1_simple_octree.html" title=" " alt="" coords="513,5,692,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,69,513,46,513,52,290,74"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1recognition_1_1_simple_octree.html" title=" " alt="" coords="501,99,704,168"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,114,300,117,404,127,501,130,501,136,403,132,300,123,275,119"/>
 </map>

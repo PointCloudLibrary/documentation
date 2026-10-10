@@ -1,3 +1,5 @@
 <map id="pcl::io::LZFDepth16ImageReader" name="pcl::io::LZFDepth16ImageReader">
-<area shape="rect" id="node2" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader. " alt="" coords="9,5,175,35"/>
+<area shape="rect" id="Node000001" title="PCL&#45;LZF 16&#45;bit depth image format reader." alt="" coords="5,79,195,119"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1io_1_1_l_z_f_image_reader.html" title="PCL&#45;LZF image format reader." alt="" coords="10,5,190,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,44,103,79,97,79,97,44"/>
 </map>

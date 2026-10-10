@@ -1,4 +1,7 @@
 <map id="pcl::DefaultPointRepresentation&lt; PointXYZ &gt;" name="pcl::DefaultPointRepresentation&lt; PointXYZ &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointXYZ \&gt;" alt="" coords="25,121,191,167"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="25,6,191,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,197,235,237"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="29,108,211,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,162,123,197,117,197,117,162"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="29,5,211,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,59,123,108,117,108,117,59"/>
 </map>

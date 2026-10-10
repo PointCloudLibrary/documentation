@@ -1,5 +1,16 @@
 <map id="pcl::SampleConsensusModelFromNormals&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelFromNormals&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointNT \&gt;" alt="" coords="67,315,248,344"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="Node000001" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="49,376,289,416"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="69,288,269,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,327,172,376,167,376,167,327"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="19,95,139,121"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="55,131,34,151,17,175,8,200,9,212,14,224,33,246,57,263,84,276,111,285,109,290,82,281,55,268,30,250,10,227,4,213,3,199,12,173,30,148,51,128"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="74,200,265,225"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="95,131,129,174,155,198,152,202,125,178,91,134"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="157,5,232,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="215,40,240,75,264,120,280,172,283,199,280,226,275,248,262,266,242,280,219,290,217,286,239,276,258,262,270,246,275,225,277,199,275,173,259,122,235,77,211,43"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="170,41,95,97,92,93,167,37"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="195,45,179,176,174,200,169,199,173,176,189,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="33,5,108,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="73,45,75,69,79,95,73,95,69,70,68,45"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="172,239,172,287,167,287,167,239"/>
 </map>

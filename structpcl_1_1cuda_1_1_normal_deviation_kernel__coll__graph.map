@@ -1,6 +1,13 @@
 <map id="pcl::cuda::NormalDeviationKernel&lt; Storage &gt;" name="pcl::cuda::NormalDeviationKernel&lt; Storage &gt;">
-<area shape="rect" id="node2" href="$structpcl_1_1cuda_1_1_point_x_y_z_r_g_b.html" title="Default point xyz&#45;rgb structure. " alt="" coords="35,101,203,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title="pcl::cuda::OrganizedRadius\lSearch\&lt; CloudConstPtr \&gt;" alt="" coords="89,313,271,359"/>
-<area shape="rect" id="node9" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title="Kernel to compute a radius neighborhood given a organized point cloud (aka range image cloud) ..." alt="" coords="189,198,371,245"/>
-<area shape="rect" id="node4" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars. " alt="" coords="63,5,175,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,387,204,427"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1cuda_1_1_point_x_y_z_r_g_b.html" title="Default point xyz&#45;rgb structure." alt="" coords="68,93,243,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,132,129,200,111,284,107,340,107,386,101,386,101,339,106,284,124,199,144,131"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title=" " alt="" coords="120,284,319,324"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="158,132,161,174,171,220,187,254,206,282,202,285,183,257,166,222,156,175,152,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1cuda_1_1_organized_radius_search.html" title="Kernel to compute a radius neighborhood given a organized point cloud (aka range image cloud)" alt="" coords="232,181,431,221"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="190,123,297,179,294,184,188,127"/>
+<area shape="rect" id="Node000003" href="$unionpcl_1_1cuda_1_1_r_g_b.html" title="Default RGB structure, defined as a union over 4 chars." alt="" coords="97,5,213,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,45,158,93,153,93,153,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,335,128,389,124,385,186,331"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="302,232,242,286,239,282,298,228"/>
 </map>

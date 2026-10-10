@@ -1,0 +1,14 @@
+<map id="pcl::MinCutSegmentation&lt; PointT &gt;" name="pcl::MinCutSegmentation&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="This class implements the segmentation algorithm based on minimal cut of the graph." alt="" coords="29,267,216,307"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="34,192,210,217"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,231,125,267,120,267,120,231"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="84,5,174,31"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="98,40,76,57,38,96,25,115,14,143,9,164,9,181,14,197,24,216,51,244,82,264,79,269,47,248,20,219,9,200,3,182,4,164,9,142,20,113,33,92,73,53,94,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,42,85,66,69,94,66,108,67,121,77,148,94,171,111,190,107,193,90,175,72,150,62,122,61,107,64,92,81,63,102,39"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="123,93,290,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="151,39,198,91,194,95,147,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="232,143,405,168"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="189,26,225,37,261,52,286,68,305,92,315,118,320,142,315,143,310,120,300,95,283,72,258,57,223,42,187,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="181,129,164,144,145,170,131,193,126,190,141,167,160,141,177,125"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="291,178,152,269,149,264,288,173"/>
+</map>

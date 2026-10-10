@@ -1,3 +1,9 @@
 <map id="pcl::registration::CorrespondenceRejectorOneToOne" name="pcl::registration::CorrespondenceRejectorOneToOne">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="37,6,203,53"/>
+<area shape="rect" id="Node000001" title="CorrespondenceRejectorOneToOne implements a correspondence rejection method based on eliminating dupl..." alt="" coords="18,271,265,311"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="51,181,232,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,235,144,271,139,271,139,235"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,93,277,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,132,144,181,139,181,139,132"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,5,187,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="144,45,144,93,139,93,139,45"/>
 </map>

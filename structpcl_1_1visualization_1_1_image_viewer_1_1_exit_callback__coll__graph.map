@@ -1,3 +1,7 @@
 <map id="pcl::visualization::ImageViewer::ExitCallback" name="pcl::visualization::ImageViewer::ExitCallback">
-<area shape="rect" id="node4" href="$classpcl_1_1visualization_1_1_image_viewer.html" title="ImageViewer is a class for 2D image visualization. " alt="" coords="128,6,245,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="30,108,235,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,116,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,48,121,106,117,109,75,51"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1visualization_1_1_image_viewer.html" title="ImageViewer is a class for 2D image visualization." alt="" coords="140,5,272,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,58,149,110,144,106,182,55"/>
 </map>

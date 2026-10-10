@@ -1,7 +1,22 @@
 <map id="pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;" name="pcl::people::GroundBasedPeopleDetectionApp&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1people_1_1_person_classifier.html" title="pcl::people::PersonClassifier\l\&lt; pcl::pcl::RGB \&gt;" alt="" coords="720,17,909,63"/>
-<area shape="rect" id="node4" href="$classpcl_1_1people_1_1_person_classifier.html" title="pcl::people::PersonClassifier\l\&lt; PointT \&gt;" alt="" coords="373,5,563,51"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::RGB \&gt;" alt="" coords="745,109,884,155"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="165,217,280,247"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="397,145,539,175"/>
+<area shape="rect" id="Node000001" title="GroundBasedPeopleDetectionApp performs people detection on RGB&#45;D data having as input the ground plan..." alt="" coords="1108,104,1333,144"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="791,54,881,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="895,73,1108,105,1108,110,894,78"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="759,104,913,144"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="926,121,1108,121,1108,127,926,127"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="173,127,293,153"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,137,596,133,759,126,759,131,596,139,307,143"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="398,85,589,110"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="307,125,415,107,416,113,308,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,58,80,83"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="93,55,173,41,325,32,443,36,561,54,710,85,772,101,771,107,709,91,560,60,443,41,325,37,174,47,94,60"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="78,88,105,102,176,125,175,130,103,106,75,93"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="94,71,398,89,397,94,94,76"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,138,80,163"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="94,148,149,147,173,145,173,150,149,152,94,154"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="603,103,759,115,759,121,602,108"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1people_1_1_person_classifier.html" title=" " alt="" coords="733,169,939,209"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="952,167,1107,140,1108,146,953,172"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1people_1_1_person_classifier.html" title=" " alt="" coords="391,197,596,237"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="609,205,733,195,733,200,610,211"/>
 </map>

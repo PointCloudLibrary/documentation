@@ -1,5 +1,9 @@
 <map id="ON_Group" name="ON_Group">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,5,91,35"/>
-<area shape="rect" id="node4" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="115,5,208,35"/>
-<area shape="rect" id="node6" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="244,5,327,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="125,93,213,119"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="5,5,96,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,37,155,91,152,95,76,41"/>
+<area shape="rect" id="Node000003" href="$class_o_n__w_string.html" title=" " alt="" coords="120,5,219,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,45,172,93,167,93,167,45"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="264,5,347,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,45,278,71,247,89,215,100,213,95,245,84,274,67,294,42"/>
 </map>

@@ -1,6 +1,12 @@
 <map id="pcl::OrganizedEdgeFromRGBNormals&lt; PointT, PointNT, PointLT &gt;" name="pcl::OrganizedEdgeFromRGBNormals&lt; PointT, PointNT, PointLT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_organized_edge_from_r_g_b.html" title="pcl::OrganizedEdgeFromRGB\l\&lt; PointT, PointLT \&gt;" alt="" coords="445,5,640,51"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="220,39,385,86"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_organized_edge_from_normals.html" title="pcl::OrganizedEdgeFromNormals\l\&lt; PointT, PointNT, PointLT \&gt;" alt="" coords="436,74,649,121"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,48,171,77"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="739,37,1001,77"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_organized_edge_from_r_g_b.html" title=" " alt="" coords="469,5,677,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,35,739,41,738,46,691,41"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_organized_edge_base.html" title="OrganizedEdgeBase, OrganizedEdgeFromRGB, OrganizedEdgeFromNormals, and OrganizedEdgeFromRGBNormals fi..." alt="" coords="229,37,408,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,42,469,36,470,41,422,47"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_organized_edge_from_normals.html" title=" " alt="" coords="456,69,691,109"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="422,68,456,72,455,77,421,73"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,45,181,70"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,55,229,55,229,60,195,60"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="704,73,738,69,739,74,705,78"/>
 </map>

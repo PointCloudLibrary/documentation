@@ -1,5 +1,12 @@
 <map id="pcl::TrajkovicKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;" name="pcl::TrajkovicKeypoint3D&lt; PointInT, PointOutT, NormalT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points. " alt="" coords="12,182,175,229"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="Node000001" title="TrajkovicKeypoint3D implements Trajkovic and Hedley corner detector on point cloud using geometric in..." alt="" coords="14,345,195,400"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_keypoint.html" title=" " alt="" coords="15,256,194,296"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,310,107,345,102,345,102,310"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,93,193,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,132,107,256,101,256,97,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_keypoint.html" title="Keypoint represents the base class for key points." alt="" coords="121,168,328,193"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="133,123,206,165,203,170,130,128"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="11,5,187,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="102,45,102,93,97,93,97,45"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="200,204,131,258,127,254,197,200"/>
 </map>

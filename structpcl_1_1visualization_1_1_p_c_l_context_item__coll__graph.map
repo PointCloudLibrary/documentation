@@ -1,2 +1,5 @@
 <map id="pcl::visualization::PCLContextItem" name="pcl::visualization::PCLContextItem">
+<area shape="rect" id="Node000001" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="5,79,140,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,44,75,79,70,79,70,44"/>
 </map>

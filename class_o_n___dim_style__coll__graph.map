@@ -1,5 +1,9 @@
 <map id="ON_DimStyle" name="ON_DimStyle">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,5,91,35"/>
-<area shape="rect" id="node4" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="115,5,208,35"/>
-<area shape="rect" id="node6" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="263,5,345,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="115,152,224,177"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="5,5,96,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,40,162,150,158,153,67,43"/>
+<area shape="rect" id="Node000003" href="$class_o_n__w_string.html" title=" " alt="" coords="120,5,219,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,45,172,152,167,152,167,45"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="287,5,369,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,45,324,88,315,110,301,130,284,143,265,153,225,163,223,158,263,148,281,139,297,126,310,108,319,86,325,44"/>
 </map>

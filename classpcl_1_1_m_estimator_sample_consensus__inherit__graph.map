@@ -1,4 +1,7 @@
 <map id="pcl::MEstimatorSampleConsensus&lt; PointT &gt;" name="pcl::MEstimatorSampleConsensus&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="39,102,196,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="23,5,212,35"/>
+<area shape="rect" id="Node000001" title="MEstimatorSampleConsensus represents an implementation of the MSAC (M&#45;estimator SAmple Consensus) alg..." alt="" coords="5,183,248,223"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus.html" title=" " alt="" coords="43,93,211,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,147,129,183,124,183,124,147"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class." alt="" coords="23,5,230,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,44,129,93,124,93,124,44"/>
 </map>

@@ -1,8 +1,22 @@
 <map id="pcl::RangeImageSpherical" name="pcl::RangeImageSpherical">
-<area shape="rect" id="node2" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="211,429,331,459"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="49,315,228,362"/>
-<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
-<area shape="rect" id="node17" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float..." alt="" coords="288,324,429,353"/>
-<area shape="rect" id="node19" href="$structpcl_1_1___point_with_range.html" title="pcl::_PointWithRange" alt="" coords="303,219,452,248"/>
+<area shape="rect" id="Node000001" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="184,465,375,491"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_range_image.html" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="214,391,345,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,430,282,465,277,465,277,430"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="82,288,280,328"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,335,269,388,266,392,209,339"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="18,95,138,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="55,131,34,151,17,175,8,200,9,212,14,224,31,245,52,262,101,286,98,290,49,266,27,248,10,227,4,213,3,199,12,173,30,148,51,127"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="74,200,264,225"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="95,131,128,174,155,198,152,202,125,178,91,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="157,5,232,31"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="217,39,251,83,285,140,297,172,302,204,299,236,286,265,274,279,258,290,255,286,270,275,282,263,294,234,297,204,291,173,280,143,247,86,213,43"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="170,41,95,97,92,93,167,37"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="195,45,178,176,174,200,169,199,173,176,189,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="33,5,108,31"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="73,45,74,69,79,95,73,95,69,70,68,45"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="152,238,147,251,148,263,163,286,158,289,143,265,142,250,147,236"/>
+<area shape="rect" id="Node000008" href="$structpcl_1_1_point_with_range.html" title="A point structure representing Euclidean xyz coordinates, padded with an extra range float." alt="" coords="323,295,476,321"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="376,331,296,393,293,388,373,327"/>
+<area shape="rect" id="Node000009" href="$structpcl_1_1___point_with_range.html" title=" " alt="" coords="340,200,500,225"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="417,239,405,296,400,295,412,238"/>
 </map>

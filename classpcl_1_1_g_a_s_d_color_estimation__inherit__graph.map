@@ -1,0 +1,11 @@
+<map id="pcl::GASDColorEstimation&lt; PointInT, PointOutT &gt;" name="pcl::GASDColorEstimation&lt; PointInT, PointOutT &gt;">
+<area shape="rect" id="Node000001" title="GASDColorEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given..." alt="" coords="5,347,196,387"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_g_a_s_d_estimation.html" title="GASDEstimation estimates the Globally Aligned Spatial Distribution (GASD) descriptor for a given poin..." alt="" coords="12,257,189,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,311,103,347,98,347,98,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="15,168,186,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,222,103,257,98,257,98,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="7,93,195,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,132,103,168,98,168,98,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="13,5,189,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="103,45,103,93,98,93,98,45"/>
+</map>

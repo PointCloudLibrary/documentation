@@ -1,5 +1,7 @@
 <map id="pcl::octree::OctreePointCloudOccupancy&lt; PointT, LeafContainerT, BranchContainerT &gt;" name="pcl::octree::OctreePointCloudOccupancy&lt; PointT, LeafContainerT, BranchContainerT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="pcl::octree::OctreePoint\lCloud\&lt; PointT, LeafContainer\lT, BranchContainerT, OctreeBase\l\&lt; LeafContainerT, BranchContainerT \&gt; \&gt;" alt="" coords="663,25,921,106"/>
-<area shape="rect" id="node4" href="$classpcl_1_1octree_1_1_octree_base.html" title="Octree class. " alt="" coords="125,5,373,51"/>
-<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class " alt="" coords="144,75,355,139"/>
+<area shape="rect" id="Node000001" title="Octree pointcloud occupancy class" alt="" coords="604,5,868,60"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class" alt="" coords="328,5,556,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="570,30,604,30,604,35,570,35"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_base.html" title="Octree class." alt="" coords="5,13,280,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,30,328,30,328,35,294,35"/>
 </map>

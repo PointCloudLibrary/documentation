@@ -1,3 +1,5 @@
 <map id="pcl::SVMClassify" name="pcl::SVMClassify">
-<area shape="rect" id="node2" href="$classpcl_1_1_s_v_m.html" title="Base class for SVM SVM (Support Vector Machines). " alt="" coords="29,5,104,35"/>
+<area shape="rect" id="Node000001" title="SVM (Support Vector Machines) classification of a dataset." alt="" coords="5,79,135,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_s_v_m.html" title="Base class for SVM SVM (Support Vector Machines)." alt="" coords="31,5,109,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,67,79,67,44"/>
 </map>

@@ -1,0 +1,13 @@
+<map id="pcl::detail::FieldCaster&lt; PointT &gt;" name="pcl::detail::FieldCaster&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,284,253,324"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_p_c_l_point_cloud2.html" title=" " alt="" coords="94,196,245,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,235,172,284,167,284,167,235"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="32,93,152,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,130,131,170,156,194,152,198,127,174,101,132"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="58,41,87,91,83,94,54,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="104,5,179,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="130,44,101,94,97,91,126,41"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="176,93,243,119"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="202,132,176,197,171,195,197,130"/>
+</map>

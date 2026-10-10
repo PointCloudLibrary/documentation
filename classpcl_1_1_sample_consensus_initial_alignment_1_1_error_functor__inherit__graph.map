@@ -1,4 +1,7 @@
 <map id="pcl::SampleConsensusInitialAlignment&lt; PointSource, PointTarget, FeatureT &gt;::ErrorFunctor" name="pcl::SampleConsensusInitialAlignment&lt; PointSource, PointTarget, FeatureT &gt;::ErrorFunctor">
-<area shape="rect" id="node3" href="$classpcl_1_1_sample_consensus_initial_alignment_1_1_huber_penalty.html" title="pcl::SampleConsensusInitial\lAlignment\&lt; PointSource,\l PointTarget, FeatureT \&gt;\l::HuberPenalty" alt="" coords="244,5,431,86"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_sample_consensus_initial_alignment_1_1_truncated_error.html" title="pcl::SampleConsensusInitial\lAlignment\&lt; PointSource,\l PointTarget, FeatureT \&gt;\l::TruncatedError" alt="" coords="244,109,431,190"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,52,211,121"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus_initial_alignment_1_1_huber_penalty.html" title=" " alt="" coords="259,5,464,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,63,258,56,259,62,225,68"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus_initial_alignment_1_1_truncated_error.html" title=" " alt="" coords="259,99,464,168"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,105,259,112,258,117,224,111"/>
 </map>

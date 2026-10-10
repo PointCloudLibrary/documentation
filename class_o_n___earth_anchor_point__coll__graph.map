@@ -1,6 +1,13 @@
 <map id="ON_EarthAnchorPoint" name="ON_EarthAnchorPoint">
-<area shape="rect" id="node2" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="5,34,99,63"/>
-<area shape="rect" id="node4" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="123,34,216,63"/>
-<area shape="rect" id="node7" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="333,34,435,63"/>
-<area shape="rect" id="node10" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="556,34,639,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="357,185,518,211"/>
+<area shape="rect" id="Node000002" href="$class_o_n__3d_point.html" title=" " alt="" coords="5,29,104,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,65,106,114,131,139,160,159,194,170,244,179,357,190,356,195,243,185,193,176,157,164,128,143,102,118,66,68"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="91,23,118,26,127,32,131,42,125,54,112,60,95,61,77,57,78,52,96,56,111,55,122,50,125,42,123,35,116,31,91,29"/>
+<area shape="rect" id="Node000003" href="$class_o_n__3d_vector.html" title=" " alt="" coords="224,29,331,55"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="288,66,310,113,327,138,347,159,368,173,391,183,388,188,365,178,344,163,323,141,306,116,283,68"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="315,24,343,25,353,32,357,42,352,54,338,60,320,61,301,57,302,52,321,56,337,55,348,50,352,42,349,35,342,31,314,29"/>
+<area shape="rect" id="Node000004" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="463,29,545,55"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="496,69,445,186,440,184,491,66"/>
+<area shape="rect" id="Node000005" href="$class_o_n__w_string.html" title=" " alt="" coords="569,29,668,55"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="606,68,570,115,547,141,520,163,497,177,474,188,472,183,495,173,517,159,543,137,566,112,602,65"/>
 </map>

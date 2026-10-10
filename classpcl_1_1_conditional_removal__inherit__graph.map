@@ -1,4 +1,7 @@
 <map id="pcl::ConditionalRemoval&lt; PointT &gt;" name="pcl::ConditionalRemoval&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,83,157,112"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="ConditionalRemoval filters data that satisfies certain conditions." alt="" coords="5,152,187,192"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="19,79,173,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,118,99,152,93,152,93,118"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="8,5,184,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,44,99,79,93,79,93,44"/>
 </map>

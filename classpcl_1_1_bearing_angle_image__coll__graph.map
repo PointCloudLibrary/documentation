@@ -1,7 +1,20 @@
 <map id="pcl::BearingAngleImage" name="pcl::BearingAngleImage">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointXYZRGBA \&gt;" alt="" coords="19,315,248,344"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
-<area shape="rect" id="node15" href="$structpcl_1_1_point_x_y_z_r_g_b_a.html" title="A point structure representing Euclidean xyz coordinates, and the RGBA color. " alt="" coords="293,315,435,344"/>
-<area shape="rect" id="node17" href="$structpcl_1_1___point_x_y_z_r_g_b_a.html" title="pcl::_PointXYZRGBA" alt="" coords="303,219,449,248"/>
+<area shape="rect" id="Node000001" title="class BearingAngleImage is used as an interface to generate Bearing Angle(BA) image." alt="" coords="194,376,371,401"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="51,288,296,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,320,269,374,266,378,197,324"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="19,95,139,121"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="55,131,34,151,17,175,8,200,9,212,14,224,33,246,58,263,85,276,112,285,110,290,83,281,55,268,30,250,10,227,4,213,3,199,12,173,30,148,51,128"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="74,200,265,225"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="95,131,129,174,155,198,152,202,125,178,91,134"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="157,5,232,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="218,40,253,84,287,142,299,173,304,205,300,236,286,266,271,280,253,290,251,286,268,276,282,262,295,235,298,205,293,175,282,144,248,87,213,43"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="170,41,95,97,92,93,167,37"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="195,45,179,176,174,200,169,199,173,176,190,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="33,5,108,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="73,45,75,69,79,95,73,95,69,70,68,45"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="158,239,155,251,156,263,167,286,162,289,151,265,150,251,153,237"/>
+<area shape="rect" id="Node000007" href="$structpcl_1_1_point_x_y_z_r_g_b_a.html" title="A point structure representing Euclidean xyz coordinates, and the RGBA color." alt="" coords="331,288,477,313"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="378,324,301,378,298,374,375,319"/>
+<area shape="rect" id="Node000008" href="$structpcl_1_1___point_x_y_z_r_g_b_a.html" title=" " alt="" coords="340,200,492,225"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="415,239,408,288,403,287,410,238"/>
 </map>

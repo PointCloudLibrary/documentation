@@ -1,0 +1,18 @@
+<map id="pcl::TimGrabber" name="pcl::TimGrabber">
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,391,141,416"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="5,295,107,321"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,333,77,390,72,391,59,334"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="131,288,285,328"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,338,95,393,92,388,169,334"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="65,95,185,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="101,131,81,151,64,175,56,200,56,212,61,224,77,244,97,261,143,286,140,290,94,266,73,248,56,227,51,213,50,199,59,172,77,148,98,128"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="121,200,311,225"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="142,131,175,174,202,198,198,202,171,178,138,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="204,5,279,31"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="264,40,299,83,333,141,345,173,350,205,347,236,333,266,312,285,286,298,284,293,309,281,329,262,342,235,345,205,340,174,328,144,295,86,260,43"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,41,142,97,139,93,214,37"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="242,45,225,176,221,200,216,199,220,176,236,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="80,5,155,31"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="120,45,121,69,125,95,120,95,116,70,115,45"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="213,239,212,250,210,288,205,287,207,249,208,239"/>
+</map>

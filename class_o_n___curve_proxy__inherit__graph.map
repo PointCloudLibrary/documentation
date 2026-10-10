@@ -1,8 +1,15 @@
 <map id="ON_CurveProxy" name="ON_CurveProxy">
-<area shape="rect" id="node9" href="$class_o_n___brep_edge.html" title="ON_BrepEdge" alt="" coords="5,315,112,344"/>
-<area shape="rect" id="node11" href="$class_o_n___brep_trim.html" title="ON_BrepTrim" alt="" coords="136,315,237,344"/>
-<area shape="rect" id="node13" href="$class_o_n___poly_edge_segment.html" title="ON_PolyEdgeSegment" alt="" coords="261,315,419,344"/>
-<area shape="rect" id="node2" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="145,160,228,189"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="133,83,240,112"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="144,5,229,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="132,225,256,251"/>
+<area shape="rect" id="Node000005" href="$class_o_n___brep_edge.html" title=" " alt="" coords="5,299,116,324"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,259,84,301,81,296,159,255"/>
+<area shape="rect" id="Node000006" href="$class_o_n___brep_trim.html" title=" " alt="" coords="141,299,247,324"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="197,264,197,299,191,299,191,264"/>
+<area shape="rect" id="Node000007" href="$class_o_n___poly_edge_segment.html" title=" " alt="" coords="272,299,439,324"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="233,254,330,296,328,301,231,259"/>
+<area shape="rect" id="Node000002" href="$class_o_n___curve.html" title=" " alt="" coords="151,152,237,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,191,197,225,191,225,191,191"/>
+<area shape="rect" id="Node000003" href="$class_o_n___geometry.html" title=" " alt="" coords="137,79,251,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,118,197,152,191,152,191,118"/>
+<area shape="rect" id="Node000004" href="$class_o_n___object.html" title=" " alt="" coords="149,5,239,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="197,44,197,79,191,79,191,44"/>
 </map>
