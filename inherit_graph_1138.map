@@ -1,3 +1,52 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1_supervoxel_clustering_1_1_voxel_data.html" title="VoxelData is a structure used for storing data within a pcl::octree::OctreePointCloudAdjacencyContain..." alt="" coords="5,5,176,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="21,510,229,550"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_sample_consensus_model_circle2_d.html" title=" " alt="" coords="293,798,515,838"/>
+<area shape="poly" id="edge779_Node000000_Node000001" title=" " alt="" coords="141,562,164,611,197,671,241,732,267,760,295,784,315,796,312,800,292,788,263,764,237,736,192,674,159,614,137,564"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus_model_circle3_d.html" title=" " alt="" coords="293,862,515,902"/>
+<area shape="poly" id="edge780_Node000000_Node000002" title=" " alt="" coords="137,563,156,624,188,701,209,741,233,780,262,816,295,848,313,860,310,864,292,852,258,820,229,783,204,744,183,703,151,626,132,564"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus_model_torus.html" title=" " alt="" coords="300,271,508,325"/>
+<area shape="poly" id="edge781_Node000000_Node000003" title=" " alt="" coords="145,497,205,417,246,374,292,336,313,323,316,328,295,340,249,378,209,421,149,500"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_sample_consensus_model_circle2_d.html" title="SampleConsensusModelCircle2D defines a model for 2D circle segmentation on the X&#45;Y plane." alt="" coords="300,542,508,582"/>
+<area shape="poly" id="edge782_Node000000_Node000015" title=" " alt="" coords="243,541,300,547,300,553,243,546"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1_sample_consensus_model_circle3_d.html" title="SampleConsensusModelCircle3D defines a model for 3D circle segmentation." alt="" coords="300,606,508,646"/>
+<area shape="poly" id="edge783_Node000000_Node000016" title=" " alt="" coords="189,553,294,592,331,603,330,608,292,597,187,558"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_sample_consensus_model_cone.html" title="SampleConsensusModelCone defines a model for 3D cone segmentation." alt="" coords="300,78,508,118"/>
+<area shape="poly" id="edge784_Node000000_Node000005" title=" " alt="" coords="128,496,143,421,172,322,193,269,220,218,252,170,292,128,309,116,312,120,295,132,257,173,224,220,198,271,177,323,148,422,133,497"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_sample_consensus_model_cylinder.html" title="SampleConsensusModelCylinder defines a model for 3D cylinder segmentation." alt="" coords="300,142,508,182"/>
+<area shape="poly" id="edge785_Node000000_Node000006" title=" " alt="" coords="131,496,149,432,180,350,202,307,227,265,257,226,292,192,310,180,313,184,295,196,261,230,232,268,206,309,185,352,154,433,136,498"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1_sample_consensus_model_ellipse3_d.html" title="SampleConsensusModelEllipse3D defines a model for 3D ellipse segmentation." alt="" coords="300,670,508,710"/>
+<area shape="poly" id="edge786_Node000000_Node000017" title=" " alt="" coords="159,557,219,608,256,633,295,656,322,667,320,672,292,660,253,638,216,612,156,561"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1_sample_consensus_model_line.html" title="SampleConsensusModelLine defines a model for 3D line segmentation." alt="" coords="300,926,508,966"/>
+<area shape="poly" id="edge787_Node000000_Node000018" title=" " alt="" coords="134,563,149,636,179,730,200,779,226,828,258,873,295,912,312,924,309,928,292,916,254,876,222,831,195,782,174,732,144,637,129,564"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_sample_consensus_model_plane.html" title="SampleConsensusModelPlane defines a model for 3D plane segmentation." alt="" coords="300,478,508,518"/>
+<area shape="poly" id="edge789_Node000000_Node000009" title=" " alt="" coords="243,514,300,507,300,513,243,519"/>
+<area shape="rect" id="Node000020" href="$classpcl_1_1_sample_consensus_model_registration.html" title="SampleConsensusModelRegistration defines a model for Point&#45;To&#45;Point registration outlier rejection." alt="" coords="300,734,508,774"/>
+<area shape="poly" id="edge794_Node000000_Node000020" title=" " alt="" coords="148,560,173,597,207,640,248,683,295,720,318,732,315,736,292,724,245,687,203,644,169,601,144,563"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_sample_consensus_model_sphere.html" title="SampleConsensusModelSphere defines a model for 3D sphere segmentation." alt="" coords="300,350,508,390"/>
+<area shape="poly" id="edge796_Node000000_Node000013" title=" " alt="" coords="156,499,216,448,253,422,292,400,320,388,322,393,295,404,256,427,219,453,159,503"/>
+<area shape="rect" id="Node000022" href="$classpcl_1_1_sample_consensus_model_stick.html" title="SampleConsensusModelStick defines a model for 3D stick segmentation." alt="" coords="300,414,508,454"/>
+<area shape="poly" id="edge798_Node000000_Node000022" title=" " alt="" coords="187,502,292,464,330,452,331,457,294,469,189,507"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_sample_consensus_model_torus.html" title="SampleConsensusModelTorus defines a model for 3D torus segmentation." alt="" coords="300,206,508,246"/>
+<area shape="poly" id="edge799_Node000000_Node000014" title=" " alt="" coords="135,496,157,443,190,378,235,312,262,282,292,256,311,244,314,248,295,260,266,286,239,316,195,381,162,445,140,498"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1_sample_consensus_model_parallel_line.html" title="SampleConsensusModelParallelLine defines a model for 3D line segmentation using additional angular co..." alt="" coords="581,926,789,966"/>
+<area shape="poly" id="edge788_Node000018_Node000019" title=" " alt="" coords="522,943,581,943,581,949,522,949"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_sample_consensus_model_normal_plane.html" title="SampleConsensusModelNormalPlane defines a model for 3D plane segmentation using additional surface no..." alt="" coords="567,193,803,233"/>
+<area shape="poly" id="edge790_Node000009_Node000007" title=" " alt="" coords="505,469,513,464,544,438,572,408,618,342,653,280,674,232,679,234,657,282,623,345,576,411,547,442,516,468,508,473"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_sample_consensus_model_parallel_plane.html" title="SampleConsensusModelParallelPlane defines a model for 3D plane segmentation using additional angular ..." alt="" coords="581,446,789,486"/>
+<area shape="poly" id="edge792_Node000009_Node000010" title=" " alt="" coords="521,482,581,475,581,481,522,487"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_sample_consensus_model_perpendicular_plane.html" title="SampleConsensusModelPerpendicularPlane defines a model for 3D plane segmentation using additional ang..." alt="" coords="576,510,795,550"/>
+<area shape="poly" id="edge793_Node000009_Node000011" title=" " alt="" coords="522,509,576,515,576,520,522,514"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_sample_consensus_model_normal_parallel_plane.html" title="SampleConsensusModelNormalParallelPlane defines a model for 3D plane segmentation using additional su..." alt="" coords="856,185,1071,240"/>
+<area shape="poly" id="edge791_Node000007_Node000008" title=" " alt="" coords="817,210,856,210,856,215,817,215"/>
+<area shape="rect" id="Node000021" href="$classpcl_1_1_sample_consensus_model_registration2_d.html" title="SampleConsensusModelRegistration2D defines a model for Point&#45;To&#45;Point registration outlier rejection ..." alt="" coords="581,734,789,774"/>
+<area shape="poly" id="edge795_Node000020_Node000021" title=" " alt="" coords="522,751,581,751,581,757,522,757"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_sample_consensus_model_normal_sphere.html" title="SampleConsensusModelNormalSphere defines a model for 3D sphere segmentation using additional surface ..." alt="" coords="563,34,808,74"/>
+<area shape="poly" id="edge797_Node000013_Node000012" title=" " alt="" coords="507,340,513,335,528,316,536,299,541,263,544,224,550,202,560,179,582,147,608,118,657,72,660,76,612,122,587,151,565,182,555,204,550,225,547,263,541,300,532,319,517,339,510,344"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="5,110,245,150"/>
+<area shape="poly" id="edge800_Node000004_Node000003" title=" " alt="" coords="160,157,220,207,295,256,320,268,318,273,292,260,217,211,157,161"/>
+<area shape="poly" id="edge801_Node000004_Node000005" title=" " alt="" coords="259,112,299,107,300,113,260,117"/>
+<area shape="poly" id="edge802_Node000004_Node000006" title=" " alt="" coords="260,143,300,147,299,153,259,148"/>
+<area shape="poly" id="edge803_Node000004_Node000007" title=" " alt="" coords="179,102,248,76,333,54,379,48,425,47,471,51,516,64,565,90,609,124,645,160,671,191,667,194,641,164,606,128,562,94,514,69,470,57,425,52,379,53,334,59,249,81,181,107"/>
+<area shape="poly" id="edge804_Node000004_Node000012" title=" " alt="" coords="157,99,217,55,254,35,293,19,335,10,379,5,467,6,549,16,617,31,616,37,548,22,466,11,379,10,336,15,294,25,256,40,220,60,160,103"/>
+<area shape="poly" id="edge805_Node000004_Node000014" title=" " alt="" coords="189,153,294,192,331,203,330,208,292,197,187,158"/>
 </map>

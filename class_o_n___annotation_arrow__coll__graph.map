@@ -1,5 +1,10 @@
 <map id="ON_AnnotationArrow" name="ON_AnnotationArrow">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,88,112,117"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
-<area shape="rect" id="node6" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="136,88,229,117"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="47,187,206,212"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="5,82,120,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,118,122,185,117,188,75,121"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="17,5,108,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,44,65,82,60,82,60,44"/>
+<area shape="rect" id="Node000004" href="$class_o_n__3d_point.html" title=" " alt="" coords="144,82,243,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,121,136,188,132,185,176,118"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="258,87,269,95,261,102,243,104,242,99,259,97,264,95,255,91"/>
 </map>

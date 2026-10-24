@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structpcl_1_1traits_1_1as_type_3_01pcl_1_1_p_c_l_point_field_1_1_i_n_t32_01_4.html" title="pcl::traits::asType\l\&lt; pcl::PCLPointField\l::INT32 \&gt;" alt="" coords="7,5,148,69"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class." alt="" coords="5,42,156,67"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1_gray_stereo_matching.html" title="Stereo Matching abstract class for Grayscale images." alt="" coords="204,42,387,67"/>
+<area shape="poly" id="edge818_Node000000_Node000001" title=" " alt="" coords="170,52,204,52,204,57,170,57"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_adaptive_cost_s_o_stereo_matching.html" title="Adaptive Cost 2&#45;pass Scanline Optimization Stereo Matching class." alt="" coords="450,5,646,45"/>
+<area shape="poly" id="edge819_Node000001_Node000002" title=" " alt="" coords="400,40,449,34,450,39,401,45"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_block_based_stereo_matching.html" title="Block based (or fixed window) Stereo Matching class." alt="" coords="435,70,661,95"/>
+<area shape="poly" id="edge820_Node000001_Node000003" title=" " alt="" coords="401,64,435,67,434,73,400,69"/>
 </map>

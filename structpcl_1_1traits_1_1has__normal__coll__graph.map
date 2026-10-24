@@ -1,0 +1,11 @@
+<map id="pcl::traits::has_normal&lt; PointT &gt;" name="pcl::traits::has_normal&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="Metafunction to check if a given point type has normal_x, normal_y, and normal_z fields." alt="" coords="955,103,1121,143"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1traits_1_1has__all__fields.html" title=" " alt="" coords="691,81,905,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="919,120,954,120,954,125,919,125"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="259,5,503,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="517,72,667,88,691,92,690,98,666,93,516,77"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1traits_1_1has__all__fields.html" title="Metafunction to check if a given point type has all given fields." alt="" coords="293,157,468,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="482,180,572,178,666,167,690,161,691,166,667,172,572,183,482,185"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,135,209,219"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,175,293,175,293,180,223,180"/>
+</map>

@@ -1,5 +1,10 @@
 <map id="pcl::poisson::FunctionData&lt; Degree, Real &gt;" name="pcl::poisson::FunctionData&lt; Degree, Real &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1poisson_1_1_p_polynomial.html" title="pcl::poisson::PPolynomial\l\&lt; Degree+1 \&gt;" alt="" coords="5,121,179,167"/>
-<area shape="rect" id="node4" href="$classpcl_1_1poisson_1_1_p_polynomial.html" title="pcl::poisson::PPolynomial\l\&lt; Degree \&gt;" alt="" coords="113,6,287,53"/>
-<area shape="rect" id="node6" href="$classpcl_1_1poisson_1_1_p_polynomial.html" title="pcl::poisson::PPolynomial\l\&lt; Degree&#45;1 \&gt;" alt="" coords="203,121,376,167"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="108,211,301,251"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1poisson_1_1_p_polynomial.html" title=" " alt="" coords="5,108,193,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,156,187,209,183,213,127,160"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1poisson_1_1_p_polynomial.html" title=" " alt="" coords="111,5,299,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,57,121,110,117,106,173,53"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1poisson_1_1_p_polynomial.html" title=" " alt="" coords="217,108,405,148"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="243,52,261,67,298,106,294,110,257,71,240,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,161,262,189,233,212,230,208,259,185,285,157"/>
 </map>

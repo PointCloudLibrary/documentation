@@ -1,3 +1,7 @@
 <map id="pcl::visualization::context_items::Rectangle" name="pcl::visualization::context_items::Rectangle">
-<area shape="rect" id="node2" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="31,83,159,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,167,201,207"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="36,79,171,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,133,106,166,101,166,101,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="41,5,165,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,44,106,79,101,79,101,44"/>
 </map>

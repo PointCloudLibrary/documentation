@@ -1,3 +1,9 @@
 <map id="pcl::ModelCoefficients" name="pcl::ModelCoefficients">
-<area shape="rect" id="node2" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="27,101,141,131"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,181,175,207"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="32,93,152,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,133,95,181,89,181,89,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,41,87,91,83,94,54,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,5,179,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="130,44,101,94,97,91,126,41"/>
 </map>

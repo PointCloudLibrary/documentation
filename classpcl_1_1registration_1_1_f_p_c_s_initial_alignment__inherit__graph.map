@@ -1,6 +1,13 @@
 <map id="pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;" name="pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;">
-<area shape="rect" id="node9" href="$classpcl_1_1registration_1_1_k_f_p_c_s_initial_alignment.html" title="KFPCSInitialAlignment computes corresponding four point congruent sets based on keypoints as describe..." alt="" coords="1032,5,1216,86"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="571,13,747,77"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,31,519,60"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,31,171,60"/>
+<area shape="rect" id="Node000001" title="FPCSInitialAlignment computes corresponding four point congruent sets as described in: &quot;4&#45;points cong..." alt="" coords="840,52,1039,121"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1registration_1_1_k_f_p_c_s_initial_alignment.html" title="KFPCSInitialAlignment computes corresponding four point congruent sets based on keypoints as describe..." alt="" coords="1268,5,1467,75"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1052,72,1267,48,1268,53,1053,77"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1registration_1_1_f_p_c_s_initial_alignment.html" title=" " alt="" coords="1268,99,1467,168"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1053,104,1063,105,1268,125,1267,130,1062,111,1052,109"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="603,59,791,114"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="805,84,840,84,840,89,805,89"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="341,74,553,99"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="567,84,603,84,603,89,567,89"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,74,181,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,84,341,84,341,89,195,89"/>
 </map>

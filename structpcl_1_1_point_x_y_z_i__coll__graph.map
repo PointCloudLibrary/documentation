@@ -1,3 +1,5 @@
 <map id="pcl::PointXYZI" name="pcl::PointXYZI">
-<area shape="rect" id="node2" href="$structpcl_1_1___point_x_y_z_i.html" title="A point structure representing Euclidean xyz coordinates, and the intensity value. " alt="" coords="5,5,120,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,79,121,104"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1___point_x_y_z_i.html" title="A point structure representing Euclidean xyz coordinates, and the intensity value." alt="" coords="5,5,124,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,67,79,62,79,62,44"/>
 </map>

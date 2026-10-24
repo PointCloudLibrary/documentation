@@ -1,9 +1,21 @@
 <map id="pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;" name="pcl::registration::FPCSInitialAlignment&lt; PointSource, PointTarget, NormalT, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="883,19,1059,83"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="601,8,799,37"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="285,8,451,37"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="632,61,768,107"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="301,61,435,107"/>
-<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,93,140,139"/>
-<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="300,130,436,177"/>
+<area shape="rect" id="Node000001" title="FPCSInitialAlignment computes corresponding four point congruent sets as described in: &quot;4&#45;points cong..." alt="" coords="437,511,635,580"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="179,407,367,461"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,464,456,508,454,513,348,469"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="295,330,507,355"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,365,313,409,310,404,372,361"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="324,5,415,31"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="310,24,219,30,120,44,75,55,40,69,16,85,10,95,8,105,8,344,12,356,23,368,64,388,120,405,180,417,179,422,119,410,62,393,20,372,7,359,3,344,3,104,5,93,12,82,37,64,74,50,119,39,219,25,310,18"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="374,44,403,329,398,330,369,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="435,93,602,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="402,35,500,91,497,95,400,40"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="512,216,688,241"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="429,26,539,51,587,70,605,80,617,92,625,107,629,125,628,160,619,192,609,217,604,215,614,190,622,159,624,125,620,109,613,95,601,84,584,74,537,56,428,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="95,143,329,168"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="310,27,247,38,221,46,206,56,197,77,197,100,209,141,204,143,192,101,192,76,202,53,219,41,246,33,309,22"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="604,120,648,134,687,156,704,170,717,187,725,206,728,227,728,435,726,453,720,468,699,494,670,513,637,527,635,522,668,508,696,490,715,466,721,451,723,435,723,228,720,207,712,189,700,174,684,160,646,139,603,125"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="496,130,469,159,445,193,429,231,417,269,405,330,400,329,412,268,424,229,440,191,465,155,493,127"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="536,129,594,214,590,217,532,131"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="569,250,423,332,421,327,566,246"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="216,181,221,238,232,303,248,358,265,406,260,407,243,360,227,305,216,238,211,182"/>
 </map>

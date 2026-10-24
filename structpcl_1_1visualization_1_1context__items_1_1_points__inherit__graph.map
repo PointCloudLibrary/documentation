@@ -1,5 +1,11 @@
 <map id="pcl::visualization::context_items::Points" name="pcl::visualization::context_items::Points">
-<area shape="rect" id="node7" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title="pcl::visualization\l::context_items::Markers" alt="" coords="548,5,713,51"/>
-<area shape="rect" id="node9" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title="pcl::visualization\l::context_items::Polygon" alt="" coords="548,74,713,121"/>
-<area shape="rect" id="node2" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="165,39,293,86"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="360,37,531,77"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1visualization_1_1context__items_1_1_markers.html" title=" " alt="" coords="579,5,761,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="544,41,578,36,579,41,545,46"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1visualization_1_1context__items_1_1_polygon.html" title=" " alt="" coords="579,69,761,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="545,69,579,74,578,79,544,74"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1visualization_1_1_p_c_l_context_item.html" title="Struct PCLContextItem represents our own custom version of vtkContextItem, used by the ImageViewer cl..." alt="" coords="177,37,312,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,55,360,55,360,60,326,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,45,129,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,55,177,55,177,60,143,60"/>
 </map>

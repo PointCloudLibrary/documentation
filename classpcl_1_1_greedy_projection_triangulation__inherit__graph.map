@@ -1,6 +1,11 @@
 <map id="pcl::GreedyProjectionTriangulation&lt; PointInT &gt;" name="pcl::GreedyProjectionTriangulation&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class. " alt="" coords="40,281,192,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class. " alt="" coords="43,182,189,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="28,101,204,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="33,5,199,35"/>
+<area shape="rect" id="Node000001" title="GreedyProjectionTriangulation is an implementation of a greedy triangulation algorithm for 3D points ..." alt="" coords="5,347,251,387"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class." alt="" coords="45,257,211,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,311,131,347,125,347,125,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class." alt="" coords="51,168,205,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,222,131,257,125,257,125,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="34,93,222,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,132,131,168,125,168,125,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="40,5,216,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="131,45,131,93,125,93,125,45"/>
 </map>

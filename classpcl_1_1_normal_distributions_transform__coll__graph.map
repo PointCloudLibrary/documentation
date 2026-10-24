@@ -1,22 +1,45 @@
-<map id="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;" name="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointSource, PointTarget \&gt;" alt="" coords="1397,138,1581,185"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="601,128,799,157"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="968,60,1144,124"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="285,181,451,211"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointTarget \&gt;" alt="" coords="603,181,797,211"/>
-<area shape="rect" id="node30" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="631,235,769,264"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; PointTarget \&gt;" alt="" coords="632,35,768,82"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointTarget \&gt;" alt="" coords="301,5,435,51"/>
-<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="7,37,140,83"/>
-<area shape="rect" id="node14" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="300,74,436,121"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_voxel_grid_covariance.html" title="pcl::VoxelGridCovariance\l\&lt; PointTarget \&gt;" alt="" coords="1731,243,1901,290"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_voxel_grid.html" title="pcl::VoxelGrid\&lt; PointTarget \&gt;" alt="" coords="1392,212,1587,241"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; PointTarget \&gt;" alt="" coords="973,199,1139,228"/>
-<area shape="rect" id="node33" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="973,263,1139,292"/>
-<area shape="rect" id="node45" href="$classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel strucure containing the mean and covariance of the data. " alt="" coords="1404,265,1575,311"/>
-<area shape="rect" id="node36" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; PointTarget \&gt;" alt="" coords="944,332,1168,361"/>
-<area shape="rect" id="node38" href="$classpcl_1_1_kd_tree.html" title="pcl::KdTree\&lt; PointTarget \&gt;" alt="" coords="611,303,789,332"/>
-<area shape="rect" id="node40" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="293,365,443,395"/>
-<area shape="rect" id="node42" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures. " alt="" coords="607,357,793,403"/>
-<area shape="rect" id="node48" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; PointT \&gt;" alt="" coords="959,385,1153,415"/>
+<map id="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="Node000001" title="A 3D Normal Distribution Transform registration implementation for point cloud data." alt="" coords="2531,375,2713,430"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="1452,189,1640,243"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1654,232,2531,384,2530,390,1653,237"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="1139,178,1351,203"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1365,198,1452,205,1452,211,1364,203"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,361,96,386"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="52,346,58,310,70,266,90,221,118,181,176,127,203,109,231,95,261,86,293,80,373,76,1246,76,1285,79,1325,88,1399,116,1463,152,1512,186,1509,191,1460,157,1396,121,1323,93,1285,84,1246,81,373,81,294,85,262,91,233,100,206,113,179,131,122,184,94,224,75,268,63,311,57,347"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="54,347,61,317,74,283,93,248,118,219,160,192,198,182,290,175,467,156,606,153,924,163,1020,163,1115,168,1172,175,1172,181,1114,173,1019,168,924,168,606,158,468,161,291,180,199,187,162,197,122,223,97,252,79,285,67,319,59,348"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="291,326,457,351"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="110,364,290,345,291,350,110,370"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="743,178,919,203"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="58,347,80,301,97,278,119,259,168,237,236,220,317,207,406,198,589,188,743,187,743,192,590,194,407,203,318,212,237,225,170,242,121,264,101,282,84,304,63,349"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="481,213,715,238"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="79,350,119,328,217,292,296,273,481,241,513,235,514,241,482,247,298,278,219,297,121,333,82,355"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_voxel_grid_covariance.html" title=" " alt="" coords="2211,448,2395,488"/>
+<area shape="poly" id="edge19_Node000008_Node000004" title=" " alt="" coords="58,399,81,522,99,584,110,607,122,622,152,645,180,659,208,666,236,667,297,662,373,657,1964,657,2015,652,2064,638,2112,616,2156,590,2230,534,2281,486,2284,490,2234,538,2159,595,2114,621,2066,643,2016,657,1964,663,373,663,297,668,236,673,207,671,178,664,149,649,118,626,106,610,94,585,76,523,53,400"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="743,405,919,430"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="110,374,481,396,743,410,743,415,481,401,110,380"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="948,533,1115,573"/>
+<area shape="poly" id="edge21_Node000012_Node000004" title=" " alt="" coords="62,398,84,443,101,466,122,484,164,506,201,512,241,511,291,513,475,530,657,541,948,550,948,555,657,546,474,535,290,519,241,517,200,517,162,511,118,489,97,469,80,446,58,400"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="302,583,446,623"/>
+<area shape="poly" id="edge23_Node000013_Node000004" title=" " alt="" coords="55,400,58,441,68,491,88,540,103,562,122,581,163,603,210,615,257,617,302,614,302,619,257,622,209,620,161,608,118,585,99,566,83,543,63,492,53,442,49,400"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_voxel_grid_covariance.html" title="A searchable voxel structure containing the mean and covariance of the data." alt="" coords="1871,448,2055,488"/>
+<area shape="poly" id="edge27_Node000014_Node000004" title=" " alt="" coords="90,390,144,413,214,438,292,457,373,465,1547,465,1870,465,1870,471,1547,471,373,471,291,463,212,443,142,418,88,394"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="471,330,840,302,1015,284,1114,268,1147,254,1178,236,1227,201,1230,206,1181,240,1149,259,1115,273,1016,290,841,307,471,335"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="408,317,442,301,481,287,546,275,599,275,650,273,680,269,714,259,770,231,813,201,816,206,772,236,716,264,681,274,651,279,599,280,547,280,482,292,444,306,410,322"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="1168,379,1321,405"/>
+<area shape="poly" id="edge18_Node000010_Node000005" title=" " alt="" coords="471,341,715,355,1168,384,1167,389,715,360,471,346"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="424,353,482,369,744,404,743,409,481,375,423,358"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="933,188,1139,188,1139,193,933,193"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="728,221,1452,214,1452,220,728,227"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="2407,444,2530,419,2531,424,2408,449"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="1664,371,1847,397"/>
+<area shape="poly" id="edge13_Node000008_Node000009" title=" " alt="" coords="1861,396,2187,445,2211,449,2210,455,2186,451,1860,401"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="1335,384,1375,383,1664,380,1664,386,1375,388,1335,389"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="1455,405,1637,430"/>
+<area shape="poly" id="edge26_Node000015_Node000010" title=" " alt="" coords="1335,397,1455,407,1454,412,1335,402"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="933,408,1168,394,1168,399,934,414"/>
+<area shape="poly" id="edge20_Node000008_Node000012" title=" " alt="" coords="1128,558,1257,565,1400,568,1964,568,2006,566,2049,559,2132,538,2205,511,2261,486,2264,490,2207,516,2133,543,2050,565,2007,571,1964,573,1400,573,1257,570,1128,563"/>
+<area shape="poly" id="edge28_Node000014_Node000012" title=" " alt="" coords="1128,545,1447,523,1646,506,1846,484,1870,481,1870,486,1847,489,1647,511,1448,528,1128,551"/>
+<area shape="poly" id="edge22_Node000012_Node000013" title=" " alt="" coords="459,594,948,557,948,562,460,599"/>
+<area shape="poly" id="edge24_Node000008_Node000014" title=" " alt="" coords="2069,465,2210,465,2210,471,2069,471"/>
+<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="1652,424,1847,447,1871,450,1870,455,1846,452,1651,430"/>
 </map>

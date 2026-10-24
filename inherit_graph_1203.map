@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1visualization_1_1_float_image_utils.html" title="Provide some gerneral functionalities regarding 2d float arrays, e.g., for visualization purposes ..." alt="" coords="5,5,128,51"/>
+<area shape="rect" id="Node000000" href="$structpcl_1_1tracking_1_1___particle_x_y_r_p_y.html" title=" " alt="" coords="5,5,171,45"/>
+<area shape="rect" id="Node000001" href="$structpcl_1_1tracking_1_1_particle_x_y_r_p_y.html" title=" " alt="" coords="219,13,419,38"/>
+<area shape="poly" id="edge826_Node000000_Node000001" title=" " alt="" coords="184,23,218,23,218,28,184,28"/>
 </map>

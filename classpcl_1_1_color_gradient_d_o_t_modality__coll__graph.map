@@ -1,5 +1,16 @@
 <map id="pcl::ColorGradientDOTModality&lt; PointInT &gt;" name="pcl::ColorGradientDOTModality&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_d_o_t_modality.html" title="pcl::DOTModality" alt="" coords="5,101,128,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="152,101,328,131"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="157,5,323,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,344,229,384"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_d_o_t_modality.html" title=" " alt="" coords="34,269,169,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,307,116,343,111,344,104,308"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="193,269,381,295"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,303,158,346,156,342,249,298"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="292,5,383,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="301,39,269,63,255,78,244,94,236,118,234,143,237,168,244,192,263,236,281,268,276,270,258,239,239,194,232,169,229,143,231,117,239,92,251,74,265,59,298,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="254,93,421,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="340,45,340,93,335,93,335,45"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="368,181,544,207"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="397,32,426,53,446,85,456,121,460,155,459,181,454,181,454,155,451,122,441,87,422,56,394,37"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="325,131,301,182,292,230,289,269,284,269,287,229,296,181,320,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="360,126,395,155,434,179,431,183,392,160,357,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="422,215,311,271,308,267,420,210"/>
 </map>

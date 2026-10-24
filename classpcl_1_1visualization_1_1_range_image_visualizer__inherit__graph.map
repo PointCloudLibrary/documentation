@@ -1,3 +1,5 @@
 <map id="pcl::visualization::RangeImageVisualizer" name="pcl::visualization::RangeImageVisualizer">
-<area shape="rect" id="node2" href="$classpcl_1_1visualization_1_1_image_viewer.html" title="ImageViewer is a class for 2D image visualization. " alt="" coords="27,6,144,53"/>
+<area shape="rect" id="Node000001" title="Range image visualizer class." alt="" coords="5,93,181,133"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1visualization_1_1_image_viewer.html" title="ImageViewer is a class for 2D image visualization." alt="" coords="27,5,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,59,96,93,91,93,91,59"/>
 </map>

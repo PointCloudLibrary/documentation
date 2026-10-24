@@ -1,6 +1,11 @@
 <map id="ON_BrepFace" name="ON_BrepFace">
-<area shape="rect" id="node2" href="$class_o_n___surface_proxy.html" title="ON_SurfaceProxy" alt="" coords="5,237,133,267"/>
-<area shape="rect" id="node4" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="23,160,116,189"/>
-<area shape="rect" id="node6" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="16,83,123,112"/>
-<area shape="rect" id="node8" href="$class_o_n___object.html" title="ON_Object" alt="" coords="27,5,112,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,299,127,324"/>
+<area shape="rect" id="Node000002" href="$class_o_n___surface_proxy.html" title=" " alt="" coords="5,225,140,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,264,75,299,70,299,70,264"/>
+<area shape="rect" id="Node000003" href="$class_o_n___surface.html" title=" " alt="" coords="23,152,122,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,191,75,225,70,225,70,191"/>
+<area shape="rect" id="Node000004" href="$class_o_n___geometry.html" title=" " alt="" coords="15,79,130,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,118,75,152,70,152,70,118"/>
+<area shape="rect" id="Node000005" href="$class_o_n___object.html" title=" " alt="" coords="27,5,118,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="75,44,75,79,70,79,70,44"/>
 </map>

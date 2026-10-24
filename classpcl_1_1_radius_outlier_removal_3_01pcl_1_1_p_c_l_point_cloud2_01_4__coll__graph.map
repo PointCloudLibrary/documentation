@@ -1,6 +1,21 @@
 <map id="pcl::RadiusOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;" name="pcl::RadiusOutlierRemoval&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class. " alt="" coords="5,121,173,167"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="pcl::PCLBase\&lt; pcl::\lPCLPointCloud2 \&gt;" alt="" coords="20,6,159,53"/>
-<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="197,121,331,167"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="197,6,331,53"/>
+<area shape="rect" id="Node000001" title="RadiusOutlierRemoval is a simple filter that removes outliers if the number of neighbors in a certain..." alt="" coords="240,492,435,532"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter_indices_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="177,403,359,443"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,452,324,490,320,494,289,455"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Filter represents the base filter class." alt="" coords="109,300,291,340"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,350,257,401,253,404,218,353"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title=" " alt="" coords="5,211,152,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,257,175,298,172,302,115,261"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="235,5,325,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,28,179,37,135,52,93,76,76,91,61,109,52,134,53,161,61,187,70,209,65,211,56,189,48,162,47,133,56,107,72,88,90,72,132,47,178,32,220,22"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="117,115,283,141"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="251,40,234,56,216,87,206,116,201,114,211,85,230,53,247,37"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="347,211,491,251"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="305,39,316,53,327,79,331,101,336,122,346,147,372,181,399,209,395,212,368,184,342,149,330,124,326,102,322,81,311,56,301,43"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="413,108,557,148"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="317,35,352,52,452,105,449,110,349,57,314,39"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="203,155,203,300,197,300,197,155"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="163,149,126,174,93,212,89,208,122,170,160,145"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="416,265,400,347,373,444,351,493,346,490,368,442,395,346,411,264"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="467,161,433,212,429,209,463,158"/>
 </map>

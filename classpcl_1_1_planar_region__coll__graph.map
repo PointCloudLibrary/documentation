@@ -1,7 +1,20 @@
 <map id="pcl::PlanarRegion&lt; PointT &gt;" name="pcl::PlanarRegion&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_region3_d.html" title="Region3D represents summary statistics of a 3D collection of points. " alt="" coords="5,439,171,468"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_planar_polygon.html" title="PlanarPolygon represents a planar (2D) polygon, potentially in a 3D space. " alt="" coords="195,430,325,477"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="191,315,329,362"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="159,104,273,133"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="240,219,381,248"/>
+<area shape="rect" id="Node000001" title="PlanarRegion represents a set of points that lie in a plane." alt="" coords="39,480,186,520"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_region3_d.html" title="Region3D represents summary statistics of a 3D collection of points." alt="" coords="5,398,188,423"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,437,112,479,107,480,99,437"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_planar_polygon.html" title="PlanarPolygon represents a planar (2D) polygon, potentially in a 3D space." alt="" coords="212,391,355,431"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,439,151,482,148,478,233,434"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="207,288,360,328"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,342,286,391,281,391,281,342"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="169,95,289,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,131,185,151,168,175,160,200,160,212,164,224,178,244,196,260,236,286,233,290,193,265,174,247,160,227,155,213,154,199,164,172,181,148,201,128"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="224,200,415,225"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="245,131,279,174,305,198,302,202,275,178,241,134"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="307,5,382,31"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="367,39,403,83,437,142,449,173,454,205,451,237,436,266,421,281,402,293,361,306,360,301,400,288,417,277,432,262,446,235,449,206,444,175,433,144,398,86,363,42"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="320,41,245,97,242,93,317,37"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="345,45,329,176,324,200,319,199,323,176,340,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="183,5,258,31"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="223,45,225,69,229,95,223,95,219,70,218,45"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="296,237,287,250,283,269,283,288,278,288,278,269,282,248,292,234"/>
 </map>

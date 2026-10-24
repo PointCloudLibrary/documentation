@@ -1,12 +1,29 @@
 <map id="ON_Hatch" name="ON_Hatch">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="13,85,120,115"/>
-<area shape="rect" id="node23" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="180,193,263,223"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="24,5,109,35"/>
-<area shape="rect" id="node6" href="$class_o_n___plane.html" title="ON_Plane" alt="" coords="576,447,659,476"/>
-<area shape="rect" id="node8" href="$class_o_n___plane_equation.html" title="ON_PlaneEquation" alt="" coords="355,329,488,359"/>
-<area shape="rect" id="node10" href="$class_o_n__3d_vector.html" title="ON_3dVector" alt="" coords="567,193,668,223"/>
-<area shape="rect" id="node14" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="744,329,837,359"/>
-<area shape="rect" id="node19" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_HatchLoop * \&gt;" alt="" coords="120,438,272,485"/>
-<area shape="rect" id="node21" href="$class_o_n___hatch_loop.html" title="ON_HatchLoop" alt="" coords="219,329,331,359"/>
-<area shape="rect" id="node26" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="43,329,195,359"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="177,500,263,525"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="5,80,120,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,120,52,153,49,190,49,418,53,438,62,454,76,468,93,479,135,495,177,504,176,510,134,501,91,484,72,472,58,458,48,440,44,419,44,190,47,152,54,119"/>
+<area shape="rect" id="Node000010" href="$class_o_n___curve.html" title=" " alt="" coords="195,179,282,204"/>
+<area shape="poly" id="edge15_Node000010_Node000002" title=" " alt="" coords="97,109,219,176,217,181,94,114"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="17,5,108,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,45,65,80,60,80,60,45"/>
+<area shape="rect" id="Node000004" href="$class_o_n___plane.html" title=" " alt="" coords="569,405,655,430"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="557,434,264,504,263,498,556,429"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="669,407,678,410,681,418,673,427,655,429,655,424,671,422,676,417,674,414,667,412"/>
+<area shape="rect" id="Node000005" href="$class_o_n__3d_point.html" title=" " alt="" coords="419,300,517,325"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="497,331,597,402,594,407,494,336"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="532,302,540,306,544,313,536,322,518,325,517,320,533,317,539,312,537,310,530,307"/>
+<area shape="rect" id="Node000006" href="$class_o_n__3d_vector.html" title=" " alt="" coords="651,179,757,204"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="696,218,619,405,614,403,692,216"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="772,180,780,184,784,192,776,202,758,205,757,200,773,197,779,191,777,188,770,184"/>
+<area shape="rect" id="Node000007" href="$class_o_n___plane_equation.html" title=" " alt="" coords="726,300,869,325"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="723,213,790,298,786,301,719,216"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="766,334,634,407,632,402,763,330"/>
+<area shape="poly" id="edge11_Node000007_Node000007" title=" " alt="" coords="883,303,892,306,895,313,887,321,869,325,868,320,885,317,890,312,888,310,881,308"/>
+<area shape="rect" id="Node000008" href="$class_o_n___simple_array.html" title=" " alt="" coords="138,397,302,437"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="223,451,223,500,217,500,217,451"/>
+<area shape="rect" id="Node000009" href="$class_o_n___hatch_loop.html" title=" " alt="" coords="275,300,394,325"/>
+<area shape="poly" id="edge13_Node000008_Node000009" title=" " alt="" coords="332,339,324,358,313,375,296,389,278,400,275,395,293,385,309,372,320,355,327,337"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="259,213,327,298,323,301,254,216"/>
+<area shape="rect" id="Node000011" href="$class_o_n___simple_array.html" title=" " alt="" coords="85,300,251,325"/>
+<area shape="poly" id="edge16_Node000008_Node000011" title=" " alt="" coords="167,339,167,356,172,372,191,396,187,399,167,375,162,357,161,339"/>
 </map>

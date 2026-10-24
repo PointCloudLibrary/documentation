@@ -1,0 +1,7 @@
+<map id="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;" name="pcl::ism::ImplicitShapeModelEstimation&lt; FeatureSize, PointT, NormalT &gt;">
+<area shape="rect" id="Node000001" title="This class implements Implicit Shape Model algorithm described in &quot;Hough Transforms and 3D SURF for r..." alt="" coords="5,211,216,265"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="15,108,207,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,161,113,211,108,211,108,161"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="65,5,156,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,45,113,108,108,108,108,45"/>
+</map>

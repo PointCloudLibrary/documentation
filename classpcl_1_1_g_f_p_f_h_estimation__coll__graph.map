@@ -1,8 +1,20 @@
 <map id="pcl::GFPFHEstimation&lt; PointInT, PointLT, PointOutT &gt;" name="pcl::GFPFHEstimation&lt; PointInT, PointLT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature_from_labels.html" title="pcl::FeatureFromLabels\l\&lt; PointInT, PointLT, PointOutT \&gt;" alt="" coords="92,334,305,381"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="121,235,276,282"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="Node000001" title="GFPFHEstimation estimates the Global Fast Point Feature Histogram (GFPFH) descriptor for a given poin..." alt="" coords="40,527,203,581"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature_from_labels.html" title=" " alt="" coords="5,437,237,477"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,491,124,527,119,527,119,491"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="120,348,291,388"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,400,141,439,138,435,176,396"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="206,273,394,299"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="278,309,229,350,226,346,274,305"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="203,5,293,31"/>
+<area shape="poly" id="edge11_Node000002_Node000005" title=" " alt="" coords="189,28,153,37,119,52,95,74,88,88,85,105,85,369,88,388,93,405,110,436,105,438,88,407,82,389,80,369,80,104,83,87,90,71,116,48,151,32,188,23"/>
+<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="208,39,189,51,173,66,161,84,156,105,156,287,159,304,165,319,186,346,181,349,161,322,153,305,151,288,151,104,156,82,169,63,186,47,205,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="255,43,300,272,295,274,250,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="286,93,453,119"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="277,37,354,91,351,95,274,41"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="395,183,571,209"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="307,20,348,27,391,41,432,61,466,92,479,115,485,140,487,183,481,183,480,141,474,117,462,95,429,66,389,45,346,33,306,26"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="356,131,328,182,312,232,304,273,299,272,307,231,323,180,351,129"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="393,126,427,155,465,181,462,185,424,159,390,130"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="447,217,325,276,323,271,445,212"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="pcl::Narf::FeaturePointRepresentation" name="pcl::Narf::FeaturePointRepresentation">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; Narf * \&gt;" alt="" coords="44,121,209,167"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="44,6,209,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,197,271,223"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="47,108,229,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,162,141,197,135,197,135,162"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_representation.html" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="47,5,229,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,59,141,108,135,108,135,59"/>
 </map>

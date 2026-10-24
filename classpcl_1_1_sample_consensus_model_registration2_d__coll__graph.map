@@ -1,7 +1,13 @@
 <map id="pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;" name="pcl::SampleConsensusModelRegistration2D&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model_registration.html" title="SampleConsensusModelRegistration defines a model for Point&#45;To&#45;Point registration outlier rejection..." alt="" coords="61,510,253,557"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="61,411,253,458"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="71,315,244,344"/>
-<area shape="rect" id="node8" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="Node000001" title="SampleConsensusModelRegistration2D defines a model for Point&#45;To&#45;Point registration outlier rejection ..." alt="" coords="81,379,289,419"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus_model_registration.html" title="SampleConsensusModelRegistration defines a model for Point&#45;To&#45;Point registration outlier rejection." alt="" coords="81,289,289,329"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,343,188,379,183,379,183,343"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="5,200,213,240"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,249,171,287,167,291,133,252"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="27,5,117,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="68,44,63,88,63,113,67,137,80,170,97,198,93,201,75,173,61,138,57,113,57,88,63,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="178,103,345,128"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="108,34,240,100,237,105,106,39"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="259,142,246,189,228,241,201,290,196,288,223,239,241,187,253,141"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,137,187,164,134,202,131,198,184,159,227,133"/>
 </map>

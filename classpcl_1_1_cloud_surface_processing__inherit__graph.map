@@ -1,6 +1,11 @@
 <map id="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;" name="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1_bilateral_upsampling.html" title="Bilateral filtering implementation, based on the following paper: " alt="" coords="769,5,932,51"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_moving_least_squares.html" title="MovingLeastSquares represent an implementation of the MLS (Moving Least Squares) algorithm for data s..." alt="" coords="767,74,935,121"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="296,48,472,77"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,48,171,77"/>
+<area shape="rect" id="Node000001" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="555,37,760,77"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_bilateral_upsampling.html" title="Bilateral filtering implementation, based on the following paper:" alt="" coords="810,5,993,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="773,39,810,35,810,40,774,45"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_moving_least_squares.html" title="MovingLeastSquares represent an implementation of the MLS (Moving Least Squares) algorithm for data s..." alt="" coords="809,69,993,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="774,70,810,75,809,80,773,75"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="317,45,505,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="519,55,555,55,555,60,519,60"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,45,181,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,55,317,55,317,60,195,60"/>
 </map>

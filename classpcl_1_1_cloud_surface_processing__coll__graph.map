@@ -1,4 +1,14 @@
 <map id="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;" name="pcl::CloudSurfaceProcessing&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="12,101,188,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="17,5,183,35"/>
+<area shape="rect" id="Node000001" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="5,344,211,384"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="14,269,202,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,308,111,344,105,344,105,308"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,204,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,39,90,63,76,78,65,94,57,118,56,143,58,168,65,192,84,236,102,268,98,270,79,239,60,194,53,169,50,143,52,117,60,92,72,74,87,59,120,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="75,93,242,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="161,45,161,93,156,93,156,45"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="189,181,365,207"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="218,32,247,53,267,85,277,121,281,155,281,181,275,181,276,155,272,122,262,87,243,56,215,37"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="146,131,123,182,113,230,111,269,105,269,108,229,117,181,141,129"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="182,126,216,155,255,179,253,183,213,160,178,130"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="244,215,132,271,130,267,241,210"/>
 </map>

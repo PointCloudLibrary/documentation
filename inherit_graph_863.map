@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1people_1_1_height_map2_d.html" title="HeightMap2D represents a class for creating a 2D height map from a point cloud and searching for its ..." alt="" coords="5,5,179,51"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1outofcore_1_1_outofcore_iterator_base.html" title="Abstract octree iterator class." alt="" coords="5,53,257,93"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1outofcore_1_1_outofcore_breadth_first_iterator.html" title=" " alt="" coords="305,5,515,60"/>
+<area shape="poly" id="edge632_Node000000_Node000001" title=" " alt="" coords="270,50,305,45,306,50,271,55"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1outofcore_1_1_outofcore_depth_first_iterator.html" title=" " alt="" coords="311,84,509,139"/>
+<area shape="poly" id="edge633_Node000000_Node000002" title=" " alt="" coords="271,89,311,95,311,100,271,95"/>
 </map>

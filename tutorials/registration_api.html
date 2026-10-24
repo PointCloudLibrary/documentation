@@ -1,87 +1,45 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>The PCL Registration API &mdash; Point Cloud Library 1.11.0-dev documentation</title>
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The PCL Registration API &mdash; Point Cloud Library 1.15.1-dev documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=494f4e94"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="index.html" class="icon icon-home"> Point Cloud Library
           
-
-          
+          <a href="index.html" class="icon icon-home">
+            Point Cloud Library
           </a>
-
-          
-            
-            
-              <div class="version">
-                1.11.0-dev
-              </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">The PCL Registration API</a></li>
@@ -104,68 +62,31 @@
 <li><a class="reference internal" href="#example-3-indoor-scene-laser-sick-data">Example 3: Indoor scene, Laser (SICK) data</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>The PCL Registration API</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">The PCL Registration API</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="the-pcl-registration-api">
-<span id="registration-api"></span><h1>The PCL Registration API</h1>
+             
+  <section id="the-pcl-registration-api">
+<span id="registration-api"></span><h1>The PCL Registration API<a class="headerlink" href="#the-pcl-registration-api" title="Link to this heading"></a></h1>
 <p>The problem of consistently aligning various 3D point cloud data views into a
 complete model is known as <strong>registration</strong>. Its goal is to find the relative
 positions and orientations of the separately acquired views in a global
@@ -194,9 +115,9 @@ from another dataset. Additionally, if the correspondences estimated are
 sets of correspondences, as well as methods for rejecting bad correspondences,
 and estimating transformations in a robust manner from them. The following
 sections will describe each of them individually.</p>
-</div>
-<div class="section" id="an-overview-of-pairwise-registration">
-<h1>An overview of pairwise registration</h1>
+</section>
+<section id="an-overview-of-pairwise-registration">
+<h1>An overview of pairwise registration<a class="headerlink" href="#an-overview-of-pairwise-registration" title="Link to this heading"></a></h1>
 <p>We sometimes refer to the problem of registering a pair of point cloud datasets
 together as <em>pairwise registration</em>, and its output is usually a rigid
 transformation matrix (4x4) representing the rotation and translation that would
@@ -217,26 +138,26 @@ The programmer can decide to loop over any or all of the steps.</p>
 <li><p>from the remaining set of good correspondences, estimate a motion transformation.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="registration-modules">
-<h1>Registration modules</h1>
+</section>
+<section id="registration-modules">
+<h1>Registration modules<a class="headerlink" href="#registration-modules" title="Link to this heading"></a></h1>
 <p>Let’s have a look at the single steps of the pipeline.</p>
-<div class="section" id="keypoints">
-<h2>Keypoints</h2>
+<section id="keypoints">
+<h2>Keypoints<a class="headerlink" href="#keypoints" title="Link to this heading"></a></h2>
 <p>A keypoint is an interest point that has a “special property” in the scene,
 like the corner of a book, or the letter “P” on a book that has written “PCL”
 on it. There are a number of different keypoints available in PCL like NARF,
 SIFT and FAST. Alternatively you can take every point, or a subset, as
 keypoints as well. The problem with “feeding two kinect datasets into a correspondence estimation” directly is that you have 300k points in each frame, so there can be 300k^2 correspondences.</p>
-</div>
-<div class="section" id="feature-descriptors">
-<h2>Feature descriptors</h2>
-<p>Based on the keypoints found we have to extract [features](<a class="reference external" href="http://www.pointclouds.org/documentation/tutorials/how_features_work.php">http://www.pointclouds.org/documentation/tutorials/how_features_work.php</a>), where we assemble the information and generate vectors to compare them with each other. Again there
+</section>
+<section id="feature-descriptors">
+<h2>Feature descriptors<a class="headerlink" href="#feature-descriptors" title="Link to this heading"></a></h2>
+<p>Based on the keypoints found we have to extract <a class="reference external" href="https://pcl.readthedocs.io/projects/tutorials/en/master/how_features_work.html">features</a>, where we assemble the information and generate vectors to compare them with each other. Again there
 is a number of feature options to choose from, for example NARF, FPFH, BRIEF or
 SIFT.</p>
-</div>
-<div class="section" id="correspondences-estimation">
-<h2>Correspondences estimation</h2>
+</section>
+<section id="correspondences-estimation">
+<h2>Correspondences estimation<a class="headerlink" href="#correspondences-estimation" title="Link to this heading"></a></h2>
 <p>Given two sets of feature vectors coming from two acquired scans we have to
 find corresponding features to find overlapping parts in the data. Depending on
 the feature type we can use different methods to find the correspondences.</p>
@@ -262,9 +183,9 @@ in cloud B for every point in cloud A .</p></li>
 <li><p>“Reciprocal” correspondence estimation searches for correspondences from
 cloud A to cloud B, and from B to A and only use the intersection.</p></li>
 </ul>
-</div>
-<div class="section" id="correspondences-rejection">
-<h2>Correspondences rejection</h2>
+</section>
+<section id="correspondences-rejection">
+<h2>Correspondences rejection<a class="headerlink" href="#correspondences-rejection" title="Link to this heading"></a></h2>
 <p>Naturally, not all estimated correspondences are correct.
 Since wrong correspondences can negatively affect the estimation of the final
 transformation, they need to be rejected.
@@ -274,9 +195,9 @@ certain percent of the found correspondences.</p>
 corresponds to a number of points in the source. These could be filtered by
 using only the one with the smallest distance or  by checking for other
 matchings near by.</p>
-</div>
-<div class="section" id="transformation-estimation">
-<h2>Transformation estimation</h2>
+</section>
+<section id="transformation-estimation">
+<h2>Transformation estimation<a class="headerlink" href="#transformation-estimation" title="Link to this heading"></a></h2>
 <p>The last step is to actually compute the transformation.</p>
 <ul class="simple">
 <li><p>evaluate some error metric based on correspondence</p></li>
@@ -290,20 +211,20 @@ and potentially run an internal ICP loop with either all points or a subset
 of points or the keypoints</p></li>
 <li><p>iterate until some convergence criterion is met</p></li>
 </ul>
-</div>
-<div class="section" id="example-pipelines">
-<h2>Example pipelines</h2>
-<div class="section" id="iterative-closest-point">
-<h3>Iterative Closest Point</h3>
+</section>
+<section id="example-pipelines">
+<h2>Example pipelines<a class="headerlink" href="#example-pipelines" title="Link to this heading"></a></h2>
+<section id="iterative-closest-point">
+<h3>Iterative Closest Point<a class="headerlink" href="#iterative-closest-point" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Search for correspondences.</p></li>
 <li><p>Reject bad correspondences.</p></li>
 <li><p>Estimate a transformation using the good correspondences.</p></li>
 <li><p>Iterate.</p></li>
 </ol>
-</div>
-<div class="section" id="feature-based-registration">
-<h3>Feature based registration</h3>
+</section>
+<section id="feature-based-registration">
+<h3>Feature based registration<a class="headerlink" href="#feature-based-registration" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>use SIFT Keypoints (pcl::SIFT…something)</p></li>
 <li><p>use FPFH descriptors (pcl::FPFHEstimation) at the keypoints (see our tutorials for that, like http://www.pointclouds.org/media/rss2011.html)</p></li>
@@ -311,57 +232,45 @@ of points or the keypoints</p></li>
 <li><p>reject bad correspondences using one or many of the pcl::CorrespondenceRejectionXXX methods</p></li>
 <li><p>finally get a transformation as mentioned above</p></li>
 </ol>
-</div>
-</div>
-</div>
-<div class="section" id="example-1-office-scene-kinect-data">
-<h1>Example 1: Office scene, Kinect data</h1>
-</div>
-<div class="section" id="example-2-outdoor-scene-laser-riegl-data">
-<h1>Example 2: Outdoor scene, Laser (Riegl) data</h1>
-</div>
-<div class="section" id="example-3-indoor-scene-laser-sick-data">
-<h1>Example 3: Indoor scene, Laser (SICK) data</h1>
-</div>
+</section>
+</section>
+</section>
+<section id="example-1-office-scene-kinect-data">
+<h1>Example 1: Office scene, Kinect data<a class="headerlink" href="#example-1-office-scene-kinect-data" title="Link to this heading"></a></h1>
+</section>
+<section id="example-2-outdoor-scene-laser-riegl-data">
+<h1>Example 2: Outdoor scene, Laser (Riegl) data<a class="headerlink" href="#example-2-outdoor-scene-laser-riegl-data" title="Link to this heading"></a></h1>
+</section>
+<section id="example-3-indoor-scene-laser-sick-data">
+<h1>Example 3: Indoor scene, Laser (SICK) data<a class="headerlink" href="#example-3-indoor-scene-laser-sick-data" title="Link to this heading"></a></h1>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,4 +1,7 @@
 <map id="ON_WindowsBITMAPINFO" name="ON_WindowsBITMAPINFO">
-<area shape="rect" id="node2" href="$struct_o_n___windows_r_g_b_q_u_a_d.html" title="ON_WindowsRGBQUAD" alt="" coords="5,5,176,35"/>
-<area shape="rect" id="node4" href="$struct_o_n___windows_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html" title="ON_WindowsBITMAPINFOHEADER" alt="" coords="200,5,443,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="148,93,339,119"/>
+<area shape="rect" id="Node000002" href="$struct_o_n___windows_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html" title=" " alt="" coords="5,5,249,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,37,229,91,226,95,152,41"/>
+<area shape="rect" id="Node000003" href="$struct_o_n___windows_r_g_b_q_u_a_d.html" title=" " alt="" coords="273,5,448,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="335,41,261,95,258,91,332,37"/>
 </map>

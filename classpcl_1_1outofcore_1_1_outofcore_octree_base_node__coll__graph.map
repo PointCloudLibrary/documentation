@@ -1,5 +1,28 @@
 <map id="pcl::outofcore::OutofcoreOctreeBaseNode&lt; ContainerT, PointT &gt;" name="pcl::outofcore::OutofcoreOctreeBaseNode&lt; ContainerT, PointT &gt;">
-<area shape="rect" id="node7" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title="pcl::outofcore::Outofcore\lOctreeBase\&lt; ContainerT,\l pcl::PointXYZRGB \&gt;" alt="" coords="1035,73,1205,137"/>
-<area shape="rect" id="node11" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title="This code defines the octree used for point storage at Urban Robotics. " alt="" coords="701,119,872,183"/>
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="7,161,167,191"/>
+<area shape="rect" id="Node000001" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree,..." alt="" coords="2000,106,2221,161"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="412,10,587,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="600,14,751,6,921,3,1772,3,1815,5,1857,13,1939,39,2012,72,2068,104,2066,108,2009,77,1937,44,1856,18,1814,11,1772,8,921,8,752,12,600,19"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base_node.html" title="OutofcoreOctreeBaseNode Class internally representing nodes of an outofcore octree,..." alt="" coords="812,183,1033,238"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="543,39,861,181,859,186,541,44"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title=" " alt="" coords="1647,213,1895,283"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1886,206,2028,158,2029,163,1888,211"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="1633,251,1410,249,1158,239,1033,227,1034,222,1159,233,1410,244,1633,246"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="1047,190,1057,189,1322,167,1585,151,2000,134,2000,139,1585,157,1323,173,1058,195,1047,196"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1047,208,1312,211,1468,217,1623,227,1647,229,1646,234,1622,232,1467,223,1312,217,1047,213"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="892,167,903,160,923,157,939,159,951,164,957,173,957,183,952,183,952,175,947,169,938,164,923,162,905,165,895,172"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1outofcore_1_1_outofcore_octree_base.html" title="This code defines the octree used for point storage at Urban Robotics." alt="" coords="1159,297,1345,351"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="981,242,1058,279,1108,294,1159,306,1158,311,1107,300,1056,284,979,247"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="462,377,537,402"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="551,402,622,422,714,442,817,459,921,465,1772,465,1804,463,1834,456,1863,444,1890,429,1940,390,1985,343,2023,292,2054,241,2095,160,2100,162,2059,244,2027,295,1989,346,1944,394,1893,433,1865,449,1835,461,1804,468,1772,471,921,471,816,464,713,448,621,427,549,407"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="542,369,856,236,858,241,544,374"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="393,191,606,231"/>
+<area shape="poly" id="edge17_Node000001_Node000006" title=" " alt="" coords="547,182,617,147,709,110,813,81,867,73,921,69,1772,69,1835,72,1898,80,2012,103,2011,109,1897,85,1834,78,1772,75,921,75,868,78,814,86,711,115,620,152,549,186"/>
+<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="620,208,812,208,812,213,620,213"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,255,96,281"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="110,258,392,222,393,227,110,263"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="816,308,1029,348"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="110,267,401,278,593,289,788,305,816,309,816,314,788,311,593,294,401,283,110,272"/>
+<area shape="poly" id="edge10_Node000003_Node000008" title=" " alt="" coords="1013,349,1084,364,1159,375,1291,386,1394,384,1444,377,1496,365,1622,326,1670,305,1714,280,1717,285,1672,310,1624,330,1497,370,1445,382,1395,389,1291,391,1158,380,1083,369,1012,354"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="1043,325,1135,324,1158,324,1158,329,1135,329,1043,330"/>
+<area shape="poly" id="edge12_Node000003_Node000009" title=" " alt="" coords="1359,320,1486,312,1622,293,1674,280,1675,285,1623,299,1486,318,1359,325"/>
 </map>
