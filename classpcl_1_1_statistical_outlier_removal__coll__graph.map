@@ -1,5 +1,15 @@
 <map id="pcl::StatisticalOutlierRemoval&lt; PointT &gt;" name="pcl::StatisticalOutlierRemoval&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="44,161,161,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="33,83,172,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="20,5,185,35"/>
+<area shape="rect" id="Node000001" title="StatisticalOutlierRemoval uses point neighborhood statistics to filter outlier data." alt="" coords="53,420,269,460"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="97,331,225,371"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,385,164,420,159,420,159,385"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="85,256,238,281"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,295,164,331,159,331,159,295"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,181,181,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,215,152,254,148,257,112,219"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="52,5,143,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="97,44,92,93,92,142,95,181,89,181,87,142,87,93,91,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="146,93,313,119"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="128,36,213,91,210,95,125,40"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="224,133,196,208,170,257,166,255,191,206,219,131"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="189,127,155,145,107,183,104,179,152,140,186,122"/>
 </map>

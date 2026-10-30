@@ -1,0 +1,9 @@
+<map id="pcl::SampleConsensusModelTorus&lt; PointT, PointNT &gt;" name="pcl::SampleConsensusModelTorus&lt; PointT, PointNT &gt;">
+<area shape="rect" id="Node000001" title="SampleConsensusModelTorus defines a model for 3D torus segmentation." alt="" coords="295,37,503,77"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_sample_consensus_model_torus.html" title=" " alt="" coords="688,30,896,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="517,55,688,55,688,60,517,60"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="21,5,229,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,36,295,42,294,48,243,42"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus_model_from_normals.html" title="SampleConsensusModelFromNormals represents the base model class for models that require the use of su..." alt="" coords="5,69,245,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,71,294,67,295,72,259,76"/>
+</map>

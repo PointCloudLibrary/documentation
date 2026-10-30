@@ -1,4 +1,20 @@
 <map id="pcl::tracking::Tracker&lt; PointInT, StateT &gt;" name="pcl::tracking::Tracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,101,181,131"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,5,176,35"/>
+<area shape="rect" id="Node000001" title="Tracker represents the base tracker class." alt="" coords="1077,115,1233,155"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="840,59,1028,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="993,86,1085,112,1083,117,992,91"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,107,96,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,96,94,79,119,64,147,52,171,46,225,40,391,23,521,17,651,23,816,43,886,57,885,62,816,48,650,28,521,22,391,28,226,45,172,52,149,58,121,69,97,83,76,100"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="225,55,392,81"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="109,101,119,99,226,78,227,83,121,104,110,106"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="528,90,704,115"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="110,116,528,103,528,108,110,121"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="544,177,688,217"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="110,128,226,147,544,187,544,192,225,152,109,133"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="237,245,381,285"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="61,145,82,197,99,223,122,243,148,257,177,265,237,270,236,276,176,270,146,262,118,248,95,226,77,199,56,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,59,416,59,593,57,816,61,840,62,840,68,816,67,593,62,416,64,406,64"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="406,76,528,90,527,95,405,82"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="718,90,840,78,840,84,718,96"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="701,185,1077,141,1077,146,702,190"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="394,250,503,228,552,215,553,220,505,233,395,255"/>
 </map>

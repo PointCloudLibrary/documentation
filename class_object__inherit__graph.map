@@ -1,7 +1,13 @@
 <map id="Object" name="Object">
-<area shape="rect" id="node3" href="$class_axes.html" title="Axes" alt="" coords="5,83,56,112"/>
-<area shape="rect" id="node5" href="$class_camera.html" title="Camera" alt="" coords="80,83,147,112"/>
-<area shape="rect" id="node7" href="$class_geometry.html" title="Geometry" alt="" coords="171,83,248,112"/>
-<area shape="rect" id="node9" href="$class_grid.html" title="Grid" alt="" coords="272,83,317,112"/>
-<area shape="rect" id="node11" href="$class_outofcore_cloud.html" title="OutofcoreCloud" alt="" coords="341,83,453,112"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="192,5,256,31"/>
+<area shape="rect" id="Node000002" href="$class_axes.html" title=" " alt="" coords="5,79,59,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,38,60,83,58,78,179,33"/>
+<area shape="rect" id="Node000003" href="$class_camera.html" title=" " alt="" coords="83,79,157,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,41,139,81,136,76,194,36"/>
+<area shape="rect" id="Node000004" href="$class_geometry.html" title=" " alt="" coords="181,79,267,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,44,227,79,221,79,221,44"/>
+<area shape="rect" id="Node000005" href="$class_grid.html" title=" " alt="" coords="291,79,341,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="251,37,303,76,299,81,248,41"/>
+<area shape="rect" id="Node000006" href="$class_outofcore_cloud.html" title=" " alt="" coords="365,79,488,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="270,32,395,76,393,81,268,37"/>
 </map>

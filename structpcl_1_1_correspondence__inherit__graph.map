@@ -1,4 +1,7 @@
 <map id="pcl::Correspondence" name="pcl::Correspondence">
-<area shape="rect" id="node3" href="$structpcl_1_1_point_correspondence3_d.html" title="Representation of a (possible) correspondence between two 3D points in two different coordinate frame..." alt="" coords="5,83,195,112"/>
-<area shape="rect" id="node5" href="$structpcl_1_1_point_correspondence6_d.html" title="Representation of a (possible) correspondence between two points (e.g. " alt="" coords="5,160,195,189"/>
+<area shape="rect" id="Node000001" title="Correspondence represents a match between two entities (e.g., points, descriptors,..." alt="" coords="31,5,185,31"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_point_correspondence3_d.html" title="Representation of a (possible) correspondence between two 3D points in two different coordinate frame..." alt="" coords="5,79,211,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,44,111,79,105,79,105,44"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_point_correspondence6_d.html" title="Representation of a (possible) correspondence between two points (e.g." alt="" coords="5,152,211,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,118,111,152,105,152,105,118"/>
 </map>

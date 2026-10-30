@@ -1,10 +1,28 @@
 <map id="pcl::features::ISMVoteList&lt; PointT &gt;" name="pcl::features::ISMVoteList&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="pcl::KdTreeFLANN\&lt; pcl\l::pcl::InterestPoint \&gt;" alt="" coords="909,74,1072,121"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_kd_tree.html" title="pcl::KdTree\&lt; pcl::pcl\l::InterestPoint \&gt;" alt="" coords="543,5,684,51"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_kd_tree.html" title="KdTree represents the base spatial locator class for kd&#45;tree implementations. " alt="" coords="167,55,316,84"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_kd_tree_f_l_a_n_n.html" title="KdTreeFLANN is a generic type of 3D spatial locator using kD&#45;tree structures. " alt="" coords="520,74,707,121"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZRGB \&gt;" alt="" coords="921,285,1060,331"/>
-<area shape="rect" id="node13" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="184,249,299,279"/>
-<area shape="rect" id="node20" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="543,260,684,289"/>
-<area shape="rect" id="node24" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::pcl::InterestPoint \&gt;" alt="" coords="920,178,1061,225"/>
+<area shape="rect" id="Node000001" title="This class is used for storing, analyzing and manipulating votes obtained from ISM algorithm." alt="" coords="1096,218,1283,258"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="791,218,945,258"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="958,235,1096,235,1096,241,958,241"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="173,137,293,163"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,165,294,166,346,191,369,202,399,211,504,230,611,239,709,241,791,240,791,245,709,246,610,244,504,235,398,217,367,207,344,196,292,171,288,170"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="399,163,589,188"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="308,154,399,163,398,169,307,160"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="791,111,945,151"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="307,138,317,137,448,129,578,126,791,127,791,132,578,132,448,135,318,142,307,143"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,192,80,217"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="94,209,104,210,251,229,399,243,506,247,613,247,688,249,763,247,791,245,791,250,763,253,688,254,613,253,506,253,398,249,251,235,104,215,93,214"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,188,188,160,189,165,94,193"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="94,204,187,205,293,201,419,185,420,191,294,206,187,210,94,209"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="66,181,103,153,136,134,173,122,261,102,336,90,403,84,466,82,597,91,763,109,791,112,790,118,762,114,596,96,466,88,403,89,336,95,262,108,174,127,138,139,105,158,69,185"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="75,37,215,135,212,139,72,41"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="584,188,791,223,791,228,584,193"/>
+<area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="603,163,762,145,791,141,792,146,763,150,603,168"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="943,153,1129,215,1127,220,941,158"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="787,335,949,375"/>
+<area shape="poly" id="edge13_Node000001_Node000008" title=" " alt="" coords="936,328,1132,256,1134,261,937,333"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="188,372,279,397"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="292,374,317,371,574,357,786,353,787,358,574,363,318,377,293,379"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="422,403,566,443"/>
+<area shape="poly" id="edge16_Node000010_Node000009" title=" " alt="" coords="292,396,318,401,422,414,421,420,317,406,291,401"/>
+<area shape="poly" id="edge15_Node000008_Node000010" title=" " alt="" coords="579,414,668,403,762,386,810,373,811,378,763,391,669,408,580,419"/>
 </map>

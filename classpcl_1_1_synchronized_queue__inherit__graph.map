@@ -1,4 +1,7 @@
 <map id="pcl::SynchronizedQueue&lt; T &gt;" name="pcl::SynchronizedQueue&lt; T &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_synchronized_queue.html" title="pcl::SynchronizedQueue\l\&lt; unsigned char * \&gt;" alt="" coords="385,5,548,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_synchronized_queue.html" title="pcl::SynchronizedQueue\l\&lt; boost::shared_array\l\&lt; unsigned char \&gt; \&gt;" alt="" coords="385,75,548,139"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,49,221,74"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_synchronized_queue.html" title=" " alt="" coords="419,5,597,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,48,418,31,418,36,236,53"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_synchronized_queue.html" title=" " alt="" coords="419,70,597,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,74,246,80,418,92,418,97,245,85,197,79"/>
 </map>

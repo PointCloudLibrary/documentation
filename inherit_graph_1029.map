@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpcl_1_1recognition_1_1_hough_space3_d.html" title="HoughSpace3D is a 3D voting space. " alt="" coords="5,5,216,35"/>
+<area shape="rect" id="Node000000" href="$classpcl_1_1poisson_1_1_sparse_matrix.html" title=" " alt="" coords="5,13,236,38"/>
+<area shape="rect" id="Node000001" href="$classpcl_1_1poisson_1_1_sparse_symmetric_matrix.html" title=" " alt="" coords="284,5,507,45"/>
+<area shape="poly" id="edge725_Node000000_Node000001" title=" " alt="" coords="250,23,284,23,284,28,250,28"/>
 </map>

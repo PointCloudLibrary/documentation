@@ -1,0 +1,17 @@
+<map id="pcl::traits::has_field&lt; PointT, Field &gt;" name="pcl::traits::has_field&lt; PointT, Field &gt;">
+<area shape="rect" id="Node000001" title="Metafunction to check if a given point type has a given field." alt="" coords="224,91,373,131"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1traits_1_1has__field.html" title=" " alt="" coords="552,5,701,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="363,84,397,74,476,55,551,41,552,47,477,61,398,79,365,89"/>
+<area shape="rect" id="Node000005" href="$structpcl_1_1traits_1_1has__field.html" title=" " alt="" coords="552,84,701,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="387,109,552,109,552,114,387,114"/>
+<area shape="rect" id="Node000007" href="$structpcl_1_1traits_1_1has__field.html" title=" " alt="" coords="552,163,701,217"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="365,133,398,143,477,162,552,176,551,181,476,167,397,149,363,138"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,77,175,146"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,109,224,109,224,114,189,114"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1traits_1_1has__curvature.html" title="Metafunction to check if a given point type has curvature field." alt="" coords="751,13,933,53"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="715,30,751,30,751,35,715,35"/>
+<area shape="rect" id="Node000006" href="$structpcl_1_1traits_1_1has__intensity.html" title="Metafunction to check if a given point type has intensity field." alt="" coords="753,91,931,131"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="715,109,752,109,752,114,715,114"/>
+<area shape="rect" id="Node000008" href="$structpcl_1_1traits_1_1has__label.html" title="Metafunction to check if a given point type has label field." alt="" coords="765,170,919,210"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="715,187,765,187,765,193,715,193"/>
+</map>

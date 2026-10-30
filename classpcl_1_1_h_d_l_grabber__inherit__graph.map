@@ -1,3 +1,7 @@
 <map id="pcl::HDLGrabber" name="pcl::HDLGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="19,5,112,35"/>
+<area shape="rect" id="Node000001" title="Grabber for the Velodyne High&#45;Definition&#45;Laser (HDL)" alt="" coords="5,79,133,104"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_v_l_p_grabber.html" title="Grabber for the Velodyne LiDAR (VLP), based on the Velodyne High Definition Laser (HDL)" alt="" coords="7,152,132,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="72,118,72,152,67,152,67,118"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="19,5,120,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,44,72,79,67,79,67,44"/>
 </map>

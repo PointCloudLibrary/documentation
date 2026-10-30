@@ -1,3 +1,5 @@
 <map id="pcl::EnsensoGrabber" name="pcl::EnsensoGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="31,5,124,35"/>
+<area shape="rect" id="Node000001" title="Grabber for IDS&#45;Imaging Ensenso&#39;s devices." alt="" coords="5,79,160,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="32,5,133,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,44,85,79,80,79,80,44"/>
 </map>

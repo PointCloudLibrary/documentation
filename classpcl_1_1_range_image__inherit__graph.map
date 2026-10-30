@@ -1,6 +1,11 @@
 <map id="pcl::RangeImage" name="pcl::RangeImage">
-<area shape="rect" id="node7" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="5,280,163,309"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="187,280,360,309"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointWith\lRange \&gt;" alt="" coords="89,102,268,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="108,5,249,35"/>
+<area shape="rect" id="Node000001" title="RangeImage is derived from pcl/PointCloud and provides functionalities with focus on situations where..." alt="" coords="129,183,259,208"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_range_image_planar.html" title="RangeImagePlanar is derived from the original range image and differs from it because it&#39;s not a sphe..." alt="" coords="5,257,177,283"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,218,109,259,106,255,165,214"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_range_image_spherical.html" title="RangeImageSpherical is derived from the original range image and uses a slightly different spherical ..." alt="" coords="201,257,392,283"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="223,214,282,255,279,259,220,218"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="95,93,293,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,147,197,182,191,182,191,147"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="99,5,289,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,44,197,93,191,93,191,44"/>
 </map>

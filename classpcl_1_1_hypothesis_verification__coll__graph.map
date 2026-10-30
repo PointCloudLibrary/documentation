@@ -1,9 +1,23 @@
 <map id="pcl::HypothesisVerification&lt; ModelT, SceneT &gt;" name="pcl::HypothesisVerification&lt; ModelT, SceneT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; SceneT \&gt;" alt="" coords="692,132,871,161"/>
-<area shape="rect" id="node4" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="176,20,291,49"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="425,97,567,127"/>
-<area shape="rect" id="node15" href="$classpcl_1_1search_1_1_kd_tree.html" title="pcl::search::KdTree\l\&lt; SceneT \&gt;" alt="" coords="713,210,849,257"/>
-<area shape="rect" id="node17" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; SceneT \&gt;" alt="" coords="429,210,563,257"/>
-<area shape="rect" id="node19" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="167,247,300,294"/>
-<area shape="rect" id="node21" href="$classpcl_1_1search_1_1_kd_tree.html" title="search::KdTree is a wrapper class which inherits the pcl::KdTree class for performing search function..." alt="" coords="428,279,564,326"/>
+<area shape="rect" id="Node000001" title="Abstract class for hypotheses verification methods." alt="" coords="1148,182,1343,222"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="719,129,915,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="922,154,1148,186,1147,191,921,159"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="173,21,293,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,37,485,58,591,75,695,98,783,127,782,132,694,103,590,80,484,63,307,42"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="399,95,589,120"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="284,49,318,59,440,92,439,97,317,65,282,54"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,95,80,120"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="94,113,197,127,318,139,532,146,718,143,718,148,532,151,317,145,196,133,93,118"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,87,198,44,200,49,91,92"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="94,105,399,105,399,110,94,110"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="94,20,174,26,173,32,93,25"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="603,116,719,129,718,134,603,122"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="745,215,889,255"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="903,230,1124,215,1148,213,1148,218,1124,221,903,235"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="188,252,279,277"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="292,254,317,251,551,238,744,233,744,239,552,243,318,257,293,259"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="422,283,566,323"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="292,276,318,281,422,294,421,300,317,286,291,281"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="579,288,694,266,747,253,748,258,695,271,580,293"/>
 </map>

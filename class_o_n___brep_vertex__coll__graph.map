@@ -1,9 +1,18 @@
 <map id="ON_BrepVertex" name="ON_BrepVertex">
-<area shape="rect" id="node2" href="$class_o_n___point.html" title="ON_Point" alt="" coords="144,203,221,232"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="5,104,112,133"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="16,5,101,35"/>
-<area shape="rect" id="node8" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="136,104,229,133"/>
-<area shape="rect" id="node11" href="$union_o_n___u.html" title="ON_U" alt="" coords="249,203,308,232"/>
-<area shape="rect" id="node13" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="333,203,491,232"/>
-<area shape="rect" id="node15" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="347,104,499,133"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="233,260,354,285"/>
+<area shape="rect" id="Node000002" href="$class_o_n___point.html" title=" " alt="" coords="152,172,235,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,204,281,257,278,261,216,208"/>
+<area shape="rect" id="Node000003" href="$class_o_n___geometry.html" title=" " alt="" coords="5,82,120,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,113,178,170,175,174,90,117"/>
+<area shape="rect" id="Node000004" href="$class_o_n___object.html" title=" " alt="" coords="17,5,108,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="65,44,65,82,60,82,60,44"/>
+<area shape="rect" id="Node000005" href="$class_o_n__3d_point.html" title=" " alt="" coords="144,82,243,107"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,121,196,172,191,172,191,121"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="258,87,269,95,261,102,243,104,242,99,259,97,264,95,255,91"/>
+<area shape="rect" id="Node000006" href="$union_o_n___u.html" title=" " alt="" coords="264,172,323,197"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="296,211,296,259,291,259,291,211"/>
+<area shape="rect" id="Node000007" href="$class_o_n___simple_array.html" title=" " alt="" coords="355,172,531,197"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="429,211,402,238,375,252,347,262,345,257,373,248,398,234,426,207"/>
+<area shape="rect" id="Node000008" href="$class_o_n___simple_array.html" title=" " alt="" coords="363,82,530,107"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="448,121,446,172,441,172,443,121"/>
 </map>

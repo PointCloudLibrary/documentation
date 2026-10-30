@@ -1,5 +1,9 @@
 <map id="pcl::RadiusOutlierRemoval&lt; PointT &gt;" name="pcl::RadiusOutlierRemoval&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="36,161,153,207"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="25,83,164,112"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="12,5,177,35"/>
+<area shape="rect" id="Node000001" title="RadiusOutlierRemoval filters points in a cloud based on the number of neighbors they have." alt="" coords="5,240,200,280"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="39,152,167,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,206,105,240,100,240,100,206"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="26,79,179,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,118,105,152,100,152,100,118"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="15,5,191,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,44,105,79,100,79,100,44"/>
 </map>

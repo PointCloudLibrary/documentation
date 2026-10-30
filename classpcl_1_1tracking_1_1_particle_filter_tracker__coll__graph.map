@@ -1,11 +1,62 @@
 <map id="pcl::tracking::ParticleFilterTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::ParticleFilterTracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="5,270,149,317"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="33,101,209,131"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_filter.html" title="pcl::Filter\&lt; PointInT \&gt;" alt="" coords="115,207,264,236"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="139,5,304,35"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="233,101,372,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_pass_through.html" title="pcl::PassThrough\&lt; PointInT \&gt;" alt="" coords="115,456,312,485"/>
-<area shape="rect" id="node10" href="$classpcl_1_1_filter_indices.html" title="pcl::FilterIndices\l\&lt; PointInT \&gt;" alt="" coords="131,342,248,389"/>
-<area shape="rect" id="node18" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal. " alt="" coords="288,198,405,245"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_pass_through.html" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type..." alt="" coords="272,351,459,380"/>
+<area shape="rect" id="Node000001" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="2872,243,3073,283"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="1804,211,1960,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1974,227,2355,229,2600,235,2848,247,2872,248,2872,254,2848,252,2600,240,2355,234,1974,232"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="1397,133,1585,158"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1563,158,1804,211,1803,216,1562,164"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="277,282,368,307"/>
+<area shape="poly" id="edge13_Node000001_Node000004" title=" " alt="" coords="335,269,376,204,405,168,438,137,508,82,568,45,599,33,634,24,720,17,2661,17,2714,25,2764,44,2810,73,2852,107,2888,145,2919,181,2961,241,2957,244,2915,185,2884,148,2848,111,2807,77,2762,49,2713,30,2660,23,720,23,635,29,601,38,570,50,511,87,442,141,409,172,380,207,339,272"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,270,384,232,441,187,509,144,545,126,583,113,678,90,759,76,832,69,900,68,1042,78,1223,93,1341,109,1441,130,1440,135,1340,114,1222,99,1042,83,900,74,832,75,760,81,679,95,585,119,547,131,511,149,444,191,388,236,348,274"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="638,251,805,277"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="382,288,638,268,638,273,382,293"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="1021,109,1197,134"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="354,272,394,249,439,227,515,199,595,177,675,159,754,145,902,127,1020,120,1020,125,902,133,755,150,676,164,596,182,517,204,441,232,396,254,356,277"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="1037,221,1181,261"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="370,275,439,255,521,240,606,229,772,221,922,224,1037,231,1036,237,921,229,772,227,606,235,522,245,441,260,372,280"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="649,304,793,344"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="380,308,440,320,550,327,649,326,649,331,550,332,440,325,379,314"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="1021,349,1197,374"/>
+<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="369,310,466,343,525,358,584,368,702,377,820,378,930,374,1020,367,1021,373,930,379,820,383,702,382,584,373,524,363,465,348,367,315"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class" alt="" coords="995,537,1223,591"/>
+<area shape="poly" id="edge30_Node000016_Node000004" title=" " alt="" coords="332,320,345,364,366,419,398,473,418,497,441,518,482,538,540,553,609,563,687,569,850,572,995,568,995,573,850,578,687,574,609,568,539,558,481,543,439,522,414,501,394,476,361,421,340,366,327,322"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="618,494,825,519"/>
+<area shape="poly" id="edge32_Node000021_Node000004" title=" " alt="" coords="335,320,349,357,371,400,402,443,421,461,441,476,483,496,528,508,574,514,618,515,618,520,574,519,527,513,481,501,439,481,417,465,398,446,367,403,344,359,330,322"/>
+<area shape="rect" id="Node000023" href="$classpcl_1_1octree_1_1_octree_point_cloud.html" title="Octree pointcloud class" alt="" coords="995,453,1223,507"/>
+<area shape="poly" id="edge36_Node000023_Node000004" title=" " alt="" coords="351,314,392,344,441,371,486,386,546,400,693,427,853,449,995,466,994,471,853,454,692,432,545,405,485,391,439,376,389,348,348,318"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="811,246,858,237,994,207,1210,174,1396,152,1397,157,1211,179,995,212,859,243,812,251"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="802,245,858,227,881,212,936,179,994,151,1052,132,1054,137,996,156,939,184,884,217,860,232,803,250"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="1414,317,1567,342"/>
+<area shape="poly" id="edge20_Node000011_Node000005" title=" " alt="" coords="818,269,971,283,995,285,1414,321,1414,326,994,291,970,288,818,274"/>
+<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="806,277,859,289,883,297,1058,346,1057,351,882,303,858,295,805,282"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="1211,125,1397,137,1396,142,1210,130"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="1194,237,1804,229,1804,234,1194,243"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="807,340,902,352,942,351,969,343,980,330,981,314,983,296,993,278,1013,263,1035,253,1038,257,1016,268,997,282,988,298,987,314,984,332,972,348,943,357,902,358,806,345"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_pass_through.html" title=" " alt="" coords="2552,282,2767,307"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="2781,295,2848,291,2902,280,2903,285,2848,296,2781,301"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="2029,329,2157,369"/>
+<area shape="poly" id="edge15_Node000009_Node000010" title=" " alt="" coords="2171,339,2552,302,2552,308,2171,345"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="1581,330,2029,345,2029,350,1581,335"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_filter_indices.html" title="FilterIndices represents the base class for filters that are about binary point removal." alt="" coords="1818,275,1946,315"/>
+<area shape="poly" id="edge23_Node000014_Node000011" title=" " alt="" coords="1581,319,1817,298,1818,303,1581,324"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="1210,350,1413,333,1414,338,1211,356"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_pass_through.html" title="PassThrough passes points in a cloud based on constraints for one particular field of the point type." alt="" coords="2181,282,2384,307"/>
+<area shape="poly" id="edge21_Node000009_Node000013" title=" " alt="" coords="2398,292,2552,292,2552,297,2398,297"/>
+<area shape="poly" id="edge22_Node000013_Node000014" title=" " alt="" coords="1960,292,2181,292,2181,297,1960,297"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title=" " alt="" coords="1759,460,2005,500"/>
+<area shape="poly" id="edge24_Node000001_Node000015" title=" " alt="" coords="2018,459,2186,433,2394,398,2621,354,2847,301,2916,280,2918,285,2849,307,2622,359,2395,403,2187,439,2019,464"/>
+<area shape="poly" id="edge25_Node000015_Node000016" title=" " alt="" coords="1236,552,1419,537,1622,516,1758,497,1759,503,1623,521,1419,542,1237,558"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1octree_1_1_octree_base.html" title="Octree class." alt="" coords="584,617,859,657"/>
+<area shape="poly" id="edge26_Node000016_Node000017" title=" " alt="" coords="872,630,970,615,1047,589,1049,594,971,620,873,635"/>
+<area shape="poly" id="edge35_Node000023_Node000017" title=" " alt="" coords="813,611,858,596,916,576,969,546,981,534,993,522,1024,505,1027,510,996,526,984,538,972,550,918,580,860,601,815,616"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1octree_1_1_octree_branch_node.html" title="Abstract octree branch class" alt="" coords="229,593,416,633"/>
+<area shape="poly" id="edge27_Node000017_Node000018" title=" " alt="" coords="430,617,584,626,584,632,430,622"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="5,601,180,626"/>
+<area shape="poly" id="edge28_Node000018_Node000019" title=" " alt="" coords="194,611,229,611,229,616,194,616"/>
+<area shape="rect" id="Node000020" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class" alt="" coords="240,658,405,683"/>
+<area shape="poly" id="edge29_Node000017_Node000020" title=" " alt="" coords="419,660,584,646,584,651,419,665"/>
+<area shape="poly" id="edge31_Node000016_Node000021" title=" " alt="" coords="822,519,995,545,994,550,821,524"/>
+<area shape="poly" id="edge37_Node000023_Node000021" title=" " alt="" coords="838,496,994,485,995,490,839,501"/>
+<area shape="rect" id="Node000022" href="$classpcl_1_1octree_1_1_octree_point_cloud_change_detector.html" title="Octree pointcloud change detector class" alt="" coords="1359,453,1623,507"/>
+<area shape="poly" id="edge33_Node000015_Node000022" title=" " alt="" coords="1636,477,1758,477,1758,483,1636,483"/>
+<area shape="poly" id="edge34_Node000022_Node000023" title=" " alt="" coords="1236,477,1359,477,1359,483,1236,483"/>
 </map>

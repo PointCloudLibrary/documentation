@@ -1,3 +1,7 @@
 <map id="pcl::MeshSmoothingWindowedSincVTK" name="pcl::MeshSmoothingWindowedSincVTK">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="35,5,179,35"/>
+<area shape="rect" id="Node000001" title="PCL mesh smoothing based on the vtkWindowedSincPolyDataFilter algorithm from the VTK library." alt="" coords="5,168,228,208"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms." alt="" coords="39,93,194,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,132,119,168,114,168,114,132"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="71,5,162,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,45,119,93,114,93,114,45"/>
 </map>

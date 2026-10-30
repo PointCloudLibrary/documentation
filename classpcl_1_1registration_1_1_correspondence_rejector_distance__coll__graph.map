@@ -1,3 +1,10 @@
 <map id="pcl::registration::CorrespondenceRejectorDistance" name="pcl::registration::CorrespondenceRejectorDistance">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="32,6,197,53"/>
+<area shape="rect" id="Node000001" title="CorrespondenceRejectorDistance implements a simple correspondence rejection method based on threshold..." alt="" coords="5,271,244,311"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="133,181,314,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,233,148,273,144,269,190,229"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,93,391,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,132,232,182,227,180,244,131"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="58,5,149,31"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="107,44,110,118,125,270,120,271,105,119,101,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,35,236,91,233,95,134,40"/>
 </map>

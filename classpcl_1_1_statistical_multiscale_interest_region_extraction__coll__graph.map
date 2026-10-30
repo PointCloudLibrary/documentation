@@ -1,3 +1,10 @@
 <map id="pcl::StatisticalMultiscaleInterestRegionExtraction&lt; PointT &gt;" name="pcl::StatisticalMultiscaleInterestRegionExtraction&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="Class for extracting interest regions from unstructured point clouds, based on a multi scale statisti..." alt="" coords="5,256,188,311"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="9,181,185,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,221,99,256,94,256,94,221"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,5,142,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,45,92,80,91,119,98,181,92,181,86,119,87,79,90,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="145,93,312,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="127,36,212,91,209,95,124,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="201,128,116,183,113,179,198,124"/>
 </map>

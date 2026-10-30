@@ -1,3 +1,5 @@
 <map id="pcl::GrayStereoMatching" name="pcl::GrayStereoMatching">
-<area shape="rect" id="node2" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class. " alt="" coords="19,5,157,35"/>
+<area shape="rect" id="Node000001" title="Stereo Matching abstract class for Grayscale images." alt="" coords="5,79,188,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_stereo_matching.html" title="Stereo Matching abstract class." alt="" coords="21,5,172,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,44,99,79,94,79,94,44"/>
 </map>

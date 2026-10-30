@@ -1,2 +1,7 @@
 <map id="pcl::gpu::people::trees::LabeledAttrib" name="pcl::gpu::people::trees::LabeledAttrib">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,172,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,5,77,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,42,82,92,77,94,52,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,5,167,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,44,100,94,95,92,120,42"/>
 </map>

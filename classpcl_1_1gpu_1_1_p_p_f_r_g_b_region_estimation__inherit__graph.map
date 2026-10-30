@@ -1,4 +1,7 @@
 <map id="pcl::gpu::PPFRGBRegionEstimation" name="pcl::gpu::PPFRGBRegionEstimation">
-<area shape="rect" id="node2" href="$structpcl_1_1gpu_1_1_feature_from_normals.html" title="Feature represents the base feature class that takes normals as input also. " alt="" coords="24,83,221,112"/>
-<area shape="rect" id="node4" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="63,5,183,35"/>
+<area shape="rect" id="Node000001" title="**" alt="" coords="5,152,253,177"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1gpu_1_1_feature_from_normals.html" title="Feature represents the base feature class that takes normals as input also." alt="" coords="20,79,239,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,118,132,152,127,152,127,118"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1gpu_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="64,5,195,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,44,132,79,127,79,127,44"/>
 </map>

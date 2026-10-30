@@ -1,3 +1,7 @@
 <map id="pcl::MeshSmoothingLaplacianVTK" name="pcl::MeshSmoothingLaplacianVTK">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="44,5,188,35"/>
+<area shape="rect" id="Node000001" title="PCL mesh smoothing based on the vtkSmoothPolyDataFilter algorithm from the VTK library." alt="" coords="5,168,248,193"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms." alt="" coords="49,93,204,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,133,129,168,124,168,124,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,5,172,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,45,129,93,124,93,124,45"/>
 </map>
