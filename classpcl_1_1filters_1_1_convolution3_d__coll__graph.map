@@ -1,6 +1,15 @@
 <map id="pcl::filters::Convolution3D&lt; PointIn, PointOut, KernelT &gt;" name="pcl::filters::Convolution3D&lt; PointIn, PointOut, KernelT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointIn \&gt;" alt="" coords="5,129,173,159"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="7,15,172,44"/>
-<area shape="rect" id="node6" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointIn \&gt;" alt="" coords="197,121,331,167"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="197,6,331,53"/>
+<area shape="rect" id="Node000001" title="Convolution3D handles the non organized case where width and height are unknown or if you are only in..." alt="" coords="5,348,233,388"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="127,273,307,299"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,310,144,350,141,346,190,305"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="183,5,274,31"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="170,30,136,39,105,54,83,76,76,89,74,105,74,287,76,304,83,319,102,346,98,349,78,322,71,305,69,288,69,104,71,88,78,73,102,50,135,34,169,25"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,44,205,68,197,94,192,146,197,197,206,241,215,273,210,274,201,243,191,198,187,146,191,93,200,66,212,42"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="207,93,373,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="247,41,284,91,279,94,243,44"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="315,183,491,209"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="288,27,321,37,351,52,375,70,390,90,400,113,406,142,407,183,402,183,401,143,394,114,386,92,372,74,349,57,319,42,287,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,131,248,182,231,232,222,273,216,272,226,231,244,180,272,129"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="314,126,348,155,386,181,383,185,344,159,310,130"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="368,217,242,276,240,271,366,212"/>
 </map>

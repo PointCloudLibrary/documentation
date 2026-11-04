@@ -1,7 +1,17 @@
 <map id="pcl::ESFEstimation&lt; PointInT, PointOutT &gt;" name="pcl::ESFEstimation&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="121,235,276,282"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="Node000001" title="ESFEstimation estimates the ensemble of shape functions descriptors for a given point cloud dataset c..." alt="" coords="5,437,183,477"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="9,348,179,388"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,402,97,437,91,437,91,402"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="100,273,288,299"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,309,119,350,116,346,167,305"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="158,5,249,31"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="145,30,111,39,80,54,57,76,51,89,49,105,49,287,51,304,58,319,77,346,72,349,53,322,46,305,43,288,43,104,46,88,53,73,77,50,109,34,144,25"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="192,44,180,68,171,94,167,146,172,197,182,241,192,273,187,274,177,243,167,198,161,146,166,93,175,66,187,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,93,348,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="222,41,258,91,254,94,218,44"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="290,183,466,209"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="263,27,295,37,326,52,350,70,365,90,374,113,381,142,382,183,377,183,375,143,369,114,360,92,346,74,323,57,293,42,262,32"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="251,131,223,182,207,232,199,273,193,272,202,231,218,180,247,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="288,126,322,155,360,181,357,185,319,159,285,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="343,217,219,276,217,271,341,212"/>
 </map>

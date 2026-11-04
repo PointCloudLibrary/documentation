@@ -1,3 +1,5 @@
 <map id="pcl::ApproximateProgressiveMorphologicalFilter&lt; PointT &gt;" name="pcl::ApproximateProgressiveMorphologicalFilter&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="19,5,184,35"/>
+<area shape="rect" id="Node000001" title="Implements the Progressive Morphological Filter for segmentation of ground points." alt="" coords="5,79,224,119"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="27,5,203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,44,117,79,112,79,112,44"/>
 </map>

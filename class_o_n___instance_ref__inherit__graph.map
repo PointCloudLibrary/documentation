@@ -1,4 +1,7 @@
 <map id="ON_InstanceRef" name="ON_InstanceRef">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="12,83,119,112"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="23,5,108,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,152,132,177"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="11,79,126,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,118,71,152,66,152,66,118"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="23,5,114,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="pcl::octree::OctreePointCloudDensityContainer" name="pcl::octree::OctreePointCloudDensityContainer">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_container_base.html" title="Octree container class that can serve as a base to construct own leaf node container classes..." alt="" coords="5,5,221,35"/>
+<area shape="rect" id="Node000001" title="Octree pointcloud density leaf node class" alt="" coords="36,79,211,119"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_octree_container_base.html" title="Octree container class that can serve as a base to construct own leaf node container classes." alt="" coords="5,5,241,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,44,126,79,121,79,121,44"/>
 </map>

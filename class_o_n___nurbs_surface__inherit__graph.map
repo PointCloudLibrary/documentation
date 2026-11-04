@@ -1,5 +1,9 @@
 <map id="ON_NurbsSurface" name="ON_NurbsSurface">
-<area shape="rect" id="node2" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="23,160,116,189"/>
-<area shape="rect" id="node4" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="16,83,123,112"/>
-<area shape="rect" id="node6" href="$class_o_n___object.html" title="ON_Object" alt="" coords="27,5,112,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,225,141,251"/>
+<area shape="rect" id="Node000002" href="$class_o_n___surface.html" title=" " alt="" coords="24,152,123,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,191,76,225,71,225,71,191"/>
+<area shape="rect" id="Node000003" href="$class_o_n___geometry.html" title=" " alt="" coords="16,79,131,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,118,76,152,71,152,71,118"/>
+<area shape="rect" id="Node000004" href="$class_o_n___object.html" title=" " alt="" coords="28,5,119,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="76,44,76,79,71,79,71,44"/>
 </map>

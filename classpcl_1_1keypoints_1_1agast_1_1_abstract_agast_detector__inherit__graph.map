@@ -1,5 +1,9 @@
 <map id="pcl::keypoints::agast::AbstractAgastDetector" name="pcl::keypoints::agast::AbstractAgastDetector">
-<area shape="rect" id="node3" href="$classpcl_1_1keypoints_1_1agast_1_1_agast_detector5__8.html" title="Detector class for AGAST corner point detector (5_8). " alt="" coords="220,5,361,51"/>
-<area shape="rect" id="node5" href="$classpcl_1_1keypoints_1_1agast_1_1_agast_detector7__12s.html" title="Detector class for AGAST corner point detector (7_12s). " alt="" coords="216,74,365,121"/>
-<area shape="rect" id="node7" href="$classpcl_1_1keypoints_1_1agast_1_1_oast_detector9__16.html" title="Detector class for AGAST corner point detector (OAST 9_16). " alt="" coords="220,143,361,190"/>
+<area shape="rect" id="Node000001" title="Abstract detector class for AGAST corner point detectors." alt="" coords="5,69,183,109"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1keypoints_1_1agast_1_1_agast_detector5__8.html" title="Detector class for AGAST corner point detector (5_8)." alt="" coords="233,5,389,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,63,242,43,244,48,176,68"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1keypoints_1_1agast_1_1_agast_detector7__12s.html" title="Detector class for AGAST corner point detector (7_12s)." alt="" coords="231,69,392,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,87,230,87,230,92,197,92"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1keypoints_1_1agast_1_1_oast_detector9__16.html" title="Detector class for AGAST corner point detector (OAST 9_16)." alt="" coords="233,133,389,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,111,244,131,242,136,175,116"/>
 </map>

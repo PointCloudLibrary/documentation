@@ -1,3 +1,11 @@
 <map id="pcl::OrganizedMultiPlaneSegmentation&lt; PointT, PointNT, PointLT &gt;" name="pcl::OrganizedMultiPlaneSegmentation&lt; PointT, PointNT, PointLT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="OrganizedMultiPlaneSegmentation finds all planes present in the input cloud, and outputs a vector of ..." alt="" coords="5,271,189,325"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="124,196,300,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,232,133,273,130,268,184,228"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="167,5,257,31"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="177,39,148,57,117,81,88,110,66,144,59,176,62,210,72,242,84,269,79,272,67,244,57,211,54,176,62,142,84,107,113,77,145,53,175,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,45,215,196,209,196,209,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="282,93,449,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="246,35,346,91,343,95,243,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="338,129,231,198,228,194,335,124"/>
 </map>

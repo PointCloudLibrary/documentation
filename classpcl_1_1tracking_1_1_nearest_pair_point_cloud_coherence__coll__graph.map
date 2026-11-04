@@ -1,3 +1,12 @@
 <map id="pcl::tracking::NearestPairPointCloudCoherence&lt; PointInT &gt;" name="pcl::tracking::NearestPairPointCloudCoherence&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_point_cloud_coherence.html" title="PointCloudCoherence is a base class to compute coherence between the two PointClouds. " alt="" coords="33,6,199,53"/>
+<area shape="rect" id="Node000001" title="NearestPairPointCloudCoherence computes coherence between two pointclouds using the nearest point pai..." alt="" coords="5,313,249,353"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1tracking_1_1_point_cloud_coherence.html" title="PointCloudCoherence is a base class to compute coherence between the two PointClouds." alt="" coords="16,211,196,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,264,126,313,121,314,110,265"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="221,211,365,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,260,160,316,157,311,248,256"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="219,5,310,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,45,255,93,255,120,258,147,269,180,283,209,279,211,264,183,253,149,249,121,249,92,256,44"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="325,108,469,148"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="291,37,375,106,372,110,288,42"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="369,160,314,213,310,209,365,156"/>
 </map>

@@ -1,6 +1,13 @@
 <map id="ON_HatchLine" name="ON_HatchLine">
-<area shape="rect" id="node2" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; double \&gt;" alt="" coords="5,217,187,247"/>
-<area shape="rect" id="node4" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="20,101,172,131"/>
-<area shape="rect" id="node8" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="211,217,304,247"/>
-<area shape="rect" id="node11" href="$class_o_n__2d_vector.html" title="ON_2dVector" alt="" coords="421,217,523,247"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="220,215,335,240"/>
+<area shape="rect" id="Node000002" href="$class_o_n__2d_point.html" title=" " alt="" coords="5,110,104,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,139,253,212,251,217,91,144"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="119,111,127,115,131,123,122,133,105,136,104,131,120,128,125,122,123,119,116,116"/>
+<area shape="rect" id="Node000003" href="$class_o_n__2d_vector.html" title=" " alt="" coords="224,110,331,135"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="280,149,280,214,275,214,275,149"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="345,111,354,115,357,123,349,133,331,136,330,131,347,128,352,122,350,119,343,116"/>
+<area shape="rect" id="Node000004" href="$class_o_n___simple_array.html" title=" " alt="" coords="463,110,665,135"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="520,143,310,217,309,212,518,138"/>
+<area shape="rect" id="Node000005" href="$class_o_n___simple_array.html" title=" " alt="" coords="481,5,647,31"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="567,45,567,110,561,110,561,45"/>
 </map>

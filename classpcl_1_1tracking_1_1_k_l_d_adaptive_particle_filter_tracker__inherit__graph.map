@@ -1,7 +1,13 @@
 <map id="pcl::tracking::KLDAdaptiveParticleFilterTracker&lt; PointInT, StateT &gt;" name="pcl::tracking::KLDAdaptiveParticleFilterTracker&lt; PointInT, StateT &gt;">
-<area shape="rect" id="node11" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="9,493,188,557"/>
-<area shape="rect" id="node2" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="5,281,192,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class. " alt="" coords="27,182,171,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="11,101,187,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
+<area shape="rect" id="Node000001" title="KLDAdaptiveParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the..." alt="" coords="9,347,203,401"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1tracking_1_1_k_l_d_adaptive_particle_filter_o_m_p_tracker.html" title="KLDAdaptiveParticleFilterOMPTracker tracks the PointCloud which is given by setReferenceCloud within ..." alt="" coords="9,451,203,505"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="109,415,109,451,103,451,103,415"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1tracking_1_1_particle_filter_tracker.html" title="ParticleFilterTracker tracks the PointCloud which is given by setReferenceCloud within the measured P..." alt="" coords="5,257,207,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,311,109,347,103,347,103,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1tracking_1_1_tracker.html" title="Tracker represents the base tracker class." alt="" coords="28,168,184,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,222,109,257,103,257,103,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="12,93,200,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,132,109,168,103,168,103,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="18,5,194,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="109,45,109,93,103,93,103,45"/>
 </map>

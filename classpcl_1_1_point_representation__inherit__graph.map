@@ -1,45 +1,148 @@
 <map id="pcl::PointRepresentation&lt; PointT &gt;" name="pcl::PointRepresentation&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="639,86,804,133"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="639,142,804,189"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointDefault \&gt;" alt="" coords="417,305,583,351"/>
-<area shape="rect" id="node41" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointXYZ \&gt;" alt="" coords="417,555,583,602"/>
-<area shape="rect" id="node45" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; UniqueShapeContext1960 \&gt;" alt="" coords="401,625,599,671"/>
-<area shape="rect" id="node49" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointXYZI \&gt;" alt="" coords="417,694,583,741"/>
-<area shape="rect" id="node53" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; Narf36 \&gt;" alt="" coords="417,763,583,810"/>
-<area shape="rect" id="node57" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointTarget \&gt;" alt="" coords="417,833,583,879"/>
-<area shape="rect" id="node61" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="632,18,811,65"/>
-<area shape="rect" id="node64" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PointNormal \&gt;" alt="" coords="417,902,583,949"/>
-<area shape="rect" id="node68" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; FeatureT \&gt;" alt="" coords="417,971,583,1018"/>
-<area shape="rect" id="node70" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="624,495,819,542"/>
-<area shape="rect" id="node73" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; ShapeContext1980 \&gt;" alt="" coords="417,1041,583,1087"/>
-<area shape="rect" id="node77" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="639,391,804,438"/>
-<area shape="rect" id="node80" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; SHOT1344 \&gt;" alt="" coords="417,1110,583,1157"/>
-<area shape="rect" id="node84" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="639,443,804,490"/>
-<area shape="rect" id="node87" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; SHOT352 \&gt;" alt="" coords="417,1179,583,1226"/>
-<area shape="rect" id="node91" href="$classpcl_1_1_point_representation.html" title="pcl::PointRepresentation\l\&lt; Narf * \&gt;" alt="" coords="417,1249,583,1295"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="1312,105,1533,151"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_default_point_representation_3_01_p_p_f_signature_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PPFSignature \&gt;" alt="" coords="1585,105,1791,151"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="1312,258,1533,305"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_default_point_representation_3_01_v_f_h_signature308_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; VFHSignature308 \&gt;" alt="" coords="1585,258,1791,305"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_custom_point_representation.html" title="CustomPointRepresentation extends PointRepresentation to allow for sub&#45;part selection on the point..." alt="" coords="859,193,1069,239"/>
-<area shape="rect" id="node19" href="$classpcl_1_1_default_feature_representation.html" title="DefaulFeatureRepresentation extends PointRepresentation and is intended to be used when defining the ..." alt="" coords="853,262,1075,309"/>
-<area shape="rect" id="node39" href="$classpcl_1_1_default_point_representation.html" title="DefaultPointRepresentation extends PointRepresentation to define default behavior for common point ty..." alt="" coords="861,331,1067,378"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="1312,19,1533,66"/>
-<area shape="rect" id="node27" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="1312,501,1533,547"/>
-<area shape="rect" id="node31" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="1312,342,1533,389"/>
-<area shape="rect" id="node35" href="$classpcl_1_1_default_feature_representation.html" title="pcl::DefaultFeatureRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="1312,415,1533,462"/>
-<area shape="rect" id="node25" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_r_g_b_signature250_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PFHRGBSignature250 \&gt;" alt="" coords="1585,19,1791,66"/>
-<area shape="rect" id="node29" href="$classpcl_1_1_default_point_representation_3_01_normal_based_signature12_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; NormalBasedSignature12 \&gt;" alt="" coords="1585,501,1791,547"/>
-<area shape="rect" id="node33" href="$classpcl_1_1_default_point_representation_3_01_f_p_f_h_signature33_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; FPFHSignature33 \&gt;" alt="" coords="1585,342,1791,389"/>
-<area shape="rect" id="node37" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_signature125_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PFHSignature125 \&gt;" alt="" coords="1585,415,1791,462"/>
-<area shape="rect" id="node43" href="$classpcl_1_1_default_point_representation_3_01_point_x_y_z_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PointXYZ \&gt;" alt="" coords="861,555,1067,602"/>
-<area shape="rect" id="node47" href="$classpcl_1_1_default_point_representation_3_01_unique_shape_context1960_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; UniqueShapeContext1960 \&gt;" alt="" coords="861,625,1067,671"/>
-<area shape="rect" id="node51" href="$classpcl_1_1_default_point_representation_3_01_point_x_y_z_i_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PointXYZI \&gt;" alt="" coords="861,694,1067,741"/>
-<area shape="rect" id="node55" href="$classpcl_1_1_default_point_representation_3_01_narf36_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; Narf36 \&gt;" alt="" coords="861,763,1067,810"/>
-<area shape="rect" id="node59" href="$classpcl_1_1registration_1_1_transformation_validation_euclidean_1_1_my_point_representation.html" title="Internal point representation uses only 3D coordinates for L2. " alt="" coords="853,833,1075,914"/>
-<area shape="rect" id="node66" href="$classpcl_1_1_default_point_representation_3_01_point_normal_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; PointNormal \&gt;" alt="" coords="861,937,1067,983"/>
-<area shape="rect" id="node75" href="$classpcl_1_1_default_point_representation_3_01_shape_context1980_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; ShapeContext1980 \&gt;" alt="" coords="861,1041,1067,1087"/>
-<area shape="rect" id="node82" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t1344_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; SHOT1344 \&gt;" alt="" coords="861,1110,1067,1157"/>
-<area shape="rect" id="node89" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t352_01_4.html" title="pcl::DefaultPointRepresentation\l\&lt; SHOT352 \&gt;" alt="" coords="861,1179,1067,1226"/>
-<area shape="rect" id="node93" href="$structpcl_1_1_narf_1_1_feature_point_representation.html" title="pcl::Narf::FeaturePointRepresentation" alt="" coords="843,1257,1085,1287"/>
+<area shape="rect" id="Node000001" title="PointRepresentation provides a set of methods for converting a point structs/object into an n&#45;dimensi..." alt="" coords="5,1438,187,1478"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,94,1485,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,1424,103,1165,122,775,136,578,155,404,179,271,193,226,209,199,266,144,330,100,400,65,474,39,550,21,629,9,710,4,790,3,945,15,1088,38,1209,66,1300,91,1299,96,1208,71,1087,43,945,21,789,9,710,9,630,14,551,26,475,44,402,70,333,105,270,148,213,202,198,229,184,273,161,404,142,578,127,776,108,1165,101,1424"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,219,1485,259"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="95,1424,103,1175,122,802,136,613,155,447,179,322,193,279,209,253,241,229,283,209,334,193,393,182,528,169,678,168,834,175,987,187,1240,218,1240,223,986,193,834,180,678,173,528,174,394,187,335,198,285,214,244,233,213,257,198,281,184,323,161,448,142,614,127,802,108,1175,101,1424"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,306,1485,346"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="94,1424,95,1237,98,1105,106,963,120,821,141,690,154,633,170,582,188,540,209,507,239,478,279,453,329,431,387,411,521,380,672,356,829,340,983,330,1239,323,1240,328,983,336,830,346,672,362,522,385,388,416,331,436,282,458,242,483,213,510,192,542,175,584,159,634,146,692,125,822,112,963,104,1105,100,1237,99,1424"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,384,1485,424"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="95,1424,99,1250,114,999,128,869,148,749,174,648,190,609,209,578,237,548,277,522,326,499,383,480,517,448,668,426,827,412,982,404,1240,400,1240,405,982,409,827,417,669,432,518,454,385,485,328,504,279,527,241,552,213,581,195,611,179,650,153,750,133,870,119,999,104,1251,100,1424"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,470,1485,510"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="95,1424,100,1268,117,1045,131,931,151,825,176,738,191,704,209,678,252,628,295,587,338,554,381,527,425,507,469,492,515,482,562,476,660,473,767,477,884,483,1015,484,1240,485,1240,490,1015,490,884,488,767,482,660,478,562,481,516,487,471,497,427,512,384,532,341,558,298,591,256,632,213,681,196,707,181,740,156,827,136,931,122,1046,106,1268,100,1424"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,542,1485,582"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="95,1424,101,1276,118,1068,133,962,152,864,177,784,192,752,209,728,229,713,262,699,360,673,491,649,644,627,969,591,1240,568,1240,573,970,597,645,632,492,654,361,678,263,704,232,718,213,732,197,755,182,786,157,865,138,962,123,1069,107,1276,101,1424"/>
+<area shape="rect" id="Node000014" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,628,1485,668"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="96,1424,103,1287,121,1098,136,1002,155,914,179,842,193,814,209,792,240,765,282,742,332,722,391,705,525,678,676,659,832,648,985,643,1240,642,1240,648,985,648,833,653,676,665,526,683,392,710,334,727,284,747,243,770,213,796,198,816,184,844,160,915,141,1003,127,1099,108,1287,101,1424"/>
+<area shape="rect" id="Node000016" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,718,1485,758"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="96,1424,104,1297,123,1125,137,1038,156,960,180,895,194,871,209,852,242,827,284,806,336,788,394,772,529,749,680,734,835,727,987,725,1240,729,1239,735,987,730,836,732,680,740,530,754,396,777,337,793,287,811,245,832,213,856,198,874,185,898,161,961,143,1039,128,1126,109,1298,101,1424"/>
+<area shape="rect" id="Node000018" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,794,1485,834"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="96,1424,105,1305,124,1145,139,1064,158,991,181,932,194,910,209,893,231,881,265,870,364,852,496,838,649,828,972,816,1240,812,1240,817,972,821,649,833,496,843,365,857,266,875,233,886,212,897,198,913,185,935,163,993,144,1065,130,1145,110,1305,102,1425"/>
+<area shape="rect" id="Node000020" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,868,1485,908"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="97,1423,106,1308,126,1156,140,1079,159,1011,181,955,194,934,209,918,248,912,338,907,623,898,1239,887,1240,893,623,903,339,912,249,917,212,923,199,937,186,958,164,1012,145,1080,131,1156,111,1309,102,1424"/>
+<area shape="rect" id="Node000022" href="$classpcl_1_1_default_feature_representation.html" title=" " alt="" coords="1240,954,1485,994"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="97,1423,107,1314,127,1170,142,1099,160,1035,182,983,195,963,209,949,235,932,259,925,283,923,306,927,355,940,383,946,415,948,577,943,704,933,765,930,831,932,905,939,991,953,1015,962,1072,971,1130,976,1240,978,1240,983,1130,981,1071,976,1014,967,990,958,904,944,830,937,765,936,705,938,577,948,415,954,382,951,354,946,305,932,282,929,260,930,237,937,212,953,199,967,187,986,165,1036,147,1100,133,1171,112,1314,102,1424"/>
+<area shape="rect" id="Node000024" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,276,640,316"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="96,1424,104,1190,124,842,139,667,158,513,181,397,194,357,209,333,235,312,264,296,296,284,329,277,396,272,459,276,458,282,396,277,330,282,297,289,266,300,238,316,213,337,199,360,186,398,163,514,145,668,130,843,110,1190,101,1424"/>
+<area shape="rect" id="Node000028" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,967,640,1007"/>
+<area shape="poly" id="edge38_Node000001_Node000028" title=" " alt="" coords="99,1424,112,1331,135,1211,150,1152,167,1099,187,1055,209,1027,236,1007,266,992,298,981,331,973,398,968,459,970,458,975,398,973,332,979,300,986,268,997,239,1011,213,1030,191,1058,172,1101,155,1153,140,1212,117,1332,104,1425"/>
+<area shape="rect" id="Node000030" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1031,640,1071"/>
+<area shape="poly" id="edge40_Node000001_Node000030" title=" " alt="" coords="100,1424,115,1341,139,1237,170,1140,189,1103,209,1078,227,1068,252,1060,315,1050,388,1046,458,1045,458,1051,388,1051,316,1055,253,1065,229,1073,212,1082,193,1106,175,1142,144,1238,120,1342,105,1425"/>
+<area shape="rect" id="Node000031" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1095,640,1135"/>
+<area shape="poly" id="edge41_Node000001_Node000031" title=" " alt="" coords="96,1424,103,1363,121,1287,135,1247,154,1210,179,1175,209,1146,237,1128,268,1114,333,1098,398,1094,459,1097,459,1102,399,1099,334,1104,269,1119,240,1133,212,1151,183,1179,159,1213,140,1250,126,1288,108,1364,101,1425"/>
+<area shape="rect" id="Node000032" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1159,640,1199"/>
+<area shape="poly" id="edge42_Node000001_Node000032" title=" " alt="" coords="100,1424,112,1377,133,1321,164,1265,185,1241,209,1220,238,1202,268,1189,334,1172,399,1165,459,1166,459,1171,399,1170,334,1177,270,1194,240,1207,212,1224,189,1244,169,1268,138,1323,117,1378,106,1425"/>
+<area shape="rect" id="Node000033" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="458,1223,641,1263"/>
+<area shape="poly" id="edge43_Node000001_Node000033" title=" " alt="" coords="109,1424,125,1392,147,1357,175,1323,209,1296,270,1267,335,1249,399,1240,458,1237,458,1242,400,1245,336,1254,271,1272,212,1300,179,1327,151,1360,129,1395,113,1426"/>
+<area shape="rect" id="Node000034" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1287,640,1327"/>
+<area shape="poly" id="edge44_Node000001_Node000034" title=" " alt="" coords="125,1426,163,1394,210,1366,272,1343,337,1326,401,1315,458,1309,459,1314,402,1321,339,1332,274,1348,212,1371,166,1398,128,1430"/>
+<area shape="rect" id="Node000035" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1351,640,1391"/>
+<area shape="poly" id="edge45_Node000001_Node000035" title=" " alt="" coords="170,1431,210,1421,340,1396,458,1379,459,1384,341,1401,211,1426,171,1436"/>
+<area shape="rect" id="Node000036" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1415,640,1455"/>
+<area shape="poly" id="edge46_Node000001_Node000036" title=" " alt="" coords="200,1450,458,1437,459,1442,201,1455"/>
+<area shape="rect" id="Node000037" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1479,640,1519"/>
+<area shape="poly" id="edge47_Node000001_Node000037" title=" " alt="" coords="201,1469,211,1470,459,1491,458,1496,210,1475,200,1474"/>
+<area shape="rect" id="Node000039" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="440,1543,659,1583"/>
+<area shape="poly" id="edge49_Node000001_Node000039" title=" " alt="" coords="146,1482,211,1509,329,1536,440,1552,440,1557,328,1541,210,1514,144,1487"/>
+<area shape="rect" id="Node000040" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="453,1607,645,1647"/>
+<area shape="poly" id="edge50_Node000001_Node000040" title=" " alt="" coords="121,1487,160,1531,185,1552,212,1569,271,1593,334,1609,396,1619,453,1624,453,1629,396,1625,333,1615,270,1598,209,1573,182,1556,157,1535,117,1491"/>
+<area shape="rect" id="Node000041" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1671,640,1711"/>
+<area shape="poly" id="edge51_Node000001_Node000041" title=" " alt="" coords="110,1490,125,1527,146,1569,175,1609,212,1642,241,1658,271,1671,335,1688,400,1695,458,1696,458,1702,399,1701,334,1693,269,1676,238,1663,209,1647,171,1613,142,1572,120,1529,105,1492"/>
+<area shape="rect" id="Node000042" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1735,640,1775"/>
+<area shape="poly" id="edge52_Node000001_Node000042" title=" " alt="" coords="104,1491,114,1543,134,1605,148,1637,165,1667,187,1694,212,1717,240,1734,270,1747,334,1763,399,1768,459,1766,459,1771,399,1774,333,1768,268,1752,237,1739,209,1721,183,1698,161,1670,143,1639,129,1607,109,1544,99,1492"/>
+<area shape="rect" id="Node000044" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1799,640,1839"/>
+<area shape="poly" id="edge54_Node000001_Node000044" title=" " alt="" coords="100,1492,106,1557,122,1639,136,1681,156,1722,181,1758,212,1789,240,1807,269,1820,333,1835,398,1838,458,1834,459,1839,398,1844,333,1840,267,1825,237,1811,209,1793,177,1762,151,1724,132,1683,117,1640,100,1558,95,1492"/>
+<area shape="rect" id="Node000046" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1863,640,1903"/>
+<area shape="poly" id="edge56_Node000001_Node000046" title=" " alt="" coords="104,1491,118,1579,141,1691,156,1746,173,1795,192,1834,212,1860,229,1869,253,1876,316,1885,388,1888,458,1886,458,1891,388,1893,315,1890,252,1882,227,1874,209,1864,187,1837,168,1797,151,1748,136,1692,113,1580,99,1492"/>
+<area shape="rect" id="Node000048" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1927,640,1967"/>
+<area shape="poly" id="edge58_Node000001_Node000048" title=" " alt="" coords="104,1492,116,1590,138,1716,153,1779,170,1835,190,1880,212,1909,229,1919,253,1928,316,1939,388,1944,458,1946,458,1951,388,1950,315,1944,252,1933,227,1924,209,1913,186,1882,165,1837,148,1780,133,1717,111,1590,98,1492"/>
+<area shape="rect" id="Node000050" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,1991,640,2031"/>
+<area shape="poly" id="edge60_Node000001_Node000050" title=" " alt="" coords="103,1492,113,1601,134,1744,149,1816,167,1880,188,1932,213,1967,239,1986,268,2001,299,2012,331,2020,397,2025,458,2023,458,2028,397,2031,331,2025,297,2017,266,2006,236,1991,209,1970,183,1935,162,1882,144,1817,129,1745,108,1601,97,1492"/>
+<area shape="rect" id="Node000052" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2055,640,2095"/>
+<area shape="poly" id="edge62_Node000001_Node000052" title=" " alt="" coords="101,1492,109,1616,128,1784,142,1869,161,1945,184,2007,198,2030,212,2046,239,2066,268,2080,299,2090,331,2096,397,2098,458,2092,459,2098,397,2104,331,2101,298,2095,266,2085,236,2070,209,2050,193,2033,180,2009,156,1947,137,1870,123,1785,104,1617,96,1492"/>
+<area shape="rect" id="Node000054" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2119,640,2159"/>
+<area shape="poly" id="edge64_Node000001_Node000054" title=" " alt="" coords="100,1491,106,1630,122,1821,136,1917,156,2004,181,2074,196,2101,212,2120,229,2130,253,2137,315,2145,388,2147,458,2144,459,2149,388,2152,315,2151,251,2142,227,2135,209,2124,192,2104,176,2077,151,2006,131,1918,117,1821,100,1630,95,1492"/>
+<area shape="rect" id="Node000056" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="439,2183,660,2223"/>
+<area shape="poly" id="edge66_Node000001_Node000056" title=" " alt="" coords="100,1492,104,1638,120,1843,134,1947,154,2041,180,2118,195,2147,213,2168,237,2187,264,2201,293,2212,323,2218,385,2224,444,2220,444,2226,385,2229,322,2224,291,2217,261,2206,234,2191,209,2172,191,2150,175,2120,148,2043,129,1948,114,1844,99,1639,95,1492"/>
+<area shape="rect" id="Node000058" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2247,640,2287"/>
+<area shape="poly" id="edge68_Node000001_Node000058" title=" " alt="" coords="99,1491,101,1653,105,1763,114,1882,127,1998,148,2104,161,2150,176,2189,193,2222,213,2245,240,2266,271,2280,305,2289,339,2294,409,2294,472,2285,473,2290,410,2299,339,2300,304,2295,269,2285,237,2270,209,2249,189,2225,171,2192,156,2151,142,2105,122,1999,108,1882,100,1764,95,1653,94,1491"/>
+<area shape="rect" id="Node000059" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2311,640,2351"/>
+<area shape="poly" id="edge69_Node000001_Node000059" title=" " alt="" coords="102,1491,114,1677,137,1941,153,2072,171,2187,191,2273,202,2301,213,2317,242,2338,274,2352,309,2361,346,2364,418,2361,482,2349,483,2354,419,2366,345,2370,308,2366,272,2357,239,2343,209,2321,197,2303,186,2274,165,2188,148,2073,132,1941,109,1677,97,1492"/>
+<area shape="rect" id="Node000061" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2375,640,2415"/>
+<area shape="poly" id="edge71_Node000001_Node000061" title=" " alt="" coords="102,1491,113,1690,135,1976,150,2119,168,2244,189,2338,201,2369,213,2387,229,2396,252,2403,315,2410,388,2409,458,2403,459,2409,388,2414,315,2415,251,2408,227,2401,209,2390,196,2371,184,2340,163,2245,145,2120,129,1977,107,1690,96,1491"/>
+<area shape="rect" id="Node000062" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2439,640,2479"/>
+<area shape="poly" id="edge72_Node000001_Node000062" title=" " alt="" coords="101,1492,112,1699,134,1999,149,2149,167,2281,189,2380,200,2413,213,2432,239,2452,269,2467,301,2477,335,2483,404,2484,466,2476,467,2482,404,2489,335,2488,300,2482,267,2472,236,2457,209,2436,196,2415,184,2382,162,2282,144,2150,129,2000,107,1699,96,1492"/>
+<area shape="rect" id="Node000064" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2503,640,2543"/>
+<area shape="poly" id="edge74_Node000001_Node000064" title=" " alt="" coords="101,1491,110,1713,131,2038,146,2200,164,2343,187,2451,199,2486,213,2507,241,2528,273,2542,308,2551,344,2555,416,2552,480,2541,481,2546,417,2557,344,2560,307,2556,271,2547,238,2532,209,2510,195,2488,182,2452,159,2344,141,2201,126,2038,105,1713,96,1492"/>
+<area shape="rect" id="Node000066" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2567,640,2607"/>
+<area shape="poly" id="edge76_Node000001_Node000066" title=" " alt="" coords="101,1491,109,1726,128,2074,143,2249,162,2402,185,2517,198,2555,213,2577,242,2598,275,2613,311,2621,348,2624,422,2618,486,2605,487,2610,423,2624,348,2629,310,2626,274,2618,239,2603,209,2581,194,2558,180,2519,157,2403,138,2249,123,2074,103,1727,95,1492"/>
+<area shape="rect" id="Node000067" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2631,640,2671"/>
+<area shape="poly" id="edge77_Node000001_Node000067" title=" " alt="" coords="101,1491,107,1738,126,2107,140,2294,159,2457,183,2580,197,2620,213,2644,229,2654,252,2661,315,2667,388,2666,458,2660,459,2665,388,2671,315,2672,251,2666,227,2659,209,2648,193,2623,178,2581,154,2458,135,2294,120,2108,102,1738,95,1491"/>
+<area shape="rect" id="Node000068" href="$classpcl_1_1_point_representation.html" title=" " alt="" coords="459,2695,640,2735"/>
+<area shape="poly" id="edge78_Node000001_Node000068" title=" " alt="" coords="101,1492,107,1747,125,2129,140,2323,159,2492,183,2621,197,2663,213,2688,239,2709,269,2724,302,2734,336,2740,405,2741,468,2733,468,2738,405,2746,335,2745,301,2739,267,2729,236,2713,209,2692,193,2665,178,2622,154,2493,135,2323,120,2130,102,1747,95,1492"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_default_point_representation_3_01_e_s_f_signature640_01_4.html" title=" " alt="" coords="1535,94,1764,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1499,111,1534,111,1534,116,1499,116"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_default_point_representation_3_01_f_p_f_h_signature33_01_4.html" title=" " alt="" coords="1535,219,1764,259"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1499,236,1534,236,1534,242,1499,242"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_default_point_representation_3_01_g_a_s_d_signature512_01_4.html" title=" " alt="" coords="1535,306,1764,346"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1499,323,1534,323,1534,328,1499,328"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_default_point_representation_3_01_g_a_s_d_signature7992_01_4.html" title=" " alt="" coords="1535,384,1764,424"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1499,402,1534,402,1534,407,1499,407"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_default_point_representation_3_01_g_a_s_d_signature984_01_4.html" title=" " alt="" coords="1535,470,1764,510"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1499,487,1534,487,1534,492,1499,492"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_default_point_representation_3_01_g_f_p_f_h_signature16_01_4.html" title=" " alt="" coords="1535,542,1764,582"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1499,559,1534,559,1534,564,1499,564"/>
+<area shape="rect" id="Node000015" href="$classpcl_1_1_default_point_representation_3_01_g_r_s_d_signature21_01_4.html" title=" " alt="" coords="1535,628,1764,668"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1499,646,1534,646,1534,651,1499,651"/>
+<area shape="rect" id="Node000017" href="$classpcl_1_1_default_point_representation_3_01_normal_based_signature12_01_4.html" title=" " alt="" coords="1535,718,1764,758"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1499,735,1534,735,1534,740,1499,740"/>
+<area shape="rect" id="Node000019" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_r_g_b_signature250_01_4.html" title=" " alt="" coords="1535,794,1764,834"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="1499,811,1534,811,1534,816,1499,816"/>
+<area shape="rect" id="Node000021" href="$classpcl_1_1_default_point_representation_3_01_p_f_h_signature125_01_4.html" title=" " alt="" coords="1535,868,1764,908"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="1499,886,1534,886,1534,891,1499,891"/>
+<area shape="rect" id="Node000023" href="$classpcl_1_1_default_point_representation_3_01_v_f_h_signature308_01_4.html" title=" " alt="" coords="1535,954,1764,994"/>
+<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="1499,971,1534,971,1534,976,1499,976"/>
+<area shape="rect" id="Node000025" href="$classpcl_1_1_custom_point_representation.html" title="CustomPointRepresentation extends PointRepresentation to allow for sub&#45;part selection on the point." alt="" coords="735,212,965,252"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="653,272,755,250,756,255,654,277"/>
+<area shape="rect" id="Node000026" href="$classpcl_1_1_default_feature_representation.html" title="DefaulFeatureRepresentation extends PointRepresentation and is intended to be used when defining the ..." alt="" coords="727,510,973,550"/>
+<area shape="poly" id="edge25_Node000024_Node000026" title=" " alt="" coords="589,323,825,508,821,512,586,327"/>
+<area shape="rect" id="Node000027" href="$classpcl_1_1_default_point_representation.html" title="DefaultPointRepresentation extends PointRepresentation to define default behavior for common point ty..." alt="" coords="735,276,965,316"/>
+<area shape="poly" id="edge37_Node000024_Node000027" title=" " alt="" coords="654,294,735,294,735,299,654,299"/>
+<area shape="poly" id="edge26_Node000026_Node000002" title=" " alt="" coords="875,498,932,423,962,376,988,327,995,303,996,282,999,261,1013,239,1062,197,1120,165,1180,142,1239,127,1240,132,1182,147,1122,170,1065,201,1017,242,1004,263,1001,282,1000,304,993,329,967,379,936,426,880,501"/>
+<area shape="poly" id="edge27_Node000026_Node000004" title=" " alt="" coords="867,496,892,458,925,414,966,369,1013,332,1067,302,1125,280,1184,263,1239,251,1240,256,1185,268,1127,285,1070,307,1016,336,970,373,929,417,896,461,872,499"/>
+<area shape="poly" id="edge28_Node000026_Node000006" title=" " alt="" coords="883,499,942,455,1013,414,1071,391,1130,371,1243,343,1245,348,1132,376,1072,396,1016,419,945,460,887,503"/>
+<area shape="poly" id="edge29_Node000026_Node000008" title=" " alt="" coords="928,503,1014,479,1263,422,1264,427,1015,484,930,508"/>
+<area shape="poly" id="edge30_Node000026_Node000010" title=" " alt="" coords="986,517,1216,499,1239,497,1240,503,1216,504,987,522"/>
+<area shape="poly" id="edge31_Node000026_Node000012" title=" " alt="" coords="987,542,1015,544,1240,556,1240,561,1014,550,987,547"/>
+<area shape="poly" id="edge32_Node000026_Node000014" title=" " alt="" coords="929,551,1015,575,1251,626,1250,631,1014,580,927,556"/>
+<area shape="poly" id="edge33_Node000026_Node000016" title=" " alt="" coords="887,556,946,599,1016,639,1076,664,1138,685,1255,715,1254,720,1136,690,1074,669,1013,644,943,603,884,561"/>
+<area shape="poly" id="edge34_Node000026_Node000018" title=" " alt="" coords="871,561,896,599,929,644,969,688,1016,725,1070,753,1127,774,1185,789,1240,800,1239,805,1184,795,1125,779,1067,758,1013,729,966,692,925,647,891,602,867,564"/>
+<area shape="poly" id="edge35_Node000026_Node000020" title=" " alt="" coords="863,562,882,618,913,688,958,758,985,789,1016,816,1068,845,1126,866,1184,879,1240,885,1240,891,1183,884,1124,871,1066,850,1013,820,981,793,953,761,908,690,877,620,858,564"/>
+<area shape="poly" id="edge36_Node000026_Node000022" title=" " alt="" coords="858,563,872,635,900,728,921,777,947,824,978,867,1016,904,1053,922,1109,938,1240,959,1239,965,1107,943,1051,927,1013,908,974,870,942,827,916,779,895,730,867,636,853,564"/>
+<area shape="rect" id="Node000029" href="$classpcl_1_1_default_point_representation_3_01_b_r_i_s_k_signature512_01_4.html" title=" " alt="" coords="735,967,965,1007"/>
+<area shape="poly" id="edge39_Node000028_Node000029" title=" " alt="" coords="654,984,735,984,735,990,654,990"/>
+<area shape="rect" id="Node000038" href="$classpcl_1_1_default_point_representation_3_01_narf36_01_4.html" title=" " alt="" coords="735,1479,965,1519"/>
+<area shape="poly" id="edge48_Node000037_Node000038" title=" " alt="" coords="654,1496,735,1496,735,1502,654,1502"/>
+<area shape="rect" id="Node000043" href="$classpcl_1_1_default_point_representation_3_01_p_p_f_signature_01_4.html" title=" " alt="" coords="735,1735,965,1775"/>
+<area shape="poly" id="edge53_Node000042_Node000043" title=" " alt="" coords="654,1752,735,1752,735,1758,654,1758"/>
+<area shape="rect" id="Node000045" href="$classpcl_1_1_default_point_representation_3_01_point_normal_01_4.html" title=" " alt="" coords="735,1799,965,1839"/>
+<area shape="poly" id="edge55_Node000044_Node000045" title=" " alt="" coords="654,1816,735,1816,735,1822,654,1822"/>
+<area shape="rect" id="Node000047" href="$classpcl_1_1_default_point_representation_3_01_point_x_y_z_01_4.html" title=" " alt="" coords="735,1863,965,1903"/>
+<area shape="poly" id="edge57_Node000046_Node000047" title=" " alt="" coords="654,1880,735,1880,735,1886,654,1886"/>
+<area shape="rect" id="Node000049" href="$classpcl_1_1_default_point_representation_3_01_point_x_y_z_i_01_4.html" title=" " alt="" coords="735,1927,965,1967"/>
+<area shape="poly" id="edge59_Node000048_Node000049" title=" " alt="" coords="654,1944,735,1944,735,1950,654,1950"/>
+<area shape="rect" id="Node000051" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t1344_01_4.html" title=" " alt="" coords="735,1991,965,2031"/>
+<area shape="poly" id="edge61_Node000050_Node000051" title=" " alt="" coords="654,2008,735,2008,735,2014,654,2014"/>
+<area shape="rect" id="Node000053" href="$classpcl_1_1_default_point_representation_3_01_s_h_o_t352_01_4.html" title=" " alt="" coords="735,2055,965,2095"/>
+<area shape="poly" id="edge63_Node000052_Node000053" title=" " alt="" coords="654,2072,735,2072,735,2078,654,2078"/>
+<area shape="rect" id="Node000055" href="$classpcl_1_1_default_point_representation_3_01_shape_context1980_01_4.html" title=" " alt="" coords="735,2119,965,2159"/>
+<area shape="poly" id="edge65_Node000054_Node000055" title=" " alt="" coords="654,2136,735,2136,735,2142,654,2142"/>
+<area shape="rect" id="Node000057" href="$classpcl_1_1_default_point_representation_3_01_unique_shape_context1960_01_4.html" title=" " alt="" coords="735,2183,965,2223"/>
+<area shape="poly" id="edge67_Node000056_Node000057" title=" " alt="" coords="674,2200,735,2200,735,2206,674,2206"/>
+<area shape="rect" id="Node000060" href="$classpcl_1_1registration_1_1_transformation_validation_euclidean_1_1_my_point_representation.html" title="Internal point representation uses only 3D coordinates for L2." alt="" coords="726,2296,974,2366"/>
+<area shape="poly" id="edge70_Node000059_Node000060" title=" " alt="" coords="654,2328,726,2328,726,2334,654,2334"/>
+<area shape="rect" id="Node000063" href="$classpcl_1_1_generalized_iterative_closest_point6_d_1_1_my_point_representation.html" title="Custom point representation to perform kdtree searches in more than 3 (i.e." alt="" coords="709,2439,991,2479"/>
+<area shape="poly" id="edge73_Node000062_Node000063" title=" " alt="" coords="654,2456,709,2456,709,2462,654,2462"/>
+<area shape="rect" id="Node000065" href="$structpcl_1_1_narf_1_1_feature_point_representation.html" title=" " alt="" coords="717,2510,983,2536"/>
+<area shape="poly" id="edge75_Node000064_Node000065" title=" " alt="" coords="654,2520,717,2520,717,2526,654,2526"/>
 </map>

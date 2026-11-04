@@ -1,8 +1,17 @@
 <map id="ON_Texture" name="ON_Texture">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,5,91,35"/>
-<area shape="rect" id="node4" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="115,5,208,35"/>
-<area shape="rect" id="node6" href="$class_o_n___xform.html" title="ON_Xform" alt="" coords="232,5,315,35"/>
-<area shape="rect" id="node8" href="$class_o_n___color.html" title="ON_Color" alt="" coords="339,5,419,35"/>
-<area shape="rect" id="node11" href="$class_o_n___interval.html" title="ON_Interval" alt="" coords="537,5,628,35"/>
-<area shape="rect" id="node14" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="761,5,844,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="378,123,475,148"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="5,5,96,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,39,108,70,153,96,195,107,255,116,378,128,378,133,254,122,194,113,151,101,105,74,69,43"/>
+<area shape="rect" id="Node000003" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="120,5,203,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,45,163,73,167,86,175,97,189,106,209,113,262,124,378,131,378,137,261,129,207,118,186,110,171,101,163,88,158,74,155,45"/>
+<area shape="rect" id="Node000004" href="$class_o_n__w_string.html" title=" " alt="" coords="315,5,413,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="362,45,361,71,369,97,381,110,396,120,393,125,377,115,364,100,356,72,356,45"/>
+<area shape="rect" id="Node000005" href="$class_o_n___xform.html" title=" " alt="" coords="438,5,527,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="478,45,456,100,439,124,435,121,451,97,473,43"/>
+<area shape="rect" id="Node000006" href="$class_o_n___color.html" title=" " alt="" coords="552,5,635,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="582,44,559,73,530,101,504,115,477,125,475,120,501,110,526,97,555,70,577,41"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="649,6,658,10,661,18,653,28,635,32,634,26,650,24,656,18,654,14,647,11"/>
+<area shape="rect" id="Node000007" href="$class_o_n___interval.html" title=" " alt="" coords="760,5,859,31"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="796,44,770,74,735,101,686,115,616,125,476,135,476,130,616,120,685,110,732,96,767,71,792,40"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="873,7,882,11,885,18,877,28,859,32,858,26,874,23,880,18,878,14,871,11"/>
 </map>

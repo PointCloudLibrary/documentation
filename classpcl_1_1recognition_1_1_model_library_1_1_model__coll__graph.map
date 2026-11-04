@@ -1,8 +1,23 @@
 <map id="pcl::recognition::ModelLibrary::Model" name="pcl::recognition::ModelLibrary::Model">
-<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_o_r_r_octree.html" title="That&#39;s a very specialized and simple octree class. " alt="" coords="60,356,247,385"/>
-<area shape="rect" id="node4" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node.html" title="pcl::recognition::ORROctree\l::Node" alt="" coords="5,233,192,279"/>
-<area shape="rect" id="node7" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node_1_1_data.html" title="pcl::recognition::ORROctree\l::Node::Data" alt="" coords="5,102,192,149"/>
-<area shape="rect" id="node9" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::PointXYZ \&gt;" alt="" coords="289,347,428,394"/>
-<area shape="rect" id="node11" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="305,111,420,140"/>
-<area shape="rect" id="node18" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="385,241,527,271"/>
+<area shape="rect" id="Node000001" title="Stores some information about the model." alt="" coords="203,416,417,456"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1recognition_1_1_o_r_r_octree.html" title="That&#39;s a very specialized and simple octree class." alt="" coords="109,321,311,346"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,354,293,414,289,418,229,358"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node.html" title=" " alt="" coords="5,211,207,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,259,200,318,196,322,134,262"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="222,222,233,230,225,238,207,242,206,237,223,234,228,231,219,226"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1recognition_1_1_o_r_r_octree_1_1_node_1_1_data.html" title=" " alt="" coords="5,93,207,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="109,147,109,210,103,210,103,147"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_point_cloud.html" title=" " alt="" coords="361,313,515,353"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="405,364,336,418,332,414,401,360"/>
+<area shape="rect" id="Node000006" href="$structpcl_1_1_p_c_l_header.html" title=" " alt="" coords="362,101,482,126"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="401,138,381,161,364,189,354,219,354,235,358,250,368,268,381,284,411,311,407,315,377,288,363,271,353,252,349,235,349,218,359,186,377,157,397,134"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points." alt="" coords="417,218,608,243"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="438,136,472,185,502,216,498,220,468,188,434,139"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="501,5,575,31"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="557,41,581,79,606,131,622,190,625,220,623,251,620,273,609,291,588,307,565,318,515,331,514,326,563,313,585,302,605,288,615,271,618,250,620,221,617,191,601,133,576,82,552,43"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="513,41,493,57,437,102,434,98,490,53,510,37"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="538,44,522,187,517,218,512,217,517,186,533,44"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="377,5,451,31"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="417,45,418,69,422,100,417,101,413,70,411,45"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="498,256,454,315,450,312,494,253"/>
 </map>

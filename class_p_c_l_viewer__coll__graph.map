@@ -1,2 +1,11 @@
 <map id="PCLViewer" name="PCLViewer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="71,200,162,225"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,95,121,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,133,107,198,102,201,66,135"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="85,131,119,199,114,201,81,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="237,95,445,121"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="304,129,143,202,141,197,302,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="146,5,237,31"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="184,45,124,201,119,199,179,43"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="224,35,322,93,320,98,221,40"/>
 </map>

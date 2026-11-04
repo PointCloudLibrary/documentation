@@ -1,3 +1,8 @@
 <map id="pcl::registration::ConvergenceCriteria" name="pcl::registration::ConvergenceCriteria">
-<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_default_convergence_criteria.html" title="DefaultConvergenceCriteria represents an instantiation of ConvergenceCriteria, and implements the fol..." alt="" coords="5,101,187,165"/>
+<area shape="rect" id="Node000001" title="ConvergenceCriteria represents an abstract base class for different convergence criteria used in regi..." alt="" coords="5,14,160,54"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_default_convergence_criteria.html" title=" " alt="" coords="524,5,727,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,25,209,23,355,20,500,23,524,24,524,29,500,29,355,26,209,29,174,30"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1registration_1_1_default_convergence_criteria.html" title="DefaultConvergenceCriteria represents an instantiation of ConvergenceCriteria, and implements the fol..." alt="" coords="209,39,412,93"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,44,210,49,209,54,173,49"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="425,51,523,41,524,46,426,57"/>
 </map>

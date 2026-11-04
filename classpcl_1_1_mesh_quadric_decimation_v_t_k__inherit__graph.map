@@ -1,3 +1,5 @@
 <map id="pcl::MeshQuadricDecimationVTK" name="pcl::MeshQuadricDecimationVTK">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms. " alt="" coords="41,5,185,35"/>
+<area shape="rect" id="Node000001" title="PCL mesh decimation based on vtkQuadricDecimation from the VTK library." alt="" coords="5,79,240,104"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_processing.html" title="MeshProcessing represents the base class for mesh processing algorithms." alt="" coords="45,5,200,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,44,125,79,120,79,120,44"/>
 </map>

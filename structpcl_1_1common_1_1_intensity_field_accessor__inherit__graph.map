@@ -1,4 +1,7 @@
 <map id="pcl::common::IntensityFieldAccessor&lt; PointT &gt;" name="pcl::common::IntensityFieldAccessor&lt; PointT &gt;">
-<area shape="rect" id="node3" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title="pcl::common::IntensityField\lAccessor\&lt; PointInT \&gt;" alt="" coords="327,5,508,51"/>
-<area shape="rect" id="node5" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title="pcl::common::IntensityField\lAccessor\&lt; PointOutT \&gt;" alt="" coords="327,74,508,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,208,77"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title=" " alt="" coords="355,5,557,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,44,354,32,355,37,222,49"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1common_1_1_intensity_field_accessor.html" title=" " alt="" coords="355,69,557,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,65,355,77,354,83,222,71"/>
 </map>

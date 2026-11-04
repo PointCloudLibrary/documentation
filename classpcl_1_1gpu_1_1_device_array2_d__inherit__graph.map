@@ -1,13 +1,25 @@
 <map id="pcl::gpu::DeviceArray2D&lt; T &gt;" name="pcl::gpu::DeviceArray2D&lt; T &gt;">
-<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; double \&gt;" alt="" coords="645,5,811,51"/>
-<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; prob_histogram \&gt;" alt="" coords="645,74,811,121"/>
-<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; float \&gt;" alt="" coords="645,143,811,190"/>
-<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; int \&gt;" alt="" coords="645,213,811,259"/>
-<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned short \&gt;" alt="" coords="645,282,811,329"/>
-<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; unsigned char \&gt;" alt="" coords="645,351,811,398"/>
-<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::PointXYZ \&gt;" alt="" coords="645,421,811,467"/>
-<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; char4 \&gt;" alt="" coords="645,490,811,537"/>
-<area shape="rect" id="node21" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::FPFHSignature33 \&gt;" alt="" coords="641,559,815,606"/>
-<area shape="rect" id="node23" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title="pcl::gpu::DeviceArray2D\l\&lt; pcl::RGB \&gt;" alt="" coords="645,629,811,675"/>
-<area shape="rect" id="node2" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class " alt="" coords="5,325,187,355"/>
+<area shape="rect" id="Node000001" title="DeviceArray2D class" alt="" coords="253,301,471,326"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,5,877,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="367,286,382,240,407,182,444,124,467,98,493,75,541,49,594,32,648,23,697,19,698,25,648,28,595,37,543,54,496,80,471,101,448,127,412,185,387,242,372,288"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,69,877,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="374,287,393,255,419,217,453,179,493,147,543,123,595,106,648,95,697,89,698,95,649,101,597,111,545,128,496,152,457,182,424,220,397,258,378,290"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,133,877,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="385,290,433,251,494,215,544,195,597,180,697,160,698,166,599,185,546,200,496,220,436,255,388,294"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="692,197,883,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="412,294,494,269,596,247,691,229,692,235,597,252,495,275,414,299"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,261,877,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="484,302,697,285,698,291,485,307"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,325,877,365"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="485,321,495,321,698,336,697,342,494,327,484,326"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,389,877,429"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="412,328,495,353,600,376,698,394,697,399,599,382,494,359,410,333"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,453,877,493"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="388,333,436,372,465,392,496,408,546,428,599,443,698,462,697,467,597,448,544,433,494,413,462,396,433,376,385,337"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,517,877,557"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="378,337,397,369,423,408,457,445,496,476,545,500,597,517,649,527,698,533,697,538,648,532,595,522,543,505,493,481,453,449,419,411,392,372,373,340"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1gpu_1_1_device_array2_d.html" title=" " alt="" coords="698,581,877,621"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="372,339,387,385,412,443,448,501,470,527,496,548,543,574,595,590,648,599,698,603,697,608,648,605,594,596,541,579,493,553,467,530,444,504,407,445,382,387,367,341"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1gpu_1_1_device_memory2_d.html" title="DeviceMemory2D class" alt="" coords="5,301,204,326"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,311,253,311,253,316,217,316"/>
 </map>

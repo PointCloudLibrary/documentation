@@ -1,87 +1,45 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Compiling PCL</title>
-  
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=494f4e94"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="#" class="icon icon-home"> Point Cloud Library
           
-
-          
+          <a href="#" class="icon icon-home">
+            Point Cloud Library
           </a>
-
-          
-            
-            
-              <div class="version">
-                1.11.0-dev
-              </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Compiling PCL</a></li>
@@ -91,71 +49,34 @@
 <li><a class="reference internal" href="#how-to-build-a-minimal-example">How to build a minimal example</a></li>
 </ul>
 </div>
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="#">Point Cloud Library</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
-      <li>Compiling PCL</li>
-    
-    
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Compiling PCL</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <div class="toctree-wrapper compound">
 </div>
 <p>The following presents a set of advanced topics regarding PCL.</p>
-<div class="section" id="compiling-pcl">
-<h1>Compiling PCL</h1>
+<section id="compiling-pcl">
+<h1>Compiling PCL<a class="headerlink" href="#compiling-pcl" title="Link to this heading"></a></h1>
 <p>PCL uses modern C++ template programming in order to achieve maximum generality
 and reusability of its components. Due to intricate details of the current
 generation of C++ compilers however, the usage of templated code introduces
@@ -167,33 +88,37 @@ compilation of your project.</p>
 <p><cite>CCache</cite> is a compiler cache. It speeds up recompilation by caching previous
 compilations and detecting when the same compilation is being done again.
 Supported languages are C, C++, Objective-C and Objective-C++.</p>
-<a class="reference internal image-reference" href="_images/ccache.png"><img alt="_images/ccache.png" src="_images/ccache.png" style="height: 75px;" /></a>
+<a class="reference internal image-reference" href="_images/ccache.png"><img alt="_images/ccache.png" src="_images/ccache.png" style="height: 75px;" />
+</a>
 </li>
 <li><p><a class="reference internal" href="distcc.html#distc"><span class="std std-ref">Using DistCC to speed up compilation</span></a></p>
 <p><cite>distcc</cite> is a program to distribute builds of C, C++, Objective C or
 Objective C++ code across several machines on a network. distcc should always
 generate the same results as a local build, is simple to install and use, and
 is usually much faster than a local compile.</p>
-<a class="reference internal image-reference" href="_images/distcc.png"><img alt="_images/distcc.png" src="_images/distcc.png" style="height: 75px;" /></a>
+<a class="reference internal image-reference" href="_images/distcc.png"><img alt="_images/distcc.png" src="_images/distcc.png" style="height: 75px;" />
+</a>
 </li>
 <li><p><a class="reference internal" href="compiler_optimizations.html#compiler-optimizations"><span class="std std-ref">Compiler optimizations</span></a></p>
 <p>Depending on what compiler optimizations you use, your code might behave
 differently, both at compile time and at run time.</p>
-<a class="reference internal image-reference" href="_images/optimize.png"><img alt="_images/optimize.png" src="_images/optimize.png" style="height: 75px;" /></a>
+<a class="reference internal image-reference" href="_images/optimize.png"><img alt="_images/optimize.png" src="_images/optimize.png" style="height: 75px;" />
+</a>
 </li>
 <li><p><a class="reference internal" href="single_compile_unit.html#single-compile-unit"><span class="std std-ref">Single compilation units</span></a></p>
 <p>In certain cases, it’s better to concatenate source files into single
 compilation units to speed up compiling.</p>
-<a class="reference internal image-reference" href="_images/unitybuild.jpg"><img alt="_images/unitybuild.jpg" src="_images/unitybuild.jpg" style="height: 75px;" /></a>
+<a class="reference internal image-reference" href="_images/unitybuild.jpg"><img alt="_images/unitybuild.jpg" src="_images/unitybuild.jpg" style="height: 75px;" />
+</a>
 </li>
 </ul>
-</div>
-<div class="section" id="developing-pcl-code">
-<h1>Developing PCL code</h1>
+</section>
+<section id="developing-pcl-code">
+<h1>Developing PCL code<a class="headerlink" href="#developing-pcl-code" title="Link to this heading"></a></h1>
 <p>To make our lives easier, and to be able to read and integrate code from each
 other without causing ourselves headaches, we assembled a set of rules for PCL
 development that everyone should follow:</p>
-<div class="topic">
+<aside class="topic">
 <p class="topic-title">Rules</p>
 <ul class="simple">
 <li><p>if you make important commits, please <strong>_add the commit log_</strong> or something similar <strong>_to
@@ -210,7 +135,7 @@ unit tests go in (test/.cpp);</p></li>
 <li><p>last but not least, please <strong>_respect the same naming and indentation
 guidelines_</strong> as you see in the <a class="reference internal" href="pcl_style_guide.html#pcl-style-guide"><span class="std std-ref">PCL C++ Programming Style Guide</span></a>.</p></li>
 </ul>
-</div>
+</aside>
 <ul>
 <li><p><a class="reference internal" href="pcl_style_guide.html#pcl-style-guide"><span class="std std-ref">PCL C++ Programming Style Guide</span></a></p>
 <p>Please follow the following naming and indentation rules when developing code for PCL.</p>
@@ -222,14 +147,14 @@ guidelines_</strong> as you see in the <a class="reference internal" href="pcl_s
 <p>An in-depth discussion about the PCL 2.x API can be found here.</p>
 </li>
 </ul>
-</div>
-<div class="section" id="committing-changes-to-the-git-master">
-<h1>Committing changes to the git master</h1>
-<p>In order to oversee the commit messages more easier and that the changelist looks homogenous please keep the following format:</p>
+</section>
+<section id="committing-changes-to-the-git-master">
+<h1>Committing changes to the git master<a class="headerlink" href="#committing-changes-to-the-git-master" title="Link to this heading"></a></h1>
+<p>In order to oversee the commit messages more easier and that the changelist looks homogeneous please keep the following format:</p>
 <p>“* &lt;fixed|bugfix|changed|new&gt; X in &#64;&lt;classname&gt;&#64; (#&lt;bug number&gt;)”</p>
-</div>
-<div class="section" id="improving-the-pcl-documentation">
-<h1>Improving the PCL documentation</h1>
+</section>
+<section id="improving-the-pcl-documentation">
+<h1>Improving the PCL documentation<a class="headerlink" href="#improving-the-pcl-documentation" title="Link to this heading"></a></h1>
 <ul>
 <li><p><a class="reference internal" href="how_to_write_a_tutorial.html#how-to-write-a-tutorial"><span class="std std-ref">How to write a good tutorial</span></a></p>
 <p>In case you want to contribute/help PCL by improving the existing
@@ -237,54 +162,42 @@ documentation and tutorials/examples, please read our short guide on how to
 start.</p>
 </li>
 </ul>
-</div>
-<div class="section" id="how-to-build-a-minimal-example">
-<h1>How to build a minimal example</h1>
+</section>
+<section id="how-to-build-a-minimal-example">
+<h1>How to build a minimal example<a class="headerlink" href="#how-to-build-a-minimal-example" title="Link to this heading"></a></h1>
 <ul>
 <li><p><a class="reference internal" href="minimal_example.html#minimal-example"><span class="std std-ref">How to build a minimal example</span></a></p>
 <p>In case you need help to debug your code, please follow this guidelines to write a minimal example.</p>
 </li>
 </ul>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 
-
-    </p>
+    <p>&#169; Copyright .</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

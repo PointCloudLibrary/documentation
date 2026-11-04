@@ -1,4 +1,7 @@
 <map id="pcl::RandomSampleConsensus&lt; PointT &gt;" name="pcl::RandomSampleConsensus&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="29,102,187,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="13,5,203,35"/>
+<area shape="rect" id="Node000001" title="RandomSampleConsensus represents an implementation of the RANSAC (RANdom SAmple Consensus) algorithm,..." alt="" coords="5,183,228,223"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus.html" title=" " alt="" coords="33,93,201,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,147,119,183,114,183,114,147"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class." alt="" coords="13,5,220,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,44,119,93,114,93,114,44"/>
 </map>

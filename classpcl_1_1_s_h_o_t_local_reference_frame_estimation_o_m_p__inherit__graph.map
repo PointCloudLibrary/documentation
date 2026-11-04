@@ -1,6 +1,11 @@
 <map id="pcl::SHOTLocalReferenceFrameEstimationOMP&lt; PointInT, PointOutT &gt;" name="pcl::SHOTLocalReferenceFrameEstimationOMP&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="5,281,229,327"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class. " alt="" coords="40,182,195,229"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="29,101,205,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="35,5,200,35"/>
+<area shape="rect" id="Node000001" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="15,347,242,401"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_s_h_o_t_local_reference_frame_estimation.html" title="SHOTLocalReferenceFrameEstimation estimates the Local Reference Frame used in the calculation of the ..." alt="" coords="5,257,252,297"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,311,131,347,126,347,126,311"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_feature.html" title="Feature represents the base feature class." alt="" coords="43,168,214,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,222,131,257,126,257,126,222"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="35,93,223,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,132,131,168,126,168,126,132"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="41,5,217,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="131,45,131,93,126,93,126,45"/>
 </map>

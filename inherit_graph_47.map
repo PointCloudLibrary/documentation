@@ -1,3 +1,17 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structcode.html" title="code" alt="" coords="5,5,56,35"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,191,155,216"/>
+<area shape="rect" id="Node000001" href="$class_monitor_queue.html" title=" " alt="" coords="217,5,399,31"/>
+<area shape="poly" id="edge29_Node000000_Node000001" title=" " alt="" coords="91,177,133,109,164,72,201,41,227,28,230,33,204,46,168,76,137,112,95,180"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1io_1_1depth__sense_1_1_depth_sense_device_manager.html" title="A helper class for enumerating and managing access to DepthSense devices." alt="" coords="203,55,413,95"/>
+<area shape="poly" id="edge30_Node000000_Node000002" title=" " alt="" coords="103,179,147,141,201,105,229,93,231,98,204,110,150,145,106,183"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1io_1_1real__sense_1_1_real_sense_device.html" title=" " alt="" coords="237,119,379,159"/>
+<area shape="poly" id="edge31_Node000000_Node000003" title=" " alt="" coords="139,184,236,157,237,162,140,189"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1io_1_1real__sense_1_1_real_sense_device_manager.html" title=" " alt="" coords="208,183,408,223"/>
+<area shape="poly" id="edge32_Node000000_Node000004" title=" " alt="" coords="169,201,208,201,208,206,169,206"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1ndt2d_1_1_n_d_t2_d.html" title="Build a Normal Distributions Transform of a 2D point cloud." alt="" coords="233,247,383,287"/>
+<area shape="poly" id="edge33_Node000000_Node000005" title=" " alt="" coords="140,217,237,245,235,250,139,222"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1ndt2d_1_1_n_d_t_single_grid.html" title="Build a set of normal distributions modelling a 2D point cloud, and provide the value and derivatives..." alt="" coords="213,311,403,351"/>
+<area shape="poly" id="edge34_Node000000_Node000006" title=" " alt="" coords="106,224,150,261,204,297,231,309,229,314,201,302,147,265,103,228"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1visualization_1_1_cloud_viewer.html" title="Simple point cloud visualization class." alt="" coords="242,375,374,415"/>
+<area shape="poly" id="edge35_Node000000_Node000007" title=" " alt="" coords="96,227,138,294,169,330,204,361,243,380,240,385,201,366,165,334,134,297,91,230"/>
 </map>

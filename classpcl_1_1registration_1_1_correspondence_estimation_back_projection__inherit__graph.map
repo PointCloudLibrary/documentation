@@ -1,5 +1,9 @@
 <map id="pcl::registration::CorrespondenceEstimationBackProjection&lt; PointSource, PointTarget, NormalT, Scalar &gt;" name="pcl::registration::CorrespondenceEstimationBackProjection&lt; PointSource, PointTarget, NormalT, Scalar &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_estimation_base.html" title="Abstract CorrespondenceEstimationBase class. " alt="" coords="572,5,780,86"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,31,519,60"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,31,171,60"/>
+<area shape="rect" id="Node000001" title="CorrespondenceEstimationBackprojection computes correspondences as points in the target cloud which h..." alt="" coords="881,5,1111,75"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_correspondence_estimation_base.html" title="Abstract CorrespondenceEstimationBase class." alt="" coords="603,5,832,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="846,37,881,37,881,43,846,43"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="341,27,553,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="567,37,603,37,603,43,567,43"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,27,181,53"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,37,341,37,341,43,195,43"/>
 </map>

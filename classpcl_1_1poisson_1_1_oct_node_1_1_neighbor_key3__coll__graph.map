@@ -1,6 +1,12 @@
 <map id="pcl::poisson::OctNode&lt; NodeData, Real &gt;::NeighborKey3" name="pcl::poisson::OctNode&lt; NodeData, Real &gt;::NeighborKey3">
-<area shape="rect" id="node2" href="$classpcl_1_1poisson_1_1_oct_node_1_1_neighbors3.html" title="pcl::poisson::OctNode\l\&lt; NodeData, Real \&gt;::Neighbors3" alt="" coords="77,331,291,378"/>
-<area shape="rect" id="node4" href="$classpcl_1_1poisson_1_1_oct_node.html" title="pcl::poisson::OctNode\l\&lt; NodeData, Real \&gt;" alt="" coords="108,217,260,263"/>
-<area shape="rect" id="node7" href="$classpcl_1_1poisson_1_1_allocator.html" title="pcl::poisson::Allocator\l\&lt; pcl::poisson::OctNode \&gt;" alt="" coords="8,102,184,149"/>
-<area shape="rect" id="node9" href="$classpcl_1_1poisson_1_1_allocator.html" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="5,5,187,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,401,259,441"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1poisson_1_1_oct_node_1_1_neighbors3.html" title=" " alt="" coords="14,299,250,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,353,135,401,129,401,129,353"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1poisson_1_1_oct_node.html" title=" " alt="" coords="51,196,213,236"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,250,135,299,129,299,129,250"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="229,207,240,216,232,224,214,227,213,222,230,219,235,216,226,211"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1poisson_1_1_allocator.html" title=" " alt="" coords="35,93,229,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,147,135,196,129,196,129,147"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1poisson_1_1_allocator.html" title="This templated class assists in memory allocation and is well suited for instances when it is known t..." alt="" coords="31,5,233,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="135,44,135,93,129,93,129,44"/>
 </map>

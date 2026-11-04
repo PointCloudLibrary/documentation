@@ -1,0 +1,9 @@
+<map id="pcl::traits::has_any_field&lt; PointT, Field &gt;" name="pcl::traits::has_any_field&lt; PointT, Field &gt;">
+<area shape="rect" id="Node000001" title="Metafunction to check if a given point type has any of the given fields." alt="" coords="259,29,425,69"/>
+<area shape="rect" id="Node000003" href="$structpcl_1_1traits_1_1has__any__field.html" title=" " alt="" coords="640,15,828,84"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="439,47,640,47,640,52,439,52"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,7,209,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,47,258,47,258,52,223,52"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1traits_1_1has__color.html" title="Metafunction to check if a given point type has either rgb or rgba field." alt="" coords="877,29,1031,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="842,47,877,47,877,52,842,52"/>
+</map>

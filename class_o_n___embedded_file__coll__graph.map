@@ -1,6 +1,11 @@
 <map id="ON_EmbeddedFile" name="ON_EmbeddedFile">
-<area shape="rect" id="node2" href="$class_o_n___object.html" title="ON_Object" alt="" coords="5,5,91,35"/>
-<area shape="rect" id="node4" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="115,5,208,35"/>
-<area shape="rect" id="node6" href="$class_o_n___buffer.html" title="ON_Buffer" alt="" coords="275,5,357,35"/>
-<area shape="rect" id="node8" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="381,5,464,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="136,108,277,133"/>
+<area shape="rect" id="Node000002" href="$class_o_n___object.html" title=" " alt="" coords="5,5,96,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,36,190,106,188,110,78,40"/>
+<area shape="rect" id="Node000003" href="$class_o_n___u_u_i_d.html" title=" " alt="" coords="120,5,203,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,43,188,83,201,107,197,109,183,85,167,45"/>
+<area shape="rect" id="Node000004" href="$class_o_n__w_string.html" title=" " alt="" coords="227,5,325,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="262,44,217,110,212,106,258,41"/>
+<area shape="rect" id="Node000005" href="$class_o_n___buffer.html" title=" " alt="" coords="380,5,468,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="421,45,412,67,396,86,376,96,347,104,278,115,277,110,346,99,374,91,393,82,408,64,416,43"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="ON_SpaceMorph" name="ON_SpaceMorph">
-<area shape="rect" id="node3" href="$class_o_n___bezier_cage_morph.html" title="ON_BezierCageMorph" alt="" coords="5,83,157,112"/>
-<area shape="rect" id="node5" href="$class_o_n___cage_morph.html" title="ON_CageMorph" alt="" coords="181,83,296,112"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,236,31"/>
+<area shape="rect" id="Node000002" href="$class_o_n___bezier_cage_morph.html" title=" " alt="" coords="5,79,169,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,42,103,80,99,76,146,38"/>
+<area shape="rect" id="Node000003" href="$class_o_n___cage_morph.html" title=" " alt="" coords="194,79,317,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,38,243,76,240,80,194,42"/>
 </map>

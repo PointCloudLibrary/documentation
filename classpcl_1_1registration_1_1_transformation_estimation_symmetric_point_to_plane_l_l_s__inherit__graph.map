@@ -1,0 +1,5 @@
+<map id="pcl::registration::TransformationEstimationSymmetricPointToPlaneLLS&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::registration::TransformationEstimationSymmetricPointToPlaneLLS&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="Node000001" title="TransformationEstimationSymmetricPointToPlaneLLS implements a Linear Least Squares (LLS) approximatio..." alt="" coords="5,123,267,192"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_transformation_estimation.html" title="TransformationEstimation represents the base class for methods for transformation estimation based on..." alt="" coords="37,5,235,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,89,139,122,133,122,133,89"/>
+</map>

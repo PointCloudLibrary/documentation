@@ -1,9 +1,17 @@
 <map id="ON_Annotation" name="ON_Annotation">
-<area shape="rect" id="node7" href="$class_o_n___angular_dimension.html" title="ON_AngularDimension" alt="" coords="5,237,160,267"/>
-<area shape="rect" id="node9" href="$class_o_n___leader.html" title="ON_Leader" alt="" coords="184,237,272,267"/>
-<area shape="rect" id="node11" href="$class_o_n___linear_dimension.html" title="ON_LinearDimension" alt="" coords="296,237,443,267"/>
-<area shape="rect" id="node13" href="$class_o_n___radial_dimension.html" title="ON_RadialDimension" alt="" coords="467,237,613,267"/>
-<area shape="rect" id="node15" href="$class_o_n___text_entity.html" title="ON_TextEntity" alt="" coords="637,237,747,267"/>
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="316,83,423,112"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="327,5,412,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="337,152,457,177"/>
+<area shape="rect" id="Node000004" href="$class_o_n___angular_dimension.html" title=" " alt="" coords="5,225,175,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="335,183,140,228,139,223,334,178"/>
+<area shape="rect" id="Node000005" href="$class_o_n___leader.html" title=" " alt="" coords="199,225,293,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="361,186,272,228,270,223,359,181"/>
+<area shape="rect" id="Node000006" href="$class_o_n___linear_dimension.html" title=" " alt="" coords="317,225,476,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="399,191,399,225,394,225,394,191"/>
+<area shape="rect" id="Node000007" href="$class_o_n___radial_dimension.html" title=" " alt="" coords="501,225,661,251"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="440,180,552,223,550,228,438,185"/>
+<area shape="rect" id="Node000008" href="$class_o_n___text_entity.html" title=" " alt="" coords="685,225,799,251"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="466,177,687,223,686,228,465,183"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="339,79,454,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="399,118,399,152,394,152,394,118"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="351,5,442,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,44,399,79,394,79,394,44"/>
 </map>

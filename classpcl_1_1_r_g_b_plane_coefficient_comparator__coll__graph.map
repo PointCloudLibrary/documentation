@@ -1,4 +1,12 @@
 <map id="pcl::RGBPlaneCoefficientComparator&lt; PointT, PointNT &gt;" name="pcl::RGBPlaneCoefficientComparator&lt; PointT, PointNT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="5,83,216,130"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function. " alt="" coords="23,5,199,35"/>
+<area shape="rect" id="Node000001" title="RGBPlaneCoefficientComparator is a Comparator that operates on plane coefficients,..." alt="" coords="93,285,323,325"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_plane_coefficient_comparator.html" title="PlaneCoefficientComparator is a Comparator that operates on plane coefficients, for use in planar seg..." alt="" coords="92,196,324,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,250,211,285,205,285,205,250"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_comparator.html" title="Comparator is the base class for comparators that compare two points given some function." alt="" coords="5,101,203,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,134,190,194,187,198,124,138"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="163,5,253,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,42,119,103,115,99,183,38"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="227,93,402,133"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="233,38,295,91,291,95,230,42"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="286,145,230,198,226,194,283,141"/>
 </map>

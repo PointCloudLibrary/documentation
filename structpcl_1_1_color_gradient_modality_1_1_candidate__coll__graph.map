@@ -1,3 +1,5 @@
 <map id="pcl::ColorGradientModality&lt; PointInT &gt;::Candidate" name="pcl::ColorGradientModality&lt; PointInT &gt;::Candidate">
-<area shape="rect" id="node2" href="$structpcl_1_1_gradient_x_y.html" title="A point structure representing Euclidean xyz coordinates, and the intensity value. " alt="" coords="36,5,151,35"/>
+<area shape="rect" id="Node000001" title="Candidate for a feature (used in feature extraction methods)." alt="" coords="5,93,201,133"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1_gradient_x_y.html" title="A point structure representing Euclidean xyz coordinates, and the intensity value." alt="" coords="42,5,165,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,44,106,93,101,93,101,44"/>
 </map>

@@ -1,10 +1,28 @@
 <map id="pcl::IterativeClosestPoint&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::IterativeClosestPoint&lt; PointSource, PointTarget, Scalar &gt;">
-<area shape="rect" id="node9" href="$classpcl_1_1_iterative_closest_point_non_linear.html" title="IterativeClosestPointNonLinear is an ICP variant that uses Levenberg&#45;Marquardt optimization backend..." alt="" coords="1229,5,1397,69"/>
-<area shape="rect" id="node11" href="$classpcl_1_1_iterative_closest_point_with_normals.html" title="IterativeClosestPointWithNormals is a special case of IterativeClosestPoint, that uses a transformati..." alt="" coords="1221,93,1405,157"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_joint_iterative_closest_point.html" title="JointIterativeClosestPoint extends ICP to multiple frames which share the same transform. " alt="" coords="1207,181,1420,245"/>
-<area shape="rect" id="node15" href="$classpcl_1_1_iterative_closest_point.html" title="pcl::IterativeClosestPoint\l\&lt; PointSource, PointTarget \&gt;" alt="" coords="1217,269,1409,315"/>
-<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="571,137,747,201"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="321,155,519,184"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,155,171,184"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_generalized_iterative_closest_point.html" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="1472,260,1656,324"/>
+<area shape="rect" id="Node000001" title="IterativeClosestPoint provides a base implementation of the Iterative Closest Point algorithm." alt="" coords="840,232,1039,286"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_generalized_iterative_closest_point.html" title=" " alt="" coords="1835,41,2053,96"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="965,218,1006,166,1033,140,1061,117,1125,76,1178,50,1236,34,1310,19,1380,9,1451,4,1593,7,1725,22,1835,41,1834,46,1724,27,1593,13,1451,10,1380,14,1311,24,1237,39,1180,55,1127,80,1064,121,1036,144,1010,170,969,222"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_fast_robust_iterative_closest_point.html" title="FastRobustIterativeClosestPoint implements the FRICP variant described in &quot;Fast and Robust Iterative ..." alt="" coords="1332,34,1531,89"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="985,221,1022,197,1061,175,1130,146,1201,120,1331,82,1332,87,1202,125,1132,151,1064,180,1025,202,988,226"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1_generalized_iterative_closest_point.html" title="GeneralizedIterativeClosestPoint is an ICP variant that implements the generalized iterative closest ..." alt="" coords="1332,113,1531,168"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1036,225,1062,218,1203,184,1331,156,1333,162,1204,189,1063,223,1037,230"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_iterative_closest_point_non_linear.html" title="IterativeClosestPointNonLinear is an ICP variant that uses Levenberg&#45;Marquardt optimization backend." alt="" coords="1339,192,1524,246"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1052,247,1338,224,1339,229,1053,252"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1_iterative_closest_point_with_normals.html" title="IterativeClosestPointWithNormals is a special case of IterativeClosestPoint, that uses a transformati..." alt="" coords="1330,270,1533,325"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1053,265,1330,287,1329,292,1053,270"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1_joint_iterative_closest_point.html" title="JointIterativeClosestPoint extends ICP to multiple frames which share the same transform." alt="" coords="1315,349,1547,404"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1053,286,1063,288,1316,348,1315,353,1062,293,1051,291"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="1332,428,1531,482"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="972,295,1013,337,1038,357,1064,374,1130,403,1201,423,1270,437,1332,446,1331,451,1269,443,1199,429,1129,408,1061,379,1034,362,1010,341,969,299"/>
+<area shape="rect" id="Node000013" href="$classpcl_1_1_iterative_closest_point.html" title=" " alt="" coords="1311,506,1552,561"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="954,299,969,341,992,390,1024,436,1043,457,1064,474,1122,505,1185,524,1250,534,1311,538,1310,543,1249,540,1184,529,1120,510,1061,478,1039,460,1020,439,988,392,965,344,949,301"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="603,232,791,286"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="805,256,840,256,840,262,805,262"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="341,246,553,272"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="567,256,603,256,603,262,567,262"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,246,181,272"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,256,341,256,341,262,195,262"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_generalized_iterative_closest_point6_d.html" title="GeneralizedIterativeClosestPoint6D integrates L*a*b* color space information into the Generalized Ite..." alt="" coords="2103,48,2285,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="2067,66,2103,66,2103,71,2067,71"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="1544,122,1834,81,1835,86,1545,127"/>
 </map>

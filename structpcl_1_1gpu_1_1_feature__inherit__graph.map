@@ -1,13 +1,25 @@
 <map id="pcl::gpu::Feature" name="pcl::gpu::Feature">
-<area shape="rect" id="node3" href="$structpcl_1_1gpu_1_1_feature_from_normals.html" title="Feature represents the base feature class that takes normals as input also. " alt="" coords="175,219,372,248"/>
-<area shape="rect" id="node23" href="$classpcl_1_1gpu_1_1_normal_estimation.html" title="Class for normal estimation. " alt="" coords="184,272,363,301"/>
-<area shape="rect" id="node5" href="$classpcl_1_1gpu_1_1_f_p_f_h_estimation.html" title="Class for FPFH estimation. " alt="" coords="452,5,625,35"/>
-<area shape="rect" id="node7" href="$classpcl_1_1gpu_1_1_p_f_h_estimation.html" title="Class for PFH estimation. " alt="" coords="456,59,621,88"/>
-<area shape="rect" id="node9" href="$classpcl_1_1gpu_1_1_p_f_h_r_g_b_estimation.html" title="Class for PFHRGB estimation. " alt="" coords="441,112,636,141"/>
-<area shape="rect" id="node11" href="$classpcl_1_1gpu_1_1_p_p_f_estimation.html" title="** " alt="" coords="457,165,620,195"/>
-<area shape="rect" id="node13" href="$classpcl_1_1gpu_1_1_p_p_f_r_g_b_estimation.html" title="** " alt="" coords="443,219,635,248"/>
-<area shape="rect" id="node15" href="$classpcl_1_1gpu_1_1_p_p_f_r_g_b_region_estimation.html" title="** " alt="" coords="421,272,656,301"/>
-<area shape="rect" id="node17" href="$classpcl_1_1gpu_1_1_principal_curvatures_estimation.html" title="Class for PPFRGBRegion estimation. " alt="" coords="444,325,633,371"/>
-<area shape="rect" id="node19" href="$classpcl_1_1gpu_1_1_spin_image_estimation.html" title="Class for SpinImages estimation. " alt="" coords="439,395,639,424"/>
-<area shape="rect" id="node21" href="$classpcl_1_1gpu_1_1_v_f_h_estimation.html" title="** " alt="" coords="456,448,621,477"/>
+<area shape="rect" id="Node000001" title="Feature represents the base feature class." alt="" coords="5,228,136,253"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1gpu_1_1_feature_from_normals.html" title="Feature represents the base feature class that takes normals as input also." alt="" coords="184,203,403,228"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,229,184,225,184,230,150,234"/>
+<area shape="rect" id="Node000012" href="$classpcl_1_1gpu_1_1_normal_estimation.html" title="Class for normal estimation." alt="" coords="194,252,393,277"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="150,246,194,251,193,257,149,252"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1gpu_1_1_f_p_f_h_estimation.html" title="Class for FPFH estimation." alt="" coords="482,5,667,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,189,330,155,363,114,403,73,449,40,481,27,483,31,452,44,406,77,367,118,335,158,312,192"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1gpu_1_1_p_f_h_estimation.html" title="Class for PFH estimation." alt="" coords="486,55,663,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="314,191,372,139,409,111,450,89,485,77,487,82,452,94,412,116,375,143,318,195"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1gpu_1_1_p_f_h_r_g_b_estimation.html" title="Class for PFHRGB estimation." alt="" coords="472,104,677,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="327,194,384,165,450,138,492,127,493,132,452,143,386,170,330,198"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1gpu_1_1_p_p_f_estimation.html" title="**" alt="" coords="487,153,662,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="379,198,501,176,502,181,380,203"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1gpu_1_1_p_p_f_r_g_b_estimation.html" title="**" alt="" coords="473,203,676,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="416,213,473,213,473,218,416,218"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1gpu_1_1_p_p_f_r_g_b_region_estimation.html" title="**" alt="" coords="451,252,699,277"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="380,228,502,249,501,255,379,233"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1gpu_1_1_principal_curvatures_estimation.html" title="‍**" alt="" coords="471,302,679,342"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="390,230,404,237,420,249,429,262,438,275,452,286,480,299,478,304,449,291,434,278,425,265,416,253,401,242,388,235"/>
+<area shape="rect" id="Node000010" href="$classpcl_1_1gpu_1_1_spin_image_estimation.html" title="‍**" alt="" coords="465,367,685,392"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="399,233,404,237,417,252,425,266,429,296,434,325,440,339,452,352,473,364,470,369,449,356,436,342,429,327,424,297,420,268,413,254,401,241,395,237"/>
+<area shape="rect" id="Node000011" href="$classpcl_1_1gpu_1_1_v_f_h_estimation.html" title="**" alt="" coords="485,416,664,441"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="400,233,405,237,421,258,428,279,429,321,430,363,437,382,452,401,468,412,486,420,484,425,466,417,449,405,433,385,425,364,424,322,423,280,416,260,401,241,396,237"/>
 </map>

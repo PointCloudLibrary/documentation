@@ -1,6 +1,9 @@
-<map id="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;" name="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_registration.html" title="pcl::Registration\&lt;\l PointSource, PointTarget \&gt;" alt="" coords="37,313,221,359"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointSource \&gt;" alt="" coords="5,101,203,131"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods..." alt="" coords="125,181,301,245"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="21,5,187,35"/>
+<map id="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget, Scalar &gt;" name="pcl::NormalDistributionsTransform&lt; PointSource, PointTarget, Scalar &gt;">
+<area shape="rect" id="Node000001" title="A 3D Normal Distribution Transform registration implementation for point cloud data." alt="" coords="20,272,203,327"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_registration.html" title="Registration represents the base registration class for general purpose, ICP&#45;like methods." alt="" coords="17,168,205,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,236,114,272,109,272,109,236"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="5,93,217,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,133,114,168,109,168,109,133"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="23,5,199,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,45,114,93,109,93,109,45"/>
 </map>

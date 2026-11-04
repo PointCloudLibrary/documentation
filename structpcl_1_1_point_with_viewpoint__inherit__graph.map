@@ -1,3 +1,5 @@
 <map id="pcl::PointWithViewpoint" name="pcl::PointWithViewpoint">
-<area shape="rect" id="node2" href="$structpcl_1_1___point_with_viewpoint.html" title="pcl::_PointWithViewpoint" alt="" coords="5,5,173,35"/>
+<area shape="rect" id="Node000001" title="A point structure representing Euclidean xyz coordinates together with the viewpoint from which it wa..." alt="" coords="9,79,186,104"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1___point_with_viewpoint.html" title=" " alt="" coords="5,5,189,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,44,100,79,95,79,95,44"/>
 </map>

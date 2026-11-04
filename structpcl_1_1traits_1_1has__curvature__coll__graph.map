@@ -1,0 +1,11 @@
+<map id="pcl::traits::has_curvature&lt; PointT &gt;" name="pcl::traits::has_curvature&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="Metafunction to check if a given point type has curvature field." alt="" coords="801,60,984,100"/>
+<area shape="rect" id="Node000002" href="$structpcl_1_1traits_1_1has__field.html" title=" " alt="" coords="603,53,752,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="766,77,801,77,801,83,766,83"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="224,5,424,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,42,579,56,603,60,602,65,578,61,438,47"/>
+<area shape="rect" id="Node000004" href="$structpcl_1_1traits_1_1has__field.html" title="Metafunction to check if a given point type has a given field." alt="" coords="249,99,399,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="412,106,602,85,603,91,412,112"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,84,175,153"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="189,116,249,116,249,121,189,121"/>
+</map>

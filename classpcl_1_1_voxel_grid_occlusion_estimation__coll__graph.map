@@ -1,8 +1,15 @@
 <map id="pcl::VoxelGridOcclusionEstimation&lt; PointT &gt;" name="pcl::VoxelGridOcclusionEstimation&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data..." alt="" coords="17,315,183,344"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,219,157,248"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,104,171,133"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="211,315,384,344"/>
-<area shape="rect" id="node10" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="201,104,316,133"/>
-<area shape="rect" id="node17" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="273,219,415,248"/>
+<area shape="rect" id="Node000001" title="VoxelGrid to estimate occluded space in the scene." alt="" coords="39,405,283,445"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_voxel_grid.html" title="VoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the data." alt="" coords="70,331,253,356"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,370,164,405,159,405,159,370"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="85,256,238,281"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,296,164,330,159,330,159,296"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,181,181,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,215,152,254,148,257,112,219"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="52,5,143,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="97,44,92,93,92,142,95,181,89,181,87,142,87,93,91,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="146,93,313,119"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="128,36,213,91,210,95,125,40"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="224,133,196,208,170,257,166,255,191,206,219,131"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="189,127,155,145,107,183,104,179,152,140,186,122"/>
 </map>

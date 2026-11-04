@@ -1,44 +1,70 @@
 <map id="ON_Brep" name="ON_Brep">
-<area shape="rect" id="node2" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="144,701,251,731"/>
-<area shape="rect" id="node16" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="363,649,445,679"/>
-<area shape="rect" id="node54" href="$class_o_n___surface.html" title="ON_Surface" alt="" coords="357,896,451,925"/>
-<area shape="rect" id="node71" href="$class_o_n___brep_loop.html" title="ON_BrepLoop" alt="" coords="987,384,1091,413"/>
-<area shape="rect" id="node107" href="$class_o_n___point.html" title="ON_Point" alt="" coords="708,701,785,731"/>
-<area shape="rect" id="node4" href="$class_o_n___object.html" title="ON_Object" alt="" coords="7,701,92,731"/>
-<area shape="rect" id="node6" href="$class_o_n___brep_trim_array.html" title="ON_BrepTrimArray" alt="" coords="1935,357,2068,387"/>
-<area shape="rect" id="node8" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepTrim \&gt;" alt="" coords="1689,273,1839,319"/>
-<area shape="rect" id="node10" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepTrim \&gt;" alt="" coords="1292,212,1511,241"/>
-<area shape="rect" id="node12" href="$class_o_n___brep_trim.html" title="ON_BrepTrim" alt="" coords="988,164,1089,193"/>
-<area shape="rect" id="node14" href="$class_o_n___curve_proxy.html" title="ON_CurveProxy" alt="" coords="688,437,805,467"/>
-<area shape="rect" id="node92" href="$class_o_n___brep_edge.html" title="ON_BrepEdge" alt="" coords="985,480,1092,509"/>
-<area shape="rect" id="node118" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_Curve * \&gt;" alt="" coords="671,826,823,873"/>
-<area shape="rect" id="node19" href="$union_o_n___u.html" title="ON_U" alt="" coords="717,637,776,667"/>
-<area shape="rect" id="node50" href="$class_o_n___brep_face.html" title="ON_BrepFace" alt="" coords="987,796,1091,825"/>
-<area shape="rect" id="node105" href="$class_o_n___brep_vertex.html" title="ON_BrepVertex" alt="" coords="981,619,1096,648"/>
-<area shape="rect" id="node21" href="$class_o_n___bounding_box.html" title="ON_BoundingBox" alt="" coords="684,253,809,283"/>
-<area shape="rect" id="node24" href="$class_o_n__3d_point.html" title="ON_3dPoint" alt="" coords="357,455,451,484"/>
-<area shape="rect" id="node27" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_BrepTrimPoint \&gt;" alt="" coords="671,59,823,106"/>
-<area shape="rect" id="node29" href="$struct_o_n___brep_trim_point.html" title="ON_BrepTrimPoint" alt="" coords="339,64,469,93"/>
-<area shape="rect" id="node31" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="151,64,244,93"/>
-<area shape="rect" id="node34" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; T \&gt;" alt="" coords="328,564,480,593"/>
-<area shape="rect" id="node58" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; int \&gt;" alt="" coords="668,564,825,593"/>
-<area shape="rect" id="node82" href="$class_o_n___simple_array.html" title="ON_SimpleArray\&lt; ON\l_Surface * \&gt;" alt="" coords="671,949,823,995"/>
-<area shape="rect" id="node38" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; T \&gt;" alt="" coords="965,280,1112,309"/>
-<area shape="rect" id="node41" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; T \&gt;" alt="" coords="1327,380,1476,409"/>
-<area shape="rect" id="node48" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepFace \&gt;" alt="" coords="1291,617,1512,647"/>
-<area shape="rect" id="node69" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepLoop \&gt;" alt="" coords="1292,308,1511,337"/>
-<area shape="rect" id="node90" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepEdge \&gt;" alt="" coords="1291,455,1512,484"/>
-<area shape="rect" id="node103" href="$class_o_n___class_array.html" title="ON_ClassArray\&lt; ON_BrepVertex \&gt;" alt="" coords="1287,533,1516,563"/>
-<area shape="rect" id="node46" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepFace \&gt;" alt="" coords="1689,605,1839,651"/>
-<area shape="rect" id="node67" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepLoop \&gt;" alt="" coords="1689,354,1839,401"/>
-<area shape="rect" id="node88" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepEdge \&gt;" alt="" coords="1689,446,1839,493"/>
-<area shape="rect" id="node101" href="$class_o_n___object_array.html" title="ON_ObjectArray\&lt; ON\l_BrepVertex \&gt;" alt="" coords="1689,527,1839,574"/>
-<area shape="rect" id="node44" href="$class_o_n___brep_face_array.html" title="ON_BrepFaceArray" alt="" coords="1933,620,2069,649"/>
-<area shape="rect" id="node52" href="$class_o_n___surface_proxy.html" title="ON_SurfaceProxy" alt="" coords="683,896,811,925"/>
-<area shape="rect" id="node61" href="$class_o_n___u_u_i_d.html" title="ON_UUID" alt="" coords="705,773,788,803"/>
-<area shape="rect" id="node65" href="$class_o_n___brep_loop_array.html" title="ON_BrepLoopArray" alt="" coords="1935,424,2068,453"/>
-<area shape="rect" id="node80" href="$class_o_n___surface_array.html" title="ON_SurfaceArray" alt="" coords="1136,1005,1261,1035"/>
-<area shape="rect" id="node86" href="$class_o_n___brep_edge_array.html" title="ON_BrepEdgeArray" alt="" coords="1933,496,2069,525"/>
-<area shape="rect" id="node99" href="$class_o_n___brep_vertex_array.html" title="ON_BrepVertexArray" alt="" coords="1929,560,2073,589"/>
-<area shape="rect" id="node116" href="$class_o_n___curve_array.html" title="ON_CurveArray" alt="" coords="1545,953,1660,983"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1259,273,1337,298"/>
+<area shape="rect" id="Node000002" href="$class_o_n___geometry.html" title=" " alt="" coords="167,43,281,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,36,345,14,390,6,434,3,1045,3,1105,6,1152,19,1194,44,1237,86,1254,109,1267,134,1286,187,1295,237,1299,272,1294,273,1290,237,1281,189,1263,136,1249,112,1233,90,1190,48,1150,23,1104,11,1045,8,434,8,390,11,347,19,271,41"/>
+<area shape="rect" id="Node000007" href="$class_o_n___curve.html" title=" " alt="" coords="392,149,479,174"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="256,74,301,103,353,131,393,146,391,151,351,136,298,107,253,79"/>
+<area shape="rect" id="Node000011" href="$class_o_n___surface.html" title=" " alt="" coords="386,43,485,69"/>
+<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="295,53,386,53,386,59,295,59"/>
+<area shape="rect" id="Node000003" href="$class_o_n___object.html" title=" " alt="" coords="5,43,96,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,53,166,53,166,59,110,59"/>
+<area shape="rect" id="Node000004" href="$union_o_n___u.html" title=" " alt="" coords="1014,95,1073,121"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1087,102,1122,102,1161,106,1201,118,1236,138,1264,169,1282,207,1293,244,1298,272,1293,273,1288,245,1277,209,1260,172,1233,142,1199,123,1160,112,1121,107,1087,107"/>
+<area shape="rect" id="Node000005" href="$class_o_n___curve_array.html" title=" " alt="" coords="982,194,1105,219"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1119,215,1177,228,1236,247,1279,270,1277,275,1234,252,1175,233,1117,220"/>
+<area shape="rect" id="Node000006" href="$class_o_n___simple_array.html" title=" " alt="" coords="700,156,864,196"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="878,185,982,197,982,202,877,190"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="492,167,543,172,700,175,700,181,543,177,492,172"/>
+<area shape="rect" id="Node000008" href="$class_o_n___simple_array.html" title=" " alt="" coords="352,97,519,122"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="516,122,700,158,699,163,515,127"/>
+<area shape="rect" id="Node000010" href="$class_o_n___simple_array.html" title=" " alt="" coords="700,65,864,105"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="532,100,699,88,700,94,533,105"/>
+<area shape="rect" id="Node000009" href="$class_o_n___surface_array.html" title=" " alt="" coords="977,145,1110,170"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1124,154,1181,163,1210,173,1236,187,1258,206,1274,229,1295,271,1290,274,1270,232,1254,210,1233,192,1208,178,1180,169,1123,159"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="869,106,997,142,996,147,868,112"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="499,57,676,71,700,73,699,78,676,76,498,62"/>
+<area shape="rect" id="Node000012" href="$class_o_n___brep_vertex_array.html" title=" " alt="" coords="965,245,1121,270"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="1135,265,1259,278,1258,284,1135,270"/>
+<area shape="rect" id="Node000013" href="$class_o_n___object_array.html" title=" " alt="" coords="701,224,863,264"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="876,246,965,251,965,256,876,251"/>
+<area shape="rect" id="Node000014" href="$class_o_n___class_array.html" title=" " alt="" coords="357,206,514,231"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="528,223,701,235,701,241,527,228"/>
+<area shape="rect" id="Node000015" href="$class_o_n___object_array.html" title=" " alt="" coords="353,399,517,425"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="470,390,517,354,528,337,541,321,579,297,620,279,700,255,702,260,622,284,581,302,544,325,532,340,521,358,473,394"/>
+<area shape="rect" id="Node000018" href="$class_o_n___object_array.html" title=" " alt="" coords="701,288,863,328"/>
+<area shape="poly" id="edge22_Node000018_Node000015" title=" " alt="" coords="491,393,713,326,715,331,493,398"/>
+<area shape="rect" id="Node000021" href="$class_o_n___object_array.html" title=" " alt="" coords="701,483,863,523"/>
+<area shape="poly" id="edge26_Node000021_Node000015" title=" " alt="" coords="463,432,500,458,544,480,583,491,623,498,701,503,701,508,623,503,582,496,542,485,497,463,460,436"/>
+<area shape="rect" id="Node000024" href="$class_o_n___object_array.html" title=" " alt="" coords="701,419,863,459"/>
+<area shape="poly" id="edge30_Node000024_Node000015" title=" " alt="" coords="473,428,507,443,543,453,583,459,624,459,701,452,701,458,624,465,583,464,542,459,505,448,471,433"/>
+<area shape="rect" id="Node000027" href="$class_o_n___object_array.html" title=" " alt="" coords="701,352,863,392"/>
+<area shape="poly" id="edge34_Node000027_Node000015" title=" " alt="" coords="531,416,602,416,675,408,736,390,738,395,677,413,603,421,531,422"/>
+<area shape="rect" id="Node000016" href="$class_o_n___class_array.html" title=" " alt="" coords="145,399,303,425"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="317,409,353,409,353,415,317,415"/>
+<area shape="rect" id="Node000017" href="$class_o_n___brep_edge_array.html" title=" " alt="" coords="970,295,1117,321"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="1131,311,1182,310,1234,304,1265,296,1266,301,1235,309,1182,315,1131,316"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="876,305,970,305,970,311,876,311"/>
+<area shape="rect" id="Node000019" href="$class_o_n___class_array.html" title=" " alt="" coords="357,255,514,281"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="528,260,601,261,677,269,733,285,732,290,675,275,600,267,528,266"/>
+<area shape="rect" id="Node000020" href="$class_o_n___brep_trim_array.html" title=" " alt="" coords="972,457,1115,482"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="1128,465,1183,453,1209,441,1233,426,1259,396,1276,360,1287,325,1292,298,1298,299,1292,326,1281,362,1263,399,1236,430,1212,446,1185,458,1129,470"/>
+<area shape="poly" id="edge24_Node000020_Node000021" title=" " alt="" coords="876,488,972,476,972,481,876,493"/>
+<area shape="rect" id="Node000022" href="$class_o_n___class_array.html" title=" " alt="" coords="357,583,514,609"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="528,597,602,589,640,578,675,563,682,557,686,550,698,534,721,521,723,525,702,538,691,553,686,560,677,568,642,583,603,594,528,603"/>
+<area shape="rect" id="Node000023" href="$class_o_n___brep_loop_array.html" title=" " alt="" coords="971,399,1116,425"/>
+<area shape="poly" id="edge27_Node000001_Node000023" title=" " alt="" coords="1129,407,1183,396,1209,387,1233,374,1253,357,1269,336,1289,297,1294,300,1273,339,1257,360,1236,378,1211,392,1185,401,1130,413"/>
+<area shape="poly" id="edge28_Node000023_Node000024" title=" " alt="" coords="876,426,970,417,971,422,876,432"/>
+<area shape="rect" id="Node000025" href="$class_o_n___class_array.html" title=" " alt="" coords="357,534,514,559"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="528,548,565,545,603,538,640,526,674,509,683,500,686,490,690,480,698,469,716,457,719,461,702,473,694,482,691,492,687,503,678,513,642,531,604,543,566,550,528,554"/>
+<area shape="rect" id="Node000026" href="$class_o_n___brep_face_array.html" title=" " alt="" coords="972,346,1115,371"/>
+<area shape="poly" id="edge31_Node000001_Node000026" title=" " alt="" coords="1128,355,1181,348,1234,332,1261,316,1283,296,1286,300,1264,320,1236,337,1182,353,1128,361"/>
+<area shape="poly" id="edge32_Node000026_Node000027" title=" " alt="" coords="876,365,972,360,972,365,876,370"/>
+<area shape="rect" id="Node000028" href="$class_o_n___class_array.html" title=" " alt="" coords="357,319,514,345"/>
+<area shape="poly" id="edge33_Node000027_Node000028" title=" " alt="" coords="528,334,676,348,701,352,700,357,676,353,528,339"/>
+<area shape="rect" id="Node000029" href="$class_o_n___bounding_box.html" title=" " alt="" coords="976,562,1111,587"/>
+<area shape="poly" id="edge35_Node000001_Node000029" title=" " alt="" coords="1111,556,1175,528,1206,508,1233,484,1249,461,1262,436,1281,383,1290,334,1293,298,1299,299,1295,334,1286,384,1267,438,1254,464,1237,487,1209,512,1178,533,1113,560"/>
+<area shape="poly" id="edge36_Node000029_Node000029" title=" " alt="" coords="1018,547,1026,539,1043,535,1058,538,1068,544,1070,554,1065,563,1061,561,1065,553,1063,547,1056,543,1043,541,1028,543,1022,551"/>
+<area shape="rect" id="Node000030" href="$class_o_n__3d_point.html" title=" " alt="" coords="733,601,831,626"/>
+<area shape="poly" id="edge37_Node000029_Node000030" title=" " alt="" coords="844,602,975,582,976,587,845,607"/>
+<area shape="poly" id="edge38_Node000030_Node000030" title=" " alt="" coords="756,586,764,577,782,574,797,576,807,583,809,592,805,602,800,599,804,592,802,586,795,581,782,579,767,582,760,589"/>
 </map>

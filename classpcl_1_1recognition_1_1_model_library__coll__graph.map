@@ -1,4 +1,7 @@
 <map id="pcl::recognition::ModelLibrary" name="pcl::recognition::ModelLibrary">
-<area shape="rect" id="node2" href="$classpcl_1_1recognition_1_1_voxel_structure.html" title="pcl::recognition::VoxelStructure\l\&lt; HashTableCell, float \&gt;" alt="" coords="5,251,208,298"/>
-<area shape="rect" id="node4" href="$classpcl_1_1recognition_1_1_voxel_structure.html" title="This class is a box in R3 built of voxels ordered in a regular rectangular grid. " alt="" coords="5,137,208,183"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="10,211,225,236"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1recognition_1_1_voxel_structure.html" title=" " alt="" coords="5,108,229,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,162,120,210,115,210,115,162"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1recognition_1_1_voxel_structure.html" title="This class is a box in R3 built of voxels ordered in a regular rectangular grid." alt="" coords="5,5,229,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,59,120,108,115,108,115,59"/>
 </map>

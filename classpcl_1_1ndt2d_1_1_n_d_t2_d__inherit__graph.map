@@ -1,2 +1,5 @@
 <map id="pcl::ndt2d::NDT2D&lt; PointT &gt;" name="pcl::ndt2d::NDT2D&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="Build a Normal Distributions Transform of a 2D point cloud." alt="" coords="5,79,156,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="6,5,155,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,44,83,79,78,79,78,44"/>
 </map>

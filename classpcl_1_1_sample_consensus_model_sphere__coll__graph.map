@@ -1,6 +1,10 @@
 <map id="pcl::SampleConsensusModelSphere&lt; PointT &gt;" name="pcl::SampleConsensusModelSphere&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="61,411,253,458"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="71,315,244,344"/>
-<area shape="rect" id="node6" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="5,104,120,133"/>
-<area shape="rect" id="node13" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="87,219,228,248"/>
+<area shape="rect" id="Node000001" title="SampleConsensusModelSphere defines a model for 3D sphere segmentation." alt="" coords="5,289,213,329"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="5,200,213,240"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,254,112,289,107,289,107,254"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="64,5,155,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,44,104,93,104,137,110,200,104,200,99,137,99,93,103,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="215,103,382,128"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="145,34,277,100,275,105,143,39"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,137,145,202,143,198,264,132"/>
 </map>

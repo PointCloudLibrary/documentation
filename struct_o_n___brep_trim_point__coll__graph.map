@@ -1,3 +1,6 @@
 <map id="ON_BrepTrimPoint" name="ON_BrepTrimPoint">
-<area shape="rect" id="node2" href="$class_o_n__2d_point.html" title="ON_2dPoint" alt="" coords="24,8,117,37"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,97,145,123"/>
+<area shape="rect" id="Node000002" href="$class_o_n__2d_point.html" title=" " alt="" coords="26,7,125,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,46,78,97,73,97,73,46"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="139,11,147,14,151,20,143,28,125,31,124,26,141,24,146,20,144,18,137,16"/>
 </map>

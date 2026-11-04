@@ -1,3 +1,5 @@
 <map id="pcl::registration::CorrespondenceRejectorDistance" name="pcl::registration::CorrespondenceRejectorDistance">
-<area shape="rect" id="node2" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods ..." alt="" coords="32,6,197,53"/>
+<area shape="rect" id="Node000001" title="CorrespondenceRejectorDistance implements a simple correspondence rejection method based on threshold..." alt="" coords="5,93,244,133"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_correspondence_rejector.html" title="CorrespondenceRejector represents the base class for correspondence rejection methods" alt="" coords="34,5,215,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,59,127,93,122,93,122,59"/>
 </map>

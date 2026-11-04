@@ -1,11 +1,25 @@
 <map id="pcl::LeastMedianSquares&lt; PointT &gt;" name="pcl::LeastMedianSquares&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="112,737,269,783"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="96,640,285,669"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_sample_consensus_model.html" title="pcl::SampleConsensusModel\&lt; T \&gt;" alt="" coords="79,544,303,573"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\&lt; T \&gt;" alt="" coords="5,439,171,468"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="21,315,155,362"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class. " alt="" coords="195,430,387,477"/>
-<area shape="rect" id="node14" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; PointT \&gt;" alt="" coords="204,324,377,353"/>
-<area shape="rect" id="node16" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="139,104,253,133"/>
-<area shape="rect" id="node23" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="220,219,361,248"/>
+<area shape="rect" id="Node000001" title="LeastMedianSquares represents an implementation of the LMedS (Least Median of Squares) algorithm." alt="" coords="5,583,189,623"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus.html" title=" " alt="" coords="13,493,181,533"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,547,100,583,95,583,95,547"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="359,5,449,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="346,29,264,43,176,64,137,78,106,93,86,110,79,129,79,419,83,459,93,492,88,494,78,460,73,419,73,128,82,107,103,89,135,73,174,59,263,38,345,24"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_sample_consensus_model.html" title=" " alt="" coords="239,317,486,343"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="463,21,539,32,619,52,677,69,700,82,720,107,725,119,725,129,720,152,714,199,705,238,687,270,671,283,650,296,622,306,582,313,487,324,486,319,581,308,620,300,648,291,668,279,683,266,700,236,709,198,715,152,719,129,719,120,715,109,696,86,675,74,618,57,538,37,463,26"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="114,117,281,143"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="345,28,278,39,250,47,231,57,219,70,210,87,202,118,196,116,205,85,215,67,228,53,248,42,277,34,344,23"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1search_1_1_search.html" title=" " alt="" coords="491,222,674,247"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="419,42,451,93,494,150,533,190,569,220,566,224,530,194,490,154,447,96,415,44"/>
+<area shape="rect" id="Node000008" href="$classpcl_1_1search_1_1_search.html" title="Generic search class." alt="" coords="561,110,705,150"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="452,33,500,52,603,107,601,112,498,57,450,38"/>
+<area shape="rect" id="Node000009" href="$classpcl_1_1_sample_consensus_model.html" title="SampleConsensusModel represents the base model class." alt="" coords="259,215,467,255"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="387,43,367,73,351,109,346,137,348,165,358,214,353,215,342,166,341,136,345,107,362,70,383,40"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class." alt="" coords="186,405,393,431"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="255,439,137,496,135,491,252,434"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="346,355,302,407,298,403,342,351"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="190,156,181,204,182,230,192,253,211,276,236,293,264,306,292,315,290,320,262,311,233,297,208,280,187,256,177,231,175,204,185,155"/>
+<area shape="poly" id="edge14_Node000009_Node000006" title=" " alt="" coords="216,152,234,171,255,188,302,212,300,217,252,193,230,175,212,155"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="544,255,391,320,389,315,542,250"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="620,164,591,223,586,221,616,161"/>
+<area shape="poly" id="edge12_Node000005_Node000009" title=" " alt="" coords="365,269,365,317,360,317,360,269"/>
 </map>

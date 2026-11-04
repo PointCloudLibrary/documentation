@@ -1,0 +1,7 @@
+<map id="pcl::CPCSegmentation&lt; PointT &gt;" name="pcl::CPCSegmentation&lt; PointT &gt;">
+<area shape="rect" id="Node000001" title="A segmentation algorithm partitioning a supervoxel graph." alt="" coords="9,197,175,237"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_l_c_c_p_segmentation.html" title="A simple segmentation algorithm partitioning a supervoxel graph into groups of locally convex connect..." alt="" coords="5,108,179,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,162,95,197,89,197,89,162"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="55,5,129,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,45,95,108,89,108,89,45"/>
+</map>

@@ -1,3 +1,5 @@
 <map id="pcl::registration::DataContainerInterface" name="pcl::registration::DataContainerInterface">
-<area shape="rect" id="node3" href="$classpcl_1_1registration_1_1_data_container.html" title="DataContainer is a container for the input and target point clouds and implements the interface to co..." alt="" coords="5,101,165,165"/>
+<area shape="rect" id="Node000001" title="DataContainerInterface provides a generic interface for computing correspondence scores between corre..." alt="" coords="6,5,181,45"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1registration_1_1_data_container.html" title="DataContainer is a container for the input and target point clouds and implements the interface to co..." alt="" coords="5,93,181,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,59,96,93,91,93,91,59"/>
 </map>

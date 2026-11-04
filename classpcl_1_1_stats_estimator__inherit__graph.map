@@ -1,5 +1,9 @@
 <map id="pcl::StatsEstimator&lt; LabelDataType, NodeType, DataSet, ExampleIndex &gt;" name="pcl::StatsEstimator&lt; LabelDataType, NodeType, DataSet, ExampleIndex &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1face__detection_1_1_pose_class_regression_variance_stats_estimator.html" title="Statistics estimator for regression trees which optimizes information gain and pose parameters error..." alt="" coords="405,5,651,86"/>
-<area shape="rect" id="node5" href="$classpcl_1_1_regression_variance_stats_estimator.html" title="Statistics estimator for regression trees which optimizes variance. " alt="" coords="405,109,651,173"/>
-<area shape="rect" id="node7" href="$classpcl_1_1_stats_estimator.html" title="pcl::StatsEstimator\l\&lt; LabelType, NodeType,\l DataSet, ExampleIndex \&gt;" alt="" coords="440,197,616,261"/>
+<area shape="rect" id="Node000001" title="Class interface for gathering statistics for decision tree learning." alt="" coords="5,92,215,147"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_regression_variance_stats_estimator.html" title="Statistics estimator for regression trees which optimizes variance." alt="" coords="436,5,703,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,95,435,55,436,60,229,100"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1face__detection_1_1_pose_class_regression_variance_stats_estimator.html" title="Statistics estimator for regression trees which optimizes information gain and pose parameters error." alt="" coords="436,85,703,154"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,117,436,117,436,122,229,122"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_stats_estimator.html" title=" " alt="" coords="472,179,667,233"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,147,239,151,360,174,472,191,471,196,359,179,238,157,220,153"/>
 </map>

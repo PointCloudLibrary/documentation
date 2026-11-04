@@ -1,8 +1,19 @@
 <map id="pcl::GreedyProjectionTriangulation&lt; PointInT &gt;" name="pcl::GreedyProjectionTriangulation&lt; PointInT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class. " alt="" coords="123,334,275,381"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class. " alt="" coords="125,235,272,282"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="5,129,181,159"/>
-<area shape="rect" id="node8" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="11,15,176,44"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="205,121,339,167"/>
-<area shape="rect" id="node12" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="205,6,339,53"/>
+<area shape="rect" id="Node000001" title="GreedyProjectionTriangulation is an implementation of a greedy triangulation algorithm for 3D points ..." alt="" coords="5,523,251,563"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_mesh_construction.html" title="MeshConstruction represents a base surface reconstruction class." alt="" coords="45,433,211,473"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,487,131,523,125,523,125,487"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_surface_base.html" title="Pure abstract class." alt="" coords="51,344,205,384"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,398,131,433,125,433,125,398"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="127,269,315,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,305,152,346,148,342,196,301"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="175,5,265,31"/>
+<area shape="poly" id="edge10_Node000003_Node000005" title=" " alt="" coords="162,35,135,46,111,61,94,80,88,105,88,283,90,300,96,315,113,343,109,345,91,318,85,301,83,284,83,104,90,78,108,57,133,41,160,30"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="208,44,197,68,188,94,185,145,193,195,206,238,218,268,213,270,201,240,187,196,179,145,183,93,192,66,203,42"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="198,93,365,119"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="239,41,275,91,271,94,234,44"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="307,181,483,207"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="280,27,312,37,343,52,367,70,382,90,391,113,397,142,399,181,393,181,392,143,386,114,377,92,363,74,340,57,310,42,278,32"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="267,131,252,155,240,182,228,230,224,270,219,269,223,229,235,180,248,153,263,128"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="304,126,339,155,375,179,372,183,336,159,301,130"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="360,215,246,271,244,267,358,210"/>
 </map>

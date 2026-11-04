@@ -1,9 +1,15 @@
 <map id="pcl::visualization::PointCloudColorHandler&lt; pcl::PCLPointCloud2 &gt;" name="pcl::visualization::PointCloudColorHandler&lt; pcl::PCLPointCloud2 &gt;">
-<area shape="rect" id="node3" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_custom_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Handler for predefined user colors. " alt="" coords="235,5,451,69"/>
-<area shape="rect" id="node5" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_generic_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Generic field handler class for colors. " alt="" coords="236,93,449,157"/>
-<area shape="rect" id="node7" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_h_s_v_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="HSV handler class for colors. " alt="" coords="229,181,456,245"/>
-<area shape="rect" id="node9" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_label_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Label field handler class for colors. " alt="" coords="243,269,443,333"/>
-<area shape="rect" id="node11" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_random_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Handler for random PointCloud colors (i.e., R, G, B will be randomly chosen) " alt="" coords="233,357,452,421"/>
-<area shape="rect" id="node13" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_r_g_b_a_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RGBA handler class for colors. " alt="" coords="225,445,460,509"/>
-<area shape="rect" id="node15" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_r_g_b_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RGB handler class for colors. " alt="" coords="229,533,456,597"/>
+<area shape="rect" id="Node000001" title="Base Handler class for PointCloud colors." alt="" coords="5,203,191,257"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_custom_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Handler for predefined user colors." alt="" coords="248,5,483,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,190,171,128,202,96,237,69,257,58,260,63,240,74,206,100,175,131,126,193"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_h_s_v_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="HSV handler class for colors." alt="" coords="244,84,487,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,193,238,148,266,136,268,141,240,152,154,198"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_label_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Label field handler class for colors." alt="" coords="255,163,475,217"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="204,212,255,204,256,209,205,217"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_r_g_b_a_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RGBA handler class for colors." alt="" coords="239,241,492,296"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="205,243,239,248,238,253,204,248"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_r_g_b_field_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="RGB handler class for colors." alt="" coords="243,320,487,375"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="156,262,240,305,272,318,270,322,238,310,154,267"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1visualization_1_1_point_cloud_color_handler_random_3_01pcl_1_1_p_c_l_point_cloud2_01_4.html" title="Handler for random PointCloud colors (i.e., R, G, B will be randomly chosen)" alt="" coords="246,399,485,453"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="127,267,175,327,206,358,240,384,263,396,261,401,237,388,203,362,172,331,123,271"/>
 </map>

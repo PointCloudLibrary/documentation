@@ -1,5 +1,9 @@
 <map id="pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;" name="pcl::octree::Octree2BufBase&lt; LeafContainerT, BranchContainerT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class " alt="" coords="5,161,157,191"/>
-<area shape="rect" id="node6" href="$classpcl_1_1octree_1_1_buffered_branch_node.html" title="pcl::octree::BufferedBranch\lNode\&lt; ContainerT \&gt;" alt="" coords="181,153,363,199"/>
-<area shape="rect" id="node8" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class " alt="" coords="192,5,352,35"/>
+<area shape="rect" id="Node000001" title="Octree double buffer class" alt="" coords="118,183,393,223"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1octree_1_1_buffered_branch_node.html" title=" " alt="" coords="5,80,204,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,125,229,180,226,185,143,130"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1octree_1_1_octree_node.html" title="Abstract octree node class" alt="" coords="17,5,192,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,44,107,80,102,80,102,44"/>
+<area shape="rect" id="Node000004" href="$classpcl_1_1octree_1_1_octree_key.html" title="Octree key class" alt="" coords="227,87,393,113"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,126,268,184,263,181,295,124"/>
 </map>

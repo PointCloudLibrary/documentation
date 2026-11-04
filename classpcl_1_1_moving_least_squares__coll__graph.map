@@ -1,10 +1,17 @@
 <map id="pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;" name="pcl::MovingLeastSquares&lt; PointInT, PointOutT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_cloud_surface_processing.html" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="777,5,967,51"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="pcl::PCLBase\&lt; PointInT \&gt;" alt="" coords="456,13,632,43"/>
-<area shape="rect" id="node6" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="165,13,331,43"/>
-<area shape="rect" id="node8" href="$classpcl_1_1search_1_1_search.html" title="pcl::search::Search\l\&lt; PointInT \&gt;" alt="" coords="805,74,939,121"/>
-<area shape="rect" id="node10" href="$classpcl_1_1search_1_1_search.html" title="Generic search class. " alt="" coords="477,70,611,117"/>
-<area shape="rect" id="node12" href="$classpcl_1_1_point_cloud.html" title="pcl::PointCloud\&lt; pcl\l::Normal \&gt;" alt="" coords="803,169,941,215"/>
-<area shape="rect" id="node14" href="$structpcl_1_1_p_c_l_header.html" title="pcl::PCLHeader" alt="" coords="191,283,305,312"/>
-<area shape="rect" id="node21" href="$classpcl_1_1_point_cloud.html" title="PointCloud represents the base class in PCL for storing collections of 3D points. ..." alt="" coords="473,211,615,240"/>
+<area shape="rect" id="Node000001" title="MovingLeastSquares represent an implementation of the MLS (Moving Least Squares) algorithm for data s..." alt="" coords="5,463,189,503"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_cloud_surface_processing.html" title="CloudSurfaceProcessing represents the base class for algorithms that takes a point cloud as input and..." alt="" coords="97,373,303,413"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,424,121,465,118,461,166,420"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title=" " alt="" coords="147,299,335,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="231,337,212,375,207,372,227,335"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="224,5,315,31"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="210,21,159,26,108,39,87,50,70,65,59,82,55,105,55,394,57,413,64,431,83,461,78,464,59,433,52,414,49,395,49,104,54,81,66,61,84,46,106,34,158,21,210,16"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="258,44,246,68,237,94,230,153,231,212,242,298,236,299,225,213,225,153,232,93,241,66,253,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="247,93,414,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="288,41,324,91,320,94,284,44"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="356,181,532,207"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="329,27,361,37,392,52,416,70,431,90,440,113,447,142,448,181,443,181,441,143,435,114,426,92,412,74,389,57,359,42,328,32"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="318,131,289,182,263,248,247,299,242,298,258,246,284,180,313,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="354,126,388,155,425,179,422,183,385,159,350,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="413,216,263,301,260,296,410,211"/>
 </map>

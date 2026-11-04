@@ -1,3 +1,5 @@
 <map id="ON_3dmNotes" name="ON_3dmNotes">
-<area shape="rect" id="node2" href="$class_o_n__w_string.html" title="ON_wString" alt="" coords="13,5,107,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,121,119"/>
+<area shape="rect" id="Node000002" href="$class_o_n__w_string.html" title=" " alt="" coords="14,5,113,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,45,66,93,61,93,61,45"/>
 </map>

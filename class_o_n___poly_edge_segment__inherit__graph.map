@@ -1,6 +1,11 @@
 <map id="ON_PolyEdgeSegment" name="ON_PolyEdgeSegment">
-<area shape="rect" id="node2" href="$class_o_n___curve_proxy.html" title="ON_CurveProxy" alt="" coords="25,237,143,267"/>
-<area shape="rect" id="node4" href="$class_o_n___curve.html" title="ON_Curve" alt="" coords="43,160,125,189"/>
-<area shape="rect" id="node6" href="$class_o_n___geometry.html" title="ON_Geometry" alt="" coords="31,83,137,112"/>
-<area shape="rect" id="node8" href="$class_o_n___object.html" title="ON_Object" alt="" coords="41,5,127,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,299,172,324"/>
+<area shape="rect" id="Node000002" href="$class_o_n___curve_proxy.html" title=" " alt="" coords="27,225,151,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,264,91,299,86,299,86,264"/>
+<area shape="rect" id="Node000003" href="$class_o_n___curve.html" title=" " alt="" coords="45,152,132,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,191,91,225,86,225,86,191"/>
+<area shape="rect" id="Node000004" href="$class_o_n___geometry.html" title=" " alt="" coords="31,79,146,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,118,91,152,86,152,86,118"/>
+<area shape="rect" id="Node000005" href="$class_o_n___object.html" title=" " alt="" coords="43,5,134,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,44,91,79,86,79,86,44"/>
 </map>

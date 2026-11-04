@@ -1,3 +1,10 @@
 <map id="pcl::registration::ELCH&lt; PointT &gt;" name="pcl::registration::ELCH&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="ELCH (Explicit Loop Closing Heuristic) class" alt="" coords="27,256,159,296"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,181,181,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,220,96,256,91,256,91,220"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="48,5,139,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,45,89,80,88,119,94,181,89,181,83,119,83,79,87,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="142,93,309,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="124,36,209,91,206,95,121,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="198,128,113,183,110,179,195,124"/>
 </map>

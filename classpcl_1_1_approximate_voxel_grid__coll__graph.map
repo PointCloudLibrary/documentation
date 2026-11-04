@@ -1,4 +1,15 @@
 <map id="pcl::ApproximateVoxelGrid&lt; PointT &gt;" name="pcl::ApproximateVoxelGrid&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class. " alt="" coords="19,95,157,124"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="5,5,171,35"/>
+<area shape="rect" id="Node000001" title="ApproximateVoxelGrid assembles a local 3D grid over a given PointCloud, and downsamples + filters the..." alt="" coords="163,359,357,399"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_filter.html" title="Filter represents the base filter class." alt="" coords="85,263,238,289"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,297,243,357,240,360,181,301"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="5,181,181,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,215,154,262,150,265,110,219"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="52,5,143,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,44,91,93,91,142,94,181,89,181,86,142,85,93,91,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="146,93,313,119"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="128,36,213,91,210,95,125,40"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="224,133,196,208,170,264,165,262,191,206,219,131"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="189,127,155,145,107,183,104,179,152,140,186,122"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="263,256,457,296"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="334,307,281,360,277,357,330,304"/>
 </map>

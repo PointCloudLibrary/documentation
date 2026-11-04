@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pcl_20api_20documentation_29312',['PCL API Documentation',['../index.html',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]],
+  ['documentation_1',['PCL API Documentation',['../index.html',1,'']]]
 ];

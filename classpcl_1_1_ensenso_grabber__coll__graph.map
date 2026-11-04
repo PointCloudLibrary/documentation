@@ -1,4 +1,11 @@
 <map id="pcl::EnsensoGrabber" name="pcl::EnsensoGrabber">
-<area shape="rect" id="node2" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers. " alt="" coords="5,5,99,35"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_event_frequency.html" title="A helper class to measure frequency of a certain event. " alt="" coords="123,5,264,35"/>
+<area shape="rect" id="Node000001" title="Grabber for IDS&#45;Imaging Ensenso&#39;s devices." alt="" coords="167,181,321,207"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_grabber.html" title="Grabber interface for PCL 1.x device drivers." alt="" coords="5,93,107,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,122,220,179,217,183,93,127"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,93,357,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,133,247,181,241,181,241,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="199,5,289,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="247,45,247,93,241,93,241,45"/>
+<area shape="rect" id="Node000005" href="$classpcl_1_1_event_frequency.html" title="A helper class to measure frequency of a certain event." alt="" coords="382,93,535,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="418,126,274,184,272,179,416,122"/>
 </map>

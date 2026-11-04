@@ -1,4 +1,7 @@
 <map id="pcl::MaximumLikelihoodSampleConsensus&lt; PointT &gt;" name="pcl::MaximumLikelihoodSampleConsensus&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_sample_consensus.html" title="pcl::SampleConsensus\l\&lt; PointT \&gt;" alt="" coords="29,102,187,149"/>
-<area shape="rect" id="node4" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class. " alt="" coords="13,5,203,35"/>
+<area shape="rect" id="Node000001" title="MaximumLikelihoodSampleConsensus represents an implementation of the MLESAC (Maximum Likelihood Estim..." alt="" coords="5,183,236,223"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_sample_consensus.html" title=" " alt="" coords="37,93,205,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,147,123,183,118,183,118,147"/>
+<area shape="rect" id="Node000003" href="$classpcl_1_1_sample_consensus.html" title="SampleConsensus represents the base class." alt="" coords="17,5,224,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,44,123,93,118,93,118,44"/>
 </map>

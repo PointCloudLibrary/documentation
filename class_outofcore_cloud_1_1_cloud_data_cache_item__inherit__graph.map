@@ -1,4 +1,7 @@
 <map id="OutofcoreCloud::CloudDataCacheItem" name="OutofcoreCloud::CloudDataCacheItem">
-<area shape="rect" id="node2" href="$class_l_r_u_cache_item.html" title="LRUCacheItem\&lt; vtkSmartPointer\l\&lt; vtkPolyData \&gt; \&gt;" alt="" coords="5,118,224,165"/>
-<area shape="rect" id="node4" href="$class_l_r_u_cache_item.html" title="LRUCacheItem\&lt; T \&gt;" alt="" coords="43,5,187,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="25,197,224,237"/>
+<area shape="rect" id="Node000002" href="$class_l_r_u_cache_item.html" title=" " alt="" coords="5,108,244,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,162,127,197,122,197,122,162"/>
+<area shape="rect" id="Node000003" href="$class_l_r_u_cache_item.html" title=" " alt="" coords="47,5,203,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,45,127,108,122,108,122,45"/>
 </map>

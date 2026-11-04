@@ -1,5 +1,17 @@
 <map id="pcl::GrabCut&lt; PointT &gt;" name="pcl::GrabCut&lt; PointT &gt;">
-<area shape="rect" id="node2" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class. " alt="" coords="16,5,181,35"/>
-<area shape="rect" id="node4" href="$classpcl_1_1segmentation_1_1grabcut_1_1_boykov_kolmogorov.html" title="boost implementation of Boykov and Kolmogorov&#39;s maxflow algorithm doesn&#39;t support negative flows whic..." alt="" coords="5,58,192,105"/>
-<area shape="rect" id="node6" href="$classpcl_1_1segmentation_1_1grabcut_1_1_g_m_m.html" title="pcl::segmentation::\lgrabcut::GMM" alt="" coords="32,127,165,174"/>
+<area shape="rect" id="Node000001" title="Implementation of the GrabCut segmentation in &quot;GrabCut — Interactive Foreground Extraction using Iter..." alt="" coords="880,115,1053,141"/>
+<area shape="rect" id="Node000002" href="$classpcl_1_1_p_c_l_base.html" title="PCL base class." alt="" coords="512,59,688,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="702,65,778,69,857,80,903,95,942,113,940,118,901,100,855,85,778,74,702,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,59,96,85"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="105,53,120,51,283,33,410,31,703,44,781,41,815,43,857,53,885,66,912,82,953,113,949,117,909,86,883,71,855,59,814,48,781,47,703,49,410,36,283,38,120,56,106,59"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,69,512,69,512,75,110,75"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="225,121,392,146"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="87,89,121,103,173,116,225,124,225,129,172,121,119,108,85,94"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="405,116,473,103,554,82,555,87,474,108,406,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="563,115,637,141"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="651,125,880,125,880,131,651,131"/>
+<area shape="rect" id="Node000006" href="$classpcl_1_1segmentation_1_1grabcut_1_1_g_m_m.html" title=" " alt="" coords="527,168,673,208"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="687,181,769,174,855,160,931,138,932,143,857,165,770,179,688,187"/>
+<area shape="rect" id="Node000007" href="$classpcl_1_1segmentation_1_1grabcut_1_1_boykov_kolmogorov.html" title="boost implementation of Boykov and Kolmogorov&#39;s maxflow algorithm doesn&#39;t support negative flows whic..." alt="" coords="497,232,703,272"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="716,235,786,220,855,198,908,169,949,139,952,143,911,173,857,202,787,225,717,241"/>
 </map>
